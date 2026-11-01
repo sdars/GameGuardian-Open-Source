@@ -1,13 +1,9 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.Tools;
-import android.util.AttributeSet;
-
 /* JADX INFO: loaded from: classes.dex */
-public class TextButtonView extends TextView {
-    public TextButtonView(Context context, AttributeSet attributeSet) {
+public class TextButtonView extends android.fix.TextView {
+    public TextButtonView(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
-        Tools.p1(this);
+        android.ext.Tools.p1(this);
     }
 }

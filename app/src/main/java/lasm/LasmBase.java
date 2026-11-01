@@ -1,63 +1,15 @@
 package lasm;
 
-import e.d;
-import e.f;
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import luaj.LuaString;
-import luaj.LuaValue;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class LasmBase {
-
-    static class Const extends Internal {
-        Const(f fVar) {
-            super(fVar, LasmBase.e(fVar));
-        }
+    static void a(lasm.LasmBase$V lasmBase$V, lasm.LasmBase$V lasmBase$V2, int i) {
     }
 
-    static class Internal extends LuaValue {
-        int P;
-        f Q;
-
-        Internal(f fVar, int i) {
-            this.Q = fVar;
-            this.P = i;
-        }
-
-        @Override // luaj.LuaValue
-        public int C2() {
-            return this.P;
-        }
-
-        @Override // luaj.LuaValue
-        public String D2() {
-            return null;
-        }
-    }
-
-    static class U extends Internal {
-        U(f fVar) {
-            super(fVar, LasmBase.f(fVar, 1));
-        }
-    }
-
-    static class V extends Internal {
-        V(f fVar) {
-            super(fVar, LasmBase.f(fVar, 1));
-        }
-    }
-
-    static void a(V v, V v2, int i) {
-    }
-
-    static void b(V v, V v2) throws e.b {
-        if (v.P == v2.P) {
+    static void b(lasm.LasmBase$V lasmBase$V, lasm.LasmBase$V lasmBase$V2) throws gg_e.b {
+        if (lasmBase$V.P == lasmBase$V2.P) {
             return;
         }
-        throw new e.b(v2.Q, "Register must be " + v.Q.f1551f);
+        throw new gg_e.b(lasmBase$V2.Q, "Register must be " + lasmBase$V.Q.f1551f);
     }
 
     /* JADX WARN: Code duplicated, block: B:15:0x002a  */
@@ -65,20 +17,20 @@ public abstract class LasmBase {
     /* JADX WARN: Code duplicated, block: B:22:0x0048  */
     /* JADX WARN: Code duplicated, block: B:24:0x006e  */
     /* JADX WARN: Code duplicated, block: B:27:0x0096 A[SYNTHETIC] */
-    public static String c(Throwable th, String str, boolean z) throws IOException {
+    public static java.lang.String c(java.lang.Throwable th, java.lang.String str, boolean z) throws java.io.IOException {
         int i;
         int i2;
-        f fVar;
-        String string;
-        BufferedReader bufferedReader;
+        gg_e.f fVar;
+        java.lang.String string;
+        java.io.BufferedReader bufferedReader;
         int i3;
-        String line;
-        StringBuilder sb;
-        if (!(th instanceof e.b)) {
-            if (th instanceof d) {
-                fVar = ((d) th).f1535a.f1552g;
-            } else if (th instanceof c) {
-                c cVar = (c) th;
+        java.lang.String line;
+        java.lang.StringBuilder sb;
+        if (!(th instanceof gg_e.b)) {
+            if (th instanceof gg_e.d) {
+                fVar = ((gg_e.d) th).f1535a.f1552g;
+            } else if (th instanceof lasm.c) {
+                lasm.c cVar = (lasm.c) th;
                 i2 = cVar.f1643b;
                 i = cVar.f1644c;
             } else {
@@ -87,7 +39,7 @@ public abstract class LasmBase {
             }
             string = "";
             if (i2 > 0) {
-                bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(str)));
+                bufferedReader = new java.io.BufferedReader(new java.io.InputStreamReader(new java.io.FileInputStream(str)));
                 i3 = 0;
                 do {
                     line = bufferedReader.readLine();
@@ -97,7 +49,7 @@ public abstract class LasmBase {
                     bufferedReader.close();
                 } while (i3 != i2);
                 if (z) {
-                    sb = new StringBuilder();
+                    sb = new java.lang.StringBuilder();
                     sb.append("\n");
                     int i4 = i - 1;
                     sb.append(line.substring(0, i4));
@@ -105,11 +57,11 @@ public abstract class LasmBase {
                     sb.append(line.substring(i4));
                     sb.append("\n");
                 } else {
-                    sb = new StringBuilder();
+                    sb = new java.lang.StringBuilder();
                     sb.append("\n");
                     sb.append(line);
                     sb.append("\n");
-                    sb.append(new String(new char[i - 1]).replace("\u0000", "_"));
+                    sb.append(new java.lang.String(new char[i - 1]).replace("\u0000", "_"));
                     sb.append("^\n");
                 }
                 string = sb.toString();
@@ -117,12 +69,12 @@ public abstract class LasmBase {
             }
             return string;
         }
-        fVar = ((e.b) th).f1535a;
+        fVar = ((gg_e.b) th).f1535a;
         i2 = fVar.f1547b;
         i = fVar.f1548c;
         string = "";
         if (i2 > 0) {
-            bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(str)));
+            bufferedReader = new java.io.BufferedReader(new java.io.InputStreamReader(new java.io.FileInputStream(str)));
             i3 = 0;
             do {
                 line = bufferedReader.readLine();
@@ -132,7 +84,7 @@ public abstract class LasmBase {
                 bufferedReader.close();
             } while (i3 != i2);
             if (z) {
-                sb = new StringBuilder();
+                sb = new java.lang.StringBuilder();
                 sb.append("\n");
                 int i5 = i - 1;
                 sb.append(line.substring(0, i5));
@@ -140,11 +92,11 @@ public abstract class LasmBase {
                 sb.append(line.substring(i5));
                 sb.append("\n");
             } else {
-                sb = new StringBuilder();
+                sb = new java.lang.StringBuilder();
                 sb.append("\n");
                 sb.append(line);
                 sb.append("\n");
-                sb.append(new String(new char[i - 1]).replace("\u0000", "_"));
+                sb.append(new java.lang.String(new char[i - 1]).replace("\u0000", "_"));
                 sb.append("^\n");
             }
             string = sb.toString();
@@ -153,47 +105,47 @@ public abstract class LasmBase {
         return string;
     }
 
-    static int d(f fVar) throws e.b {
+    static int d(gg_e.f fVar) throws gg_e.b {
         try {
-            return (int) Long.parseLong(fVar.f1551f.substring(2), 16);
-        } catch (NumberFormatException e2) {
-            throw new e.b(fVar, "Failed parse '" + fVar.f1551f + "' as hex", e2);
+            return (int) java.lang.Long.parseLong(fVar.f1551f.substring(2), 16);
+        } catch (java.lang.NumberFormatException e2) {
+            throw new gg_e.b(fVar, "Failed parse '" + fVar.f1551f + "' as hex", e2);
         }
     }
 
-    static int e(f fVar) {
+    static int e(gg_e.f fVar) {
         return f(fVar, 0);
     }
 
-    static int f(f fVar, int i) throws e.b {
+    static int f(gg_e.f fVar, int i) throws gg_e.b {
         try {
-            return Integer.parseInt(fVar.f1551f.substring(i));
-        } catch (NumberFormatException e2) {
-            throw new e.b(fVar, "Failed parse '" + fVar.f1551f + "' as integer", e2);
+            return java.lang.Integer.parseInt(fVar.f1551f.substring(i));
+        } catch (java.lang.NumberFormatException e2) {
+            throw new gg_e.b(fVar, "Failed parse '" + fVar.f1551f + "' as integer", e2);
         }
     }
 
-    static int g(f fVar, int i) throws e.b {
+    static int g(gg_e.f fVar, int i) throws gg_e.b {
         int iF = f(fVar, 0);
         if (iF <= i) {
             return iF;
         }
-        throw new e.b(fVar, "'" + fVar.f1551f + "' parsed as " + iF + " out of possible range [0; " + i + "]");
+        throw new gg_e.b(fVar, "'" + fVar.f1551f + "' parsed as " + iF + " out of possible range [0; " + i + "]");
     }
 
-    static long h(f fVar) throws e.b {
+    static long h(gg_e.f fVar) throws gg_e.b {
         try {
-            return Long.parseLong(fVar.f1551f);
-        } catch (NumberFormatException e2) {
-            throw new e.b(fVar, "Failed parse '" + fVar.f1551f + "' as long", e2);
+            return java.lang.Long.parseLong(fVar.f1551f);
+        } catch (java.lang.NumberFormatException e2) {
+            throw new gg_e.b(fVar, "Failed parse '" + fVar.f1551f + "' as long", e2);
         }
     }
 
-    static LuaValue i(f fVar) throws e.b {
+    static luaj.LuaValue i(gg_e.f fVar) throws gg_e.b {
         try {
-            return LuaValue.P1(fVar.f1551f, LuaValue.f1677g);
-        } catch (NumberFormatException e2) {
-            throw new e.b(fVar, "Failed parse '" + fVar.f1551f + "' as Lua number", e2);
+            return luaj.LuaValue.P1(fVar.f1551f, luaj.LuaValue.f1677g);
+        } catch (java.lang.NumberFormatException e2) {
+            throw new gg_e.b(fVar, "Failed parse '" + fVar.f1551f + "' as Lua number", e2);
         }
     }
 
@@ -224,14 +176,14 @@ public abstract class LasmBase {
     /* JADX WARN: Code duplicated, block: B:71:0x0103  */
     /* JADX WARN: Code duplicated, block: B:98:0x0147  */
     /* JADX WARN: Switch 'out' block B:114:0x016e for B:21:0x003e already processed. Defaulting to fallback option. */
-    static LuaString j(f fVar) throws e.b {
+    static luaj.LuaString j(gg_e.f fVar) throws gg_e.b {
         int i;
-        String str;
+        java.lang.String str;
         if (fVar.f1546a == 56) {
             return null;
         }
         byte[] bytes = fVar.f1551f.getBytes();
-        f.a aVar = new f.a(bytes.length - 2);
+        gg_f.a aVar = new gg_f.a(bytes.length - 2);
         int length = bytes.length - 1;
         int i2 = 1;
         int i3 = 0;
@@ -246,11 +198,11 @@ public abstract class LasmBase {
                     return aVar.l();
                 }
                 fVar.f1548c += bytes.length - 1;
-                StringBuilder sb = new StringBuilder();
+                java.lang.StringBuilder sb = new java.lang.StringBuilder();
                 sb.append("Unfinished ");
                 sb.append(i3 == 6 ? "unicode" : "hex");
                 sb.append(" escape sequence");
-                throw new e.b(fVar, sb.toString());
+                throw new gg_e.b(fVar, sb.toString());
             }
             byte b2 = bytes[i2];
             if (i3 != 0) {
@@ -265,11 +217,11 @@ public abstract class LasmBase {
                             if (i5 >= i3) {
                                 if (i5 != 2) {
                                     fVar.f1548c += i2;
-                                    StringBuilder sb2 = new StringBuilder();
+                                    java.lang.StringBuilder sb2 = new java.lang.StringBuilder();
                                     sb2.append("Invalid char '");
                                     sb2.append((int) b2);
                                     sb2.append("' (code 0x");
-                                    sb2.append(Integer.toHexString(b2));
+                                    sb2.append(java.lang.Integer.toHexString(b2));
                                     sb2.append(") in ");
                                     sb2.append(i3 == 6 ? "unicode" : "hex");
                                     sb2.append(" escape sequence, must be ");
@@ -279,7 +231,7 @@ public abstract class LasmBase {
                                         str = "\\xXX";
                                     }
                                     sb2.append(str);
-                                    throw new e.b(fVar, sb2.toString());
+                                    throw new gg_e.b(fVar, sb2.toString());
                                 }
                                 b2 = (byte) i4;
                                 i3 = 0;
@@ -300,11 +252,11 @@ public abstract class LasmBase {
                                 if (i5 >= i3) {
                                     if (i5 != 2) {
                                         fVar.f1548c += i2;
-                                        StringBuilder sb3 = new StringBuilder();
+                                        java.lang.StringBuilder sb3 = new java.lang.StringBuilder();
                                         sb3.append("Invalid char '");
                                         sb3.append((int) b2);
                                         sb3.append("' (code 0x");
-                                        sb3.append(Integer.toHexString(b2));
+                                        sb3.append(java.lang.Integer.toHexString(b2));
                                         sb3.append(") in ");
                                         sb3.append(i3 == 6 ? "unicode" : "hex");
                                         sb3.append(" escape sequence, must be ");
@@ -314,7 +266,7 @@ public abstract class LasmBase {
                                             str = "\\xXX";
                                         }
                                         sb3.append(str);
-                                        throw new e.b(fVar, sb3.toString());
+                                        throw new gg_e.b(fVar, sb3.toString());
                                     }
                                     b2 = (byte) i4;
                                     i3 = 0;
@@ -330,11 +282,11 @@ public abstract class LasmBase {
                             if (i5 >= i3) {
                                 if (i5 != 2) {
                                     fVar.f1548c += i2;
-                                    StringBuilder sb4 = new StringBuilder();
+                                    java.lang.StringBuilder sb4 = new java.lang.StringBuilder();
                                     sb4.append("Invalid char '");
                                     sb4.append((int) b2);
                                     sb4.append("' (code 0x");
-                                    sb4.append(Integer.toHexString(b2));
+                                    sb4.append(java.lang.Integer.toHexString(b2));
                                     sb4.append(") in ");
                                     sb4.append(i3 == 6 ? "unicode" : "hex");
                                     sb4.append(" escape sequence, must be ");
@@ -344,7 +296,7 @@ public abstract class LasmBase {
                                         str = "\\xXX";
                                     }
                                     sb4.append(str);
-                                    throw new e.b(fVar, sb4.toString());
+                                    throw new gg_e.b(fVar, sb4.toString());
                                 }
                                 b2 = (byte) i4;
                                 i3 = 0;
@@ -355,7 +307,7 @@ public abstract class LasmBase {
                         } else {
                             i4 /= 16;
                             if (i4 > 1114111) {
-                                throw new e.b(fVar, "UTF-8 value too large: 0x" + Integer.toHexString(i4) + " (max allowed = 0x" + Integer.toHexString(1114111) + ")");
+                                throw new gg_e.b(fVar, "UTF-8 value too large: 0x" + java.lang.Integer.toHexString(i4) + " (max allowed = 0x" + java.lang.Integer.toHexString(1114111) + ")");
                             }
                             aVar.f(i4);
                             i3 = 0;
@@ -385,11 +337,11 @@ public abstract class LasmBase {
                                 if (i5 >= i3) {
                                     if (i5 != 2) {
                                         fVar.f1548c += i2;
-                                        StringBuilder sb5 = new StringBuilder();
+                                        java.lang.StringBuilder sb5 = new java.lang.StringBuilder();
                                         sb5.append("Invalid char '");
                                         sb5.append((int) b2);
                                         sb5.append("' (code 0x");
-                                        sb5.append(Integer.toHexString(b2));
+                                        sb5.append(java.lang.Integer.toHexString(b2));
                                         sb5.append(") in ");
                                         sb5.append(i3 == 6 ? "unicode" : "hex");
                                         sb5.append(" escape sequence, must be ");
@@ -399,7 +351,7 @@ public abstract class LasmBase {
                                             str = "\\xXX";
                                         }
                                         sb5.append(str);
-                                        throw new e.b(fVar, sb5.toString());
+                                        throw new gg_e.b(fVar, sb5.toString());
                                     }
                                     b2 = (byte) i4;
                                     i3 = 0;
@@ -419,11 +371,11 @@ public abstract class LasmBase {
                                         if (i5 >= i3) {
                                             if (i5 != 2) {
                                                 fVar.f1548c += i2;
-                                                StringBuilder sb6 = new StringBuilder();
+                                                java.lang.StringBuilder sb6 = new java.lang.StringBuilder();
                                                 sb6.append("Invalid char '");
                                                 sb6.append((int) b2);
                                                 sb6.append("' (code 0x");
-                                                sb6.append(Integer.toHexString(b2));
+                                                sb6.append(java.lang.Integer.toHexString(b2));
                                                 sb6.append(") in ");
                                                 sb6.append(i3 == 6 ? "unicode" : "hex");
                                                 sb6.append(" escape sequence, must be ");
@@ -433,7 +385,7 @@ public abstract class LasmBase {
                                                     str = "\\xXX";
                                                 }
                                                 sb6.append(str);
-                                                throw new e.b(fVar, sb6.toString());
+                                                throw new gg_e.b(fVar, sb6.toString());
                                             }
                                             b2 = (byte) i4;
                                             i3 = 0;
@@ -449,11 +401,11 @@ public abstract class LasmBase {
                                         if (i5 >= i3) {
                                             if (i5 != 2) {
                                                 fVar.f1548c += i2;
-                                                StringBuilder sb7 = new StringBuilder();
+                                                java.lang.StringBuilder sb7 = new java.lang.StringBuilder();
                                                 sb7.append("Invalid char '");
                                                 sb7.append((int) b2);
                                                 sb7.append("' (code 0x");
-                                                sb7.append(Integer.toHexString(b2));
+                                                sb7.append(java.lang.Integer.toHexString(b2));
                                                 sb7.append(") in ");
                                                 sb7.append(i3 == 6 ? "unicode" : "hex");
                                                 sb7.append(" escape sequence, must be ");
@@ -463,7 +415,7 @@ public abstract class LasmBase {
                                                     str = "\\xXX";
                                                 }
                                                 sb7.append(str);
-                                                throw new e.b(fVar, sb7.toString());
+                                                throw new gg_e.b(fVar, sb7.toString());
                                             }
                                             b2 = (byte) i4;
                                             i3 = 0;
@@ -480,11 +432,11 @@ public abstract class LasmBase {
                                     if (i5 >= i3) {
                                         if (i5 != 2) {
                                             fVar.f1548c += i2;
-                                            StringBuilder sb8 = new StringBuilder();
+                                            java.lang.StringBuilder sb8 = new java.lang.StringBuilder();
                                             sb8.append("Invalid char '");
                                             sb8.append((int) b2);
                                             sb8.append("' (code 0x");
-                                            sb8.append(Integer.toHexString(b2));
+                                            sb8.append(java.lang.Integer.toHexString(b2));
                                             sb8.append(") in ");
                                             sb8.append(i3 == 6 ? "unicode" : "hex");
                                             sb8.append(" escape sequence, must be ");
@@ -494,7 +446,7 @@ public abstract class LasmBase {
                                                 str = "\\xXX";
                                             }
                                             sb8.append(str);
-                                            throw new e.b(fVar, sb8.toString());
+                                            throw new gg_e.b(fVar, sb8.toString());
                                         }
                                         b2 = (byte) i4;
                                         i3 = 0;
@@ -510,11 +462,11 @@ public abstract class LasmBase {
                                     if (i5 >= i3) {
                                         if (i5 != 2) {
                                             fVar.f1548c += i2;
-                                            StringBuilder sb9 = new StringBuilder();
+                                            java.lang.StringBuilder sb9 = new java.lang.StringBuilder();
                                             sb9.append("Invalid char '");
                                             sb9.append((int) b2);
                                             sb9.append("' (code 0x");
-                                            sb9.append(Integer.toHexString(b2));
+                                            sb9.append(java.lang.Integer.toHexString(b2));
                                             sb9.append(") in ");
                                             sb9.append(i3 == 6 ? "unicode" : "hex");
                                             sb9.append(" escape sequence, must be ");
@@ -524,7 +476,7 @@ public abstract class LasmBase {
                                                 str = "\\xXX";
                                             }
                                             sb9.append(str);
-                                            throw new e.b(fVar, sb9.toString());
+                                            throw new gg_e.b(fVar, sb9.toString());
                                         }
                                         b2 = (byte) i4;
                                         i3 = 0;

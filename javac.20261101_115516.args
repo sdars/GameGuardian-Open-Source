@@ -1,0 +1,7 @@
+-cp
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-sourcepath
+app/src/main/java
+-d
+tmp/jtest3/out
+tmp/jtest3/T3.java

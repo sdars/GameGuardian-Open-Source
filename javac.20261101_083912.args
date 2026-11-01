@@ -1,0 +1,11 @@
+-source
+8
+-target
+8
+-Xmaxerrs
+3000
+-cp
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-d
+tmp/javac-all-083911/classes
+@tmp/javac-all-083911/sources.txt

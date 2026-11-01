@@ -1,11 +1,5 @@
 package android.ext;
 
-import java.io.ByteArrayOutputStream;
-import java.io.EOFException;
-import java.io.File;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class h3 {
     /* JADX WARN: Code duplicated, block: B:14:0x002c A[Catch: all -> 0x001a, IOException -> 0x001f, TRY_LEAVE, TryCatch #20 {IOException -> 0x001f, blocks: (B:7:0x0015, B:14:0x002c, B:30:0x0088, B:72:0x015c, B:74:0x0162, B:77:0x0195, B:79:0x01ba, B:75:0x018d, B:82:0x01e0, B:90:0x021b, B:99:0x025f, B:101:0x0299, B:109:0x02c3, B:115:0x02e7, B:117:0x02f2, B:123:0x031a, B:138:0x0365, B:144:0x0387), top: B:203:0x0015 }] */
@@ -17,25 +11,28 @@ public abstract class h3 {
     /* JADX WARN: Code duplicated, block: B:228:? A[RETURN, SYNTHETIC] */
     /* JADX WARN: Code duplicated, block: B:230:? A[SYNTHETIC] */
     /* JADX WARN: Instruction removed from duplicated block: B:14:0x002c, please report this as an issue */
-    public static void a(File file) throws Throwable {
-        Throwable th;
-        RandomAccessFile randomAccessFile;
+    public static void a(java.io.File file) {
+java.lang.Throwable e = null;
+java.lang.Throwable th = null;
+java.lang.Throwable th2 = null;
+        java.lang.Throwable th;
+        java.io.RandomAccessFile randomAccessFile;
         boolean z;
-        Throwable th2;
+        java.lang.Throwable th2;
         short sE;
         int iD;
         long jD;
         long j;
-        String str = "ZipAlign close fail";
+        java.lang.String str = "ZipAlign close fail";
         try {
             try {
-                RandomAccessFile randomAccessFile2 = new RandomAccessFile(file, "rw");
+                java.io.RandomAccessFile randomAccessFile2 = new java.io.RandomAccessFile(file, "rw");
                 try {
                     try {
                         long length = randomAccessFile2.length();
                         if (length != 0) {
                             if (length < 22) {
-                                e1.p("ZipAlign small size: " + length + ' ' + file.getAbsolutePath());
+                                android.ext.e1.p("ZipAlign small size: " + length + ' ' + file.getAbsolutePath());
                                 randomAccessFile2.close();
                                 return;
                             }
@@ -44,15 +41,15 @@ public abstract class h3 {
                             sE = e(randomAccessFile2);
                             iD = d(randomAccessFile2);
                             jD = d(randomAccessFile2);
-                            String str2 = ", ";
+                            java.lang.String str2 = ", ";
                             if (sE > 0) {
                             }
-                            e1.p("bad values in EOCD: " + ((int) sE) + ", " + iD + ", " + jD);
+                            android.ext.e1.p("bad values in EOCD: " + ((int) sE) + ", " + iD + ", " + jD);
                             randomAccessFile2.close();
                             return;
                             randomAccessFile = randomAccessFile2;
                             z = false;
-                            e1.l("ZipAlign fail", e);
+                            android.ext.e1.l("ZipAlign fail", e);
                             if (z) {
                                 throw e;
                             }
@@ -65,12 +62,12 @@ public abstract class h3 {
                         try {
                             length = file.length();
                             if (length < 22) {
-                                e1.p("ZipAlign small size: " + length + ' ' + file.getAbsolutePath());
+                                android.ext.e1.p("ZipAlign small size: " + length + ' ' + file.getAbsolutePath());
                                 try {
                                     randomAccessFile2.close();
                                     return;
-                                } catch (Throwable th3) {
-                                    e1.l("ZipAlign close fail", th3);
+                                } catch (java.lang.Throwable th3) {
+                                    android.ext.e1.l("ZipAlign close fail", th3);
                                     return;
                                 }
                             }
@@ -79,41 +76,41 @@ public abstract class h3 {
                             sE = e(randomAccessFile2);
                             iD = d(randomAccessFile2);
                             jD = d(randomAccessFile2);
-                            String str3 = ", ";
+                            java.lang.String str3 = ", ";
                             if (sE > 0 || iD <= 0 || jD <= 0) {
-                                e1.p("bad values in EOCD: " + ((int) sE) + ", " + iD + ", " + jD);
+                                android.ext.e1.p("bad values in EOCD: " + ((int) sE) + ", " + iD + ", " + jD);
                                 try {
                                     randomAccessFile2.close();
                                     return;
-                                } catch (Throwable th4) {
-                                    e1.l("ZipAlign close fail", th4);
+                                } catch (java.lang.Throwable th4) {
+                                    android.ext.e1.l("ZipAlign close fail", th4);
                                     return;
                                 }
                             }
                             long j4 = ((long) iD) + jD;
-                            String str4 = " + ";
-                            String str5 = " = ";
+                            java.lang.String str4 = " + ";
+                            java.lang.String str5 = " = ";
                             if (j3 != j4) {
-                                e1.p("Bad EOCD offset: " + j3 + " != " + j4 + " = " + jD + " + " + iD);
+                                android.ext.e1.p("Bad EOCD offset: " + j3 + " != " + j4 + " = " + jD + " + " + iD);
                                 try {
                                     randomAccessFile2.close();
                                     return;
-                                } catch (Throwable th5) {
-                                    e1.l("ZipAlign close fail", th5);
+                                } catch (java.lang.Throwable th5) {
+                                    android.ext.e1.l("ZipAlign close fail", th5);
                                     return;
                                 }
                             }
                             try {
-                                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(iD + 22);
+                                java.io.ByteArrayOutputStream byteArrayOutputStream = new java.io.ByteArrayOutputStream(iD + 22);
                                 long j5 = length;
                                 long j6 = jD;
                                 long j7 = j6;
                                 int i = 0;
                                 while (i < sE) {
-                                    String str6 = str3;
+                                    java.lang.String str6 = str3;
                                     if (j6 >= j4) {
                                         try {
-                                            StringBuilder sb = new StringBuilder();
+                                            java.lang.StringBuilder sb = new java.lang.StringBuilder();
                                             try {
                                                 sb.append("Out from CD: ");
                                                 sb.append(i);
@@ -127,18 +124,18 @@ public abstract class h3 {
                                                 sb.append(jD);
                                                 sb.append(str4);
                                                 sb.append(iD);
-                                                e1.p(sb.toString());
+                                                android.ext.e1.p(sb.toString());
                                                 try {
                                                     randomAccessFile2.close();
                                                     return;
-                                                } catch (Throwable th6) {
-                                                    e1.l("ZipAlign close fail", th6);
+                                                } catch (java.lang.Throwable th6) {
+                                                    android.ext.e1.l("ZipAlign close fail", th6);
                                                     return;
                                                 }
-                                            } catch (IOException e2) {
+                                            } catch (java.io.IOException e2) {
                                                 e = e2;
                                                 str = "ZipAlign close fail";
-                                            } catch (Throwable th7) {
+                                            } catch (java.lang.Throwable th7) {
                                                 th2 = th7;
                                                 str = "ZipAlign close fail";
                                                 randomAccessFile = randomAccessFile2;
@@ -149,14 +146,14 @@ public abstract class h3 {
                                                 try {
                                                     randomAccessFile.close();
                                                     throw th;
-                                                } catch (Throwable th8) {
-                                                    e1.l(str, th8);
+                                                } catch (java.lang.Throwable th8) {
+                                                    android.ext.e1.l(str, th8);
                                                     throw th;
                                                 }
                                             }
-                                        } catch (IOException e3) {
+                                        } catch (java.io.IOException e3) {
                                             e = e3;
-                                        } catch (Throwable th9) {
+                                        } catch (java.lang.Throwable th9) {
                                             th2 = th9;
                                         }
                                     } else {
@@ -166,19 +163,19 @@ public abstract class h3 {
                                         short sE2 = e(randomAccessFile2);
                                         short sE3 = e(randomAccessFile2);
                                         if (sE2 < 0 || sE3 < 0) {
-                                            e1.p("bad len for " + i + ": " + ((int) sE2) + str6 + ((int) sE3));
+                                            android.ext.e1.p("bad len for " + i + ": " + ((int) sE2) + str6 + ((int) sE3));
                                             try {
                                                 randomAccessFile2.close();
                                                 return;
-                                            } catch (Throwable th10) {
-                                                e1.l("ZipAlign close fail", th10);
+                                            } catch (java.lang.Throwable th10) {
+                                                android.ext.e1.l("ZipAlign close fail", th10);
                                                 return;
                                             }
                                         }
                                         int i3 = sE2 + 46;
                                         byte[] bArr = new byte[i3];
                                         randomAccessFile2.seek(j6);
-                                        String str7 = str4;
+                                        java.lang.String str7 = str4;
                                         short s = sE;
                                         int i4 = 0;
                                         int i5 = 0;
@@ -188,14 +185,14 @@ public abstract class h3 {
                                             }
                                             int i6 = randomAccessFile2.read(bArr, i4, i3 - i4);
                                             if (i6 < 0) {
-                                                e1.p("Failed read buf 1: " + i + "; " + i6 + ' ' + i4 + ' ' + i3);
+                                                android.ext.e1.p("Failed read buf 1: " + i + "; " + i6 + ' ' + i4 + ' ' + i3);
                                                 break;
                                             }
                                             i4 += i6;
                                             i5++;
                                         }
                                         if (i4 < i3) {
-                                            e1.p("Failed read buf 2: " + i + "; " + i4 + ' ' + i3);
+                                            android.ext.e1.p("Failed read buf 2: " + i + "; " + i4 + ' ' + i3);
                                         }
                                         bArr[30] = 0;
                                         bArr[31] = 0;
@@ -211,17 +208,17 @@ public abstract class h3 {
                                         str5 = str5;
                                     }
                                 }
-                                String str8 = str5;
-                                String str9 = str4;
+                                java.lang.String str8 = str5;
+                                java.lang.String str9 = str4;
                                 int i7 = iD;
                                 long j9 = jD;
                                 if (j6 != j4) {
-                                    e1.p("Not all CD reads: " + j6 + " != " + j4 + str8 + j9 + str9 + i7);
+                                    android.ext.e1.p("Not all CD reads: " + j6 + " != " + j4 + str8 + j9 + str9 + i7);
                                     try {
                                         randomAccessFile2.close();
                                         return;
-                                    } catch (Throwable th11) {
-                                        e1.l("ZipAlign close fail", th11);
+                                    } catch (java.lang.Throwable th11) {
+                                        android.ext.e1.l("ZipAlign close fail", th11);
                                         return;
                                     }
                                 }
@@ -239,33 +236,33 @@ public abstract class h3 {
                                     j6 += j10;
                                     j = j7 + j10;
                                     if (j6 != j5) {
-                                        e1.p("Fail check end: " + j6 + " != " + j5);
+                                        android.ext.e1.p("Fail check end: " + j6 + " != " + j5);
                                         try {
                                             randomAccessFile2.close();
                                             return;
-                                        } catch (Throwable th12) {
-                                            e1.l("ZipAlign close fail", th12);
+                                        } catch (java.lang.Throwable th12) {
+                                            android.ext.e1.l("ZipAlign close fail", th12);
                                             return;
                                         }
                                     }
                                     if (j > j6) {
-                                        e1.p("Fail check new length: " + j + " > " + j6);
+                                        android.ext.e1.p("Fail check new length: " + j + " > " + j6);
                                         try {
                                             randomAccessFile2.close();
                                             return;
-                                        } catch (Throwable th13) {
-                                            e1.l("ZipAlign close fail", th13);
+                                        } catch (java.lang.Throwable th13) {
+                                            android.ext.e1.l("ZipAlign close fail", th13);
                                             return;
                                         }
                                     }
                                     byte[] byteArray = byteArrayOutputStream.toByteArray();
                                     if (j != ((long) byteArray.length) + j9) {
-                                        e1.p("Fail check buffer length: " + j + " != " + j9 + byteArray.length);
+                                        android.ext.e1.p("Fail check buffer length: " + j + " != " + j9 + byteArray.length);
                                         try {
                                             randomAccessFile2.close();
                                             return;
-                                        } catch (Throwable th14) {
-                                            e1.l("ZipAlign close fail", th14);
+                                        } catch (java.lang.Throwable th14) {
+                                            android.ext.e1.l("ZipAlign close fail", th14);
                                             return;
                                         }
                                     }
@@ -274,7 +271,7 @@ public abstract class h3 {
                                     try {
                                         randomAccessFile2.write(byteArray);
                                         randomAccessFile2.setLength(j);
-                                    } catch (IOException e4) {
+                                    } catch (java.io.IOException e4) {
                                         e = e4;
                                         randomAccessFile = randomAccessFile2;
                                     }
@@ -284,12 +281,12 @@ public abstract class h3 {
                                 }
                                 randomAccessFile2.close();
                                 try {
-                                    e1.d("ZipAlign fix: " + j6 + " => " + j + " (" + (j6 - j) + ')');
+                                    android.ext.e1.d("ZipAlign fix: " + j6 + " => " + j + " (" + (j6 - j) + ')');
                                     return;
-                                } catch (IOException e5) {
+                                } catch (java.io.IOException e5) {
                                     e = e5;
                                     randomAccessFile = null;
-                                    e1.l("ZipAlign fail", e);
+                                    android.ext.e1.l("ZipAlign fail", e);
                                     if (z) {
                                         throw e;
                                     }
@@ -297,30 +294,30 @@ public abstract class h3 {
                                         try {
                                             randomAccessFile.close();
                                             return;
-                                        } catch (Throwable th15) {
-                                            e1.l(str, th15);
+                                        } catch (java.lang.Throwable th15) {
+                                            android.ext.e1.l(str, th15);
                                             return;
                                         }
                                     }
                                     return;
                                 }
-                            } catch (Throwable th16) {
-                                e1.s("ZipAlign failed alloc: " + (iD + 22), th16);
+                            } catch (java.lang.Throwable th16) {
+                                android.ext.e1.s("ZipAlign failed alloc: " + (iD + 22), th16);
                                 try {
                                     randomAccessFile2.close();
                                     return;
-                                } catch (Throwable th17) {
-                                    e1.l("ZipAlign close fail", th17);
+                                } catch (java.lang.Throwable th17) {
+                                    android.ext.e1.l("ZipAlign close fail", th17);
                                     return;
                                 }
                             }
-                        } catch (IOException e6) {
+                        } catch (java.io.IOException e6) {
                             e = e6;
                         }
                         randomAccessFile = randomAccessFile2;
                         z = false;
                         try {
-                            e1.l("ZipAlign fail", e);
+                            android.ext.e1.l("ZipAlign fail", e);
                             if (z) {
                                 throw e;
                             }
@@ -329,7 +326,7 @@ public abstract class h3 {
                                 return;
                             }
                             return;
-                        } catch (Throwable th18) {
+                        } catch (java.lang.Throwable th18) {
                             th2 = th18;
                             th = th2;
                             if (randomAccessFile == null) {
@@ -338,18 +335,18 @@ public abstract class h3 {
                             randomAccessFile.close();
                             throw th;
                         }
-                    } catch (Throwable th19) {
+                    } catch (java.lang.Throwable th19) {
                         th = th19;
                         randomAccessFile = randomAccessFile2;
                     }
-                } catch (IOException e7) {
+                } catch (java.io.IOException e7) {
                     e = e7;
                 }
-            } catch (IOException e8) {
+            } catch (java.io.IOException e8) {
                 e = e8;
                 z = false;
             }
-        } catch (Throwable th20) {
+        } catch (java.lang.Throwable th20) {
             th = th20;
             randomAccessFile = null;
         }
@@ -360,7 +357,7 @@ public abstract class h3 {
         throw th;
     }
 
-    static boolean b(String str) {
+    static boolean b(java.lang.String str) {
         return str != null && str.startsWith("lib/") && str.endsWith(".so") && str.lastIndexOf(47) > 4;
     }
 
@@ -368,7 +365,7 @@ public abstract class h3 {
         return (j & 4095) == 0;
     }
 
-    public static int d(RandomAccessFile randomAccessFile) throws IOException {
+    public static int d(java.io.RandomAccessFile randomAccessFile) throws java.io.IOException {
         int i = randomAccessFile.read();
         int i2 = randomAccessFile.read();
         int i3 = randomAccessFile.read();
@@ -376,41 +373,42 @@ public abstract class h3 {
         if ((i | i2 | i3 | i4) >= 0) {
             return (i4 << 24) + (i3 << 16) + (i2 << 8) + i;
         }
-        throw new EOFException();
+        throw new java.io.EOFException();
     }
 
-    private static short e(RandomAccessFile randomAccessFile) throws IOException {
+    private static short e(java.io.RandomAccessFile randomAccessFile) throws java.io.IOException {
         int i = randomAccessFile.read();
         int i2 = randomAccessFile.read();
         if ((i | i2) >= 0) {
             return (short) ((i2 << 8) + i);
         }
-        throw new EOFException();
+        throw new java.io.EOFException();
     }
 
-    public static void f(File file) throws Throwable {
-        RandomAccessFile randomAccessFile = null;
+    public static void f(java.io.File file) {
+java.lang.Throwable th = null;
+        java.io.RandomAccessFile randomAccessFile = null;
         try {
-            RandomAccessFile randomAccessFile2 = new RandomAccessFile(file, "r");
+            java.io.RandomAccessFile randomAccessFile2 = new java.io.RandomAccessFile(file, "r");
             try {
                 long length = randomAccessFile2.length();
                 if (length < 22) {
-                    throw new IOException("ZipAlign native-lib check: too small for a zip: " + length);
+                    throw new java.io.IOException("ZipAlign native-lib check: too small for a zip: " + length);
                 }
                 randomAccessFile2.seek(length - 12);
-                short s = 65535;
+                short s = (short) 65535;
                 int iE = e(randomAccessFile2) & 65535;
                 int iD = d(randomAccessFile2);
                 long jD = d(randomAccessFile2);
                 if (iE <= 0 || iD <= 0 || jD <= 0) {
-                    throw new IOException("ZipAlign native-lib check: unreadable central directory");
+                    throw new java.io.IOException("ZipAlign native-lib check: unreadable central directory");
                 }
                 randomAccessFile2.seek(jD);
                 int i = 0;
                 int i2 = 0;
                 while (i < iE) {
                     if (d(randomAccessFile2) != 33639248) {
-                        throw new IOException("ZipAlign native-lib check: bad central-directory signature");
+                        throw new java.io.IOException("ZipAlign native-lib check: bad central-directory signature");
                     }
                     randomAccessFile2.skipBytes(6);
                     short sE = e(randomAccessFile2);
@@ -422,48 +420,48 @@ public abstract class h3 {
                     long jD2 = ((long) d(randomAccessFile2)) & 4294967295L;
                     byte[] bArr = new byte[iE2];
                     randomAccessFile2.readFully(bArr);
-                    String str = new String(bArr, "UTF-8");
+                    java.lang.String str = new java.lang.String(bArr, "UTF-8");
                     long filePointer = ((long) iE4) + randomAccessFile2.getFilePointer() + ((long) iE3);
                     if (b(str)) {
                         randomAccessFile2.seek(jD2 + 26);
                         int i3 = i2;
                         long jE = jD2 + 30 + ((long) (e(randomAccessFile2) & 65535)) + ((long) (e(randomAccessFile2) & 65535));
                         if (sE != 0) {
-                            e1.i("ZipAlign native-lib check: " + str + " is compressed (method " + ((int) sE) + ")");
-                            throw new IOException("ZipAlign native-lib check failed: " + str + " is compressed");
+                            android.ext.e1.i("ZipAlign native-lib check: " + str + " is compressed (method " + ((int) sE) + ")");
+                            throw new java.io.IOException("ZipAlign native-lib check failed: " + str + " is compressed");
                         }
                         if (!c(jE)) {
-                            e1.i("ZipAlign native-lib check: " + str + " data offset " + jE + " is not page-aligned");
-                            throw new IOException("ZipAlign native-lib check failed: " + str + " is not page-aligned");
+                            android.ext.e1.i("ZipAlign native-lib check: " + str + " data offset " + jE + " is not page-aligned");
+                            throw new java.io.IOException("ZipAlign native-lib check failed: " + str + " is not page-aligned");
                         }
                         i2 = i3 + 1;
                     }
                     randomAccessFile2.seek(filePointer);
                     i++;
-                    s = 65535;
+                    s = (short) 65535;
                 }
-                e1.d("ZipAlign native-lib check: " + i2 + " lib entries ok");
+                android.ext.e1.d("ZipAlign native-lib check: " + i2 + " lib entries ok");
                 try {
                     randomAccessFile2.close();
-                } catch (Throwable th) {
-                    e1.l("ZipAlign close fail", th);
+                } catch (java.lang.Throwable th_c) {
+                    android.ext.e1.l("ZipAlign close fail", th_c);
                 }
-            } catch (Throwable th2) {
+            } catch (java.lang.Throwable th2) {
                 th = th2;
                 randomAccessFile = randomAccessFile2;
-                Throwable th3 = th;
+                java.lang.Throwable th3 = th;
                 if (randomAccessFile == null) {
                     throw th3;
                 }
                 try {
                     randomAccessFile.close();
                     throw th3;
-                } catch (Throwable th4) {
-                    e1.l("ZipAlign close fail", th4);
+                } catch (java.lang.Throwable th4) {
+                    android.ext.e1.l("ZipAlign close fail", th4);
                     throw th3;
                 }
             }
-        } catch (Throwable th5) {
+        } catch (java.lang.Throwable th5) {
             th = th5;
         }
     }

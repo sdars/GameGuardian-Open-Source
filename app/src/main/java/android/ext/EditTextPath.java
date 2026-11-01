@@ -1,153 +1,21 @@
 package android.ext;
 
-import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import android.view.DragEvent;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.accessibility.AccessibilityNodeInfo;
-import android.widget.AutoCompleteTextView;
-import android.widget.BaseAdapter;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.TextView;
-import catch_.me_.if_.you_.can_.R;
-import java.io.File;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.Locale;
-
 /* JADX INFO: loaded from: classes.dex */
-public class EditTextPath extends AutoCompleteTextView implements k0 {
+public class EditTextPath extends android.widget.AutoCompleteTextView implements android.ext.k0 {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private int f115a;
+    int f115a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private int f116b;
 
-    class a extends BaseAdapter implements Filterable {
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        private File[] f118b = null;
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final Filter f117a = new C0004a();
-
-        /* JADX INFO: renamed from: android.ext.EditTextPath$a$a, reason: collision with other inner class name */
-        class C0004a extends Filter {
-            C0004a() {
-            }
-
-            private String a(CharSequence charSequence) {
-                return (charSequence == null || charSequence.length() == 0) ? "/" : charSequence.toString();
-            }
-
-            @Override // android.widget.Filter
-            protected Filter.FilterResults performFiltering(CharSequence charSequence) {
-                String[] strArrD;
-                Filter.FilterResults filterResults = new Filter.FilterResults();
-                if (charSequence != null) {
-                    String strA = a(charSequence);
-                    File file = new File(strA);
-                    boolean zEndsWith = strA.endsWith("/");
-                    File parentFile = zEndsWith ? file : file.getParentFile();
-                    String lowerCase = (zEndsWith ? "" : file.getName()).toLowerCase(Locale.US);
-                    if (parentFile.exists() && (strArrD = PathSelector.d(parentFile)) != null && strArrD.length > 0) {
-                        ArrayList arrayListE = PathSelector.e(EditTextPath.this.f115a, parentFile, strArrD, lowerCase, true);
-                        int size = arrayListE.size();
-                        if (size == 1 && ((PathSelector.d) arrayListE.get(0)).f336b.equals(lowerCase)) {
-                            size = 0;
-                        }
-                        if (size > 0) {
-                            File[] fileArr = new File[size];
-                            for (int i = 0; i < size; i++) {
-                                fileArr[i] = ((PathSelector.d) arrayListE.get(i)).f335a;
-                            }
-                            filterResults.values = fileArr;
-                            filterResults.count = size;
-                        }
-                    }
-                }
-                return filterResults;
-            }
-
-            /* JADX WARN: Code duplicated, block: B:8:0x000e  */
-            @Override // android.widget.Filter
-            protected void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
-                File[] fileArr;
-                a aVar = a.this;
-                if (filterResults != null) {
-                    Object obj = filterResults.values;
-                    if (obj instanceof File[]) {
-                        fileArr = (File[]) obj;
-                    } else {
-                        fileArr = null;
-                    }
-                } else {
-                    fileArr = null;
-                }
-                aVar.f118b = fileArr;
-                a.this.notifyDataSetChanged();
-            }
-        }
-
-        public a() {
-        }
-
-        @Override // android.widget.Adapter
-        public int getCount() {
-            File[] fileArr = this.f118b;
-            if (fileArr == null) {
-                return 0;
-            }
-            return fileArr.length;
-        }
-
-        @Override // android.widget.Filterable
-        public Filter getFilter() {
-            return this.f117a;
-        }
-
-        @Override // android.widget.Adapter
-        public Object getItem(int i) {
-            File[] fileArr = this.f118b;
-            if (fileArr == null || i < 0 || i >= fileArr.length) {
-                return null;
-            }
-            return fileArr[i];
-        }
-
-        @Override // android.widget.Adapter
-        public long getItemId(int i) {
-            return i;
-        }
-
-        @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            if (view == null) {
-                view = a.d.g(R.layout.path_suggestion, viewGroup, false);
-            }
-            Object item = getItem(i);
-            if (item instanceof File) {
-                ((TextView) view.findViewById(R.id.text1)).setText(".../" + ((File) item).getName());
-            }
-            return view;
-        }
-    }
-
-    public EditTextPath(Context context, AttributeSet attributeSet) {
+    public EditTextPath(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f115a = 0;
         this.f116b = -1;
-        setAdapter(new a());
+        setAdapter(new android.ext.EditTextPath$a(this));
         if (!isInEditMode()) {
-            setInputType((Config.B & 8) != 0 ? 1 : 524289);
+            setInputType((android.ext.Config.B & 8) != 0 ? 1 : 524289);
         }
         setSingleLine(true);
         setSelectAllOnFocus(true);
@@ -155,13 +23,13 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
         setCursorVisible(true);
         setFocusableInTouchMode(true);
         try {
-            Field declaredField = TextView.class.getDeclaredField("mCursorDrawableRes");
+            java.lang.reflect.Field declaredField = android.widget.TextView.class.getDeclaredField("mCursorDrawableRes");
             declaredField.setAccessible(true);
             declaredField.set(this, 0);
-        } catch (Exception unused) {
+        } catch (java.lang.Exception unused) {
         }
         if (!isInEditMode()) {
-            EditText.a(this);
+            android.ext.EditText.a(this);
         }
         setInputType(getInputType() | 262144);
         setHorizontallyScrolling(false);
@@ -172,8 +40,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void dispatchWindowFocusChanged(boolean z) {
         try {
             super.dispatchWindowFocusChanged(z);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -181,8 +49,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     protected void drawableStateChanged() {
         try {
             super.drawableStateChanged();
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -199,62 +67,62 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
         return false;
     }
 
-    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable.Callback
-    public void invalidateDrawable(Drawable drawable) {
+    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable$Callback
+    public void invalidateDrawable(android.graphics.drawable.Drawable drawable) {
         try {
             super.invalidateDrawable(drawable);
-        } catch (NoSuchFieldError e2) {
-            e1.a(e2);
+        } catch (java.lang.NoSuchFieldError e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onDragEvent(DragEvent dragEvent) {
+    public boolean onDragEvent(android.view.DragEvent dragEvent) {
         try {
             return super.onDragEvent(dragEvent);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(android.graphics.Canvas canvas) {
         try {
             super.onDraw(canvas);
-        } catch (ArrayIndexOutOfBoundsException | NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException | java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
-    protected void onFocusChanged(boolean z, int i, Rect rect) {
+    protected void onFocusChanged(boolean z, int i, android.graphics.Rect rect) {
         try {
             int imeOptions = super.getImeOptions();
             if ((imeOptions & 1912602624) != 1912602624) {
                 super.setImeOptions(imeOptions | 1912602624);
             }
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
         try {
             super.onFocusChanged(z, i, rect);
-        } catch (Throwable th2) {
-            e1.a(th2);
+        } catch (java.lang.Throwable th2) {
+            android.ext.e1.a(th2);
         }
     }
 
     @Override // android.view.View
-    public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
+    public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo accessibilityNodeInfo) {
         try {
             super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.AutoCompleteTextView, android.widget.TextView, android.view.View
-    public boolean onKeyPreIme(int i, KeyEvent keyEvent) {
+    public boolean onKeyPreIme(int i, android.view.KeyEvent keyEvent) {
         boolean zIsPopupShowing = isPopupShowing();
         if (i == 66 && zIsPopupShowing) {
             return true;
@@ -263,11 +131,11 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     }
 
     @Override // android.widget.EditText, android.widget.TextView, android.view.View
-    public boolean onKeyShortcut(int i, KeyEvent keyEvent) {
+    public boolean onKeyShortcut(int i, android.view.KeyEvent keyEvent) {
         try {
             return super.onKeyShortcut(i, keyEvent);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
@@ -276,9 +144,9 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
-            n0.h(Thread.currentThread(), th, false);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
+            android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
         }
     }
 
@@ -286,18 +154,18 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public boolean onTextContextMenuItem(int i) {
         try {
             return super.onTextContextMenuItem(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
+    public boolean onTouchEvent(android.view.MotionEvent motionEvent) {
         try {
             return super.onTouchEvent(motionEvent);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -306,8 +174,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void onWindowFocusChanged(boolean z) {
         try {
             super.onWindowFocusChanged(z);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -315,8 +183,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public boolean performLongClick() {
         try {
             return super.performLongClick();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -325,8 +193,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -334,8 +202,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void refreshDrawableState() {
         try {
             super.refreshDrawableState();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -343,17 +211,17 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
     @Override // android.widget.TextView
-    public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
+    public void setCompoundDrawables(android.graphics.drawable.Drawable drawable, android.graphics.drawable.Drawable drawable2, android.graphics.drawable.Drawable drawable3, android.graphics.drawable.Drawable drawable4) {
         try {
             super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        } catch (StringIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.StringIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -371,8 +239,8 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     public void setImeOptions(int i) {
         try {
             super.setImeOptions(i | 1912602624);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -386,11 +254,11 @@ public class EditTextPath extends AutoCompleteTextView implements k0 {
     }
 
     @Override // android.widget.EditText, android.widget.TextView
-    public void setText(CharSequence charSequence, TextView.BufferType bufferType) {
+    public void setText(java.lang.CharSequence charSequence, android.widget.TextView.BufferType textView$BufferType) {
         try {
-            super.setText(charSequence, bufferType);
-        } catch (NullPointerException | SecurityException e2) {
-            e1.a(e2);
+            super.setText(charSequence, textView$BufferType);
+        } catch (java.lang.NullPointerException | java.lang.SecurityException e2) {
+            android.ext.e1.a(e2);
         }
     }
 }

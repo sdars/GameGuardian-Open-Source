@@ -1,7 +1,7 @@
 package lasm;
 
 /* JADX INFO: loaded from: classes.dex */
-public class c extends Error {
+public class c extends java.lang.Error {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     int f1642a;
@@ -12,14 +12,20 @@ public class c extends Error {
     /* JADX INFO: renamed from: c, reason: collision with root package name */
     int f1644c;
 
-    public c(String str, int i) {
+    public c(java.lang.String str, int i) {
         super(str);
         this.f1642a = i;
     }
 
-    protected static String a(boolean z, int i, int i2, int i3, String str, char c2) {
-        String str2;
-        StringBuilder sb = new StringBuilder();
+    public c(boolean z, int i, int i2, int i3, java.lang.String str, char c2, int i4) {
+        this(a(z, i, i2, i3, str, c2), i4);
+        this.f1643b = i2;
+        this.f1644c = i3;
+    }
+
+    protected static java.lang.String a(boolean z, int i, int i2, int i3, java.lang.String str, char c2) {
+        java.lang.String str2;
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         sb.append("Lexical error at line ");
         sb.append(i2);
         sb.append(", column ");
@@ -28,7 +34,7 @@ public class c extends Error {
         if (z) {
             str2 = "<EOF> ";
         } else {
-            str2 = "\"" + b(String.valueOf(c2)) + "\" (" + ((int) c2) + "), ";
+            str2 = "\"" + b(java.lang.String.valueOf(c2)) + "\" (" + ((int) c2) + "), ";
         }
         sb.append(str2);
         sb.append("after : \"");
@@ -37,9 +43,9 @@ public class c extends Error {
         return sb.toString();
     }
 
-    protected static final String b(String str) {
-        String str2;
-        StringBuffer stringBuffer = new StringBuffer();
+    protected static final java.lang.String b(java.lang.String str) {
+        java.lang.String str2;
+        java.lang.StringBuffer stringBuffer = new java.lang.StringBuffer();
         for (int i = 0; i < str.length(); i++) {
             char cCharAt = str.charAt(i);
             if (cCharAt != 0) {
@@ -65,7 +71,7 @@ public class c extends Error {
                         default:
                             char cCharAt2 = str.charAt(i);
                             if (cCharAt2 < ' ' || cCharAt2 > '~') {
-                                String str3 = "0000" + Integer.toString(cCharAt2, 16);
+                                java.lang.String str3 = "0000" + java.lang.Integer.toString(cCharAt2, 16);
                                 str2 = "\\u" + str3.substring(str3.length() - 4, str3.length());
                             } else {
                                 stringBuffer.append(cCharAt2);
@@ -82,13 +88,7 @@ public class c extends Error {
     }
 
     @Override // java.lang.Throwable
-    public String getMessage() {
+    public java.lang.String getMessage() {
         return super.getMessage();
-    }
-
-    public c(boolean z, int i, int i2, int i3, String str, char c2, int i4) {
-        this(a(z, i, i2, i3, str, c2), i4);
-        this.f1643b = i2;
-        this.f1644c = i3;
     }
 }

@@ -1,8 +1,5 @@
 package android.ext;
 
-import android.text.Editable;
-import catch_.me_.if_.you_.can_.R;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class x0 {
 
@@ -10,60 +7,7 @@ public abstract class x0 {
     public static final char[] f1306a = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private static String f1307b = null;
-
-    static class a {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        Editable f1308a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        int f1309b = 1;
-
-        public a(Editable editable) {
-            this.f1308a = editable;
-            while (this.f1309b < editable.length()) {
-                char cCharAt = editable.charAt(this.f1309b);
-                if (cCharAt != ' ' && cCharAt != '\t') {
-                    return;
-                } else {
-                    this.f1309b++;
-                }
-            }
-        }
-
-        void a(String str) {
-            if (this.f1309b <= this.f1308a.length()) {
-                this.f1308a.insert(this.f1309b, str);
-            }
-            this.f1309b += str.length();
-        }
-
-        void b(int i, String str) {
-            int i2 = this.f1309b;
-            c(i);
-            if (this.f1309b <= this.f1308a.length()) {
-                this.f1308a.replace(i2, this.f1309b, str);
-            }
-            this.f1309b += str.length() - (this.f1309b - i2);
-        }
-
-        void c(int i) {
-            char cCharAt;
-            int i2 = i * 2;
-            for (int i3 = 0; i3 < i2; i3++) {
-                int i4 = this.f1309b;
-                while (true) {
-                    this.f1309b = i4 + 1;
-                    if (this.f1309b >= this.f1308a.length() || !((cCharAt = this.f1308a.charAt(this.f1309b)) == ' ' || cCharAt == '\t')) {
-                        break;
-                    } else {
-                        i4 = this.f1309b;
-                    }
-                }
-            }
-        }
-    }
+    private static java.lang.String f1307b = null;
 
     /* JADX WARN: Code duplicated, block: B:18:0x004d A[PHI: r3
       0x004d: PHI (r3v3 java.lang.String) = 
@@ -74,10 +18,10 @@ public abstract class x0 {
       (r3v2 java.lang.String)
       (r3v2 java.lang.String)
      binds: [B:17:0x004b, B:20:0x0056, B:113:0x01c9, B:116:0x01d3, B:161:0x0281, B:164:0x028b] A[DONT_GENERATE, DONT_INLINE]] */
-    private static String a() {
-        String str = f1307b;
+    private static java.lang.String a() {
+        java.lang.String str = f1307b;
         if (str == null) {
-            String strReplace = b2.f(R.string.lang_code).replace("~", "");
+            java.lang.String strReplace = android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.lang_code).replace("~", "");
             if ("ar".equals(strReplace)) {
                 str = "ًٌٍَُِّْٰءأؤإئاآبةتثجحخدذرزسشصضطظعغفقكلمنهوىي\u061c\u200e٫٬٪‰؉٠١٢٣٤٥٦٧٨٩‐–—،؛؟…«»";
             } else if ("az".equals(strReplace)) {
@@ -87,7 +31,7 @@ public abstract class x0 {
             } else if ("bn".equals(strReplace)) {
                 str = "়৺অআইঈউঊঋৠঌৡএঐওঔংঃঁক্ষখগঘঙচছজঝঞটঠডঢণতৎথদধনপফবভমযরলশসহঽািীুূৃৄৢৣেৈোৌৗ‰০১২৩৪৫৬৭৮৯‐–—…‘’“”§†‡′″";
             } else {
-                String str2 = "čćžđšČĆŽĐŠ‰‐–—…‘’“”′″абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ";
+                java.lang.String str2 = "čćžđšČĆŽĐŠ‰‐–—…‘’“”′″абвгдђежзијклљмнњопрстћуфхцчџшАБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШ";
                 if ("bs_BA".equals(strReplace) || "bs".equals(strReplace)) {
                     str = str2;
                 } else if ("ca".equals(strReplace)) {
@@ -208,21 +152,21 @@ public abstract class x0 {
     /* JADX WARN: Code duplicated, block: B:76:0x012b  */
     /* JADX WARN: Code duplicated, block: B:78:0x0130  */
     /* JADX WARN: Instruction removed from duplicated block: B:63:0x00e2, please report this as an issue */
-    public static StringBuilder b(StringBuilder sb, int i, byte[] bArr, int i2, boolean z, boolean z2, Object obj) {
+    public static java.lang.StringBuilder b(java.lang.StringBuilder sb, int i, byte[] bArr, int i2, boolean z, boolean z2, java.lang.Object obj) {
         int i3;
         char c2;
         int i4;
         char c3;
-        StringBuilder sb2 = sb == null ? new StringBuilder() : sb;
+        java.lang.StringBuilder sb2 = sb == null ? new java.lang.StringBuilder() : sb;
         byte b2 = 34;
         int i5 = 1;
         if (i == 2) {
             sb2.append('\"');
-            sb2.append(new String(bArr, 0, i2, t1.i(true)));
+            sb2.append(new java.lang.String(bArr, 0, i2, android.ext.t1.i(true)));
             sb2.append('\"');
         } else {
-            a aVar = obj == null ? null : new a((Editable) obj);
-            String strA = a();
+            android.ext.x0$a x0_a = obj == null ? null : new android.ext.x0$a((android.text.Editable) obj);
+            java.lang.String strA = a();
             char[] cArr = f1306a;
             int i6 = i2 - 1;
             int i7 = 0;
@@ -240,14 +184,14 @@ public abstract class x0 {
                         if (c4 != 0) {
                             sb2.append(c4);
                             sb2.append(' ');
-                            if (aVar != null) {
-                                aVar.a(c4 + " ");
+                            if (x0_a != null) {
+                                x0_a.a(c4 + " ");
                             }
                         }
                         if (c2 != 0) {
                             sb2.append(c2);
-                            if (aVar != null) {
-                                aVar.a(String.valueOf(c2));
+                            if (x0_a != null) {
+                                x0_a.a(java.lang.String.valueOf(c2));
                             }
                         }
                         c4 = c2;
@@ -256,8 +200,8 @@ public abstract class x0 {
                         c3 = (char) i3;
                         sb2.append(c3);
                         i7 += i5;
-                        if (aVar != null) {
-                            aVar.b(i5 + 1, String.valueOf(c3));
+                        if (x0_a != null) {
+                            x0_a.b(i5 + 1, java.lang.String.valueOf(c3));
                         }
                     } else {
                         sb2.append(cArr[(b3 & 240) >> 4]);
@@ -265,9 +209,9 @@ public abstract class x0 {
                         if (i7 < i6) {
                             sb2.append(' ');
                         }
-                        if (aVar != null) {
+                        if (x0_a != null) {
                             i4 = 1;
-                            aVar.c(1);
+                            x0_a.c(1);
                         }
                         i7 += i4;
                         b2 = 34;
@@ -289,14 +233,14 @@ public abstract class x0 {
                                     if (c4 != 0) {
                                         sb2.append(c4);
                                         sb2.append(' ');
-                                        if (aVar != null) {
-                                            aVar.a(c4 + " ");
+                                        if (x0_a != null) {
+                                            x0_a.a(c4 + " ");
                                         }
                                     }
                                     if (c2 != 0) {
                                         sb2.append(c2);
-                                        if (aVar != null) {
-                                            aVar.a(String.valueOf(c2));
+                                        if (x0_a != null) {
+                                            x0_a.a(java.lang.String.valueOf(c2));
                                         }
                                     }
                                     c4 = c2;
@@ -305,8 +249,8 @@ public abstract class x0 {
                                     c3 = (char) i3;
                                     sb2.append(c3);
                                     i7 += i5;
-                                    if (aVar != null) {
-                                        aVar.b(i5 + 1, String.valueOf(c3));
+                                    if (x0_a != null) {
+                                        x0_a.b(i5 + 1, java.lang.String.valueOf(c3));
                                     }
                                 } else {
                                     sb2.append(cArr[(b3 & 240) >> 4]);
@@ -314,9 +258,9 @@ public abstract class x0 {
                                     if (i7 < i6) {
                                         sb2.append(' ');
                                     }
-                                    if (aVar != null) {
+                                    if (x0_a != null) {
                                         i4 = 1;
-                                        aVar.c(1);
+                                        x0_a.c(1);
                                     }
                                     i7 += i4;
                                     b2 = 34;
@@ -337,14 +281,14 @@ public abstract class x0 {
                         if (c4 != 0) {
                             sb2.append(c4);
                             sb2.append(' ');
-                            if (aVar != null) {
-                                aVar.a(c4 + " ");
+                            if (x0_a != null) {
+                                x0_a.a(c4 + " ");
                             }
                         }
                         if (c2 != 0) {
                             sb2.append(c2);
-                            if (aVar != null) {
-                                aVar.a(String.valueOf(c2));
+                            if (x0_a != null) {
+                                x0_a.a(java.lang.String.valueOf(c2));
                             }
                         }
                         c4 = c2;
@@ -353,8 +297,8 @@ public abstract class x0 {
                         c3 = (char) i3;
                         sb2.append(c3);
                         i7 += i5;
-                        if (aVar != null) {
-                            aVar.b(i5 + 1, String.valueOf(c3));
+                        if (x0_a != null) {
+                            x0_a.b(i5 + 1, java.lang.String.valueOf(c3));
                         }
                     } else {
                         sb2.append(cArr[(b3 & 240) >> 4]);
@@ -362,9 +306,9 @@ public abstract class x0 {
                         if (i7 < i6) {
                             sb2.append(' ');
                         }
-                        if (aVar != null) {
+                        if (x0_a != null) {
                             i4 = 1;
-                            aVar.c(1);
+                            x0_a.c(1);
                         }
                         i7 += i4;
                         b2 = 34;
@@ -402,14 +346,14 @@ public abstract class x0 {
                         if (c4 != 0) {
                             sb2.append(c4);
                             sb2.append(' ');
-                            if (aVar != null) {
-                                aVar.a(c4 + " ");
+                            if (x0_a != null) {
+                                x0_a.a(c4 + " ");
                             }
                         }
                         if (c2 != 0) {
                             sb2.append(c2);
-                            if (aVar != null) {
-                                aVar.a(String.valueOf(c2));
+                            if (x0_a != null) {
+                                x0_a.a(java.lang.String.valueOf(c2));
                             }
                         }
                         c4 = c2;
@@ -418,8 +362,8 @@ public abstract class x0 {
                         c3 = (char) i3;
                         sb2.append(c3);
                         i7 += i5;
-                        if (aVar != null) {
-                            aVar.b(i5 + 1, String.valueOf(c3));
+                        if (x0_a != null) {
+                            x0_a.b(i5 + 1, java.lang.String.valueOf(c3));
                         }
                     } else {
                         sb2.append(cArr[(b3 & 240) >> 4]);
@@ -427,9 +371,9 @@ public abstract class x0 {
                         if (i7 < i6) {
                             sb2.append(' ');
                         }
-                        if (aVar != null) {
+                        if (x0_a != null) {
                             i4 = 1;
-                            aVar.c(1);
+                            x0_a.c(1);
                         }
                         i7 += i4;
                         b2 = 34;
@@ -446,14 +390,14 @@ public abstract class x0 {
                     if (c4 != 0) {
                         sb2.append(c4);
                         sb2.append(' ');
-                        if (aVar != null) {
-                            aVar.a(c4 + " ");
+                        if (x0_a != null) {
+                            x0_a.a(c4 + " ");
                         }
                     }
                     if (c2 != 0) {
                         sb2.append(c2);
-                        if (aVar != null) {
-                            aVar.a(String.valueOf(c2));
+                        if (x0_a != null) {
+                            x0_a.a(java.lang.String.valueOf(c2));
                         }
                     }
                     c4 = c2;
@@ -462,8 +406,8 @@ public abstract class x0 {
                     c3 = (char) i3;
                     sb2.append(c3);
                     i7 += i5;
-                    if (aVar != null) {
-                        aVar.b(i5 + 1, String.valueOf(c3));
+                    if (x0_a != null) {
+                        x0_a.b(i5 + 1, java.lang.String.valueOf(c3));
                     }
                 } else {
                     sb2.append(cArr[(b3 & 240) >> 4]);
@@ -471,9 +415,9 @@ public abstract class x0 {
                     if (i7 < i6) {
                         sb2.append(' ');
                     }
-                    if (aVar != null) {
+                    if (x0_a != null) {
                         i4 = 1;
-                        aVar.c(1);
+                        x0_a.c(1);
                     }
                     i7 += i4;
                     b2 = 34;
@@ -486,8 +430,8 @@ public abstract class x0 {
             }
             if (c4 != 0) {
                 sb2.append(c4);
-                if (aVar != null) {
-                    aVar.a(String.valueOf(c4));
+                if (x0_a != null) {
+                    x0_a.a(java.lang.String.valueOf(c4));
                 }
             }
         }

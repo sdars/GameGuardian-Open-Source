@@ -1,484 +1,79 @@
 package android.ext;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.AppOpsManager;
-import android.app.UiAutomation;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.fix.TextView;
-import android.graphics.Color;
-import android.net.Uri;
-import android.os.Build;
-import android.os.Process;
-import android.os.SystemClock;
-import android.provider.Settings;
-import android.util.DisplayMetrics;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.WindowManager;
-import catch_.me_.if_.you_.can_.R;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.Random;
-
 /* JADX INFO: loaded from: classes.dex */
-public class z implements View.OnClickListener, DialogInterface.OnClickListener, DialogInterface.OnDismissListener, DialogInterface.OnShowListener, View.OnTouchListener {
+public class z implements android.view.View.OnClickListener, android.content.DialogInterface.OnClickListener, android.content.DialogInterface.OnDismissListener, android.content.DialogInterface.OnShowListener, android.view.View.OnTouchListener {
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private static volatile boolean f1376b = false;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private static View[] f1377c = null;
+    private static android.view.View[] f1377c = null;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private static AlertDialog f1378d = null;
+    private static android.app.AlertDialog f1378d = null;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
     private static boolean f1379e = false;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    private static volatile Activity f1380f = null;
+    private static volatile android.app.Activity f1380f = null;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
     private static volatile boolean f1381g = false;
-    private static volatile DialogInterface h;
+    private static volatile android.content.DialogInterface h;
     private static int i;
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    Activity f1382a;
+    android.app.Activity f1382a;
 
-    class a implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Activity f1383a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ boolean f1384b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        final /* synthetic */ int f1385c;
-
-        /* JADX INFO: renamed from: android.ext.z$a$a, reason: collision with other inner class name */
-        class DialogInterfaceOnClickListenerC0024a implements DialogInterface.OnClickListener {
-            DialogInterfaceOnClickListenerC0024a() {
-            }
-
-            @Override // android.content.DialogInterface.OnClickListener
-            public void onClick(DialogInterface dialogInterface, int i) {
-                boolean zX;
-                Intent intent = new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION");
-                intent.setData(Uri.parse("package:" + Tools.C0()));
-                synchronized (z.class) {
-                    try {
-                        zX = z.x();
-                        if (zX) {
-                            z.g();
-                            s1.x();
-                        }
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-                try {
-                    a.this.f1383a.startActivityForResult(intent, 0);
-                } catch (Throwable th2) {
-                    e1.l("Failed call intent", th2);
-                    if (zX) {
-                        s1.g();
-                    }
-                }
-            }
-        }
-
-        class b implements DialogInterface.OnClickListener {
-            b() {
-            }
-
-            @Override // android.content.DialogInterface.OnClickListener
-            public void onClick(DialogInterface dialogInterface, int i) {
-                if (z.x()) {
-                    z.F();
-                }
-            }
-        }
-
-        class c implements DialogInterface.OnDismissListener {
-            c() {
-            }
-
-            @Override // android.content.DialogInterface.OnDismissListener
-            public void onDismiss(DialogInterface dialogInterface) {
-                if (z.x()) {
-                    boolean unused = z.f1381g = false;
-                }
-            }
-        }
-
-        a(Activity activity, boolean z, int i) {
-            this.f1383a = activity;
-            this.f1384b = z;
-            this.f1385c = i;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            try {
-                synchronized (z.class) {
-                    try {
-                        if (z.j(this.f1383a) && (!this.f1384b || z.s(this.f1385c, true))) {
-                            AlertDialog alertDialogCreate = android.ext.f.c(this.f1383a).setCustomTitle(Tools.g0(R.string.floating_window_fail)).setMessage(R.string.enable_draw_perm).setNegativeButton(b2.f(R.string.skip), new b()).setPositiveButton(b2.f(R.string.ok), new DialogInterfaceOnClickListenerC0024a()).create();
-                            android.ext.f.k(alertDialogCreate, new c());
-                            if (z.r(this.f1383a, this.f1384b, this.f1385c, alertDialogCreate)) {
-                                android.ext.f.w(alertDialogCreate);
-                                return;
-                            }
-                            return;
-                        }
-                        z.q(this.f1383a);
-                    } catch (Throwable th) {
-                        throw th;
-                    }
-                }
-            } catch (Throwable th2) {
-                e1.l("Failed show float dialog", th2);
-                z.q(this.f1383a);
-                if (this.f1384b && z.x()) {
-                    z.F();
-                }
-            }
-        }
-    }
-
-    class b implements Runnable {
-        b() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            z.this.l();
-        }
-    }
-
-    class c implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ View f1390a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ WindowManager.LayoutParams f1391b;
-
-        c(View view, WindowManager.LayoutParams layoutParams) {
-            this.f1390a = view;
-            this.f1391b = layoutParams;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            try {
-                Tools.f(this.f1390a, this.f1391b);
-            } catch (Throwable th) {
-                e1.l("Failed show test view(" + this.f1391b.type + ", " + this.f1391b.flags + "): " + this.f1390a + "; " + this.f1391b, th);
-            }
-            synchronized (this) {
-                notify();
-            }
-        }
-    }
-
-    class d implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ AlertDialog f1393a;
-
-        d(AlertDialog alertDialog) {
-            this.f1393a = alertDialog;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            try {
-                android.ext.f.w(this.f1393a);
-            } catch (Throwable th) {
-                e1.l("Failed show dialog: " + this.f1393a, th);
-            }
-        }
-    }
-
-    class e implements Runnable {
-        e() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            z.this.n();
-        }
-    }
-
-    class f implements DialogInterface.OnClickListener {
-        f() {
-        }
-
-        @Override // android.content.DialogInterface.OnClickListener
-        public void onClick(DialogInterface dialogInterface, int i) {
-            Intent intent = new Intent("android.settings.action.MANAGE_OVERLAY_PERMISSION");
-            StringBuilder sb = new StringBuilder();
-            sb.append("package:");
-            sb.append(Config.vSpaceReal ? Config.E : Tools.C0());
-            intent.setData(Uri.parse(sb.toString()));
-            z.this.f1382a.startActivity(intent);
-        }
-    }
-
-    class g implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ AlertDialog.Builder f1397a;
-
-        g(AlertDialog.Builder builder) {
-            this.f1397a = builder;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            try {
-                AlertDialog alertDialogCreate = this.f1397a.create();
-                android.ext.f.w(alertDialogCreate);
-                Tools.u1(alertDialogCreate);
-            } catch (Throwable th) {
-                e1.l("Failed show float dialog", th);
-            }
-        }
-    }
-
-    class h implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Activity f1399a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ boolean f1400b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        final /* synthetic */ int f1401c;
-
-        h(Activity activity, boolean z, int i) {
-            this.f1399a = activity;
-            this.f1400b = z;
-            this.f1401c = i;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            z.o(this.f1399a, this.f1400b, this.f1401c);
-        }
-    }
-
-    class i implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Activity f1402a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ DialogInterface f1403b;
-
-        i(Activity activity, DialogInterface dialogInterface) {
-            this.f1402a = activity;
-            this.f1403b = dialogInterface;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            z.D(this.f1402a, this.f1403b);
-        }
-    }
-
-    class j implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Activity f1404a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ View f1405b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        final /* synthetic */ WindowManager.LayoutParams f1406c;
-
-        /* JADX INFO: renamed from: d, reason: collision with root package name */
-        final /* synthetic */ int[] f1407d;
-
-        j(Activity activity, View view, WindowManager.LayoutParams layoutParams, int[] iArr) {
-            this.f1404a = activity;
-            this.f1405b = view;
-            this.f1406c = layoutParams;
-            this.f1407d = iArr;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            boolean z;
-            WindowManager windowManager = null;
-            try {
-                windowManager = this.f1404a.getWindowManager();
-                windowManager.addView(this.f1405b, this.f1406c);
-                try {
-                    windowManager.removeView(this.f1405b);
-                    this.f1407d[0] = 1;
-                    synchronized (this) {
-                        notify();
-                    }
-                } catch (Throwable th) {
-                    th = th;
-                    z = true;
-                    try {
-                        e1.s("Failed overlay probe", th);
-                        this.f1407d[0] = -1;
-                        if (z && windowManager != null) {
-                            try {
-                                windowManager.removeView(this.f1405b);
-                            } catch (Throwable th2) {
-                                e1.s("Failed remove overlay probe", th2);
-                            }
-                        }
-                        synchronized (this) {
-                            notify();
-                        }
-                    } catch (Throwable th3) {
-                        synchronized (this) {
-                            notify();
-                            throw th3;
-                        }
-                    }
-                }
-            } catch (Throwable th4) {
-                th = th4;
-                z = false;
-            }
-        }
-    }
-
-    private static class k extends TextView implements View.OnTouchListener {
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        String f1408c;
-
-        /* JADX INFO: renamed from: d, reason: collision with root package name */
-        int f1409d;
-
-        /* JADX INFO: renamed from: e, reason: collision with root package name */
-        int f1410e;
-
-        public k(Context context, String str, int i, int i2) {
-            super(context);
-            this.f1408c = str;
-            this.f1409d = i;
-            this.f1410e = i2;
-            setTextColor(Color.rgb(255, 255, 255));
-            setText(str);
-            setOnTouchListener(this);
-        }
-
-        @Override // android.view.View
-        protected boolean dispatchGenericFocusedEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: dispatchGenericFocusedEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.dispatchGenericFocusedEvent(motionEvent);
-        }
-
-        @Override // android.view.View
-        public boolean dispatchGenericMotionEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: dispatchGenericMotionEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.dispatchGenericMotionEvent(motionEvent);
-        }
-
-        @Override // android.view.View
-        protected boolean dispatchGenericPointerEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: dispatchGenericPointerEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.dispatchGenericPointerEvent(motionEvent);
-        }
-
-        @Override // android.view.View
-        public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-            e1.g("TestButton: dispatchKeyEvent for " + this.f1408c + ": " + keyEvent, new RuntimeException());
-            return super.dispatchKeyEvent(keyEvent);
-        }
-
-        @Override // android.view.View
-        public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: dispatchTouchEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.dispatchTouchEvent(motionEvent);
-        }
-
-        @Override // android.view.View
-        public boolean dispatchTrackballEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: dispatchTrackballEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.dispatchTrackballEvent(motionEvent);
-        }
-
-        @Override // android.widget.TextView, android.view.View
-        public boolean onGenericMotionEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: onGenericMotionEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.onGenericMotionEvent(motionEvent);
-        }
-
-        @Override // android.view.View.OnTouchListener
-        public boolean onTouch(View view, MotionEvent motionEvent) {
-            e1.g("TestButton: onTouch for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return false;
-        }
-
-        @Override // android.fix.TextView, android.widget.TextView, android.view.View
-        public boolean onTouchEvent(MotionEvent motionEvent) {
-            e1.g("TestButton: onTouchEvent for " + this.f1408c + ": " + motionEvent, new RuntimeException());
-            return super.onTouchEvent(motionEvent);
-        }
-    }
-
-    public z(Activity activity) {
+    public z(android.app.Activity activity) {
         this.f1382a = activity;
     }
 
-    private static int A(Activity activity) {
+    private static int A(android.app.Activity activity) {
         try {
-            WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
-            layoutParams.type = m2.b();
-            layoutParams.width = 1;
-            layoutParams.height = 1;
-            layoutParams.format = -2;
-            layoutParams.flags = 312;
-            if (Config.vSpaceReal && !Config.D) {
-                layoutParams.packageName = Config.E;
+            android.view.WindowManager.LayoutParams windowManager$LayoutParams = new android.view.WindowManager.LayoutParams();
+            windowManager$LayoutParams.type = android.ext.m2.b();
+            windowManager$LayoutParams.width = 1;
+            windowManager$LayoutParams.height = 1;
+            windowManager$LayoutParams.format = -2;
+            windowManager$LayoutParams.flags = 312;
+            if (android.ext.Config.vSpaceReal && !android.ext.Config.D) {
+                windowManager$LayoutParams.packageName = android.ext.Config.E;
             }
             int[] iArr = {0};
-            j jVar = new j(activity, new View(activity), layoutParams, iArr);
-            synchronized (jVar) {
+            android.ext.z$j z_j = new android.ext.z$j(activity, new android.view.View(activity), windowManager$LayoutParams, iArr);
+            synchronized (z_j) {
                 try {
-                    n2.i(jVar);
-                    long jUptimeMillis = SystemClock.uptimeMillis() + 10000;
+                    android.ext.n2.i(z_j);
+                    long jUptimeMillis = android.os.SystemClock.uptimeMillis() + 10000;
                     while (iArr[0] == 0) {
-                        long jUptimeMillis2 = jUptimeMillis - SystemClock.uptimeMillis();
+                        long jUptimeMillis2 = jUptimeMillis - android.os.SystemClock.uptimeMillis();
                         if (jUptimeMillis2 <= 0) {
                             break;
                         }
-                        jVar.wait(jUptimeMillis2);
+                        z_j.wait(jUptimeMillis2);
                     }
-                } catch (Throwable th) {
+                } catch (java.lang.Throwable th) {
                     throw th;
                 }
             }
             return iArr[0];
-        } catch (Throwable th2) {
-            e1.s("Failed overlay probe", th2);
+        } catch (java.lang.Throwable th2) {
+            android.ext.e1.s("Failed overlay probe", th2);
             return 0;
         }
     }
 
     private static synchronized boolean B(int i2, boolean z) {
-        if (i2 != i) {
-            return true;
+        try {
+            if (i2 != i) {
+                return true;
+            }
+            return z && android.ext.s1.D();
+        } catch (java.lang.Throwable th) {
+            throw th;
         }
-        return z && s1.D();
     }
 
     static int C(boolean z, int i2) {
@@ -491,29 +86,32 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
         return i2 == -1 ? 2 : 3;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static void D(Activity activity, DialogInterface dialogInterface) {
-        synchronized (z.class) {
+    static void D(android.app.Activity activity, android.content.DialogInterface dialogInterface) {
+        synchronized (android.ext.z.class) {
             if (dialogInterface != null) {
-                if (h == dialogInterface) {
-                    q(activity);
-                    try {
-                        dialogInterface.dismiss();
-                    } catch (Throwable th) {
-                        e1.s("Failed dismiss overlay prompt", th);
+                try {
+                    if (h == dialogInterface) {
+                        q(activity);
+                        try {
+                            dialogInterface.dismiss();
+                        } catch (java.lang.Throwable th) {
+                            android.ext.e1.s("Failed dismiss overlay prompt", th);
+                        }
                     }
+                } catch (java.lang.Throwable th2) {
+                    throw th2;
                 }
             }
         }
     }
 
     static void F() {
-        synchronized (z.class) {
+        synchronized (android.ext.z.class) {
             try {
                 if (x()) {
                     G();
                 }
-            } catch (Throwable th) {
+            } catch (java.lang.Throwable th) {
                 throw th;
             }
         }
@@ -521,47 +119,51 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
 
     private static void G() {
         t();
-        s1.T("overlay-settled");
-        s1.l();
+        android.ext.s1.T("overlay-settled");
+        android.ext.s1.l();
     }
 
-    public static AlertDialog.Builder H(AlertDialog.Builder builder) {
-        String strF = Config.vSpaceReal ? Config.F : b2.f(R.string.app_name);
-        return builder.setCustomTitle(Tools.g0(R.string.floating_window_fail)).setMessage(Tools.L1(Tools.N1(R.string.float_prompt), strF, strF, strF, strF) + ":\nhttps://productforums.google.com/forum/#!topic/translate/1Pywh5vI1kE\n\n" + Tools.N1(R.string.without_float) + ":\n" + Tools.removeNewLinesChars("kwwsv=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh25730krz0wr0xvh0jdphjxdugldq0zlwkrxw0iordw0zlqgrz0jdphjxdugldq2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null);
+    public static android.app.AlertDialog.Builder H(android.app.AlertDialog.Builder alertDialog$Builder) {
+        java.lang.String strF = android.ext.Config.vSpaceReal ? android.ext.Config.F : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.app_name);
+        return alertDialog$Builder.setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R$string.floating_window_fail)).setMessage(android.ext.Tools.L1(android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.float_prompt), strF, strF, strF, strF) + ":\nhttps://productforums.google.com/forum/#!topic/translate/1Pywh5vI1kE\n\n" + android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.without_float) + ":\n" + android.ext.Tools.removeNewLinesChars("kwwsv=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh25730krz0wr0xvh0jdphjxdugldq0zlwkrxw0iordw0zlqgrz0jdphjxdugldq2")).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.ok), (android.content.DialogInterface.OnClickListener) null);
     }
 
     private void I() {
-        AlertDialog.Builder builderH = H(android.ext.f.c(this.f1382a));
-        builderH.setPositiveButton(b2.f(R.string.site), new r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf2:7360nqrzq0sureohpv2Bgr@ilqgFrpphqw)frpphqw@76<88"));
-        if (Build.VERSION.SDK_INT >= 23) {
-            builderH.setNeutralButton(b2.f(R.string.fix_it), new f());
+        android.app.AlertDialog.Builder alertDialog$BuilderH = H(android.ext.f.c(this.f1382a));
+        alertDialog$BuilderH.setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.site), new android.ext.r$n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf2:7360nqrzq0sureohpv2Bgr@ilqgFrpphqw)frpphqw@76<88"));
+        if (android.os.Build.VERSION.SDK_INT >= 23) {
+            alertDialog$BuilderH.setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.fix_it), new android.ext.z$f(this));
         }
-        n2.i(new g(builderH));
+        android.ext.n2.i(new android.ext.z$g(this, alertDialog$BuilderH));
     }
 
-    private static void K(Activity activity, boolean z, int i2) {
-        n2.i(new a(activity, z, i2));
+    private static void K(android.app.Activity activity, boolean z, int i2) {
+        android.ext.n2.i(new android.ext.z$a(activity, z, i2));
     }
 
-    private void L(View view, int i2) {
-        M(view, i2, m2.b(), m2.a() | 256, 0, 0);
+    private void L(android.view.View view, int i2) {
+        M(view, i2, android.ext.m2.b(), android.ext.m2.a() | 256, 0, 0);
     }
 
-    private void M(View view, int i2, int i3, int i4, int i5, int i6) {
-        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
-        layoutParams.type = i3;
-        layoutParams.width = i2;
-        layoutParams.height = i2;
-        layoutParams.format = -2;
-        layoutParams.flags = i4;
-        layoutParams.alpha = 1.0f;
-        layoutParams.x = i5;
-        layoutParams.y = i6;
-        layoutParams.gravity = 51;
-        c cVar = new c(view, layoutParams);
-        synchronized (cVar) {
-            n2.i(cVar);
-            cVar.wait();
+    private void M(android.view.View view, int i2, int i3, int i4, int i5, int i6) {
+        android.view.WindowManager.LayoutParams windowManager$LayoutParams = new android.view.WindowManager.LayoutParams();
+        windowManager$LayoutParams.type = i3;
+        windowManager$LayoutParams.width = i2;
+        windowManager$LayoutParams.height = i2;
+        windowManager$LayoutParams.format = -2;
+        windowManager$LayoutParams.flags = i4;
+        windowManager$LayoutParams.alpha = 1.0f;
+        windowManager$LayoutParams.x = i5;
+        windowManager$LayoutParams.y = i6;
+        windowManager$LayoutParams.gravity = 51;
+        android.ext.z$c z_c = new android.ext.z$c(this, view, windowManager$LayoutParams);
+        synchronized (z_c) {
+            try {
+                android.ext.n2.i(z_c);
+                z_c.wait();
+            } catch (java.lang.Throwable th) {
+                throw th;
+            }
         }
     }
 
@@ -571,65 +173,67 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
         return i2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean j(Activity activity) {
-        if (activity == null || activity != r.n || activity.isFinishing()) {
+    static boolean j(android.app.Activity activity) {
+        if (activity == null || activity != android.ext.r.n || activity.isFinishing()) {
             return false;
         }
         return !activity.isDestroyed();
     }
 
-    private static boolean k(Context context) {
-        boolean zM = Tools.m(context);
-        if (zM && Config.vSpaceReal) {
-            int iMyUid = Process.myUid();
+    private static boolean k(android.content.Context context) {
+        boolean zM = android.ext.Tools.m(context);
+        if (zM && android.ext.Config.vSpaceReal) {
+            int iMyUid = android.os.Process.myUid();
             boolean z = true;
             try {
-                Method declaredMethod = Settings.class.getDeclaredMethod("isCallingPackageAllowedToDrawOverlays", Context.class, Integer.TYPE, String.class, Boolean.TYPE);
+                java.lang.reflect.Method declaredMethod = android.provider.Settings.class.getDeclaredMethod("isCallingPackageAllowedToDrawOverlays", android.content.Context.class, java.lang.Integer.TYPE, java.lang.String.class, java.lang.Boolean.TYPE);
                 declaredMethod.setAccessible(true);
-                Object objInvoke = declaredMethod.invoke(null, context, Integer.valueOf(iMyUid), Config.E, Boolean.FALSE);
-                if ((objInvoke instanceof Boolean) && !((Boolean) objInvoke).booleanValue()) {
+                java.lang.Object objInvoke = declaredMethod.invoke(null, context, java.lang.Integer.valueOf(iMyUid), android.ext.Config.E, java.lang.Boolean.FALSE);
+                if ((objInvoke instanceof java.lang.Boolean) && !((java.lang.Boolean) objInvoke).booleanValue()) {
                     zM = false;
                 }
-                e1.d("canDrawOverlays extended 1: " + objInvoke);
-            } catch (Throwable th) {
-                e1.s("Failed check canDrawOverlays", th);
+                android.ext.e1.d("canDrawOverlays extended 1: " + objInvoke);
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.s("Failed check canDrawOverlays", th);
             }
             try {
-                int iCheckOpNoThrow = ((AppOpsManager) context.getSystemService("appops")).checkOpNoThrow("android:system_alert_window", iMyUid, Config.E);
-                if (iCheckOpNoThrow != 0 && (iCheckOpNoThrow != 3 || Tools.B0().checkPermission("android.permission.SYSTEM_ALERT_WINDOW", Config.E) != 0)) {
+                int iCheckOpNoThrow = ((android.app.AppOpsManager) context.getSystemService("appops")).checkOpNoThrow("android:system_alert_window", iMyUid, android.ext.Config.E);
+                if (iCheckOpNoThrow != 0 && (iCheckOpNoThrow != 3 || android.ext.Tools.B0().checkPermission("android.permission.SYSTEM_ALERT_WINDOW", android.ext.Config.E) != 0)) {
                     z = false;
                 }
                 if (!z) {
                     zM = false;
                 }
-                e1.d("canDrawOverlays extended 2: " + z + ' ' + iCheckOpNoThrow);
-            } catch (Throwable th2) {
-                e1.s("Failed check canDrawOverlays", th2);
+                android.ext.e1.d("canDrawOverlays extended 2: " + z + ' ' + iCheckOpNoThrow);
+            } catch (java.lang.Throwable th2) {
+                android.ext.e1.s("Failed check canDrawOverlays", th2);
             }
         }
         return zM;
     }
 
     public static void m() {
-        r rVar;
+        android.ext.r rVar;
         int i2;
-        if (Build.VERSION.SDK_INT < 23 || (rVar = r.n) == null) {
+        if (android.os.Build.VERSION.SDK_INT < 23 || (rVar = android.ext.r.n) == null) {
             return;
         }
         boolean zX = x();
-        synchronized (z.class) {
-            i2 = i;
+        synchronized (android.ext.z.class) {
+            try {
+                i2 = i;
+            } catch (java.lang.Throwable th) {
+                throw th;
+            }
         }
-        new g0(new h(rVar, zX, i2), "CheckFloatingWindowAPI").start();
+        new android.ext.g0(new android.ext.z$h(rVar, zX, i2), "CheckFloatingWindowAPI").start();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static void o(Activity activity, boolean z, int i2) {
+    static void o(android.app.Activity activity, boolean z, int i2) {
         boolean z2;
         try {
             boolean zK = k(activity);
-            e1.d("canDrawOverlays: " + zK);
+            android.ext.e1.d("canDrawOverlays: " + zK);
             int iC = C(zK, zK ? 1 : A(activity));
             if (j(activity) && z == x() && !B(i2, z)) {
                 boolean z3 = false;
@@ -642,18 +246,18 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
                         return;
                     }
                     if (z(iC)) {
-                        e1.d("overlay usable by probe");
-                        Tools.h1();
+                        android.ext.e1.d("overlay usable by probe");
+                        android.ext.Tools.h1();
                     }
                     if (!z) {
                         if (f1379e) {
                             f1379e = false;
-                            ConfigListAdapter.m();
+                            android.ext.ConfigListAdapter.m();
                             return;
                         }
                         return;
                     }
-                    synchronized (z.class) {
+                    synchronized (android.ext.z.class) {
                         try {
                             if (s(i2, true)) {
                                 if (f1379e) {
@@ -663,7 +267,7 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
                                 return;
                             }
                             return;
-                        } catch (Throwable th) {
+                        } catch (java.lang.Throwable th) {
                             throw th;
                         }
                     }
@@ -673,7 +277,7 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
                     K(activity, false, 0);
                     return;
                 }
-                synchronized (z.class) {
+                synchronized (android.ext.z.class) {
                     try {
                         if (s(i2, z)) {
                             if (f1380f != activity) {
@@ -690,31 +294,31 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
                                 G();
                             }
                             if (z2) {
-                                s1.T("overlay-shown");
+                                android.ext.s1.T("overlay-shown");
                                 K(activity, true, i2);
                                 return;
                             }
                             return;
                         }
                         return;
-                    } catch (Throwable th2) {
+                    } catch (java.lang.Throwable th2) {
                         throw th2;
                     }
                 }
-                e1.a(th);
+                android.ext.e1.a(th);
             }
-        } catch (Throwable th3) {
-            e1.a(th3);
+        } catch (java.lang.Throwable th3) {
+            android.ext.e1.a(th3);
         }
     }
 
     private void p(boolean z) {
-        AlertDialog alertDialog;
-        View[] viewArr = f1377c;
+        android.app.AlertDialog alertDialog;
+        android.view.View[] viewArr = f1377c;
         if (viewArr != null) {
-            for (View view : viewArr) {
+            for (android.view.View view : viewArr) {
                 if (view != null) {
-                    Tools.m1(view);
+                    android.ext.Tools.m1(view);
                 }
             }
             f1377c = null;
@@ -722,35 +326,33 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
         if (!z || (alertDialog = f1378d) == null) {
             return;
         }
-        Tools.D(alertDialog);
+        android.ext.Tools.D(alertDialog);
         f1378d = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static void q(Activity activity) {
-        synchronized (z.class) {
+    static void q(android.app.Activity activity) {
+        synchronized (android.ext.z.class) {
             try {
                 if (f1380f == activity) {
                     f1380f = null;
                     f1381g = false;
                     h = null;
                 }
-            } catch (Throwable th) {
+            } catch (java.lang.Throwable th) {
                 throw th;
             }
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean r(Activity activity, boolean z, int i2, DialogInterface dialogInterface) {
-        synchronized (z.class) {
+    static boolean r(android.app.Activity activity, boolean z, int i2, android.content.DialogInterface dialogInterface) {
+        synchronized (android.ext.z.class) {
             if (z) {
                 try {
                     if (!s(i2, true)) {
                         q(activity);
                         return false;
                     }
-                } catch (Throwable th) {
+                } catch (java.lang.Throwable th) {
                     throw th;
                 }
             }
@@ -761,42 +363,44 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean s(int i2, boolean z) {
+    static boolean s(int i2, boolean z) {
         return !B(i2, z) && z == x();
     }
 
     static void t() {
-        Activity activity;
-        DialogInterface dialogInterface;
-        synchronized (z.class) {
-            activity = f1380f;
-            dialogInterface = h;
+        android.app.Activity activity;
+        android.content.DialogInterface dialogInterface;
+        synchronized (android.ext.z.class) {
+            try {
+                activity = f1380f;
+                dialogInterface = h;
+            } catch (java.lang.Throwable th) {
+                throw th;
+            }
         }
         if (dialogInterface == null) {
             return;
         }
-        n2.i(new i(activity, dialogInterface));
+        android.ext.n2.i(new android.ext.z$i(activity, dialogInterface));
     }
 
-    private int v(Random random) {
-        return Color.rgb(random.nextInt(127) + 64, random.nextInt(127) + 64, random.nextInt(127) + 64);
+    private int v(java.util.Random random) {
+        return android.graphics.Color.rgb(random.nextInt(127) + 64, random.nextInt(127) + 64, random.nextInt(127) + 64);
     }
 
-    private void w(MotionEvent motionEvent, boolean z) {
-        if (u.f1267b == null) {
+    private void w(android.view.MotionEvent motionEvent, boolean z) {
+        if (android.ext.u.f1267b == null) {
             return;
         }
-        u.f1267b.sendPointerSync(motionEvent);
-        UiAutomation uiAutomation = u.f1267b.getUiAutomation();
+        android.ext.u.f1267b.sendPointerSync(motionEvent);
+        android.app.UiAutomation uiAutomation = android.ext.u.f1267b.getUiAutomation();
         if (uiAutomation != null) {
             uiAutomation.injectInputEvent(motionEvent, z);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    public static boolean x() {
-        return s1.u() && s1.O() == 3;
+    static boolean x() {
+        return android.ext.s1.u() && android.ext.s1.O() == 3;
     }
 
     static boolean y() {
@@ -809,15 +413,15 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
 
     public void E(int i2, int i3) {
         try {
-            Tools.X1(Tools.I(new String[]{"input", "tap", Integer.toString(i2), Integer.toString(i3)}), 15);
-        } catch (IOException e2) {
-            e1.s("sendClick", e2);
+            android.ext.Tools.X1(android.ext.Tools.I(new java.lang.String[]{"input", "tap", java.lang.Integer.toString(i2), java.lang.Integer.toString(i3)}), 15);
+        } catch (java.io.IOException e2) {
+            android.ext.e1.s("sendClick", e2);
         }
-        long jUptimeMillis = SystemClock.uptimeMillis();
+        long jUptimeMillis = android.os.SystemClock.uptimeMillis();
         float f2 = i2;
         float f3 = i3;
-        MotionEvent motionEventObtain = MotionEvent.obtain(jUptimeMillis, jUptimeMillis, 0, f2, f3, 0);
-        MotionEvent motionEventObtain2 = MotionEvent.obtain(jUptimeMillis, jUptimeMillis, 1, f2, f3, 0);
+        android.view.MotionEvent motionEventObtain = android.view.MotionEvent.obtain(jUptimeMillis, jUptimeMillis, 0, f2, f3, 0);
+        android.view.MotionEvent motionEventObtain2 = android.view.MotionEvent.obtain(jUptimeMillis, jUptimeMillis, 1, f2, f3, 0);
         motionEventObtain.setSource(4098);
         motionEventObtain2.setSource(4098);
         w(motionEventObtain, true);
@@ -827,62 +431,63 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
     }
 
     public void J() {
-        AlertDialog alertDialogCreate = android.ext.f.c(this.f1382a).setNegativeButton(b2.f(R.string.cancel), this).setCancelable(true).create();
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(this.f1382a).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), this).setCancelable(true).create();
         alertDialogCreate.setOnDismissListener(this);
         alertDialogCreate.setCanceledOnTouchOutside(false);
         alertDialogCreate.setCancelable(true);
         alertDialogCreate.setOnShowListener(this);
         f1378d = alertDialogCreate;
-        n2.i(new d(alertDialogCreate));
+        android.ext.n2.i(new android.ext.z$d(this, alertDialogCreate));
     }
 
     void l() {
         try {
-            int iV = v(Tools.f489a);
-            int iG = (int) Tools.G(128.0f);
-            View view = new View(MainService.context);
+            int iV = v(android.ext.Tools.f489a);
+            int iG = (int) android.ext.Tools.G(128.0f);
+            android.view.View view = new android.view.View(android.ext.MainService.context);
             view.setBackgroundColor(iV);
             view.setOnClickListener(this);
             try {
                 L(view, iG);
-                Thread.sleep(1000L);
+                java.lang.Thread.sleep(1000L);
                 int[] iArr = {0, 0};
                 view.getLocationOnScreen(iArr);
                 int i2 = iG >> 1;
                 E(iArr[0] + i2, iArr[1] + i2);
-                Thread.sleep(1000L);
-                Tools.m1(view);
+                java.lang.Thread.sleep(1000L);
+                android.ext.Tools.m1(view);
                 if (f1376b) {
-                    Tools.H1(R.string.check_success);
+                    android.ext.Tools.H1(catch_.me_.if_.you_.can_.R$string.check_success);
                 } else {
                     I();
                 }
-            } catch (Throwable th) {
-                Tools.m1(view);
+            } catch (java.lang.Throwable th) {
+                android.ext.Tools.m1(view);
                 throw th;
             }
-        } catch (Throwable th2) {
-            e1.l("Failed check floating window", th2);
+        } catch (java.lang.Throwable th2) {
+            android.ext.e1.l("Failed check floating window", th2);
         }
     }
 
     void n() {
-        View[] viewArr;
+java.lang.Throwable th = null;
+        android.view.View[] viewArr;
         int i2;
-        Random random;
-        View[] viewArr2 = null;
+        java.util.Random random;
+        android.view.View[] viewArr2 = null;
         try {
-            Random random2 = Tools.f489a;
-            DisplayMetrics displayMetrics = new DisplayMetrics();
-            ((WindowManager) Tools.f0().getSystemService("window")).getDefaultDisplay().getMetrics(displayMetrics);
-            int iH = Tools.H();
+            java.util.Random random2 = android.ext.Tools.f489a;
+            android.util.DisplayMetrics displayMetrics = new android.util.DisplayMetrics();
+            ((android.view.WindowManager) android.ext.Tools.f0().getSystemService("window")).getDefaultDisplay().getMetrics(displayMetrics);
+            int iH = android.ext.Tools.H();
             int i3 = ((displayMetrics.widthPixels / iH) / 2) * 2;
             int i4 = (displayMetrics.heightPixels / iH) * i3;
             int i5 = i4 > 100 ? 100 : i4;
-            e1.d("checkAll: " + iH + "; " + i3 + "; " + i5 + "; " + iH + "; " + displayMetrics);
+            android.ext.e1.d("checkAll: " + iH + "; " + i3 + "; " + i5 + "; " + iH + "; " + displayMetrics);
             int i6 = i5 / 2;
             int i7 = i3 / 2;
-            viewArr = new View[i5];
+            viewArr = new android.view.View[i5];
             int i8 = 0;
             while (i8 < i5) {
                 try {
@@ -890,84 +495,84 @@ public class z implements View.OnClickListener, DialogInterface.OnClickListener,
                     int i9 = (i8 % i6) + 2000;
                     int i10 = (z ? 0 : 32) | 8;
                     int iV = v(random2);
-                    Context applicationContext = MainService.context.getApplicationContext();
-                    StringBuilder sb = new StringBuilder();
-                    sb.append(Integer.toString(i8 % i6));
+                    android.content.Context applicationContext = android.ext.MainService.context.getApplicationContext();
+                    java.lang.StringBuilder sb = new java.lang.StringBuilder();
+                    sb.append(java.lang.Integer.toString(i8 % i6));
                     sb.append(z ? "" : "'");
-                    k kVar = new k(applicationContext, sb.toString(), i9, i10);
-                    kVar.setBackgroundColor(iV);
-                    kVar.setOnClickListener(this);
+                    android.ext.z$k z_k = new android.ext.z$k(applicationContext, sb.toString(), i9, i10);
+                    z_k.setBackgroundColor(iV);
+                    z_k.setOnClickListener(this);
                     try {
                         random = random2;
                         i2 = i8;
                         try {
-                            M(kVar, iH, i9, i10, ((i8 % i7) + (z ? 0 : i7)) * iH, ((i8 % i6) / i7) * iH);
-                            viewArr[i2] = kVar;
-                        } catch (Throwable th) {
-                            th = th;
-                            e1.l("Failed show: " + i9, th);
+                            M(z_k, iH, i9, i10, ((i8 % i7) + (z ? 0 : i7)) * iH, ((i8 % i6) / i7) * iH);
+                            viewArr[i2] = z_k;
+                        } catch (java.lang.Throwable th_c) {
+                            th = th_c;
+                            android.ext.e1.l("Failed show: " + i9, th_c);
                         }
-                    } catch (Throwable th2) {
+                    } catch (java.lang.Throwable th2) {
                         th = th2;
                         i2 = i8;
                         random = random2;
                     }
                     i8 = i2 + 1;
                     random2 = random;
-                } catch (Throwable th3) {
+                } catch (java.lang.Throwable th3) {
                     th = th3;
                     viewArr2 = viewArr;
-                    e1.l("Failed checkAll floating window", th);
+                    android.ext.e1.l("Failed checkAll floating window", th);
                     viewArr = viewArr2;
                     p(false);
                     f1377c = viewArr;
                 }
             }
-        } catch (Throwable th4) {
+        } catch (java.lang.Throwable th4) {
             th = th4;
         }
         p(false);
         f1377c = viewArr;
     }
 
-    @Override // android.content.DialogInterface.OnClickListener
-    public void onClick(DialogInterface dialogInterface, int i2) {
+    @Override // android.content.DialogInterface$OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i2) {
         p(true);
     }
 
-    @Override // android.content.DialogInterface.OnDismissListener
-    public void onDismiss(DialogInterface dialogInterface) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
+        android.ext.e1.g("TestButton: onClick for " + view, new java.lang.RuntimeException());
+        if (!(view instanceof android.ext.z$k)) {
+            f1376b = true;
+            return;
+        }
+        android.ext.z$k z_k = (android.ext.z$k) view;
+        android.ext.e1.d("onClick for " + z_k.f1408c);
+        android.ext.Config.b(catch_.me_.if_.you_.can_.R$id.config_float_type).f42d = z_k.f1409d;
+        android.ext.Config.b(catch_.me_.if_.you_.can_.R$id.config_float_flags).f42d = z_k.f1410e;
+        android.ext.Config.k();
+        p(true);
+        android.ext.r.I();
+    }
+
+    @Override // android.content.DialogInterface$OnDismissListener
+    public void onDismiss(android.content.DialogInterface dialogInterface) {
         p(true);
     }
 
-    @Override // android.content.DialogInterface.OnShowListener
-    public void onShow(DialogInterface dialogInterface) {
-        new g0(new e(), "ChangeFloatingWindow").start();
+    @Override // android.content.DialogInterface$OnShowListener
+    public void onShow(android.content.DialogInterface dialogInterface) {
+        new android.ext.g0(new android.ext.z$e(this), "ChangeFloatingWindow").start();
     }
 
-    @Override // android.view.View.OnTouchListener
-    public boolean onTouch(View view, MotionEvent motionEvent) {
-        e1.g("dbg: " + view + ' ' + motionEvent, new RuntimeException());
+    @Override // android.view.View$OnTouchListener
+    public boolean onTouch(android.view.View view, android.view.MotionEvent motionEvent) {
+        android.ext.e1.g("dbg: " + view + ' ' + motionEvent, new java.lang.RuntimeException());
         return false;
     }
 
     public void u() {
-        new g0(new b(), "CheckFloatingWindow").start();
-    }
-
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
-        e1.g("TestButton: onClick for " + view, new RuntimeException());
-        if (!(view instanceof k)) {
-            f1376b = true;
-            return;
-        }
-        k kVar = (k) view;
-        e1.d("onClick for " + kVar.f1408c);
-        Config.b(R.id.config_float_type).f42d = kVar.f1409d;
-        Config.b(R.id.config_float_flags).f42d = kVar.f1410e;
-        Config.k();
-        p(true);
-        r.I();
+        new android.ext.g0(new android.ext.z$b(this), "CheckFloatingWindow").start();
     }
 }

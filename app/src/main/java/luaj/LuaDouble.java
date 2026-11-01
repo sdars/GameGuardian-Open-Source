@@ -1,21 +1,21 @@
 package luaj;
 
 /* JADX INFO: loaded from: classes.dex */
-public class LuaDouble extends LuaNumber {
-    public static final LuaDouble R = new LuaDouble(Double.NaN);
-    public static final LuaDouble S = new LuaDouble(Double.POSITIVE_INFINITY);
-    public static final LuaDouble T = new LuaDouble(Double.NEGATIVE_INFINITY);
+public class LuaDouble extends luaj.LuaNumber {
+    public static final luaj.LuaDouble R = new luaj.LuaDouble(Double.NaN);
+    public static final luaj.LuaDouble S = new luaj.LuaDouble(Double.POSITIVE_INFINITY);
+    public static final luaj.LuaDouble T = new luaj.LuaDouble(Double.NEGATIVE_INFINITY);
     final double Q;
 
     private LuaDouble(double d2) {
         this.Q = d2;
     }
 
-    public static LuaNumber J2(double d2) {
-        return new LuaDouble(d2);
+    public static luaj.LuaNumber J2(double d2) {
+        return new luaj.LuaDouble(d2);
     }
 
-    public static LuaValue S2(double d2, double d3) {
+    public static luaj.LuaValue S2(double d2, double d3) {
         if (d3 != 0.0d) {
             return J2(d2 / d3);
         }
@@ -25,9 +25,9 @@ public class LuaDouble extends LuaNumber {
         return d2 == 0.0d ? R : T;
     }
 
-    public static LuaValue T2(double d2, double d3) {
+    public static luaj.LuaValue T2(double d2, double d3) {
         if (d3 != 0.0d) {
-            return J2(Math.floor(d2 / d3));
+            return J2(java.lang.Math.floor(d2 / d3));
         }
         if (d2 > 0.0d) {
             return S;
@@ -35,7 +35,7 @@ public class LuaDouble extends LuaNumber {
         return d2 == 0.0d ? R : T;
     }
 
-    public static LuaValue U2(double d2, double d3) {
+    public static luaj.LuaValue U2(double d2, double d3) {
         if (d3 == 0.0d || d2 == Double.POSITIVE_INFINITY || d2 == Double.NEGATIVE_INFINITY) {
             return R;
         }
@@ -45,20 +45,20 @@ public class LuaDouble extends LuaNumber {
         if (d3 == Double.NEGATIVE_INFINITY) {
             return d2 > 0.0d ? T : J2(d2);
         }
-        return J2(d2 - (d3 * Math.floor(d2 / d3)));
+        return J2(d2 - (d3 * java.lang.Math.floor(d2 / d3)));
     }
 
-    private boolean V2(String str, LuaValue luaValue) {
+    private boolean V2(java.lang.String str, luaj.LuaValue luaValue) {
         if (!luaValue.m1()) {
             return true;
         }
         if (!k1()) {
-            throw new d("number '" + g0() + "' has no integer representation (for bitwise operation '" + g0() + " " + str + " " + luaValue.g0() + "')");
+            throw new luaj.d("number '" + g0() + "' has no integer representation (for bitwise operation '" + g0() + " " + str + " " + luaValue.g0() + "')");
         }
         if (luaValue.k1()) {
             return false;
         }
-        throw new d("number '" + luaValue.g0() + "' has no integer representation (for bitwise operation '" + g0() + " " + str + " " + luaValue.g0() + "')");
+        throw new luaj.d("number '" + luaValue.g0() + "' has no integer representation (for bitwise operation '" + g0() + " " + str + " " + luaValue.g0() + "')");
     }
 
     @Override // luaj.LuaValue
@@ -68,22 +68,22 @@ public class LuaDouble extends LuaNumber {
         if (i == d2) {
             return i;
         }
-        throw new d("number '" + g0() + "' has no integer representation");
+        throw new luaj.d("number '" + g0() + "' has no integer representation");
     }
 
     @Override // luaj.LuaValue
-    public LuaValue A1() {
+    public luaj.LuaValue A1() {
         return J2(-this.Q);
     }
 
     @Override // luaj.LuaValue
-    public String B0() {
+    public java.lang.String B0() {
         return g0();
     }
 
     @Override // luaj.LuaValue
-    public LuaValue B2() {
-        return LuaString.K2(g0());
+    public luaj.LuaValue B2() {
+        return luaj.LuaString.K2(g0());
     }
 
     @Override // luaj.LuaValue
@@ -93,7 +93,7 @@ public class LuaDouble extends LuaNumber {
         if (j == d2) {
             return j;
         }
-        throw new d("number '" + g0() + "' has no integer representation");
+        throw new luaj.d("number '" + g0() + "' has no integer representation");
     }
 
     @Override // luaj.LuaValue
@@ -102,8 +102,8 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaString G0() {
-        return LuaString.K2(g0());
+    public luaj.LuaString G0() {
+        return luaj.LuaString.K2(g0());
     }
 
     @Override // luaj.LuaValue
@@ -112,7 +112,7 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public String I1(String str) {
+    public java.lang.String I1(java.lang.String str) {
         return g0();
     }
 
@@ -122,17 +122,17 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaString K1(LuaString luaString) {
-        return LuaString.K2(g0());
+    public luaj.LuaString K1(luaj.LuaString luaString) {
+        return luaj.LuaString.K2(g0());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue O0(LuaValue luaValue) {
+    public luaj.LuaValue O0(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.O0(luaValue) : S2(this.Q, luaValue.x2());
     }
 
     @Override // luaj.LuaValue
-    public boolean P0(LuaValue luaValue) {
+    public boolean P0(luaj.LuaValue luaValue) {
         if (luaValue.m1()) {
             return this.Q == luaValue.x2();
         }
@@ -140,56 +140,56 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue Q1(LuaValue luaValue) {
-        return !luaValue.m1() ? super.Q1(luaValue) : J2(Math.pow(this.Q, luaValue.x2()));
+    public luaj.LuaValue Q1(luaj.LuaValue luaValue) {
+        return !luaValue.m1() ? super.Q1(luaValue) : J2(java.lang.Math.pow(this.Q, luaValue.x2()));
     }
 
     @Override // luaj.LuaValue
-    public boolean T1(LuaValue luaValue) {
+    public boolean T1(luaj.LuaValue luaValue) {
         return luaValue.m1() && this.Q == luaValue.x2();
     }
 
     @Override // luaj.LuaValue
-    public boolean X0(LuaValue luaValue) {
-        if (luaValue instanceof LuaNumber) {
+    public boolean X0(luaj.LuaValue luaValue) {
+        if (luaValue instanceof luaj.LuaNumber) {
             return this.Q > luaValue.x2();
         }
         return super.X0(luaValue);
     }
 
     @Override // luaj.LuaValue
-    public boolean Y0(LuaValue luaValue) {
-        if (luaValue instanceof LuaNumber) {
+    public boolean Y0(luaj.LuaValue luaValue) {
+        if (luaValue instanceof luaj.LuaNumber) {
             return this.Q >= luaValue.x2();
         }
         return super.Y0(luaValue);
     }
 
     @Override // luaj.LuaValue
-    public LuaValue Z0(LuaValue luaValue) {
+    public luaj.LuaValue Z0(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.Z0(luaValue) : T2(this.Q, luaValue.x2());
     }
 
     @Override // luaj.LuaValue
-    public boolean equals(Object obj) {
-        return (obj instanceof LuaDouble) && Double.doubleToRawLongBits(((LuaDouble) obj).Q) == Double.doubleToRawLongBits(this.Q);
+    public boolean equals(java.lang.Object obj) {
+        return (obj instanceof luaj.LuaDouble) && java.lang.Double.doubleToRawLongBits(((luaj.LuaDouble) obj).Q) == java.lang.Double.doubleToRawLongBits(this.Q);
     }
 
     @Override // luaj.LuaValue, luaj.Varargs
-    public String g0() {
+    public java.lang.String g0() {
         double d2 = this.Q;
         if (d2 == 0.0d) {
-            return (Double.doubleToLongBits(d2) >> 63) == 0 ? "0.0" : "-0.0";
+            return (java.lang.Double.doubleToLongBits(d2) >> 63) == 0 ? "0.0" : "-0.0";
         }
-        if (Double.isNaN(d2)) {
+        if (java.lang.Double.isNaN(d2)) {
             return "nan";
         }
-        if (Double.isInfinite(this.Q)) {
+        if (java.lang.Double.isInfinite(this.Q)) {
             return this.Q < 0.0d ? "-inf" : "inf";
         }
         double d3 = this.Q;
         long j = (long) d3;
-        String string = ((double) j) == d3 ? Long.toString(j) : Double.toString(d3);
+        java.lang.String string = ((double) j) == d3 ? java.lang.Long.toString(j) : java.lang.Double.toString(d3);
         if (string.indexOf(46) != -1 || string.indexOf(101) != -1 || string.indexOf(69) != -1) {
             return string;
         }
@@ -199,7 +199,7 @@ public class LuaDouble extends LuaNumber {
     public int hashCode() {
         double d2 = this.Q;
         int i = (int) d2;
-        long jDoubleToRawLongBits = ((double) i) == d2 ? i : Double.doubleToRawLongBits(d2);
+        long jDoubleToRawLongBits = ((double) i) == d2 ? i : java.lang.Double.doubleToRawLongBits(d2);
         return (int) (jDoubleToRawLongBits ^ (jDoubleToRawLongBits >>> 32));
     }
 
@@ -210,7 +210,7 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue j0(LuaValue luaValue) {
+    public luaj.LuaValue j0(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.j0(luaValue) : J2(this.Q + luaValue.x2());
     }
 
@@ -221,61 +221,61 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue m2(LuaValue luaValue) {
-        return V2("<<", luaValue) ? super.m2(luaValue) : LuaLong.X2(z2(), luaValue.z2());
+    public luaj.LuaValue m2(luaj.LuaValue luaValue) {
+        return V2("<<", luaValue) ? super.m2(luaValue) : luaj.LuaLong.X2(z2(), luaValue.z2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue n2(LuaValue luaValue) {
-        return V2(">>", luaValue) ? super.n2(luaValue) : LuaLong.Y2(z2(), luaValue.z2());
+    public luaj.LuaValue n2(luaj.LuaValue luaValue) {
+        return V2(">>", luaValue) ? super.n2(luaValue) : luaj.LuaLong.Y2(z2(), luaValue.z2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue o0(LuaValue luaValue) {
-        return V2("&", luaValue) ? super.o0(luaValue) : LuaValue.I2(z2() & luaValue.z2());
+    public luaj.LuaValue o0(luaj.LuaValue luaValue) {
+        return V2("&", luaValue) ? super.o0(luaValue) : luaj.LuaValue.I2(z2() & luaValue.z2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue q0() {
-        return !k1() ? super.q0() : LuaValue.I2(~z2());
+    public luaj.LuaValue q0() {
+        return !k1() ? super.q0() : luaj.LuaValue.I2(~z2());
     }
 
     @Override // luaj.LuaValue
     public boolean q1() {
-        return !Double.isNaN(this.Q);
+        return !java.lang.Double.isNaN(this.Q);
     }
 
     @Override // luaj.LuaValue
-    public LuaString q2() {
-        return LuaString.K2(g0());
+    public luaj.LuaString q2() {
+        return luaj.LuaString.K2(g0());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue r0(LuaValue luaValue) {
-        return V2("|", luaValue) ? super.r0(luaValue) : LuaValue.I2(z2() | luaValue.z2());
+    public luaj.LuaValue r0(luaj.LuaValue luaValue) {
+        return V2("|", luaValue) ? super.r0(luaValue) : luaj.LuaValue.I2(z2() | luaValue.z2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue r2(LuaValue luaValue) {
+    public luaj.LuaValue r2(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.r2(luaValue) : J2(this.Q - luaValue.x2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue t0(LuaValue luaValue) {
-        return V2("~", luaValue) ? super.t0(luaValue) : LuaValue.I2(z2() ^ luaValue.z2());
+    public luaj.LuaValue t0(luaj.LuaValue luaValue) {
+        return V2("~", luaValue) ? super.t0(luaValue) : luaj.LuaValue.I2(z2() ^ luaValue.z2());
     }
 
     @Override // luaj.LuaValue
-    public boolean u1(LuaValue luaValue) {
-        if (luaValue instanceof LuaNumber) {
+    public boolean u1(luaj.LuaValue luaValue) {
+        if (luaValue instanceof luaj.LuaNumber) {
             return this.Q < luaValue.x2();
         }
         return super.u1(luaValue);
     }
 
     @Override // luaj.LuaValue
-    public boolean v1(LuaValue luaValue) {
-        if (luaValue instanceof LuaNumber) {
+    public boolean v1(luaj.LuaValue luaValue) {
+        if (luaValue instanceof luaj.LuaNumber) {
             return this.Q <= luaValue.x2();
         }
         return super.v1(luaValue);
@@ -292,7 +292,7 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue y1(LuaValue luaValue) {
+    public luaj.LuaValue y1(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.y1(luaValue) : U2(this.Q, luaValue.x2());
     }
 
@@ -302,7 +302,7 @@ public class LuaDouble extends LuaNumber {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue z1(LuaValue luaValue) {
+    public luaj.LuaValue z1(luaj.LuaValue luaValue) {
         return !luaValue.m1() ? super.z1(luaValue) : J2(this.Q * luaValue.x2());
     }
 

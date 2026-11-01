@@ -1,27 +1,19 @@
 package android.ext;
 
-import java.io.BufferedOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.zip.CRC32;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipException;
-import java.util.zip.ZipOutputStream;
-
 /* JADX INFO: loaded from: classes.dex */
-public class g extends ZipOutputStream {
+public class g extends java.util.zip.ZipOutputStream {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     private boolean f979a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private a f980b;
+    private android.ext.g$a f980b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private ZipEntry f981c;
+    private java.util.zip.ZipEntry f981c;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private final CRC32 f982d;
+    private final java.util.zip.CRC32 f982d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
     private int f983e;
@@ -29,97 +21,40 @@ public class g extends ZipOutputStream {
     /* JADX INFO: renamed from: f, reason: collision with root package name */
     private byte[] f984f;
 
-    private static class a extends OutputStream {
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        static a f985c;
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        private OutputStream f986a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        int f987b = 0;
-
-        public a(OutputStream outputStream) {
-            this.f986a = outputStream;
-            f985c = this;
-        }
-
-        @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
-        public void close() throws IOException {
-            this.f986a.close();
-        }
-
-        public boolean equals(Object obj) {
-            return this.f986a.equals(obj);
-        }
-
-        @Override // java.io.OutputStream, java.io.Flushable
-        public void flush() throws IOException {
-            this.f986a.flush();
-        }
-
-        public int hashCode() {
-            return this.f986a.hashCode();
-        }
-
-        public String toString() {
-            return this.f986a.toString();
-        }
-
-        @Override // java.io.OutputStream
-        public void write(int i) throws IOException {
-            this.f986a.write(i);
-            this.f987b++;
-        }
-
-        @Override // java.io.OutputStream
-        public void write(byte[] bArr) throws IOException {
-            this.f986a.write(bArr);
-            this.f987b += bArr.length;
-        }
-
-        @Override // java.io.OutputStream
-        public void write(byte[] bArr, int i, int i2) throws IOException {
-            this.f986a.write(bArr, i, i2);
-            this.f987b += i2;
-        }
-    }
-
-    public g(OutputStream outputStream) {
-        super(new a(new BufferedOutputStream(outputStream, 65536)));
+    public g(java.io.OutputStream outputStream) {
+        super(new android.ext.g$a(new java.io.BufferedOutputStream(outputStream, 65536)));
         this.f979a = false;
         this.f981c = null;
-        this.f982d = new CRC32();
+        this.f982d = new java.util.zip.CRC32();
         this.f983e = 0;
         this.f984f = null;
-        this.f980b = a.f985c;
+        this.f980b = android.ext.g$a.f985c;
         setComment("");
     }
 
-    public static String a(ZipEntry zipEntry) {
+    public static java.lang.String a(java.util.zip.ZipEntry zipEntry) {
         if (zipEntry == null) {
             return "null";
         }
-        return zipEntry.getName() + ", method: " + zipEntry.getMethod() + ", crc: 0x" + Long.toHexString(zipEntry.getCrc()) + ", size: " + zipEntry.getSize() + ", compressed size: " + zipEntry.getCompressedSize();
+        return zipEntry.getName() + ", method: " + zipEntry.getMethod() + ", crc: 0x" + java.lang.Long.toHexString(zipEntry.getCrc()) + ", size: " + zipEntry.getSize() + ", compressed size: " + zipEntry.getCompressedSize();
     }
 
     @Override // java.util.zip.ZipOutputStream
-    public void closeEntry() throws IOException {
+    public void closeEntry() throws java.io.IOException {
         try {
-            ZipEntry zipEntry = this.f981c;
+            java.util.zip.ZipEntry zipEntry = this.f981c;
             if (zipEntry != null && zipEntry.getMethod() == 0) {
                 if (this.f981c.getCrc() != this.f982d.getValue()) {
-                    e1.p("CRC mismatch: " + a(this.f981c) + " != " + this.f982d.getValue());
+                    android.ext.e1.p("CRC mismatch: " + a(this.f981c) + " != " + this.f982d.getValue());
                     this.f981c.setCrc(this.f982d.getValue());
                 }
                 if (this.f981c.getSize() != this.f983e) {
-                    e1.p("Size mismatch: " + a(this.f981c) + " != " + this.f983e);
+                    android.ext.e1.p("Size mismatch: " + a(this.f981c) + " != " + this.f983e);
                     this.f981c.setSize((long) this.f983e);
                 }
                 if (this.f981c.getCompressedSize() != this.f981c.getSize()) {
-                    e1.p("CompressedSize mismatch: " + a(this.f981c) + " != " + this.f981c.getSize());
-                    ZipEntry zipEntry2 = this.f981c;
+                    android.ext.e1.p("CompressedSize mismatch: " + a(this.f981c) + " != " + this.f981c.getSize());
+                    java.util.zip.ZipEntry zipEntry2 = this.f981c;
                     zipEntry2.setCompressedSize(zipEntry2.getSize());
                 }
             }
@@ -128,13 +63,13 @@ public class g extends ZipOutputStream {
             this.f981c = null;
             this.f982d.reset();
             this.f983e = 0;
-        } catch (ZipException e2) {
-            throw new RuntimeException("Failed close entry: " + a(this.f981c), e2);
+        } catch (java.util.zip.ZipException e2) {
+            throw new java.lang.RuntimeException("Failed close entry: " + a(this.f981c), e2);
         }
     }
 
     @Override // java.util.zip.ZipOutputStream
-    public void putNextEntry(ZipEntry zipEntry) throws IOException {
+    public void putNextEntry(java.util.zip.ZipEntry zipEntry) throws java.io.IOException {
         zipEntry.setComment("");
         this.f981c = zipEntry;
         if (this.f979a) {
@@ -143,7 +78,7 @@ public class g extends ZipOutputStream {
         if (zipEntry.getMethod() == 0) {
             flush();
             int length = this.f980b.f987b + 30 + zipEntry.getName().getBytes("UTF-8").length;
-            int i = h3.b(zipEntry.getName()) ? 4096 : 4;
+            int i = android.ext.h3.b(zipEntry.getName()) ? 4096 : 4;
             zipEntry.setExtra(new byte[(i - (length % i)) % i]);
             zipEntry.setCompressedSize(zipEntry.getSize());
         }
@@ -154,12 +89,12 @@ public class g extends ZipOutputStream {
     }
 
     @Override // java.util.zip.ZipOutputStream
-    public void setComment(String str) {
+    public void setComment(java.lang.String str) {
         super.setComment("");
     }
 
     @Override // java.util.zip.DeflaterOutputStream, java.io.FilterOutputStream, java.io.OutputStream
-    public void write(int i) throws IOException {
+    public void write(int i) throws java.io.IOException {
         byte[] bArr = this.f984f;
         if (bArr == null) {
             bArr = new byte[1];
@@ -170,12 +105,12 @@ public class g extends ZipOutputStream {
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
-    public void write(byte[] bArr) throws IOException {
+    public void write(byte[] bArr) throws java.io.IOException {
         write(bArr, 0, bArr.length);
     }
 
     @Override // java.util.zip.ZipOutputStream, java.util.zip.DeflaterOutputStream, java.io.FilterOutputStream, java.io.OutputStream
-    public void write(byte[] bArr, int i, int i2) throws IOException {
+    public void write(byte[] bArr, int i, int i2) throws java.io.IOException {
         super.write(bArr, i, i2);
         this.f982d.update(bArr, i, i2);
         this.f983e += i2;

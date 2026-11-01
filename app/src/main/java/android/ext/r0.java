@@ -1,61 +1,46 @@
 package android.ext;
 
-import android.content.SharedPreferences;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 /* JADX INFO: loaded from: classes.dex */
 public final class r0 {
-
-    class a implements Runnable {
-        a() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            r0.this.a();
-        }
-    }
-
     public r0(boolean z) {
         if (z) {
-            new g0(new a(), "FloatCheck").start();
+            new android.ext.g0(new android.ext.r0$a(this), "FloatCheck").start();
         } else {
             a();
         }
     }
 
-    private void b(String str) {
-        e1.d("FloatCheck: float off by " + str);
-        m2.f1074a = false;
+    private void b(java.lang.String str) {
+        android.ext.e1.d("FloatCheck: float off by " + str);
+        android.ext.m2.f1074a = false;
     }
 
     private void c() {
-        String line;
+        java.lang.String line;
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Tools.I(new String[]{"getprop"}).getInputStream()));
+            java.io.BufferedReader bufferedReader = new java.io.BufferedReader(new java.io.InputStreamReader(android.ext.Tools.I(new java.lang.String[]{"getprop"}).getInputStream()));
             do {
                 line = bufferedReader.readLine();
                 if (line != null) {
                 }
                 bufferedReader.close();
             } while (!line.contains("ro.build.remixos.version"));
-            e1.d("Remix-detect: " + line);
+            android.ext.e1.d("Remix-detect: " + line);
             if (line.contains("[2.")) {
                 b(line);
             }
             bufferedReader.close();
-        } catch (Throwable th) {
-            e1.l("Remix-detect", th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("Remix-detect", th);
         }
     }
 
     public static void d(boolean z) {
-        new g2().c("float-off", z, false).commit();
+        new android.ext.g2().c("float-off", z, false).commit();
     }
 
     void a() {
-        SharedPreferences sharedPreferencesM0 = Tools.M0();
+        android.content.SharedPreferences sharedPreferencesM0 = android.ext.Tools.M0();
         if (!sharedPreferencesM0.contains("float-off")) {
             c();
         } else if (sharedPreferencesM0.getBoolean("float-off", false)) {

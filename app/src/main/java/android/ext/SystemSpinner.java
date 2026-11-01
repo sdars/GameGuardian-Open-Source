@@ -1,49 +1,52 @@
 package android.ext;
 
-import android.content.Context;
-import android.content.DialogInterface;
-import android.fix.Button;
-import android.util.AttributeSet;
-import android.view.View;
-
 /* JADX INFO: loaded from: classes.dex */
-public class SystemSpinner extends Button implements View.OnClickListener, DialogInterface.OnClickListener {
+public class SystemSpinner extends android.fix.Button implements android.view.View.OnClickListener, android.content.DialogInterface.OnClickListener {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     protected int f475a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    protected DialogInterface.OnClickListener f476b;
+    protected android.content.DialogInterface.OnClickListener f476b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    protected a.e f477c;
+    protected gg_a.e f477c;
 
-    public SystemSpinner(Context context, AttributeSet attributeSet) {
+    public SystemSpinner(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f477c = null;
     }
 
     protected void a() {
-        a.e eVar = this.f477c;
+        gg_a.e eVar = this.f477c;
         int size = eVar.size();
-        CharSequence[] charSequenceArr = new CharSequence[size];
+        java.lang.CharSequence[] charSequenceArr = new java.lang.CharSequence[size];
         for (int i = 0; i < size; i++) {
-            charSequenceArr[i] = (CharSequence) eVar.valueAt((size - 1) - i);
+            charSequenceArr[i] = (java.lang.CharSequence) eVar.valueAt((size - 1) - i);
         }
-        f.o(f.c(getContext()).setSingleChoiceItems(charSequenceArr, (size - 1) - eVar.indexOfKey(this.f475a), this));
+        android.ext.f.o(android.ext.f.c(getContext()).setSingleChoiceItems(charSequenceArr, (size - 1) - eVar.indexOfKey(this.f475a), this));
     }
 
     public int getSelected() {
         return this.f475a;
     }
 
-    public void onClick(DialogInterface dialogInterface, int i) {
-        a.e eVar = this.f477c;
+    public void onClick(android.content.DialogInterface dialogInterface, int i) {
+        gg_a.e eVar = this.f477c;
         setSelected(eVar.keyAt((eVar.size() - 1) - i));
-        Tools.D(dialogInterface);
+        android.ext.Tools.D(dialogInterface);
     }
 
-    public void setData(a.e eVar) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
+        gg_a.e eVar = this.f477c;
+        if (eVar == null || eVar.size() == 0) {
+            return;
+        }
+        a();
+    }
+
+    public void setData(gg_a.e eVar) {
         if (eVar == null) {
             return;
         }
@@ -56,19 +59,19 @@ public class SystemSpinner extends Button implements View.OnClickListener, Dialo
         setOnClickListener(this);
     }
 
-    public void setOnItemSelectedListener(DialogInterface.OnClickListener onClickListener) {
-        this.f476b = onClickListener;
+    public void setOnItemSelectedListener(android.content.DialogInterface.OnClickListener dialogInterface$OnClickListener) {
+        this.f476b = dialogInterface$OnClickListener;
     }
 
     public void setSelected(int i) {
-        a.e eVar = this.f477c;
+        gg_a.e eVar = this.f477c;
         if (eVar == null) {
             return;
         }
-        CharSequence charSequence = (CharSequence) eVar.get(i);
+        java.lang.CharSequence charSequence = (java.lang.CharSequence) eVar.get(i);
         if (charSequence == null) {
             if (eVar.size() == 1) {
-                charSequence = (CharSequence) eVar.valueAt(0);
+                charSequence = (java.lang.CharSequence) eVar.valueAt(0);
                 i = eVar.keyAt(0);
             } else {
                 charSequence = "???";
@@ -76,18 +79,9 @@ public class SystemSpinner extends Button implements View.OnClickListener, Dialo
         }
         setText(charSequence);
         this.f475a = i;
-        DialogInterface.OnClickListener onClickListener = this.f476b;
-        if (onClickListener != null) {
-            onClickListener.onClick(null, i);
+        android.content.DialogInterface.OnClickListener dialogInterface$OnClickListener = this.f476b;
+        if (dialogInterface$OnClickListener != null) {
+            dialogInterface$OnClickListener.onClick(null, i);
         }
-    }
-
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
-        a.e eVar = this.f477c;
-        if (eVar == null || eVar.size() == 0) {
-            return;
-        }
-        a();
     }
 }

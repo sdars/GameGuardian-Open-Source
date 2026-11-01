@@ -1,33 +1,22 @@
 package lasm;
 
-import e.d;
-import e.e;
-import e.f;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
-import luaj.LuaLong;
-import luaj.LuaValue;
-import luaj.h;
-
 /* JADX INFO: loaded from: classes.dex */
-public class a extends LasmBase implements e.a {
+public class a extends lasm.LasmBase implements gg_e.a {
     private static int[] l;
     private static int[] m;
     private static int[] n;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    public e.c f1634b;
+    public gg_e.c f1634b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    e f1635c;
+    gg_e.e f1635c;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    public f f1636d;
+    public gg_e.f f1636d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    public f f1637e;
+    public gg_e.f f1637e;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
     private int f1638f;
@@ -35,7 +24,7 @@ public class a extends LasmBase implements e.a {
     /* JADX INFO: renamed from: g, reason: collision with root package name */
     private int f1639g;
     private final int[] h;
-    private List i;
+    private java.util.List i;
     private int[] j;
     private int k;
 
@@ -45,13 +34,31 @@ public class a extends LasmBase implements e.a {
         z();
     }
 
-    public a(InputStream inputStream) {
+    public a(java.io.InputStream inputStream) {
         this(inputStream, null);
     }
 
+    public a(java.io.InputStream inputStream, java.lang.String str) {
+        this.h = new int[34];
+        this.i = new java.util.ArrayList();
+        this.k = -1;
+        try {
+            this.f1635c = new gg_e.e(inputStream, str, 1, 1);
+            this.f1634b = new gg_e.c(this.f1635c);
+            this.f1636d = new gg_e.f();
+            this.f1638f = -1;
+            this.f1639g = 0;
+            for (int i = 0; i < 34; i++) {
+                this.h[i] = -1;
+            }
+        } catch (java.io.UnsupportedEncodingException e2) {
+            throw new java.lang.RuntimeException(e2);
+        }
+    }
+
     private int A() {
-        f fVar = this.f1636d;
-        f fVarB = fVar.f1552g;
+        gg_e.f fVar = this.f1636d;
+        gg_e.f fVarB = fVar.f1552g;
         this.f1637e = fVarB;
         if (fVarB == null) {
             fVarB = this.f1634b.b();
@@ -62,16 +69,16 @@ public class a extends LasmBase implements e.a {
         return i;
     }
 
-    private f w(int i) throws d {
-        f fVar = this.f1636d;
-        f fVarB = fVar.f1552g;
+    private gg_e.f w(int i) throws gg_e.d {
+        gg_e.f fVar = this.f1636d;
+        gg_e.f fVarB = fVar.f1552g;
         if (fVarB == null) {
             fVarB = this.f1634b.b();
             fVar.f1552g = fVarB;
         }
         this.f1636d = fVarB;
         this.f1638f = -1;
-        f fVar2 = this.f1636d;
+        gg_e.f fVar2 = this.f1636d;
         if (fVar2.f1546a == i) {
             this.f1639g++;
             return fVar2;
@@ -93,27 +100,27 @@ public class a extends LasmBase implements e.a {
         n = new int[]{1024, 16, 4192, 256, 1286144, 1277952, 24576, 8192, 4096, 131072, 4192, 128, 128, 128, 4192, 0, 0, 0, 2048, 0, 0, 8192, 0, 0, 2048, 8192, 8192, 0, 2048, 2048, 8192, 0, 0, 128};
     }
 
-    public final b k() throws d {
-        b bVar = new b();
+    public final lasm.b k() throws gg_e.d {
+        lasm.b bVar = new lasm.b();
         w(62);
         w(81);
-        bVar.f1729g = LasmBase.j(this.f1636d);
+        bVar.f1729g = lasm.LasmBase.j(this.f1636d);
         w(74);
         w(63);
         w(79);
-        bVar.h = LasmBase.e(this.f1636d);
+        bVar.h = lasm.LasmBase.e(this.f1636d);
         w(74);
         w(64);
         w(79);
-        bVar.i = LasmBase.e(this.f1636d);
+        bVar.i = lasm.LasmBase.e(this.f1636d);
         w(74);
         w(65);
         w(79);
-        bVar.j = LasmBase.g(this.f1636d, 255);
+        bVar.j = lasm.LasmBase.g(this.f1636d, 255);
         w(74);
         w(66);
         w(79);
-        bVar.k = LasmBase.g(this.f1636d, 255);
+        bVar.k = lasm.LasmBase.g(this.f1636d, 255);
         w(74);
         w(67);
         w(79);
@@ -203,14 +210,14 @@ public class a extends LasmBase implements e.a {
         }
     }
 
-    public final f l() throws d {
+    public final gg_e.f l() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
         }
         if (iA == 52) {
             w(52);
-            f fVarW = w(60);
+            gg_e.f fVarW = w(60);
             w(89);
             return fVarW;
         }
@@ -219,19 +226,19 @@ public class a extends LasmBase implements e.a {
         }
         this.h[8] = this.f1639g;
         w(-1);
-        throw new d();
+        throw new gg_e.d();
     }
 
-    public final void m(b bVar) throws d {
+    public final void m(lasm.b bVar) throws gg_e.d {
         w(72);
-        f fVarW = w(61);
+        gg_e.f fVarW = w(61);
         w(74);
         bVar.d(fVarW, k());
         w(73);
         w(74);
     }
 
-    public final LuaValue n() throws d {
+    public final luaj.LuaValue n() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -240,90 +247,90 @@ public class a extends LasmBase implements e.a {
             w(50);
             w(88);
             w(79);
-            LasmBase.Const r0 = new LasmBase.Const(this.f1636d);
+            lasm.LasmBase$Const lasmBase$Const = new lasm.LasmBase$Const(this.f1636d);
             w(89);
-            return r0;
+            return lasmBase$Const;
         }
         if (iA != 84) {
             switch (iA) {
                 case 56:
                     w(56);
-                    return LuaValue.f1673c;
+                    return luaj.LuaValue.f1673c;
                 case 57:
                     w(57);
-                    return LuaValue.f1674d;
+                    return luaj.LuaValue.f1674d;
                 case 58:
                     w(58);
-                    return LuaValue.f1675e;
+                    return luaj.LuaValue.f1675e;
                 default:
                     switch (iA) {
                         case 79:
                             w(79);
-                            return LuaLong.I2(LasmBase.h(this.f1636d));
+                            return luaj.LuaLong.I2(lasm.LasmBase.h(this.f1636d));
                         case 80:
                             w(80);
                             break;
                         case 81:
                             w(81);
-                            return LasmBase.j(this.f1636d);
+                            return lasm.LasmBase.j(this.f1636d);
                         default:
                             this.h[5] = this.f1639g;
                             w(-1);
-                            throw new d();
+                            throw new gg_e.d();
                     }
                     break;
             }
         } else {
             w(84);
         }
-        return LasmBase.i(this.f1636d);
+        return lasm.LasmBase.i(this.f1636d);
     }
 
     /* JADX WARN: Code duplicated, block: B:224:0x0468  */
     /* JADX WARN: Code duplicated, block: B:229:0x0486 A[LOOP:1: B:222:0x0461->B:229:0x0486, LOOP_END] */
     /* JADX WARN: Code duplicated, block: B:272:0x0470 A[SYNTHETIC] */
-    public final void o(b bVar) throws d {
-        f fVarW;
-        f fVarW2;
-        LuaValue luaValue;
-        LuaValue luaValue2;
-        LuaValue luaValue3;
-        f fVar;
-        LuaValue luaValue4;
-        LuaValue luaValue5;
-        LuaValue luaValue6;
+    public final void o(lasm.b bVar) throws gg_e.d {
+        gg_e.f fVarW;
+        gg_e.f fVarW2;
+        luaj.LuaValue luaValue;
+        luaj.LuaValue luaValue2;
+        luaj.LuaValue luaValue3;
+        gg_e.f fVar;
+        luaj.LuaValue luaValue4;
+        luaj.LuaValue luaValue5;
+        luaj.LuaValue luaValue6;
         int iA;
         int i;
-        LasmBase.V vP;
-        f fVarW3;
-        f fVarW4;
-        LasmBase.V v;
-        LuaValue luaValue7;
-        LuaValue luaValueS;
-        LuaValue luaValueP;
-        LuaValue luaValueS2;
+        lasm.LasmBase$V lasmBase$VP;
+        gg_e.f fVarW3;
+        gg_e.f fVarW4;
+        lasm.LasmBase$V lasmBase$V;
+        luaj.LuaValue luaValue7;
+        luaj.LuaValue luaValueS;
+        luaj.LuaValue luaValueP;
+        luaj.LuaValue luaValueS2;
         int i2;
         int i3;
-        LuaValue luaValueQ;
-        LuaValue luaValueQ2;
-        LuaValue luaValueQ3;
-        LuaValue luaValue8;
-        LuaValue luaValue9;
-        LuaValue luaValue10;
-        LuaValue luaValue11;
-        LuaValue luaValue12;
-        LasmBase.V v2;
-        f fVarW5;
+        luaj.LuaValue luaValueQ;
+        luaj.LuaValue luaValueQ2;
+        luaj.LuaValue luaValueQ3;
+        luaj.LuaValue luaValue8;
+        luaj.LuaValue luaValue9;
+        luaj.LuaValue luaValue10;
+        luaj.LuaValue luaValue11;
+        luaj.LuaValue luaValue12;
+        lasm.LasmBase$V lasmBase$V2;
+        gg_e.f fVarW5;
         int i4;
-        LasmBase.V vP2;
-        LuaValue luaValueP2;
-        LasmBase.V vP3;
-        LasmBase.V v3;
+        lasm.LasmBase$V lasmBase$VP2;
+        luaj.LuaValue luaValueP2;
+        lasm.LasmBase$V lasmBase$VP3;
+        lasm.LasmBase$V lasmBase$V3;
         int i5;
-        LasmBase.V v4;
-        LasmBase.V v5;
-        LasmBase.V vP4;
-        LasmBase.V vP5;
+        lasm.LasmBase$V lasmBase$V4;
+        lasm.LasmBase$V lasmBase$V5;
+        lasm.LasmBase$V lasmBase$VP4;
+        lasm.LasmBase$V lasmBase$VP5;
         while (true) {
             int iA2 = this.f1638f;
             if (iA2 == -1) {
@@ -348,16 +355,16 @@ public class a extends LasmBase implements e.a {
                             break;
                         }
                         w(71);
-                        LasmBase.V vP6 = p();
+                        lasm.LasmBase$V lasmBase$VP6 = p();
                         w(81);
-                        bVar.l(vP6, this.f1636d, 0);
+                        bVar.l(lasmBase$VP6, this.f1636d, 0);
                     }
                     this.h[13] = this.f1639g;
                 } else if (iA3 == 70) {
                     w(70);
-                    LasmBase.V vP7 = p();
+                    lasm.LasmBase$V lasmBase$VP7 = p();
                     w(81);
-                    bVar.q(vP7, this.f1636d);
+                    bVar.q(lasmBase$VP7, this.f1636d);
                     while (true) {
                         w(74);
                         int iA5 = this.f1638f;
@@ -368,16 +375,16 @@ public class a extends LasmBase implements e.a {
                             break;
                         }
                         w(71);
-                        LasmBase.V vP8 = p();
+                        lasm.LasmBase$V lasmBase$VP8 = p();
                         w(81);
-                        bVar.l(vP8, this.f1636d, 0);
+                        bVar.l(lasmBase$VP8, this.f1636d, 0);
                     }
                     this.h[12] = this.f1639g;
                 } else {
                     if (iA3 != 76) {
                         this.h[14] = this.f1639g;
                         w(-1);
-                        throw new d();
+                        throw new gg_e.d();
                     }
                     w(76);
                     bVar.e(this.f1636d);
@@ -391,9 +398,9 @@ public class a extends LasmBase implements e.a {
                             break;
                         }
                         w(71);
-                        LasmBase.V vP9 = p();
+                        lasm.LasmBase$V lasmBase$VP9 = p();
                         w(81);
-                        bVar.l(vP9, this.f1636d, 0);
+                        bVar.l(lasmBase$VP9, this.f1636d, 0);
                     }
                     this.h[11] = this.f1639g;
                 }
@@ -430,20 +437,20 @@ public class a extends LasmBase implements e.a {
                                     default:
                                         this.h[20] = this.f1639g;
                                         w(-1);
-                                        throw new d();
+                                        throw new gg_e.d();
                                 }
                             } else {
                                 i = 44;
                             }
                             w(i);
                             fVarW = this.f1636d;
-                            vP3 = p();
+                            lasmBase$VP3 = p();
                             luaValueP2 = p();
-                            v = vP3;
+                            lasmBase$V = lasmBase$VP3;
                             luaValue7 = luaValueP2;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -451,13 +458,13 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 6:
                             fVarW = w(6);
-                            vP3 = p();
+                            lasmBase$VP3 = p();
                             luaValueP2 = n();
-                            v = vP3;
+                            lasmBase$V = lasmBase$VP3;
                             luaValue7 = luaValueP2;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -465,7 +472,7 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 7:
                             fVarW = w(7);
-                            vP = p();
+                            lasmBase$VP = p();
                             fVarW3 = w(79);
                             int iA9 = this.f1638f;
                             if (iA9 == -1) {
@@ -473,7 +480,7 @@ public class a extends LasmBase implements e.a {
                             }
                             if (iA9 != 55) {
                                 this.h[15] = this.f1639g;
-                                luaValueQ = vP;
+                                luaValueQ = lasmBase$VP;
                                 fVarW2 = fVarW3;
                                 luaValueQ2 = null;
                                 luaValue2 = null;
@@ -482,7 +489,7 @@ public class a extends LasmBase implements e.a {
                                 break;
                             } else {
                                 fVarW4 = w(55);
-                                luaValue4 = vP;
+                                luaValue4 = lasmBase$VP;
                                 fVarW2 = fVarW3;
                                 fVar = fVarW4;
                                 luaValue6 = null;
@@ -499,9 +506,9 @@ public class a extends LasmBase implements e.a {
                                         return;
                                     } else {
                                         w(71);
-                                        LasmBase.V vP10 = p();
+                                        lasm.LasmBase$V lasmBase$VP10 = p();
                                         w(81);
-                                        bVar.l(vP10, this.f1636d, 1);
+                                        bVar.l(lasmBase$VP10, this.f1636d, 1);
                                     }
                                 }
                             }
@@ -518,20 +525,20 @@ public class a extends LasmBase implements e.a {
                                 if (iA10 != 38) {
                                     this.h[16] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                                 }
                                 w(38);
                             }
                             fVarW = this.f1636d;
-                            LasmBase.V vP11 = p();
+                            lasm.LasmBase$V lasmBase$VP11 = p();
                             w(75);
-                            LasmBase.V vP12 = p();
-                            LasmBase.a(vP11, vP12, fVarW.f1546a == 38 ? 2 : 0);
-                            v = vP11;
-                            luaValue7 = vP12;
+                            lasm.LasmBase$V lasmBase$VP12 = p();
+                            lasm.LasmBase.a(lasmBase$VP11, lasmBase$VP12, fVarW.f1546a == 38 ? 2 : 0);
+                            lasmBase$V = lasmBase$VP11;
+                            luaValue7 = lasmBase$VP12;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -539,13 +546,13 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 9:
                             fVarW = w(9);
-                            vP3 = p();
+                            lasmBase$VP3 = p();
                             luaValueP2 = s();
-                            v = vP3;
+                            lasmBase$V = lasmBase$VP3;
                             luaValue7 = luaValueP2;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -578,7 +585,7 @@ public class a extends LasmBase implements e.a {
                                 if (iA11 != 16) {
                                     this.h[17] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                                 }
                                 w(16);
                             }
@@ -614,13 +621,13 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 13:
                             fVarW = w(13);
-                            vP3 = p();
+                            lasmBase$VP3 = p();
                             luaValueP2 = s();
-                            v = vP3;
+                            lasmBase$V = lasmBase$VP3;
                             luaValue7 = luaValueP2;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -684,7 +691,7 @@ public class a extends LasmBase implements e.a {
                                                 default:
                                                     this.h[19] = this.f1639g;
                                                     w(-1);
-                                                    throw new d();
+                                                    throw new gg_e.d();
                                             }
                                             break;
                                     }
@@ -712,10 +719,10 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 15:
                             fVarW = w(15);
-                            vP = p();
+                            lasmBase$VP = p();
                             fVarW3 = w(79);
                             fVarW4 = w(79);
-                            luaValue4 = vP;
+                            luaValue4 = lasmBase$VP;
                             fVarW2 = fVarW3;
                             fVar = fVarW4;
                             luaValue6 = null;
@@ -732,22 +739,22 @@ public class a extends LasmBase implements e.a {
                                     return;
                                 } else {
                                     w(71);
-                                    LasmBase.V vP13 = p();
+                                    lasm.LasmBase$V lasmBase$VP13 = p();
                                     w(81);
-                                    bVar.l(vP13, this.f1636d, 1);
+                                    bVar.l(lasmBase$VP13, this.f1636d, 1);
                                 }
                             }
                             break;
                         case 26:
                             fVarW = w(26);
-                            LasmBase.V vP14 = p();
-                            LasmBase.V vP15 = p();
+                            lasm.LasmBase$V lasmBase$VP14 = p();
+                            lasm.LasmBase$V lasmBase$VP15 = p();
                             w(75);
-                            LasmBase.V vP16 = p();
-                            LasmBase.a(vP15, vP16, 0);
-                            luaValue9 = vP14;
-                            luaValue8 = vP15;
-                            luaValueQ3 = vP16;
+                            lasm.LasmBase$V lasmBase$VP16 = p();
+                            lasm.LasmBase.a(lasmBase$VP15, lasmBase$VP16, 0);
+                            luaValue9 = lasmBase$VP14;
+                            luaValue8 = lasmBase$VP15;
+                            luaValueQ3 = lasmBase$VP16;
                             luaValue10 = luaValue9;
                             luaValue11 = luaValue8;
                             luaValue12 = luaValueQ3;
@@ -763,13 +770,13 @@ public class a extends LasmBase implements e.a {
                                 iA13 = A();
                             }
                             if (iA13 == 59 || iA13 == 77) {
-                                vP = p();
+                                lasmBase$VP = p();
                             } else {
                                 this.h[21] = this.f1639g;
-                                vP = null;
+                                lasmBase$VP = null;
                             }
                             fVarW3 = l();
-                            luaValueQ = vP;
+                            luaValueQ = lasmBase$VP;
                             fVarW2 = fVarW3;
                             luaValueQ2 = null;
                             luaValue2 = null;
@@ -796,7 +803,7 @@ public class a extends LasmBase implements e.a {
                                 default:
                                     this.h[23] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                             }
                             w(i3);
                             fVarW = this.f1636d;
@@ -809,9 +816,9 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 31:
                             fVarW = w(31);
-                            vP = p();
+                            lasmBase$VP = p();
                             fVarW3 = w(79);
-                            luaValueQ = vP;
+                            luaValueQ = lasmBase$VP;
                             fVarW2 = fVarW3;
                             luaValueQ2 = null;
                             luaValue2 = null;
@@ -820,13 +827,13 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 32:
                             fVarW = w(32);
-                            vP5 = p();
-                            vP4 = p();
+                            lasmBase$VP5 = p();
+                            lasmBase$VP4 = p();
                             fVarW5 = w(79);
-                            v5 = vP5;
-                            v4 = vP4;
-                            luaValueQ = v5;
-                            luaValueQ2 = v4;
+                            lasmBase$V5 = lasmBase$VP5;
+                            lasmBase$V4 = lasmBase$VP4;
+                            luaValueQ = lasmBase$V5;
+                            luaValueQ2 = lasmBase$V4;
                             fVarW2 = fVarW5;
                             luaValue2 = null;
                             luaValue = luaValueQ2;
@@ -834,19 +841,19 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 33:
                             fVarW = w(33);
-                            LasmBase.V vP17 = p();
+                            lasm.LasmBase$V lasmBase$VP17 = p();
                             int iA15 = this.f1638f;
                             if (iA15 == -1) {
                                 iA15 = A();
                             }
                             if (iA15 != 75) {
                                 this.h[24] = this.f1639g;
-                                v2 = null;
+                                lasmBase$V2 = null;
                             } else {
                                 w(75);
-                                LasmBase.V vP18 = p();
-                                LasmBase.a(vP17, vP18, 0);
-                                v2 = vP18;
+                                lasm.LasmBase$V lasmBase$VP18 = p();
+                                lasm.LasmBase.a(lasmBase$VP17, lasmBase$VP18, 0);
+                                lasmBase$V2 = lasmBase$VP18;
                             }
                             int iA16 = this.f1638f;
                             if (iA16 == -1) {
@@ -859,10 +866,10 @@ public class a extends LasmBase implements e.a {
                                 }
                                 if (iA17 == 54) {
                                     fVarW5 = w(54);
-                                    v5 = vP17;
-                                    v4 = v2;
-                                    luaValueQ = v5;
-                                    luaValueQ2 = v4;
+                                    lasmBase$V5 = lasmBase$VP17;
+                                    lasmBase$V4 = lasmBase$V2;
+                                    luaValueQ = lasmBase$V5;
+                                    luaValueQ2 = lasmBase$V4;
                                     fVarW2 = fVarW5;
                                     luaValue2 = null;
                                     luaValue = luaValueQ2;
@@ -871,15 +878,15 @@ public class a extends LasmBase implements e.a {
                                     if (iA17 != 59 && iA17 != 77) {
                                         this.h[25] = this.f1639g;
                                         w(-1);
-                                        throw new d();
+                                        throw new gg_e.d();
                                     }
-                                    LasmBase.b(vP17, p());
+                                    lasm.LasmBase.b(lasmBase$VP17, p());
                                     w(75);
-                                    LasmBase.V vP19 = p();
-                                    LasmBase.a(vP17, vP19, 0);
-                                    luaValue9 = vP17;
-                                    luaValue8 = v2;
-                                    luaValueQ3 = vP19;
+                                    lasm.LasmBase$V lasmBase$VP19 = p();
+                                    lasm.LasmBase.a(lasmBase$VP17, lasmBase$VP19, 0);
+                                    luaValue9 = lasmBase$VP17;
+                                    luaValue8 = lasmBase$V2;
+                                    luaValueQ3 = lasmBase$VP19;
                                     luaValue10 = luaValue9;
                                     luaValue11 = luaValue8;
                                     luaValue12 = luaValueQ3;
@@ -890,13 +897,13 @@ public class a extends LasmBase implements e.a {
                                 }
                             } else {
                                 this.h[26] = this.f1639g;
-                                vP3 = vP17;
-                                luaValueP2 = v2;
-                                v = vP3;
+                                lasmBase$VP3 = lasmBase$VP17;
+                                luaValueP2 = lasmBase$V2;
+                                lasmBase$V = lasmBase$VP3;
                                 luaValue7 = luaValueP2;
                                 luaValue12 = null;
                                 luaValue11 = luaValue7;
-                                luaValue10 = v;
+                                luaValue10 = lasmBase$V;
                                 fVarW2 = null;
                                 luaValue = luaValue11;
                                 luaValue2 = luaValue12;
@@ -915,40 +922,40 @@ public class a extends LasmBase implements e.a {
                                 if (iA18 != 42) {
                                     this.h[27] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                                 }
                                 i4 = 42;
                             }
                             w(i4);
                             fVarW = this.f1636d;
-                            vP2 = p();
+                            lasmBase$VP2 = p();
                             int iA19 = this.f1638f;
                             if (iA19 == -1) {
                                 iA19 = A();
                             }
                             if (iA19 != 75) {
                                 this.h[28] = this.f1639g;
-                                v3 = vP2;
-                                v = v3;
+                                lasmBase$V3 = lasmBase$VP2;
+                                lasmBase$V = lasmBase$V3;
                                 luaValue7 = null;
                                 luaValue12 = null;
                                 luaValue11 = luaValue7;
-                                luaValue10 = v;
+                                luaValue10 = lasmBase$V;
                                 fVarW2 = null;
                                 luaValue = luaValue11;
                                 luaValue2 = luaValue12;
                                 luaValue3 = luaValue10;
                             }
                             w(75);
-                            LasmBase.V vP20 = p();
-                            LasmBase.a(vP2, vP20, 0);
-                            vP3 = vP2;
-                            luaValueP2 = vP20;
-                            v = vP3;
+                            lasm.LasmBase$V lasmBase$VP20 = p();
+                            lasm.LasmBase.a(lasmBase$VP2, lasmBase$VP20, 0);
+                            lasmBase$VP3 = lasmBase$VP2;
+                            luaValueP2 = lasmBase$VP20;
+                            lasmBase$V = lasmBase$VP3;
                             luaValue7 = luaValueP2;
                             luaValue12 = null;
                             luaValue11 = luaValue7;
-                            luaValue10 = v;
+                            luaValue10 = lasmBase$V;
                             fVarW2 = null;
                             luaValue = luaValue11;
                             luaValue2 = luaValue12;
@@ -961,30 +968,30 @@ public class a extends LasmBase implements e.a {
                                 iA20 = A();
                             }
                             if (iA20 == 59 || iA20 == 77) {
-                                vP2 = p();
+                                lasmBase$VP2 = p();
                                 int iA21 = this.f1638f;
                                 if (iA21 == -1) {
                                     iA21 = A();
                                 }
                                 if (iA21 != 75) {
                                     this.h[29] = this.f1639g;
-                                    v3 = vP2;
-                                    v = v3;
+                                    lasmBase$V3 = lasmBase$VP2;
+                                    lasmBase$V = lasmBase$V3;
                                     luaValue7 = null;
                                     luaValue12 = null;
                                     luaValue11 = luaValue7;
-                                    luaValue10 = v;
+                                    luaValue10 = lasmBase$V;
                                 }
                                 w(75);
-                                LasmBase.V vP21 = p();
-                                LasmBase.a(vP2, vP21, 0);
-                                vP3 = vP2;
-                                luaValueP2 = vP21;
-                                v = vP3;
+                                lasm.LasmBase$V lasmBase$VP21 = p();
+                                lasm.LasmBase.a(lasmBase$VP2, lasmBase$VP21, 0);
+                                lasmBase$VP3 = lasmBase$VP2;
+                                luaValueP2 = lasmBase$VP21;
+                                lasmBase$V = lasmBase$VP3;
                                 luaValue7 = luaValueP2;
                                 luaValue12 = null;
                                 luaValue11 = luaValue7;
-                                luaValue10 = v;
+                                luaValue10 = lasmBase$V;
                             } else {
                                 this.h[30] = this.f1639g;
                                 luaValue11 = null;
@@ -1011,15 +1018,15 @@ public class a extends LasmBase implements e.a {
                                 if (iA22 != 39) {
                                     this.h[22] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                                 }
                                 i5 = 39;
                             }
                             w(i5);
                             fVarW = this.f1636d;
-                            vP = p();
+                            lasmBase$VP = p();
                             fVarW3 = l();
-                            luaValueQ = vP;
+                            luaValueQ = lasmBase$VP;
                             fVarW2 = fVarW3;
                             luaValueQ2 = null;
                             luaValue2 = null;
@@ -1028,27 +1035,27 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 40:
                             fVarW = w(40);
-                            LasmBase.V vP22 = p();
+                            lasm.LasmBase$V lasmBase$VP22 = p();
                             int iA23 = this.f1638f;
                             if (iA23 == -1) {
                                 iA23 = A();
                             }
                             if (iA23 != 75) {
                                 this.h[18] = this.f1639g;
-                                vP4 = null;
-                                vP5 = vP22;
+                                lasmBase$VP4 = null;
+                                lasmBase$VP5 = lasmBase$VP22;
                             } else {
                                 w(75);
-                                LasmBase.V vP23 = p();
-                                LasmBase.a(vP22, vP23, 1);
-                                vP5 = vP22;
-                                vP4 = vP23;
+                                lasm.LasmBase$V lasmBase$VP23 = p();
+                                lasm.LasmBase.a(lasmBase$VP22, lasmBase$VP23, 1);
+                                lasmBase$VP5 = lasmBase$VP22;
+                                lasmBase$VP4 = lasmBase$VP23;
                             }
                             fVarW5 = w(79);
-                            v5 = vP5;
-                            v4 = vP4;
-                            luaValueQ = v5;
-                            luaValueQ2 = v4;
+                            lasmBase$V5 = lasmBase$VP5;
+                            lasmBase$V4 = lasmBase$VP4;
+                            luaValueQ = lasmBase$V5;
+                            luaValueQ2 = lasmBase$V4;
                             fVarW2 = fVarW5;
                             luaValue2 = null;
                             luaValue = luaValueQ2;
@@ -1056,7 +1063,7 @@ public class a extends LasmBase implements e.a {
                             break;
                         case 41:
                             fVarW = w(41);
-                            vP = p();
+                            lasmBase$VP = p();
                             int iA24 = this.f1638f;
                             if (iA24 == -1) {
                                 iA24 = A();
@@ -1069,11 +1076,11 @@ public class a extends LasmBase implements e.a {
                                 if (iA24 != 61) {
                                     this.h[31] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                                 }
                                 fVarW3 = w(61);
                             }
-                            luaValueQ = vP;
+                            luaValueQ = lasmBase$VP;
                             fVarW2 = fVarW3;
                             luaValueQ2 = null;
                             luaValue2 = null;
@@ -1083,7 +1090,7 @@ public class a extends LasmBase implements e.a {
                         default:
                             this.h[32] = this.f1639g;
                             w(-1);
-                            throw new d();
+                            throw new gg_e.d();
                     }
                 } else {
                     w(53);
@@ -1111,16 +1118,16 @@ public class a extends LasmBase implements e.a {
                         return;
                     } else {
                         w(71);
-                        LasmBase.V vP110 = p();
+                        lasm.LasmBase$V lasmBase$VP110 = p();
                         w(81);
-                        bVar.l(vP110, this.f1636d, 1);
+                        bVar.l(lasmBase$VP110, this.f1636d, 1);
                     }
                 }
             }
         }
     }
 
-    public final LasmBase.V p() throws d {
+    public final lasm.LasmBase$V p() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -1131,14 +1138,14 @@ public class a extends LasmBase implements e.a {
             if (iA != 77) {
                 this.h[7] = this.f1639g;
                 w(-1);
-                throw new d();
+                throw new gg_e.d();
             }
         }
         w(i);
-        return new LasmBase.V(this.f1636d);
+        return new lasm.LasmBase$V(this.f1636d);
     }
 
-    public final LuaValue q() throws d {
+    public final luaj.LuaValue q() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -1162,7 +1169,7 @@ public class a extends LasmBase implements e.a {
                                 default:
                                     this.h[4] = this.f1639g;
                                     w(-1);
-                                    throw new d();
+                                    throw new gg_e.d();
                             }
                             break;
                     }
@@ -1173,7 +1180,7 @@ public class a extends LasmBase implements e.a {
         return n();
     }
 
-    public final LasmBase.Internal r() throws d {
+    public final lasm.LasmBase$Internal r() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -1186,17 +1193,17 @@ public class a extends LasmBase implements e.a {
         }
         this.h[6] = this.f1639g;
         w(-1);
-        throw new d();
+        throw new gg_e.d();
     }
 
-    public final LasmBase.U s() throws d {
+    public final lasm.LasmBase$U s() throws gg_e.d {
         w(78);
-        return new LasmBase.U(this.f1636d);
+        return new lasm.LasmBase$U(this.f1636d);
     }
 
-    public final void t(b bVar) throws d {
+    public final void t(lasm.b bVar) throws gg_e.d {
         w(68);
-        LasmBase.Internal internalR = r();
+        lasm.LasmBase$Internal lasmBase$InternalR = r();
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -1207,15 +1214,15 @@ public class a extends LasmBase implements e.a {
             if (iA != 81) {
                 this.h[9] = this.f1639g;
                 w(-1);
-                throw new d();
+                throw new gg_e.d();
             }
         }
-        f fVarW = w(i);
+        gg_e.f fVarW = w(i);
         w(74);
-        bVar.i(internalR, fVarW);
+        bVar.i(lasmBase$InternalR, fVarW);
     }
 
-    public final h u() throws d {
+    public final luaj.h u() throws gg_e.d {
         int iA = this.f1638f;
         if (iA == -1) {
             iA = A();
@@ -1225,12 +1232,12 @@ public class a extends LasmBase implements e.a {
         } else {
             w(74);
         }
-        b bVarK = k();
+        lasm.b bVarK = k();
         w(0);
         return bVarK;
     }
 
-    public d v() {
+    public gg_e.d v() {
         this.i.clear();
         boolean[] zArr = new boolean[90];
         int i = this.k;
@@ -1265,24 +1272,6 @@ public class a extends LasmBase implements e.a {
         for (int i6 = 0; i6 < this.i.size(); i6++) {
             iArr2[i6] = (int[]) this.i.get(i6);
         }
-        return new d(this.f1636d, iArr2, e.a.f1528a);
-    }
-
-    public a(InputStream inputStream, String str) {
-        this.h = new int[34];
-        this.i = new ArrayList();
-        this.k = -1;
-        try {
-            this.f1635c = new e(inputStream, str, 1, 1);
-            this.f1634b = new e.c(this.f1635c);
-            this.f1636d = new f();
-            this.f1638f = -1;
-            this.f1639g = 0;
-            for (int i = 0; i < 34; i++) {
-                this.h[i] = -1;
-            }
-        } catch (UnsupportedEncodingException e2) {
-            throw new RuntimeException(e2);
-        }
+        return new gg_e.d(this.f1636d, iArr2, gg_e.a.f1528a);
     }
 }

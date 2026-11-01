@@ -1,0 +1,12 @@
+-source
+8
+-target
+8
+-Xlint:-options
+-Xmaxerrs
+200000
+-cp
+/root/gameguardian/tmp/tools/android-sdk/platforms/android-34/android.jar
+-d
+/tmp/ggchk0/out
+@/tmp/ggchk0/srcs.txt

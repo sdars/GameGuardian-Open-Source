@@ -1,57 +1,30 @@
 package android.ext;
 
-import android.content.Context;
-import android.util.AttributeSet;
-import android.view.View;
-import android.widget.Button;
-import catch_.me_.if_.you_.can_.R;
-
 /* JADX INFO: loaded from: classes.dex */
-public class TimeJumpPanel extends FloatPanel implements View.OnClickListener {
-    Button p;
-    Button q;
+public class TimeJumpPanel extends android.ext.FloatPanel implements android.view.View.OnClickListener {
+    android.widget.Button p;
+    android.widget.Button q;
 
-    class a implements Runnable {
-        a() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            TimeJumpPanel timeJumpPanel = TimeJumpPanel.this;
-            timeJumpPanel.p = (Button) timeJumpPanel.findViewById(R.id.time_jump_last);
-            TimeJumpPanel timeJumpPanel2 = TimeJumpPanel.this;
-            timeJumpPanel2.q = (Button) timeJumpPanel2.findViewById(R.id.time_jump);
-            TimeJumpPanel timeJumpPanel3 = TimeJumpPanel.this;
-            timeJumpPanel3.p.setOnClickListener(timeJumpPanel3);
-            TimeJumpPanel timeJumpPanel4 = TimeJumpPanel.this;
-            timeJumpPanel4.q.setOnClickListener(timeJumpPanel4);
-            TimeJumpPanel.this.r();
-            HotPoint hotPoint = MainService.instance.j;
-            TimeJumpPanel.this.setLayoutAlpha(hotPoint.getLayoutAlpha());
-            TimeJumpPanel.this.setMinSize(hotPoint.getSizePx());
-        }
-    }
-
-    public TimeJumpPanel(Context context, AttributeSet attributeSet) {
+    public TimeJumpPanel(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
     private static long getLast() {
-        return (long) ((((double) Config.v) / 1000.0d) * 1.0E9d);
+        return (long) ((((double) android.ext.Config.v) / 1000.0d) * 1.0E9d);
     }
 
     private void q() {
-        n2.i(new a());
+        android.ext.n2.i(new android.ext.TimeJumpPanel$a(this));
     }
 
     public static void s(boolean z) {
-        TimeJumpPanel timeJumpPanel = MainService.instance.k;
-        boolean z2 = (Config.B & 128) != 0;
+        android.ext.TimeJumpPanel timeJumpPanel = android.ext.MainService.instance.k;
+        boolean z2 = (android.ext.Config.B & 128) != 0;
         if (z && z2) {
             if (timeJumpPanel == null) {
-                timeJumpPanel = (TimeJumpPanel) a.d.f(R.layout.time_jump_panel, null);
+                timeJumpPanel = (android.ext.TimeJumpPanel) gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.time_jump_panel, null);
                 timeJumpPanel.q();
-                MainService.instance.k = timeJumpPanel;
+                android.ext.MainService.instance.k = timeJumpPanel;
             }
             timeJumpPanel.m();
             return;
@@ -61,34 +34,34 @@ public class TimeJumpPanel extends FloatPanel implements View.OnClickListener {
             if (z2) {
                 return;
             }
-            MainService.instance.k = null;
+            android.ext.MainService.instance.k = null;
         }
     }
 
     @Override // android.ext.FloatPanel
-    protected String getPrefName() {
+    protected java.lang.String getPrefName() {
         return "time-jump";
     }
 
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
         if (view == null) {
         }
         switch (view.getId()) {
-            case R.id.time_jump /* 2131034426 */:
-                o2 o2Var = o2.f1159g;
+            case catch_.me_.if_.you_.can_.R$id.time_jump /* 2131034426 */:
+                android.ext.o2 o2Var = android.ext.o2.f1159g;
                 if (o2Var != null) {
                     o2Var.onClick(null);
                 }
                 break;
-            case R.id.time_jump_last /* 2131034427 */:
+            case catch_.me_.if_.you_.can_.R$id.time_jump_last /* 2131034427 */:
                 long last = getLast();
-                o2.h(last);
+                android.ext.o2.h(last);
                 double d2 = last / 1.0E9d;
-                Tools.K1(Tools.N1(R.string.time_jump) + ": " + Tools.F(d2) + " (" + Double.toString(d2).replaceFirst("\\D?0+$", "") + ')', 0);
+                android.ext.Tools.K1(android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.time_jump) + ": " + android.ext.Tools.F(d2) + " (" + java.lang.Double.toString(d2).replaceFirst("\\D?0+$", "") + ')', 0);
                 break;
             default:
-                e1.g("Unknown id: " + Integer.toHexString(view.getId()), new RuntimeException());
+                android.ext.e1.g("Unknown id: " + java.lang.Integer.toHexString(view.getId()), new java.lang.RuntimeException());
                 break;
         }
     }
@@ -96,11 +69,11 @@ public class TimeJumpPanel extends FloatPanel implements View.OnClickListener {
     public void r() {
         long last = getLast();
         this.p.setVisibility(last == 0 ? 8 : 0);
-        this.p.setText(Tools.F(last / 1.0E9d));
+        this.p.setText(android.ext.Tools.F(last / 1.0E9d));
     }
 
     public void setMinSize(int i) {
-        Button button = this.p;
+        android.widget.Button button = this.p;
         if (button == null) {
             return;
         }

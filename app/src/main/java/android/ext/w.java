@@ -1,23 +1,19 @@
 package android.ext;
 
-import java.io.IOException;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-
 /* JADX INFO: loaded from: classes.dex */
 public class w {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private final ByteBuffer f1287a;
+    private final java.nio.ByteBuffer f1287a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private final byte[] f1288b;
 
     public w(byte[] bArr) {
         this.f1288b = bArr;
-        ByteBuffer byteBufferWrap = ByteBuffer.wrap(bArr);
+        java.nio.ByteBuffer byteBufferWrap = java.nio.ByteBuffer.wrap(bArr);
         this.f1287a = byteBufferWrap;
-        byteBufferWrap.order(ByteOrder.LITTLE_ENDIAN);
+        byteBufferWrap.order(java.nio.ByteOrder.LITTLE_ENDIAN);
     }
 
     public int a() {
@@ -30,8 +26,8 @@ public class w {
         this.f1287a.position(1);
         try {
             bE = e();
-        } catch (IOException e2) {
-            e1.l("getSeq fail", e2);
+        } catch (java.io.IOException e2) {
+            android.ext.e1.l("getSeq fail", e2);
             bE = -1;
         }
         this.f1287a.position(iPosition);
@@ -55,14 +51,14 @@ public class w {
     }
 
     public long g() {
-        return InOut.m ? this.f1287a.getLong() : ((long) f()) & 4294967295L;
+        return android.ext.InOut.m ? this.f1287a.getLong() : ((long) f()) & 4294967295L;
     }
 
     public long h() {
         return this.f1287a.getLong();
     }
 
-    public String i(int i, String str) {
+    public java.lang.String i(int i, java.lang.String str) {
         if (i == 0) {
             return "";
         }
@@ -79,7 +75,7 @@ public class w {
             }
         }
         if (str == null) {
-            str = new String(bArr, iPosition, i);
+            str = new java.lang.String(bArr, iPosition, i);
         }
         this.f1287a.position(iPosition + i);
         return str;
@@ -94,7 +90,7 @@ public class w {
     }
 
     public void l(int i) {
-        ByteBuffer byteBuffer = this.f1287a;
+        java.nio.ByteBuffer byteBuffer = this.f1287a;
         byteBuffer.position(byteBuffer.position() + i);
     }
 }

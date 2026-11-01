@@ -14,8 +14,8 @@ class v0 {
         this.f1283b = j2;
     }
 
-    public String a() {
-        return c.G(this.f1282a, 32);
+    public java.lang.String a() {
+        return android.ext.c.G(this.f1282a, 32);
     }
 
     public long b() {

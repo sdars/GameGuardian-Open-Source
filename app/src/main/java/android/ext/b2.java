@@ -1,62 +1,34 @@
 package android.ext;
 
-import android.content.res.Resources;
-import android.os.Handler;
-import catch_.me_.if_.you_.can_.R;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class b2 {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private static volatile WeakReference f655a = new WeakReference(null);
+    private static volatile java.lang.ref.WeakReference f655a = new java.lang.ref.WeakReference(null);
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    static volatile a.e f656b = new a.e();
+    static volatile gg_a.e f656b = new gg_a.e();
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    static int[] f657c = d.b.f1514d;
+    static int[] f657c = gg_d.b.f1514d;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
     static volatile long f658d = 0;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    private static final Runnable f659e = new a();
+    private static final java.lang.Runnable f659e = new android.ext.b2$a();
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    private static Pattern f660f = Pattern.compile("__([a-z0-9_]+?)__");
-
-    class a implements Runnable {
-        a() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            long j = b2.f658d;
-            if (j != 0 && System.currentTimeMillis() - j > 5000) {
-                b2.a();
-            }
-            Handler handlerD = n2.d();
-            try {
-                handlerD.removeCallbacks(this);
-            } catch (NullPointerException e2) {
-                e1.a(e2);
-            }
-            handlerD.postDelayed(this, 1000L);
-        }
-    }
+    private static java.util.regex.Pattern f660f = java.util.regex.Pattern.compile("__([a-z0-9_]+?)__");
 
     public static void a() {
-        a.e eVar = f656b;
+        gg_a.e eVar = f656b;
         if (eVar.size() <= f657c.length) {
             return;
         }
-        a.e eVar2 = new a.e();
+        gg_a.e eVar2 = new gg_a.e();
         for (int i : f657c) {
-            String str = (String) eVar.b(i);
+            java.lang.String str = (java.lang.String) eVar.b(i);
             if (str != null) {
                 eVar2.put(i, str);
             }
@@ -65,72 +37,73 @@ public abstract class b2 {
         f658d = 0L;
     }
 
-    public static String b(int i) {
+    public static java.lang.String b(int i) {
         try {
             return c().getResourceEntryName(i);
-        } catch (Throwable th) {
-            String str = "Resource name for id 0x" + t2.e(8, i) + " not found";
-            e1.l(str, th);
+        } catch (java.lang.Throwable th) {
+            java.lang.String str = "Resource name for id 0x" + android.ext.t2.e(8, i) + " not found";
+            android.ext.e1.l(str, th);
             return str;
         }
     }
 
-    private static Resources c() {
-        Resources resources = (Resources) f655a.get();
+    private static android.content.res.Resources c() {
+        android.content.res.Resources resources = (android.content.res.Resources) f655a.get();
         if (resources == null) {
-            resources = Tools.f0().getResources();
-            f655a = new WeakReference(resources);
+            resources = android.ext.Tools.f0().getResources();
+            f655a = new java.lang.ref.WeakReference(resources);
             f659e.run();
-            a.e eVar = new a.e();
-            ArrayList arrayList = f657c.length == 0 ? new ArrayList() : null;
-            int iD = d(Tools.removeNewLinesChars("dssbqdph"), "string");
-            String strIntern = Tools.removeNewLinesChars("JdphJxdugldq").intern();
+            gg_a.e eVar = new gg_a.e();
+            java.util.ArrayList arrayList = f657c.length == 0 ? new java.util.ArrayList() : null;
+            int iD = d(android.ext.Tools.removeNewLinesChars("dssbqdph"), "string");
+            java.lang.String strIntern = android.ext.Tools.removeNewLinesChars("JdphJxdugldq").intern();
             if (arrayList != null) {
-                arrayList.add(Integer.valueOf(iD));
+                arrayList.add(java.lang.Integer.valueOf(iD));
             }
             eVar.put(iD, strIntern);
             try {
-                String.format(k.f(), h(R.string.d), 1000);
-            } catch (Exception e2) {
-                e1.l("Check format", e2);
+                java.lang.String.format(android.ext.k.f(), h(catch_.me_.if_.you_.can_.R$string.f1506d), 1000);
+            } catch (java.lang.Exception e2) {
+                android.ext.e1.l("Check format", e2);
                 if (arrayList != null) {
-                    arrayList.add(Integer.valueOf(R.string.d));
+                    arrayList.add(java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$string.f1506d));
                 }
-                eVar.put(R.string.d, "%d");
+                eVar.put(catch_.me_.if_.you_.can_.R$string.f1506d, "%d");
             }
-            String strRemoveNewLinesChars = Tools.removeNewLinesChars("kwws=22jdphjxdugldq1qhw2iruxp");
+            java.lang.String strRemoveNewLinesChars = android.ext.Tools.removeNewLinesChars("kwws=22jdphjxdugldq1qhw2iruxp");
             if (arrayList != null) {
-                arrayList.add(Integer.valueOf(R.string.forum));
+                arrayList.add(java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$string.forum));
             }
-            eVar.put(R.string.forum, strRemoveNewLinesChars);
+            eVar.put(catch_.me_.if_.you_.can_.R$string.forum, strRemoveNewLinesChars);
             if (arrayList != null) {
-                arrayList.add(Integer.valueOf(R.string.decimal));
+                arrayList.add(java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$string.decimal));
             }
-            eVar.put(R.string.decimal, String.valueOf(t1.f1252b));
+            eVar.put(catch_.me_.if_.you_.can_.R$string.decimal, java.lang.String.valueOf(android.ext.t1.f1252b));
             if (arrayList != null) {
-                arrayList.add(Integer.valueOf(R.string.thousands));
+                arrayList.add(java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$string.thousands));
             }
-            eVar.put(R.string.thousands, t1.f1251a);
+            eVar.put(catch_.me_.if_.you_.can_.R$string.thousands, android.ext.t1.f1251a);
             if (arrayList != null) {
-                f657c = Tools.Y0(arrayList);
+                f657c = android.ext.Tools.Y0(arrayList);
             }
             f656b = eVar;
         }
         return resources;
     }
 
-    public static int d(String str, String str2) {
+    public static int d(java.lang.String str, java.lang.String str2) {
         try {
-            Resources resourcesC = c();
-            return resourcesC.getIdentifier(str, str2, resourcesC.getResourcePackageName(R.string.d));
-        } catch (Throwable th) {
-            e1.s("Resource id for name '" + str + "' not found", th);
+            android.content.res.Resources resourcesC = c();
+            return resourcesC.getIdentifier(str, str2, resourcesC.getResourcePackageName(catch_.me_.if_.you_.can_.R$string.f1506d));
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.s("Resource id for name '" + str + "' not found", th);
             return 0;
         }
     }
 
-    private static String e(String str) {
-        String strReplace;
+    private static java.lang.String e(java.lang.String str) {
+java.lang.Throwable th = null;
+        java.lang.String strReplace;
         if (str == null) {
             str = "null";
         }
@@ -138,7 +111,7 @@ public abstract class b2 {
             return str;
         }
         try {
-            Matcher matcher = f660f.matcher(str);
+            java.util.regex.Matcher matcher = f660f.matcher(str);
             strReplace = str;
             while (matcher.find()) {
                 try {
@@ -147,53 +120,53 @@ public abstract class b2 {
                         if (iD != 0) {
                             strReplace = strReplace.replace(matcher.group(0), h(iD));
                         }
-                    } catch (Throwable th) {
-                        e1.l("Exception for: " + str, th);
+                    } catch (java.lang.Throwable th_c) {
+                        android.ext.e1.l("Exception for: " + str, th_c);
                     }
-                } catch (Throwable th2) {
+                } catch (java.lang.Throwable th2) {
                     th = th2;
-                    e1.l("Exception on: " + str, th);
+                    android.ext.e1.l("Exception on: " + str, th);
                     return strReplace;
                 }
             }
-        } catch (Throwable th3) {
+        } catch (java.lang.Throwable th3) {
             th = th3;
             strReplace = str;
         }
         return strReplace;
     }
 
-    public static String f(int i) {
+    public static java.lang.String f(int i) {
         return h(i);
     }
 
-    public static String g(String str) {
+    public static java.lang.String g(java.lang.String str) {
         return e(str);
     }
 
-    private static String h(int i) {
-        String string;
+    private static java.lang.String h(int i) {
+        java.lang.String string;
         if (i == 0 || i == -1) {
             return "(Invalid resource id " + i + ")";
         }
-        a.e eVar = f656b;
-        Object objB = eVar.b(i);
-        String string2 = objB == null ? null : objB.toString();
+        gg_a.e eVar = f656b;
+        java.lang.Object objB = eVar.b(i);
+        java.lang.String string2 = objB == null ? null : objB.toString();
         if (string2 == null) {
             try {
                 string = c().getString(i);
-            } catch (Throwable th) {
-                String str = "Resource for id 0x" + t2.e(8, i) + " not found";
-                e1.l(str, th);
+            } catch (java.lang.Throwable th) {
+                java.lang.String str = "Resource for id 0x" + android.ext.t2.e(8, i) + " not found";
+                android.ext.e1.l(str, th);
                 string = str;
             }
             string2 = e(string);
             try {
                 eVar.c(i, string2);
-            } catch (Throwable th2) {
-                e1.a(th2);
+            } catch (java.lang.Throwable th2) {
+                android.ext.e1.a(th2);
             }
-            f658d = System.currentTimeMillis();
+            f658d = java.lang.System.currentTimeMillis();
         }
         return string2;
     }

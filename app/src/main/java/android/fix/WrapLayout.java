@@ -1,15 +1,7 @@
 package android.fix;
 
-import android.content.Context;
-import android.content.res.Configuration;
-import android.ext.e1;
-import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import d.b;
-
 /* JADX INFO: loaded from: classes.dex */
-public class WrapLayout extends ViewGroup {
+public class WrapLayout extends android.view.ViewGroup {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     private int[] f1452a;
@@ -17,19 +9,19 @@ public class WrapLayout extends ViewGroup {
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private int f1453b;
 
-    public WrapLayout(Context context, AttributeSet attributeSet) {
+    public WrapLayout(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f1452a = b.f1514d;
+        this.f1452a = gg_d.b.f1514d;
         this.f1453b = -1;
     }
 
     private int a(boolean z, int i, int i2) {
         int paddingRight;
         int paddingLeft;
-        View childAt;
+        android.view.View childAt;
         boolean z2;
         int[] iArr;
-        WrapLayout wrapLayout = this;
+        android.fix.WrapLayout wrapLayout = this;
         int childCount = getChildCount();
         if (!z && wrapLayout.f1452a.length == childCount * 2) {
             return 0;
@@ -60,7 +52,7 @@ public class WrapLayout extends ViewGroup {
         while (i8 < childCount) {
             try {
                 childAt = wrapLayout.getChildAt(i8);
-            } catch (ArrayIndexOutOfBoundsException unused) {
+            } catch (java.lang.ArrayIndexOutOfBoundsException unused) {
                 childAt = null;
             }
             int i13 = i9;
@@ -69,20 +61,20 @@ public class WrapLayout extends ViewGroup {
                 iArr = iArr4;
                 i9 = i13;
             } else if (childAt.getVisibility() == 8) {
-                if (childAt instanceof ToolbarButton) {
-                    ((ToolbarButton) childAt).setIcon(false);
+                if (childAt instanceof android.fix.ToolbarButton) {
+                    ((android.fix.ToolbarButton) childAt).setIcon(false);
                 }
                 z2 = z4;
                 iArr = iArr4;
                 i9 = i13;
             } else {
-                ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
+                android.view.ViewGroup.LayoutParams layoutParams = childAt.getLayoutParams();
                 int i14 = layoutParams.width;
                 iArr = iArr4;
                 z2 = z4;
-                int iMakeMeasureSpec = i14 == -1 ? View.MeasureSpec.makeMeasureSpec(i5, 1073741824) : i14 > 0 ? View.MeasureSpec.makeMeasureSpec(i14, 1073741824) : View.MeasureSpec.makeMeasureSpec(i5, Integer.MIN_VALUE);
+                int iMakeMeasureSpec = i14 == -1 ? android.view.View.MeasureSpec.makeMeasureSpec(i5, 1073741824) : i14 > 0 ? android.view.View.MeasureSpec.makeMeasureSpec(i14, 1073741824) : android.view.View.MeasureSpec.makeMeasureSpec(i5, Integer.MIN_VALUE);
                 int i15 = layoutParams.height;
-                childAt.measure(iMakeMeasureSpec, i15 > 0 ? View.MeasureSpec.makeMeasureSpec(i15, 1073741824) : View.MeasureSpec.makeMeasureSpec(i2, 0));
+                childAt.measure(iMakeMeasureSpec, i15 > 0 ? android.view.View.MeasureSpec.makeMeasureSpec(i15, 1073741824) : android.view.View.MeasureSpec.makeMeasureSpec(i2, 0));
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
                 if (i6 > paddingLeft && i6 + measuredWidth > i4) {
@@ -118,8 +110,8 @@ public class WrapLayout extends ViewGroup {
                     iArr[i8] = measuredWidth;
                 }
                 i6 += measuredWidth;
-                if (childAt instanceof ToolbarButton) {
-                    ((ToolbarButton) childAt).setIcon(i12 == 0);
+                if (childAt instanceof android.fix.ToolbarButton) {
+                    ((android.fix.ToolbarButton) childAt).setIcon(i12 == 0);
                 }
                 i9 = i13;
             }
@@ -148,29 +140,29 @@ public class WrapLayout extends ViewGroup {
     }
 
     @Override // android.view.ViewGroup
-    protected boolean checkLayoutParams(ViewGroup.LayoutParams layoutParams) {
-        return layoutParams instanceof ViewGroup.LayoutParams;
+    protected boolean checkLayoutParams(android.view.ViewGroup.LayoutParams viewGroup$LayoutParams) {
+        return viewGroup$LayoutParams instanceof android.view.ViewGroup.LayoutParams;
     }
 
     @Override // android.view.ViewGroup
-    protected ViewGroup.LayoutParams generateDefaultLayoutParams() {
-        return new ViewGroup.LayoutParams(-2, -2);
+    protected android.view.ViewGroup.LayoutParams generateDefaultLayoutParams() {
+        return new android.view.ViewGroup.LayoutParams(-2, -2);
     }
 
     @Override // android.view.View
-    protected void onConfigurationChanged(Configuration configuration) {
-        View childAt;
+    protected void onConfigurationChanged(android.content.res.Configuration configuration) {
+        android.view.View childAt;
         super.onConfigurationChanged(configuration);
         int childCount = getChildCount();
         boolean z = false;
         for (int i = 0; i < childCount; i++) {
             try {
                 childAt = getChildAt(i);
-            } catch (ArrayIndexOutOfBoundsException unused) {
+            } catch (java.lang.ArrayIndexOutOfBoundsException unused) {
                 childAt = null;
             }
-            if (childAt != null && (childAt instanceof ToolbarButton)) {
-                ((ToolbarButton) childAt).setIcon(false);
+            if (childAt != null && (childAt instanceof android.fix.ToolbarButton)) {
+                ((android.fix.ToolbarButton) childAt).setIcon(false);
                 z = true;
             }
         }
@@ -186,7 +178,7 @@ public class WrapLayout extends ViewGroup {
         int[] iArr = this.f1452a;
         for (int i5 = 0; i5 < childCount; i5++) {
             try {
-                View childAt = getChildAt(i5);
+                android.view.View childAt = getChildAt(i5);
                 if (childAt != null && childAt.getVisibility() != 8) {
                     int measuredWidth = childAt.getMeasuredWidth();
                     int measuredHeight = childAt.getMeasuredHeight();
@@ -194,17 +186,17 @@ public class WrapLayout extends ViewGroup {
                     int i7 = iArr[childCount + i5];
                     childAt.layout(i6, i7, measuredWidth + i6, measuredHeight + i7);
                 }
-            } catch (ArrayIndexOutOfBoundsException unused) {
+            } catch (java.lang.ArrayIndexOutOfBoundsException unused) {
             }
         }
     }
 
     @Override // android.view.View
     protected void onMeasure(int i, int i2) {
-        int size = View.MeasureSpec.getSize(i);
-        int size2 = View.MeasureSpec.getSize(i2);
+        int size = android.view.View.MeasureSpec.getSize(i);
+        int size2 = android.view.View.MeasureSpec.getSize(i2);
         int iA = a(true, size, size2);
-        if (View.MeasureSpec.getMode(i2) == 0 || (View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && iA <= size2)) {
+        if (android.view.View.MeasureSpec.getMode(i2) == 0 || (android.view.View.MeasureSpec.getMode(i2) == Integer.MIN_VALUE && iA <= size2)) {
             size2 = iA;
         }
         setMeasuredDimension(size, size2);
@@ -214,8 +206,8 @@ public class WrapLayout extends ViewGroup {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -223,8 +215,8 @@ public class WrapLayout extends ViewGroup {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 

@@ -1,20 +1,10 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.Tools;
-import android.ext.e1;
-import android.ext.n0;
-import android.graphics.Rect;
-import android.os.SystemClock;
-import android.util.AttributeSet;
-import android.view.MotionEvent;
-import android.view.ViewConfiguration;
-
 /* JADX INFO: loaded from: classes.dex */
 public class ScrollView extends android.widget.ScrollView {
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private static final long f1444d = ViewConfiguration.getTapTimeout();
+    private static final long f1444d = android.view.ViewConfiguration.getTapTimeout();
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     private boolean f1445a;
@@ -25,7 +15,7 @@ public class ScrollView extends android.widget.ScrollView {
     /* JADX INFO: renamed from: c, reason: collision with root package name */
     private int f1447c;
 
-    public ScrollView(Context context, AttributeSet attributeSet) {
+    public ScrollView(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f1445a = false;
         this.f1446b = -1L;
@@ -40,7 +30,7 @@ public class ScrollView extends android.widget.ScrollView {
     }
 
     private void b() {
-        MotionEvent motionEventObtain = MotionEvent.obtain(0L, 0L, 3, 0.0f, 0.0f, 0);
+        android.view.MotionEvent motionEventObtain = android.view.MotionEvent.obtain(0L, 0L, 3, 0.0f, 0.0f, 0);
         onTouchEvent(motionEventObtain);
         motionEventObtain.recycle();
     }
@@ -51,32 +41,32 @@ public class ScrollView extends android.widget.ScrollView {
 
     private int d(float f2) {
         int height = getHeight();
-        float fH = Tools.H() / 2;
+        float fH = android.ext.Tools.H() / 2;
         float f3 = (height - 1) - (2.0f * fH);
         float height2 = getChildAt(0).getHeight();
-        return (int) Math.min(Math.max(((f2 - fH) / f3) * height2, 0.0f), height2);
+        return (int) java.lang.Math.min(java.lang.Math.max(((f2 - fH) / f3) * height2, 0.0f), height2);
     }
 
     private boolean e(float f2) {
-        return f2 >= ((float) (getWidth() - Tools.H()));
+        return f2 >= ((float) (getWidth() - android.ext.Tools.H()));
     }
 
     private void f() {
-        this.f1446b = SystemClock.uptimeMillis() + f1444d;
+        this.f1446b = android.os.SystemClock.uptimeMillis() + f1444d;
     }
 
     @Override // android.widget.ScrollView, android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         try {
             super.onDetachedFromWindow();
-        } catch (IllegalArgumentException e2) {
-            e1.a(e2);
+        } catch (java.lang.IllegalArgumentException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     /* JADX WARN: Code duplicated, block: B:15:0x001e  */
     @Override // android.widget.ScrollView, android.view.ViewGroup
-    public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
+    public boolean onInterceptTouchEvent(android.view.MotionEvent motionEvent) {
         if (this.f1445a) {
             int actionMasked = motionEvent.getActionMasked();
             if (actionMasked != 0) {
@@ -88,7 +78,7 @@ public class ScrollView extends android.widget.ScrollView {
                     }
                 } else if (e(motionEvent.getX())) {
                     long j = this.f1446b;
-                    if (j >= 0 && j <= SystemClock.uptimeMillis()) {
+                    if (j >= 0 && j <= android.os.SystemClock.uptimeMillis()) {
                         a();
                         scrollTo(getScrollX(), d(motionEvent.getY()));
                         return onTouchEvent(motionEvent);
@@ -107,24 +97,24 @@ public class ScrollView extends android.widget.ScrollView {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
-            n0.h(Thread.currentThread(), th, false);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
+            android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
         }
     }
 
     @Override // android.widget.ScrollView, android.view.ViewGroup
-    protected boolean onRequestFocusInDescendants(int i, Rect rect) {
+    protected boolean onRequestFocusInDescendants(int i, android.graphics.Rect rect) {
         try {
             return super.onRequestFocusInDescendants(i, rect);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
 
     @Override // android.widget.ScrollView, android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
+    public boolean onTouchEvent(android.view.MotionEvent motionEvent) {
         if (this.f1445a) {
             int actionMasked = motionEvent.getActionMasked();
             if (actionMasked != 0) {
@@ -156,8 +146,8 @@ public class ScrollView extends android.widget.ScrollView {
         }
         try {
             return super.onTouchEvent(motionEvent);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -166,8 +156,8 @@ public class ScrollView extends android.widget.ScrollView {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -175,22 +165,22 @@ public class ScrollView extends android.widget.ScrollView {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
     public void setFastScrollEnabled(boolean z) {
         this.f1445a = z;
-        setScrollBarSize(Tools.H() / 2);
+        setScrollBarSize(android.ext.Tools.H() / 2);
     }
 
     @Override // android.view.View
     public void setOverScrollMode(int i) {
         try {
             super.setOverScrollMode(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 }

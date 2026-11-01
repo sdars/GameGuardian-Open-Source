@@ -1,12 +1,8 @@
 package android.ext;
 
-import android.app.Notification;
-import android.app.PendingIntent;
-import android.graphics.drawable.Icon;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract /* synthetic */ class k1 {
-    public static /* synthetic */ Notification.Action.Builder a(Icon icon, CharSequence charSequence, PendingIntent pendingIntent) {
-        return new Notification.Action.Builder(icon, charSequence, pendingIntent);
+    public static /* synthetic */ android.app.Notification.Action.Builder a(android.graphics.drawable.Icon icon, java.lang.CharSequence charSequence, android.app.PendingIntent pendingIntent) {
+        return new android.app.Notification.Action.Builder(icon, charSequence, pendingIntent);
     }
 }

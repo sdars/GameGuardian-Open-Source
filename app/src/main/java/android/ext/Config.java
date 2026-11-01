@@ -1,33 +1,13 @@
 package android.ext;
 
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.ContextWrapper;
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.os.Build;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewParent;
-import android.widget.AbsListView;
-import android.widget.CheckedTextView;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.SeekBar;
-import android.widget.TextView;
-import catch_.me_.if_.you_.can_.R;
-import java.lang.ref.WeakReference;
-import java.util.Arrays;
-import java.util.Locale;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class Config {
     public static volatile int A;
     public static volatile int B;
     public static volatile boolean C;
     public static volatile boolean D;
-    public static volatile String E;
-    public static volatile String F;
+    public static volatile java.lang.String E;
+    public static volatile java.lang.String F;
     public static volatile byte G;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
@@ -66,1150 +46,60 @@ public abstract class Config {
     public static volatile int z;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    public static final long[] f29b = new long[MainService.J0.length * 2];
+    public static final long[] f29b = new long[android.ext.MainService.J0.length * 2];
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     static volatile int[] f28a = {114, 115, 116};
-    static a.e H = new a.e();
-
-    public static class OptionMultiChoice extends s implements DialogInterface.OnMultiChoiceClickListener, DialogInterface.OnShowListener, AbsListView.OnScrollListener {
-        boolean[] n;
-
-        public OptionMultiChoice(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            if (i != -1 && i != -3) {
-                return false;
-            }
-            boolean[] zArr = this.n;
-            int i2 = this.f40b;
-            if (zArr != null && i == -1) {
-                for (int i3 = 0; i3 < zArr.length; i3++) {
-                    int iH = h(i3);
-                    i2 = zArr[i3] ? iH | i2 : (~iH) & i2;
-                }
-                this.n = null;
-            }
-            this.f42d = i2;
-            Config.k();
-            Tools.D(dialogInterface);
-            return true;
-        }
-
-        @Override // android.ext.Config.s
-        protected void j(CharSequence[] charSequenceArr) {
-            boolean[] zArr = new boolean[charSequenceArr.length];
-            this.n = zArr;
-            int i = this.f42d;
-            for (int i2 = 0; i2 < charSequenceArr.length; i2++) {
-                int iH = h(i2);
-                zArr[i2] = (i & iH) == iH;
-            }
-            AlertDialog alertDialogCreate = android.ext.f.c(Tools.k0()).setCustomTitle(Config.c(this.f39a, this.h, this.f45g)).setMultiChoiceItems(charSequenceArr, zArr, this).setPositiveButton(R.string.save, this).setNeutralButton(R.string.reset_button, this).setNegativeButton(R.string.cancel, this).create();
-            android.ext.f.l(alertDialogCreate, this);
-            android.ext.f.m(alertDialogCreate);
-        }
-
-        protected void l(boolean z) {
-            if (this.m == null) {
-                int i = z ? 6 : 3;
-                int[] iArr = new int[i];
-                CharSequence[] charSequenceArr = new CharSequence[i];
-                if (z) {
-                    iArr[0] = 1;
-                    charSequenceArr[0] = b2.f(R.string.search) + ", " + b2.f(R.string.portrait);
-                    iArr[1] = 2;
-                    charSequenceArr[1] = b2.f(R.string.search) + ", " + b2.f(R.string.landscape);
-                    iArr[2] = 4;
-                    charSequenceArr[2] = b2.f(R.string.saved_list) + ", " + b2.f(R.string.portrait);
-                    iArr[3] = 8;
-                    charSequenceArr[3] = b2.f(R.string.saved_list) + ", " + b2.f(R.string.landscape);
-                    iArr[4] = 16;
-                    charSequenceArr[4] = b2.f(R.string.memory_editor) + ", " + b2.f(R.string.portrait);
-                    iArr[5] = 32;
-                    charSequenceArr[5] = b2.f(R.string.memory_editor) + ", " + b2.f(R.string.landscape);
-                } else {
-                    iArr[0] = 1;
-                    charSequenceArr[0] = b2.f(R.string.search);
-                    iArr[1] = 2;
-                    charSequenceArr[1] = b2.f(R.string.saved_list);
-                    iArr[2] = 4;
-                    charSequenceArr[2] = b2.f(R.string.memory_editor);
-                }
-                this.m = iArr;
-                this.l = charSequenceArr;
-                this.k = null;
-            }
-        }
-
-        @Override // android.content.DialogInterface.OnMultiChoiceClickListener
-        public void onClick(DialogInterface dialogInterface, int i, boolean z) {
-            boolean[] zArr = this.n;
-            if (zArr == null) {
-                e1.l("", new NullPointerException(toString()));
-                return;
-            }
-            try {
-                zArr[i] = z;
-            } catch (ArrayIndexOutOfBoundsException e2) {
-                e1.l("", e2);
-            }
-        }
-
-        @Override // android.widget.AbsListView.OnScrollListener
-        public void onScroll(AbsListView absListView, int i, int i2, int i3) {
-            onScrollStateChanged(absListView, 0);
-        }
-
-        @Override // android.widget.AbsListView.OnScrollListener
-        public void onScrollStateChanged(AbsListView absListView, int i) {
-            try {
-                int childCount = absListView.getChildCount();
-                for (int i2 = 0; i2 < childCount; i2++) {
-                    try {
-                        View childAt = absListView.getChildAt(i2);
-                        if (childAt instanceof CheckedTextView) {
-                            ((CheckedTextView) childAt).refreshDrawableState();
-                        }
-                    } catch (ArrayIndexOutOfBoundsException unused) {
-                    }
-                }
-            } catch (Throwable th) {
-                e1.a(th);
-            }
-        }
-
-        @Override // android.content.DialogInterface.OnShowListener
-        public void onShow(DialogInterface dialogInterface) {
-            ListView listView;
-            if (Build.VERSION.SDK_INT < 23 || !(dialogInterface instanceof AlertDialog) || (listView = ((AlertDialog) dialogInterface).getListView()) == null) {
-                return;
-            }
-            listView.setOnScrollListener(this);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public String toString() {
-            return Tools.N1(this.f39a);
-        }
-
-        public OptionMultiChoice(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            this(i, i2, iArr, i3, str, z);
-            this.h = i4;
-        }
-    }
-
-    public static class OptionMultiChoiceSh extends OptionMultiChoice {
-        private final int o;
-
-        public OptionMultiChoiceSh(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            super(i, i2, iArr, i3, str, z);
-            this.o = i4;
-        }
-
-        @Override // android.ext.Config.OptionMultiChoice, android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            boolean zE = super.e(dialogInterface, i);
-            if (zE) {
-                Tools.H1(R.string.need_restart);
-            }
-            return zE;
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.m == null) {
-                int i = this.o;
-                int[] iArr = new int[i];
-                CharSequence[] charSequenceArr = new CharSequence[i];
-                int i2 = 0;
-                while (i2 < i) {
-                    iArr[i2] = 1 << i2;
-                    int i3 = i2 + 1;
-                    charSequenceArr[i2] = Integer.toString(i3);
-                    i2 = i3;
-                }
-                this.m = iArr;
-                this.l = charSequenceArr;
-                this.k = null;
-            }
-        }
-    }
-
-    public static class OptionSeek extends p implements SeekBar.OnSeekBarChangeListener {
-        int k;
-        protected WeakReference l;
-
-        public OptionSeek(int i, int i2, int i3, int i4, String str, boolean z) {
-            super(i, i2, i4, str, z);
-            this.l = new WeakReference(null);
-            this.k = i3;
-        }
-
-        @Override // android.ext.Config.p
-        public void b() {
-            h();
-        }
-
-        @Override // android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            SeekBar seekBar = (SeekBar) this.l.get();
-            if (seekBar == null) {
-                return false;
-            }
-            this.f42d = seekBar.getProgress();
-            Config.k();
-            return true;
-        }
-
-        protected void h() {
-            View viewF = a.d.f(R.layout.option_seek, null);
-            SeekBar seekBar = (SeekBar) viewF.findViewById(R.id.seek);
-            seekBar.setMax(this.k);
-            seekBar.setProgress(this.f42d);
-            seekBar.setOnSeekBarChangeListener(this);
-            this.l = new WeakReference(seekBar);
-            android.ext.f.m(android.ext.f.b().setCustomTitle(Config.c(this.f39a, this.h, this.f45g)).setView(viewF).setPositiveButton(R.string.ok, this).setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) null).create());
-        }
-
-        @Override // android.widget.SeekBar.OnSeekBarChangeListener
-        public void onProgressChanged(SeekBar seekBar, int i, boolean z) {
-        }
-
-        @Override // android.widget.SeekBar.OnSeekBarChangeListener
-        public void onStartTrackingTouch(SeekBar seekBar) {
-        }
-
-        @Override // android.widget.SeekBar.OnSeekBarChangeListener
-        public void onStopTrackingTouch(SeekBar seekBar) {
-        }
-
-        @Override // android.ext.Config.p
-        public String toString() {
-            return Tools.N1(this.f39a);
-        }
-
-        public OptionSeek(int i, int i2, int i3, int i4, String str, boolean z, int i5) {
-            this(i, i2, i3, i4, str, z);
-            this.h = i5;
-        }
-    }
-
-    class a extends OptionMultiChoice {
-        private CharSequence[] o;
-        private CharSequence[] p;
-        private int[] q;
-
-        a(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.p
-        public CharSequence a() {
-            if (this.m == null) {
-                i();
-            }
-            CharSequence[] charSequenceArr = new CharSequence[this.m.length * 2];
-            int i = 0;
-            int i2 = 0;
-            while (true) {
-                int[] iArr = this.m;
-                if (i >= iArr.length) {
-                    return Tools.x((CharSequence[]) Arrays.copyOf(charSequenceArr, i2));
-                }
-                int i3 = iArr[i];
-                if ((this.f42d & i3) == i3) {
-                    if (i2 > 0) {
-                        charSequenceArr[i2] = ",";
-                        i2++;
-                    }
-                    charSequenceArr[i2] = this.o[i];
-                    i2++;
-                }
-                i++;
-            }
-        }
-
-        @Override // android.ext.Config.p
-        protected void d() {
-            this.f40b = 262207;
-        }
-
-        @Override // android.ext.Config.OptionMultiChoice, android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            c2 c2Var;
-            boolean zE = super.e(dialogInterface, i);
-            if (zE && (c2Var = MainService.instance.f216f) != null) {
-                c2Var.write("gg.setRanges(");
-                Script.Consts.a(c2Var, c2Var.f697c.f371a, this.f42d);
-                c2Var.write(")\n");
-            }
-            return zE;
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.m == null) {
-                int iD0 = Tools.d0(R.color.region_good);
-                int iD1 = Tools.d0(R.color.region_good);
-                int iD2 = Tools.d0(R.color.region_good);
-                int iD3 = Tools.d0(R.color.region_good);
-                int iD4 = Tools.d0(R.color.region_good);
-                int iD5 = Tools.d0(R.color.region_good);
-                int iD6 = Tools.d0(R.color.region_good);
-                int iD7 = Tools.d0(R.color.region_other);
-                int iD8 = Tools.d0(R.color.region_other);
-                int iD9 = Tools.d0(R.color.region_other);
-                int iD10 = Tools.d0(R.color.region_other);
-                int[] iArr = {2, 1, 4, 8, 16, 262144, 32, 65536, 64, 524288, 1048576, -2080896, 131072, 16384, 32768};
-                int[] iArr2 = {iD0, iD1, iD2, iD3, iD4, iD5, iD6, iD7, iD8, iD9, iD10, Tools.d0(R.color.region_slow), Tools.d0(R.color.region_bad), Tools.d0(R.color.region_code), Tools.d0(R.color.region_system_code)};
-                CharSequence[] charSequenceArr = {Tools.t("Jh: Java heap", iD0), Tools.t("Ch: C++ heap", iD1), Tools.t("Ca: C++ alloc", iD2), Tools.t("Cd: C++ .data", iD3), Tools.t("Cb: C++ .bss", iD4), Tools.t("PS: PPSSPP", iD5), Tools.t("A: Anonymous", iD6), Tools.t("J: Java", iD7), Tools.t("S: Stack", iD8), Tools.t("As: Ashmem", iD9), Tools.t("V: Video", iD10), Tools.t(b2.g("O: Other (__slow__)"), iArr2[11]), Tools.t(b2.g("B: Bad (__dangerous__)"), iArr2[12]), Tools.t(b2.g("Xa: Code app (__dangerous__)"), iArr2[13]), Tools.t(b2.g("Xs: Code system (__dangerous__)"), iArr2[14])};
-                CharSequence[] charSequenceArr2 = new CharSequence[15];
-                for (int i = 0; i < 15; i++) {
-                    charSequenceArr2[i] = Tools.t(charSequenceArr[i].toString().split(":")[0], iArr2[i]);
-                }
-                this.q = iArr2;
-                this.m = iArr;
-                this.p = charSequenceArr;
-                this.o = charSequenceArr2;
-                this.k = null;
-                RegionList.k(iArr, charSequenceArr2, iArr2);
-            }
-            CharSequence[] charSequenceArr3 = new CharSequence[this.m.length];
-            CharSequence[] charSequenceArr4 = this.p;
-            Context contextF0 = Tools.f0();
-            for (int i2 = 0; i2 < charSequenceArr4.length; i2++) {
-                String string = charSequenceArr4[i2].toString();
-                try {
-                    string = string + " [" + Tools.U(contextF0, RegionList.d(i2)) + ']';
-                } catch (Throwable th) {
-                    e1.a(th);
-                    n0.h(Thread.currentThread(), th, false);
-                }
-                charSequenceArr3[i2] = Tools.t(string, this.q[i2]);
-            }
-            this.l = charSequenceArr3;
-        }
-    }
-
-    class b extends OptionMultiChoice {
-        b(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            l(true);
-        }
-    }
-
-    class c extends OptionMultiChoice {
-
-        class a implements p.b {
-            a() {
-            }
-
-            @Override // android.ext.Config.p.b
-            public void a(int i) {
-                MainService.instance.e0();
-            }
-        }
-
-        c(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            super(i, i2, iArr, i3, str, z, i4);
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.j == null) {
-                this.j = new a();
-            }
-            l(true);
-        }
-    }
-
-    class d extends OptionMultiChoice {
-        d(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            l(false);
-        }
-    }
-
-    class e extends OptionMultiChoice {
-
-        class a implements p.b {
-            a() {
-            }
-
-            @Override // android.ext.Config.p.b
-            public void a(int i) {
-                StringBuilder sb;
-                if ((i & 1) != 0) {
-                    sb = new StringBuilder();
-                    sb.append(b2.f(R.string.hide_1_warn));
-                } else {
-                    sb = null;
-                }
-                if ((i & 8) != 0) {
-                    if (sb == null) {
-                        sb = new StringBuilder();
-                    } else {
-                        sb.append("\n\n");
-                    }
-                    sb.append(b2.f(R.string.hide_4_warn));
-                }
-                if (sb != null) {
-                    android.ext.f.o(android.ext.f.b().setMessage(sb.toString()).setPositiveButton(R.string.ok, (DialogInterface.OnClickListener) null));
-                }
-            }
-        }
-
-        e(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.m == null) {
-                String str = " (" + b2.f(R.string.slow) + ')';
-                this.m = new int[]{1, 2, 4, 8};
-                this.l = new CharSequence[]{1 + str, 2 + str, 3 + str, 4 + str};
-                this.k = null;
-                if (this.j == null) {
-                    this.j = new a();
-                }
-            }
-        }
-    }
-
-    class f extends q {
-        f(int i, int i2, int i3, int i4, long j, int i5, String str, boolean z, boolean z2, boolean z3, int i6) {
-            super(i, i2, i3, i4, j, i5, str, z, z2, z3, i6);
-            this.f43e = true;
-        }
-    }
-
-    class g extends OptionSeek {
-        private WeakReference m;
-
-        g(int i, int i2, int i3, int i4, String str, boolean z, int i5) {
-            super(i, i2, i3, i4, str, z, i5);
-            this.m = new WeakReference(null);
-        }
-
-        @Override // android.ext.Config.OptionSeek
-        protected void h() {
-            super.h();
-            SeekBar seekBar = (SeekBar) this.l.get();
-            if (seekBar == null) {
-                return;
-            }
-            ImageView imageView = new ImageView(seekBar.getContext());
-            imageView.setImageResource(R.drawable.ic_tooltip_edit_white_24dp);
-            this.m = new WeakReference(imageView);
-            Config.n(imageView, Config.e(seekBar.getProgress()));
-            ViewParent parent = seekBar.getParent();
-            if (parent instanceof ViewGroup) {
-                ((ViewGroup) parent).addView(imageView);
-            }
-        }
-
-        @Override // android.ext.Config.OptionSeek, android.widget.SeekBar.OnSeekBarChangeListener
-        public void onProgressChanged(SeekBar seekBar, int i, boolean z) {
-            ImageView imageView = (ImageView) this.m.get();
-            if (imageView == null) {
-                return;
-            }
-            Config.n(imageView, Config.e(i));
-        }
-    }
-
-    class h extends s {
-        h(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public void b() {
-            if (f1.y()) {
-                super.b();
-            }
-        }
-    }
-
-    class i extends s {
-        i(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            super(i, i2, iArr, i3, str, z, i4);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            boolean zE = super.e(dialogInterface, i);
-            if (zE && this.f42d == 3) {
-                android.ext.f.o(android.ext.f.c(Tools.f0()).setMessage(b2.f(R.string.help_faq_33_a)).setNegativeButton(R.string.ok, (DialogInterface.OnClickListener) null));
-            }
-            return zE;
-        }
-    }
-
-    class j extends s {
-        j(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            boolean zE = super.e(dialogInterface, i);
-            if (zE) {
-                MainService.instance.j.z();
-            }
-            return zE;
-        }
-    }
-
-    class k extends s {
-        k(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        private String l(String str) {
-            Locale localeD;
-            try {
-                if (str.length() == 0) {
-                    localeD = android.ext.k.c();
-                    str = Tools.N1(R.string.default_);
-                } else {
-                    localeD = android.ext.k.d(str);
-                }
-                String str2 = "";
-                try {
-                    str2 = String.format(localeD, "\n[%,.1f | %.2e]", Double.valueOf(-1234.0d), Double.valueOf(-4.56E-78d));
-                } catch (Throwable th) {
-                    e1.a(th);
-                }
-                return str + str2;
-            } catch (Throwable th2) {
-                e1.a(th2);
-                return str;
-            }
-        }
-
-        private String[] m() {
-            return new String[]{"", "en_US", "in_ID", "ru_RU"};
-        }
-
-        @Override // android.ext.Config.p
-        protected void d() {
-            if (this.f42d <= 0) {
-                return;
-            }
-            String[] strArrM = m();
-            int i = this.f42d;
-            if (i >= strArrM.length) {
-                return;
-            }
-            android.ext.k.j(android.ext.k.d(strArrM[i]));
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            boolean zE = super.e(dialogInterface, i);
-            if (zE) {
-                ConfigListAdapter.m();
-            }
-            return zE;
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.l == null) {
-                String[] strArrM = m();
-                CharSequence[] charSequenceArr = new CharSequence[strArrM.length];
-                for (int i = 0; i < strArrM.length; i++) {
-                    charSequenceArr[i] = l(strArrM[i]);
-                }
-                this.l = charSequenceArr;
-            }
-        }
-    }
-
-    class l extends s {
-        private int n;
-
-        class a implements DialogInterface.OnShowListener {
-
-            /* JADX INFO: renamed from: a, reason: collision with root package name */
-            final /* synthetic */ AlertDialog f37a;
-
-            a(AlertDialog alertDialog) {
-                this.f37a = alertDialog;
-            }
-
-            @Override // android.content.DialogInterface.OnShowListener
-            public void onShow(DialogInterface dialogInterface) {
-                Tools.u1(this.f37a);
-            }
-        }
-
-        l(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            super(i, i2, iArr, i3, str, z, i4);
-            this.n = 0;
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            if (i < 0) {
-                if (i == -2) {
-                    this.f42d = 0;
-                    Config.k();
-                }
-                if (Config.vSpaceReal && this.n != this.f42d) {
-                    ConfigListAdapter.m();
-                }
-                return false;
-            }
-            this.n = this.f42d;
-            boolean zE = super.e(dialogInterface, i);
-            if (zE) {
-                if (i == 1) {
-                    AlertDialog alertDialogCreate = android.ext.f.c(Tools.f0()).setCustomTitle(Tools.g0(this.f39a)).setMessage(b2.f(this.h)).setPositiveButton(R.string.save, this).setNegativeButton(R.string.cancel, this).create();
-                    android.ext.f.m(alertDialogCreate);
-                    android.ext.f.l(alertDialogCreate, new a(alertDialogCreate));
-                } else if (Config.vSpaceReal && this.n != this.f42d) {
-                    ConfigListAdapter.m();
-                }
-            }
-            return zE;
-        }
-    }
-
-    class m extends s {
-        m(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        private String l(int i) {
-            if (i == Integer.MAX_VALUE) {
-                return b2.f(R.string.yes);
-            }
-            if (i == 0) {
-                return b2.f(R.string.no);
-            }
-            return Tools.L1(b2.f(R.string.first_mb), Integer.valueOf(Math.round((i * 5.0f) / 1024.0f)));
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            if (this.m == null) {
-                int iE0 = Tools.E0();
-                int iFloor = iE0 > 0 ? ((int) Math.floor(Math.log(iE0 / 5.0f) / Math.log(2.0d))) - 8 : 0;
-                if (iFloor <= 0) {
-                    iFloor = 7;
-                }
-                if (iFloor >= 20) {
-                    iFloor = 20;
-                }
-                int i = iFloor + 2;
-                int[] iArr = new int[i];
-                CharSequence[] charSequenceArr = new CharSequence[i];
-                iArr[0] = 0;
-                charSequenceArr[0] = b2.f(R.string.no);
-                int i2 = iFloor + 1;
-                iArr[i2] = Integer.MAX_VALUE;
-                charSequenceArr[i2] = b2.f(R.string.yes);
-                String strF = b2.f(R.string.first_mb);
-                for (int i3 = 1; i3 <= iFloor; i3++) {
-                    int i4 = 1 << (i3 + 8);
-                    iArr[i3] = i4;
-                    charSequenceArr[i3] = Tools.L1(strF, Integer.valueOf(Math.round((i4 * 5.0f) / 1024.0f)));
-                }
-                this.m = iArr;
-                this.l = charSequenceArr;
-                this.k = null;
-            }
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public String toString() {
-            return Tools.N1(this.f39a) + ": " + l(this.f42d);
-        }
-    }
-
-    class n extends s {
-        n(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, iArr, i3, str, z);
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public void b() {
-            if (f1.y()) {
-                super.b();
-            }
-        }
-
-        @Override // android.ext.Config.s
-        protected void i() {
-            super.i();
-            int length = Config.f28a.length;
-            int[] iArr = this.m;
-            if (iArr == null || iArr.length != length + 1) {
-                int i = length + 1;
-                int[] iArr2 = new int[i];
-                CharSequence[] charSequenceArr = new CharSequence[i];
-                int i2 = 0;
-                iArr2[0] = 0;
-                charSequenceArr[0] = b2.f(R.string.no);
-                while (i2 < length) {
-                    int i3 = Config.f28a[i2];
-                    i2++;
-                    iArr2[i2] = i3;
-                    charSequenceArr[i2] = Config.f(i3);
-                }
-                this.m = iArr2;
-                this.l = charSequenceArr;
-                this.k = null;
-            }
-        }
-
-        @Override // android.ext.Config.s, android.ext.Config.p
-        public String toString() {
-            return Tools.N1(this.f39a) + ": " + Config.f(this.f42d);
-        }
-    }
-
-    public static class o extends ContextWrapper {
-        public o(Context context) {
-            super(context);
-        }
-
-        @Override // android.content.ContextWrapper, android.content.Context
-        public String getOpPackageName() {
-            e1.d("Use 2 " + Config.E + " instead of " + getBaseContext().getPackageName());
-            return Config.E;
-        }
-
-        @Override // android.content.ContextWrapper, android.content.Context
-        public String getPackageName() {
-            e1.d("Use 1 " + Config.E + " instead of " + getBaseContext().getPackageName());
-            return Config.E;
-        }
-    }
-
-    public static abstract class p implements DialogInterface.OnClickListener {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        int f39a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        int f40b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        String f41c;
-
-        /* JADX INFO: renamed from: d, reason: collision with root package name */
-        int f42d;
-
-        /* JADX INFO: renamed from: e, reason: collision with root package name */
-        boolean f43e;
-
-        /* JADX INFO: renamed from: g, reason: collision with root package name */
-        boolean f45g;
-        protected b j;
-
-        /* JADX INFO: renamed from: f, reason: collision with root package name */
-        int f44f = 0;
-        int h = -1;
-        protected a i = null;
-
-        interface a {
-            int a(DialogInterface dialogInterface, int i);
-        }
-
-        interface b {
-            void a(int i);
-        }
-
-        public p(int i, int i2, int i3, String str, boolean z) {
-            this.f39a = i2;
-            this.f40b = i3;
-            this.f41c = str;
-            this.f42d = i3;
-            this.f45g = z;
-            d();
-            Config.H.put(i, this);
-        }
-
-        public CharSequence a() {
-            return toString();
-        }
-
-        public abstract void b();
-
-        public long c() {
-            return ((long) this.f42d) | (((long) this.f44f) << 32);
-        }
-
-        protected void d() {
-        }
-
-        public abstract boolean e(DialogInterface dialogInterface, int i);
-
-        public void f(a aVar) {
-            this.i = aVar;
-        }
-
-        public void g(b bVar) {
-            this.j = bVar;
-        }
-
-        @Override // android.content.DialogInterface.OnClickListener
-        public final void onClick(DialogInterface dialogInterface, int i) {
-            b bVar;
-            a aVar = this.i;
-            if (aVar != null) {
-                i = aVar.a(dialogInterface, i);
-            }
-            if (!e(dialogInterface, i) || (bVar = this.j) == null) {
-                return;
-            }
-            bVar.a(this.f42d);
-        }
-
-        public String toString() {
-            return b2.f(this.f39a) + ' ' + this.f42d;
-        }
-    }
-
-    public static class q extends p implements DialogInterface.OnShowListener, View.OnClickListener {
-        int k;
-        int l;
-        long m;
-        private WeakReference n;
-        private WeakReference o;
-        private boolean p;
-        private boolean q;
-        private int r;
-
-        class a implements View.OnClickListener {
-            a() {
-            }
-
-            @Override // android.view.View.OnClickListener
-            public void onClick(View view) {
-                android.ext.f.o(android.ext.f.b().setMessage(b2.f(q.this.f39a) + '\n' + b2.f(q.this.h)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
-            }
-        }
-
-        public q(int i, int i2, int i3, int i4, long j, int i5, String str, boolean z) {
-            super(i, i2, i5, str, z);
-            this.n = new WeakReference(null);
-            this.o = new WeakReference(null);
-            this.p = false;
-            this.q = true;
-            this.r = 8;
-            this.k = i3;
-            this.l = i4;
-            this.m = j;
-        }
-
-        private String h() {
-            int i = this.k;
-            return i == 0 ? "" : b2.f(i);
-        }
-
-        @Override // android.ext.Config.p
-        public void b() {
-            i();
-        }
-
-        @Override // android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            EditText editText = (EditText) this.o.get();
-            if (editText == null) {
-                return false;
-            }
-            try {
-                String strH = j2.h(editText.getText().toString().trim());
-                t1.b bVarX = t1.x(strH);
-                long j = this.l;
-                long j2 = this.m;
-                if (!this.f43e) {
-                    long j3 = bVarX.f1261a;
-                    if (j3 < j || j3 > j2) {
-                        throw new NumberFormatException(Tools.L1(b2.f(R.string.number_out_of_range), strH) + Tools.L1(" [%,d, %,d]", Long.valueOf(j), Long.valueOf(j2)));
-                    }
-                }
-                y0.b(strH, this.r);
-                if (this.f43e) {
-                    long j4 = bVarX.f1261a;
-                    this.f42d = (int) j4;
-                    this.f44f = (int) (j4 >> 32);
-                } else {
-                    this.f42d = Math.max((int) Math.min(bVarX.f1261a, this.m), this.l);
-                }
-                Config.k();
-                Tools.E(this.n);
-                return true;
-            } catch (NumberFormatException e2) {
-                j2.i(e2, editText);
-                return false;
-            }
-        }
-
-        protected void i() {
-            View viewF = a.d.f(R.layout.option_edit, null);
-            TextView textView = (TextView) viewF.findViewById(R.id.message);
-            textView.setText(b2.f(this.f39a));
-            int i = this.h;
-            if (i != -1 && i != 0) {
-                Tools.r1(textView);
-                textView.setOnClickListener(new a());
-            }
-            TextView textView2 = (TextView) viewF.findViewById(R.id.hint);
-            String strF = b2.f(R.string.type_edit_limit);
-            Object[] objArr = new Object[2];
-            Object[] objArr2 = new Object[1];
-            objArr2[0] = Long.valueOf(this.f43e ? Long.MIN_VALUE : this.l);
-            objArr[0] = Tools.L1("%,d", objArr2);
-            Object[] objArr3 = new Object[1];
-            objArr3[0] = Long.valueOf(this.f43e ? Long.MAX_VALUE : this.m);
-            objArr[1] = Tools.L1("%,d", objArr3);
-            textView2.setText(Tools.L1(strF, objArr));
-            ((TextView) viewF.findViewById(R.id.unit)).setText(h());
-            TextView textView3 = (TextView) viewF.findViewById(R.id.default_);
-            textView3.setText(Tools.N1(R.string.default_) + ": " + Tools.L1("%,d", Integer.valueOf(this.f40b)));
-            textView3.setOnClickListener(this);
-            EditText editText = (EditText) viewF.findViewById(R.id.number);
-            Object[] objArr4 = new Object[1];
-            objArr4[0] = Long.valueOf(this.f43e ? c() : this.f42d);
-            editText.setText(Tools.L1("%,d", objArr4));
-            editText.setDataType(this.r);
-            this.o = new WeakReference(editText);
-            HexConverter hexConverter = (HexConverter) viewF.findViewById(R.id.number_converter);
-            hexConverter.setTag(new Object[]{editText, 4});
-            hexConverter.setVisibility(this.p ? 0 : 8);
-            hexConverter.setUseXor(this.q);
-            AlertDialog alertDialogCreate = android.ext.f.b().setView(InternalKeyboard.d(viewF)).setPositiveButton(R.string.ok, this).setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) null).create();
-            android.ext.f.l(alertDialogCreate, this);
-            this.n = new WeakReference(alertDialogCreate);
-            android.ext.f.n(alertDialogCreate, editText);
-        }
-
-        @Override // android.view.View.OnClickListener
-        public void onClick(View view) {
-            if (view == null || view.getId() != R.id.default_) {
-                onClick((DialogInterface) this.n.get(), -1);
-                return;
-            }
-            EditText editText = (EditText) this.o.get();
-            if (editText != null) {
-                editText.setText(Tools.L1("%,d", Integer.valueOf(this.f40b)));
-            }
-        }
-
-        @Override // android.content.DialogInterface.OnShowListener
-        public void onShow(DialogInterface dialogInterface) {
-            Tools.t1(dialogInterface, -1, null, this, (EditText) this.o.get());
-        }
-
-        @Override // android.ext.Config.p
-        public String toString() {
-            return b2.f(this.f39a) + ' ' + Tools.L1("%,d", Integer.valueOf(this.f42d)) + ' ' + h();
-        }
-
-        public q(int i, int i2, int i3, int i4, long j, int i5, String str, boolean z, int i6) {
-            this(i, i2, i3, i4, j, i5, str, z);
-            this.h = i6;
-        }
-
-        public q(int i, int i2, int i3, int i4, long j, int i5, String str, boolean z, boolean z2, boolean z3) {
-            this(i, i2, i3, i4, j, i5, str, z);
-            this.p = z2;
-            this.q = z3;
-        }
-
-        public q(int i, int i2, int i3, int i4, long j, int i5, String str, boolean z, boolean z2, boolean z3, int i6) {
-            this(i, i2, i3, i4, j, i5, str, z, z2, z3);
-            this.r = i6;
-        }
-    }
-
-    public static class r extends p {
-        public r(int i, int i2, int i3, String str, boolean z) {
-            super(i, i2, i3, str, z);
-        }
-
-        @Override // android.ext.Config.p
-        public void b() {
-        }
-
-        @Override // android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            return false;
-        }
-    }
-
-    public static class s extends p {
-        int[] k;
-        CharSequence[] l;
-        int[] m;
-
-        public s(int i, int i2, int[] iArr, int i3, String str, boolean z) {
-            super(i, i2, i3, str, z);
-            this.l = null;
-            this.m = null;
-            this.k = iArr;
-        }
-
-        @Override // android.ext.Config.p
-        public void b() {
-            i();
-            CharSequence[] charSequenceArr = this.l;
-            int[] iArr = this.k;
-            if (iArr != null) {
-                charSequenceArr = new CharSequence[iArr.length];
-                int i = 0;
-                while (true) {
-                    int[] iArr2 = this.k;
-                    if (i >= iArr2.length) {
-                        break;
-                    }
-                    charSequenceArr[i] = b2.f(iArr2[i]);
-                    i++;
-                }
-            }
-            j(charSequenceArr);
-        }
-
-        @Override // android.ext.Config.p
-        public boolean e(DialogInterface dialogInterface, int i) {
-            this.f42d = h(i);
-            Config.k();
-            Tools.D(dialogInterface);
-            return true;
-        }
-
-        public int h(int i) {
-            i();
-            int[] iArr = this.m;
-            return iArr == null ? i : iArr[i];
-        }
-
-        protected void i() {
-        }
-
-        protected void j(CharSequence[] charSequenceArr) {
-            int iK = k(this.f40b);
-            CharSequence[] charSequenceArr2 = new CharSequence[charSequenceArr.length];
-            for (int i = 0; i < charSequenceArr.length; i++) {
-                charSequenceArr2[i] = (i != iK || charSequenceArr[i] == null) ? charSequenceArr[i] : ((Object) charSequenceArr[i]) + " (" + b2.f(R.string.default_mark) + ')';
-            }
-            android.ext.f.o(android.ext.f.b().setCustomTitle(Config.c(this.f39a, this.h, this.f45g)).setSingleChoiceItems(charSequenceArr2, k(this.f42d), this));
-        }
-
-        public int k(int i) {
-            i();
-            if (this.m == null) {
-                return i;
-            }
-            int i2 = 1;
-            while (true) {
-                int[] iArr = this.m;
-                if (i2 >= iArr.length) {
-                    return 0;
-                }
-                if (iArr[i2] == i) {
-                    return i2;
-                }
-                i2++;
-            }
-        }
-
-        @Override // android.ext.Config.p
-        public String toString() {
-            CharSequence charSequenceF;
-            try {
-                int iK = k(this.f42d);
-                int[] iArr = this.k;
-                charSequenceF = iArr != null ? b2.f(iArr[iK]) : this.l[iK];
-            } catch (IndexOutOfBoundsException unused) {
-                charSequenceF = null;
-            }
-            if (charSequenceF == null) {
-                charSequenceF = "int:" + this.f42d;
-            }
-            return Tools.N1(this.f39a) + ": " + ((Object) charSequenceF);
-        }
-
-        public s(int i, int i2, int[] iArr, int i3, String str, boolean z, int i4) {
-            this(i, i2, iArr, i3, str, z);
-            this.h = i4;
-        }
-    }
+    static gg_a.e H = new gg_a.e();
 
     static {
-        new r(R.id.config_float_type, R.string.empty, -1, "float-type", false);
-        new r(R.id.config_float_flags, R.string.empty, -1, "float-flags", false);
-        new r(R.id.config_kbd_small, R.string.empty, 0, "kbd-small", false);
-        new r(R.id.config_time_jump_last, R.string.empty, 0, "time-jump-last", true);
-        new r(R.id.config_copy_params, R.string.empty, 0, "copy-params", false);
-        new r(R.id.record_logcat, R.string.empty, 0, "record-logcat", false);
-        new q(R.id.config_freeze_interval, R.string.freeze_interval, R.string.microseconds_short, 0, 600000000L, 33000, "freeze-interval", true, R.string.freeze_interval_help_);
-        new q(R.id.config_saved_list_updates_interval, R.string.saved_list_update_interval, R.string.milliseconds_short, 100, 600000L, 1000, "saved-list-updates-interval", false, R.string.saved_list_update_interval_help_);
-        new f(R.id.config_xor_key, R.string.xor_key, R.string.empty, Integer.MIN_VALUE, 4294967295L, 0, "xor-key", true, true, false, 1);
-        new q(R.id.config_history_limit, R.string.history_limit, R.string.empty, 0, 100000L, 500, "history-limit", false);
-        new g(R.id.config_icons_size, R.string.icons_size, 12, 0, "icons-size", false, R.string.icons_size_help);
-        new s(R.id.config_ignore_unknown_chars, R.string.ignore_unknown_chars, new int[]{R.string.no, R.string.yes}, 1, "ignore-unknown-chars", false, R.string.ignore_unknown_chars_help);
-        new s(R.id.config_use_notification, R.string.use_notification, new int[]{R.string.no, R.string.yes}, 0, "use-notification", false, R.string.use_notification_help);
-        new s(R.id.config_context_source, R.string.context, new int[]{R.string.instrumentation, R.string.service, R.string.create, R.string.application, R.string.activity}, Build.VERSION.SDK_INT >= 29 ? 1 : 0, "context-source", false);
-        new s(R.id.config_use_sound_effects, R.string.use_sound_effects, new int[]{R.string.no, R.string.yes}, 1, "use-sound-effects", false, R.string.use_sound_effects_help);
-        new s(R.id.selinux, R.string.empty, new int[]{R.string.work_without_selinux, R.string.work_with_selinux}, 0, "selinux", false);
-        new s(R.id.config_keyboard, R.string.keyboard, new int[]{R.string.external, R.string.internal}, InternalKeyboard.a() ? 1 : 0, "use-internal-keyboard", false, R.string.keyboard_help);
-        new s(R.id.config_suggestions, R.string.allow_suggestions, new int[]{R.string.no, R.string.yes}, 0, "allow-suggestions", false, R.string.allow_suggestions_help);
-        new s(R.id.config_indent, R.string.indent_for_the_status_bar, new int[]{R.string.no, R.string.yes}, 0, "use-indent", false);
-        new s(R.id.config_autopause, R.string.autopause, new int[]{R.string.no, R.string.yes}, 0, "use-autopause", false, R.string.autopause_help);
-        new s(R.id.config_acceleration, R.string.acceleration, new int[]{R.string.software, R.string.hardware_}, 0, "use-hardware-acceleration", false, R.string.acceleration_help_);
-        new s(R.id.config_skip_memory, R.string.skip_memory, new int[]{R.string.no_slow, R.string.empty_memory, R.string.empty_zygote_memory}, 2, "skip-memory", true);
-        new h(R.id.config_memory_access, R.string.memory_access, new int[]{R.string.normal, R.string.extended, R.string.experimental}, 0, "memory-access", false);
-        new s(R.id.config_deep_read, R.string.deep_read, new int[]{R.string.no, R.string.yes_slow}, 0, "method", false, R.string.help_deep_read);
-        new s(R.id.config_calls, R.string.calls, new int[]{R.string.normal, R.string.alternative}, 0, "calls", false, R.string.help_calls);
-        new s(R.id.config_waitpid, R.string.waitpid_mode, new int[]{R.string.normal, R.string.alternative}, 0, "waitpid", false, R.string.help_waitpid);
-        new s(R.id.config_fast_freeze, R.string.fast_freeze, new int[]{R.string.no, R.string.yes}, 0, "fast-freeze", true, R.string.help_fast_freeze);
-        new s(R.id.config_fill_toolbar, R.string.fill_toolbar, new int[]{R.string.from_left, R.string.from_center, R.string.from_right}, 2, "fill-toolbar", false);
-        new s(R.id.config_search_helper, R.string.search_helper, new int[]{R.string.off, R.string.go_to_game, R.string.go_to_game_and_restore}, 2, "search-helper", false);
-        new s(R.id.config_speeds_params, R.string.speedhack_speeds_, new int[]{R.string.nothing, R.string.sort, R.string.sort_and_remove_duplicates}, 2, "speeds-params", false);
-        new s(R.id.config_reset_on_exit, R.string.reset_on_exit_, new int[]{R.string.no, R.string.yes}, 1, "reset-on-exit", false);
-        new s(R.id.config_check_libs, R.string.check_libs, new int[]{R.string.no, R.string.yes}, 1, "check-libs", false);
-        new s(R.id.config_visible_type, R.string.use_visible_type, new int[]{R.string.no, R.string.yes}, 1, "visible-type", false, R.string.use_visible_type_help);
-        new i(R.id.config_prevent_unload, R.string.prevent_unload, new int[]{R.string.no, R.string.level_1, R.string.level_2, R.string.level_3}, 0, "prevent-unload", false, R.string.prevent_unload_help);
-        new s(R.id.config_ptrace_bypass_mode, R.string.ptrace_bypass_mode, new int[]{R.string.mode_restore, R.string.mode_nothing, R.string.mode_freeze, R.string.off}, 3, "ptrace-bypass", true, R.string.ptrace_bypass_mode_help);
-        new j(R.id.config_time_jump_panel, R.string.show_time_jump_panel, new int[]{R.string.no, R.string.yes}, 0, "time-jump-panel", true);
-        new k(R.id.config_number_locale, R.string.number_locale, null, 0, "number-locale", false);
-        new l(R.id.config_vspace_root, R.string.vspace_root, new int[]{R.string.no, R.string.yes_dangerous}, 0, "vspace-root", false, R.string.help_vspace_root_);
-        new m(R.id.config_ram, R.string.data_in_ram, null, Integer.MAX_VALUE, "data-in-ram", false);
-        new n(R.id.config_hot_key, R.string.hot_key, null, 0, "hot-key", false);
-        new a(R.id.config_ranges, R.string.set_range, null, 0, "ranges", true);
-        new OptionMultiChoiceSh(R.id.config_speedhack_intercept, R.string.speedhack_intercept, null, -1, "intercept", true, 21);
-        new OptionMultiChoiceSh(R.id.config_unrandomizer_intercept, R.string.unrandomizer_intercept, null, -520193, "unrand-intercept", true, 19);
-        new b(R.id.config_toolbars, R.string.toolbars, null, -1, "toolbars", false);
-        new c(R.id.config_use_small_list_items, R.string.small_list_items, null, 0, "small-items", false, R.string.small_list_items_help);
-        new d(R.id.config_backgrounds, R.string.backgrounds, null, 0, "backgrounds", false);
-        new e(R.id.config_hide_from_game, R.string.hide_from_game, null, 0, "hide", true);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.config_float_type, catch_.me_.if_.you_.can_.R$string.empty, -1, "float-type", false);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.config_float_flags, catch_.me_.if_.you_.can_.R$string.empty, -1, "float-flags", false);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.config_kbd_small, catch_.me_.if_.you_.can_.R$string.empty, 0, "kbd-small", false);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.config_time_jump_last, catch_.me_.if_.you_.can_.R$string.empty, 0, "time-jump-last", true);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.config_copy_params, catch_.me_.if_.you_.can_.R$string.empty, 0, "copy-params", false);
+        new android.ext.Config$r(catch_.me_.if_.you_.can_.R$id.record_logcat, catch_.me_.if_.you_.can_.R$string.empty, 0, "record-logcat", false);
+        new android.ext.Config$q(catch_.me_.if_.you_.can_.R$id.config_freeze_interval, catch_.me_.if_.you_.can_.R$string.freeze_interval, catch_.me_.if_.you_.can_.R$string.microseconds_short, 0, 600000000L, 33000, "freeze-interval", true, catch_.me_.if_.you_.can_.R$string.freeze_interval_help_);
+        new android.ext.Config$q(catch_.me_.if_.you_.can_.R$id.config_saved_list_updates_interval, catch_.me_.if_.you_.can_.R$string.saved_list_update_interval, catch_.me_.if_.you_.can_.R$string.milliseconds_short, 100, 600000L, 1000, "saved-list-updates-interval", false, catch_.me_.if_.you_.can_.R$string.saved_list_update_interval_help_);
+        new android.ext.Config$f(catch_.me_.if_.you_.can_.R$id.config_xor_key, catch_.me_.if_.you_.can_.R$string.xor_key, catch_.me_.if_.you_.can_.R$string.empty, Integer.MIN_VALUE, 4294967295L, 0, "xor-key", true, true, false, 1);
+        new android.ext.Config$q(catch_.me_.if_.you_.can_.R$id.config_history_limit, catch_.me_.if_.you_.can_.R$string.history_limit, catch_.me_.if_.you_.can_.R$string.empty, 0, 100000L, 500, "history-limit", false);
+        new android.ext.Config$g(catch_.me_.if_.you_.can_.R$id.config_icons_size, catch_.me_.if_.you_.can_.R$string.icons_size, 12, 0, "icons-size", false, catch_.me_.if_.you_.can_.R$string.icons_size_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_ignore_unknown_chars, catch_.me_.if_.you_.can_.R$string.ignore_unknown_chars, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 1, "ignore-unknown-chars", false, catch_.me_.if_.you_.can_.R$string.ignore_unknown_chars_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_use_notification, catch_.me_.if_.you_.can_.R$string.use_notification, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "use-notification", false, catch_.me_.if_.you_.can_.R$string.use_notification_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_context_source, catch_.me_.if_.you_.can_.R$string.context, new int[]{catch_.me_.if_.you_.can_.R$string.instrumentation, catch_.me_.if_.you_.can_.R$string.service, catch_.me_.if_.you_.can_.R$string.create, catch_.me_.if_.you_.can_.R$string.application, catch_.me_.if_.you_.can_.R$string.activity}, android.os.Build.VERSION.SDK_INT >= 29 ? 1 : 0, "context-source", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_use_sound_effects, catch_.me_.if_.you_.can_.R$string.use_sound_effects, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 1, "use-sound-effects", false, catch_.me_.if_.you_.can_.R$string.use_sound_effects_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.selinux, catch_.me_.if_.you_.can_.R$string.empty, new int[]{catch_.me_.if_.you_.can_.R$string.work_without_selinux, catch_.me_.if_.you_.can_.R$string.work_with_selinux}, 0, "selinux", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_keyboard, catch_.me_.if_.you_.can_.R$string.keyboard, new int[]{catch_.me_.if_.you_.can_.R$string.external, catch_.me_.if_.you_.can_.R$string.internal}, android.ext.InternalKeyboard.a() ? 1 : 0, "use-internal-keyboard", false, catch_.me_.if_.you_.can_.R$string.keyboard_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_suggestions, catch_.me_.if_.you_.can_.R$string.allow_suggestions, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "allow-suggestions", false, catch_.me_.if_.you_.can_.R$string.allow_suggestions_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_indent, catch_.me_.if_.you_.can_.R$string.indent_for_the_status_bar, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "use-indent", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_autopause, catch_.me_.if_.you_.can_.R$string.autopause, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "use-autopause", false, catch_.me_.if_.you_.can_.R$string.autopause_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_acceleration, catch_.me_.if_.you_.can_.R$string.acceleration, new int[]{catch_.me_.if_.you_.can_.R$string.software, catch_.me_.if_.you_.can_.R$string.hardware_}, 0, "use-hardware-acceleration", false, catch_.me_.if_.you_.can_.R$string.acceleration_help_);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_skip_memory, catch_.me_.if_.you_.can_.R$string.skip_memory, new int[]{catch_.me_.if_.you_.can_.R$string.no_slow, catch_.me_.if_.you_.can_.R$string.empty_memory, catch_.me_.if_.you_.can_.R$string.empty_zygote_memory}, 2, "skip-memory", true);
+        new android.ext.Config$h(catch_.me_.if_.you_.can_.R$id.config_memory_access, catch_.me_.if_.you_.can_.R$string.memory_access, new int[]{catch_.me_.if_.you_.can_.R$string.normal, catch_.me_.if_.you_.can_.R$string.extended, catch_.me_.if_.you_.can_.R$string.experimental}, 0, "memory-access", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_deep_read, catch_.me_.if_.you_.can_.R$string.deep_read, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes_slow}, 0, "method", false, catch_.me_.if_.you_.can_.R$string.help_deep_read);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_calls, catch_.me_.if_.you_.can_.R$string.calls, new int[]{catch_.me_.if_.you_.can_.R$string.normal, catch_.me_.if_.you_.can_.R$string.alternative}, 0, "calls", false, catch_.me_.if_.you_.can_.R$string.help_calls);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_waitpid, catch_.me_.if_.you_.can_.R$string.waitpid_mode, new int[]{catch_.me_.if_.you_.can_.R$string.normal, catch_.me_.if_.you_.can_.R$string.alternative}, 0, "waitpid", false, catch_.me_.if_.you_.can_.R$string.help_waitpid);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_fast_freeze, catch_.me_.if_.you_.can_.R$string.fast_freeze, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "fast-freeze", true, catch_.me_.if_.you_.can_.R$string.help_fast_freeze);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_fill_toolbar, catch_.me_.if_.you_.can_.R$string.fill_toolbar, new int[]{catch_.me_.if_.you_.can_.R$string.from_left, catch_.me_.if_.you_.can_.R$string.from_center, catch_.me_.if_.you_.can_.R$string.from_right}, 2, "fill-toolbar", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_search_helper, catch_.me_.if_.you_.can_.R$string.search_helper, new int[]{catch_.me_.if_.you_.can_.R$string.off, catch_.me_.if_.you_.can_.R$string.go_to_game, catch_.me_.if_.you_.can_.R$string.go_to_game_and_restore}, 2, "search-helper", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_speeds_params, catch_.me_.if_.you_.can_.R$string.speedhack_speeds_, new int[]{catch_.me_.if_.you_.can_.R$string.nothing, catch_.me_.if_.you_.can_.R$string.sort, catch_.me_.if_.you_.can_.R$string.sort_and_remove_duplicates}, 2, "speeds-params", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_reset_on_exit, catch_.me_.if_.you_.can_.R$string.reset_on_exit_, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 1, "reset-on-exit", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_check_libs, catch_.me_.if_.you_.can_.R$string.check_libs, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 1, "check-libs", false);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_visible_type, catch_.me_.if_.you_.can_.R$string.use_visible_type, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 1, "visible-type", false, catch_.me_.if_.you_.can_.R$string.use_visible_type_help);
+        new android.ext.Config$i(catch_.me_.if_.you_.can_.R$id.config_prevent_unload, catch_.me_.if_.you_.can_.R$string.prevent_unload, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.level_1, catch_.me_.if_.you_.can_.R$string.level_2, catch_.me_.if_.you_.can_.R$string.level_3}, 0, "prevent-unload", false, catch_.me_.if_.you_.can_.R$string.prevent_unload_help);
+        new android.ext.Config$s(catch_.me_.if_.you_.can_.R$id.config_ptrace_bypass_mode, catch_.me_.if_.you_.can_.R$string.ptrace_bypass_mode, new int[]{catch_.me_.if_.you_.can_.R$string.mode_restore, catch_.me_.if_.you_.can_.R$string.mode_nothing, catch_.me_.if_.you_.can_.R$string.mode_freeze, catch_.me_.if_.you_.can_.R$string.off}, 3, "ptrace-bypass", true, catch_.me_.if_.you_.can_.R$string.ptrace_bypass_mode_help);
+        new android.ext.Config$j(catch_.me_.if_.you_.can_.R$id.config_time_jump_panel, catch_.me_.if_.you_.can_.R$string.show_time_jump_panel, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes}, 0, "time-jump-panel", true);
+        new android.ext.Config$k(catch_.me_.if_.you_.can_.R$id.config_number_locale, catch_.me_.if_.you_.can_.R$string.number_locale, null, 0, "number-locale", false);
+        new android.ext.Config$l(catch_.me_.if_.you_.can_.R$id.config_vspace_root, catch_.me_.if_.you_.can_.R$string.vspace_root, new int[]{catch_.me_.if_.you_.can_.R$string.no, catch_.me_.if_.you_.can_.R$string.yes_dangerous}, 0, "vspace-root", false, catch_.me_.if_.you_.can_.R$string.help_vspace_root_);
+        new android.ext.Config$m(catch_.me_.if_.you_.can_.R$id.config_ram, catch_.me_.if_.you_.can_.R$string.data_in_ram, null, Integer.MAX_VALUE, "data-in-ram", false);
+        new android.ext.Config$n(catch_.me_.if_.you_.can_.R$id.config_hot_key, catch_.me_.if_.you_.can_.R$string.hot_key, null, 0, "hot-key", false);
+        new android.ext.Config$a(catch_.me_.if_.you_.can_.R$id.config_ranges, catch_.me_.if_.you_.can_.R$string.set_range, null, 0, "ranges", true);
+        new android.ext.Config$OptionMultiChoiceSh(catch_.me_.if_.you_.can_.R$id.config_speedhack_intercept, catch_.me_.if_.you_.can_.R$string.speedhack_intercept, null, -1, "intercept", true, 21);
+        new android.ext.Config$OptionMultiChoiceSh(catch_.me_.if_.you_.can_.R$id.config_unrandomizer_intercept, catch_.me_.if_.you_.can_.R$string.unrandomizer_intercept, null, -520193, "unrand-intercept", true, 19);
+        new android.ext.Config$b(catch_.me_.if_.you_.can_.R$id.config_toolbars, catch_.me_.if_.you_.can_.R$string.toolbars, null, -1, "toolbars", false);
+        new android.ext.Config$c(catch_.me_.if_.you_.can_.R$id.config_use_small_list_items, catch_.me_.if_.you_.can_.R$string.small_list_items, null, 0, "small-items", false, catch_.me_.if_.you_.can_.R$string.small_list_items_help);
+        new android.ext.Config$d(catch_.me_.if_.you_.can_.R$id.config_backgrounds, catch_.me_.if_.you_.can_.R$string.backgrounds, null, 0, "backgrounds", false);
+        new android.ext.Config$e(catch_.me_.if_.you_.can_.R$id.config_hide_from_game, catch_.me_.if_.you_.can_.R$string.hide_from_game, null, 0, "hide", true);
         h();
         C = false;
         vSpaceReal = false;
@@ -1219,24 +109,24 @@ public abstract class Config {
         G = (byte) 0;
     }
 
-    public static Context a(Context context) {
-        return context instanceof o ? context : new o(context);
+    public static android.content.Context a(android.content.Context context) {
+        return context instanceof android.ext.Config$o ? context : new android.ext.Config$o(context);
     }
 
-    public static p b(int i2) {
-        return (p) H.get(i2);
+    public static android.ext.Config$p b(int i2) {
+        return (android.ext.Config$p) H.get(i2);
     }
 
-    static View c(int i2, int i3, boolean z2) {
-        String str = null;
+    static android.view.View c(int i2, int i3, boolean z2) {
+        java.lang.String str = null;
         if (z2) {
-            z1.d dVar = MainService.instance.v0;
-            String str2 = dVar != null ? dVar.f1433b : null;
+            android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+            java.lang.String str2 = z1_d != null ? z1_d.f1433b : null;
             if (str2 != null) {
                 str = '\"' + str2 + '\"';
             }
         }
-        return Tools.j0(b2.f(i2), str, i3);
+        return android.ext.Tools.j0(android.ext.b2.f(i2), str, i3);
     }
 
     public static int d() {
@@ -1247,10 +137,10 @@ public abstract class Config {
         return (i2 * 2) + 24;
     }
 
-    static String f(int i2) {
+    static java.lang.String f(int i2) {
         switch (i2) {
             case 0:
-                return b2.f(R.string.no);
+                return android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.no);
             case 1:
                 return "KEY_ESC";
             case 2:
@@ -2511,14 +1401,14 @@ public abstract class Config {
         }
     }
 
-    private static String g() {
+    private static java.lang.String g() {
         try {
-            z1.d dVar = MainService.instance.v0;
-            if (dVar == null) {
+            android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+            if (z1_d == null) {
                 return null;
             }
-            return dVar.f1434c;
-        } catch (NullPointerException unused) {
+            return z1_d.f1434c;
+        } catch (java.lang.NullPointerException unused) {
             return null;
         }
     }
@@ -2527,36 +1417,36 @@ public abstract class Config {
     /* JADX WARN: Code duplicated, block: B:39:0x00a1 A[SYNTHETIC] */
     /* JADX WARN: Instruction removed from duplicated block: B:22:0x0072, please report this as an issue */
     public static void h() {
-        SharedPreferences sharedPreferencesM0 = Tools.M0();
+        android.content.SharedPreferences sharedPreferencesM0 = android.ext.Tools.M0();
         i(sharedPreferencesM0);
-        String strG = g();
+        java.lang.String strG = g();
         boolean z2 = false;
         for (int i2 = 0; i2 < H.size(); i2++) {
-            p pVar = (p) H.valueAt(i2);
-            String str = pVar.f41c;
-            if (!pVar.f45g) {
+            android.ext.Config$p config$p = (android.ext.Config$p) H.valueAt(i2);
+            java.lang.String str = config$p.f41c;
+            if (!config$p.f45g) {
                 try {
                     try {
-                        pVar.f42d = sharedPreferencesM0.getInt(str, pVar.f40b);
-                    } catch (ClassCastException unused) {
-                        pVar.f42d = sharedPreferencesM0.getBoolean(pVar.f41c, pVar.f40b == 1) ? 1 : 0;
+                        config$p.f42d = sharedPreferencesM0.getInt(str, config$p.f40b);
+                    } catch (java.lang.ClassCastException unused) {
+                        config$p.f42d = sharedPreferencesM0.getBoolean(config$p.f41c, config$p.f40b == 1) ? 1 : 0;
                         z2 = true;
                     }
-                } catch (ClassCastException e2) {
-                    e1.l("Failed load data for " + pVar.f41c, e2);
+                } catch (java.lang.ClassCastException e2) {
+                    android.ext.e1.l("Failed load data for " + config$p.f41c, e2);
                 }
-                if (pVar.f43e) {
+                if (config$p.f43e) {
                     try {
-                        pVar.f44f = sharedPreferencesM0.getInt(str + "-2", 0);
-                    } catch (ClassCastException e3) {
-                        e1.l("Failed load data2 for " + pVar.f41c, e3);
+                        config$p.f44f = sharedPreferencesM0.getInt(str + "-2", 0);
+                    } catch (java.lang.ClassCastException e3) {
+                        android.ext.e1.l("Failed load data2 for " + config$p.f41c, e3);
                     }
                 }
             } else if (strG != null) {
                 str = strG + '-' + str;
-                pVar.f42d = sharedPreferencesM0.getInt(str, pVar.f40b);
-                if (pVar.f43e) {
-                    pVar.f44f = sharedPreferencesM0.getInt(str + "-2", 0);
+                config$p.f42d = sharedPreferencesM0.getInt(str, config$p.f40b);
+                if (config$p.f43e) {
+                    config$p.f44f = sharedPreferencesM0.getInt(str + "-2", 0);
                 }
             }
         }
@@ -2567,7 +1457,7 @@ public abstract class Config {
         }
     }
 
-    private static void i(SharedPreferences sharedPreferences) {
+    private static void i(android.content.SharedPreferences sharedPreferences) {
         f30c = sharedPreferences.getLong("ignore", 0L);
         f31d = sharedPreferences.getLong("memory-from", 0L);
         f32e = sharedPreferences.getLong("memory-to", -1L);
@@ -2581,20 +1471,20 @@ public abstract class Config {
             jArr[i2] = sharedPreferences.getLong("toolbar-buttons-" + i2, -1L);
             i2++;
         }
-        if (MainService.I0) {
-            MainService.instance.q1();
+        if (android.ext.MainService.I0) {
+            android.ext.MainService.instance.q1();
         }
     }
 
     private static void j() {
         r();
-        if (MainService.instance != null) {
-            if (MainService.instance.Y != null) {
-                MainService.instance.V(MainService.instance.Y.getAdapter());
-                MainService.instance.X0();
+        if (android.ext.MainService.instance != null) {
+            if (android.ext.MainService.instance.Y != null) {
+                android.ext.MainService.instance.V(android.ext.MainService.instance.Y.getAdapter());
+                android.ext.MainService.instance.X0();
             }
-            MainService.instance.i.w0();
-            MainService.instance.p1();
+            android.ext.MainService.instance.i.w0();
+            android.ext.MainService.instance.p1();
         }
     }
 
@@ -2602,22 +1492,22 @@ public abstract class Config {
     /* JADX WARN: Code duplicated, block: B:18:0x005c A[SYNTHETIC] */
     /* JADX WARN: Instruction removed from duplicated block: B:12:0x0046, please report this as an issue */
     public static void k() {
-        g2 g2Var = new g2();
+        android.ext.g2 g2Var = new android.ext.g2();
         l(g2Var);
-        String strG = g();
+        java.lang.String strG = g();
         for (int i2 = 0; i2 < H.size(); i2++) {
-            p pVar = (p) H.valueAt(i2);
-            String str = pVar.f41c;
-            if (!pVar.f45g) {
-                g2Var.g(str, pVar.f42d, pVar.f40b);
-                if (pVar.f43e) {
-                    g2Var.g(str + "-2", pVar.f44f, 0);
+            android.ext.Config$p config$p = (android.ext.Config$p) H.valueAt(i2);
+            java.lang.String str = config$p.f41c;
+            if (!config$p.f45g) {
+                g2Var.g(str, config$p.f42d, config$p.f40b);
+                if (config$p.f43e) {
+                    g2Var.g(str + "-2", config$p.f44f, 0);
                 }
             } else if (strG != null) {
                 str = strG + '-' + str;
-                g2Var.g(str, pVar.f42d, pVar.f40b);
-                if (pVar.f43e) {
-                    g2Var.g(str + "-2", pVar.f44f, 0);
+                g2Var.g(str, config$p.f42d, config$p.f40b);
+                if (config$p.f43e) {
+                    g2Var.g(str + "-2", config$p.f44f, 0);
                 }
             }
         }
@@ -2625,7 +1515,7 @@ public abstract class Config {
         j();
     }
 
-    private static void l(g2 g2Var) {
+    private static void l(android.ext.g2 g2Var) {
         g2Var.i("ignore", f30c, 0L);
         g2Var.i("memory-from", f31d, 0L);
         g2Var.i("memory-to", f32e, -1L);
@@ -2641,92 +1531,92 @@ public abstract class Config {
         }
     }
 
-    public static ImageView m(ImageView imageView) {
-        int iH = Tools.H();
+    public static android.widget.ImageView m(android.widget.ImageView imageView) {
+        int iH = android.ext.Tools.H();
         return o(imageView, iH, iH);
     }
 
-    public static ImageView n(ImageView imageView, int i2) {
-        int iH = Tools.H();
+    public static android.widget.ImageView n(android.widget.ImageView imageView, int i2) {
+        int iH = android.ext.Tools.H();
         return p(imageView, iH, iH, i2);
     }
 
-    public static ImageView o(ImageView imageView, int i2, int i3) {
+    public static android.widget.ImageView o(android.widget.ImageView imageView, int i2, int i3) {
         return p(imageView, i2, i3, d());
     }
 
-    public static ImageView p(ImageView imageView, int i2, int i3, int i4) {
+    public static android.widget.ImageView p(android.widget.ImageView imageView, int i2, int i3, int i4) {
         imageView.setAdjustViewBounds(false);
         imageView.setMinimumWidth(i2);
         imageView.setMinimumHeight(i3);
-        int iG = (int) Tools.G(i4);
+        int iG = (int) android.ext.Tools.G(i4);
         int i5 = i2 > iG ? (i2 - iG) / 2 : 0;
         int i6 = i3 > iG ? (i3 - iG) / 2 : 0;
         imageView.setPadding(i5, i6, i5, i6);
         try {
-            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        } catch (Throwable th) {
-            e1.a(th);
+            imageView.setScaleType(android.widget.ImageView.ScaleType.FIT_CENTER);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
         imageView.invalidate();
         return imageView;
     }
 
-    public static ImageView q(ImageView imageView, int i2) {
+    public static android.widget.ImageView q(android.widget.ImageView imageView, int i2) {
         imageView.setAdjustViewBounds(false);
         imageView.setMinimumWidth(i2);
         imageView.setMinimumHeight(i2);
-        ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
+        android.view.ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.width = i2;
             layoutParams.height = i2;
             imageView.setLayoutParams(layoutParams);
         }
-        imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        imageView.setScaleType(android.widget.ImageView.ScaleType.FIT_CENTER);
         imageView.invalidate();
         return imageView;
     }
 
     public static void r() {
-        a.e eVar = H;
-        int i2 = ((p) eVar.get(R.id.config_reset_on_exit)).f42d == 1 ? 2 : 0;
-        if (((p) eVar.get(R.id.selinux)).f42d == 1) {
+        gg_a.e eVar = H;
+        int i2 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_reset_on_exit)).f42d == 1 ? 2 : 0;
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.selinux)).f42d == 1) {
             i2 |= 4;
         }
-        if (((p) eVar.get(R.id.config_deep_read)).f42d == 0) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_deep_read)).f42d == 0) {
             i2 |= 65536;
         }
-        if (((p) eVar.get(R.id.config_calls)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_calls)).f42d == 1) {
             i2 |= 2048;
         }
-        if (((p) eVar.get(R.id.config_waitpid)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_waitpid)).f42d == 1) {
             i2 |= 4096;
         }
-        if (((p) eVar.get(R.id.config_fast_freeze)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_fast_freeze)).f42d == 1) {
             i2 |= 262144;
         }
-        int i3 = ((p) eVar.get(R.id.config_skip_memory)).f42d;
+        int i3 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_skip_memory)).f42d;
         if (i3 == 1) {
             i2 |= 1;
         }
         if (i3 == 2) {
             i2 |= 1025;
         }
-        int i4 = ((p) eVar.get(R.id.config_memory_access)).f42d;
+        int i4 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_memory_access)).f42d;
         if (i4 == 1) {
             i2 |= 8;
         }
         if (i4 == 2) {
             i2 |= 16;
         }
-        int i5 = ((p) eVar.get(R.id.config_prevent_unload)).f42d;
+        int i5 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_prevent_unload)).f42d;
         if (i5 == 1) {
             i2 |= 32;
         }
         if (i5 == 2 || i5 == 3) {
             i2 |= 64;
         }
-        int i6 = ((p) eVar.get(R.id.config_hide_from_game)).f42d;
+        int i6 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_hide_from_game)).f42d;
         if ((i6 & 1) != 0) {
             i2 |= 128;
         }
@@ -2739,7 +1629,7 @@ public abstract class Config {
         if ((i6 & 8) != 0) {
             i2 |= 32768;
         }
-        int i7 = ((p) eVar.get(R.id.config_ptrace_bypass_mode)).f42d;
+        int i7 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_ptrace_bypass_mode)).f42d;
         if (i7 == 1) {
             i2 |= 8192;
         }
@@ -2750,68 +1640,68 @@ public abstract class Config {
             i2 |= 131072;
         }
         A = i2;
-        int i8 = ((p) eVar.get(R.id.config_keyboard)).f42d == 1 ? 1 : 0;
-        if (((p) eVar.get(R.id.config_acceleration)).f42d == 1) {
+        int i8 = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_keyboard)).f42d == 1 ? 1 : 0;
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_acceleration)).f42d == 1) {
             i8 |= 2;
         }
-        if (((p) eVar.get(R.id.config_autopause)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_autopause)).f42d == 1) {
             i8 |= 4;
         }
-        if (((p) eVar.get(R.id.config_suggestions)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_suggestions)).f42d == 1) {
             i8 |= 8;
         }
-        if (((p) eVar.get(R.id.config_indent)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_indent)).f42d == 1) {
             i8 |= 16;
         }
-        if (((p) eVar.get(R.id.config_use_sound_effects)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_use_sound_effects)).f42d == 1) {
             i8 |= 32;
         }
-        if (((p) eVar.get(R.id.config_kbd_small)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_kbd_small)).f42d == 1) {
             i8 |= 64;
         }
-        if (((p) eVar.get(R.id.config_time_jump_panel)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_time_jump_panel)).f42d == 1) {
             i8 |= 128;
         }
-        if (((p) eVar.get(R.id.config_use_notification)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_use_notification)).f42d == 1) {
             i8 |= 256;
         }
-        if (((p) eVar.get(R.id.config_check_libs)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_check_libs)).f42d == 1) {
             i8 |= 2048;
         }
-        if (((p) eVar.get(R.id.config_ignore_unknown_chars)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_ignore_unknown_chars)).f42d == 1) {
             i8 |= 4096;
         }
-        if (((p) eVar.get(R.id.config_prevent_unload)).f42d == 3) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_prevent_unload)).f42d == 3) {
             i8 |= 8192;
         }
-        if (((p) eVar.get(R.id.config_vspace_root)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_vspace_root)).f42d == 1) {
             i8 |= 512;
         }
-        if (((p) eVar.get(R.id.config_visible_type)).f42d == 1) {
+        if (((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_visible_type)).f42d == 1) {
             i8 |= 1024;
         }
         B = i8;
-        ((p) eVar.get(R.id.config_number_locale)).d();
-        f34g = ((p) eVar.get(R.id.config_fill_toolbar)).f42d;
-        h = ((p) eVar.get(R.id.config_ram)).f42d;
-        i = ((p) eVar.get(R.id.config_ranges)).f42d;
-        k = ((p) eVar.get(R.id.config_search_helper)).f42d;
-        l = ((p) eVar.get(R.id.config_speeds_params)).f42d;
-        m = ((p) eVar.get(R.id.config_freeze_interval)).f42d;
-        n = ((p) eVar.get(R.id.config_saved_list_updates_interval)).f42d;
-        o = ((p) eVar.get(R.id.config_icons_size)).f42d;
-        p = ((p) eVar.get(R.id.config_toolbars)).f42d;
-        q = ((p) eVar.get(R.id.config_use_small_list_items)).f42d;
-        r = ((p) eVar.get(R.id.config_backgrounds)).f42d;
-        s = ((p) eVar.get(R.id.config_xor_key)).c();
-        t = ((p) eVar.get(R.id.config_float_type)).f42d;
-        u = ((p) eVar.get(R.id.config_float_flags)).f42d;
-        v = ((p) eVar.get(R.id.config_time_jump_last)).f42d;
-        w = ((p) eVar.get(R.id.config_hot_key)).f42d;
-        x = ((p) eVar.get(R.id.config_history_limit)).f42d;
-        y = ((p) eVar.get(R.id.config_copy_params)).f42d;
-        z = ((p) eVar.get(R.id.config_context_source)).f42d;
-        j = (((long) ((p) eVar.get(R.id.config_speedhack_intercept)).f42d) & 2097151) | (((long) ((p) eVar.get(R.id.config_unrandomizer_intercept)).f42d) << 21);
+        ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_number_locale)).d();
+        f34g = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_fill_toolbar)).f42d;
+        h = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_ram)).f42d;
+        i = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_ranges)).f42d;
+        k = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_search_helper)).f42d;
+        l = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_speeds_params)).f42d;
+        m = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_freeze_interval)).f42d;
+        n = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_saved_list_updates_interval)).f42d;
+        o = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_icons_size)).f42d;
+        p = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_toolbars)).f42d;
+        q = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_use_small_list_items)).f42d;
+        r = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_backgrounds)).f42d;
+        s = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_xor_key)).c();
+        t = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_float_type)).f42d;
+        u = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_float_flags)).f42d;
+        v = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_time_jump_last)).f42d;
+        w = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_hot_key)).f42d;
+        x = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_history_limit)).f42d;
+        y = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_copy_params)).f42d;
+        z = ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_context_source)).f42d;
+        j = (((long) ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_speedhack_intercept)).f42d) & 2097151) | (((long) ((android.ext.Config$p) eVar.get(catch_.me_.if_.you_.can_.R$id.config_unrandomizer_intercept)).f42d) << 21);
     }
 
     public static void s(int[] iArr) {
@@ -2823,9 +1713,9 @@ public abstract class Config {
         int length2 = iArr.length;
         int i2 = length + length2;
         int[] iArr3 = new int[i2];
-        System.arraycopy(iArr2, 0, iArr3, 0, length);
-        System.arraycopy(iArr, 0, iArr3, length, length2);
-        Arrays.sort(iArr3);
+        java.lang.System.arraycopy(iArr2, 0, iArr3, 0, length);
+        java.lang.System.arraycopy(iArr, 0, iArr3, length, length2);
+        java.util.Arrays.sort(iArr3);
         int i3 = 1;
         for (int i4 = 1; i4 < i2; i4++) {
             int i5 = iArr3[i4];
@@ -2834,6 +1724,6 @@ public abstract class Config {
                 i3++;
             }
         }
-        f28a = Arrays.copyOf(iArr3, i3);
+        f28a = java.util.Arrays.copyOf(iArr3, i3);
     }
 }

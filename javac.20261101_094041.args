@@ -1,0 +1,14 @@
+-source
+8
+-target
+8
+-Xlint:-options
+-Xmaxerrs
+5000
+-cp
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-sourcepath
+app/src/rebuild/java
+-d
+analysis/2026-11-01/repair/classes-probe
+app/src/rebuild/java/android/ext/b1.java

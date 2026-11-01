@@ -1,15 +1,15 @@
 package luaj;
 
 /* JADX INFO: loaded from: classes.dex */
-public class LuaNil extends LuaValue {
-    public static LuaValue P;
+public class LuaNil extends luaj.LuaValue {
+    public static luaj.LuaValue P;
 
     LuaNil() {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue B1() {
-        return LuaValue.f1674d;
+    public luaj.LuaValue B1() {
+        return luaj.LuaValue.f1674d;
     }
 
     @Override // luaj.LuaValue
@@ -18,7 +18,7 @@ public class LuaNil extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public String D2() {
+    public java.lang.String D2() {
         return "nil";
     }
 
@@ -33,7 +33,7 @@ public class LuaNil extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public LuaFunction G1(LuaFunction luaFunction) {
+    public luaj.LuaFunction G1(luaj.LuaFunction luaFunction) {
         return luaFunction;
     }
 
@@ -43,7 +43,7 @@ public class LuaNil extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public String I1(String str) {
+    public java.lang.String I1(java.lang.String str) {
         return str;
     }
 
@@ -53,32 +53,32 @@ public class LuaNil extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public LuaString K1(LuaString luaString) {
+    public luaj.LuaString K1(luaj.LuaString luaString) {
         return luaString;
     }
 
     @Override // luaj.LuaValue
-    public LuaTable L1(LuaTable luaTable) {
+    public luaj.LuaTable L1(luaj.LuaTable luaTable) {
         return luaTable;
     }
 
     @Override // luaj.LuaValue
-    public LuaValue M1(LuaValue luaValue) {
+    public luaj.LuaValue M1(luaj.LuaValue luaValue) {
         return luaValue;
     }
 
     @Override // luaj.LuaValue
-    public LuaValue V0() {
+    public luaj.LuaValue V0() {
         return P;
     }
 
     @Override // luaj.LuaValue
-    public boolean equals(Object obj) {
-        return obj instanceof LuaNil;
+    public boolean equals(java.lang.Object obj) {
+        return obj instanceof luaj.LuaNil;
     }
 
     @Override // luaj.LuaValue, luaj.Varargs
-    public String g0() {
+    public java.lang.String g0() {
         return "nil";
     }
 
@@ -93,7 +93,7 @@ public class LuaNil extends LuaValue {
     }
 
     @Override // luaj.LuaValue, luaj.Varargs
-    public String toString() {
+    public java.lang.String toString() {
         return "nil";
     }
 

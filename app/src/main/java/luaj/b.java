@@ -1,7 +1,5 @@
 package luaj;
 
-import java.io.File;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class b {
 
@@ -48,14 +46,14 @@ public abstract class b {
         return i | 256;
     }
 
-    public static String m(String str) {
+    public static java.lang.String m(java.lang.String str) {
         if (str.startsWith("=")) {
             return str.substring(1);
         }
         if (str.startsWith("@")) {
             str = str.substring(1);
         }
-        if (new File(str).exists()) {
+        if (new java.io.File(str).exists()) {
             return str;
         }
         if (str.length() > 69) {

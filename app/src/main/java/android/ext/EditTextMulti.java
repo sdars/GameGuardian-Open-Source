@@ -1,11 +1,8 @@
 package android.ext;
 
-import android.content.Context;
-import android.util.AttributeSet;
-
 /* JADX INFO: loaded from: classes.dex */
-public class EditTextMulti extends EditText {
-    public EditTextMulti(Context context, AttributeSet attributeSet) {
+public class EditTextMulti extends android.ext.EditText {
+    public EditTextMulti(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         setInputType(getInputType() | 262144);
         setHorizontallyScrolling(false);

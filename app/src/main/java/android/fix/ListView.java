@@ -1,54 +1,43 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.MainService;
-import android.ext.e1;
-import android.ext.n0;
-import android.graphics.Canvas;
-import android.util.AttributeSet;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
-
 /* JADX INFO: loaded from: classes.dex */
 public class ListView extends android.widget.ListView {
-    public ListView(Context context, AttributeSet attributeSet) {
+    public ListView(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
     @Override // android.widget.ListView, android.widget.AbsListView, android.view.ViewGroup, android.view.View
-    protected void dispatchDraw(Canvas canvas) {
+    protected void dispatchDraw(android.graphics.Canvas canvas) {
         try {
             super.dispatchDraw(canvas);
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    public boolean dispatchTouchEvent(MotionEvent motionEvent) {
+    public boolean dispatchTouchEvent(android.view.MotionEvent motionEvent) {
         boolean zDispatchTouchEvent;
         boolean z = false;
         try {
             zDispatchTouchEvent = super.dispatchTouchEvent(motionEvent);
-        } catch (IndexOutOfBoundsException | NullPointerException | OutOfMemoryError e2) {
-            e1.a(e2);
+        } catch (java.lang.IndexOutOfBoundsException | java.lang.NullPointerException | java.lang.OutOfMemoryError e2) {
+            android.ext.e1.a(e2);
             zDispatchTouchEvent = false;
             z = true;
         }
         if (z) {
-            MainService.I0();
+            android.ext.MainService.I0();
         }
         return zDispatchTouchEvent;
     }
 
     @Override // android.widget.AbsListView, android.view.View
-    public void draw(Canvas canvas) {
+    public void draw(android.graphics.Canvas canvas) {
         try {
             super.draw(canvas);
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -56,15 +45,15 @@ public class ListView extends android.widget.ListView {
     protected void layoutChildren() {
         try {
             super.layoutChildren();
-        } catch (IllegalStateException e2) {
-            e1.s("Layout failed 1", e2);
-            ListAdapter adapter = getAdapter();
-            if (adapter instanceof BaseAdapter) {
-                ((BaseAdapter) adapter).notifyDataSetChanged();
+        } catch (java.lang.IllegalStateException e2) {
+            android.ext.e1.s("Layout failed 1", e2);
+            android.widget.ListAdapter adapter = getAdapter();
+            if (adapter instanceof android.widget.BaseAdapter) {
+                ((android.widget.BaseAdapter) adapter).notifyDataSetChanged();
                 try {
                     super.layoutChildren();
-                } catch (IllegalStateException e3) {
-                    e1.s("Layout failed 2", e3);
+                } catch (java.lang.IllegalStateException e3) {
+                    android.ext.e1.s("Layout failed 2", e3);
                 }
             }
         }
@@ -74,10 +63,10 @@ public class ListView extends android.widget.ListView {
     protected void onAttachedToWindow() {
         try {
             super.onAttachedToWindow();
-        } catch (StackOverflowError e2) {
-            e1.a(e2);
+        } catch (java.lang.StackOverflowError e2) {
+            android.ext.e1.a(e2);
         }
-        View emptyView = getEmptyView();
+        android.view.View emptyView = getEmptyView();
         if (emptyView != null) {
             setEmptyView(emptyView);
         }
@@ -87,8 +76,8 @@ public class ListView extends android.widget.ListView {
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         try {
             super.onLayout(z, i, i2, i3, i4);
-        } catch (NoSuchMethodError | NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NoSuchMethodError | java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -96,9 +85,9 @@ public class ListView extends android.widget.ListView {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
-            n0.h(Thread.currentThread(), th, false);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
+            android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
         }
     }
 
@@ -106,8 +95,8 @@ public class ListView extends android.widget.ListView {
     public void setFastScrollEnabled(boolean z) {
         try {
             super.setFastScrollEnabled(z);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -115,8 +104,8 @@ public class ListView extends android.widget.ListView {
     public void setOverScrollMode(int i) {
         try {
             super.setOverScrollMode(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 }

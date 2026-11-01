@@ -1,30 +1,27 @@
 package luaj.lib;
 
-import luaj.LuaValue;
-import luaj.Varargs;
-
 /* JADX INFO: loaded from: classes.dex */
-public abstract class ZeroArgFunction extends LibFunction {
+public abstract class ZeroArgFunction extends luaj.lib.LibFunction {
     @Override // luaj.lib.LibFunction, luaj.LuaValue
-    public abstract LuaValue call();
+    public abstract luaj.LuaValue call();
 
     @Override // luaj.lib.LibFunction, luaj.LuaValue
-    public LuaValue call(LuaValue luaValue) {
+    public luaj.LuaValue call(luaj.LuaValue luaValue) {
         return call();
     }
 
     @Override // luaj.lib.LibFunction, luaj.LuaValue
-    public Varargs invoke(Varargs varargs) {
+    public luaj.LuaValue call(luaj.LuaValue luaValue, luaj.LuaValue luaValue2) {
         return call();
     }
 
     @Override // luaj.lib.LibFunction, luaj.LuaValue
-    public LuaValue call(LuaValue luaValue, LuaValue luaValue2) {
+    public luaj.LuaValue call(luaj.LuaValue luaValue, luaj.LuaValue luaValue2, luaj.LuaValue luaValue3) {
         return call();
     }
 
     @Override // luaj.lib.LibFunction, luaj.LuaValue
-    public LuaValue call(LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3) {
+    public luaj.Varargs invoke(luaj.Varargs varargs) {
         return call();
     }
 }

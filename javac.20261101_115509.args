@@ -1,0 +1,16 @@
+-nowarn
+-Xmaxerrs
+100000
+-encoding
+UTF-8
+-source
+8
+-target
+8
+-bootclasspath
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-classpath
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-d
+tmp/javac-full
+@tmp/sources-all.txt

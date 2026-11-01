@@ -1,67 +1,57 @@
 package android.ext;
 
-import android.content.SharedPreferences;
-import android.os.Process;
-import android.text.TextUtils;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class a0 {
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    private static volatile String f569f = ";;";
+    private static volatile java.lang.String f569f = ";;";
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
     private static final boolean f568e = j();
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private static final String f566c = "bugged-packages";
+    private static final java.lang.String f566c = "bugged-packages";
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private static final String f567d = "bugged-uids";
+    private static final java.lang.String f567d = "bugged-uids";
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private static final String f564a = "native_crash.txt";
+    private static final java.lang.String f564a = "native_crash.txt";
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private static final String f565b = " _QAZ_WSX_EDC_RFV_TGB_YHN_UJM_ ";
+    private static final java.lang.String f565b = " _QAZ_WSX_EDC_RFV_TGB_YHN_UJM_ ";
 
-    public static boolean a(String str, String str2) {
+    public static boolean a(java.lang.String str, java.lang.String str2) {
         boolean z = f568e;
-        if (!z || i.f1002d.equals(str)) {
+        if (!z || android.ext.i.f1002d.equals(str)) {
             return false;
         }
         if (str.startsWith("uid:")) {
-            if (str.equals("uid:" + Process.myUid())) {
+            if (str.equals("uid:" + android.os.Process.myUid())) {
                 return false;
             }
         }
         try {
-            StringBuilder sb = new StringBuilder();
+            java.lang.StringBuilder sb = new java.lang.StringBuilder();
             sb.append("CNC[");
             sb.append(z ? '1' : '0');
             sb.append("] - n: ");
             sb.append(str2);
             sb.append("; ");
             sb.append(str);
-            e1.d(sb.toString());
+            android.ext.e1.d(sb.toString());
             if (!z) {
                 return true;
             }
-            FileOutputStream fileOutputStream = new FileOutputStream(g());
+            java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream(g());
             fileOutputStream.write(str.getBytes());
             fileOutputStream.write(f565b.getBytes());
-            fileOutputStream.write((str2 + '\n' + h0.c()).getBytes());
+            fileOutputStream.write((str2 + '\n' + android.ext.h0.c()).getBytes());
             fileOutputStream.flush();
             fileOutputStream.close();
             return true;
-        } catch (Throwable th) {
-            e1.l("Failed n CNC", th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("Failed n CNC", th);
             return true;
         }
     }
@@ -70,90 +60,90 @@ public abstract class a0 {
         boolean z2 = f568e;
         if (z2 && z) {
             try {
-                StringBuilder sb = new StringBuilder();
+                java.lang.StringBuilder sb = new java.lang.StringBuilder();
                 sb.append("CNC[");
                 sb.append(z2 ? '1' : '0');
                 sb.append("] - x");
-                e1.d(sb.toString());
+                android.ext.e1.d(sb.toString());
                 if (z2) {
                     g().delete();
                 }
-            } catch (Throwable th) {
-                e1.l("Failed x CNC", th);
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.l("Failed x CNC", th);
             }
         }
     }
 
-    public static String[] c() {
+    public static java.lang.String[] c() {
         if (f568e) {
-            String strD = d();
+            java.lang.String strD = d();
             if (strD.length() > 0) {
-                e1.d("BUGGED_PACKAGES: " + strD);
+                android.ext.e1.d("BUGGED_PACKAGES: " + strD);
                 return strD.split(";");
             }
         }
-        return d.b.f1511a;
+        return gg_d.b.f1511a;
     }
 
-    private static String d() {
-        String strL = l(Tools.M0().getString(f566c, ""));
+    private static java.lang.String d() {
+        java.lang.String strL = l(android.ext.Tools.M0().getString(f566c, ""));
         if (strL.length() > 0) {
             f569f = ';' + strL + ';';
         }
         return strL;
     }
 
-    public static String[] e() {
+    public static java.lang.String[] e() {
         if (f568e) {
-            String strF = f();
+            java.lang.String strF = f();
             if (strF.length() > 0) {
-                e1.d("BUGGED_UIDS: " + strF);
+                android.ext.e1.d("BUGGED_UIDS: " + strF);
                 return strF.split(";");
             }
         }
-        return d.b.f1511a;
+        return gg_d.b.f1511a;
     }
 
-    private static String f() {
-        return l(Tools.M0().getString(f567d, ""));
+    private static java.lang.String f() {
+        return l(android.ext.Tools.M0().getString(f567d, ""));
     }
 
-    private static File g() {
-        File file = new File(Tools.q0(), Process.myPid() + f564a);
+    private static java.io.File g() {
+        java.io.File file = new java.io.File(android.ext.Tools.q0(), android.os.Process.myPid() + f564a);
         try {
             file.getParentFile().mkdirs();
-        } catch (Throwable th) {
-            e1.l("Failed mkdirs CNC", th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("Failed mkdirs CNC", th);
         }
         return file;
     }
 
-    private static String[] h() {
-        File[] fileArrListFiles;
-        File parentFile = g().getParentFile();
+    private static java.lang.String[] h() {
+        java.io.File[] fileArrListFiles;
+        java.io.File parentFile = g().getParentFile();
         if (parentFile == null || (fileArrListFiles = parentFile.listFiles()) == null) {
             return null;
         }
         int length = fileArrListFiles.length;
-        String[] strArr = new String[length * 2];
+        java.lang.String[] strArr = new java.lang.String[length * 2];
         for (int i = 0; i < length; i++) {
-            File file = fileArrListFiles[i];
+            java.io.File file = fileArrListFiles[i];
             if (file != null && file.getName().endsWith(f564a)) {
                 try {
-                    FileInputStream fileInputStream = new FileInputStream(file);
-                    byte[] bArr = new byte[Math.min(((int) file.length()) + 8192, 102400)];
+                    java.io.FileInputStream fileInputStream = new java.io.FileInputStream(file);
+                    byte[] bArr = new byte[java.lang.Math.min(((int) file.length()) + 8192, 102400)];
                     int i2 = fileInputStream.read(bArr);
                     fileInputStream.close();
                     if (i2 > 0) {
-                        String[] strArrSplit = new String(bArr, 0, i2).split(f565b, 2);
+                        java.lang.String[] strArrSplit = new java.lang.String(bArr, 0, i2).split(f565b, 2);
                         if (strArrSplit.length == 2) {
                             int i3 = i * 2;
                             strArr[i3] = strArrSplit[0];
                             strArr[i3 + 1] = strArrSplit[1];
                         }
                     }
-                } catch (Throwable th) {
-                    e1.l("Failed read native crash", th);
+                } catch (java.lang.Throwable th) {
+                    android.ext.e1.l("Failed read native crash", th);
                 }
                 file.delete();
             }
@@ -161,7 +151,7 @@ public abstract class a0 {
         return strArr;
     }
 
-    public static boolean i(String str) {
+    public static boolean i(java.lang.String str) {
         if (!f568e) {
             return false;
         }
@@ -169,13 +159,14 @@ public abstract class a0 {
     }
 
     private static boolean j() {
-        Throwable th;
+java.lang.Throwable th = null;
+        java.lang.Throwable th;
         boolean z;
         boolean z2 = false;
         try {
-            File file = new File("/system/lib/libandroidfw.so");
+            java.io.File file = new java.io.File("/system/lib/libandroidfw.so");
             if (file.exists()) {
-                FileInputStream fileInputStream = new FileInputStream(file);
+                java.io.FileInputStream fileInputStream = new java.io.FileInputStream(file);
                 byte[] bytes = "_ZN7android12AssetManager10getPkgNameEPKc".getBytes();
                 byte[] bArr = new byte[8192];
                 int length = bytes.length;
@@ -212,46 +203,46 @@ public abstract class a0 {
                             }
                             i = i6;
                         }
-                    } catch (Throwable th2) {
+                    } catch (java.lang.Throwable th2) {
                         th = th2;
                     }
                 }
                 z2 = z;
                 try {
                     fileInputStream.close();
-                } catch (Throwable th3) {
+                } catch (java.lang.Throwable th3) {
                     z = z2;
                     th = th3;
-                    e1.s("Failed detect CM13", th);
+                    android.ext.e1.s("Failed detect CM13", th);
                     z2 = z;
                 }
             }
-        } catch (Throwable th4) {
+        } catch (java.lang.Throwable th4) {
             th = th4;
             z = false;
         }
-        e1.d("CM13: " + z2);
+        android.ext.e1.d("CM13: " + z2);
         return z2;
     }
 
     public static void k() {
-        e1.d("lLC - 1");
+        android.ext.e1.d("lLC - 1");
         d();
         f();
-        String[] strArrH = h();
+        java.lang.String[] strArrH = h();
         if (strArrH != null) {
             int length = strArrH.length;
             for (int i = 0; i < length; i += 2) {
-                String str = strArrH[i];
+                java.lang.String str = strArrH[i];
                 if (str != null) {
-                    e1.i("Bad package: '" + str + "' " + strArrH[i + 1]);
-                    String str2 = f566c;
+                    android.ext.e1.i("Bad package: '" + str + "' " + strArrH[i + 1]);
+                    java.lang.String str2 = f566c;
                     if (str.contains("uid:")) {
                         str2 = f567d;
                         str = str.split(":", -1)[1];
                     }
-                    SharedPreferences sharedPreferencesM0 = Tools.M0();
-                    String string = sharedPreferencesM0.getString(str2, "");
+                    android.content.SharedPreferences sharedPreferencesM0 = android.ext.Tools.M0();
+                    java.lang.String string = sharedPreferencesM0.getString(str2, "");
                     if (string != null && string.length() != 0) {
                         str = (';' + string + ';').contains(';' + str + ';') ? string : string + ';' + str;
                     }
@@ -261,11 +252,11 @@ public abstract class a0 {
         }
         d();
         f();
-        e1.d("lLC - 0");
+        android.ext.e1.d("lLC - 0");
     }
 
-    private static String l(String str) {
-        ArrayList arrayList = new ArrayList(new HashSet(Arrays.asList(str.split(";"))));
-        return TextUtils.join(";", arrayList.toArray(new String[arrayList.size()]));
+    private static java.lang.String l(java.lang.String str) {
+        java.util.ArrayList arrayList = new java.util.ArrayList(new java.util.HashSet(java.util.Arrays.asList(str.split(";"))));
+        return android.text.TextUtils.join(";", arrayList.toArray(new java.lang.String[arrayList.size()]));
     }
 }

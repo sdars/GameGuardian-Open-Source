@@ -1,21 +1,8 @@
 package android.ext;
 
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
-import catch_.me_.if_.you_.can_.R;
-import java.lang.ref.WeakReference;
-
 /* JADX INFO: loaded from: classes.dex */
-public class TimersEditor implements DialogInterface.OnClickListener, View.OnClickListener, CompoundButton.OnCheckedChangeListener {
-    private static final int[] j = {R.id.app, R.id.java, R.id.system, R.id.other};
+public class TimersEditor implements android.content.DialogInterface.OnClickListener, android.view.View.OnClickListener, android.widget.CompoundButton.OnCheckedChangeListener {
+    private static final int[] j = {catch_.me_.if_.you_.can_.R$id.app, catch_.me_.if_.you_.can_.R$id.java, catch_.me_.if_.you_.can_.R$id.system, catch_.me_.if_.you_.can_.R$id.other};
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     private final boolean[] f481a;
@@ -27,45 +14,20 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
     private final int f484d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    private final String f485e;
+    private final java.lang.String f485e;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    private final String f486f;
+    private final java.lang.String f486f;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
     private final boolean[] f487g;
     private final int h;
-    private WeakReference i = new WeakReference(null);
+    private java.lang.ref.WeakReference i = new java.lang.ref.WeakReference(null);
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private final boolean[] f482b = new boolean[4];
 
-    class a extends BaseAdapter {
-        a() {
-        }
-
-        @Override // android.widget.Adapter
-        public int getCount() {
-            return TimersEditor.this.f484d + 1;
-        }
-
-        @Override // android.widget.Adapter
-        public Object getItem(int i) {
-            return Integer.valueOf(i);
-        }
-
-        @Override // android.widget.Adapter
-        public long getItemId(int i) {
-            return i;
-        }
-
-        @Override // android.widget.Adapter
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            return i == 0 ? TimersEditor.this.c(view, viewGroup) : TimersEditor.this.d(i, view, viewGroup);
-        }
-    }
-
-    public TimersEditor(String str, String str2, int i, boolean[] zArr, int i2) {
+    public TimersEditor(java.lang.String str, java.lang.String str2, int i, boolean[] zArr, int i2) {
         this.f485e = str;
         this.f486f = str2;
         this.f484d = i;
@@ -73,34 +35,34 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
         this.h = i2;
         this.f481a = new boolean[i];
         this.f483c = new boolean[i * 12];
-        e1.d(str + ':');
+        android.ext.e1.d(str + ':');
         b();
     }
 
-    private View e() {
+    private android.view.View e() {
         boolean[] zArr = this.f483c;
         for (int i = 0; i < this.f484d * 4; i++) {
             int i2 = i * 3;
             zArr[i2 + 2] = zArr[i2];
         }
-        View viewF = a.d.f(R.layout.timer_table, null);
-        ListView listView = (ListView) viewF;
-        new FastScrollerFix(listView);
+        android.view.View viewF = gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.timer_table, null);
+        android.widget.ListView listView = (android.widget.ListView) viewF;
+        new android.ext.FastScrollerFix(listView);
         listView.setItemsCanFocus(true);
-        a aVar = new a();
-        listView.setAdapter((ListAdapter) aVar);
-        this.i = new WeakReference(aVar);
+        android.ext.TimersEditor$a timersEditor$a = new android.ext.TimersEditor$a(this);
+        listView.setAdapter((android.widget.ListAdapter) timersEditor$a);
+        this.i = new java.lang.ref.WeakReference(timersEditor$a);
         return viewF;
     }
 
     private void g() {
-        z1.d dVar = MainService.instance.v0;
-        if (dVar == null) {
+        android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+        if (z1_d == null) {
             return;
         }
         boolean[] zArr = this.f483c;
-        g2 g2Var = new g2();
-        String str = this.f486f + '-' + dVar.f1434c + '-';
+        android.ext.g2 g2Var = new android.ext.g2();
+        java.lang.String str = this.f486f + '-' + z1_d.f1434c + '-';
         boolean[] zArr2 = this.f487g;
         for (int i = 0; i < this.f484d * 4; i++) {
             g2Var.c(str + i, zArr[i * 3], zArr2[i]);
@@ -109,7 +71,7 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
     }
 
     private void j() {
-        BaseAdapter baseAdapter = (BaseAdapter) this.i.get();
+        android.widget.BaseAdapter baseAdapter = (android.widget.BaseAdapter) this.i.get();
         if (baseAdapter != null) {
             baseAdapter.notifyDataSetChanged();
         }
@@ -119,7 +81,7 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
         char c2;
         boolean[] zArr = this.f483c;
         boolean[] zArr2 = new boolean[this.f484d * 4];
-        StringBuilder sb = new StringBuilder();
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         for (int i = 0; i < this.f484d * 4; i++) {
             if (i % 4 == 0) {
                 sb.append(' ');
@@ -134,19 +96,19 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
             }
             sb.append(c2);
         }
-        e1.d(this.f485e + " get:" + sb.toString());
+        android.ext.e1.d(this.f485e + " get:" + sb.toString());
         return zArr2;
     }
 
-    View c(View view, ViewGroup viewGroup) {
-        if (view != null && view.getId() == R.layout.timer_header) {
+    android.view.View c(android.view.View view, android.view.ViewGroup viewGroup) {
+        if (view != null && view.getId() == 2131099691) {
             return view;
         }
-        View viewG = a.d.g(R.layout.timer_header, viewGroup, false);
-        viewG.setId(R.layout.timer_header);
+        android.view.View viewG = gg_a.d.g(catch_.me_.if_.you_.can_.R$layout.timer_header, viewGroup, false);
+        viewG.setId(catch_.me_.if_.you_.can_.R$layout.timer_header);
         for (int i = 0; i < 4; i++) {
-            TextView textView = (TextView) viewG.findViewById(j[i]);
-            textView.setTag(Integer.valueOf(i));
+            android.widget.TextView textView = (android.widget.TextView) viewG.findViewById(j[i]);
+            textView.setTag(java.lang.Integer.valueOf(i));
             textView.setOnClickListener(this);
             textView.setPaintFlags(textView.getPaintFlags() | 8);
             textView.setFocusable(true);
@@ -154,56 +116,56 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
         return viewG;
     }
 
-    View d(int i, View view, ViewGroup viewGroup) {
-        a.d dVarC = a.d.c();
+    android.view.View d(int i, android.view.View view, android.view.ViewGroup viewGroup) {
+        gg_a.d dVarC = gg_a.d.c();
         int i2 = i - 1;
-        if (view == null || view.getId() != R.layout.timer_row) {
-            view = dVarC.inflate(R.layout.timer_row, viewGroup, false);
-            view.setId(R.layout.timer_row);
-            View[] viewArr = new View[5];
+        if (view == null || view.getId() != 2131099692) {
+            view = dVarC.inflate(catch_.me_.if_.you_.can_.R$layout.timer_row, viewGroup, false);
+            view.setId(catch_.me_.if_.you_.can_.R$layout.timer_row);
+            android.view.View[] viewArr = new android.view.View[5];
             for (int i3 = 0; i3 < 4; i3++) {
-                CheckBox checkBox = (CheckBox) view.findViewById(j[i3]);
+                android.widget.CheckBox checkBox = (android.widget.CheckBox) view.findViewById(j[i3]);
                 checkBox.setFocusable(true);
                 checkBox.setOnCheckedChangeListener(this);
                 viewArr[i3] = checkBox;
             }
-            TextView textView = (TextView) view.findViewById(R.id.name);
+            android.widget.TextView textView = (android.widget.TextView) view.findViewById(catch_.me_.if_.you_.can_.R$id.name);
             textView.setPaintFlags(textView.getPaintFlags() | 8);
             textView.setOnClickListener(this);
             textView.setFocusable(true);
             viewArr[4] = textView;
             view.setTag(viewArr);
         }
-        View[] viewArr2 = (View[]) view.getTag();
+        android.view.View[] viewArr2 = (android.view.View[]) view.getTag();
         for (int i4 = 0; i4 < 4; i4++) {
-            CheckBox checkBox2 = (CheckBox) viewArr2[i4];
+            android.widget.CheckBox checkBox2 = (android.widget.CheckBox) viewArr2[i4];
             int i5 = (i2 * 4) + i4;
             checkBox2.setTag(null);
             int i6 = i5 * 3;
             checkBox2.setChecked(this.f483c[i6 + 2]);
-            checkBox2.setTag(Integer.valueOf(i5));
+            checkBox2.setTag(java.lang.Integer.valueOf(i5));
             checkBox2.setBackgroundColor(this.f483c[i6 + 1] ? -16755456 : -11206656);
         }
-        TextView textView2 = (TextView) viewArr2[4];
-        textView2.setTag(Integer.valueOf(i2));
-        textView2.setText(Integer.toString(i));
+        android.widget.TextView textView2 = (android.widget.TextView) viewArr2[4];
+        textView2.setTag(java.lang.Integer.valueOf(i2));
+        textView2.setText(java.lang.Integer.toString(i));
         return view;
     }
 
     public void f() {
-        z1.d dVar = MainService.instance.v0;
-        if (dVar == null) {
+        android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+        if (z1_d == null) {
             return;
         }
         boolean[] zArr = this.f483c;
-        SharedPreferences sharedPreferencesM0 = Tools.M0();
-        String str = this.f486f + '-' + dVar.f1434c + '-';
+        android.content.SharedPreferences sharedPreferencesM0 = android.ext.Tools.M0();
+        java.lang.String str = this.f486f + '-' + z1_d.f1434c + '-';
         boolean[] zArr2 = this.f487g;
         for (int i = 0; i < this.f484d * 4; i++) {
             int i2 = i * 3;
             try {
                 zArr[i2] = sharedPreferencesM0.getBoolean(str + i, zArr2[i]);
-            } catch (Throwable unused) {
+            } catch (java.lang.Throwable unused) {
                 int i3 = sharedPreferencesM0.getInt(str + i, zArr2[i] ? 1 : 0);
                 boolean z = true;
                 if (i3 != 0 && i3 != 1) {
@@ -219,13 +181,13 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
 
     public void h() {
         f();
-        MainService.instance.i.J0(this.h);
-        f.m(f.b().setView(Tools.O0(e())).setNeutralButton(b2.f(R.string.reset_button), this).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.save), this).create());
+        android.ext.MainService.instance.i.J0(this.h);
+        android.ext.f.m(android.ext.f.b().setView(android.ext.Tools.O0(e())).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.reset_button), this).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), (android.content.DialogInterface.OnClickListener) null).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.save), this).create());
     }
 
     public void i(boolean[] zArr) {
         boolean[] zArr2 = this.f483c;
-        StringBuilder sb = new StringBuilder();
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         for (int i = 0; i < this.f484d * 4; i++) {
             if (i % 4 == 0) {
                 sb.append(' ');
@@ -236,21 +198,21 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
             zArr2[(i * 3) + 1] = z;
             sb.append(z ? '1' : '0');
         }
-        e1.d(this.f485e + " usage:" + sb.toString());
+        android.ext.e1.d(this.f485e + " usage:" + sb.toString());
         j();
     }
 
-    @Override // android.widget.CompoundButton.OnCheckedChangeListener
-    public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
-        Object tag;
-        if (compoundButton == null || (tag = compoundButton.getTag()) == null || !(tag instanceof Integer)) {
+    @Override // android.widget.CompoundButton$OnCheckedChangeListener
+    public void onCheckedChanged(android.widget.CompoundButton compoundButton, boolean z) {
+        java.lang.Object tag;
+        if (compoundButton == null || (tag = compoundButton.getTag()) == null || !(tag instanceof java.lang.Integer)) {
             return;
         }
-        this.f483c[(((Integer) tag).intValue() * 3) + 2] = z;
+        this.f483c[(((java.lang.Integer) tag).intValue() * 3) + 2] = z;
     }
 
-    @Override // android.content.DialogInterface.OnClickListener
-    public void onClick(DialogInterface dialogInterface, int i) {
+    @Override // android.content.DialogInterface$OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i) {
         boolean[] zArr = this.f483c;
         if (i == -3) {
             boolean[] zArr2 = this.f487g;
@@ -263,15 +225,15 @@ public class TimersEditor implements DialogInterface.OnClickListener, View.OnCli
             zArr[i4] = zArr[i4 + 2];
         }
         g();
-        MainService.instance.i.H0(this.h);
+        android.ext.MainService.instance.i.H0(this.h);
     }
 
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
         int id = view.getId();
         int i = 0;
-        int iIntValue = ((Integer) view.getTag()).intValue();
-        if (id != R.id.name) {
+        int iIntValue = ((java.lang.Integer) view.getTag()).intValue();
+        if (id != 2131034337) {
             boolean[] zArr = this.f482b;
             zArr[iIntValue] = !zArr[iIntValue];
             while (i < this.f484d) {

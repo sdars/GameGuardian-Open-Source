@@ -1,13 +1,8 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.e1;
-import android.ext.n0;
-import android.util.AttributeSet;
-
 /* JADX INFO: loaded from: classes.dex */
 public class TabHost extends android.widget.TabHost {
-    public TabHost(Context context, AttributeSet attributeSet) {
+    public TabHost(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
@@ -15,9 +10,9 @@ public class TabHost extends android.widget.TabHost {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
-            n0.h(Thread.currentThread(), th, false);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
+            android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
         }
     }
 
@@ -25,8 +20,8 @@ public class TabHost extends android.widget.TabHost {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -34,8 +29,8 @@ public class TabHost extends android.widget.TabHost {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 }

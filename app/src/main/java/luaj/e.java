@@ -2,13 +2,13 @@ package luaj;
 
 /* JADX INFO: loaded from: classes.dex */
 interface e {
-    LuaValue e();
+    luaj.LuaValue e();
 
-    LuaValue g(LuaValue luaValue);
+    luaj.LuaValue g(luaj.LuaValue luaValue);
 
-    LuaTable.m k(LuaValue luaValue, LuaValue luaValue2);
+    luaj.LuaTable$m k(luaj.LuaValue luaValue, luaj.LuaValue luaValue2);
 
-    LuaValue o(LuaValue[] luaValueArr, int i);
+    luaj.LuaValue o(luaj.LuaValue[] luaValueArr, int i);
 
     boolean p();
 

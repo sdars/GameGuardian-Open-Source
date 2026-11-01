@@ -1,77 +1,44 @@
 package android.ext;
 
-import android.content.Context;
-import android.fix.FrameLayout;
-import android.util.AttributeSet;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.ViewConfiguration;
-
 /* JADX INFO: loaded from: classes.dex */
-public class HotFrame extends FrameLayout implements View.OnLongClickListener {
+public class HotFrame extends android.fix.FrameLayout implements android.view.View.OnLongClickListener {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private final Runnable f156a;
+    private final java.lang.Runnable f156a;
 
-    class a implements Runnable {
-        a() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            boolean zPerformHapticFeedback;
-            try {
-                HotFrame.this.setHapticFeedbackEnabled(true);
-                zPerformHapticFeedback = HotFrame.this.performHapticFeedback(0, 1);
-                try {
-                    HotFrame.this.setHapticFeedbackEnabled(false);
-                } catch (Throwable th) {
-                    th = th;
-                    e1.g("Failed make HapticFeedback", th);
-                    HotFrame.this.setHapticFeedbackEnabled(false);
-                }
-            } catch (Throwable th2) {
-                th = th2;
-                zPerformHapticFeedback = false;
-            }
-            e1.d("Real long click: " + zPerformHapticFeedback);
-            MainService.instance.onLongClick(null);
-        }
-    }
-
-    public HotFrame(Context context, AttributeSet attributeSet) {
+    public HotFrame(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         setHapticFeedbackEnabled(false);
         setOnLongClickListener(this);
-        this.f156a = new a();
+        this.f156a = new android.ext.HotFrame$a(this);
     }
 
     @Override // android.view.ViewGroup, android.view.View
-    public boolean dispatchTouchEvent(MotionEvent motionEvent) {
+    public boolean dispatchTouchEvent(android.view.MotionEvent motionEvent) {
         try {
             int action = motionEvent.getAction();
             if (action == 0 || action == 1 || action == 3) {
                 removeCallbacks(this.f156a);
             }
-        } catch (NoSuchMethodError e2) {
-            e1.a(e2);
+        } catch (java.lang.NoSuchMethodError e2) {
+            android.ext.e1.a(e2);
         }
         try {
             return super.dispatchTouchEvent(motionEvent);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
 
-    @Override // android.view.View.OnLongClickListener
-    public boolean onLongClick(View view) {
-        int longPressTimeout = ViewConfiguration.getLongPressTimeout();
+    @Override // android.view.View$OnLongClickListener
+    public boolean onLongClick(android.view.View view) {
+        int longPressTimeout = android.view.ViewConfiguration.getLongPressTimeout();
         if (longPressTimeout < 0) {
             longPressTimeout = 0;
         }
         int i = 750 - longPressTimeout;
-        e1.d("Fake long click: " + i);
+        android.ext.e1.d("Fake long click: " + i);
         if (i <= 0) {
             this.f156a.run();
             return true;

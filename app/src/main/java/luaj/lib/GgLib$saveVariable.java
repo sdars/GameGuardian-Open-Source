@@ -1,82 +1,27 @@
 package luaj.lib;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.RandomAccessFile;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import luaj.Globals;
-import luaj.LuaString;
-import luaj.LuaTable;
-import luaj.LuaValue;
-import luaj.Varargs;
-
 /* JADX INFO: loaded from: classes.dex */
-public final class GgLib$saveVariable extends VarArgFunction {
-    static final String[] Y = {"address", "value", "flags", "name", "freeze", "freezeType", "freezeFrom", "freezeTo"};
-    final Globals T;
-    Writer U;
-    Map V;
-    List W;
-    final Integer X = 0;
+public final class GgLib$saveVariable extends luaj.lib.VarArgFunction {
+    static final java.lang.String[] Y = {"address", "value", "flags", "name", "freeze", "freezeType", "freezeFrom", "freezeTo"};
+    final luaj.Globals T;
+    java.io.Writer U;
+    java.util.Map V;
+    java.util.List W;
+    final java.lang.Integer X = 0;
 
-    private final class a extends OutputStream {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        private final RandomAccessFile f1767a;
-
-        a(RandomAccessFile randomAccessFile) {
-            this.f1767a = randomAccessFile;
-        }
-
-        @Override // java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
-        public void close() throws IOException {
-            this.f1767a.close();
-        }
-
-        @Override // java.io.OutputStream, java.io.Flushable
-        public void flush() {
-        }
-
-        @Override // java.io.OutputStream
-        public void write(int i) throws IOException {
-            GgLib$saveVariable.this.T.M3(1L);
-            this.f1767a.write(i);
-        }
-
-        @Override // java.io.OutputStream
-        public void write(byte[] bArr) throws IOException {
-            GgLib$saveVariable.this.T.M3(bArr.length);
-            this.f1767a.write(bArr);
-        }
-
-        @Override // java.io.OutputStream
-        public void write(byte[] bArr, int i, int i2) throws IOException {
-            GgLib$saveVariable.this.T.M3(i2);
-            this.f1767a.write(bArr, i, i2);
-        }
-    }
-
-    public GgLib$saveVariable(Globals globals) {
+    public GgLib$saveVariable(luaj.Globals globals) {
         this.T = globals;
     }
 
-    private void X2(LuaTable luaTable) {
-        if (((Integer) this.V.put(luaTable, this.X)) == null && (luaTable instanceof LuaTable)) {
-            LuaTable.i iVarS3 = luaTable.s3();
-            while (iVarS3.c()) {
+    private void X2(luaj.LuaTable luaTable) {
+        if (((java.lang.Integer) this.V.put(luaTable, this.X)) == null && (luaTable instanceof luaj.LuaTable)) {
+            luaj.LuaTable$i luaTable$iS3 = luaTable.s3();
+            while (luaTable$iS3.c()) {
                 int i = 0;
                 while (i < 2) {
-                    LuaValue luaValueB = i == 0 ? iVarS3.b() : iVarS3.d();
-                    if (luaValueB instanceof LuaTable) {
-                        X2((LuaTable) luaValueB);
+                    luaj.LuaValue luaValueB = i == 0 ? luaTable$iS3.b() : luaTable$iS3.d();
+                    if (luaValueB instanceof luaj.LuaTable) {
+                        X2((luaj.LuaTable) luaValueB);
                     }
                     i++;
                 }
@@ -84,37 +29,37 @@ public final class GgLib$saveVariable extends VarArgFunction {
         }
     }
 
-    private void Y2() throws IOException {
-        LuaValue luaValueB;
-        String[] strArr = Y;
-        Writer writer = this.U;
-        List list = this.W;
-        Map map = this.V;
-        Iterator it = list.iterator();
+    private void Y2() throws java.io.IOException {
+        luaj.LuaValue luaValueB;
+        java.lang.String[] strArr = Y;
+        java.io.Writer writer = this.U;
+        java.util.List list = this.W;
+        java.util.Map map = this.V;
+        java.util.Iterator it = list.iterator();
         int i = 0;
         while (it.hasNext()) {
             boolean z = true;
             i++;
-            LuaTable.i iVarS3 = ((LuaTable) it.next()).s3();
-            while (iVarS3.c()) {
-                int iA = iVarS3.a();
-                LuaValue luaValueD = iVarS3.d();
-                if (luaValueD instanceof LuaTable) {
-                    luaValueB = iA != 0 ? null : iVarS3.b();
+            luaj.LuaTable$i luaTable$iS3 = ((luaj.LuaTable) it.next()).s3();
+            while (luaTable$iS3.c()) {
+                int iA = luaTable$iS3.a();
+                luaj.LuaValue luaValueD = luaTable$iS3.d();
+                if (luaValueD instanceof luaj.LuaTable) {
+                    luaValueB = iA != 0 ? null : luaTable$iS3.b();
                 } else if (iA == 0) {
-                    luaValueB = iVarS3.b();
-                    if (!(luaValueB instanceof LuaTable)) {
+                    luaValueB = luaTable$iS3.b();
+                    if (!(luaValueB instanceof luaj.LuaTable)) {
                     }
                 }
                 if (z) {
                     writer.write("\nt=v[");
-                    writer.write(Integer.toString(i));
+                    writer.write(java.lang.Integer.toString(i));
                     writer.write(93);
                     z = false;
                 }
                 writer.write("\nt[");
                 if (luaValueB == null) {
-                    writer.write(Integer.toString(iA));
+                    writer.write(java.lang.Integer.toString(iA));
                 } else {
                     a3(writer, strArr, map, luaValueB);
                 }
@@ -126,9 +71,9 @@ public final class GgLib$saveVariable extends VarArgFunction {
 
     /* JADX WARN: Code duplicated, block: B:26:0x00ac  */
     /* JADX WARN: Code duplicated, block: B:27:0x00b2  */
-    private void Z2() throws IOException {
-        LuaValue luaValueD;
-        String[] strArr = Y;
+    private void Z2() throws java.io.IOException {
+        luaj.LuaValue luaValueD;
+        java.lang.String[] strArr = Y;
         this.U.write("local ");
         int length = strArr.length;
         int i = 0;
@@ -137,37 +82,37 @@ public final class GgLib$saveVariable extends VarArgFunction {
             this.U.write(44);
         }
         this.U.write("v,t=");
-        for (String str : strArr) {
+        for (java.lang.String str : strArr) {
             this.U.write(39);
             this.U.write(str);
             this.U.write("',");
         }
         this.U.write("nil\nv={");
-        Writer writer = this.U;
-        Map map = this.V;
-        for (LuaTable luaTable : this.W) {
+        java.io.Writer writer = this.U;
+        java.util.Map map = this.V;
+        for (luaj.LuaTable luaTable : (java.util.Collection<luaj.LuaTable>) this.W) {
             int i3 = 1;
             i++;
-            map.put(luaTable, Integer.valueOf(i));
+            map.put(luaTable, java.lang.Integer.valueOf(i));
             writer.write("{");
-            LuaTable.i iVarS3 = luaTable.s3();
-            while (iVarS3.c()) {
-                int iA = iVarS3.a();
+            luaj.LuaTable$i luaTable$iS3 = luaTable.s3();
+            while (luaTable$iS3.c()) {
+                int iA = luaTable$iS3.a();
                 if (iA == 0) {
-                    LuaValue luaValueB = iVarS3.b();
-                    if (!(luaValueB instanceof LuaTable)) {
+                    luaj.LuaValue luaValueB = luaTable$iS3.b();
+                    if (!(luaValueB instanceof luaj.LuaTable)) {
                         writer.write("[");
                         a3(writer, strArr, map, luaValueB);
                     }
                 } else {
                     if (iA != i3) {
                         writer.write("[");
-                        writer.write(Integer.toString(iA));
+                        writer.write(java.lang.Integer.toString(iA));
                     } else {
                         i3++;
                     }
-                    luaValueD = iVarS3.d();
-                    if (luaValueD instanceof LuaTable) {
+                    luaValueD = luaTable$iS3.d();
+                    if (luaValueD instanceof luaj.LuaTable) {
                         writer.write("nil");
                     } else {
                         a3(writer, strArr, map, luaValueD);
@@ -175,8 +120,8 @@ public final class GgLib$saveVariable extends VarArgFunction {
                     writer.write(";");
                 }
                 writer.write("]=");
-                luaValueD = iVarS3.d();
-                if (luaValueD instanceof LuaTable) {
+                luaValueD = luaTable$iS3.d();
+                if (luaValueD instanceof luaj.LuaTable) {
                     writer.write("nil");
                 } else {
                     a3(writer, strArr, map, luaValueD);
@@ -188,17 +133,17 @@ public final class GgLib$saveVariable extends VarArgFunction {
         writer.write("}");
     }
 
-    private void a3(Writer writer, String[] strArr, Map map, LuaValue luaValue) throws IOException {
-        if (luaValue instanceof LuaTable) {
+    private void a3(java.io.Writer writer, java.lang.String[] strArr, java.util.Map map, luaj.LuaValue luaValue) throws java.io.IOException {
+        if (luaValue instanceof luaj.LuaTable) {
             writer.write("v[");
-            writer.write(Integer.toString(((Integer) map.get(luaValue)).intValue()));
+            writer.write(java.lang.Integer.toString(((java.lang.Integer) map.get(luaValue)).intValue()));
             writer.write(93);
         } else {
-            if (!(luaValue instanceof LuaString)) {
+            if (!(luaValue instanceof luaj.LuaString)) {
                 writer.write(luaValue.g0());
                 return;
             }
-            String strG0 = luaValue.g0();
+            java.lang.String strG0 = luaValue.g0();
             int length = strArr.length;
             for (int i = 0; i < length; i++) {
                 if (strG0.equals(strArr[i])) {
@@ -211,9 +156,9 @@ public final class GgLib$saveVariable extends VarArgFunction {
     }
 
     /* JADX WARN: Switch 'out' block B:18:0x0038 for B:9:0x001d already processed. Defaulting to fallback option. */
-    private Appendable b3(Appendable appendable, String str) throws IOException {
+    private java.lang.Appendable b3(java.lang.Appendable appendable, java.lang.String str) throws java.io.IOException {
         if (appendable == null) {
-            appendable = new StringBuilder();
+            appendable = new java.lang.StringBuilder();
         }
         appendable.append('\'');
         int length = str.length();
@@ -259,21 +204,20 @@ public final class GgLib$saveVariable extends VarArgFunction {
         return appendable;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    private void c3(LuaValue luaValue, RandomAccessFile randomAccessFile) {
+    private void c3(luaj.LuaValue luaValue, java.io.RandomAccessFile randomAccessFile) {
         try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new a(randomAccessFile)), 65536);
+            java.io.BufferedWriter bufferedWriter = new java.io.BufferedWriter(new java.io.OutputStreamWriter(new luaj.lib.GgLib$saveVariable$a(this, randomAccessFile)), 65536);
             this.U = bufferedWriter;
-            if (luaValue instanceof LuaTable) {
-                this.V = new HashMap();
-                X2((LuaTable) luaValue);
-                this.W = new ArrayList(this.V.keySet());
+            if (luaValue instanceof luaj.LuaTable) {
+                this.V = new java.util.HashMap();
+                X2((luaj.LuaTable) luaValue);
+                this.W = new java.util.ArrayList(this.V.keySet());
                 Z2();
                 Y2();
                 bufferedWriter.write("\nreturn v[" + this.V.get(luaValue) + "]\n");
                 this.V = null;
             } else {
-                if (luaValue instanceof LuaString) {
+                if (luaValue instanceof luaj.LuaString) {
                     bufferedWriter.write("return ");
                     b3(bufferedWriter, luaValue.g0());
                 } else {
@@ -283,46 +227,57 @@ public final class GgLib$saveVariable extends VarArgFunction {
                 bufferedWriter.write(10);
             }
             bufferedWriter.close();
-        } finally {
             this.U = null;
             this.V = null;
             this.W = null;
+        } catch (java.lang.Throwable th) {
+            this.U = null;
+            this.V = null;
+            this.W = null;
+            throw th;
         }
     }
 
     @Override // luaj.lib.VarArgFunction, luaj.lib.LibFunction, luaj.LuaValue
-    public Varargs invoke(Varargs varargs) {
-        LuaValue luaValueV = varargs.v(1);
-        String strE = varargs.E(2);
+    public luaj.Varargs invoke(luaj.Varargs varargs) {
+        luaj.LuaValue luaValueV = varargs.v(1);
+        java.lang.String strE = varargs.E(2);
         this.T.L3(strE);
         try {
-            RandomAccessFile randomAccessFileF = d.f(new File(strE), this.T.Z);
+            java.io.RandomAccessFile randomAccessFileF = luaj.lib.d.f(new java.io.File(strE), this.T.Z);
             if (randomAccessFileF == null) {
                 this.T.S3();
-                return LuaValue.K2("File '" + strE + "' can not be written");
+                return luaj.LuaValue.K2("File '" + strE + "' can not be written");
             }
             try {
                 c3(luaValueV, randomAccessFileF);
                 try {
                     randomAccessFileF.close();
-                } catch (IOException unused) {
+                } catch (java.io.IOException unused) {
                 }
                 this.T.S3();
-                return LuaValue.f1673c;
-            } catch (Throwable th) {
+                return luaj.LuaValue.f1673c;
+            } catch (java.lang.Throwable th) {
                 try {
-                    return LuaValue.K2(th.toString());
-                } finally {
+                    luaj.LuaString luaStringK2 = luaj.LuaValue.K2(th.toString());
                     try {
                         randomAccessFileF.close();
-                    } catch (IOException unused2) {
+                    } catch (java.io.IOException unused2) {
                     }
                     this.T.S3();
+                    return luaStringK2;
+                } catch (java.lang.Throwable th2) {
+                    try {
+                        randomAccessFileF.close();
+                    } catch (java.io.IOException unused3) {
+                    }
+                    this.T.S3();
+                    throw th2;
                 }
             }
-        } catch (IOException e2) {
+        } catch (java.io.IOException e2) {
             this.T.S3();
-            return LuaValue.K2(e2.toString());
+            return luaj.LuaValue.K2(e2.toString());
         }
     }
 }

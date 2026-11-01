@@ -1,20 +1,17 @@
 package android.ext;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-
 /* JADX INFO: loaded from: classes.dex */
 public class Cat {
-    public static void main(String[] strArr) throws IOException {
+    public static void main(java.lang.String[] strArr) throws java.io.IOException {
         byte[] bArr = new byte[8192];
-        FileInputStream fileInputStream = new FileInputStream(strArr[0]);
+        java.io.FileInputStream fileInputStream = new java.io.FileInputStream(strArr[0]);
         while (true) {
             int i = fileInputStream.read(bArr);
             if (i < 0) {
                 fileInputStream.close();
                 return;
             }
-            System.out.write(bArr, 0, i);
+            java.lang.System.out.write(bArr, 0, i);
         }
     }
 }

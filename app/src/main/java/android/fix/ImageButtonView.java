@@ -1,18 +1,14 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.Tools;
-import android.util.AttributeSet;
-
 /* JADX INFO: loaded from: classes.dex */
-public class ImageButtonView extends ImageView {
-    public ImageButtonView(Context context) {
+public class ImageButtonView extends android.fix.ImageView {
+    public ImageButtonView(android.content.Context context) {
         super(context);
-        Tools.p1(this);
+        android.ext.Tools.p1(this);
     }
 
-    public ImageButtonView(Context context, AttributeSet attributeSet) {
+    public ImageButtonView(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
-        Tools.p1(this);
+        android.ext.Tools.p1(this);
     }
 }

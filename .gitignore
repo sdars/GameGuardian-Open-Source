@@ -1,13 +1,7 @@
-.gradle/
-app/build/
 build/
-tmp/
+.gradle/
 local.properties
-javac.*.args
-analysis/2026-11-01/repair/classes-*/
-analysis/2026-11-01/repair/snapshots/
-**/__pycache__/
+*.iml
+__pycache__/
 *.pyc
-release/*.apk
-release/*.zip
-
+tmp/

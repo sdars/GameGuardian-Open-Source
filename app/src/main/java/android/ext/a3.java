@@ -1,10 +1,5 @@
 package android.ext;
 
-import android.util.Base64;
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.util.Arrays;
-
 /* JADX INFO: loaded from: classes.dex */
 public class a3 {
 
@@ -24,13 +19,13 @@ public class a3 {
     private void b() {
         int i = this.f572b;
         int[] iArr = this.f571a;
-        ByteBuffer byteBufferAllocate = ByteBuffer.allocate(i * 4);
-        byteBufferAllocate.order(ByteOrder.LITTLE_ENDIAN);
+        java.nio.ByteBuffer byteBufferAllocate = java.nio.ByteBuffer.allocate(i * 4);
+        byteBufferAllocate.order(java.nio.ByteOrder.LITTLE_ENDIAN);
         for (int i2 = 0; i2 < i; i2++) {
             byteBufferAllocate.putInt(iArr[i2]);
         }
-        String strEncodeToString = Base64.encodeToString(byteBufferAllocate.array(), 11);
-        new g2().putString("used-" + this.f573c, strEncodeToString).commit();
+        java.lang.String strEncodeToString = android.util.Base64.encodeToString(byteBufferAllocate.array(), 11);
+        new android.ext.g2().putString("used-" + this.f573c, strEncodeToString).commit();
     }
 
     public void a(int i) {
@@ -42,7 +37,7 @@ public class a3 {
             }
         }
         if (i2 == iArrCopyOf.length) {
-            iArrCopyOf = Arrays.copyOf(iArrCopyOf, iArrCopyOf.length + 32);
+            iArrCopyOf = java.util.Arrays.copyOf(iArrCopyOf, iArrCopyOf.length + 32);
             this.f571a = iArrCopyOf;
         }
         iArrCopyOf[i2] = i;

@@ -1,0 +1,12 @@
+-source
+8
+-target
+8
+-Xlint:-options
+-Xmaxerrs
+5000
+-cp
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-d
+analysis/2026-11-01/repair/classes-main2
+@analysis/2026-11-01/repair/sources-main2.txt

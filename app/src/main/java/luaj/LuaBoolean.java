@@ -1,8 +1,8 @@
 package luaj;
 
 /* JADX INFO: loaded from: classes.dex */
-public final class LuaBoolean extends LuaValue {
-    public static LuaValue Q;
+public final class LuaBoolean extends luaj.LuaValue {
+    public static luaj.LuaValue Q;
     public final boolean P;
 
     LuaBoolean(boolean z) {
@@ -10,8 +10,8 @@ public final class LuaBoolean extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue B1() {
-        return this.P ? LuaValue.f1675e : LuaValue.f1674d;
+    public luaj.LuaValue B1() {
+        return this.P ? luaj.LuaValue.f1675e : luaj.LuaValue.f1674d;
     }
 
     @Override // luaj.LuaValue
@@ -20,7 +20,7 @@ public final class LuaBoolean extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public String D2() {
+    public java.lang.String D2() {
         return "boolean";
     }
 
@@ -30,7 +30,7 @@ public final class LuaBoolean extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public LuaValue V0() {
+    public luaj.LuaValue V0() {
         return Q;
     }
 
@@ -40,7 +40,7 @@ public final class LuaBoolean extends LuaValue {
     }
 
     @Override // luaj.LuaValue, luaj.Varargs
-    public String g0() {
+    public java.lang.String g0() {
         return this.P ? "true" : "false";
     }
 

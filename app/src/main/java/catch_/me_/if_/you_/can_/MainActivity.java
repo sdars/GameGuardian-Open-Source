@@ -1,7 +1,5 @@
 package catch_.me_.if_.you_.can_;
 
-import android.ext.r;
-
 /* JADX INFO: loaded from: classes.dex */
-public final class MainActivity extends r {
+public final class MainActivity extends android.ext.r {
 }

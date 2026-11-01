@@ -1,29 +1,26 @@
 package luaj;
 
-import android.ext.Script;
-import java.util.Locale;
-
 /* JADX INFO: loaded from: classes.dex */
-public abstract class LuaFunction extends LuaValue {
-    public static LuaValue P;
-    private static final String Q = Script.class.getName();
+public abstract class LuaFunction extends luaj.LuaValue {
+    public static luaj.LuaValue P;
+    private static final java.lang.String Q = android.ext.Script.class.getName();
 
-    public static String U2(String str) {
-        String str2;
+    public static java.lang.String U2(java.lang.String str) {
+        java.lang.String str2;
         int iLastIndexOf = str.lastIndexOf(36);
         int iLastIndexOf2 = str.lastIndexOf(46);
-        int iMax = Math.max(iLastIndexOf2, iLastIndexOf);
+        int iMax = java.lang.Math.max(iLastIndexOf2, iLastIndexOf);
         int i = iMax + 1;
         if (str.charAt(i) == '_') {
             i = iMax + 2;
         }
-        String strSubstring = str.substring(i);
+        java.lang.String strSubstring = str.substring(i);
         if (str.startsWith(Q)) {
             str2 = "gg.";
         } else if (iLastIndexOf <= iLastIndexOf2 || !str.contains("Lib$") || str.contains("BaseLib$")) {
             str2 = null;
         } else {
-            str2 = str.substring(iLastIndexOf2 + 1, iLastIndexOf - 3).toLowerCase(Locale.ENGLISH) + '.';
+            str2 = str.substring(iLastIndexOf2 + 1, iLastIndexOf - 3).toLowerCase(java.util.Locale.ENGLISH) + '.';
         }
         if (str2 == null) {
             return strSubstring;
@@ -37,30 +34,30 @@ public abstract class LuaFunction extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public String D2() {
+    public java.lang.String D2() {
         return "function";
     }
 
     @Override // luaj.LuaValue
-    public LuaFunction G1(LuaFunction luaFunction) {
+    public luaj.LuaFunction G1(luaj.LuaFunction luaFunction) {
         return this;
     }
 
-    public String S2() {
+    public java.lang.String S2() {
         return U2(getClass().getName());
     }
 
-    public String T2() {
+    public java.lang.String T2() {
         return S2();
     }
 
     @Override // luaj.LuaValue
-    public LuaValue V0() {
+    public luaj.LuaValue V0() {
         return P;
     }
 
     @Override // luaj.LuaValue, luaj.Varargs
-    public String g0() {
+    public java.lang.String g0() {
         return "function: " + S2();
     }
 
@@ -70,12 +67,12 @@ public abstract class LuaFunction extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public LuaString q2() {
-        return LuaValue.K2(g0());
+    public luaj.LuaString q2() {
+        return luaj.LuaValue.K2(g0());
     }
 
     @Override // luaj.LuaValue
-    public LuaFunction y0() {
+    public luaj.LuaFunction y0() {
         return this;
     }
 }

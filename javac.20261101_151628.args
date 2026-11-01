@@ -1,0 +1,13 @@
+-source
+8
+-target
+8
+-Xlint:-options
+-nowarn
+-Xmaxerrs
+100000
+-cp
+tmp/tools/android-sdk/platforms/android-34/android.jar
+-d
+/tmp/tmp.c3ZsYvqFOt
+@/tmp/js.txt

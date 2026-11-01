@@ -1,22 +1,7 @@
 package android.ext;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
-import android.util.AttributeSet;
-import android.util.SparseIntArray;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ScrollView;
-import catch_.me_.if_.you_.can_.R;
-import java.lang.ref.WeakReference;
-
 /* JADX INFO: loaded from: classes.dex */
-public class InternalKeyboard extends a.c {
+public class InternalKeyboard extends gg_a.c {
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     private boolean f184b;
@@ -34,126 +19,16 @@ public class InternalKeyboard extends a.c {
     private int f188f;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
-    private WeakReference f189g;
+    private java.lang.ref.WeakReference f189g;
     private boolean h;
     private int i;
 
-    class a implements KeyboardView.OnKeyboardActionListener {
-        a() {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void onKey(int i, int[] iArr) {
-            InternalKeyboard.this.l(i, iArr);
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void onPress(int i) {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void onRelease(int i) {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void onText(CharSequence charSequence) {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void swipeDown() {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void swipeLeft() {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void swipeRight() {
-        }
-
-        @Override // android.inputmethodservice.KeyboardView.OnKeyboardActionListener
-        public void swipeUp() {
-        }
-    }
-
-    class b implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ Keyboard f191a;
-
-        b(Keyboard keyboard) {
-            this.f191a = keyboard;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            InternalKeyboard.this.setKeyboard(this.f191a);
-        }
-    }
-
-    class c implements View.OnFocusChangeListener {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        int f193a = -1;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ int f194b;
-
-        c(int i) {
-            this.f194b = i;
-        }
-
-        @Override // android.view.View.OnFocusChangeListener
-        public void onFocusChange(View view, boolean z) {
-            InternalKeyboard internalKeyboard;
-            if ((Config.B & 1) == 0 || (internalKeyboard = (InternalKeyboard) view.getRootView().findViewById(R.id.keyboard)) == null) {
-                return;
-            }
-            if (this.f193a == -1) {
-                this.f193a = internalKeyboard.getFlags();
-            }
-            internalKeyboard.setFlags((z ? this.f194b : 0) | this.f193a);
-            internalKeyboard.t();
-        }
-    }
-
-    public static class d {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        public int f195a;
-
-        public d(int i) {
-            this.f195a = i;
-        }
-    }
-
-    public static abstract class e implements View.OnFocusChangeListener {
-        protected abstract boolean a(View view, boolean z);
-
-        @Override // android.view.View.OnFocusChangeListener
-        public void onFocusChange(View view, boolean z) {
-            InternalKeyboard internalKeyboard;
-            if ((Config.B & 1) == 0 || (internalKeyboard = (InternalKeyboard) view.getRootView().findViewById(R.id.keyboard)) == null) {
-                return;
-            }
-            boolean zA = a(view, z);
-            if (!zA) {
-                z = false;
-            }
-            internalKeyboard.h(view, z);
-            if (zA) {
-                return;
-            }
-            Tools.S0(view);
-        }
-    }
-
-    public InternalKeyboard(Context context, AttributeSet attributeSet) {
+    public InternalKeyboard(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f186d = true;
         this.f187e = false;
         this.f188f = 0;
-        this.f189g = new WeakReference(null);
+        this.f189g = new java.lang.ref.WeakReference(null);
         this.h = false;
         this.i = -1;
         f(context);
@@ -161,38 +36,38 @@ public class InternalKeyboard extends a.c {
 
     public static boolean a() {
         try {
-            return a.d.f(R.layout.keyboard, null) != null;
-        } catch (Throwable th) {
-            e1.l("Check internal keyboard fail", th);
+            return gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.keyboard, null) != null;
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("Check internal keyboard fail", th);
             return false;
         }
     }
 
-    private void b(Window window, boolean z) {
+    private void b(android.view.Window window, boolean z) {
         int iH;
-        WindowManager.LayoutParams attributes = window.getAttributes();
-        View decorView = window.getDecorView();
+        android.view.WindowManager.LayoutParams attributes = window.getAttributes();
+        android.view.View decorView = window.getDecorView();
         int width = decorView.getWidth();
         try {
             decorView.measure(-2, -2);
-            width = Math.max(width, decorView.getMeasuredWidth());
-        } catch (Throwable th) {
-            e1.a(th);
+            width = java.lang.Math.max(width, decorView.getMeasuredWidth());
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
         if (z) {
             int width2 = getWidth();
             try {
                 measure(-2, -2);
-                iH = Math.max(width2, getMeasuredWidth());
-            } catch (Throwable th2) {
-                e1.a(th2);
+                iH = java.lang.Math.max(width2, getMeasuredWidth());
+            } catch (java.lang.Throwable th2) {
+                android.ext.e1.a(th2);
             }
         } else {
-            iH = Tools.H();
+            iH = android.ext.Tools.H();
         }
         width += iH;
         attributes.width = width;
-        if (width >= MainService.context.getResources().getDisplayMetrics().widthPixels) {
+        if (width >= android.ext.MainService.context.getResources().getDisplayMetrics().widthPixels) {
             attributes.width = -1;
         }
         window.setAttributes(attributes);
@@ -200,40 +75,40 @@ public class InternalKeyboard extends a.c {
 
     private int c(boolean z, boolean z2, boolean z3, boolean z4) {
         if (!z) {
-            return R.id.k_ext;
+            return catch_.me_.if_.you_.can_.R$id.k_ext;
         }
         if (z2) {
-            return R.id.k_hex;
+            return catch_.me_.if_.you_.can_.R$id.k_hex;
         }
         if (z3) {
-            return R.id.k_fn;
+            return catch_.me_.if_.you_.can_.R$id.k_fn;
         }
-        return z4 ? R.id.k_small : R.id.k_num;
+        return z4 ? catch_.me_.if_.you_.can_.R$id.k_small : catch_.me_.if_.you_.can_.R$id.k_num;
     }
 
-    public static View d(View view) {
+    public static android.view.View d(android.view.View view) {
         return e(view, true);
     }
 
-    public static View e(View view, boolean z) {
+    public static android.view.View e(android.view.View view, boolean z) {
         if (!a()) {
             return view;
         }
-        KeyboardLayout keyboardLayout = (KeyboardLayout) a.d.f(R.layout.keyboard, null);
-        ViewGroup viewGroup = (ViewGroup) keyboardLayout.findViewById(view instanceof ScrollView ? R.id.kbd_frame : R.id.kbd_scroll);
+        android.ext.KeyboardLayout keyboardLayout = (android.ext.KeyboardLayout) gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.keyboard, null);
+        android.view.ViewGroup viewGroup = (android.view.ViewGroup) keyboardLayout.findViewById(view instanceof android.widget.ScrollView ? catch_.me_.if_.you_.can_.R$id.kbd_frame : catch_.me_.if_.you_.can_.R$id.kbd_scroll);
         viewGroup.addView(view);
         viewGroup.setVisibility(0);
-        InternalKeyboard internalKeyboard = (InternalKeyboard) keyboardLayout.findViewById(R.id.keyboard);
+        android.ext.InternalKeyboard internalKeyboard = (android.ext.InternalKeyboard) keyboardLayout.findViewById(catch_.me_.if_.you_.can_.R$id.keyboard);
         internalKeyboard.setAllowUseInternal(z);
-        Object tag = view.getTag();
-        if (tag instanceof d) {
-            internalKeyboard.setFlags(((d) tag).f195a);
+        java.lang.Object tag = view.getTag();
+        if (tag instanceof android.ext.InternalKeyboard$d) {
+            internalKeyboard.setFlags(((android.ext.InternalKeyboard$d) tag).f195a);
         }
         keyboardLayout.c();
         return keyboardLayout;
     }
 
-    private void f(Context context) {
+    private void f(android.content.Context context) {
         this.f184b = false;
         this.f185c = false;
         if (isInEditMode()) {
@@ -241,53 +116,53 @@ public class InternalKeyboard extends a.c {
         }
         try {
             setPreviewEnabled(false);
-            setOnKeyboardActionListener(new a());
-        } catch (Throwable th) {
-            e1.l("Failed init internal keyboard", th);
+            setOnKeyboardActionListener(new android.ext.InternalKeyboard$a(this));
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("Failed init internal keyboard", th);
         }
     }
 
-    private Window getWindow() {
-        return (Window) this.f189g.get();
+    private android.view.Window getWindow() {
+        return (android.view.Window) this.f189g.get();
     }
 
-    public static void i(View view, boolean z) {
-        InternalKeyboard internalKeyboard = (InternalKeyboard) view.getRootView().findViewById(R.id.keyboard);
+    public static void i(android.view.View view, boolean z) {
+        android.ext.InternalKeyboard internalKeyboard = (android.ext.InternalKeyboard) view.getRootView().findViewById(catch_.me_.if_.you_.can_.R$id.keyboard);
         if (internalKeyboard != null) {
             internalKeyboard.h(view, z);
             if (z) {
                 return;
             }
-            Tools.S0(view);
+            android.ext.Tools.S0(view);
         }
     }
 
-    private void m(Keyboard.Key key) {
-        if ((this.f188f & 1) != 0 && ":".equals(key.label)) {
-            n(key, "?");
+    private void m(android.inputmethodservice.Keyboard.Key keyboard$Key) {
+        if ((this.f188f & 1) != 0 && ":".equals(keyboard$Key.label)) {
+            n(keyboard$Key, "?");
         }
-        if ((this.f188f & 2) != 0 && ";".equals(key.label)) {
-            n(key, "*");
+        if ((this.f188f & 2) != 0 && ";".equals(keyboard$Key.label)) {
+            n(keyboard$Key, "*");
         }
-        if ((this.f188f & 4) != 0 && "~".equals(key.label)) {
-            n(key, "^");
+        if ((this.f188f & 4) != 0 && "~".equals(keyboard$Key.label)) {
+            n(keyboard$Key, "^");
         }
-        if ((this.f188f & 8) == 0 || !"r".equals(key.label)) {
+        if ((this.f188f & 8) == 0 || !"r".equals(keyboard$Key.label)) {
             return;
         }
-        n(key, "$");
+        n(keyboard$Key, "$");
     }
 
-    private void n(Keyboard.Key key, String str) {
-        key.label = str;
-        if (key.codes == null) {
-            key.codes = new int[1];
+    private void n(android.inputmethodservice.Keyboard.Key keyboard$Key, java.lang.String str) {
+        keyboard$Key.label = str;
+        if (keyboard$Key.codes == null) {
+            keyboard$Key.codes = new int[1];
         }
-        key.codes[0] = str.charAt(0);
+        keyboard$Key.codes[0] = str.charAt(0);
     }
 
-    public static void o(View view, int i) {
-        Tools.z1(view, new c(i));
+    public static void o(android.view.View view, int i) {
+        android.ext.Tools.z1(view, new android.ext.InternalKeyboard$c(i));
     }
 
     private void p() {
@@ -304,83 +179,83 @@ public class InternalKeyboard extends a.c {
     private void r() {
         boolean z;
         if (this.f186d) {
-            z = (Config.B & 1) != 0;
+            z = (android.ext.Config.B & 1) != 0;
         }
         setKeyboard(z);
     }
 
     private void s() {
-        Config.b(R.id.config_kbd_small).f42d = (Config.B & 64) == 0 ? 1 : 0;
-        Config.k();
+        android.ext.Config.b(catch_.me_.if_.you_.can_.R$id.config_kbd_small).f42d = (android.ext.Config.B & 64) == 0 ? 1 : 0;
+        android.ext.Config.k();
         r();
     }
 
     private void setKeyboard(boolean z) {
         boolean z2 = this.f184b;
         boolean z3 = this.f185c;
-        boolean z4 = (Config.B & 64) != 0;
-        int i = this.f187e ? R.xml.empty : R.xml.keyboard;
-        Keyboard keyboard = new Keyboard(MainService.context, i, c(z, z2, z3, z4));
+        boolean z4 = (android.ext.Config.B & 64) != 0;
+        int i = this.f187e ? catch_.me_.if_.you_.can_.R$xml.empty : catch_.me_.if_.you_.can_.R$xml.keyboard;
+        android.inputmethodservice.Keyboard keyboard = new android.inputmethodservice.Keyboard(android.ext.MainService.context, i, c(z, z2, z3, z4));
         if (!this.f187e) {
             if (z2 && keyboard.getKeys().size() == 0) {
-                keyboard = new Keyboard(MainService.context, i, c(z, false, z3, z4));
+                keyboard = new android.inputmethodservice.Keyboard(android.ext.MainService.context, i, c(z, false, z3, z4));
                 z2 = false;
             }
             if (z3 && keyboard.getKeys().size() == 0) {
-                keyboard = new Keyboard(MainService.context, i, c(z, z2, false, z4));
+                keyboard = new android.inputmethodservice.Keyboard(android.ext.MainService.context, i, c(z, z2, false, z4));
                 z3 = false;
             }
             if (z4 && keyboard.getKeys().size() == 0) {
-                keyboard = new Keyboard(MainService.context, i, c(z, z2, z3, false));
+                keyboard = new android.inputmethodservice.Keyboard(android.ext.MainService.context, i, c(z, z2, z3, false));
             }
         }
-        SparseIntArray sparseIntArray = new SparseIntArray();
-        for (Keyboard.Key key : keyboard.getKeys()) {
-            if (key != null) {
-                int i2 = key.y;
+        android.util.SparseIntArray sparseIntArray = new android.util.SparseIntArray();
+        for (android.inputmethodservice.Keyboard.Key keyboard$Key : keyboard.getKeys()) {
+            if (keyboard$Key != null) {
+                int i2 = keyboard$Key.y;
                 sparseIntArray.put(i2, sparseIntArray.get(i2, 0) + 1);
                 if (!z3) {
-                    m(key);
+                    m(keyboard$Key);
                 }
-                int[] iArr = key.codes;
+                int[] iArr = keyboard$Key.codes;
                 if (iArr != null && iArr.length != 0) {
                     int i3 = iArr[0];
                     if (i3 == 5002) {
-                        key.label = t1.f1251a;
+                        keyboard$Key.label = android.ext.t1.f1251a;
                     }
                     if (i3 == 5003) {
-                        key.label = String.valueOf(t1.f1252b);
+                        keyboard$Key.label = java.lang.String.valueOf(android.ext.t1.f1252b);
                     }
                 }
             }
         }
-        Resources resources = getContext().getResources();
-        ViewGroup.LayoutParams layoutParams = getLayoutParams();
+        android.content.res.Resources resources = getContext().getResources();
+        android.view.ViewGroup.LayoutParams layoutParams = getLayoutParams();
         if (layoutParams != null && sparseIntArray.size() > 0) {
-            layoutParams.width = Math.round(resources.getDimension(R.dimen.key_width) * sparseIntArray.valueAt(0));
-            layoutParams.height = Math.round(resources.getDimension(R.dimen.key_height) * sparseIntArray.size());
+            layoutParams.width = java.lang.Math.round(resources.getDimension(catch_.me_.if_.you_.can_.R$dimen.key_width) * sparseIntArray.valueAt(0));
+            layoutParams.height = java.lang.Math.round(resources.getDimension(catch_.me_.if_.you_.can_.R$dimen.key_height) * sparseIntArray.size());
             setLayoutParams(layoutParams);
-            e1.d("Kbd: " + sparseIntArray.valueAt(0) + " x " + sparseIntArray.size() + "; " + layoutParams.width + 'x' + layoutParams.height + "; " + keyboard.getMinWidth() + 'x' + keyboard.getHeight());
+            android.ext.e1.d("Kbd: " + sparseIntArray.valueAt(0) + " x " + sparseIntArray.size() + "; " + layoutParams.width + 'x' + layoutParams.height + "; " + keyboard.getMinWidth() + 'x' + keyboard.getHeight());
         }
         if (this.h) {
-            post(new b(keyboard));
+            post(new android.ext.InternalKeyboard$b(this, keyboard));
         } else {
             setKeyboard(keyboard);
         }
     }
 
-    public void g(Window window) {
-        this.f189g = new WeakReference(window);
-        if (!this.f186d || (Config.B & 1) == 0) {
+    public void g(android.view.Window window) {
+        this.f189g = new java.lang.ref.WeakReference(window);
+        if (!this.f186d || (android.ext.Config.B & 1) == 0) {
             window.clearFlags(131072);
         } else {
             window.addFlags(131072);
         }
         r();
-        View decorView = window.getDecorView();
-        Window.Callback callback = window.getCallback();
-        if ((callback instanceof g3) && decorView.getWidth() == 0) {
-            ((g3) callback).a(this);
+        android.view.View decorView = window.getDecorView();
+        android.view.Window.Callback callback = window.getCallback();
+        if ((callback instanceof android.ext.g3) && decorView.getWidth() == 0) {
+            ((android.ext.g3) callback).a(this);
         } else {
             j();
         }
@@ -390,28 +265,28 @@ public class InternalKeyboard extends a.c {
         return this.f188f;
     }
 
-    public void h(View view, boolean z) {
+    public void h(android.view.View view, boolean z) {
         if (view != null) {
             try {
-                Window window = getWindow();
+                android.view.Window window = getWindow();
                 if (window != null) {
-                    Tools.L(window, view, z);
+                    android.ext.Tools.L(window, view, z);
                 }
                 if (z) {
                     setKeyboard(false);
                 } else {
                     r();
                 }
-            } catch (Throwable th) {
-                e1.l("Failed show/hide kbd: " + z, th);
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.l("Failed show/hide kbd: " + z, th);
             }
         }
     }
 
     public void j() {
         int i;
-        Window window = getWindow();
-        if (window == null || this.i == (i = MainService.context.getResources().getConfiguration().orientation)) {
+        android.view.Window window = getWindow();
+        if (window == null || this.i == (i = android.ext.MainService.context.getResources().getConfiguration().orientation)) {
             return;
         }
         this.i = i;
@@ -424,19 +299,19 @@ public class InternalKeyboard extends a.c {
     /* JADX WARN: Code duplicated, block: B:49:? A[RETURN, SYNTHETIC] */
     /* JADX WARN: Failed to find 'out' block for switch in B:15:0x0030. Please report as an issue. */
     void k(int i) {
-        String str;
+        java.lang.String str;
         int i2;
-        String strValueOf;
+        java.lang.String strValueOf;
         char c2;
-        Window window = getWindow();
+        android.view.Window window = getWindow();
         if (window == null) {
             return;
         }
-        View currentFocus = window.getCurrentFocus();
+        android.view.View currentFocus = window.getCurrentFocus();
         if (currentFocus instanceof android.widget.EditText) {
             android.widget.EditText editText = (android.widget.EditText) currentFocus;
-            int iMax = Math.max(editText.getSelectionStart(), 0);
-            int iMax2 = Math.max(editText.getSelectionEnd(), 0);
+            int iMax = java.lang.Math.max(editText.getSelectionStart(), 0);
+            int iMax2 = java.lang.Math.max(editText.getSelectionEnd(), 0);
             if (i >= 5000) {
                 switch (i) {
                     case 5000:
@@ -448,12 +323,12 @@ public class InternalKeyboard extends a.c {
                         str = null;
                         break;
                     case 5002:
-                        strValueOf = t1.f1251a;
+                        strValueOf = android.ext.t1.f1251a;
                         str = strValueOf;
                         i2 = 0;
                         break;
                     case 5003:
-                        c2 = t1.f1252b;
+                        c2 = android.ext.t1.f1252b;
                         break;
                     case 5004:
                     case 5005:
@@ -470,12 +345,12 @@ public class InternalKeyboard extends a.c {
                         i2 = 0;
                         break;
                     case 5007:
-                        y0.i(editText);
+                        android.ext.y0.i(editText);
                         str = null;
                         i2 = 0;
                         break;
                     case 5008:
-                        Tools.o1(editText);
+                        android.ext.Tools.o1(editText);
                         str = null;
                         i2 = 0;
                         break;
@@ -495,30 +370,30 @@ public class InternalKeyboard extends a.c {
                         break;
                 }
                 if (str != null) {
-                    editText.getText().replace(Math.min(iMax, iMax2), Math.max(iMax, iMax2), str, 0, str.length());
-                    editText.setSelection(Math.max(editText.getSelectionStart(), editText.getSelectionEnd()));
+                    editText.getText().replace(java.lang.Math.min(iMax, iMax2), java.lang.Math.max(iMax, iMax2), str, 0, str.length());
+                    editText.setSelection(java.lang.Math.max(editText.getSelectionStart(), editText.getSelectionEnd()));
                 }
                 if (i2 != 0) {
                     try {
-                        editText.dispatchKeyEvent(new KeyEvent(0, i2));
-                        editText.dispatchKeyEvent(new KeyEvent(1, i2));
-                    } catch (Throwable th) {
-                        e1.l("Failed send key to app", th);
+                        editText.dispatchKeyEvent(new android.view.KeyEvent(0, i2));
+                        editText.dispatchKeyEvent(new android.view.KeyEvent(1, i2));
+                    } catch (java.lang.Throwable th) {
+                        android.ext.e1.l("Failed send key to app", th);
                         return;
                     }
                 }
             }
             c2 = (char) i;
-            strValueOf = String.valueOf(c2);
+            strValueOf = java.lang.String.valueOf(c2);
             str = strValueOf;
             i2 = 0;
             if (str != null) {
-                editText.getText().replace(Math.min(iMax, iMax2), Math.max(iMax, iMax2), str, 0, str.length());
-                editText.setSelection(Math.max(editText.getSelectionStart(), editText.getSelectionEnd()));
+                editText.getText().replace(java.lang.Math.min(iMax, iMax2), java.lang.Math.max(iMax, iMax2), str, 0, str.length());
+                editText.setSelection(java.lang.Math.max(editText.getSelectionStart(), editText.getSelectionEnd()));
             }
             if (i2 != 0) {
-                editText.dispatchKeyEvent(new KeyEvent(0, i2));
-                editText.dispatchKeyEvent(new KeyEvent(1, i2));
+                editText.dispatchKeyEvent(new android.view.KeyEvent(0, i2));
+                editText.dispatchKeyEvent(new android.view.KeyEvent(1, i2));
             }
         }
     }
@@ -527,8 +402,10 @@ public class InternalKeyboard extends a.c {
         this.h = true;
         try {
             k(i);
-        } finally {
             this.h = false;
+        } catch (java.lang.Throwable th) {
+            this.h = false;
+            throw th;
         }
     }
 
@@ -536,8 +413,8 @@ public class InternalKeyboard extends a.c {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -545,8 +422,8 @@ public class InternalKeyboard extends a.c {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 

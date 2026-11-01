@@ -1,24 +1,10 @@
 package android.ext;
 
-import android.text.Editable;
-import catch_.me_.if_.you_.can_.R;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.math.BigInteger;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Locale;
-import java.util.regex.Pattern;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class t1 {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    public static String f1251a = null;
+    public static java.lang.String f1251a = null;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
     public static char f1252b = '.';
@@ -27,119 +13,20 @@ public abstract class t1 {
     private static boolean f1253c = true;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private static Charset f1254d;
+    private static java.nio.charset.Charset f1254d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    private static Charset f1255e;
+    private static java.nio.charset.Charset f1255e;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
     private static int[] f1256f;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
-    private static Pattern f1257g;
-
-    static class a extends NumberFormatException {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        private ArrayList f1258a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        private String f1259b;
-
-        /* JADX INFO: renamed from: android.ext.t1$a$a, reason: collision with other inner class name */
-        class C0021a implements Comparator {
-            C0021a() {
-            }
-
-            @Override // java.util.Comparator
-            /* JADX INFO: renamed from: a, reason: merged with bridge method [inline-methods] */
-            public int compare(String str, String str2) {
-                return str2.length() - str.length();
-            }
-        }
-
-        public a(String str) {
-            super(str);
-            this.f1258a = null;
-            this.f1259b = null;
-        }
-
-        void a(long j) {
-            c(Tools.L1(b2.g("__d__"), Long.valueOf(j)));
-        }
-
-        void b(Object obj) {
-            c(Tools.L1(b2.g("__d__"), obj));
-        }
-
-        void c(String str) {
-            ArrayList arrayList = this.f1258a;
-            if (arrayList == null) {
-                arrayList = new ArrayList();
-                this.f1258a = arrayList;
-            }
-            arrayList.add(str);
-        }
-
-        void d() {
-            String message;
-            boolean z;
-            if (this.f1259b == null && (message = getMessage()) != null) {
-                int iIndexOf = message.indexOf(b2.f(R.string.locale_ui));
-                if (iIndexOf > 0) {
-                    message = message.substring(0, iIndexOf);
-                    z = true;
-                } else {
-                    z = false;
-                }
-                ArrayList<String> arrayList = this.f1258a;
-                if (arrayList != null) {
-                    Collections.sort(arrayList, new C0021a());
-                    for (String str : arrayList) {
-                        if (str != null) {
-                            String strE3 = Script.E3(str);
-                            if (!str.equals(strE3) && message.indexOf(str) >= 0) {
-                                message = message.replace(str, strE3);
-                                z = true;
-                            }
-                        }
-                    }
-                }
-                if (iIndexOf > 0) {
-                    message = message + b2.f(R.string.locale_script) + " (en_US):\n" + Tools.L1(t1.z(R.string.locale_desc), '.', ',');
-                }
-                if (z) {
-                    this.f1259b = message;
-                }
-            }
-        }
-
-        @Override // java.lang.Throwable
-        public String getMessage() {
-            String str = this.f1259b;
-            return str != null ? str : super.getMessage();
-        }
-    }
-
-    public static class b {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        public long f1261a = 0;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        public boolean f1262b = false;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        public int f1263c = 0;
-
-        public String toString() {
-            return super.toString() + ": " + this.f1261a + " 0x" + Integer.toHexString(this.f1263c);
-        }
-    }
+    private static java.util.regex.Pattern f1257g;
 
     static {
         updateLocale();
-        k.h(t1.class);
+        android.ext.k.h(android.ext.t1.class);
         f1254d = null;
         f1255e = null;
         f1256f = null;
@@ -147,29 +34,29 @@ public abstract class t1 {
     }
 
     /* JADX WARN: Code duplicated, block: B:16:0x005b  */
-    private static void A(b bVar) {
+    private static void A(android.ext.t1$b t1_b) {
         int[] iArr = f1256f;
         if (iArr == null) {
-            iArr = new int[]{1, c.E(1), 2, c.E(2), 4, c.E(4), 8, c.E(8)};
+            iArr = new int[]{1, android.ext.c.E(1), 2, android.ext.c.E(2), 4, android.ext.c.E(4), 8, android.ext.c.E(8)};
             f1256f = iArr;
         }
         int length = iArr.length;
         int i = 0;
         for (int i2 = 0; i2 < length; i2 += 2) {
             int i3 = iArr[i2 + 1];
-            if (bVar.f1262b) {
+            if (t1_b.f1262b) {
                 int i4 = (i3 * 8) - 1;
-                if ((bVar.f1261a >> i4) == ((-1) >> i4)) {
+                if ((t1_b.f1261a >> i4) == ((-1) >> i4)) {
                     i |= iArr[i2];
                 }
-            } else if (i3 == 8 || (bVar.f1261a >> (i3 * 8)) == 0) {
+            } else if (i3 == 8 || (t1_b.f1261a >> (i3 * 8)) == 0) {
                 i |= iArr[i2];
             }
         }
-        bVar.f1263c = i | 32;
+        t1_b.f1263c = i | 32;
     }
 
-    public static long B(String str) {
+    public static long B(java.lang.String str) {
         long jCharAt = 0;
         if (str.length() < 2) {
             return 0L;
@@ -195,7 +82,7 @@ public abstract class t1 {
         return jCharAt;
     }
 
-    public static int C(String str) {
+    public static int C(java.lang.String str) {
         if (str.length() > 2 && str.charAt(0) == '~') {
             char cCharAt = str.charAt(1);
             if (cCharAt == 'A') {
@@ -213,76 +100,76 @@ public abstract class t1 {
         return 0;
     }
 
-    private static byte[] a(byte[] bArr, String str) {
-        String strReplace = str.replace(" ", "").replace("\t", "").replace("\r", "").replace("\n", "");
+    private static byte[] a(byte[] bArr, java.lang.String str) {
+        java.lang.String strReplace = str.replace(" ", "").replace("\t", "").replace("\r", "").replace("\n", "");
         if (strReplace.length() < 2) {
             return bArr;
         }
         int length = strReplace.length() & (-2);
         int length2 = bArr.length;
-        byte[] bArrCopyOf = Arrays.copyOf(bArr, (length / 2) + length2);
+        byte[] bArrCopyOf = java.util.Arrays.copyOf(bArr, (length / 2) + length2);
         int i = 0;
         while (i < length) {
             int i2 = i + 2;
-            bArrCopyOf[(i / 2) + length2] = (byte) Integer.parseInt(strReplace.substring(i, i2), 16);
+            bArrCopyOf[(i / 2) + length2] = (byte) java.lang.Integer.parseInt(strReplace.substring(i, i2), 16);
             i = i2;
         }
         return bArrCopyOf;
     }
 
-    private static String b(String str, boolean z) {
+    private static java.lang.String b(java.lang.String str, boolean z) {
         if (str == null) {
-            throw new NumberFormatException(z(R.string.input_number));
+            throw new java.lang.NumberFormatException(z(catch_.me_.if_.you_.can_.R$string.input_number));
         }
         if (m(str) || C(str) != 0) {
             return str;
         }
-        String lowerCase = str.trim().toLowerCase(Locale.US);
+        java.lang.String lowerCase = str.trim().toLowerCase(java.util.Locale.US);
         if (z) {
             lowerCase = e(lowerCase);
         }
         if (lowerCase.length() == 0) {
-            throw new NumberFormatException(z(R.string.input_number));
+            throw new java.lang.NumberFormatException(z(catch_.me_.if_.you_.can_.R$string.input_number));
         }
-        if ((Config.B & 4096) == 0) {
+        if ((android.ext.Config.B & 4096) == 0) {
             return lowerCase;
         }
-        Pattern patternCompile = f1257g;
+        java.util.regex.Pattern patternCompile = f1257g;
         if (patternCompile == null) {
             try {
-                patternCompile = Pattern.compile("[^\\p{XDigit}" + f1252b + f1251a + ".hrwxqHRWXQ~?*^$:;-]+");
+                patternCompile = java.util.regex.Pattern.compile("[^\\p{XDigit}" + f1252b + f1251a + ".hrwxqHRWXQ~?*^$:;-]+");
                 f1257g = patternCompile;
-            } catch (Throwable th) {
-                e1.a(th);
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.a(th);
             }
         }
         if (patternCompile == null) {
             return lowerCase;
         }
         try {
-            String strReplaceAll = patternCompile.matcher(lowerCase).replaceAll("");
+            java.lang.String strReplaceAll = patternCompile.matcher(lowerCase).replaceAll("");
             if (strReplaceAll.equals(lowerCase)) {
                 return lowerCase;
             }
-            e1.d("strip: '" + patternCompile.pattern() + "': '" + lowerCase + "' -> '" + strReplaceAll + '\'');
+            android.ext.e1.d("strip: '" + patternCompile.pattern() + "': '" + lowerCase + "' -> '" + strReplaceAll + '\'');
             return strReplaceAll;
-        } catch (Throwable th2) {
-            e1.a(th2);
+        } catch (java.lang.Throwable th2) {
+            android.ext.e1.a(th2);
             return lowerCase;
         }
     }
 
     /* JADX WARN: Code duplicated, block: B:24:0x005e  */
-    private static b c(b bVar, int i, int i2) {
+    private static android.ext.t1$b c(android.ext.t1$b t1_b, int i, int i2) {
         long jFloatToRawIntBits;
         int i3 = i2 & 127;
         if (i3 == 1 || i3 == 2 || i3 == 4 || i3 == 8) {
-            bVar.f1261a = i;
-            bVar.f1263c = i3;
+            t1_b.f1261a = i;
+            t1_b.f1263c = i3;
         } else {
             int i4 = 16;
             if (i3 == 16) {
-                jFloatToRawIntBits = Float.floatToRawIntBits(i);
+                jFloatToRawIntBits = java.lang.Float.floatToRawIntBits(i);
                 if (jFloatToRawIntBits < 0) {
                     jFloatToRawIntBits = (jFloatToRawIntBits & 2147483647L) + 2147483648L;
                 }
@@ -290,22 +177,22 @@ public abstract class t1 {
                 i4 = 64;
                 if (i3 != 64) {
                     if (i3 != 127) {
-                        e1.p("Unknown flags: " + i3 + " we use Auto parsing");
+                        android.ext.e1.p("Unknown flags: " + i3 + " we use Auto parsing");
                     }
-                    bVar.f1261a = i;
-                    bVar.f1263c = 127;
+                    t1_b.f1261a = i;
+                    t1_b.f1263c = 127;
                 } else {
-                    jFloatToRawIntBits = Double.doubleToRawLongBits(i);
+                    jFloatToRawIntBits = java.lang.Double.doubleToRawLongBits(i);
                 }
             } else {
-                bVar.f1261a = i;
-                bVar.f1263c = i3;
+                t1_b.f1261a = i;
+                t1_b.f1263c = i3;
             }
-            bVar.f1261a = jFloatToRawIntBits;
-            bVar.f1263c = i4;
+            t1_b.f1261a = jFloatToRawIntBits;
+            t1_b.f1263c = i4;
         }
-        bVar.f1262b = i < 0;
-        return bVar;
+        t1_b.f1262b = i < 0;
+        return t1_b;
     }
 
     /* JADX WARN: Code duplicated, block: B:19:0x004d  */
@@ -315,74 +202,50 @@ public abstract class t1 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
     */
-    public static java.lang.String d(java.lang.String r3) {
-        /*
-            int r0 = r3.length()
-            if (r0 <= 0) goto L69
-            java.lang.StringBuilder r0 = new java.lang.StringBuilder
-            r0.<init>()
-            r1 = 0
-            char r3 = r3.charAt(r1)
-            r0.append(r3)
-            r1 = 58
-            r2 = 2131297005(0x7f0902ed, float:1.8211943E38)
-            if (r3 == r1) goto L5a
-            r1 = 59
-            if (r3 == r1) goto L50
-            r1 = 72
-            if (r3 == r1) goto L4d
-            r1 = 81
-            if (r3 == r1) goto L2f
-            r1 = 104(0x68, float:1.46E-43)
-            if (r3 == r1) goto L4d
-            r1 = 113(0x71, float:1.58E-43)
-            if (r3 == r1) goto L2f
-            goto L64
-        L2f:
-            java.lang.String r3 = " DF 59 '"
-            r0.append(r3)
-            java.lang.String r3 = android.ext.b2.f(r2)
-            r0.append(r3)
-            java.lang.String r3 = " UTF-8' 37 5F \""
-            r0.append(r3)
-            java.lang.String r3 = android.ext.b2.f(r2)
-            r0.append(r3)
-            java.lang.String r3 = " UTF-16LE\" 48 00"
-        L49:
-            r0.append(r3)
-            goto L64
-        L4d:
-            java.lang.String r3 = " DF 59 37 5F 00"
-            goto L49
-        L50:
-            java.lang.String r3 = android.ext.b2.f(r2)
-            r0.append(r3)
-            java.lang.String r3 = " UTF-16LE"
-            goto L49
-        L5a:
-            java.lang.String r3 = android.ext.b2.f(r2)
-            r0.append(r3)
-            java.lang.String r3 = " UTF-8"
-            goto L49
-        L64:
-            java.lang.String r3 = r0.toString()
-            return r3
-        L69:
-            java.lang.String r3 = ""
-            return r3
-        */
-        throw new UnsupportedOperationException("Method not decompiled: android.ext.t1.d(java.lang.String):java.lang.String");
+    public static java.lang.String d(java.lang.String str) {
+        java.lang.String str2;
+        if (str.length() <= 0) {
+            return "";
+        }
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
+        char cCharAt = str.charAt(0);
+        sb.append(cCharAt);
+        if (cCharAt == ':') {
+            sb.append(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.text));
+            str2 = " UTF-8";
+        } else {
+            if (cCharAt != ';') {
+                if (cCharAt == 'H') {
+                    str2 = " DF 59 37 5F 00";
+                } else {
+                    if (cCharAt != 'Q') {
+                        if (cCharAt == 'h') {
+                            str2 = " DF 59 37 5F 00";
+                        }
+                    }
+                    sb.append(" DF 59 '");
+                    sb.append(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.text));
+                    sb.append(" UTF-8' 37 5F \"");
+                    sb.append(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.text));
+                    str2 = " UTF-16LE\" 48 00";
+                }
+                return sb.toString();
+            }
+            sb.append(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.text));
+            str2 = " UTF-16LE";
+        }
+        sb.append(str2);
+        return sb.toString();
     }
 
-    public static String e(String str) {
-        String strReplace = str.replace(" ", "").replace(" ", "").replace(f1251a, "");
+    public static java.lang.String e(java.lang.String str) {
+        java.lang.String strReplace = str.replace(" ", "").replace(" ", "").replace(f1251a, "");
         return f1253c ? strReplace.replace(f1252b, '.') : strReplace;
     }
 
-    public static String f(String str) {
-        String strReplace = str.replace(" ", "").replace(" ", "").replace(",", "");
+    public static java.lang.String f(java.lang.String str) {
+        java.lang.String strReplace = str.replace(" ", "").replace(" ", "").replace(",", "");
         return f1253c ? strReplace.replace('.', f1252b) : strReplace;
     }
 
@@ -401,15 +264,15 @@ public abstract class t1 {
         return bArr;
     }
 
-    public static byte[] h(CharSequence charSequence) {
+    public static byte[] h(java.lang.CharSequence charSequence) {
         boolean z;
-        String strSubstring;
+        java.lang.String strSubstring;
         if (charSequence.length() < 1) {
-            return d.b.f1513c;
+            return gg_d.b.f1513c;
         }
         char cCharAt = charSequence.charAt(0);
-        byte[] bArrCopyOf = d.b.f1513c;
-        boolean z2 = !(charSequence instanceof String) && (charSequence instanceof Editable);
+        byte[] bArrCopyOf = gg_d.b.f1513c;
+        boolean z2 = !(charSequence instanceof java.lang.String) && (charSequence instanceof android.text.Editable);
         if (cCharAt != ';') {
             if (cCharAt != 'H') {
                 if (cCharAt != 'Q') {
@@ -436,15 +299,15 @@ public abstract class t1 {
                         if (c2 != 0) {
                             byte[] bytes = strSubstring.getBytes(i(c2 == '\"'));
                             if (z2) {
-                                String strTrim = InOut.b(bytes, 0, bytes.length).trim();
-                                ((Editable) charSequence).replace((i - strSubstring.length()) - 1, i + 1, strTrim);
+                                java.lang.String strTrim = android.ext.InOut.b(bytes, 0, bytes.length).trim();
+                                ((android.text.Editable) charSequence).replace((i - strSubstring.length()) - 1, i + 1, strTrim);
                                 int length = strTrim.length() - (strSubstring.length() + 2);
                                 i += length;
                                 i2 += length;
                             } else {
                                 int length2 = bArrCopyOf.length;
-                                bArrCopyOf = Arrays.copyOf(bArrCopyOf, bytes.length + length2);
-                                System.arraycopy(bytes, 0, bArrCopyOf, length2, bytes.length);
+                                bArrCopyOf = java.util.Arrays.copyOf(bArrCopyOf, bytes.length + length2);
+                                java.lang.System.arraycopy(bytes, 0, bArrCopyOf, length2, bytes.length);
                             }
                         } else if (!z2) {
                             bArrCopyOf = a(bArrCopyOf, strSubstring);
@@ -459,65 +322,65 @@ public abstract class t1 {
         }
         byte[] bytes2 = charSequence.toString().substring(1).getBytes(i(z));
         if (z2) {
-            ((Editable) charSequence).replace(1, charSequence.length(), ' ' + InOut.b(bytes2, 0, bytes2.length).trim());
+            ((android.text.Editable) charSequence).replace(1, charSequence.length(), ' ' + android.ext.InOut.b(bytes2, 0, bytes2.length).trim());
         }
         return bytes2;
     }
 
-    public static Charset i(boolean z) {
-        Charset charset = z ? f1255e : f1254d;
+    public static java.nio.charset.Charset i(boolean z) {
+        java.nio.charset.Charset charset = z ? f1255e : f1254d;
         if (charset != null) {
             return charset;
         }
         if (z) {
-            Charset charset2 = StandardCharsets.UTF_16LE;
+            java.nio.charset.Charset charset2 = java.nio.charset.StandardCharsets.UTF_16LE;
             f1255e = charset2;
             return charset2;
         }
-        Charset charset3 = StandardCharsets.UTF_8;
+        java.nio.charset.Charset charset3 = java.nio.charset.StandardCharsets.UTF_8;
         f1254d = charset3;
         return charset3;
     }
 
-    private static NumberFormatException j(String str, String str2, int i, boolean z) {
-        StringBuilder sb = new StringBuilder();
-        sb.append(z(R.string.invalid_number));
+    private static java.lang.NumberFormatException j(java.lang.String str, java.lang.String str2, int i, boolean z) {
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
+        sb.append(z(catch_.me_.if_.you_.can_.R$string.invalid_number));
         sb.append(" '");
         sb.append(str2);
         sb.append("'.");
         if (i == 10 && str.matches(".*[A-Fa-f]+.*")) {
             sb.append("\n\n");
-            sb.append(z(R.string.forgot_h));
+            sb.append(z(catch_.me_.if_.you_.can_.R$string.forgot_h));
         }
         if (z && str.indexOf(f1252b) != -1) {
             sb.append("\n\n");
-            sb.append(z(R.string.integer_type));
+            sb.append(z(catch_.me_.if_.you_.can_.R$string.integer_type));
         }
         sb.append("\n\n");
-        sb.append(z(R.string.locale_ui));
+        sb.append(z(catch_.me_.if_.you_.can_.R$string.locale_ui));
         sb.append(" (");
-        sb.append(k.b());
+        sb.append(android.ext.k.b());
         sb.append("):\n");
-        sb.append(Tools.L1(z(R.string.locale_desc), Character.valueOf(f1252b), f1251a));
-        a aVar = new a(sb.toString());
-        aVar.c("'" + str2 + "'");
-        return aVar;
+        sb.append(android.ext.Tools.L1(z(catch_.me_.if_.you_.can_.R$string.locale_desc), java.lang.Character.valueOf(f1252b), f1251a));
+        android.ext.t1$a t1_a = new android.ext.t1$a(sb.toString());
+        t1_a.c("'" + str2 + "'");
+        return t1_a;
     }
 
-    public static Object[] k() {
-        Object objSubtract;
+    public static java.lang.Object[] k() {
+        java.lang.Object objSubtract;
         try {
-            BigInteger bigInteger = new BigInteger(Long.toString(Long.MAX_VALUE));
-            BigInteger bigInteger2 = BigInteger.ONE;
+            java.math.BigInteger bigInteger = new java.math.BigInteger(java.lang.Long.toString(Long.MAX_VALUE));
+            java.math.BigInteger bigInteger2 = java.math.BigInteger.ONE;
             objSubtract = bigInteger.add(bigInteger2).shiftLeft(1).subtract(bigInteger2);
-        } catch (ArithmeticException e2) {
-            e1.l("Error get possible range for long as BigInteger", e2);
+        } catch (java.lang.ArithmeticException e2) {
+            android.ext.e1.l("Error get possible range for long as BigInteger", e2);
             objSubtract = Long.MAX_VALUE;
         }
-        return new Object[]{(byte) -128, 255L, Short.MIN_VALUE, 65535L, Integer.MIN_VALUE, 4294967295L, Long.MIN_VALUE, objSubtract};
+        return new java.lang.Object[]{(byte) -128, 255L, Short.MIN_VALUE, 65535L, Integer.MIN_VALUE, 4294967295L, Long.MIN_VALUE, objSubtract};
     }
 
-    public static char l(String str) {
+    public static char l(java.lang.String str) {
         if (str.length() > 0) {
             char cCharAt = str.charAt(0);
             if (cCharAt == ':') {
@@ -533,18 +396,18 @@ public abstract class t1 {
         return (char) 0;
     }
 
-    public static boolean m(String str) {
+    public static boolean m(java.lang.String str) {
         char cCharAt;
         return str.length() > 0 && ((cCharAt = str.charAt(0)) == ':' || cCharAt == ';' || cCharAt == 'H' || cCharAt == 'Q' || cCharAt == 'h' || cCharAt == 'q');
     }
 
-    public static boolean n(String str) {
+    public static boolean n(java.lang.String str) {
         char cCharAt;
         return str.length() > 0 && ((cCharAt = str.charAt(0)) == ':' || cCharAt == ';' || cCharAt == 'Q' || cCharAt == 'q' || cCharAt == '~');
     }
 
-    public static b o(b bVar, String str, int i, boolean z) {
-        return p(bVar, str, i, z, 0L);
+    public static android.ext.t1$b o(android.ext.t1$b t1_b, java.lang.String str, int i, boolean z) {
+        return p(t1_b, str, i, z, 0L);
     }
 
     /* JADX WARN: Code duplicated, block: B:103:0x0177  */
@@ -564,20 +427,20 @@ public abstract class t1 {
     /* JADX WARN: Code duplicated, block: B:76:0x0119  */
     /* JADX WARN: Code duplicated, block: B:78:0x011d  */
     /* JADX WARN: Instruction removed from duplicated block: B:111:0x01be, please report this as an issue */
-    public static b p(b bVar, String str, int i, boolean z, long j) {
+    public static android.ext.t1$b p(android.ext.t1$b t1_b, java.lang.String str, int i, boolean z, long j) {
         int iC;
-        StringBuilder sb;
+        java.lang.StringBuilder sb;
         int iN;
         int i2;
-        b bVarY;
+        android.ext.t1$b t1_bY;
         int i3;
-        Object[] objArrK;
+        java.lang.Object[] objArrK;
         int i4;
         int i5;
-        String strF;
-        a aVar;
-        String str2;
-        b bVar2 = bVar == null ? new b() : bVar;
+        java.lang.String strF;
+        android.ext.t1$a t1_a;
+        java.lang.String str2;
+        android.ext.t1$b t1_b2 = t1_b == null ? new android.ext.t1$b() : t1_b;
         int length = str.length();
         int i6 = 3;
         if (length == 1 || length == 2 || (length == 3 && str.charAt(0) == '-')) {
@@ -591,11 +454,11 @@ public abstract class t1 {
                     if (i7 == 1) {
                         i9 = -i9;
                     }
-                    return c(bVar2, i9, i);
+                    return c(t1_b2, i9, i);
                 }
             }
         }
-        String strB = b(str, true);
+        java.lang.String strB = b(str, true);
         if (m(strB)) {
             iC = 127;
         } else {
@@ -603,21 +466,21 @@ public abstract class t1 {
             if (iC != 0) {
                 char cCharAt3 = strB.charAt(1);
                 if (cCharAt3 == 'T') {
-                    String strTrim = strB.substring(2).trim();
-                    sb = new StringBuilder();
-                    iN = n.p(null, j, strTrim);
+                    java.lang.String strTrim = strB.substring(2).trim();
+                    sb = new java.lang.StringBuilder();
+                    iN = android.ext.n.p(null, j, strTrim);
                 } else if (cCharAt3 == 'A') {
                     if (strB.charAt(2) == '8') {
-                        String strTrim2 = strB.substring(3).trim();
-                        sb = new StringBuilder();
-                        iN = m.k(null, null, j, strTrim2);
+                        java.lang.String strTrim2 = strB.substring(3).trim();
+                        sb = new java.lang.StringBuilder();
+                        iN = android.ext.m.k(null, null, j, strTrim2);
                     } else {
-                        String strTrim3 = strB.substring(2).trim();
-                        sb = new StringBuilder();
-                        iN = n.n(null, j, strTrim3);
+                        java.lang.String strTrim3 = strB.substring(2).trim();
+                        sb = new java.lang.StringBuilder();
+                        iN = android.ext.n.n(null, j, strTrim3);
                     }
                 }
-                sb.append(Integer.toHexString(iN).toUpperCase(Locale.US));
+                sb.append(java.lang.Integer.toHexString(iN).toUpperCase(java.util.Locale.US));
                 sb.append('h');
                 strB = sb.toString();
             } else {
@@ -724,46 +587,46 @@ public abstract class t1 {
                 }
             } else {
                 if (iC == 16) {
-                    return w(bVar2, strB, str);
+                    return w(t1_b2, strB, str);
                 }
                 if (iC != 32 && iC != 36) {
                     if (iC == 64) {
-                        return v(bVar2, strB, str);
+                        return v(t1_b2, strB, str);
                     }
                     if (iC != 127) {
-                        e1.p("Unknown flags: " + iC + " we use Auto parsing");
+                        android.ext.e1.p("Unknown flags: " + iC + " we use Auto parsing");
                     }
-                    return q(bVar2, strB, str);
+                    return q(t1_b2, strB, str);
                 }
             }
-            bVarY = y(bVar2, strB, str);
+            t1_bY = y(t1_b2, strB, str);
             if (iC != 0) {
-                i3 = bVarY.f1263c & iC;
-                bVarY.f1263c = i3;
+                i3 = t1_bY.f1263c & iC;
+                t1_bY.f1263c = i3;
                 if (i3 == 0) {
                     objArrK = k();
                     i4 = i6 * 2;
                     i5 = i4 + 1;
-                    strF = t2.f(b2.g(" [__d__; __d__]."), objArrK[i4], objArrK[i5]);
-                    StringBuilder sb2 = new StringBuilder();
-                    sb2.append(t2.f(z(R.string.number_out_of_range), str));
+                    strF = android.ext.t2.f(android.ext.b2.g(" [__d__; __d__]."), objArrK[i4], objArrK[i5]);
+                    java.lang.StringBuilder sb2 = new java.lang.StringBuilder();
+                    sb2.append(android.ext.t2.f(z(catch_.me_.if_.you_.can_.R$string.number_out_of_range), str));
                     if (strF == null) {
                         str2 = " possibleRange for " + i6;
                     } else {
                         str2 = strF;
                     }
                     sb2.append(str2);
-                    aVar = new a(sb2.toString());
-                    aVar.c(str);
+                    t1_a = new android.ext.t1$a(sb2.toString());
+                    t1_a.c(str);
                     if (strF != null) {
-                        throw aVar;
+                        throw t1_a;
                     }
-                    aVar.b(objArrK[i4]);
-                    aVar.b(objArrK[i5]);
-                    throw aVar;
+                    t1_a.b(objArrK[i4]);
+                    t1_a.b(objArrK[i5]);
+                    throw t1_a;
                 }
             }
-            return bVarY;
+            return t1_bY;
         }
         i2 = 0;
         if (i2 == 3) {
@@ -774,56 +637,56 @@ public abstract class t1 {
         } else {
             i6 = i2;
         }
-        bVarY = y(bVar2, strB, str);
+        t1_bY = y(t1_b2, strB, str);
         if (iC != 0) {
-            i3 = bVarY.f1263c & iC;
-            bVarY.f1263c = i3;
+            i3 = t1_bY.f1263c & iC;
+            t1_bY.f1263c = i3;
             if (i3 == 0) {
                 objArrK = k();
                 i4 = i6 * 2;
                 i5 = i4 + 1;
-                strF = t2.f(b2.g(" [__d__; __d__]."), objArrK[i4], objArrK[i5]);
-                StringBuilder sb3 = new StringBuilder();
-                sb3.append(t2.f(z(R.string.number_out_of_range), str));
+                strF = android.ext.t2.f(android.ext.b2.g(" [__d__; __d__]."), objArrK[i4], objArrK[i5]);
+                java.lang.StringBuilder sb3 = new java.lang.StringBuilder();
+                sb3.append(android.ext.t2.f(z(catch_.me_.if_.you_.can_.R$string.number_out_of_range), str));
                 if (strF == null) {
                     str2 = " possibleRange for " + i6;
                 } else {
                     str2 = strF;
                 }
                 sb3.append(str2);
-                aVar = new a(sb3.toString());
-                aVar.c(str);
+                t1_a = new android.ext.t1$a(sb3.toString());
+                t1_a.c(str);
                 if (strF != null) {
-                    throw aVar;
+                    throw t1_a;
                 }
-                aVar.b(objArrK[i4]);
-                aVar.b(objArrK[i5]);
-                throw aVar;
+                t1_a.b(objArrK[i4]);
+                t1_a.b(objArrK[i5]);
+                throw t1_a;
             }
         }
-        return bVarY;
+        return t1_bY;
     }
 
-    private static b q(b bVar, String str, String str2) {
-        String strB = b(str, false);
+    private static android.ext.t1$b q(android.ext.t1$b t1_b, java.lang.String str, java.lang.String str2) {
+        java.lang.String strB = b(str, false);
         try {
-            b bVarY = y(bVar, strB, str2);
-            bVarY.f1263c |= 80;
-            return bVarY;
-        } catch (NumberFormatException e2) {
+            android.ext.t1$b t1_bY = y(t1_b, strB, str2);
+            t1_bY.f1263c |= 80;
+            return t1_bY;
+        } catch (java.lang.NumberFormatException e2) {
             try {
-                b bVarV = v(bVar, strB, str2);
-                long j = bVarV.f1261a;
+                android.ext.t1$b t1_bV = v(t1_b, strB, str2);
+                long j = t1_bV.f1261a;
                 try {
-                    bVarV = w(bVarV, strB, str2);
-                    bVarV.f1261a = j;
-                    bVarV.f1263c = 80;
-                    return bVarV;
-                } catch (NumberFormatException unused) {
-                    return bVarV;
+                    t1_bV = w(t1_bV, strB, str2);
+                    t1_bV.f1261a = j;
+                    t1_bV.f1263c = 80;
+                    return t1_bV;
+                } catch (java.lang.NumberFormatException unused) {
+                    return t1_bV;
                 }
-            } catch (NumberFormatException e3) {
-                NumberFormatException numberFormatExceptionJ = j(strB, str2, 0, false);
+            } catch (java.lang.NumberFormatException e3) {
+                java.lang.NumberFormatException numberFormatExceptionJ = j(strB, str2, 0, false);
                 numberFormatExceptionJ.initCause(e3);
                 numberFormatExceptionJ.addSuppressed(e2);
                 throw numberFormatExceptionJ;
@@ -831,7 +694,7 @@ public abstract class t1 {
         }
     }
 
-    public static long r(String str, int i) {
+    public static long r(java.lang.String str, int i) {
         return s(b(str, true), i);
     }
 
@@ -841,79 +704,56 @@ public abstract class t1 {
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
     */
-    private static long s(java.lang.String r4, int r5) {
-        /*
-            r0 = 0
-            java.lang.String r4 = b(r4, r0)
-            long r4 = java.lang.Long.parseLong(r4, r5)     // Catch: java.lang.NumberFormatException -> La
-            goto L4a
-        La:
-            r0 = move-exception
-            java.math.BigInteger r1 = new java.math.BigInteger     // Catch: java.lang.ArithmeticException -> L1d java.lang.NumberFormatException -> L4d
-            r1.<init>(r4, r5)     // Catch: java.lang.ArithmeticException -> L1d java.lang.NumberFormatException -> L4d
-            int r2 = r1.bitLength()     // Catch: java.lang.ArithmeticException -> L1d java.lang.NumberFormatException -> L4d
-            r3 = 64
-            if (r2 > r3) goto L1f
-            long r4 = r1.longValue()     // Catch: java.lang.ArithmeticException -> L1d java.lang.NumberFormatException -> L4d
-            goto L4a
-        L1d:
-            r1 = move-exception
-            goto L20
-        L1f:
-            throw r0     // Catch: java.lang.ArithmeticException -> L1d java.lang.NumberFormatException -> L4d
-        L20:
-            java.lang.StringBuilder r2 = new java.lang.StringBuilder
-            r2.<init>()
-            java.lang.String r3 = "Error parse "
-            r2.append(r3)
-            r2.append(r4)
-            java.lang.String r3 = " with "
-            r2.append(r3)
-            r2.append(r5)
-            java.lang.String r3 = " as BigInteger"
-            r2.append(r3)
-            java.lang.String r2 = r2.toString()
-            android.ext.e1.s(r2, r1)
-            r1 = 10
-            if (r5 != r1) goto L4c
-            double r4 = java.lang.Double.parseDouble(r4)     // Catch: java.lang.NumberFormatException -> L4b
-            long r4 = (long) r4
-        L4a:
-            return r4
-        L4b:
-            throw r0
-        L4c:
-            throw r0
-        L4d:
-            throw r0
-        */
-        throw new UnsupportedOperationException("Method not decompiled: android.ext.t1.s(java.lang.String, int):long");
+    private static long s(java.lang.String str, int i) {
+        java.lang.String strB = b(str, false);
+        try {
+            return java.lang.Long.parseLong(strB, i);
+        } catch (java.lang.NumberFormatException e2) {
+            try {
+                java.math.BigInteger bigInteger = new java.math.BigInteger(strB, i);
+                if (bigInteger.bitLength() <= 64) {
+                    return bigInteger.longValue();
+                }
+                throw e2;
+            } catch (java.lang.ArithmeticException e3) {
+                android.ext.e1.s("Error parse " + strB + " with " + i + " as BigInteger", e3);
+                if (i != 10) {
+                    throw e2;
+                }
+                try {
+                    return (long) java.lang.Double.parseDouble(strB);
+                } catch (java.lang.NumberFormatException unused) {
+                    throw e2;
+                }
+            } catch (java.lang.NumberFormatException unused2) {
+                throw e2;
+            }
+        }
     }
 
-    public static b t(b bVar, String str, String str2) {
-        return v(bVar, b(str, true), str2);
+    public static android.ext.t1$b t(android.ext.t1$b t1_b, java.lang.String str, java.lang.String str2) {
+        return v(t1_b, b(str, true), str2);
     }
 
-    public static b u(String str) {
-        return t(new b(), str, str);
+    public static android.ext.t1$b u(java.lang.String str) {
+        return t(new android.ext.t1$b(), str, str);
     }
 
     public static void updateLocale() {
-        String[] strArr;
-        String str;
-        String str2;
-        String str3 = "e|whRughuPdvn";
-        String str4 = "dqgurlg1h{w1LqRxw";
-        String str5 = "dqgurlg1frqwhqw1Frqwh{w";
-        String str6 = "b";
-        String strM1 = Tools.M1("%d", "%d", "1", 1);
-        String str7 = "%,d";
-        f1251a = Tools.M1("%,d", "%,d", "1,811", 1811).replace(strM1, "");
-        String str8 = "%.3f";
-        f1252b = Tools.M1("%.3f", "%.3f", "5.111", Double.valueOf(5.111d)).replace(strM1, "").charAt(0);
-        String[] strArr2 = {"frp1vdyhjdph1VdyhvUhvwrulqj", "edqqhu", "edqqhu1edqqhu1edqqhu5"};
+        java.lang.String[] strArr;
+        java.lang.String str;
+        java.lang.String str2;
+        java.lang.String str3 = "e|whRughuPdvn";
+        java.lang.String str4 = "dqgurlg1h{w1LqRxw";
+        java.lang.String str5 = "dqgurlg1frqwhqw1Frqwh{w";
+        java.lang.String str6 = "b";
+        java.lang.String strM1 = android.ext.Tools.M1("%d", "%d", "1", 1);
+        java.lang.String str7 = "%,d";
+        f1251a = android.ext.Tools.M1("%,d", "%,d", "1,811", 1811).replace(strM1, "");
+        java.lang.String str8 = "%.3f";
+        f1252b = android.ext.Tools.M1("%.3f", "%.3f", "5.111", java.lang.Double.valueOf(5.111d)).replace(strM1, "").charAt(0);
+        java.lang.String[] strArr2 = {"frp1vdyhjdph1VdyhvUhvwrulqj", "edqqhu", "edqqhu1edqqhu1edqqhu5"};
         int i = 0;
         while (i < 3) {
             try {
@@ -924,56 +764,56 @@ public abstract class t1 {
                         strM1 = strM1;
                         str7 = str7;
                         try {
-                            Class<?> cls = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(null, strArr2[i]).toString());
+                            java.lang.Class<?> cls = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(null, strArr2[i]).toString());
                             i = i;
                             try {
-                                Object obj = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(cls, "dqgurlg1h{w1PdlqVhuylfh").toString()).getField(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(cls, "frqwh{w").toString()).get(cls);
-                                Class<?> cls2 = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str5).toString());
-                                Class<?> cls3 = Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", ""));
-                                String strReplace = "brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, "");
+                                java.lang.Object obj = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(cls, "dqgurlg1h{w1PdlqVhuylfh").toString()).getField(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(cls, "frqwh{w").toString()).get(cls);
+                                java.lang.Class<?> cls2 = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str5).toString());
+                                java.lang.Class<?> cls3 = java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", ""));
+                                java.lang.String strReplace = "brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, "");
                                 try {
-                                    Class<?>[] clsArr = new Class[1];
-                                    clsArr[0] = Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""));
-                                    Object objInvoke = cls2.getMethod(cls3.getMethod(strReplace, clsArr).invoke(obj, "jhwSdfndjhQdph").toString(), new Class[0]).invoke(obj, new Object[0]);
-                                    Method method = Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
-                                    Object[] objArr = new Object[1];
+                                    java.lang.Class<?>[] clsArr = new java.lang.Class[1];
+                                    clsArr[0] = java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""));
+                                    java.lang.Object objInvoke = cls2.getMethod(cls3.getMethod(strReplace, clsArr).invoke(obj, "jhwSdfndjhQdph").toString(), new java.lang.Class[0]).invoke(obj, new java.lang.Object[0]);
+                                    java.lang.reflect.Method method = java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
+                                    java.lang.Object[] objArr = new java.lang.Object[1];
                                     objArr[0] = str5;
                                     str5 = str5;
                                     try {
-                                        Object objInvoke2 = Class.forName(method.invoke(obj, objArr).toString()).getMethod(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "jhwSdfndjhPdqdjhu").toString(), new Class[0]).invoke(obj, new Object[0]);
+                                        java.lang.Object objInvoke2 = java.lang.Class.forName(method.invoke(obj, objArr).toString()).getMethod(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "jhwSdfndjhPdqdjhu").toString(), new java.lang.Class[0]).invoke(obj, new java.lang.Object[0]);
                                         try {
-                                            Method method2 = Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
-                                            Object[] objArr2 = new Object[1];
+                                            java.lang.reflect.Method method2 = java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
+                                            java.lang.Object[] objArr2 = new java.lang.Object[1];
                                             objArr2[0] = "dqgurlg1frqwhqw1sp1SdfndjhPdqdjhu";
-                                            Class<?> cls4 = Class.forName(method2.invoke(obj, objArr2).toString());
+                                            java.lang.Class<?> cls4 = java.lang.Class.forName(method2.invoke(obj, objArr2).toString());
                                             str3 = str3;
                                             try {
-                                                String string = Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "jhwSdfndjhLqir").toString();
-                                                Class<?>[] clsArr2 = new Class[2];
+                                                java.lang.String string = java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "jhwSdfndjhLqir").toString();
+                                                java.lang.Class<?>[] clsArr2 = new java.lang.Class[2];
                                                 str4 = str4;
                                                 try {
-                                                    clsArr2[0] = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1Vwulqj").toString());
-                                                    String str9 = str6;
+                                                    clsArr2[0] = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1Vwulqj").toString());
+                                                    java.lang.String str9 = str6;
                                                     try {
-                                                        clsArr2[1] = (Class) Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1Lqwhjhu").toString()).getField(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "W\\SH").toString()).get(obj);
-                                                        Object objInvoke3 = cls4.getMethod(string, clsArr2).invoke(objInvoke2, objInvoke, 0);
+                                                        clsArr2[1] = (java.lang.Class) java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1Lqwhjhu").toString()).getField(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str6, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "W\\SH").toString()).get(obj);
+                                                        java.lang.Object objInvoke3 = cls4.getMethod(string, clsArr2).invoke(objInvoke2, objInvoke, 0);
                                                         str2 = str9;
                                                         try {
-                                                            Field field = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str4).toString()).getField(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str3).toString());
-                                                            Class<?> cls5 = Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str4).toString());
+                                                            java.lang.reflect.Field field = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str4).toString()).getField(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str3).toString());
+                                                            java.lang.Class<?> cls5 = java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, str4).toString());
                                                             try {
-                                                                Method method3 = Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
-                                                                Object[] objArr3 = new Object[1];
+                                                                java.lang.reflect.Method method3 = java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", "")));
+                                                                java.lang.Object[] objArr3 = new java.lang.Object[1];
                                                                 objArr3[0] = str3;
-                                                                field.set(objInvoke2, Integer.valueOf((int) (((long) ((Integer) cls5.getField(method3.invoke(obj, objArr3).toString()).get(objInvoke2)).intValue()) | ((((Long) Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1V|vwhp").toString()).getMethod(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "fxuuhqwWlphPloolv").toString(), new Class[0]).invoke(null, new Object[0])).longValue() - Class.forName(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "dqgurlg1frqwhqw1sp1SdfndjhLqir").toString()).getField(Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "odvwXsgdwhWlph").toString()).getLong(objInvoke3)) >> 26))));
-                                                            } catch (Throwable unused) {
+                                                                field.set(objInvoke2, java.lang.Integer.valueOf((int) (((long) ((java.lang.Integer) cls5.getField(method3.invoke(obj, objArr3).toString()).get(objInvoke2)).intValue()) | ((((java.lang.Long) java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "mdyd1odqj1V|vwhp").toString()).getMethod(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "fxuuhqwWlphPloolv").toString(), new java.lang.Class[0]).invoke(null, new java.lang.Object[0])).longValue() - java.lang.Class.forName(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "dqgurlg1frqwhqw1sp1SdfndjhLqir").toString()).getField(java.lang.Class.forName("wawnwdwrwowiwdw.wewxwtw.wTwowowlwsw".replace("w", "")).getMethod("brbebmbobvbebNbebwbLbibnbebsbCbhbabrbsb".replace(str2, ""), java.lang.Class.forName("cjcacvcac.clcacncgc.cSctcrcicncgc".replace("c", ""))).invoke(obj, "odvwXsgdwhWlph").toString()).getLong(objInvoke3)) >> 26))));
+                                                            } catch (java.lang.Throwable unused) {
                                                             }
-                                                        } catch (Throwable unused2) {
+                                                        } catch (java.lang.Throwable unused2) {
                                                         }
-                                                    } catch (Throwable unused3) {
+                                                    } catch (java.lang.Throwable unused3) {
                                                         str2 = str9;
                                                     }
-                                                } catch (Throwable unused4) {
+                                                } catch (java.lang.Throwable unused4) {
                                                     str2 = str6;
                                                     i++;
                                                     str6 = str2;
@@ -985,7 +825,7 @@ public abstract class t1 {
                                                     str3 = str3;
                                                     str4 = str4;
                                                 }
-                                            } catch (Throwable unused5) {
+                                            } catch (java.lang.Throwable unused5) {
                                                 str4 = str4;
                                                 str2 = str6;
                                                 i++;
@@ -998,32 +838,32 @@ public abstract class t1 {
                                                 str3 = str3;
                                                 str4 = str4;
                                             }
-                                        } catch (Throwable unused6) {
+                                        } catch (java.lang.Throwable unused6) {
                                             str3 = str3;
                                             str4 = str4;
                                             str2 = str6;
                                         }
-                                    } catch (Throwable unused7) {
+                                    } catch (java.lang.Throwable unused7) {
                                         str3 = str3;
                                     }
-                                } catch (Throwable unused8) {
+                                } catch (java.lang.Throwable unused8) {
                                     str3 = str3;
                                     str4 = str4;
                                     str5 = str5;
                                 }
-                            } catch (Throwable unused9) {
+                            } catch (java.lang.Throwable unused9) {
                                 str3 = str3;
                                 str4 = str4;
                                 str5 = str5;
                             }
-                        } catch (Throwable unused10) {
+                        } catch (java.lang.Throwable unused10) {
                             str3 = str3;
                             str4 = str4;
                             str5 = str5;
                             str2 = str6;
                             i = i;
                         }
-                    } catch (Throwable unused11) {
+                    } catch (java.lang.Throwable unused11) {
                         str3 = str3;
                         str4 = str4;
                         str5 = str5;
@@ -1038,7 +878,7 @@ public abstract class t1 {
                         str3 = str3;
                         str4 = str4;
                     }
-                } catch (Throwable unused12) {
+                } catch (java.lang.Throwable unused12) {
                     str = str8;
                     str2 = str6;
                     i++;
@@ -1051,7 +891,7 @@ public abstract class t1 {
                     str3 = str3;
                     str4 = str4;
                 }
-            } catch (Throwable unused13) {
+            } catch (java.lang.Throwable unused13) {
                 strArr = strArr2;
             }
             i++;
@@ -1064,43 +904,43 @@ public abstract class t1 {
             str3 = str3;
             str4 = str4;
         }
-        String str10 = strM1;
-        String str11 = str7;
-        String str12 = str8;
-        String strReplace2 = Tools.M1(str11, str11, "1,111", 1111).replace(str10, "");
+        java.lang.String str10 = strM1;
+        java.lang.String str11 = str7;
+        java.lang.String str12 = str8;
+        java.lang.String strReplace2 = android.ext.Tools.M1(str11, str11, "1,111", 1111).replace(str10, "");
         f1251a = strReplace2;
         if (" ".equals(strReplace2) || "".equals(f1251a)) {
             f1251a = " ";
         }
-        char cCharAt = Tools.M1(str12, str12, "1.111", Double.valueOf(1.111d)).replace(str10, "").charAt(0);
+        char cCharAt = android.ext.Tools.M1(str12, str12, "1.111", java.lang.Double.valueOf(1.111d)).replace(str10, "").charAt(0);
         f1252b = cCharAt;
         f1253c = '.' != cCharAt;
     }
 
-    private static b v(b bVar, String str, String str2) {
+    private static android.ext.t1$b v(android.ext.t1$b t1_b, java.lang.String str, java.lang.String str2) {
         double d2;
         int iIndexOf;
-        String strB = b(str, false);
+        java.lang.String strB = b(str, false);
         if (strB.length() > 0) {
             char cCharAt = strB.charAt(strB.length() - 1);
             if (cCharAt == 'h' || cCharAt == 'r') {
-                long j = y(bVar, strB, str2).f1261a;
+                long j = y(t1_b, strB, str2).f1261a;
                 d2 = j >= 0 ? j : (j & Long.MAX_VALUE) + 9.223372036854776E18d + 1.0d;
             } else {
                 try {
-                    d2 = Double.parseDouble(strB);
-                    if (Double.isInfinite(d2)) {
-                        a aVar = new a("Data parsed as infinity: " + strB);
-                        aVar.c(strB);
-                        throw aVar;
+                    d2 = java.lang.Double.parseDouble(strB);
+                    if (java.lang.Double.isInfinite(d2)) {
+                        android.ext.t1$a t1_a = new android.ext.t1$a("Data parsed as infinity: " + strB);
+                        t1_a.c(strB);
+                        throw t1_a;
                     }
-                    if ((d2 == 0.0d || d2 == -0.0d) && (iIndexOf = strB.indexOf(101)) != -1 && Double.parseDouble(strB.substring(0, iIndexOf - 1)) != d2) {
-                        a aVar2 = new a("Data parsed as zero: " + strB);
-                        aVar2.c(strB);
-                        throw aVar2;
+                    if ((d2 == 0.0d || d2 == -0.0d) && (iIndexOf = strB.indexOf(101)) != -1 && java.lang.Double.parseDouble(strB.substring(0, iIndexOf - 1)) != d2) {
+                        android.ext.t1$a t1_a2 = new android.ext.t1$a("Data parsed as zero: " + strB);
+                        t1_a2.c(strB);
+                        throw t1_a2;
                     }
-                } catch (NumberFormatException e2) {
-                    NumberFormatException numberFormatExceptionJ = j(strB, str2, 10, false);
+                } catch (java.lang.NumberFormatException e2) {
+                    java.lang.NumberFormatException numberFormatExceptionJ = j(strB, str2, 10, false);
                     numberFormatExceptionJ.initCause(e2);
                     throw numberFormatExceptionJ;
                 }
@@ -1108,36 +948,36 @@ public abstract class t1 {
         } else {
             d2 = 0.0d;
         }
-        bVar.f1261a = Double.doubleToRawLongBits(d2 != -0.0d ? d2 : 0.0d);
-        bVar.f1263c = 64;
-        bVar.f1262b = false;
-        return bVar;
+        t1_b.f1261a = java.lang.Double.doubleToRawLongBits(d2 != -0.0d ? d2 : 0.0d);
+        t1_b.f1263c = 64;
+        t1_b.f1262b = false;
+        return t1_b;
     }
 
-    private static b w(b bVar, String str, String str2) {
+    private static android.ext.t1$b w(android.ext.t1$b t1_b, java.lang.String str, java.lang.String str2) {
         float f2;
         int iIndexOf;
-        String strB = b(str, false);
+        java.lang.String strB = b(str, false);
         if (strB.length() > 0) {
             char cCharAt = strB.charAt(strB.length() - 1);
             if (cCharAt == 'h' || cCharAt == 'r') {
-                long j = y(bVar, strB, str2).f1261a;
+                long j = y(t1_b, strB, str2).f1261a;
                 f2 = j >= 0 ? j : (j & Long.MAX_VALUE) + 9.223372E18f + 1.0f;
             } else {
                 try {
-                    f2 = Float.parseFloat(strB);
-                    if (Float.isInfinite(f2)) {
-                        a aVar = new a("Data parsed as infinity: " + strB);
-                        aVar.c(strB);
-                        throw aVar;
+                    f2 = java.lang.Float.parseFloat(strB);
+                    if (java.lang.Float.isInfinite(f2)) {
+                        android.ext.t1$a t1_a = new android.ext.t1$a("Data parsed as infinity: " + strB);
+                        t1_a.c(strB);
+                        throw t1_a;
                     }
-                    if ((f2 == 0.0f || f2 == -0.0f) && (iIndexOf = strB.indexOf(101)) != -1 && Float.parseFloat(strB.substring(0, iIndexOf)) != f2) {
-                        a aVar2 = new a("Data parsed as zero: " + strB);
-                        aVar2.c(strB);
-                        throw aVar2;
+                    if ((f2 == 0.0f || f2 == -0.0f) && (iIndexOf = strB.indexOf(101)) != -1 && java.lang.Float.parseFloat(strB.substring(0, iIndexOf)) != f2) {
+                        android.ext.t1$a t1_a2 = new android.ext.t1$a("Data parsed as zero: " + strB);
+                        t1_a2.c(strB);
+                        throw t1_a2;
                     }
-                } catch (NumberFormatException e2) {
-                    NumberFormatException numberFormatExceptionJ = j(strB, str2, 10, false);
+                } catch (java.lang.NumberFormatException e2) {
+                    java.lang.NumberFormatException numberFormatExceptionJ = j(strB, str2, 10, false);
                     numberFormatExceptionJ.initCause(e2);
                     throw numberFormatExceptionJ;
                 }
@@ -1145,27 +985,27 @@ public abstract class t1 {
         } else {
             f2 = 0.0f;
         }
-        long jFloatToRawIntBits = Float.floatToRawIntBits(f2 != -0.0f ? f2 : 0.0f);
+        long jFloatToRawIntBits = java.lang.Float.floatToRawIntBits(f2 != -0.0f ? f2 : 0.0f);
         if (jFloatToRawIntBits < 0) {
             jFloatToRawIntBits = (jFloatToRawIntBits & 2147483647L) + 2147483648L;
         }
-        bVar.f1261a = jFloatToRawIntBits;
-        bVar.f1263c = 16;
-        bVar.f1262b = false;
-        return bVar;
+        t1_b.f1261a = jFloatToRawIntBits;
+        t1_b.f1263c = 16;
+        t1_b.f1262b = false;
+        return t1_b;
     }
 
-    public static b x(String str) {
-        return y(new b(), b(str, true), str);
+    public static android.ext.t1$b x(java.lang.String str) {
+        return y(new android.ext.t1$b(), b(str, true), str);
     }
 
-    private static b y(b bVar, String str, String str2) {
+    private static android.ext.t1$b y(android.ext.t1$b t1_b, java.lang.String str, java.lang.String str2) {
         long jS;
         boolean z;
         int i;
-        String strB = b(str, false);
+        java.lang.String strB = b(str, false);
         if (strB.length() > 0) {
-            bVar.f1262b = strB.charAt(0) == '-';
+            t1_b.f1262b = strB.charAt(0) == '-';
             if (m(strB)) {
                 jS = B(strB);
             } else {
@@ -1183,14 +1023,14 @@ public abstract class t1 {
                 try {
                     jS = s(strB, i);
                     if (z) {
-                        jS = Long.reverseBytes(jS);
+                        jS = java.lang.Long.reverseBytes(jS);
                         int i3 = (length >> 1) * 8;
                         if (i3 < 64) {
                             jS = (jS >> (64 - i3)) & ((1 << i3) - 1);
                         }
                     }
-                } catch (NumberFormatException e2) {
-                    NumberFormatException numberFormatExceptionJ = j(strB, str2, i, true);
+                } catch (java.lang.NumberFormatException e2) {
+                    java.lang.NumberFormatException numberFormatExceptionJ = j(strB, str2, i, true);
                     numberFormatExceptionJ.initCause(e2);
                     throw numberFormatExceptionJ;
                 }
@@ -1198,15 +1038,15 @@ public abstract class t1 {
         } else {
             jS = 0;
         }
-        bVar.f1261a = jS;
-        if (jS == 0 && bVar.f1262b) {
-            bVar.f1262b = false;
+        t1_b.f1261a = jS;
+        if (jS == 0 && t1_b.f1262b) {
+            t1_b.f1262b = false;
         }
-        A(bVar);
-        return bVar;
+        A(t1_b);
+        return t1_b;
     }
 
-    public static String z(int i) {
-        return b2.f(i);
+    public static java.lang.String z(int i) {
+        return android.ext.b2.f(i);
     }
 }

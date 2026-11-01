@@ -1,49 +1,37 @@
 package android.fix;
 
-import android.content.Context;
-import android.ext.Tools;
-import android.ext.e1;
-import android.ext.n0;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Rect;
-import android.graphics.drawable.Drawable;
-import android.text.TextPaint;
-import android.util.AttributeSet;
-import android.view.DragEvent;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.accessibility.AccessibilityNodeInfo;
-
 /* JADX INFO: loaded from: classes.dex */
 public class TextView extends android.widget.TextView {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private Rect f1448a;
+    private android.graphics.Rect f1448a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private Paint.FontMetricsInt f1449b;
+    private android.graphics.Paint.FontMetricsInt f1449b;
 
-    public TextView(Context context) {
+    public TextView(android.content.Context context) {
         super(context);
     }
 
+    public TextView(android.content.Context context, android.util.AttributeSet attributeSet) {
+        super(context, attributeSet);
+    }
+
     private static int a(int i, int i2) {
-        int mode = View.MeasureSpec.getMode(i2);
-        int size = View.MeasureSpec.getSize(i2);
+        int mode = android.view.View.MeasureSpec.getMode(i2);
+        int size = android.view.View.MeasureSpec.getSize(i2);
         if (mode != Integer.MIN_VALUE) {
             return mode != 1073741824 ? i : size;
         }
-        return Math.min(i, size);
+        return java.lang.Math.min(i, size);
     }
 
     @Override // android.widget.TextView, android.view.View
     protected void drawableStateChanged() {
         try {
             super.drawableStateChanged();
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -51,55 +39,55 @@ public class TextView extends android.widget.TextView {
         return false;
     }
 
-    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable.Callback
-    public void invalidateDrawable(Drawable drawable) {
+    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable$Callback
+    public void invalidateDrawable(android.graphics.drawable.Drawable drawable) {
         try {
             super.invalidateDrawable(drawable);
-        } catch (NoSuchFieldError e2) {
-            e1.a(e2);
+        } catch (java.lang.NoSuchFieldError e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.view.View
     protected void onDetachedFromWindow() {
-        Tools.P(this);
+        android.ext.Tools.P(this);
         super.onDetachedFromWindow();
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onDragEvent(DragEvent dragEvent) {
+    public boolean onDragEvent(android.view.DragEvent dragEvent) {
         try {
             return super.onDragEvent(dragEvent);
-        } catch (ClassCastException e2) {
-            e1.a(e2);
+        } catch (java.lang.ClassCastException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(android.graphics.Canvas canvas) {
         try {
             super.onDraw(canvas);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
     @Override // android.view.View
-    public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
+    public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo accessibilityNodeInfo) {
         try {
             super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onKeyShortcut(int i, KeyEvent keyEvent) {
+    public boolean onKeyShortcut(int i, android.view.KeyEvent keyEvent) {
         try {
             return super.onKeyShortcut(i, keyEvent);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
@@ -108,19 +96,19 @@ public class TextView extends android.widget.TextView {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             try {
                 int suggestedMinimumWidth = getSuggestedMinimumWidth();
                 int suggestedMinimumHeight = getSuggestedMinimumHeight();
                 int i3 = Integer.MAX_VALUE;
-                int size = View.MeasureSpec.getMode(i) == Integer.MIN_VALUE ? View.MeasureSpec.getSize(i) : Integer.MAX_VALUE;
+                int size = android.view.View.MeasureSpec.getMode(i) == Integer.MIN_VALUE ? android.view.View.MeasureSpec.getSize(i) : Integer.MAX_VALUE;
                 if (size != 0) {
                     i3 = size;
                 }
-                TextPaint paint = getPaint();
-                CharSequence text = getText();
-                int iG = (int) (((double) Tools.G(1.0f)) + 0.99d);
+                android.text.TextPaint paint = getPaint();
+                java.lang.CharSequence text = getText();
+                int iG = (int) (((double) android.ext.Tools.G(1.0f)) + 0.99d);
                 int length = text.length();
                 int i4 = 0;
                 int i5 = 0;
@@ -138,25 +126,25 @@ public class TextView extends android.widget.TextView {
                     }
                 }
                 if (this.f1448a == null) {
-                    this.f1448a = new Rect();
+                    this.f1448a = new android.graphics.Rect();
                 }
                 if (this.f1449b == null) {
-                    this.f1449b = new Paint.FontMetricsInt();
+                    this.f1449b = new android.graphics.Paint.FontMetricsInt();
                 }
                 paint.getTextBounds("!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~", 0, 94, this.f1448a);
-                Rect rect = this.f1448a;
-                int iMax = Math.max((rect.bottom - rect.top) + 1, paint.getFontMetricsInt(this.f1449b));
+                android.graphics.Rect rect = this.f1448a;
+                int iMax = java.lang.Math.max((rect.bottom - rect.top) + 1, paint.getFontMetricsInt(this.f1449b));
                 if (iMax <= 5) {
-                    iMax = Math.max(iMax, (int) ((((double) getTextSize()) * 1.5d) + 0.99d));
+                    iMax = java.lang.Math.max(iMax, (int) ((((double) getTextSize()) * 1.5d) + 0.99d));
                 }
-                int iMax2 = Math.max(suggestedMinimumWidth, iG + getCompoundPaddingLeft() + getCompoundPaddingRight());
+                int iMax2 = java.lang.Math.max(suggestedMinimumWidth, iG + getCompoundPaddingLeft() + getCompoundPaddingRight());
                 int compoundPaddingTop = (iMax * i4) + getCompoundPaddingTop() + getCompoundPaddingBottom();
-                Paint.FontMetricsInt fontMetricsInt = this.f1449b;
-                setMeasuredDimension(a(iMax2, i), a(Math.max(suggestedMinimumHeight, compoundPaddingTop + ((fontMetricsInt.bottom - fontMetricsInt.top) - (fontMetricsInt.descent - fontMetricsInt.ascent))), i2));
-            } catch (Throwable th2) {
-                e1.a(th2);
-                n0.h(Thread.currentThread(), th, false);
-                n0.h(Thread.currentThread(), th2, false);
+                android.graphics.Paint.FontMetricsInt paint$FontMetricsInt = this.f1449b;
+                setMeasuredDimension(a(iMax2, i), a(java.lang.Math.max(suggestedMinimumHeight, compoundPaddingTop + ((paint$FontMetricsInt.bottom - paint$FontMetricsInt.top) - (paint$FontMetricsInt.descent - paint$FontMetricsInt.ascent))), i2));
+            } catch (java.lang.Throwable th2) {
+                android.ext.e1.a(th2);
+                android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
+                android.ext.n0.h(java.lang.Thread.currentThread(), th2, false);
             }
         }
     }
@@ -165,18 +153,18 @@ public class TextView extends android.widget.TextView {
     public boolean onTextContextMenuItem(int i) {
         try {
             return super.onTextContextMenuItem(i);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
+    public boolean onTouchEvent(android.view.MotionEvent motionEvent) {
         try {
             return super.onTouchEvent(motionEvent);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -185,8 +173,8 @@ public class TextView extends android.widget.TextView {
     public void onWindowFocusChanged(boolean z) {
         try {
             super.onWindowFocusChanged(z);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -194,8 +182,8 @@ public class TextView extends android.widget.TextView {
     public boolean performLongClick() {
         try {
             return super.performLongClick();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -204,8 +192,8 @@ public class TextView extends android.widget.TextView {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -213,8 +201,8 @@ public class TextView extends android.widget.TextView {
     public void refreshDrawableState() {
         try {
             super.refreshDrawableState();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -222,26 +210,26 @@ public class TextView extends android.widget.TextView {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
     @Override // android.widget.TextView
-    public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
+    public void setCompoundDrawables(android.graphics.drawable.Drawable drawable, android.graphics.drawable.Drawable drawable2, android.graphics.drawable.Drawable drawable3, android.graphics.drawable.Drawable drawable4) {
         try {
             super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        } catch (StringIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.StringIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView
-    public void setText(CharSequence charSequence, android.widget.TextView.BufferType bufferType) {
+    public void setText(java.lang.CharSequence charSequence, android.widget.TextView.BufferType textView$BufferType) {
         try {
-            super.setText(charSequence, bufferType);
-        } catch (Throwable th) {
-            e1.a(th);
+            super.setText(charSequence, textView$BufferType);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -249,12 +237,8 @@ public class TextView extends android.widget.TextView {
     public void setVisibility(int i) {
         try {
             super.setVisibility(i);
-        } catch (StackOverflowError e2) {
-            e1.a(e2);
+        } catch (java.lang.StackOverflowError e2) {
+            android.ext.e1.a(e2);
         }
-    }
-
-    public TextView(Context context, AttributeSet attributeSet) {
-        super(context, attributeSet);
     }
 }

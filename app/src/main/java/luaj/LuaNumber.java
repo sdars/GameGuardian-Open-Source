@@ -1,11 +1,11 @@
 package luaj;
 
 /* JADX INFO: loaded from: classes.dex */
-public abstract class LuaNumber extends LuaValue {
-    public static LuaValue P;
+public abstract class LuaNumber extends luaj.LuaValue {
+    public static luaj.LuaValue P;
 
     @Override // luaj.LuaValue
-    public LuaValue A2() {
+    public luaj.LuaValue A2() {
         return this;
     }
 
@@ -15,37 +15,37 @@ public abstract class LuaNumber extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public String D2() {
+    public java.lang.String D2() {
         return "number";
     }
 
     @Override // luaj.LuaValue
-    public LuaNumber E0() {
+    public luaj.LuaNumber E0() {
         return this;
     }
 
     @Override // luaj.LuaValue
-    public LuaNumber F0(String str) {
+    public luaj.LuaNumber F0(java.lang.String str) {
         return this;
     }
 
     @Override // luaj.LuaValue
-    public LuaValue K0(LuaValue luaValue) {
+    public luaj.LuaValue K0(luaj.LuaValue luaValue) {
         return luaValue.L0(this);
     }
 
     @Override // luaj.LuaValue
-    public LuaValue L0(LuaNumber luaNumber) {
+    public luaj.LuaValue L0(luaj.LuaNumber luaNumber) {
         return q2().M0(luaNumber.q2());
     }
 
     @Override // luaj.LuaValue
-    public LuaValue M0(LuaString luaString) {
+    public luaj.LuaValue M0(luaj.LuaString luaString) {
         return q2().M0(luaString);
     }
 
     @Override // luaj.LuaValue
-    public LuaValue V0() {
+    public luaj.LuaValue V0() {
         return P;
     }
 
@@ -60,11 +60,11 @@ public abstract class LuaNumber extends LuaValue {
     }
 
     @Override // luaj.LuaValue
-    public int o2(LuaString luaString) {
-        String string = luaString.toString();
+    public int o2(luaj.LuaString luaString) {
+        java.lang.String string = luaString.toString();
         if (string.length() > 50) {
             string = string.substring(0, 50) + "...";
         }
-        throw new d("attempt to compare number with string (" + this + " with '" + string + "')");
+        throw new luaj.d("attempt to compare number with string (" + this + " with '" + string + "')");
     }
 }

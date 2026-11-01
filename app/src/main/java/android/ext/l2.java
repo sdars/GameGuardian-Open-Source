@@ -1,40 +1,35 @@
 package android.ext;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-
 /* JADX INFO: loaded from: classes.dex */
-public class l2 extends a.b {
-    public l2(Context context) {
+public class l2 extends gg_a.b {
+    public l2(android.content.Context context) {
         super(context);
     }
 
-    public static Context i(Context context) {
-        return (context == null || (context instanceof l2)) ? context : new l2(context);
+    public static android.content.Context i(android.content.Context context) {
+        return (context == null || (context instanceof android.ext.l2)) ? context : new android.ext.l2(context);
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
-    public Context getApplicationContext() {
-        Context applicationContext = super.getApplicationContext();
-        return applicationContext == null ? r.o : applicationContext;
+    public android.content.Context getApplicationContext() {
+        android.content.Context applicationContext = super.getApplicationContext();
+        return applicationContext == null ? android.ext.r.o : applicationContext;
     }
 
     @Override // a.b, android.view.ContextThemeWrapper, android.content.ContextWrapper, android.content.Context
-    public Object getSystemService(String str) {
+    public java.lang.Object getSystemService(java.lang.String str) {
         try {
             return super.getSystemService(str);
-        } catch (Throwable th) {
-            e1.l("getSystemService fail: " + str, th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("getSystemService fail: " + str, th);
             return null;
         }
     }
 
     @Override // android.content.ContextWrapper, android.content.Context
-    public void startActivities(Intent[] intentArr) {
+    public void startActivities(android.content.Intent[] intentArr) {
         if (intentArr != null) {
-            for (Intent intent : intentArr) {
+            for (android.content.Intent intent : intentArr) {
                 if (intent != null) {
                     intent.setFlags(268435456);
                 }
@@ -43,27 +38,10 @@ public class l2 extends a.b {
         super.startActivities(intentArr);
     }
 
-    @Override // a.b, android.content.ContextWrapper, android.content.Context
-    public void startActivity(Intent intent) {
-        if (intent != null) {
-            intent.setFlags(268435456);
-        }
-        super.startActivity(intent);
-    }
-
-    @Override // a.b, android.content.ContextWrapper, android.content.Context
-    public void unregisterReceiver(BroadcastReceiver broadcastReceiver) {
-        try {
-            super.unregisterReceiver(broadcastReceiver);
-        } catch (IllegalArgumentException e2) {
-            e1.a(e2);
-        }
-    }
-
     @Override // android.content.ContextWrapper, android.content.Context
-    public void startActivities(Intent[] intentArr, Bundle bundle) {
+    public void startActivities(android.content.Intent[] intentArr, android.os.Bundle bundle) {
         if (intentArr != null) {
-            for (Intent intent : intentArr) {
+            for (android.content.Intent intent : intentArr) {
                 if (intent != null) {
                     intent.setFlags(268435456);
                 }
@@ -72,11 +50,28 @@ public class l2 extends a.b {
         super.startActivities(intentArr, bundle);
     }
 
+    @Override // a.b, android.content.ContextWrapper, android.content.Context
+    public void startActivity(android.content.Intent intent) {
+        if (intent != null) {
+            intent.setFlags(268435456);
+        }
+        super.startActivity(intent);
+    }
+
     @Override // android.content.ContextWrapper, android.content.Context
-    public void startActivity(Intent intent, Bundle bundle) {
+    public void startActivity(android.content.Intent intent, android.os.Bundle bundle) {
         if (intent != null) {
             intent.setFlags(268435456);
         }
         super.startActivity(intent, bundle);
+    }
+
+    @Override // a.b, android.content.ContextWrapper, android.content.Context
+    public void unregisterReceiver(android.content.BroadcastReceiver broadcastReceiver) {
+        try {
+            super.unregisterReceiver(broadcastReceiver);
+        } catch (java.lang.IllegalArgumentException e2) {
+            android.ext.e1.a(e2);
+        }
     }
 }

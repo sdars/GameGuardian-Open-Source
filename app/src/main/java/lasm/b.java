@@ -1,23 +1,14 @@
 package lasm;
 
-import f.d;
-import g.f;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Locale;
-import luaj.LuaString;
-import luaj.LuaValue;
-import luaj.h;
-
 /* JADX INFO: loaded from: classes.dex */
-public class b extends h {
-    a[] A;
-    f B;
-    HashMap C;
-    HashMap D;
-    HashMap E;
-    a[] w;
-    a[] y;
+public class b extends luaj.h {
+    lasm.b$a[] A;
+    gg_g.f B;
+    java.util.HashMap C;
+    java.util.HashMap D;
+    java.util.HashMap E;
+    lasm.b$a[] w;
+    lasm.b$a[] y;
     int p = 0;
     int q = 0;
     int r = 0;
@@ -28,65 +19,51 @@ public class b extends h {
     int x = 0;
     int z = 0;
 
-    static class a {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        e.f f1640a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        int f1641b;
-
-        a(e.f fVar, int i) {
-            this.f1640a = fVar;
-            this.f1641b = i;
-        }
-    }
-
     b() {
-        this.f1723a = new LuaValue[8];
+        this.f1723a = new luaj.LuaValue[8];
         this.f1724b = new int[8];
-        this.f1725c = new h[8];
+        this.f1725c = new luaj.h[8];
         this.f1726d = new int[8];
-        this.f1727e = new f.b[8];
-        this.f1728f = new d[8];
-        this.w = new a[8];
-        this.y = new a[8];
-        this.C = new HashMap();
-        this.D = new HashMap();
-        this.E = new HashMap();
-        this.B = new f(this);
+        this.f1727e = new gg_f.b[8];
+        this.f1728f = new gg_f.d[8];
+        this.w = new lasm.b$a[8];
+        this.y = new lasm.b$a[8];
+        this.C = new java.util.HashMap();
+        this.D = new java.util.HashMap();
+        this.E = new java.util.HashMap();
+        this.B = new gg_g.f(this);
     }
 
-    int c(LuaValue luaValue) {
-        return luaValue instanceof LasmBase.Internal ? luaValue.C2() : luaj.b.l(m(luaValue));
+    int c(luaj.LuaValue luaValue) {
+        return luaValue instanceof lasm.LasmBase$Internal ? luaValue.C2() : luaj.b.l(m(luaValue));
     }
 
-    void d(e.f fVar, b bVar) {
-        String lowerCase = fVar.f1551f.toLowerCase(Locale.ENGLISH);
-        a aVar = (a) this.E.get(lowerCase);
-        if (aVar == null) {
-            this.E.put(lowerCase, new a(fVar, this.s));
-            h[] hVarArr = this.f1725c;
+    void d(gg_e.f fVar, lasm.b bVar) {
+        java.lang.String lowerCase = fVar.f1551f.toLowerCase(java.util.Locale.ENGLISH);
+        lasm.b$a b_a = (lasm.b$a) this.E.get(lowerCase);
+        if (b_a == null) {
+            this.E.put(lowerCase, new lasm.b$a(fVar, this.s));
+            luaj.h[] hVarArr = this.f1725c;
             int i = this.s;
             this.s = i + 1;
-            this.f1725c = (h[]) d.d.b(hVarArr, i, bVar);
+            this.f1725c = (luaj.h[]) gg_d.d.b(hVarArr, i, bVar);
             return;
         }
-        throw new e.b(fVar, "Duplicate function name '" + fVar.f1551f + "' (used at line " + aVar.f1640a.f1547b + ")");
+        throw new gg_e.b(fVar, "Duplicate function name '" + fVar.f1551f + "' (used at line " + b_a.f1640a.f1547b + ")");
     }
 
-    void e(e.f fVar) {
-        String lowerCase = fVar.f1551f.toLowerCase(Locale.ENGLISH);
-        a aVar = (a) this.D.get(lowerCase);
-        if (aVar == null) {
-            this.D.put(lowerCase, new a(fVar, this.q));
+    void e(gg_e.f fVar) {
+        java.lang.String lowerCase = fVar.f1551f.toLowerCase(java.util.Locale.ENGLISH);
+        lasm.b$a b_a = (lasm.b$a) this.D.get(lowerCase);
+        if (b_a == null) {
+            this.D.put(lowerCase, new lasm.b$a(fVar, this.q));
             return;
         }
-        throw new e.b(fVar, "Try redefine label '" + fVar.f1551f + "' (already defined at line " + aVar.f1640a.f1547b + ")");
+        throw new gg_e.b(fVar, "Try redefine label '" + fVar.f1551f + "' (already defined at line " + b_a.f1640a.f1547b + ")");
     }
 
-    void f(e.f fVar) {
-        this.r = LasmBase.e(fVar);
+    void f(gg_e.f fVar) {
+        this.r = lasm.LasmBase.e(fVar);
     }
 
     public int g(int i) {
@@ -95,7 +72,7 @@ public class b extends h {
             int length = iArr.length;
             int i2 = this.q;
             if (length <= i2) {
-                this.f1726d = Arrays.copyOf(iArr, d.d.c(i2 + 1));
+                this.f1726d = java.util.Arrays.copyOf(iArr, gg_d.d.c(i2 + 1));
             }
             int[] iArr2 = this.f1726d;
             int i3 = this.q;
@@ -105,7 +82,7 @@ public class b extends h {
         int[] iArr3 = this.f1724b;
         int i4 = this.q;
         this.q = i4 + 1;
-        this.f1724b = d.d.a(iArr3, i4, i);
+        this.f1724b = gg_d.d.a(iArr3, i4, i);
         return 0;
     }
 
@@ -148,7 +125,7 @@ public class b extends h {
     /* JADX WARN: Code duplicated, block: B:95:0x0190  */
     /* JADX WARN: Code duplicated, block: B:97:0x0194  */
     /* JADX WARN: Code duplicated, block: B:99:0x0198  */
-    void h(e.f fVar, LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3, e.f fVar2, e.f fVar3) {
+    void h(gg_e.f fVar, luaj.LuaValue luaValue, luaj.LuaValue luaValue2, luaj.LuaValue luaValue3, gg_e.f fVar2, gg_e.f fVar3) {
         int iC2;
         k(luaValue);
         k(luaValue2);
@@ -156,7 +133,7 @@ public class b extends h {
         try {
             int i = fVar.f1546a;
             if (i == 79) {
-                g(LasmBase.d(fVar2));
+                g(lasm.LasmBase.d(fVar2));
                 return;
             }
             int iC3 = 1;
@@ -173,9 +150,9 @@ public class b extends h {
                     this.B.W(luaValue.C2(), m(luaValue2));
                     return;
                 case 7:
-                    f fVar4 = this.B;
+                    gg_g.f fVar4 = this.B;
                     int iC5 = luaValue.C2();
-                    int iE = LasmBase.e(fVar2);
+                    int iE = lasm.LasmBase.e(fVar2);
                     if (fVar3 == null) {
                         iC3 = 0;
                     }
@@ -394,7 +371,7 @@ public class b extends h {
                     this.B.T(i2, luaValue.C2(), c(luaValue2), c(luaValue3));
                     return;
                 case 15:
-                    this.B.T(11, luaValue.C2(), LasmBase.e(fVar2), LasmBase.e(fVar3));
+                    this.B.T(11, luaValue.C2(), lasm.LasmBase.e(fVar2), lasm.LasmBase.e(fVar3));
                     return;
                 case 16:
                     if (i2 < 0) {
@@ -734,7 +711,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 35;
                     }
-                    f fVar5 = this.B;
+                    gg_g.f fVar5 = this.B;
                     if (i2 != 23) {
                         iC4 = luaValue.C2();
                     } else if (luaValue == null) {
@@ -750,7 +727,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 26;
                     }
-                    this.B.T(i2, LasmBase.e(fVar2), c(luaValue), c(luaValue2));
+                    this.B.T(i2, lasm.LasmBase.e(fVar2), c(luaValue), c(luaValue2));
                     return;
                 case 29:
                     if (i2 < 0) {
@@ -759,36 +736,36 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 26;
                     }
-                    this.B.T(i2, LasmBase.e(fVar2), c(luaValue), c(luaValue2));
+                    this.B.T(i2, lasm.LasmBase.e(fVar2), c(luaValue), c(luaValue2));
                     return;
                 case 30:
                     if (i2 < 0) {
                         i2 = 26;
                     }
-                    this.B.T(i2, LasmBase.e(fVar2), c(luaValue), c(luaValue2));
+                    this.B.T(i2, lasm.LasmBase.e(fVar2), c(luaValue), c(luaValue2));
                     return;
                 case 31:
                     i2 = 27;
                     if (i2 < 0) {
                         i2 = 28;
                     }
-                    f fVar6 = this.B;
+                    gg_g.f fVar6 = this.B;
                     int iC6 = luaValue.C2();
                     if (luaValue2 == null) {
                         iC4 = luaValue2.C2();
                     }
-                    fVar6.T(i2, iC6, iC4, LasmBase.e(fVar2));
+                    fVar6.T(i2, iC6, iC4, lasm.LasmBase.e(fVar2));
                     return;
                 case 32:
                     if (i2 < 0) {
                         i2 = 28;
                     }
-                    f fVar7 = this.B;
+                    gg_g.f fVar7 = this.B;
                     int iC7 = luaValue.C2();
                     if (luaValue2 == null) {
                         iC4 = luaValue2.C2();
                     }
-                    fVar7.T(i2, iC7, iC4, LasmBase.e(fVar2));
+                    fVar7.T(i2, iC7, iC4, lasm.LasmBase.e(fVar2));
                     return;
                 case 33:
                     int iC8 = luaValue2 == null ? 0 : (luaValue2.C2() - luaValue.C2()) + 1;
@@ -804,7 +781,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 38;
                     }
-                    f fVar8 = this.B;
+                    gg_g.f fVar8 = this.B;
                     int iC9 = luaValue.C2();
                     if (luaValue2 == null) {
                         iC2 = 0;
@@ -830,7 +807,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 35;
                     }
-                    f fVar9 = this.B;
+                    gg_g.f fVar9 = this.B;
                     if (i2 != 23) {
                         iC4 = luaValue.C2();
                     } else if (luaValue == null) {
@@ -845,7 +822,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 35;
                     }
-                    f fVar10 = this.B;
+                    gg_g.f fVar10 = this.B;
                     if (i2 != 23) {
                         iC4 = luaValue.C2();
                     } else if (luaValue == null) {
@@ -860,7 +837,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 35;
                     }
-                    f fVar11 = this.B;
+                    gg_g.f fVar11 = this.B;
                     if (i2 != 23) {
                         iC4 = luaValue.C2();
                     } else if (luaValue == null) {
@@ -872,7 +849,7 @@ public class b extends h {
                     if (luaValue2 == null) {
                         luaValue2 = luaValue;
                     }
-                    this.B.o1(luaValue.C2(), luaValue2.C2() - luaValue.C2(), LasmBase.e(fVar2));
+                    this.B.o1(luaValue.C2(), luaValue2.C2() - luaValue.C2(), lasm.LasmBase.e(fVar2));
                     return;
                 case 41:
                     this.B.U(37, luaValue.C2(), o(fVar2));
@@ -881,7 +858,7 @@ public class b extends h {
                     if (i2 < 0) {
                         i2 = 38;
                     }
-                    f fVar12 = this.B;
+                    gg_g.f fVar12 = this.B;
                     int iC11 = luaValue.C2();
                     if (luaValue2 == null) {
                         iC2 = 0;
@@ -1017,83 +994,83 @@ public class b extends h {
                     this.B.T(i2, luaValue.C2(), c(luaValue2), c(luaValue3));
                     return;
                 default:
-                    throw new e.b(fVar, "Unknow token for OP: '" + fVar.f1551f + "'");
+                    throw new gg_e.b(fVar, "Unknow token for OP: '" + fVar.f1551f + "'");
             }
-        } catch (Throwable th) {
-            if (th instanceof e.b) {
+        } catch (java.lang.Throwable th) {
+            if (th instanceof gg_e.b) {
                 throw th;
             }
-            throw new e.b(fVar, "Failed assemble OP '" + fVar.f1551f + "'", th);
+            throw new gg_e.b(fVar, "Failed assemble OP '" + fVar.f1551f + "'", th);
         }
     }
 
-    void i(LasmBase.Internal internal, e.f fVar) {
-        d[] dVarArr = this.f1728f;
+    void i(lasm.LasmBase$Internal lasmBase$Internal, gg_e.f fVar) {
+        gg_f.d[] dVarArr = this.f1728f;
         int i = this.v;
         this.v = i + 1;
-        this.f1728f = (d[]) d.d.b(dVarArr, i, new d(LasmBase.j(fVar), internal instanceof LasmBase.V, internal.P));
+        this.f1728f = (gg_f.d[]) gg_d.d.b(dVarArr, i, new gg_f.d(lasm.LasmBase.j(fVar), lasmBase$Internal instanceof lasm.LasmBase$V, lasmBase$Internal.P));
     }
 
-    b j() throws e.b {
-        LuaValue[] luaValueArr = this.f1723a;
+    lasm.b j() throws gg_e.b {
+        luaj.LuaValue[] luaValueArr = this.f1723a;
         int length = luaValueArr.length;
         int i = this.p;
         if (length != i) {
-            this.f1723a = (LuaValue[]) Arrays.copyOf(luaValueArr, i);
+            this.f1723a = (luaj.LuaValue[]) java.util.Arrays.copyOf(luaValueArr, i);
         }
         int[] iArr = this.f1724b;
         int length2 = iArr.length;
         int i2 = this.q;
         if (length2 != i2) {
-            this.f1724b = Arrays.copyOf(iArr, i2);
+            this.f1724b = java.util.Arrays.copyOf(iArr, i2);
         }
-        h[] hVarArr = this.f1725c;
+        luaj.h[] hVarArr = this.f1725c;
         int length3 = hVarArr.length;
         int i3 = this.s;
         if (length3 != i3) {
-            this.f1725c = (h[]) Arrays.copyOf(hVarArr, i3);
+            this.f1725c = (luaj.h[]) java.util.Arrays.copyOf(hVarArr, i3);
         }
         int[] iArr2 = this.f1726d;
         int length4 = iArr2.length;
         int i4 = this.t;
         if (length4 != i4) {
-            this.f1726d = Arrays.copyOf(iArr2, i4);
+            this.f1726d = java.util.Arrays.copyOf(iArr2, i4);
         }
-        f.b[] bVarArr = this.f1727e;
+        gg_f.b[] bVarArr = this.f1727e;
         int length5 = bVarArr.length;
         int i5 = this.u;
         if (length5 != i5) {
-            this.f1727e = (f.b[]) Arrays.copyOf(bVarArr, i5);
+            this.f1727e = (gg_f.b[]) java.util.Arrays.copyOf(bVarArr, i5);
         }
-        d[] dVarArr = this.f1728f;
+        gg_f.d[] dVarArr = this.f1728f;
         int length6 = dVarArr.length;
         int i6 = this.v;
         if (length6 != i6) {
-            this.f1728f = (d[]) Arrays.copyOf(dVarArr, i6);
+            this.f1728f = (gg_f.d[]) java.util.Arrays.copyOf(dVarArr, i6);
         }
         int i7 = this.x;
         for (int i8 = 0; i8 < i7; i8++) {
-            a aVar = this.w[i8];
-            a aVar2 = (a) this.D.get(aVar.f1640a.f1551f.toLowerCase(Locale.ENGLISH));
-            if (aVar2 == null) {
-                throw new e.b(aVar.f1640a, "The label " + aVar.f1640a.f1551f + " is missing");
+            lasm.b$a b_a = this.w[i8];
+            lasm.b$a b_a2 = (lasm.b$a) this.D.get(b_a.f1640a.f1551f.toLowerCase(java.util.Locale.ENGLISH));
+            if (b_a2 == null) {
+                throw new gg_e.b(b_a.f1640a, "The label " + b_a.f1640a.f1551f + " is missing");
             }
-            g.a.A(new g.d(this.f1724b, aVar.f1641b), (aVar2.f1641b - aVar.f1641b) - 1);
+            gg_g.a.A(new gg_g.d(this.f1724b, b_a.f1641b), (b_a2.f1641b - b_a.f1641b) - 1);
         }
         int i9 = this.z;
         for (int i10 = 0; i10 < i9; i10++) {
-            a aVar3 = this.y[i10];
-            a aVar4 = (a) this.E.get(aVar3.f1640a.f1551f.toLowerCase(Locale.ENGLISH));
-            if (aVar4 == null) {
-                throw new e.b(aVar3.f1640a, "The function " + aVar3.f1640a.f1551f + " is missing");
+            lasm.b$a b_a3 = this.y[i10];
+            lasm.b$a b_a4 = (lasm.b$a) this.E.get(b_a3.f1640a.f1551f.toLowerCase(java.util.Locale.ENGLISH));
+            if (b_a4 == null) {
+                throw new gg_e.b(b_a3.f1640a, "The function " + b_a3.f1640a.f1551f + " is missing");
             }
-            g.a.y(new g.d(this.f1724b, aVar3.f1641b), aVar4.f1641b);
+            gg_g.a.y(new gg_g.d(this.f1724b, b_a3.f1641b), b_a4.f1641b);
         }
         int length7 = this.A.length;
         for (int i11 = 0; i11 < length7; i11++) {
-            a aVar5 = this.A[i11];
-            if (aVar5 != null) {
-                throw new e.b(aVar5.f1640a, "No '.end local' for local variable v" + i11);
+            lasm.b$a b_a5 = this.A[i11];
+            if (b_a5 != null) {
+                throw new gg_e.b(b_a5.f1640a, "No '.end local' for local variable v" + i11);
             }
         }
         this.w = null;
@@ -1106,93 +1083,93 @@ public class b extends h {
         return this;
     }
 
-    void k(LuaValue luaValue) {
+    void k(luaj.LuaValue luaValue) {
     }
 
-    void l(LasmBase.V v, e.f fVar, int i) {
-        k(v);
-        int iC2 = v.C2();
-        a aVar = this.A[iC2];
-        if (aVar == null) {
-            throw new e.b(v.Q, "Try end not defined local variable v" + iC2);
+    void l(lasm.LasmBase$V lasmBase$V, gg_e.f fVar, int i) {
+        k(lasmBase$V);
+        int iC2 = lasmBase$V.C2();
+        lasm.b$a b_a = this.A[iC2];
+        if (b_a == null) {
+            throw new gg_e.b(lasmBase$V.Q, "Try end not defined local variable v" + iC2);
         }
-        if (aVar.f1640a.f1551f.equals(fVar.f1551f)) {
-            f.b[] bVarArr = this.f1727e;
-            a[] aVarArr = this.A;
-            bVarArr[aVarArr[iC2].f1641b].f1560c = this.q + i;
-            aVarArr[iC2] = null;
+        if (b_a.f1640a.f1551f.equals(fVar.f1551f)) {
+            gg_f.b[] bVarArr = this.f1727e;
+            lasm.b$a[] b_aArr = this.A;
+            bVarArr[b_aArr[iC2].f1641b].f1560c = this.q + i;
+            b_aArr[iC2] = null;
             return;
         }
-        throw new e.b(v.Q, "Try end local variable v" + iC2 + " with different name (v" + iC2 + " defined at line " + this.A[iC2].f1640a.f1547b + " as '" + this.A[iC2].f1640a.f1551f + "')");
+        throw new gg_e.b(lasmBase$V.Q, "Try end local variable v" + iC2 + " with different name (v" + iC2 + " defined at line " + this.A[iC2].f1640a.f1547b + " as '" + this.A[iC2].f1640a.f1551f + "')");
     }
 
-    int m(LuaValue luaValue) {
-        if (luaValue instanceof LasmBase.Const) {
+    int m(luaj.LuaValue luaValue) {
+        if (luaValue instanceof lasm.LasmBase$Const) {
             return luaValue.C2();
         }
-        Integer numValueOf = (Integer) this.C.get(luaValue);
+        java.lang.Integer numValueOf = (java.lang.Integer) this.C.get(luaValue);
         if (numValueOf == null) {
-            numValueOf = Integer.valueOf(this.p);
+            numValueOf = java.lang.Integer.valueOf(this.p);
             this.C.put(luaValue, numValueOf);
-            LuaValue[] luaValueArr = this.f1723a;
+            luaj.LuaValue[] luaValueArr = this.f1723a;
             int i = this.p;
             this.p = i + 1;
-            this.f1723a = (LuaValue[]) d.d.b(luaValueArr, i, luaValue);
+            this.f1723a = (luaj.LuaValue[]) gg_d.d.b(luaValueArr, i, luaValue);
         }
         return numValueOf.intValue();
     }
 
-    int n(e.f fVar) {
-        int iE = fVar.f1546a == 60 ? LasmBase.e(fVar) : -1;
+    int n(gg_e.f fVar) {
+        int iE = fVar.f1546a == 60 ? lasm.LasmBase.e(fVar) : -1;
         if (fVar.f1546a == 60) {
             return iE;
         }
-        a aVar = (a) this.D.get(fVar.f1551f.toLowerCase(Locale.ENGLISH));
-        if (aVar != null) {
-            return (aVar.f1641b - this.q) - 1;
+        lasm.b$a b_a = (lasm.b$a) this.D.get(fVar.f1551f.toLowerCase(java.util.Locale.ENGLISH));
+        if (b_a != null) {
+            return (b_a.f1641b - this.q) - 1;
         }
-        a[] aVarArr = this.w;
+        lasm.b$a[] b_aArr = this.w;
         int i = this.x;
         this.x = i + 1;
-        this.w = (a[]) d.d.b(aVarArr, i, new a(fVar, this.q));
+        this.w = (lasm.b$a[]) gg_d.d.b(b_aArr, i, new lasm.b$a(fVar, this.q));
         return iE;
     }
 
-    int o(e.f fVar) {
+    int o(gg_e.f fVar) {
         if (fVar.f1546a == 79) {
-            return LasmBase.e(fVar);
+            return lasm.LasmBase.e(fVar);
         }
-        a[] aVarArr = this.y;
+        lasm.b$a[] b_aArr = this.y;
         int i = this.z;
         this.z = i + 1;
-        this.y = (a[]) d.d.b(aVarArr, i, new a(fVar, this.q));
+        this.y = (lasm.b$a[]) gg_d.d.b(b_aArr, i, new lasm.b$a(fVar, this.q));
         return 262143;
     }
 
-    void p(e.f fVar) {
-        int iMax = Math.max(2, LasmBase.g(fVar, 255));
+    void p(gg_e.f fVar) {
+        int iMax = java.lang.Math.max(2, lasm.LasmBase.g(fVar, 255));
         this.l = iMax;
         if (iMax >= this.j) {
-            this.A = new a[iMax];
+            this.A = new lasm.b$a[iMax];
             return;
         }
-        throw new e.b(fVar, ".maxstacksize (" + this.l + ") must be not less .numparams (" + this.j + ")");
+        throw new gg_e.b(fVar, ".maxstacksize (" + this.l + ") must be not less .numparams (" + this.j + ")");
     }
 
-    void q(LasmBase.V v, e.f fVar) {
-        k(v);
-        int iC2 = v.C2();
-        a[] aVarArr = this.A;
-        if (aVarArr[iC2] == null) {
-            aVarArr[iC2] = new a(fVar, this.u);
-            f.b[] bVarArr = this.f1727e;
+    void q(lasm.LasmBase$V lasmBase$V, gg_e.f fVar) {
+        k(lasmBase$V);
+        int iC2 = lasmBase$V.C2();
+        lasm.b$a[] b_aArr = this.A;
+        if (b_aArr[iC2] == null) {
+            b_aArr[iC2] = new lasm.b$a(fVar, this.u);
+            gg_f.b[] bVarArr = this.f1727e;
             int i = this.u;
             this.u = i + 1;
-            LuaString luaStringJ = LasmBase.j(fVar);
+            luaj.LuaString luaStringJ = lasm.LasmBase.j(fVar);
             int i2 = this.q;
-            this.f1727e = (f.b[]) d.d.b(bVarArr, i, new f.b(luaStringJ, i2, i2 + 1));
+            this.f1727e = (gg_f.b[]) gg_d.d.b(bVarArr, i, new gg_f.b(luaStringJ, i2, i2 + 1));
             return;
         }
-        throw new e.b(v.Q, "Try redefine not ended local variable v" + iC2 + " (v" + iC2 + " defined at line " + this.A[iC2].f1640a.f1547b + " as '" + this.A[iC2].f1640a.f1551f + "')");
+        throw new gg_e.b(lasmBase$V.Q, "Try redefine not ended local variable v" + iC2 + " (v" + iC2 + " defined at line " + this.A[iC2].f1640a.f1547b + " as '" + this.A[iC2].f1640a.f1551f + "')");
     }
 }

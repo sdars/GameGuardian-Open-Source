@@ -2,21 +2,21 @@ package android.ext;
 
 /* JADX INFO: loaded from: classes.dex */
 abstract class s0 {
-    static int a(String str) {
+    static int a(java.lang.String str) {
         if (str != null && str.length() <= 40) {
             int iIndexOf = str.indexOf(10);
             if (iIndexOf >= 0) {
                 str = str.substring(0, iIndexOf);
             }
             try {
-                return Integer.parseInt(d(str));
-            } catch (NumberFormatException unused) {
+                return java.lang.Integer.parseInt(d(str));
+            } catch (java.lang.NumberFormatException unused) {
             }
         }
         return 0;
     }
 
-    static String b(int i, long j) {
+    static java.lang.String b(int i, long j) {
         return i + "\n" + j;
     }
 
@@ -27,18 +27,18 @@ abstract class s0 {
         return j <= 0 || j2 <= j;
     }
 
-    private static String d(String str) {
+    private static java.lang.String d(java.lang.String str) {
         return str.endsWith("\r") ? str.substring(0, str.length() - 1) : str;
     }
 
-    static long e(String str) {
+    static long e(java.lang.String str) {
         int iIndexOf;
         if (str == null || str.length() > 40 || (iIndexOf = str.indexOf(10)) < 0) {
             return -1L;
         }
         try {
-            return Long.parseLong(d(str.substring(iIndexOf + 1)));
-        } catch (NumberFormatException unused) {
+            return java.lang.Long.parseLong(d(str.substring(iIndexOf + 1)));
+        } catch (java.lang.NumberFormatException unused) {
             return -1L;
         }
     }

@@ -1,23 +1,21 @@
 package android.ext;
 
-import java.io.File;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class v1 {
-    public static String a(String str, String str2, String str3) {
-        StringBuilder sb;
-        z1.d dVar = MainService.instance.v0;
-        if (dVar == null) {
-            sb = new StringBuilder();
+    public static java.lang.String a(java.lang.String str, java.lang.String str2, java.lang.String str3) {
+        java.lang.StringBuilder sb;
+        android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+        if (z1_d == null) {
+            sb = new java.lang.StringBuilder();
             sb.append(b(null, str));
             sb.append("/file");
         } else {
-            String str4 = dVar.f1434c;
-            String string = Tools.M0().getString(str4 + str2, null);
+            java.lang.String str4 = z1_d.f1434c;
+            java.lang.String string = android.ext.Tools.M0().getString(str4 + str2, null);
             if (string != null) {
                 return string;
             }
-            sb = new StringBuilder();
+            sb = new java.lang.StringBuilder();
             sb.append(b(null, str));
             sb.append('/');
             sb.append(str4);
@@ -26,25 +24,25 @@ public abstract class v1 {
         return sb.toString();
     }
 
-    public static String b(String str, String str2) {
-        String str3 = Tools.K0() + "/Notes";
+    public static java.lang.String b(java.lang.String str, java.lang.String str2) {
+        java.lang.String str3 = android.ext.Tools.K0() + "/Notes";
         if (str == null) {
-            return Tools.M0().getString(str2, str3);
+            return android.ext.Tools.M0().getString(str2, str3);
         }
-        new g2().k(str2, str, str3).commit();
+        new android.ext.g2().k(str2, str, str3).commit();
         return null;
     }
 
-    public static void c(String str, String str2, String str3, String str4) {
-        File file = new File(str.trim());
-        String parent = file.getParent();
+    public static void c(java.lang.String str, java.lang.String str2, java.lang.String str3, java.lang.String str4) {
+        java.io.File file = new java.io.File(str.trim());
+        java.lang.String parent = file.getParent();
         if (str2 != null && parent != null && parent.length() > 0) {
             b(parent, str2);
         }
-        z1.d dVar = MainService.instance.v0;
-        if (dVar != null) {
-            String str5 = dVar.f1434c;
-            new g2().k(str5 + str3, file.getAbsolutePath(), b(null, str2) + '/' + str5 + str4).commit();
+        android.ext.z1$d z1_d = android.ext.MainService.instance.v0;
+        if (z1_d != null) {
+            java.lang.String str5 = z1_d.f1434c;
+            new android.ext.g2().k(str5 + str3, file.getAbsolutePath(), b(null, str2) + '/' + str5 + str4).commit();
         }
     }
 }

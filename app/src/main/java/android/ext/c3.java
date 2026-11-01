@@ -1,19 +1,16 @@
 package android.ext;
 
-import android.view.View;
-import android.widget.TextView;
-
 /* JADX INFO: loaded from: classes.dex */
-class c3 extends b3 {
-    TextView n;
-    TextView o;
-    TextView p;
-    TextView q;
-    TextView r;
-    TextView s;
-    TextView t;
+class c3 extends android.ext.b3 {
+    android.widget.TextView n;
+    android.widget.TextView o;
+    android.widget.TextView p;
+    android.widget.TextView q;
+    android.widget.TextView r;
+    android.widget.TextView s;
+    android.widget.TextView t;
 
-    c3(View view, b3.a aVar) {
-        super(view, aVar);
+    c3(android.view.View view, android.ext.b3$a b3_a) {
+        super(view, b3_a);
     }
 }

@@ -2,10 +2,10 @@ package android.ext;
 
 /* JADX INFO: loaded from: classes.dex */
 public abstract class r1 {
-    public static int a(Object obj, Object obj2) {
+    public static int a(java.lang.Object obj, java.lang.Object obj2) {
         int iB;
-        String string = obj.toString();
-        String string2 = obj2.toString();
+        java.lang.String string = obj.toString();
+        java.lang.String string2 = obj2.toString();
         int length = string.length();
         int length2 = string2.length();
         int i = 0;
@@ -48,7 +48,7 @@ public abstract class r1 {
         }
     }
 
-    private static int b(String str, String str2) {
+    private static int b(java.lang.String str, java.lang.String str2) {
         int length = str.length();
         int length2 = str2.length();
         int i = 0;

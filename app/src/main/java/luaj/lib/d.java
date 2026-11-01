@@ -1,48 +1,38 @@
 package luaj.lib;
 
-import android.system.Os;
-import java.io.File;
-import java.io.FileDescriptor;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.RandomAccessFile;
-import java.lang.reflect.Field;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 /* JADX INFO: loaded from: classes.dex */
 public abstract class d {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private static volatile Field f1792a;
+    private static volatile java.lang.reflect.Field f1792a;
 
-    public static String a(File file) {
+    public static java.lang.String a(java.io.File file) {
         try {
             return file.getCanonicalPath();
-        } catch (IOException unused) {
+        } catch (java.io.IOException unused) {
             return file.getAbsolutePath();
         }
     }
 
-    public static boolean b(FileDescriptor fileDescriptor, e eVar, boolean z) {
+    public static boolean b(java.io.FileDescriptor fileDescriptor, luaj.lib.e eVar, boolean z) {
         if (eVar == null) {
             return true;
         }
-        String strG = g(fileDescriptor);
+        java.lang.String strG = g(fileDescriptor);
         if (strG == null) {
             return false;
         }
         return !eVar.m(strG, z);
     }
 
-    static int c(FileDescriptor fileDescriptor) throws NoSuchFieldException {
-        Field declaredField;
-        Field field = f1792a;
+    static int c(java.io.FileDescriptor fileDescriptor) throws java.lang.NoSuchFieldException {
+        java.lang.reflect.Field declaredField;
+        java.lang.reflect.Field field = f1792a;
         if (field == null) {
             try {
-                declaredField = FileDescriptor.class.getDeclaredField("descriptor");
-            } catch (NoSuchFieldException unused) {
-                declaredField = FileDescriptor.class.getDeclaredField("fd");
+                declaredField = java.io.FileDescriptor.class.getDeclaredField("descriptor");
+            } catch (java.lang.NoSuchFieldException unused) {
+                declaredField = java.io.FileDescriptor.class.getDeclaredField("fd");
             }
             field = declaredField;
             field.setAccessible(true);
@@ -51,70 +41,70 @@ public abstract class d {
         return field.getInt(fileDescriptor);
     }
 
-    public static String d(String str) {
+    public static java.lang.String d(java.lang.String str) {
         if (!str.startsWith("/data/data/")) {
             return str;
         }
         return "/data/user/0/" + str.substring(11);
     }
 
-    public static FileInputStream e(File file, e eVar) {
+    public static java.io.FileInputStream e(java.io.File file, luaj.lib.e eVar) {
         if (eVar == null) {
-            return new FileInputStream(file);
+            return new java.io.FileInputStream(file);
         }
-        String strA = a(file);
+        java.lang.String strA = a(file);
         if (eVar.m(strA, true)) {
             return null;
         }
-        FileInputStream fileInputStream = new FileInputStream(new File(strA));
+        java.io.FileInputStream fileInputStream = new java.io.FileInputStream(new java.io.File(strA));
         if (b(fileInputStream.getFD(), eVar, true)) {
             return fileInputStream;
         }
         try {
             fileInputStream.close();
-        } catch (IOException unused) {
+        } catch (java.io.IOException unused) {
         }
         return null;
     }
 
-    public static RandomAccessFile f(File file, e eVar) throws IOException {
+    public static java.io.RandomAccessFile f(java.io.File file, luaj.lib.e eVar) throws java.io.IOException {
         if (eVar == null) {
-            RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
+            java.io.RandomAccessFile randomAccessFile = new java.io.RandomAccessFile(file, "rw");
             randomAccessFile.setLength(0L);
             return randomAccessFile;
         }
-        String strA = a(file);
+        java.lang.String strA = a(file);
         if (eVar.m(strA, false)) {
             return null;
         }
-        RandomAccessFile randomAccessFile2 = new RandomAccessFile(new File(strA), "rw");
+        java.io.RandomAccessFile randomAccessFile2 = new java.io.RandomAccessFile(new java.io.File(strA), "rw");
         if (b(randomAccessFile2.getFD(), eVar, false)) {
             randomAccessFile2.setLength(0L);
             return randomAccessFile2;
         }
         try {
             randomAccessFile2.close();
-        } catch (IOException unused) {
+        } catch (java.io.IOException unused) {
         }
         return null;
     }
 
-    public static String g(FileDescriptor fileDescriptor) {
+    public static java.lang.String g(java.io.FileDescriptor fileDescriptor) {
         try {
             return h("/proc/self/fd/" + c(fileDescriptor));
-        } catch (Throwable unused) {
+        } catch (java.lang.Throwable unused) {
             return null;
         }
     }
 
-    private static String h(String str) {
+    private static java.lang.String h(java.lang.String str) {
         try {
             try {
-                return Files.readSymbolicLink(Paths.get(str, new String[0])).toString();
-            } catch (Throwable unused) {
-                return Os.readlink(str);
+                return java.nio.file.Files.readSymbolicLink(java.nio.file.Paths.get(str, new java.lang.String[0])).toString();
+            } catch (java.lang.Throwable unused) {
+                return android.system.Os.readlink(str);
             }
-        } catch (Throwable unused2) {
+        } catch (java.lang.Throwable unused2) {
             return null;
         }
     }

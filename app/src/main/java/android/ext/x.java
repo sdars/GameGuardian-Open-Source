@@ -1,136 +1,57 @@
 package android.ext;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.os.Handler;
-import android.view.View;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import catch_.me_.if_.you_.can_.R;
-
 /* JADX INFO: loaded from: classes.dex */
-public class x implements DialogInterface.OnShowListener, View.OnClickListener {
+public class x implements android.content.DialogInterface.OnShowListener, android.view.View.OnClickListener {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    volatile AlertDialog f1290a;
+    volatile android.app.AlertDialog f1290a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    final TextView f1291b;
+    final android.widget.TextView f1291b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    final ProgressBar f1292c;
+    final android.widget.ProgressBar f1292c;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    final TextView f1293d;
+    final android.widget.TextView f1293d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    final View f1294e;
+    final android.view.View f1294e;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    final ProgressBar f1295f;
+    final android.widget.ProgressBar f1295f;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
-    final TextView f1296g;
-    final TextView h;
-    final TextView i;
-    final View j;
+    final android.widget.TextView f1296g;
+    final android.widget.TextView h;
+    final android.widget.TextView i;
+    final android.view.View j;
     long k = -1;
     long l = -1;
     long m = -1;
-    final Runnable n = new a();
-
-    class a implements Runnable {
-        a() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            AlertDialog alertDialog = x.this.f1290a;
-            if (alertDialog != null) {
-                f.m(alertDialog);
-            }
-        }
-    }
-
-    class b implements Runnable {
-        b() {
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            x xVar = x.this;
-            xVar.k = -1L;
-            xVar.f1290a = f.b().setView(Tools.O0(x.this.j)).setCancelable(false).setPositiveButton(R.string.hide, (DialogInterface.OnClickListener) null).setNegativeButton(R.string.cancel, (DialogInterface.OnClickListener) null).create();
-            x.this.c("", -1L, 1L, 0, 1, 0L, "");
-            f.l(x.this.f1290a, x.this);
-            if (MainService.instance.n != null) {
-                Handler handlerD = n2.d();
-                handlerD.removeCallbacks(x.this.n);
-                handlerD.postDelayed(x.this.n, 100L);
-            }
-        }
-    }
-
-    class c implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ CharSequence f1299a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ long f1300b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        final /* synthetic */ long f1301c;
-
-        /* JADX INFO: renamed from: d, reason: collision with root package name */
-        final /* synthetic */ int f1302d;
-
-        /* JADX INFO: renamed from: e, reason: collision with root package name */
-        final /* synthetic */ int f1303e;
-
-        /* JADX INFO: renamed from: f, reason: collision with root package name */
-        final /* synthetic */ long f1304f;
-
-        /* JADX INFO: renamed from: g, reason: collision with root package name */
-        final /* synthetic */ String f1305g;
-
-        c(CharSequence charSequence, long j, long j2, int i, int i2, long j3, String str) {
-            this.f1299a = charSequence;
-            this.f1300b = j;
-            this.f1301c = j2;
-            this.f1302d = i;
-            this.f1303e = i2;
-            this.f1304f = j3;
-            this.f1305g = str;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            x.this.d(this.f1299a, this.f1300b, this.f1301c, this.f1302d, this.f1303e, this.f1304f, this.f1305g);
-        }
-    }
+    final java.lang.Runnable n = new android.ext.x$a(this);
 
     public x() {
-        View viewF = a.d.f(R.layout.service_busy_dialog, null);
+        android.view.View viewF = gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.service_busy_dialog, null);
         this.j = viewF;
-        this.f1291b = (TextView) viewF.findViewById(R.id.message);
-        this.f1292c = (ProgressBar) viewF.findViewById(R.id.progress_bar);
-        this.f1293d = (TextView) viewF.findViewById(R.id.progress_bar_text);
-        this.f1294e = viewF.findViewById(R.id.stage_layout);
-        this.f1295f = (ProgressBar) viewF.findViewById(R.id.progress_bar_stage);
-        this.f1296g = (TextView) viewF.findViewById(R.id.progress_bar_stage_text);
-        this.h = (TextView) viewF.findViewById(R.id.found_count);
-        this.i = (TextView) viewF.findViewById(R.id.time);
-        viewF.findViewById(R.id.help_speed_up).setOnClickListener(this);
+        this.f1291b = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.message);
+        this.f1292c = (android.widget.ProgressBar) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.progress_bar);
+        this.f1293d = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.progress_bar_text);
+        this.f1294e = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.stage_layout);
+        this.f1295f = (android.widget.ProgressBar) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.progress_bar_stage);
+        this.f1296g = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.progress_bar_stage_text);
+        this.h = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.found_count);
+        this.i = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.time);
+        viewF.findViewById(catch_.me_.if_.you_.can_.R$id.help_speed_up).setOnClickListener(this);
     }
 
     public void a(boolean z) {
-        AlertDialog alertDialog = this.f1290a;
+        android.app.AlertDialog alertDialog = this.f1290a;
         if (alertDialog == null) {
             return;
         }
-        n2.d().removeCallbacks(this.n);
-        Tools.D(alertDialog);
+        android.ext.n2.d().removeCallbacks(this.n);
+        android.ext.Tools.D(alertDialog);
         if (z) {
             this.f1290a = null;
         }
@@ -140,19 +61,19 @@ public class x implements DialogInterface.OnShowListener, View.OnClickListener {
         return this.f1290a != null;
     }
 
-    public void c(CharSequence charSequence, long j, long j2, int i, int i2, long j3, String str) {
+    public void c(java.lang.CharSequence charSequence, long j, long j2, int i, int i2, long j3, java.lang.String str) {
         if (b()) {
-            if (n2.e()) {
+            if (android.ext.n2.e()) {
                 d(charSequence, j, j2, i, i2, j3, str);
             } else {
-                n2.i(new c(charSequence, j, j2, i, i2, j3, str));
+                android.ext.n2.i(new android.ext.x$c(this, charSequence, j, j2, i, i2, j3, str));
             }
         }
     }
 
-    void d(CharSequence charSequence, long j, long j2, int i, int i2, long j3, String str) {
-        TextView textView;
-        String str2;
+    void d(java.lang.CharSequence charSequence, long j, long j2, int i, int i2, long j3, java.lang.String str) {
+        android.widget.TextView textView;
+        java.lang.String str2;
         if (charSequence != null) {
             this.f1291b.setText(charSequence);
         }
@@ -171,12 +92,12 @@ public class x implements DialogInterface.OnShowListener, View.OnClickListener {
             } else {
                 this.f1295f.setMax(i2);
                 this.f1295f.setProgress(i);
-                this.f1296g.setText(Tools.L1(b2.f(R.string.from), Integer.valueOf(i), Integer.valueOf(i2)));
+                this.f1296g.setText(android.ext.Tools.L1(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.from), java.lang.Integer.valueOf(i), java.lang.Integer.valueOf(i2)));
                 this.f1294e.setVisibility(0);
             }
         }
-        this.h.setText(Tools.L1(b2.f(R.string.found_count), Long.valueOf(j3)));
-        long jCurrentTimeMillis = System.currentTimeMillis();
+        this.h.setText(android.ext.Tools.L1(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.found_count), java.lang.Long.valueOf(j3)));
+        long jCurrentTimeMillis = java.lang.System.currentTimeMillis();
         long jRound = -1;
         if (j < 0) {
             this.k = -1L;
@@ -191,7 +112,7 @@ public class x implements DialogInterface.OnShowListener, View.OnClickListener {
         if (j4 >= 0 && jCurrentTimeMillis - j4 >= 2000) {
             long j5 = this.l;
             if (j - j5 != 0) {
-                jRound = Math.round((((jCurrentTimeMillis - j4) * (j2 - j)) / (j - j5)) / 1000.0d);
+                jRound = java.lang.Math.round((((jCurrentTimeMillis - j4) * (j2 - j)) / (j - j5)) / 1000.0d);
             }
         }
         if (jRound <= 0) {
@@ -199,34 +120,34 @@ public class x implements DialogInterface.OnShowListener, View.OnClickListener {
             str2 = "";
         } else {
             textView = this.i;
-            str2 = Tools.N1(R.string.time_remaining) + ": " + Tools.g1(jRound);
+            str2 = android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.time_remaining) + ": " + android.ext.Tools.g1(jRound);
         }
         textView.setText(str2);
     }
 
     public boolean e(boolean z) {
-        AlertDialog alertDialog = this.f1290a;
+        android.app.AlertDialog alertDialog = this.f1290a;
         if (alertDialog == null) {
             if (z) {
-                n2.i(new b());
+                android.ext.n2.i(new android.ext.x$b(this));
             }
             return true;
         }
-        f.m(alertDialog);
+        android.ext.f.m(alertDialog);
         if (z) {
-            e1.g("Show busy dialog not first time", new RuntimeException());
+            android.ext.e1.g("Show busy dialog not first time", new java.lang.RuntimeException());
         }
         return true;
     }
 
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
-        ConfigListAdapter.t(R.string.help_speed_up);
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
+        android.ext.ConfigListAdapter.t(catch_.me_.if_.you_.can_.R$string.help_speed_up);
     }
 
-    @Override // android.content.DialogInterface.OnShowListener
-    public void onShow(DialogInterface dialogInterface) {
-        Tools.s1(dialogInterface, -1, Integer.valueOf(R.string.hide), MainService.instance);
-        Tools.s1(dialogInterface, -2, Integer.valueOf(R.id.abort_button), MainService.instance);
+    @Override // android.content.DialogInterface$OnShowListener
+    public void onShow(android.content.DialogInterface dialogInterface) {
+        android.ext.Tools.s1(dialogInterface, -1, java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$string.hide), android.ext.MainService.instance);
+        android.ext.Tools.s1(dialogInterface, -2, java.lang.Integer.valueOf(catch_.me_.if_.you_.can_.R$id.abort_button), android.ext.MainService.instance);
     }
 }

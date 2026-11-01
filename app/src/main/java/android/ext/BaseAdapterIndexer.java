@@ -1,9 +1,7 @@
 package android.ext;
 
-import android.widget.SectionIndexer;
-
 /* JADX INFO: loaded from: classes.dex */
-public abstract class BaseAdapterIndexer extends BaseAdapterLC implements SectionIndexer {
+public abstract class BaseAdapterIndexer extends android.ext.BaseAdapterLC implements android.widget.SectionIndexer {
     @Override // android.widget.SectionIndexer
     public int getPositionForSection(int i) {
         int count = getCount();
@@ -27,11 +25,11 @@ public abstract class BaseAdapterIndexer extends BaseAdapterLC implements Sectio
     }
 
     @Override // android.widget.SectionIndexer
-    public Object[] getSections() {
-        Object[] objArr = new Object[20];
+    public java.lang.Object[] getSections() {
+        java.lang.Object[] objArr = new java.lang.Object[20];
         double count = ((double) getCount()) / 20.0d;
         for (int i = 0; i < 20; i++) {
-            objArr[i] = Integer.valueOf((int) (((double) i) * count));
+            objArr[i] = java.lang.Integer.valueOf((int) (((double) i) * count));
         }
         return objArr;
     }

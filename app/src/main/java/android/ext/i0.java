@@ -21,7 +21,7 @@ public abstract class i0 {
     }
 
     public static boolean a(long j, long j2, int i) {
-        int iY = c.y(i);
+        int iY = android.ext.c.y(i);
         if (iY == 3) {
             return j < j2;
         }
@@ -61,30 +61,30 @@ public abstract class i0 {
         return j & j2;
     }
 
-    public static String c(long j, int i) {
+    public static java.lang.String c(long j, int i) {
         return d(j, i, false);
     }
 
-    public static String d(long j, int i, boolean z) {
-        int iY = c.y(i);
+    public static java.lang.String d(long j, int i, boolean z) {
+        int iY = android.ext.c.y(i);
         long jB = b(j, iY, z);
-        return z ? t2.e(1 << (iY + 1), jB) : e(jB);
+        return z ? android.ext.t2.e(1 << (iY + 1), jB) : e(jB);
     }
 
-    private static String e(long j) {
-        String strM1 = Tools.M1("%,d", "%d", null, Long.valueOf(j));
+    private static java.lang.String e(long j) {
+        java.lang.String strM1 = android.ext.Tools.M1("%,d", "%d", null, java.lang.Long.valueOf(j));
         if (strM1 == null) {
             try {
-                strM1 = Long.toString(j);
-            } catch (Throwable th) {
-                e1.s("Format fail 3", th);
+                strM1 = java.lang.Long.toString(j);
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.s("Format fail 3", th);
             }
         }
         if (strM1 == null) {
             try {
                 strM1 = "" + j;
-            } catch (Throwable th2) {
-                e1.s("Format fail 4", th2);
+            } catch (java.lang.Throwable th2) {
+                android.ext.e1.s("Format fail 4", th2);
             }
         }
         return strM1 == null ? "fail" : strM1;

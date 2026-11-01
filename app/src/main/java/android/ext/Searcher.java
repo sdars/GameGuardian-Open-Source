@@ -1,64 +1,53 @@
 package android.ext;
 
-import android.content.DialogInterface;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
-import android.widget.TextView;
-import catch_.me_.if_.you_.can_.R;
-import java.util.Locale;
-
 /* JADX INFO: loaded from: classes.dex */
-public class Searcher implements DialogInterface.OnClickListener, TextWatcher, View.OnFocusChangeListener, CompoundButton.OnCheckedChangeListener, View.OnClickListener, Runnable {
+public class Searcher implements android.content.DialogInterface.OnClickListener, android.text.TextWatcher, android.view.View.OnFocusChangeListener, android.widget.CompoundButton.OnCheckedChangeListener, android.view.View.OnClickListener, java.lang.Runnable {
     public static final int[] K = new int[5];
     public static volatile boolean L = false;
-    private final Button A;
-    private final Button B;
-    private final View[] C;
+    private final android.widget.Button A;
+    private final android.widget.Button B;
+    private final android.view.View[] C;
     private final int[][] D;
     private final int E;
     private int F;
-    private String G;
+    private java.lang.String G;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private final View f446b;
+    private final android.view.View f446b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private final TextView f447c;
+    private final android.widget.TextView f447c;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
-    private final SystemSpinner f448d;
+    private final android.ext.SystemSpinner f448d;
 
     /* JADX INFO: renamed from: e, reason: collision with root package name */
-    private final TextView f449e;
+    private final android.widget.TextView f449e;
 
     /* JADX INFO: renamed from: f, reason: collision with root package name */
-    private final EditText f450f;
+    private final android.ext.EditText f450f;
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
-    private final View f451g;
-    private final View h;
-    private final TextView i;
-    private final View j;
-    private final EditText k;
-    private final TextView l;
-    private final View m;
-    private final EditText n;
-    private final CheckBox o;
-    private final View p;
-    private final SystemSpinnerType q;
-    private final View r;
-    private final CheckBox s;
-    private final CheckBox t;
-    private final Button u;
-    private final Button v;
-    private final Button w;
-    private final View x;
-    final MemoryRange y;
-    final EditText z;
+    private final android.view.View f451g;
+    private final android.view.View h;
+    private final android.widget.TextView i;
+    private final android.view.View j;
+    private final android.ext.EditText k;
+    private final android.widget.TextView l;
+    private final android.view.View m;
+    private final android.ext.EditText n;
+    private final android.widget.CheckBox o;
+    private final android.view.View p;
+    private final android.ext.SystemSpinnerType q;
+    private final android.view.View r;
+    private final android.widget.CheckBox s;
+    private final android.widget.CheckBox t;
+    private final android.widget.Button u;
+    private final android.widget.Button v;
+    private final android.widget.Button w;
+    private final android.view.View x;
+    final android.ext.MemoryRange y;
+    final android.ext.EditText z;
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     public volatile boolean f445a = true;
@@ -66,123 +55,104 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
     private char I = 0;
     private int J = 0;
 
-    class a implements TextWatcher {
-        a() {
-        }
-
-        @Override // android.text.TextWatcher
-        public void afterTextChanged(Editable editable) {
-            Searcher.this.L();
-        }
-
-        @Override // android.text.TextWatcher
-        public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-        }
-
-        @Override // android.text.TextWatcher
-        public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
-            Searcher.this.L();
-        }
-    }
-
     public Searcher(int i, int i2) {
         this.F = i;
         this.E = i2;
-        View viewF = a.d.f(R.layout.service_searcher, null);
+        android.view.View viewF = gg_a.d.f(catch_.me_.if_.you_.can_.R$layout.service_searcher, null);
         this.f446b = viewF;
-        this.f447c = (TextView) viewF.findViewById(R.id.message);
-        SystemSpinner systemSpinner = (SystemSpinner) viewF.findViewById(R.id.sign_spinner);
+        this.f447c = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.message);
+        android.ext.SystemSpinner systemSpinner = (android.ext.SystemSpinner) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.sign_spinner);
         this.f448d = systemSpinner;
         systemSpinner.setOnItemSelectedListener(this);
-        this.f449e = (TextView) viewF.findViewById(R.id.type_hint);
-        EditText editText = (EditText) viewF.findViewById(R.id.number);
+        this.f449e = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.type_hint);
+        android.ext.EditText editText = (android.ext.EditText) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.number);
         this.f450f = editText;
         editText.setDataType(1);
-        View viewFindViewById = viewF.findViewById(R.id.number_converter);
+        android.view.View viewFindViewById = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.number_converter);
         this.f451g = viewFindViewById;
-        this.h = viewF.findViewById(R.id.value_row);
-        this.j = viewF.findViewById(R.id.edit_mask_row);
-        EditText editText2 = (EditText) viewF.findViewById(R.id.edit_mask);
+        this.h = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.value_row);
+        this.j = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.edit_mask_row);
+        android.ext.EditText editText2 = (android.ext.EditText) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.edit_mask);
         this.k = editText2;
-        this.l = (TextView) viewF.findViewById(R.id.mask_view);
-        a aVar = new a();
-        editText2.addTextChangedListener(aVar);
-        this.m = viewF.findViewById(R.id.offset_row);
-        this.n = (EditText) viewF.findViewById(R.id.offset);
-        this.o = (CheckBox) viewF.findViewById(R.id.hex);
-        this.p = viewF.findViewById(R.id.type_row);
-        SystemSpinnerType systemSpinnerType = (SystemSpinnerType) viewF.findViewById(R.id.type);
+        this.l = (android.widget.TextView) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.mask_view);
+        android.ext.Searcher$a searcher$a = new android.ext.Searcher$a(this);
+        editText2.addTextChangedListener(searcher$a);
+        this.m = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.offset_row);
+        this.n = (android.ext.EditText) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.offset);
+        this.o = (android.widget.CheckBox) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.hex);
+        this.p = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.type_row);
+        android.ext.SystemSpinnerType systemSpinnerType = (android.ext.SystemSpinnerType) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.type);
         this.q = systemSpinnerType;
-        viewFindViewById.setTag(new Object[]{editText, systemSpinnerType});
+        viewFindViewById.setTag(new java.lang.Object[]{editText, systemSpinnerType});
         systemSpinnerType.setOnItemSelectedListener(this);
-        this.r = viewF.findViewById(R.id.mode_hacking_row);
-        CheckBox checkBox = (CheckBox) viewF.findViewById(R.id.mode_hacking);
+        this.r = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.mode_hacking_row);
+        android.widget.CheckBox checkBox = (android.widget.CheckBox) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.mode_hacking);
         this.s = checkBox;
         checkBox.setOnCheckedChangeListener(this);
-        CheckBox checkBox2 = (CheckBox) viewF.findViewById(R.id.ordered);
+        android.widget.CheckBox checkBox2 = (android.widget.CheckBox) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.ordered);
         this.t = checkBox2;
         checkBox2.setOnCheckedChangeListener(this);
-        Button button = (Button) viewF.findViewById(R.id.hex1);
+        android.widget.Button button = (android.widget.Button) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.hex1);
         this.u = button;
         button.setOnClickListener(this);
-        Button button2 = (Button) viewF.findViewById(R.id.hex2);
+        android.widget.Button button2 = (android.widget.Button) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.hex2);
         this.v = button2;
         button2.setOnClickListener(this);
-        Button button3 = (Button) viewF.findViewById(R.id.min_group_size);
+        android.widget.Button button3 = (android.widget.Button) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.min_group_size);
         this.w = button3;
         button3.setTag(2);
         button3.setOnClickListener(this);
-        this.x = viewF.findViewById(R.id.fuzzy_row);
-        EditText editText3 = (EditText) viewF.findViewById(R.id.limit);
+        this.x = viewF.findViewById(catch_.me_.if_.you_.can_.R$id.fuzzy_row);
+        android.ext.EditText editText3 = (android.ext.EditText) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.limit);
         this.z = editText3;
         editText3.setDataType(1);
-        MemoryRange memoryRange = (MemoryRange) viewF.findViewById(R.id.memory_range);
+        android.ext.MemoryRange memoryRange = (android.ext.MemoryRange) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.memory_range);
         this.y = memoryRange;
         memoryRange.c();
-        this.A = (Button) viewF.findViewById(R.id.ext_btn);
-        this.B = (Button) viewF.findViewById(R.id.cancel);
-        for (View view : viewF.getFocusables(2)) {
-            if (view instanceof EditText) {
-                Tools.z1(view, this);
+        this.A = (android.widget.Button) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.ext_btn);
+        this.B = (android.widget.Button) viewF.findViewById(catch_.me_.if_.you_.can_.R$id.cancel);
+        for (android.view.View view : viewF.getFocusables(2)) {
+            if (view instanceof android.ext.EditText) {
+                android.ext.Tools.z1(view, this);
             }
         }
         this.y.setType(K[i]);
         this.y.setTypeChangeListener(this);
-        this.C = new View[]{this.f448d, this.h, this.p, this.r, this.x, this.A, this.B, this.j, this.f449e, this.f451g, this.m};
+        this.C = new android.view.View[]{this.f448d, this.h, this.p, this.r, this.x, this.A, this.B, this.j, this.f449e, this.f451g, this.m};
         int[][] iArr = {new int[]{1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0}, new int[]{0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0}, new int[]{0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0}, new int[]{1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0}, new int[]{0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1}};
         this.D = iArr;
         if (i < 0 || i >= iArr.length) {
-            throw new IllegalArgumentException("Type must be between: 0 and " + (iArr.length - 1) + " but got: " + i);
+            throw new java.lang.IllegalArgumentException("Type must be between: 0 and " + (iArr.length - 1) + " but got: " + i);
         }
         H(i);
-        this.G = b2.f(R.string.examples_search);
-        TextView textView = (TextView) this.f446b.findViewById(R.id.value);
+        this.G = android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.examples_search);
+        android.widget.TextView textView = (android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.value);
         this.i = textView;
         if (i == 2) {
-            textView.setText(R.string.difference);
-            ((TextView) this.f446b.findViewById(R.id.fuzzy_text)).setText(b2.g("N - __new_value__; O - __old_value__; D - __difference__;"));
-            Tools.r1(textView);
+            textView.setText(catch_.me_.if_.you_.can_.R$string.difference);
+            ((android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.fuzzy_text)).setText(android.ext.b2.g("N - __new_value__; O - __old_value__; D - __difference__;"));
+            android.ext.Tools.r1(textView);
             textView.setOnClickListener(this);
-            this.G = b2.f(R.string.diff_examples);
+            this.G = android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.diff_examples);
             v(L);
         } else if (i == 0) {
-            Tools.r1(textView);
+            android.ext.Tools.r1(textView);
             textView.setOnClickListener(this);
         } else if (i == 3) {
-            Tools.r1(textView);
+            android.ext.Tools.r1(textView);
             textView.setOnClickListener(this);
-            textView.setText(R.string.address);
-            this.G = b2.f(R.string.mask_examples);
-            this.f450f.addTextChangedListener(aVar);
+            textView.setText(catch_.me_.if_.you_.can_.R$string.address);
+            this.G = android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.mask_examples);
+            this.f450f.addTextChangedListener(searcher$a);
             L();
         } else if (i == 4) {
-            textView.setText(R.string.address);
-            TextView textView2 = (TextView) this.f446b.findViewById(R.id.offset_text);
-            Tools.r1(textView2);
+            textView.setText(catch_.me_.if_.you_.can_.R$string.address);
+            android.widget.TextView textView2 = (android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.offset_text);
+            android.ext.Tools.r1(textView2);
             textView2.setOnClickListener(this);
         }
         this.A.setOnClickListener(this);
-        String strO1 = Tools.O1(textView.getText().toString());
+        java.lang.String strO1 = android.ext.Tools.O1(textView.getText().toString());
         textView.setText(this.f448d.getVisibility() != 0 ? strO1 + ':' : strO1);
         n();
     }
@@ -199,35 +169,35 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         }
     }
 
-    public static void I(String str) {
-        f.o(f.b().setMessage(b2.f(R.string.examples) + ":\n" + str).setPositiveButton(b2.f(R.string.help), ConfigListAdapter.h()).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+    public static void I(java.lang.String str) {
+        android.ext.f.o(android.ext.f.b().setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.examples) + ":\n" + str).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.help), android.ext.ConfigListAdapter.h()).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), (android.content.DialogInterface.OnClickListener) null));
     }
 
     private void J(boolean z) {
         if (this.F == 0) {
-            String string = this.f450f.getText().toString();
-            boolean zM = t1.m(string);
+            java.lang.String string = this.f450f.getText().toString();
+            boolean zM = android.ext.t1.m(string);
             boolean z2 = true;
-            boolean z3 = t1.C(string) != 0;
+            boolean z3 = android.ext.t1.C(string) != 0;
             boolean z4 = !zM && o();
-            boolean zN = t1.n(string);
+            boolean zN = android.ext.t1.n(string);
             boolean z5 = zM && zN;
             if ((this.t.getTag() != null) != z5) {
-                this.t.setText(z5 ? "UTF-16LE" : b2.f(R.string.ordered));
-                CheckBox checkBox = this.t;
+                this.t.setText(z5 ? "UTF-16LE" : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.ordered));
+                android.widget.CheckBox checkBox = this.t;
                 checkBox.setTag(z5 ? checkBox : null);
             }
-            if ((Config.B & 1) != 0) {
+            if ((android.ext.Config.B & 1) != 0) {
                 boolean z6 = zN && this.f450f.isFocused();
                 if (this.H != z6 && (!z6 || !z)) {
                     this.H = z6;
-                    InternalKeyboard.i(this.f450f, z6);
+                    android.ext.InternalKeyboard.i(this.f450f, z6);
                 }
             }
             w(zM ? string.charAt(0) : (char) 0, this.q.getSelected());
             this.p.setVisibility((zM || z3) ? 8 : 0);
             this.f448d.setVisibility(zM ? 8 : 0);
-            a.e eVarC = z4 ? c.C() : c.B();
+            gg_a.e eVarC = z4 ? android.ext.c.C() : android.ext.c.B();
             if (this.f448d.getTag() != eVarC) {
                 this.f448d.setTag(eVarC);
                 int i = i();
@@ -250,23 +220,23 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
                     D(536870912);
                 }
                 if (z4) {
-                    String strTrim = string.trim();
+                    java.lang.String strTrim = string.trim();
                     boolean zContains = strTrim.contains("::");
                     int iJ = j();
                     if (iJ == 0) {
                         iJ = 4;
                     }
-                    int iT = i2.t(strTrim, iJ, zContains);
+                    int iT = android.ext.i2.t(strTrim, iJ, zContains);
                     this.t.setChecked(zContains);
-                    this.w.setTag(Integer.valueOf(iT));
-                    Button button = this.w;
-                    StringBuilder sb = new StringBuilder();
+                    this.w.setTag(java.lang.Integer.valueOf(iT));
+                    android.widget.Button button = this.w;
+                    java.lang.StringBuilder sb = new java.lang.StringBuilder();
                     sb.append(zContains ? "::" : ":");
                     sb.append(iT);
                     button.setText(sb.toString());
                     return;
                 }
-                char cL = t1.l(string);
+                char cL = android.ext.t1.l(string);
                 this.t.setChecked(cL == ':' || cL == '\'');
                 char cCharAt = string.charAt(0);
                 if (cCharAt != 'h' && cCharAt != 'H') {
@@ -287,9 +257,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         J(false);
     }
 
-    private static String d(String str) {
+    private static java.lang.String d(java.lang.String str) {
         char cCharAt = "?".charAt(0);
-        StringBuilder sb = new StringBuilder();
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         for (int i = 0; i < str.length(); i++) {
             sb.append(str.charAt(i) == cCharAt ? "0" : "F");
         }
@@ -298,8 +268,8 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
 
     private void n() {
         w(this.I, this.E);
-        this.f448d.setData(this.F == 3 ? c.C() : c.B());
-        F(c.r(this.E, true), this.E);
+        this.f448d.setData(this.F == 3 ? android.ext.c.C() : android.ext.c.B());
+        F(android.ext.c.r(this.E, true), this.E);
         this.f450f.addTextChangedListener(this);
     }
 
@@ -307,45 +277,45 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         if (this.F != 0) {
             return false;
         }
-        String strTrim = this.f450f.getText().toString().trim();
+        java.lang.String strTrim = this.f450f.getText().toString().trim();
         return strTrim.length() >= 1 && strTrim.charAt(0) != '=' && strTrim.indexOf(59) > 0;
     }
 
-    public static long[] t(String str, long j) {
-        long jR = t1.r(str.replace("?", "0"), 16);
-        long jR2 = t1.r(d(str), 16) & j;
+    public static long[] t(java.lang.String str, long j) {
+        long jR = android.ext.t1.r(str.replace("?", "0"), 16);
+        long jR2 = android.ext.t1.r(d(str), 16) & j;
         return new long[]{jR & jR2, jR2};
     }
 
     private void v(boolean z) {
         L = z;
-        this.A.setText(b2.f(z ? R.string.less : R.string.more));
+        this.A.setText(android.ext.b2.f(z ? catch_.me_.if_.you_.can_.R$string.less : catch_.me_.if_.you_.can_.R$string.more));
         this.h.setVisibility(z ? 0 : 8);
         this.p.setVisibility(z ? 0 : 8);
-        this.f446b.findViewById(R.id.fuzzy_text).setVisibility(z ? 0 : 8);
-        ((TextView) this.f446b.findViewById(R.id.equal_btn)).setText(z ? "N = O+D" : b2.f(R.string.equal));
-        ((TextView) this.f446b.findViewById(R.id.not_equal_btn)).setText(z ? "N ≠ O+D" : b2.f(R.string.inequal));
-        ((TextView) this.f446b.findViewById(R.id.larger_btn)).setText(z ? "N > O+D" : b2.f(R.string.larger));
-        ((TextView) this.f446b.findViewById(R.id.smaller_btn)).setText(z ? "N < O+D" : b2.f(R.string.smaller));
+        this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.fuzzy_text).setVisibility(z ? 0 : 8);
+        ((android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.equal_btn)).setText(z ? "N = O+D" : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.equal));
+        ((android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.not_equal_btn)).setText(z ? "N ≠ O+D" : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.inequal));
+        ((android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.larger_btn)).setText(z ? "N > O+D" : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.larger));
+        ((android.widget.TextView) this.f446b.findViewById(catch_.me_.if_.you_.can_.R$id.smaller_btn)).setText(z ? "N < O+D" : android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.smaller));
     }
 
     private void w(char c2, int i) {
-        String strS;
+        java.lang.String strS;
         if (this.J == i && this.I == c2) {
             return;
         }
-        TextView textView = this.f449e;
+        android.widget.TextView textView = this.f449e;
         if (this.F != 0 || c2 == 0) {
-            strS = c.s(i);
+            strS = android.ext.c.s(i);
         } else {
-            strS = Tools.N1(R.string.examples) + ": " + t1.d(this.f450f.getText().toString());
+            strS = android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.examples) + ": " + android.ext.t1.d(this.f450f.getText().toString());
         }
         textView.setText(strS);
         this.I = c2;
         this.J = i;
     }
 
-    public void A(String str) {
+    public void A(java.lang.String str) {
         this.n.setText(str.trim());
     }
 
@@ -353,8 +323,8 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         this.o.setChecked(z);
     }
 
-    public void C(View.OnClickListener onClickListener) {
-        this.B.setOnClickListener(onClickListener);
+    public void C(android.view.View.OnClickListener view$OnClickListener) {
+        this.B.setOnClickListener(view$OnClickListener);
     }
 
     public void D(int i) {
@@ -370,9 +340,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         K();
     }
 
-    public void F(a.e eVar, int i) {
+    public void F(gg_a.e eVar, int i) {
         if (this.F == 0) {
-            String strF = b2.f(R.string.text);
+            java.lang.String strF = android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.text);
             eVar.put(-100, strF + " UTF-8");
             eVar.put(-200, strF + " UTF-16LE");
             eVar.put(-300, "HEX");
@@ -385,9 +355,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         E(i);
     }
 
-    a.e G(int i) {
-        a.e eVarR = c.r(i, true);
-        int iE = MainService.E();
+    gg_a.e G(int i) {
+        gg_a.e eVarR = android.ext.c.r(i, true);
+        int iE = android.ext.MainService.E();
         if (iE == 0 || eVarR.get(iE) != null) {
             i = iE;
         }
@@ -396,48 +366,48 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
     }
 
     void L() {
-        String upperCase;
+        java.lang.String upperCase;
         if (this.F == 3) {
             try {
-                upperCase = Long.toHexString(s()[1]).toUpperCase(Locale.US);
-            } catch (Throwable unused) {
+                upperCase = java.lang.Long.toHexString(s()[1]).toUpperCase(java.util.Locale.US);
+            } catch (java.lang.Throwable unused) {
                 upperCase = "???";
             }
-            this.l.setText(Tools.N1(R.string.resultant_mask) + ": " + upperCase);
+            this.l.setText(android.ext.Tools.N1(catch_.me_.if_.you_.can_.R$string.resultant_mask) + ": " + upperCase);
         }
     }
 
     public long a() {
-        return t1.r(c(), 16);
+        return android.ext.t1.r(c(), 16);
     }
 
     @Override // android.text.TextWatcher
-    public void afterTextChanged(Editable editable) {
+    public void afterTextChanged(android.text.Editable editable) {
     }
 
     public long b() {
-        String strTrim = this.z.getText().toString().trim();
+        java.lang.String strTrim = this.z.getText().toString().trim();
         if (strTrim.length() <= 0) {
             return 0L;
         }
-        String strH = j2.h(strTrim);
+        java.lang.String strH = android.ext.j2.h(strTrim);
         try {
-            long jR = t1.r(strH, 10);
-            y0.b(strH, 1);
+            long jR = android.ext.t1.r(strH, 10);
+            android.ext.y0.b(strH, 1);
             return jR;
-        } catch (NumberFormatException e2) {
+        } catch (java.lang.NumberFormatException e2) {
             this.z.requestFocus();
             throw e2;
         }
     }
 
     @Override // android.text.TextWatcher
-    public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+    public void beforeTextChanged(java.lang.CharSequence charSequence, int i, int i2, int i3) {
     }
 
-    public String c() {
-        String strTrim = this.k.getText().toString().trim();
-        y0.b(strTrim, 1);
+    public java.lang.String c() {
+        java.lang.String strTrim = this.k.getText().toString().trim();
+        android.ext.y0.b(strTrim, 1);
         return strTrim;
     }
 
@@ -445,22 +415,22 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         return this.y.a(i);
     }
 
-    public String f() {
+    public java.lang.String f() {
         if (this.F == 2 && !L) {
             return "0";
         }
-        String strTrim = this.f450f.getText().toString().trim();
-        y0.b(strTrim, 1);
+        java.lang.String strTrim = this.f450f.getText().toString().trim();
+        android.ext.y0.b(strTrim, 1);
         return strTrim;
     }
 
-    public EditText g() {
+    public android.ext.EditText g() {
         return this.f450f;
     }
 
-    public String h() {
-        String strTrim = this.n.getText().toString().trim();
-        y0.b(strTrim, 1);
+    public java.lang.String h() {
+        java.lang.String strTrim = this.n.getText().toString().trim();
+        android.ext.y0.b(strTrim, 1);
         return strTrim;
     }
 
@@ -470,11 +440,11 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
 
     public int j() {
         if (this.F == 0) {
-            String string = this.f450f.getText().toString();
-            if (t1.m(string)) {
+            java.lang.String string = this.f450f.getText().toString();
+            if (android.ext.t1.m(string)) {
                 return string.charAt(0) == ';' ? 2 : 1;
             }
-            int iC = t1.C(string);
+            int iC = android.ext.t1.C(string);
             if (iC != 0) {
                 return iC;
             }
@@ -482,43 +452,43 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         return this.q.getSelected();
     }
 
-    public View k() {
+    public android.view.View k() {
         return this.f446b;
     }
 
-    public View l() {
-        return InternalKeyboard.d(m());
+    public android.view.View l() {
+        return android.ext.InternalKeyboard.d(m());
     }
 
-    public View m() {
-        return Tools.O0(k());
+    public android.view.View m() {
+        return android.ext.Tools.O0(k());
     }
 
-    @Override // android.widget.CompoundButton.OnCheckedChangeListener
-    public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
+    @Override // android.widget.CompoundButton$OnCheckedChangeListener
+    public void onCheckedChanged(android.widget.CompoundButton compoundButton, boolean z) {
         int id = compoundButton.getId();
-        if (id == R.id.mode_hacking) {
+        if (id == 2131034334) {
             if (!z || i() == 536870912) {
                 return;
             }
             D(536870912);
             return;
         }
-        if (id != R.id.ordered) {
+        if (id != 2131034351) {
             return;
         }
         if (this.F == 0) {
-            String string = this.f450f.getText().toString();
-            if (t1.m(string)) {
-                char cL = t1.l(string);
+            java.lang.String string = this.f450f.getText().toString();
+            if (android.ext.t1.m(string)) {
+                char cL = android.ext.t1.l(string);
                 if ((cL == ':' || cL == '\'') != z) {
                     if (cL != '\'' && cL != '\"') {
-                        this.f450f.getText().replace(0, 1, String.valueOf(cL));
+                        this.f450f.getText().replace(0, 1, java.lang.String.valueOf(cL));
                         return;
                     }
                     char c2 = z ? '\'' : '\"';
-                    String strValueOf = String.valueOf(cL);
-                    Editable text = this.f450f.getText();
+                    java.lang.String strValueOf = java.lang.String.valueOf(cL);
+                    android.text.Editable text = this.f450f.getText();
                     int length = string.length();
                     for (int i = 1; i < length; i++) {
                         if (string.charAt(i) == c2) {
@@ -531,9 +501,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
             }
         }
         if (o()) {
-            String string2 = this.f450f.getText().toString();
+            java.lang.String string2 = this.f450f.getText().toString();
             if (string2.contains("::") != z) {
-                String str = z ? ":" : "::";
+                java.lang.String str = z ? ":" : "::";
                 int iIndexOf = string2.indexOf(str);
                 int length2 = str.length() + iIndexOf;
                 if (iIndexOf == -1) {
@@ -545,9 +515,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         }
     }
 
-    @Override // android.content.DialogInterface.OnClickListener
-    public void onClick(DialogInterface dialogInterface, int i) {
-        String str;
+    @Override // android.content.DialogInterface$OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i) {
+        java.lang.String str;
         if (i <= -100) {
             int i2 = 4;
             if (i != -700) {
@@ -586,24 +556,114 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         this.s.setChecked(false);
     }
 
-    @Override // android.view.View.OnFocusChangeListener
-    public void onFocusChange(View view, boolean z) {
-        InternalKeyboard internalKeyboard;
-        if ((Config.B & 1) == 0 || (internalKeyboard = (InternalKeyboard) view.getRootView().findViewById(R.id.keyboard)) == null) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
+        java.lang.String str;
+        if (view == null) {
+        }
+        int length = 1;
+        switch (view.getId()) {
+            case catch_.me_.if_.you_.can_.R$id.ext_btn /* 2131034248 */:
+                if (this.F == 2) {
+                    v(!L);
+                }
+                if (this.f450f.getVisibility() == 0 && this.h.getVisibility() == 0) {
+                    this.f450f.requestFocus();
+                    break;
+                }
+                break;
+            case catch_.me_.if_.you_.can_.R$id.hex1 /* 2131034281 */:
+            case catch_.me_.if_.you_.can_.R$id.hex2 /* 2131034282 */:
+            case catch_.me_.if_.you_.can_.R$id.min_group_size /* 2131034329 */:
+                if (o()) {
+                    java.lang.Object tag = view.getTag();
+                    if (tag instanceof java.lang.Integer) {
+                        int iIntValue = ((java.lang.Integer) tag).intValue();
+                        java.lang.String string = this.f450f.getText().toString();
+                        java.lang.String str2 = string.contains("::") ? "::" : ":";
+                        int iIndexOf = string.indexOf(str2);
+                        int length2 = string.length();
+                        if (iIndexOf == -1) {
+                            iIndexOf = length2;
+                        }
+                        this.f450f.getText().replace(iIndexOf, length2, str2 + iIntValue);
+                    }
+                } else {
+                    android.text.Editable text = this.f450f.getText();
+                    try {
+                        if (text.length() > 0) {
+                            int id = view.getId();
+                            char cCharAt = text.charAt(0);
+                            boolean z = cCharAt == 'h' || cCharAt == 'H';
+                            if (id == 2131034329 && !z) {
+                                android.ext.t1.h(text);
+                                str = "h";
+                            } else if (id == 2131034281 && cCharAt == ':') {
+                                str = "Q '" + text.toString().substring(1).replace("'", "' 27 '") + '\'';
+                                length = text.length();
+                            } else if (id == 2131034281 && cCharAt == ';') {
+                                str = "Q \"" + text.toString().substring(1).replace("\"", "\" 22 \"") + '\"';
+                                length = text.length();
+                            } else if (!z) {
+                                char c2 = id == 2131034281 ? '\"' : '\'';
+                                int length3 = 1;
+                                int i = 0;
+                                while (length3 < text.length()) {
+                                    if (text.charAt(length3) == c2) {
+                                        if (i == 0) {
+                                            i = length3 + 1;
+                                        } else {
+                                            byte[] bytes = text.toString().substring(i, length3).getBytes(android.ext.t1.i(c2 == '\"'));
+                                            java.lang.String strTrim = android.ext.InOut.b(bytes, 0, bytes.length).trim();
+                                            int i2 = i - 1;
+                                            int i3 = length3 + 1;
+                                            text.replace(i2, i3, strTrim);
+                                            length3 += strTrim.length() - (i3 - i2);
+                                            i = 0;
+                                        }
+                                    }
+                                    length3++;
+                                }
+                            } else {
+                                byte[] bArrH = android.ext.t1.h(text.toString());
+                                android.ext.x0.b(null, 0, bArrH, bArrH.length, id == 2131034329 || id == 2131034282, id == 2131034281 || id == 2131034282, text);
+                                str = "Q";
+                            }
+                            text.replace(0, length, str);
+                        }
+                    } catch (java.lang.Throwable th) {
+                        android.ext.e1.g("Failed convert '" + ((java.lang.Object) text) + "'", th);
+                        return;
+                    }
+                }
+                break;
+            case catch_.me_.if_.you_.can_.R$id.offset_text /* 2131034350 */:
+                android.ext.f.o(android.ext.f.b().setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.offset_help)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.ok), (android.content.DialogInterface.OnClickListener) null));
+                break;
+            case catch_.me_.if_.you_.can_.R$id.value /* 2131034438 */:
+                I(this.G);
+                break;
+        }
+    }
+
+    @Override // android.view.View$OnFocusChangeListener
+    public void onFocusChange(android.view.View view, boolean z) {
+        android.ext.InternalKeyboard internalKeyboard;
+        if ((android.ext.Config.B & 1) == 0 || (internalKeyboard = (android.ext.InternalKeyboard) view.getRootView().findViewById(catch_.me_.if_.you_.can_.R$id.keyboard)) == null) {
             return;
         }
-        if (this.F == 0 && t1.n(this.f450f.getText().toString())) {
-            EditText editText = this.f450f;
-            InternalKeyboard.i(editText, editText.isFocused());
+        if (this.F == 0 && android.ext.t1.n(this.f450f.getText().toString())) {
+            android.ext.EditText editText = this.f450f;
+            android.ext.InternalKeyboard.i(editText, editText.isFocused());
         } else {
             internalKeyboard.setHideKeyboard(false);
-            Tools.S0(view);
+            android.ext.Tools.S0(view);
         }
     }
 
     /* JADX WARN: Code duplicated, block: B:7:0x0008  */
     @Override // android.text.TextWatcher
-    public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+    public void onTextChanged(java.lang.CharSequence charSequence, int i, int i2, int i3) {
         boolean z;
         if (i == 0) {
             z = i2 == 1 && i3 == 0;
@@ -622,9 +682,9 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
     /* JADX WARN: Code duplicated, block: B:10:0x000f  */
     /* JADX WARN: Code duplicated, block: B:13:0x0016  */
     public void r() {
-        EditText editText;
+        android.ext.EditText editText;
         int i = this.F;
-        EditText editText2 = null;
+        android.ext.EditText editText2 = null;
         if (i != 1) {
             if (i != 2) {
                 if (i != 3) {
@@ -649,7 +709,7 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
             onFocusChange(this.f446b, false);
         } else {
             editText2.requestFocus();
-            Tools.o1(editText2);
+            android.ext.Tools.o1(editText2);
         }
     }
 
@@ -666,105 +726,15 @@ public class Searcher implements DialogInterface.OnClickListener, TextWatcher, V
         this.f445a = z;
     }
 
-    public void x(String str) {
+    public void x(java.lang.String str) {
         this.k.setText(str.trim());
     }
 
-    public void y(CharSequence charSequence) {
+    public void y(java.lang.CharSequence charSequence) {
         this.f447c.setText(charSequence);
     }
 
-    public void z(String str) {
+    public void z(java.lang.String str) {
         this.f450f.setText(str.trim());
-    }
-
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
-        String str;
-        if (view == null) {
-        }
-        int length = 1;
-        switch (view.getId()) {
-            case R.id.ext_btn /* 2131034248 */:
-                if (this.F == 2) {
-                    v(!L);
-                }
-                if (this.f450f.getVisibility() == 0 && this.h.getVisibility() == 0) {
-                    this.f450f.requestFocus();
-                    break;
-                }
-                break;
-            case R.id.hex1 /* 2131034281 */:
-            case R.id.hex2 /* 2131034282 */:
-            case R.id.min_group_size /* 2131034329 */:
-                if (o()) {
-                    Object tag = view.getTag();
-                    if (tag instanceof Integer) {
-                        int iIntValue = ((Integer) tag).intValue();
-                        String string = this.f450f.getText().toString();
-                        String str2 = string.contains("::") ? "::" : ":";
-                        int iIndexOf = string.indexOf(str2);
-                        int length2 = string.length();
-                        if (iIndexOf == -1) {
-                            iIndexOf = length2;
-                        }
-                        this.f450f.getText().replace(iIndexOf, length2, str2 + iIntValue);
-                    }
-                } else {
-                    Editable text = this.f450f.getText();
-                    try {
-                        if (text.length() > 0) {
-                            int id = view.getId();
-                            char cCharAt = text.charAt(0);
-                            boolean z = cCharAt == 'h' || cCharAt == 'H';
-                            if (id == R.id.min_group_size && !z) {
-                                t1.h(text);
-                                str = "h";
-                            } else if (id == R.id.hex1 && cCharAt == ':') {
-                                str = "Q '" + text.toString().substring(1).replace("'", "' 27 '") + '\'';
-                                length = text.length();
-                            } else if (id == R.id.hex1 && cCharAt == ';') {
-                                str = "Q \"" + text.toString().substring(1).replace("\"", "\" 22 \"") + '\"';
-                                length = text.length();
-                            } else if (!z) {
-                                char c2 = id == R.id.hex1 ? '\"' : '\'';
-                                int length3 = 1;
-                                int i = 0;
-                                while (length3 < text.length()) {
-                                    if (text.charAt(length3) == c2) {
-                                        if (i == 0) {
-                                            i = length3 + 1;
-                                        } else {
-                                            byte[] bytes = text.toString().substring(i, length3).getBytes(t1.i(c2 == '\"'));
-                                            String strTrim = InOut.b(bytes, 0, bytes.length).trim();
-                                            int i2 = i - 1;
-                                            int i3 = length3 + 1;
-                                            text.replace(i2, i3, strTrim);
-                                            length3 += strTrim.length() - (i3 - i2);
-                                            i = 0;
-                                        }
-                                    }
-                                    length3++;
-                                }
-                            } else {
-                                byte[] bArrH = t1.h(text.toString());
-                                x0.b(null, 0, bArrH, bArrH.length, id == R.id.min_group_size || id == R.id.hex2, id == R.id.hex1 || id == R.id.hex2, text);
-                                str = "Q";
-                            }
-                            text.replace(0, length, str);
-                        }
-                    } catch (Throwable th) {
-                        e1.g("Failed convert '" + ((Object) text) + "'", th);
-                        return;
-                    }
-                }
-                break;
-            case R.id.offset_text /* 2131034350 */:
-                f.o(f.b().setMessage(b2.f(R.string.offset_help)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
-                break;
-            case R.id.value /* 2131034438 */:
-                I(this.G);
-                break;
-        }
     }
 }

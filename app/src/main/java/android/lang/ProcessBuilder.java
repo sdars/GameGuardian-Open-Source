@@ -1,10 +1,5 @@
 package android.lang;
 
-import android.ext.e0;
-import java.io.File;
-import java.io.IOException;
-import java.util.Map;
-
 /* JADX INFO: loaded from: classes.dex */
 public final class ProcessBuilder {
 
@@ -12,37 +7,37 @@ public final class ProcessBuilder {
     private static volatile boolean f1454d = false;
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private String[] f1455a;
+    private java.lang.String[] f1455a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private File f1456b;
+    private java.io.File f1456b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private Map f1457c;
+    private java.util.Map f1457c;
 
-    public ProcessBuilder(String... strArr) {
+    public ProcessBuilder(java.lang.String... strArr) {
         this.f1455a = strArr;
     }
 
-    public static Process c(String[] strArr, String[] strArr2, File file) {
+    public static java.lang.Process c(java.lang.String[] strArr, java.lang.String[] strArr2, java.io.File file) {
         if (!f1454d) {
             f1454d = true;
-            e0.l();
+            android.ext.e0.l();
         }
-        return new ProcessBuilder(strArr).b(strArr2).a(file).d();
+        return new android.lang.ProcessBuilder(strArr).b(strArr2).a(file).d();
     }
 
     public static native boolean loaded();
 
-    public ProcessBuilder a(File file) {
+    public android.lang.ProcessBuilder a(java.io.File file) {
         this.f1456b = file;
         return this;
     }
 
-    ProcessBuilder b(String[] strArr) {
+    android.lang.ProcessBuilder b(java.lang.String[] strArr) {
         if (strArr != null) {
-            this.f1457c = ProcessEnvironment.i(strArr.length);
-            for (String strReplaceFirst : strArr) {
+            this.f1457c = android.lang.ProcessEnvironment.i(strArr.length);
+            for (java.lang.String strReplaceFirst : strArr) {
                 if (strReplaceFirst.indexOf(0) != -1) {
                     strReplaceFirst = strReplaceFirst.replaceFirst("\u0000.*", "");
                 }
@@ -55,43 +50,44 @@ public final class ProcessBuilder {
         return this;
     }
 
-    public Process d() throws IOException {
-        String[] strArr = (String[]) this.f1455a.clone();
-        for (String str : strArr) {
+    public java.lang.Process d() throws java.io.IOException {
+java.lang.Throwable e = null;
+        java.lang.String[] strArr = (java.lang.String[]) this.f1455a.clone();
+        for (java.lang.String str : strArr) {
             str.getClass();
         }
-        String str2 = strArr[0];
-        SecurityManager securityManager = System.getSecurityManager();
+        java.lang.String str2 = strArr[0];
+        java.lang.SecurityManager securityManager = java.lang.System.getSecurityManager();
         if (securityManager != null) {
             securityManager.checkExec(str2);
         }
-        File file = this.f1456b;
-        String string = file == null ? null : file.toString();
+        java.io.File file = this.f1456b;
+        java.lang.String string = file == null ? null : file.toString();
         for (int i = 1; i < strArr.length; i++) {
             if (strArr[i].indexOf(0) >= 0) {
-                throw new IOException("invalid null character in command");
+                throw new java.io.IOException("invalid null character in command");
             }
         }
         try {
-            return a.b(strArr, this.f1457c, string, false);
-        } catch (IOException | IllegalArgumentException e2) {
+            return android.lang.a.b(strArr, this.f1457c, string, false);
+        } catch (java.io.IOException | java.lang.IllegalArgumentException e2) {
             e = e2;
-            String str3 = ": " + e.getMessage();
-            if ((e instanceof IOException) && securityManager != null) {
+            java.lang.String str3 = ": " + e.getMessage();
+            if ((e instanceof java.io.IOException) && securityManager != null) {
                 try {
                     securityManager.checkRead(str2);
-                } catch (SecurityException e3) {
+                } catch (java.lang.SecurityException e3) {
                     e = e3;
                     str3 = "";
                 }
             }
-            StringBuilder sb = new StringBuilder();
+            java.lang.StringBuilder sb = new java.lang.StringBuilder();
             sb.append("Cannot run program \"");
             sb.append(str2);
             sb.append('\"');
             sb.append(string != null ? " (in directory \"" + string + "\")" : "");
             sb.append(str3);
-            throw new IOException(sb.toString(), e);
+            throw new java.io.IOException(sb.toString(), e);
         }
     }
 }

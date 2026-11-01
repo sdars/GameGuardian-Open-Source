@@ -1,57 +1,52 @@
 package android.ext;
 
-import android.content.DialogInterface;
-import android.view.View;
-import android.widget.Button;
-import catch_.me_.if_.you_.can_.R;
-
 /* JADX INFO: loaded from: classes.dex */
-public class v2 implements View.OnClickListener, DialogInterface.OnClickListener {
+public class v2 implements android.view.View.OnClickListener, android.content.DialogInterface.OnClickListener {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private final String[] f1284a;
+    private final java.lang.String[] f1284a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private final String[] f1285b;
+    private final java.lang.String[] f1285b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
     private android.widget.EditText f1286c;
 
-    public v2(String[] strArr, String[] strArr2) {
+    public v2(java.lang.String[] strArr, java.lang.String[] strArr2) {
         this.f1284a = strArr;
         this.f1285b = strArr2;
         if (strArr.length == strArr2.length) {
             return;
         }
-        throw new IllegalArgumentException("Params must be with same length: " + strArr.length + " != " + strArr2.length);
+        throw new java.lang.IllegalArgumentException("Params must be with same length: " + strArr.length + " != " + strArr2.length);
     }
 
-    public static void a(Button button, android.widget.EditText editText) {
-        String absolutePath;
-        String absolutePath2 = "error";
+    public static void a(android.widget.Button button, android.widget.EditText editText) {
+        java.lang.String absolutePath;
+        java.lang.String absolutePath2 = "error";
         try {
-            absolutePath = Tools.f0().getFilesDir().getAbsolutePath();
-        } catch (Throwable th) {
-            e1.s("Failed get files dir", th);
+            absolutePath = android.ext.Tools.f0().getFilesDir().getAbsolutePath();
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.s("Failed get files dir", th);
             absolutePath = "error";
         }
         try {
-            absolutePath2 = Tools.f0().getExternalFilesDir(null).getAbsolutePath();
-        } catch (Throwable th2) {
-            e1.s("Failed get ext files dir", th2);
+            absolutePath2 = android.ext.Tools.f0().getExternalFilesDir(null).getAbsolutePath();
+        } catch (java.lang.Throwable th2) {
+            android.ext.e1.s("Failed get ext files dir", th2);
         }
-        button.setOnClickListener(new v2(new String[]{b2.f(R.string.internal_storage), b2.f(R.string.external_storage)}, new String[]{absolutePath, absolutePath2}));
+        button.setOnClickListener(new android.ext.v2(new java.lang.String[]{android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.internal_storage), android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.external_storage)}, new java.lang.String[]{absolutePath, absolutePath2}));
         button.setTag(editText);
     }
 
-    @Override // android.content.DialogInterface.OnClickListener
-    public void onClick(DialogInterface dialogInterface, int i) {
+    @Override // android.content.DialogInterface$OnClickListener
+    public void onClick(android.content.DialogInterface dialogInterface, int i) {
         if (i >= 0) {
-            String[] strArr = this.f1285b;
+            java.lang.String[] strArr = this.f1285b;
             if (i < strArr.length) {
                 android.widget.EditText editText = this.f1286c;
                 if (editText == null) {
-                    e1.s("Unkwnon edit", new NullPointerException());
+                    android.ext.e1.s("Unkwnon edit", new java.lang.NullPointerException());
                     return;
                 } else {
                     editText.setText(strArr[i]);
@@ -59,21 +54,21 @@ public class v2 implements View.OnClickListener, DialogInterface.OnClickListener
                 }
             }
         }
-        e1.s("Bad index: " + i + " for " + this.f1285b.length, new IndexOutOfBoundsException());
+        android.ext.e1.s("Bad index: " + i + " for " + this.f1285b.length, new java.lang.IndexOutOfBoundsException());
     }
 
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
         if (view == null) {
-            e1.s("Unkwnon view", new NullPointerException());
+            android.ext.e1.s("Unkwnon view", new java.lang.NullPointerException());
             return;
         }
-        Object tag = view.getTag();
+        java.lang.Object tag = view.getTag();
         if (tag instanceof android.widget.EditText) {
             this.f1286c = (android.widget.EditText) tag;
-            f.o(f.b().setCustomTitle(Tools.g0(R.string.typical_values)).setItems(this.f1284a, this).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+            android.ext.f.o(android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R$string.typical_values)).setItems(this.f1284a, this).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), (android.content.DialogInterface.OnClickListener) null));
         } else {
-            e1.s("Unkwnon tag: " + tag, new IllegalArgumentException());
+            android.ext.e1.s("Unkwnon tag: " + tag, new java.lang.IllegalArgumentException());
         }
     }
 }

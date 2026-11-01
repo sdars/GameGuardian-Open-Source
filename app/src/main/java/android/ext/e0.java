@@ -1,28 +1,13 @@
 package android.ext;
 
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.res.Resources;
-import android.lang.ProcessBuilder;
-import android.system.ErrnoException;
-import android.system.Os;
-import catch_.me_.if_.you_.can_.R;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
 /* JADX INFO: loaded from: classes.dex */
 public class e0 {
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private static volatile String f725b = null;
+    private static volatile java.lang.String f725b = null;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private static volatile String f726c = null;
+    private static volatile java.lang.String f726c = null;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
     private static volatile int f727d = 100;
@@ -34,76 +19,43 @@ public class e0 {
     private static volatile char f729f = 'g';
 
     /* JADX INFO: renamed from: g, reason: collision with root package name */
-    public static StringBuilder f730g = new StringBuilder();
-    public static StringBuilder h = new StringBuilder();
+    public static java.lang.StringBuilder f730g = new java.lang.StringBuilder();
+    public static java.lang.StringBuilder h = new java.lang.StringBuilder();
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private final String f731a = i();
+    private final java.lang.String f731a = i();
 
-    class a implements Runnable {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ File f732a;
-
-        /* JADX INFO: renamed from: android.ext.e0$a$a, reason: collision with other inner class name */
-        class DialogInterfaceOnClickListenerC0014a implements DialogInterface.OnClickListener {
-            DialogInterfaceOnClickListenerC0014a() {
-            }
-
-            @Override // android.content.DialogInterface.OnClickListener
-            public void onClick(DialogInterface dialogInterface, int i) {
-                for (Intent intent : b1.b0(a.this.f732a)) {
-                    try {
-                        Tools.f0().startActivity(intent);
-                        return;
-                    } catch (Throwable th) {
-                        e1.a(th);
-                    }
-                }
-            }
-        }
-
-        a(File file) {
-            this.f732a = file;
-        }
-
-        @Override // java.lang.Runnable
-        public void run() {
-            f.o(f.b().setMessage(Tools.L1(b2.f(R.string.need_fixer), this.f732a.getAbsolutePath())).setPositiveButton(b2.f(R.string.fix_it), new DialogInterfaceOnClickListenerC0014a()).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
-        }
-    }
-
-    private static void a(ArrayList arrayList, String str, String str2, boolean z) {
-        File file = new File(str);
+    private static void a(java.util.ArrayList arrayList, java.lang.String str, java.lang.String str2, boolean z) {
+        java.io.File file = new java.io.File(str);
         if (!z || file.exists()) {
-            arrayList.add(new File(str + "/files", str2));
-            arrayList.add(new File(str + "/cache", str2));
-            arrayList.add(new File(str + "/files"));
-            arrayList.add(new File(str + "/cache"));
+            arrayList.add(new java.io.File(str + "/files", str2));
+            arrayList.add(new java.io.File(str + "/cache", str2));
+            arrayList.add(new java.io.File(str + "/files"));
+            arrayList.add(new java.io.File(str + "/cache"));
             arrayList.add(file);
         }
     }
 
     private static void b(char c2) {
-        c(Character.toString(c2));
+        c(java.lang.Character.toString(c2));
     }
 
-    private static void c(String str) {
-        File file = new File(g(), r(str));
+    private static void c(java.lang.String str) {
+        java.io.File file = new java.io.File(g(), r(str));
         if (file.isFile()) {
             return;
         }
-        e1.d("Extract file " + file);
-        Resources resources = Tools.f0().getResources();
-        int iD = b2.d("ydw" + str, "raw");
+        android.ext.e1.d("Extract file " + file);
+        android.content.res.Resources resources = android.ext.Tools.f0().getResources();
+        int iD = android.ext.b2.d("ydw" + str, "raw");
         if (iD == 0) {
-            e1.d("Nothing extract file " + str + ' ' + file.getAbsolutePath());
+            android.ext.e1.d("Nothing extract file " + str + ' ' + file.getAbsolutePath());
             return;
         }
         try {
             byte[] bArr = new byte[8192];
-            InputStream inputStreamOpenRawResource = resources.openRawResource(iD);
-            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            java.io.InputStream inputStreamOpenRawResource = resources.openRawResource(iD);
+            java.io.FileOutputStream fileOutputStream = new java.io.FileOutputStream(file);
             while (true) {
                 int i = inputStreamOpenRawResource.read(bArr);
                 if (i <= 0) {
@@ -113,8 +65,8 @@ public class e0 {
                 }
                 fileOutputStream.write(bArr, 0, i);
             }
-        } catch (Throwable th) {
-            e1.g("Failed extract file " + str + ' ' + file.getAbsolutePath(), th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.g("Failed extract file " + str + ' ' + file.getAbsolutePath(), th);
         }
     }
 
@@ -141,7 +93,7 @@ public class e0 {
                                 c3 = 'j';
                                 break;
                         }
-                        Tools.M("sh", new File(Tools.q0(), "sh.jar"));
+                        android.ext.Tools.M("sh", new java.io.File(android.ext.Tools.q0(), "sh.jar"));
                         return;
                     }
                     b('d');
@@ -150,7 +102,7 @@ public class e0 {
                     c3 = 'o';
                 }
                 b(c3);
-                Tools.M("sh", new File(Tools.q0(), "sh.jar"));
+                android.ext.Tools.M("sh", new java.io.File(android.ext.Tools.q0(), "sh.jar"));
                 return;
             }
             c("08");
@@ -158,10 +110,10 @@ public class e0 {
             b('g');
             f729f = 'g';
             b('l');
-            Tools.M("sh", new File(Tools.q0(), "sh.jar"));
+            android.ext.Tools.M("sh", new java.io.File(android.ext.Tools.q0(), "sh.jar"));
             return;
-        } catch (Throwable th) {
-            e1.l("JVM fail", th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.l("JVM fail", th);
             return;
         }
         b('9');
@@ -171,27 +123,27 @@ public class e0 {
         b(c3);
     }
 
-    private int e(String str) {
-        Tools.j(str);
+    private int e(java.lang.String str) {
+        android.ext.Tools.j(str);
         for (int i = 0; i < 2; i++) {
             try {
-                String[] strArr = new String[2];
-                strArr[0] = Tools.F0(str);
-                strArr[1] = Config.vSpaceReal ? Config.E : "1";
-                Process processI = Tools.I(strArr);
-                if (Tools.X1(processI, 30)) {
+                java.lang.String[] strArr = new java.lang.String[2];
+                strArr[0] = android.ext.Tools.F0(str);
+                strArr[1] = android.ext.Config.vSpaceReal ? android.ext.Config.E : "1";
+                java.lang.Process processI = android.ext.Tools.I(strArr);
+                if (android.ext.Tools.X1(processI, 30)) {
                     return processI.exitValue();
                 }
-                throw new RuntimeException("timeout: 30");
-            } catch (IOException e2) {
+                throw new java.lang.RuntimeException("timeout: 30");
+            } catch (java.io.IOException e2) {
                 if (i == 0) {
                     try {
-                        String message = e2.getMessage();
+                        java.lang.String message = e2.getMessage();
                         if (message != null && message.indexOf("denied") != -1) {
-                            Tools.r(str, "0755");
+                            android.ext.Tools.r(str, "0755");
                         }
-                    } catch (Throwable th) {
-                        e1.s("getArch: " + str, th);
+                    } catch (java.lang.Throwable th) {
+                        android.ext.e1.s("getArch: " + str, th);
                         h.append(th.toString());
                         return 100;
                     }
@@ -207,20 +159,20 @@ public class e0 {
         return f727d;
     }
 
-    public static String g() {
+    public static java.lang.String g() {
         if (f726c == null) {
-            File fileJ = j();
+            java.io.File fileJ = j();
             if (fileJ == null) {
-                fileJ = Tools.q0();
+                fileJ = android.ext.Tools.q0();
             }
             f726c = s(fileJ.getAbsolutePath());
         }
         return f726c;
     }
 
-    public static String h() {
+    public static java.lang.String h() {
         if (f725b == null) {
-            f725b = new e0().f731a;
+            f725b = new android.ext.e0().f731a;
         }
         return f725b;
     }
@@ -234,18 +186,18 @@ public class e0 {
     /* JADX WARN: Instruction removed from duplicated block: B:26:0x0053, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:31:0x008e, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:34:0x00d0, please report this as an issue */
-    private String i() {
-        String str;
-        File file;
+    private java.lang.String i() {
+        java.lang.String str;
+        java.io.File file;
         int iE;
         char[] cArr = {0, '2', '1', '5', '8', 'b', '0', '7', 'a'};
-        String strG = g();
+        java.lang.String strG = g();
         boolean z = true;
-        char c2 = (Config.C && (Config.G == 1 || (Config.G == 0 && Config.E.contains("64")))) ? (char) 0 : (char) 2;
+        char c2 = (android.ext.Config.C && (android.ext.Config.G == 1 || (android.ext.Config.G == 0 && android.ext.Config.E.contains("64")))) ? (char) 0 : (char) 2;
         for (int i = 0; i < cArr.length; i++) {
             if (i == 0) {
                 for (int i2 = 1; i2 < cArr.length; i2++) {
-                    if (new File(strG, q(cArr[i2])).exists()) {
+                    if (new java.io.File(strG, q(cArr[i2])).exists()) {
                         cArr[0] = cArr[i2];
                         break;
                     }
@@ -256,7 +208,7 @@ public class e0 {
                     h.append(cArr[i]);
                     h.append(": ");
                     str = "0" + cArr[i];
-                    file = new File(strG, r(str));
+                    file = new java.io.File(strG, r(str));
                     if (!file.isFile()) {
                         c(str);
                     }
@@ -267,17 +219,17 @@ public class e0 {
                             if (iE != 105 && iE != 102) {
                                 z = false;
                             }
-                            InOut.p(z);
-                            f730g = new StringBuilder(0);
-                            h = new StringBuilder(0);
-                            String absolutePath = new File(strG, q(cArr[i])).getAbsolutePath();
-                            e1.d("Daemon: " + absolutePath);
+                            android.ext.InOut.p(z);
+                            f730g = new java.lang.StringBuilder(0);
+                            h = new java.lang.StringBuilder(0);
+                            java.lang.String absolutePath = new java.io.File(strG, q(cArr[i])).getAbsolutePath();
+                            android.ext.e1.d("Daemon: " + absolutePath);
                             f727d = iE;
                             d(cArr[i]);
-                            Tools.j(absolutePath);
+                            android.ext.Tools.j(absolutePath);
                             return absolutePath;
                         }
-                        e1.d("getArch " + cArr[i] + ' ' + iE);
+                        android.ext.e1.d("getArch " + cArr[i] + ' ' + iE);
                         h.append("; ");
                         h.append(iE);
                         h.append('\n');
@@ -287,21 +239,21 @@ public class e0 {
                     } else {
                         h.append(file);
                         h.append(" NF.\n");
-                        e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
+                        android.ext.e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
                     }
                 }
             } else {
                 h.append(cArr[i]);
                 h.append(": ");
                 str = "0" + cArr[i];
-                file = new File(strG, r(str));
+                file = new java.io.File(strG, r(str));
                 if (!file.isFile()) {
                     c(str);
                 }
                 if (file.isFile()) {
                     h.append(file);
                     h.append(" NF.\n");
-                    e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
+                    android.ext.e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
                 } else {
                     f730g.append(cArr[i]);
                     iE = e(file.getAbsolutePath());
@@ -309,17 +261,17 @@ public class e0 {
                         if (iE != 105) {
                             z = false;
                         }
-                        InOut.p(z);
-                        f730g = new StringBuilder(0);
-                        h = new StringBuilder(0);
-                        String absolutePath2 = new File(strG, q(cArr[i])).getAbsolutePath();
-                        e1.d("Daemon: " + absolutePath2);
+                        android.ext.InOut.p(z);
+                        f730g = new java.lang.StringBuilder(0);
+                        h = new java.lang.StringBuilder(0);
+                        java.lang.String absolutePath2 = new java.io.File(strG, q(cArr[i])).getAbsolutePath();
+                        android.ext.e1.d("Daemon: " + absolutePath2);
                         f727d = iE;
                         d(cArr[i]);
-                        Tools.j(absolutePath2);
+                        android.ext.Tools.j(absolutePath2);
                         return absolutePath2;
                     }
-                    e1.d("getArch " + cArr[i] + ' ' + iE);
+                    android.ext.e1.d("getArch " + cArr[i] + ' ' + iE);
                     h.append("; ");
                     h.append(iE);
                     h.append('\n');
@@ -330,49 +282,49 @@ public class e0 {
         }
         if (c2 == 1) {
             try {
-                File file2 = new File(Tools.K0());
+                java.io.File file2 = new java.io.File(android.ext.Tools.K0());
                 if (n(file2)) {
-                    file2 = Tools.f0().getExternalCacheDir();
+                    file2 = android.ext.Tools.f0().getExternalCacheDir();
                     if (n(file2)) {
-                        file2 = Tools.f0().getExternalFilesDir(null);
+                        file2 = android.ext.Tools.f0().getExternalFilesDir(null);
                         if (n(file2)) {
-                            file2 = new File("/sdcard");
+                            file2 = new java.io.File("/sdcard");
                         }
                     }
                 }
-                File file3 = new File(file2, "gg_fixer.apk");
+                java.io.File file3 = new java.io.File(file2, "gg_fixer.apk");
                 if (file3.exists()) {
                     file3.delete();
                 }
-                Tools.M("fx", file3);
-                n2.i(new a(file3));
-            } catch (Throwable th) {
-                e1.s("Failed extract fx", th);
+                android.ext.Tools.M("fx", file3);
+                android.ext.n2.i(new android.ext.e0$a(this, file3));
+            } catch (java.lang.Throwable th) {
+                android.ext.e1.s("Failed extract fx", th);
             }
         }
         f730g.append(';');
-        String strF0 = Tools.F0(strG);
-        String[] strArr = {"ls", "-l", strF0};
+        java.lang.String strF0 = android.ext.Tools.F0(strG);
+        java.lang.String[] strArr = {"ls", "-l", strF0};
         try {
             h.append("\n\n");
             h.append("ls -l ");
             h.append(strF0);
             h.append(":\n");
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Tools.I(strArr).getInputStream()));
+            java.io.BufferedReader bufferedReader = new java.io.BufferedReader(new java.io.InputStreamReader(android.ext.Tools.I(strArr).getInputStream()));
             while (true) {
-                String line = bufferedReader.readLine();
+                java.lang.String line = bufferedReader.readLine();
                 if (line == null) {
                     break;
                 }
                 if (line.indexOf("lib") != -1 && line.indexOf(".so") != -1) {
-                    e1.d("ls: " + line);
+                    android.ext.e1.d("ls: " + line);
                     h.append(line);
                     h.append('\n');
                 }
             }
             bufferedReader.close();
-        } catch (Exception e2) {
-            e1.s("ls: " + strF0, e2);
+        } catch (java.lang.Exception e2) {
+            android.ext.e1.s("ls: " + strF0, e2);
             h.append(e2);
             h.append('\n');
         }
@@ -380,28 +332,28 @@ public class e0 {
         return "no_binary_for_your_arch";
     }
 
-    private static File j() {
-        File fileP0 = Tools.p0();
-        File fileB0 = Tools.b0();
-        String strS0 = Tools.s0();
-        ArrayList<File> arrayList = new ArrayList(64);
-        arrayList.add(Tools.q0());
-        arrayList.add(Tools.c0());
+    private static java.io.File j() {
+        java.io.File fileP0 = android.ext.Tools.p0();
+        java.io.File fileB0 = android.ext.Tools.b0();
+        java.lang.String strS0 = android.ext.Tools.s0();
+        java.util.ArrayList<java.io.File> arrayList = new java.util.ArrayList(64);
+        arrayList.add(android.ext.Tools.q0());
+        arrayList.add(android.ext.Tools.c0());
         arrayList.add(fileP0);
         arrayList.add(fileB0);
-        arrayList.add(new File(fileP0.getParentFile(), strS0));
-        arrayList.add(new File(fileB0.getParentFile(), strS0));
+        arrayList.add(new java.io.File(fileP0.getParentFile(), strS0));
+        arrayList.add(new java.io.File(fileB0.getParentFile(), strS0));
         arrayList.add(fileP0.getParentFile());
         arrayList.add(fileB0.getParentFile());
-        String absolutePath = fileP0.getAbsolutePath();
-        String str = absolutePath.startsWith("/data/user/") ? absolutePath.split("/", -1)[3] : "0";
-        String str2 = absolutePath.startsWith("/data/user/") ? "/data/user/" + str + "/" : "/data/data/";
-        if (Config.vSpaceReal) {
-            String str3 = str2 + Config.E;
-            StringBuilder sb = new StringBuilder();
+        java.lang.String absolutePath = fileP0.getAbsolutePath();
+        java.lang.String str = absolutePath.startsWith("/data/user/") ? absolutePath.split("/", -1)[3] : "0";
+        java.lang.String str2 = absolutePath.startsWith("/data/user/") ? "/data/user/" + str + "/" : "/data/data/";
+        if (android.ext.Config.vSpaceReal) {
+            java.lang.String str3 = str2 + android.ext.Config.E;
+            java.lang.StringBuilder sb = new java.lang.StringBuilder();
             sb.append(str3);
             sb.append("/parallel_intl/0/");
-            String str4 = i.f1002d;
+            java.lang.String str4 = android.ext.i.f1002d;
             sb.append(str4);
             a(arrayList, sb.toString(), strS0, true);
             a(arrayList, str3 + "/parallel_lite/0/" + str4, strS0, true);
@@ -414,24 +366,24 @@ public class e0 {
             a(arrayList, str3 + "/sandboxdata/" + str4, strS0, true);
             a(arrayList, str3 + "/gameplugins/" + str4, strS0, true);
             a(arrayList, str3 + "/Plugin/0/" + str4 + "/data/" + str4, strS0, true);
-            StringBuilder sb2 = new StringBuilder();
+            java.lang.StringBuilder sb2 = new java.lang.StringBuilder();
             sb2.append("/data/user_de/");
             sb2.append(str);
             sb2.append("/");
-            sb2.append(Config.E);
+            sb2.append(android.ext.Config.E);
             a(arrayList, sb2.toString(), strS0, false);
             a(arrayList, str3, strS0, false);
         } else {
-            StringBuilder sb3 = new StringBuilder();
+            java.lang.StringBuilder sb3 = new java.lang.StringBuilder();
             sb3.append(str2);
-            String str5 = i.f1002d;
+            java.lang.String str5 = android.ext.i.f1002d;
             sb3.append(str5);
             a(arrayList, sb3.toString(), strS0, false);
             a(arrayList, "/data/user_de/" + str + "/" + str5, strS0, false);
-            arrayList.add(new File("/data/data"));
-            arrayList.add(new File("/data"));
+            arrayList.add(new java.io.File("/data/data"));
+            arrayList.add(new java.io.File("/data"));
         }
-        for (File file : arrayList) {
+        for (java.io.File file : arrayList) {
             if (file != null) {
                 if (!file.exists()) {
                     file.mkdirs();
@@ -440,25 +392,25 @@ public class e0 {
                     return file;
                 }
                 try {
-                    String absolutePath2 = file.getAbsolutePath();
+                    java.lang.String absolutePath2 = file.getAbsolutePath();
                     try {
-                        if ((Os.stat(absolutePath2).st_mode & 16384) != 0) {
+                        if ((android.system.Os.stat(absolutePath2).st_mode & 16384) != 0) {
                             return file;
                         }
-                    } catch (Exception e2) {
-                        e1.s(e2 instanceof ErrnoException ? "Errno for path '" + absolutePath2 + "': " + ((ErrnoException) e2).errno : "Exception for path '" + absolutePath2 + "'", e2);
+                    } catch (java.lang.Exception e2) {
+                        android.ext.e1.s(e2 instanceof android.system.ErrnoException ? "Errno for path '" + absolutePath2 + "': " + ((android.system.ErrnoException) e2).errno : "Exception for path '" + absolutePath2 + "'", e2);
                     }
-                } catch (Throwable th) {
-                    e1.a(th);
+                } catch (java.lang.Throwable th) {
+                    android.ext.e1.a(th);
                 }
             }
         }
-        e1.p("Failed get dir for fix");
+        android.ext.e1.p("Failed get dir for fix");
         return null;
     }
 
-    public static String k(boolean z) {
-        StringBuilder sb = new StringBuilder();
+    public static java.lang.String k(boolean z) {
+        java.lang.StringBuilder sb = new java.lang.StringBuilder();
         sb.append("/lib");
         sb.append(z ? f729f : f728e);
         sb.append(".so");
@@ -471,15 +423,16 @@ public class e0 {
     /* JADX WARN: Code duplicated, block: B:22:0x0070  */
     /* JADX WARN: Instruction removed from duplicated block: B:21:0x0051, please report this as an issue */
     public static void l() {
-        File file;
-        StringBuilder sb;
-        String str;
+java.lang.Throwable th = null;
+        java.io.File file;
+        java.lang.StringBuilder sb;
+        java.lang.String str;
         char[] cArr = {0, 'q', 'p', 'r', 's', 't'};
-        String strG = g();
+        java.lang.String strG = g();
         for (int i = 0; i < cArr.length; i++) {
             if (i == 0) {
                 for (int i2 = 1; i2 < cArr.length; i2++) {
-                    if (new File(strG, q(cArr[i2])).exists()) {
+                    if (new java.io.File(strG, q(cArr[i2])).exists()) {
                         cArr[0] = cArr[i2];
                         break;
                     }
@@ -487,46 +440,46 @@ public class e0 {
                 if (cArr[0] == 0) {
                     continue;
                 } else {
-                    file = new File(strG, q(cArr[i]));
+                    file = new java.io.File(strG, q(cArr[i]));
                     if (!file.isFile()) {
                         b(cArr[i]);
                     }
                     if (!file.isFile()) {
                         try {
-                            System.load(file.getAbsolutePath());
+                            java.lang.System.load(file.getAbsolutePath());
                             try {
-                                ProcessBuilder.loaded();
+                                android.lang.ProcessBuilder.loaded();
                                 return;
-                            } catch (Throwable th) {
-                                th = th;
-                                sb = new StringBuilder();
+                            } catch (java.lang.Throwable th_c) {
+                                th = th_c;
+                                sb = new java.lang.StringBuilder();
                                 str = "Failed check ";
                                 sb.append(str);
                                 sb.append(file);
                                 sb.append(' ');
                                 sb.append(file.getAbsolutePath());
-                                e1.g(sb.toString(), th);
+                                android.ext.e1.g(sb.toString(), th_c);
                             }
-                        } catch (Throwable th2) {
+                        } catch (java.lang.Throwable th2) {
                             th = th2;
-                            sb = new StringBuilder();
+                            sb = new java.lang.StringBuilder();
                             str = "Failed load ";
                         }
                     } else {
-                        e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
+                        android.ext.e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
                     }
                 }
             } else {
-                file = new File(strG, q(cArr[i]));
+                file = new java.io.File(strG, q(cArr[i]));
                 if (!file.isFile()) {
                     b(cArr[i]);
                 }
                 if (!file.isFile()) {
-                    System.load(file.getAbsolutePath());
-                    ProcessBuilder.loaded();
+                    java.lang.System.load(file.getAbsolutePath());
+                    android.lang.ProcessBuilder.loaded();
                     return;
                 }
-                e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
+                android.ext.e1.d("Not a file " + file + ' ' + file.getAbsolutePath());
             }
         }
     }
@@ -535,7 +488,7 @@ public class e0 {
         return f() == 105;
     }
 
-    private boolean n(File file) {
+    private boolean n(java.io.File file) {
         if (file == null) {
             return true;
         }
@@ -569,7 +522,7 @@ public class e0 {
                                     }
                                     break;
                                 default:
-                                    throw new RuntimeException("Unknown lib: " + c2);
+                                    throw new java.lang.RuntimeException("Unknown lib: " + c2);
                             }
                         } else if (103 != i) {
                             return false;
@@ -594,22 +547,22 @@ public class e0 {
         return iF == 101 || iF == 102;
     }
 
-    private static String q(char c2) {
-        return r(Character.toString(c2));
+    private static java.lang.String q(char c2) {
+        return r(java.lang.Character.toString(c2));
     }
 
-    private static String r(String str) {
+    private static java.lang.String r(java.lang.String str) {
         return "lib" + str + ".so";
     }
 
-    private static String s(String str) {
+    private static java.lang.String s(java.lang.String str) {
         char[] cArr = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'd'};
         for (int i = 0; i < 13; i++) {
-            File file = new File(str, q(cArr[i]));
+            java.io.File file = new java.io.File(str, q(cArr[i]));
             if (file.exists()) {
-                String absolutePath = file.getAbsolutePath();
-                if (!Tools.j(absolutePath)) {
-                    e1.d("Can not execute " + absolutePath);
+                java.lang.String absolutePath = file.getAbsolutePath();
+                if (!android.ext.Tools.j(absolutePath)) {
+                    android.ext.e1.d("Can not execute " + absolutePath);
                 }
             }
         }

@@ -1,31 +1,21 @@
 package android.ext;
 
-import android.content.Context;
-import android.content.res.Configuration;
-import android.fix.FrameLayout;
-import android.fix.LinearLayout;
-import android.util.AttributeSet;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ScrollView;
-import catch_.me_.if_.you_.can_.R;
-
 /* JADX INFO: loaded from: classes.dex */
-public class KeyboardLayout extends LinearLayout {
+public class KeyboardLayout extends android.fix.LinearLayout {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
-    private ScrollView f208a;
+    private android.widget.ScrollView f208a;
 
     /* JADX INFO: renamed from: b, reason: collision with root package name */
-    private FrameLayout f209b;
+    private android.fix.FrameLayout f209b;
 
     /* JADX INFO: renamed from: c, reason: collision with root package name */
-    private InternalKeyboard f210c;
+    private android.ext.InternalKeyboard f210c;
 
     /* JADX INFO: renamed from: d, reason: collision with root package name */
     private int f211d;
 
-    public KeyboardLayout(Context context, AttributeSet attributeSet) {
+    public KeyboardLayout(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
@@ -34,26 +24,26 @@ public class KeyboardLayout extends LinearLayout {
             return;
         }
         this.f211d = 0;
-        this.f208a = (ScrollView) findViewById(R.id.kbd_scroll);
-        this.f209b = (FrameLayout) findViewById(R.id.kbd_frame);
-        this.f210c = (InternalKeyboard) findViewById(R.id.keyboard);
+        this.f208a = (android.widget.ScrollView) findViewById(catch_.me_.if_.you_.can_.R$id.kbd_scroll);
+        this.f209b = (android.fix.FrameLayout) findViewById(catch_.me_.if_.you_.can_.R$id.kbd_frame);
+        this.f210c = (android.ext.InternalKeyboard) findViewById(catch_.me_.if_.you_.can_.R$id.keyboard);
     }
 
-    private void b(View view, int i, int i2) {
-        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+    private void b(android.view.View view, int i, int i2) {
+        android.view.ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
         layoutParams.width = i;
         layoutParams.height = i2;
         view.setLayoutParams(layoutParams);
     }
 
     public void c() {
-        Configuration configuration = Tools.f0().getResources().getConfiguration();
+        android.content.res.Configuration configuration = android.ext.Tools.f0().getResources().getConfiguration();
         int i = configuration.orientation;
         if (i == this.f211d) {
             return;
         }
         this.f211d = i;
-        e1.d("Screen: " + configuration.screenWidthDp + "dp x " + configuration.screenHeightDp + "dp");
+        android.ext.e1.d("Screen: " + configuration.screenWidthDp + "dp x " + configuration.screenHeightDp + "dp");
         a();
         int[] iArr = i == 1 ? new int[]{1, -1, 0} : new int[]{0, -1, -2};
         setOrientation(iArr[0]);
@@ -62,11 +52,11 @@ public class KeyboardLayout extends LinearLayout {
     }
 
     @Override // android.fix.LinearLayout, android.view.View
-    protected void onConfigurationChanged(Configuration configuration) {
-        e1.d("KeyboardLayout onConfigurationChanged: " + configuration);
-        Configuration configurationF = a.b.f(configuration);
+    protected void onConfigurationChanged(android.content.res.Configuration configuration) {
+        android.ext.e1.d("KeyboardLayout onConfigurationChanged: " + configuration);
+        android.content.res.Configuration configurationF = gg_a.b.f(configuration);
         super.onConfigurationChanged(configurationF);
         c();
-        MainService.Y(configurationF);
+        android.ext.MainService.Y(configurationF);
     }
 }

@@ -1,107 +1,12 @@
 package android.ext;
 
-import android.content.Context;
-import android.content.DialogInterface;
-import android.fix.ImageButtonView;
-import android.text.Editable;
-import android.util.AttributeSet;
-import android.view.View;
-import catch_.me_.if_.you_.can_.R;
-import java.util.ArrayList;
-import java.util.Locale;
-
 /* JADX INFO: loaded from: classes.dex */
-public class HexConverter extends ImageButtonView implements View.OnClickListener {
+public class HexConverter extends android.fix.ImageButtonView implements android.view.View.OnClickListener {
 
     /* JADX INFO: renamed from: a, reason: collision with root package name */
     private boolean f146a;
 
-    class a implements DialogInterface.OnClickListener {
-
-        /* JADX INFO: renamed from: a, reason: collision with root package name */
-        final /* synthetic */ ArrayList f147a;
-
-        /* JADX INFO: renamed from: b, reason: collision with root package name */
-        final /* synthetic */ long f148b;
-
-        /* JADX INFO: renamed from: c, reason: collision with root package name */
-        final /* synthetic */ EditText f149c;
-
-        /* JADX INFO: renamed from: d, reason: collision with root package name */
-        final /* synthetic */ int f150d;
-
-        /* JADX INFO: renamed from: e, reason: collision with root package name */
-        final /* synthetic */ int f151e;
-
-        /* JADX INFO: renamed from: f, reason: collision with root package name */
-        final /* synthetic */ Editable f152f;
-
-        /* JADX INFO: renamed from: android.ext.HexConverter$a$a, reason: collision with other inner class name */
-        class C0006a implements Config.p.b {
-
-            /* JADX INFO: renamed from: a, reason: collision with root package name */
-            final /* synthetic */ Config.p f154a;
-
-            C0006a(Config.p pVar) {
-                this.f154a = pVar;
-            }
-
-            @Override // android.ext.Config.p.b
-            public void a(int i) {
-                this.f154a.g(null);
-                String strL1 = Tools.L1("%,d", Long.valueOf(a.this.f148b ^ Config.s));
-                try {
-                    a aVar = a.this;
-                    aVar.f149c.setSelection(aVar.f150d, aVar.f151e);
-                    a aVar2 = a.this;
-                    aVar2.f152f.replace(aVar2.f150d, aVar2.f151e, strL1);
-                } catch (IndexOutOfBoundsException e2) {
-                    e1.s("Failed replace text", e2);
-                    a.this.f149c.setText(strL1);
-                }
-                a.this.f149c.requestFocus();
-            }
-        }
-
-        a(ArrayList arrayList, long j, EditText editText, int i, int i2, Editable editable) {
-            this.f147a = arrayList;
-            this.f148b = j;
-            this.f149c = editText;
-            this.f150d = i;
-            this.f151e = i2;
-            this.f152f = editable;
-        }
-
-        @Override // android.content.DialogInterface.OnClickListener
-        public void onClick(DialogInterface dialogInterface, int i) {
-            if (i >= 0) {
-                try {
-                    if (i < this.f147a.size()) {
-                        String str = (String) this.f147a.get(i);
-                        if (str == null) {
-                            Config.p pVarB = Config.b(R.id.config_xor_key);
-                            pVarB.g(new C0006a(pVarB));
-                            pVarB.b();
-                        } else {
-                            try {
-                                this.f149c.setSelection(this.f150d, this.f151e);
-                                this.f152f.replace(this.f150d, this.f151e, str);
-                            } catch (IndexOutOfBoundsException e2) {
-                                e1.s("Failed replace text", e2);
-                                this.f149c.setText(str);
-                            }
-                        }
-                    }
-                } catch (Throwable th) {
-                    e1.g("HexConverter failed with " + i, th);
-                    return;
-                }
-            }
-            this.f149c.requestFocus();
-        }
-    }
-
-    public HexConverter(Context context, AttributeSet attributeSet) {
+    public HexConverter(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f146a = true;
         a();
@@ -112,11 +17,11 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
         if (isInEditMode()) {
             return;
         }
-        setImageResource(R.drawable.ic_arrow_down_drop_circle_white_24dp);
-        Config.m(this);
+        setImageResource(catch_.me_.if_.you_.can_.R$drawable.ic_arrow_down_drop_circle_white_24dp);
+        android.ext.Config.m(this);
     }
 
-    private String b(String str, char c2, boolean z) {
+    private java.lang.String b(java.lang.String str, char c2, boolean z) {
         int length = str.length();
         int i = 0;
         if (z) {
@@ -183,35 +88,36 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
     /* JADX WARN: Instruction removed from duplicated block: B:137:0x038c, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:140:0x03a5, please report this as an issue */
     /* JADX WARN: Instruction removed from duplicated block: B:143:0x03bb, please report this as an issue */
-    @Override // android.view.View.OnClickListener
-    public void onClick(View view) {
-        EditText editText;
+    @Override // android.view.View$OnClickListener
+    public void onClick(android.view.View view) {
+java.lang.Throwable th = null;
+        android.ext.EditText editText;
         int selected;
         int i;
-        Editable text;
+        android.text.Editable text;
         int selectionStart;
         int selectionEnd;
         boolean z;
         int length;
         int i2;
-        String string;
+        java.lang.String string;
         boolean z2;
         int i3;
-        String strSubstring;
+        java.lang.String strSubstring;
         int length2;
         long j;
-        ArrayList arrayList;
-        ArrayList arrayList2;
+        java.util.ArrayList arrayList;
+        java.util.ArrayList arrayList2;
         int iH;
         int i4;
         int i5;
-        n nVar;
+        android.ext.n nVar;
         long j2;
-        String string2;
-        String strTrim;
+        java.lang.String string2;
+        java.lang.String strTrim;
         int iIndexOf;
         int i6;
-        String str;
+        java.lang.String str;
         byte[] bArrG;
         int i7;
         int i8;
@@ -219,22 +125,22 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
         int i9;
         int iIndexOf2;
         char cCharAt;
-        StringBuilder sb;
-        Object tag = getTag();
-        if (tag instanceof EditText) {
-            editText = (EditText) tag;
+        java.lang.StringBuilder sb;
+        java.lang.Object tag = getTag();
+        if (tag instanceof android.ext.EditText) {
+            editText = (android.ext.EditText) tag;
         } else {
-            if (tag instanceof Object[]) {
-                Object[] objArr = (Object[]) tag;
+            if (tag instanceof java.lang.Object[]) {
+                java.lang.Object[] objArr = (java.lang.Object[]) tag;
                 if (objArr.length == 2) {
-                    Object obj = objArr[0];
-                    if (obj instanceof EditText) {
-                        EditText editText2 = (EditText) obj;
-                        Object obj2 = objArr[1];
-                        if (obj2 instanceof Integer) {
-                            selected = ((Integer) obj2).intValue();
-                        } else if (obj2 instanceof SystemSpinnerType) {
-                            selected = ((SystemSpinnerType) obj2).getSelected();
+                    java.lang.Object obj = objArr[0];
+                    if (obj instanceof android.ext.EditText) {
+                        android.ext.EditText editText2 = (android.ext.EditText) obj;
+                        java.lang.Object obj2 = objArr[1];
+                        if (obj2 instanceof java.lang.Integer) {
+                            selected = ((java.lang.Integer) obj2).intValue();
+                        } else if (obj2 instanceof android.ext.SystemSpinnerType) {
+                            selected = ((android.ext.SystemSpinnerType) obj2).getSelected();
                         } else {
                             editText = editText2;
                         }
@@ -277,37 +183,37 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                 string = text.subSequence(i2, length).toString().trim();
                 z2 = z;
                 i3 = i10;
-            } catch (StringIndexOutOfBoundsException e2) {
-                e1.s("subSequence fail for " + i2 + ", " + length + "; " + text.length(), e2);
+            } catch (java.lang.StringIndexOutOfBoundsException e2) {
+                android.ext.e1.s("subSequence fail for " + i2 + ", " + length + "; " + text.length(), e2);
                 length = text.length();
                 string = text.toString();
                 z2 = true;
                 i3 = 0;
             }
             if (string.length() == 0) {
-                Tools.J1(b2.f(R.string.empty_field));
+                android.ext.Tools.J1(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.empty_field));
                 return;
             }
             try {
-                EditText editText3 = editText;
-                if (t1.C(string) != 0) {
+                android.ext.EditText editText3 = editText;
+                if (android.ext.t1.C(string) != 0) {
                     cCharAt = string.charAt(1);
                     if (cCharAt == 'T') {
-                        String strTrim2 = string.substring(2).trim();
-                        sb = new StringBuilder();
-                        sb.append(Integer.toHexString(n.p(null, 0L, strTrim2)).toUpperCase(Locale.US));
+                        java.lang.String strTrim2 = string.substring(2).trim();
+                        sb = new java.lang.StringBuilder();
+                        sb.append(java.lang.Integer.toHexString(android.ext.n.p(null, 0L, strTrim2)).toUpperCase(java.util.Locale.US));
                         sb.append('h');
                     } else {
                         if (cCharAt == 'A') {
                             if (string.charAt(2) == '8') {
-                                String strTrim3 = string.substring(3).trim();
-                                sb = new StringBuilder();
-                                sb.append(Integer.toHexString(m.k(null, null, 0L, strTrim3)).toUpperCase(Locale.US));
+                                java.lang.String strTrim3 = string.substring(3).trim();
+                                sb = new java.lang.StringBuilder();
+                                sb.append(java.lang.Integer.toHexString(android.ext.m.k(null, null, 0L, strTrim3)).toUpperCase(java.util.Locale.US));
                                 sb.append('h');
                             } else {
-                                String strTrim4 = string.substring(2).trim();
-                                sb = new StringBuilder();
-                                sb.append(Integer.toHexString(n.n(null, 0L, strTrim4)).toUpperCase(Locale.US));
+                                java.lang.String strTrim4 = string.substring(2).trim();
+                                sb = new java.lang.StringBuilder();
+                                sb.append(java.lang.Integer.toHexString(android.ext.n.n(null, 0L, strTrim4)).toUpperCase(java.util.Locale.US));
                                 sb.append('h');
                             }
                         }
@@ -317,7 +223,7 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                     z2 = false;
                 }
                 if (z2) {
-                    cArr = new char[]{t1.f1252b, ':', ';', '~', 'X', 'W', 'Q'};
+                    cArr = new char[]{android.ext.t1.f1252b, ':', ';', '~', 'X', 'W', 'Q'};
                     strSubstring = string;
                     i9 = 0;
                     for (i8 = 7; i9 < i8; i8 = 7) {
@@ -327,14 +233,14 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                                 strSubstring = strSubstring.substring(0, iIndexOf2);
                             }
                             i9++;
-                        } catch (Throwable th) {
-                            th = th;
+                        } catch (java.lang.Throwable th_c) {
+                            th = th_c;
                             string = strSubstring;
-                            Tools.J1(b2.f(R.string.need_integer) + "\n\n" + th.getMessage());
-                            StringBuilder sb2 = new StringBuilder();
+                            android.ext.Tools.J1(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.need_integer) + "\n\n" + th_c.getMessage());
+                            java.lang.StringBuilder sb2 = new java.lang.StringBuilder();
                             sb2.append("HexConverter: ");
                             sb2.append(string);
-                            e1.g(sb2.toString(), th);
+                            android.ext.e1.g(sb2.toString(), th_c);
                             return;
                         }
                     }
@@ -343,51 +249,51 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                     strSubstring = string;
                     length2 = length;
                 }
-                j = t1.x(strSubstring).f1261a;
-                arrayList = new ArrayList();
-                arrayList2 = new ArrayList();
-                String strL1 = Tools.L1("%,d", Long.valueOf(j));
+                j = android.ext.t1.x(strSubstring).f1261a;
+                arrayList = new java.util.ArrayList();
+                arrayList2 = new java.util.ArrayList();
+                java.lang.String strL1 = android.ext.Tools.L1("%,d", java.lang.Long.valueOf(j));
                 arrayList.add(strL1);
                 arrayList2.add(strL1);
-                String str2 = b(c.M(0L, j, i), '0', true) + 'h';
+                java.lang.String str2 = b(android.ext.c.M(0L, j, i), '0', true) + 'h';
                 arrayList.add(str2);
                 arrayList2.add(str2);
-                String str3 = b(c.P(0L, j, i), '0', false) + 'r';
+                java.lang.String str3 = b(android.ext.c.P(0L, j, i), '0', false) + 'r';
                 arrayList.add(str3);
                 arrayList2.add(str3);
                 if (this.f146a) {
-                    String strL2 = Tools.L1("%,d", Long.valueOf(Config.s ^ j));
-                    arrayList.add(Tools.L1("XOR %,d = %s", Long.valueOf(Config.s), strL2));
+                    java.lang.String strL2 = android.ext.Tools.L1("%,d", java.lang.Long.valueOf(android.ext.Config.s ^ j));
+                    arrayList.add(android.ext.Tools.L1("XOR %,d = %s", java.lang.Long.valueOf(android.ext.Config.s), strL2));
                     arrayList2.add(strL2);
                     arrayList.add("XOR ... = ???");
                     arrayList2.add(null);
                 }
-                if (j != 0 && (i7 = (bArrG = t1.g(j))[8]) != -1) {
+                if (j != 0 && (i7 = (bArrG = android.ext.t1.g(j))[8]) != -1) {
                     try {
-                        String str4 = ':' + new String(bArrG, 0, i7 + 1, "UTF-8");
+                        java.lang.String str4 = ':' + new java.lang.String(bArrG, 0, i7 + 1, "UTF-8");
                         arrayList.add("UTF-8: " + str4);
                         arrayList2.add(str4);
-                    } catch (Throwable th2) {
-                        e1.g("HexConverter: " + strSubstring, th2);
+                    } catch (java.lang.Throwable th2) {
+                        android.ext.e1.g("HexConverter: " + strSubstring, th2);
                     }
                     if ((i7 & 1) == 0) {
                         i7++;
                     }
                     try {
-                        String str5 = ';' + new String(bArrG, 0, i7 + 1, "UTF-16LE");
+                        java.lang.String str5 = ';' + new java.lang.String(bArrG, 0, i7 + 1, "UTF-16LE");
                         arrayList.add("UTF-16LE: " + str5);
                         arrayList2.add(str5);
-                    } catch (Throwable th3) {
-                        e1.g("HexConverter: " + strSubstring, th3);
+                    } catch (java.lang.Throwable th3) {
+                        android.ext.e1.g("HexConverter: " + strSubstring, th3);
                     }
                 }
-                iH = MainService.instance.H();
+                iH = android.ext.MainService.instance.H();
                 if (iH == 1) {
-                    i4 = AddressArrayAdapter.f23d;
+                    i4 = android.ext.AddressArrayAdapter.f23d;
                 } else if (iH == 3) {
-                    i4 = MainService.instance.N.j;
+                    i4 = android.ext.MainService.instance.N.j;
                 } else if (iH == 2) {
-                    i4 = SavedListAdapter.f360c;
+                    i4 = android.ext.SavedListAdapter.f360c;
                 } else {
                     i4 = 0;
                 }
@@ -397,17 +303,17 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                             if (i5 == 0) {
                                 nVar = null;
                                 j2 = 0;
-                                string2 = n.o(null, 0L, j);
+                                string2 = android.ext.n.o(null, 0L, j);
                             } else {
                                 nVar = null;
                                 j2 = 0;
                                 string2 = null;
                             }
                             if (i5 == 1) {
-                                string2 = n.q(nVar, j2, j);
+                                string2 = android.ext.n.q(nVar, j2, j);
                             }
                             if (i5 == 2) {
-                                string2 = m.g(m.d(), 0L, (int) j, new StringBuilder()).toString();
+                                string2 = android.ext.m.g(android.ext.m.d(), 0L, (int) j, new java.lang.StringBuilder()).toString();
                             }
                             if (string2 == null) {
                                 arrayList = arrayList;
@@ -444,10 +350,10 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                         }
                     }
                 }
-                ArrayList arrayList3 = arrayList;
-                a aVar = new a(arrayList2, j, editText3, i3, length2, text);
-                f.m(f.b().setCustomTitle(Tools.h0(strSubstring + " →")).setItems((CharSequence[]) arrayList3.toArray(new String[arrayList3.size()]), aVar).setNegativeButton(b2.f(R.string.cancel), aVar).create());
-            } catch (Throwable th4) {
+                java.util.ArrayList arrayList3 = arrayList;
+                android.ext.HexConverter$a hexConverter$a = new android.ext.HexConverter$a(this, arrayList2, j, editText3, i3, length2, text);
+                android.ext.f.m(android.ext.f.b().setCustomTitle(android.ext.Tools.h0(strSubstring + " →")).setItems((java.lang.CharSequence[]) arrayList3.toArray(new java.lang.String[arrayList3.size()]), hexConverter$a).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), hexConverter$a).create());
+            } catch (java.lang.Throwable th4) {
                 th = th4;
             }
         }
@@ -481,28 +387,28 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
         z2 = z;
         i3 = i11;
         if (string.length() == 0) {
-            Tools.J1(b2.f(R.string.empty_field));
+            android.ext.Tools.J1(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.empty_field));
             return;
         }
-        EditText editText4 = editText;
-        if (t1.C(string) != 0) {
+        android.ext.EditText editText4 = editText;
+        if (android.ext.t1.C(string) != 0) {
             cCharAt = string.charAt(1);
             if (cCharAt == 'T') {
-                String strTrim5 = string.substring(2).trim();
-                sb = new StringBuilder();
-                sb.append(Integer.toHexString(n.p(null, 0L, strTrim5)).toUpperCase(Locale.US));
+                java.lang.String strTrim5 = string.substring(2).trim();
+                sb = new java.lang.StringBuilder();
+                sb.append(java.lang.Integer.toHexString(android.ext.n.p(null, 0L, strTrim5)).toUpperCase(java.util.Locale.US));
                 sb.append('h');
             } else {
                 if (cCharAt == 'A') {
                     if (string.charAt(2) == '8') {
-                        String strTrim6 = string.substring(3).trim();
-                        sb = new StringBuilder();
-                        sb.append(Integer.toHexString(m.k(null, null, 0L, strTrim6)).toUpperCase(Locale.US));
+                        java.lang.String strTrim6 = string.substring(3).trim();
+                        sb = new java.lang.StringBuilder();
+                        sb.append(java.lang.Integer.toHexString(android.ext.m.k(null, null, 0L, strTrim6)).toUpperCase(java.util.Locale.US));
                         sb.append('h');
                     } else {
-                        String strTrim7 = string.substring(2).trim();
-                        sb = new StringBuilder();
-                        sb.append(Integer.toHexString(n.n(null, 0L, strTrim7)).toUpperCase(Locale.US));
+                        java.lang.String strTrim7 = string.substring(2).trim();
+                        sb = new java.lang.StringBuilder();
+                        sb.append(java.lang.Integer.toHexString(android.ext.n.n(null, 0L, strTrim7)).toUpperCase(java.util.Locale.US));
                         sb.append('h');
                     }
                 }
@@ -512,7 +418,7 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
             z2 = false;
         }
         if (z2) {
-            cArr = new char[]{t1.f1252b, ':', ';', '~', 'X', 'W', 'Q'};
+            cArr = new char[]{android.ext.t1.f1252b, ':', ';', '~', 'X', 'W', 'Q'};
             strSubstring = string;
             i9 = 0;
             while (i9 < i8) {
@@ -527,43 +433,43 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
             strSubstring = string;
             length2 = length;
         }
-        j = t1.x(strSubstring).f1261a;
-        arrayList = new ArrayList();
-        arrayList2 = new ArrayList();
-        String strL3 = Tools.L1("%,d", Long.valueOf(j));
+        j = android.ext.t1.x(strSubstring).f1261a;
+        arrayList = new java.util.ArrayList();
+        arrayList2 = new java.util.ArrayList();
+        java.lang.String strL3 = android.ext.Tools.L1("%,d", java.lang.Long.valueOf(j));
         arrayList.add(strL3);
         arrayList2.add(strL3);
-        String str6 = b(c.M(0L, j, i), '0', true) + 'h';
+        java.lang.String str6 = b(android.ext.c.M(0L, j, i), '0', true) + 'h';
         arrayList.add(str6);
         arrayList2.add(str6);
-        String str7 = b(c.P(0L, j, i), '0', false) + 'r';
+        java.lang.String str7 = b(android.ext.c.P(0L, j, i), '0', false) + 'r';
         arrayList.add(str7);
         arrayList2.add(str7);
         if (this.f146a) {
-            String strL4 = Tools.L1("%,d", Long.valueOf(Config.s ^ j));
-            arrayList.add(Tools.L1("XOR %,d = %s", Long.valueOf(Config.s), strL4));
+            java.lang.String strL4 = android.ext.Tools.L1("%,d", java.lang.Long.valueOf(android.ext.Config.s ^ j));
+            arrayList.add(android.ext.Tools.L1("XOR %,d = %s", java.lang.Long.valueOf(android.ext.Config.s), strL4));
             arrayList2.add(strL4);
             arrayList.add("XOR ... = ???");
             arrayList2.add(null);
         }
         if (j != 0) {
-            String str8 = ':' + new String(bArrG, 0, i7 + 1, "UTF-8");
+            java.lang.String str8 = ':' + new java.lang.String(bArrG, 0, i7 + 1, "UTF-8");
             arrayList.add("UTF-8: " + str8);
             arrayList2.add(str8);
             if ((i7 & 1) == 0) {
                 i7++;
             }
-            String str9 = ';' + new String(bArrG, 0, i7 + 1, "UTF-16LE");
+            java.lang.String str9 = ';' + new java.lang.String(bArrG, 0, i7 + 1, "UTF-16LE");
             arrayList.add("UTF-16LE: " + str9);
             arrayList2.add(str9);
         }
-        iH = MainService.instance.H();
+        iH = android.ext.MainService.instance.H();
         if (iH == 1) {
-            i4 = AddressArrayAdapter.f23d;
+            i4 = android.ext.AddressArrayAdapter.f23d;
         } else if (iH == 3) {
-            i4 = MainService.instance.N.j;
+            i4 = android.ext.MainService.instance.N.j;
         } else if (iH == 2) {
-            i4 = SavedListAdapter.f360c;
+            i4 = android.ext.SavedListAdapter.f360c;
         } else {
             i4 = 0;
         }
@@ -573,17 +479,17 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                     if (i5 == 0) {
                         nVar = null;
                         j2 = 0;
-                        string2 = n.o(null, 0L, j);
+                        string2 = android.ext.n.o(null, 0L, j);
                     } else {
                         nVar = null;
                         j2 = 0;
                         string2 = null;
                     }
                     if (i5 == 1) {
-                        string2 = n.q(nVar, j2, j);
+                        string2 = android.ext.n.q(nVar, j2, j);
                     }
                     if (i5 == 2) {
-                        string2 = m.g(m.d(), 0L, (int) j, new StringBuilder()).toString();
+                        string2 = android.ext.m.g(android.ext.m.d(), 0L, (int) j, new java.lang.StringBuilder()).toString();
                     }
                     if (string2 == null) {
                         arrayList = arrayList;
@@ -621,17 +527,17 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                     if (i5 == 0) {
                         nVar = null;
                         j2 = 0;
-                        string2 = n.o(null, 0L, j);
+                        string2 = android.ext.n.o(null, 0L, j);
                     } else {
                         nVar = null;
                         j2 = 0;
                         string2 = null;
                     }
                     if (i5 == 1) {
-                        string2 = n.q(nVar, j2, j);
+                        string2 = android.ext.n.q(nVar, j2, j);
                     }
                     if (i5 == 2) {
-                        string2 = m.g(m.d(), 0L, (int) j, new StringBuilder()).toString();
+                        string2 = android.ext.m.g(android.ext.m.d(), 0L, (int) j, new java.lang.StringBuilder()).toString();
                     }
                     if (string2 == null) {
                         arrayList = arrayList;
@@ -668,9 +574,9 @@ public class HexConverter extends ImageButtonView implements View.OnClickListene
                 }
             }
         }
-        ArrayList arrayList4 = arrayList;
-        a aVar2 = new a(arrayList2, j, editText4, i3, length2, text);
-        f.m(f.b().setCustomTitle(Tools.h0(strSubstring + " →")).setItems((CharSequence[]) arrayList4.toArray(new String[arrayList4.size()]), aVar2).setNegativeButton(b2.f(R.string.cancel), aVar2).create());
+        java.util.ArrayList arrayList4 = arrayList;
+        android.ext.HexConverter$a hexConverter$a2 = new android.ext.HexConverter$a(this, arrayList2, j, editText4, i3, length2, text);
+        android.ext.f.m(android.ext.f.b().setCustomTitle(android.ext.Tools.h0(strSubstring + " →")).setItems((java.lang.CharSequence[]) arrayList4.toArray(new java.lang.String[arrayList4.size()]), hexConverter$a2).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R$string.cancel), hexConverter$a2).create());
     }
 
     public void setUseXor(boolean z) {

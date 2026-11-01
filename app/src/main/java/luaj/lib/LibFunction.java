@@ -1,46 +1,52 @@
 package luaj.lib;
 
-import luaj.LuaFunction;
-import luaj.LuaValue;
-import luaj.Varargs;
-
 /* JADX INFO: loaded from: classes.dex */
-public abstract class LibFunction extends LuaFunction {
+public abstract class LibFunction extends luaj.LuaFunction {
     protected int R;
-    protected String S;
-
-    protected interface a {
-        LibFunction a();
-    }
+    protected java.lang.String S;
 
     protected LibFunction() {
     }
 
-    protected void V2(LuaValue luaValue, a aVar, String[] strArr) {
-        W2(luaValue, aVar, strArr, 0);
+    protected void V2(luaj.LuaValue luaValue, luaj.lib.LibFunction$a libFunction$a, java.lang.String[] strArr) {
+        W2(luaValue, libFunction$a, strArr, 0);
     }
 
-    protected void W2(LuaValue luaValue, a aVar, String[] strArr, int i) {
+    protected void W2(luaj.LuaValue luaValue, luaj.lib.LibFunction$a libFunction$a, java.lang.String[] strArr, int i) {
         int length = strArr.length;
         for (int i2 = 0; i2 < length; i2++) {
-            LibFunction libFunctionA = aVar.a();
+            luaj.lib.LibFunction libFunctionA = libFunction$a.a();
             libFunctionA.R = i + i2;
-            String str = strArr[i2];
+            java.lang.String str = strArr[i2];
             libFunctionA.S = str;
             luaValue.i2(str, libFunctionA);
         }
     }
 
     @Override // luaj.LuaValue
-    public LuaValue call() {
-        return LuaValue.k0(1, "value expected");
+    public luaj.LuaValue call() {
+        return luaj.LuaValue.k0(1, "value expected");
     }
 
     @Override // luaj.LuaValue
-    public abstract LuaValue call(LuaValue luaValue);
+    public abstract luaj.LuaValue call(luaj.LuaValue luaValue);
+
+    @Override // luaj.LuaValue
+    public luaj.LuaValue call(luaj.LuaValue luaValue, luaj.LuaValue luaValue2) {
+        return call(luaValue);
+    }
+
+    @Override // luaj.LuaValue
+    public luaj.LuaValue call(luaj.LuaValue luaValue, luaj.LuaValue luaValue2, luaj.LuaValue luaValue3) {
+        return call(luaValue, luaValue2);
+    }
+
+    public luaj.LuaValue call(luaj.LuaValue luaValue, luaj.LuaValue luaValue2, luaj.LuaValue luaValue3, luaj.LuaValue luaValue4) {
+        return call(luaValue, luaValue2, luaValue3);
+    }
 
     @Override // luaj.LuaFunction, luaj.LuaValue, luaj.Varargs
-    public String g0() {
+    public java.lang.String g0() {
         if (this.S == null) {
             return super.g0();
         }
@@ -48,7 +54,7 @@ public abstract class LibFunction extends LuaFunction {
     }
 
     @Override // luaj.LuaValue
-    public Varargs invoke(Varargs varargs) {
+    public luaj.Varargs invoke(luaj.Varargs varargs) {
         int iU = varargs.U();
         if (iU == 0) {
             return call();
@@ -60,19 +66,5 @@ public abstract class LibFunction extends LuaFunction {
             return iU != 3 ? call(varargs.w(), varargs.v(2), varargs.v(3), varargs.v(4)) : call(varargs.w(), varargs.v(2), varargs.v(3));
         }
         return call(varargs.w(), varargs.v(2));
-    }
-
-    @Override // luaj.LuaValue
-    public LuaValue call(LuaValue luaValue, LuaValue luaValue2) {
-        return call(luaValue);
-    }
-
-    @Override // luaj.LuaValue
-    public LuaValue call(LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3) {
-        return call(luaValue, luaValue2);
-    }
-
-    public LuaValue call(LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3, LuaValue luaValue4) {
-        return call(luaValue, luaValue2, luaValue3);
     }
 }

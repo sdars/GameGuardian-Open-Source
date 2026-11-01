@@ -1,20 +1,8 @@
 package android.fix;
 
-import android.content.ActivityNotFoundException;
-import android.content.Context;
-import android.ext.e1;
-import android.ext.n0;
-import android.graphics.Canvas;
-import android.graphics.drawable.Drawable;
-import android.util.AttributeSet;
-import android.view.DragEvent;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-import android.view.accessibility.AccessibilityNodeInfo;
-
 /* JADX INFO: loaded from: classes.dex */
 public class CheckBox extends android.widget.CheckBox {
-    public CheckBox(Context context, AttributeSet attributeSet) {
+    public CheckBox(android.content.Context context, android.util.AttributeSet attributeSet) {
         super(context, attributeSet);
     }
 
@@ -22,8 +10,8 @@ public class CheckBox extends android.widget.CheckBox {
     protected void drawableStateChanged() {
         try {
             super.drawableStateChanged();
-        } catch (ArrayIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -31,49 +19,49 @@ public class CheckBox extends android.widget.CheckBox {
         return false;
     }
 
-    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable.Callback
-    public void invalidateDrawable(Drawable drawable) {
+    @Override // android.widget.TextView, android.view.View, android.graphics.drawable.Drawable$Callback
+    public void invalidateDrawable(android.graphics.drawable.Drawable drawable) {
         try {
             super.invalidateDrawable(drawable);
-        } catch (NoSuchFieldError e2) {
-            e1.a(e2);
+        } catch (java.lang.NoSuchFieldError e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onDragEvent(DragEvent dragEvent) {
+    public boolean onDragEvent(android.view.DragEvent dragEvent) {
         try {
             return super.onDragEvent(dragEvent);
-        } catch (ClassCastException e2) {
-            e1.a(e2);
+        } catch (java.lang.ClassCastException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
 
     @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(android.graphics.Canvas canvas) {
         try {
             super.onDraw(canvas);
-        } catch (ArrayIndexOutOfBoundsException | NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.ArrayIndexOutOfBoundsException | java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.view.View
-    public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
+    public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo accessibilityNodeInfo) {
         try {
             super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onKeyShortcut(int i, KeyEvent keyEvent) {
+    public boolean onKeyShortcut(int i, android.view.KeyEvent keyEvent) {
         try {
             return super.onKeyShortcut(i, keyEvent);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
@@ -82,9 +70,9 @@ public class CheckBox extends android.widget.CheckBox {
     protected void onMeasure(int i, int i2) {
         try {
             super.onMeasure(i, i2);
-        } catch (Throwable th) {
-            e1.a(th);
-            n0.h(Thread.currentThread(), th, false);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
+            android.ext.n0.h(java.lang.Thread.currentThread(), th, false);
         }
     }
 
@@ -92,18 +80,18 @@ public class CheckBox extends android.widget.CheckBox {
     public boolean onTextContextMenuItem(int i) {
         try {
             return super.onTextContextMenuItem(i);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
 
     @Override // android.widget.TextView, android.view.View
-    public boolean onTouchEvent(MotionEvent motionEvent) {
+    public boolean onTouchEvent(android.view.MotionEvent motionEvent) {
         try {
             return super.onTouchEvent(motionEvent);
-        } catch (ActivityNotFoundException e2) {
-            e1.a(e2);
+        } catch (android.content.ActivityNotFoundException e2) {
+            android.ext.e1.a(e2);
             return false;
         }
     }
@@ -112,8 +100,8 @@ public class CheckBox extends android.widget.CheckBox {
     public void onWindowFocusChanged(boolean z) {
         try {
             super.onWindowFocusChanged(z);
-        } catch (NullPointerException e2) {
-            e1.a(e2);
+        } catch (java.lang.NullPointerException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
@@ -121,8 +109,8 @@ public class CheckBox extends android.widget.CheckBox {
     public boolean performLongClick() {
         try {
             return super.performLongClick();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
             return false;
         }
     }
@@ -131,8 +119,8 @@ public class CheckBox extends android.widget.CheckBox {
     public void playSoundEffect(int i) {
         try {
             super.playSoundEffect(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -140,8 +128,8 @@ public class CheckBox extends android.widget.CheckBox {
     public void refreshDrawableState() {
         try {
             super.refreshDrawableState();
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
@@ -149,26 +137,26 @@ public class CheckBox extends android.widget.CheckBox {
     public void sendAccessibilityEvent(int i) {
         try {
             super.sendAccessibilityEvent(i);
-        } catch (Throwable th) {
-            e1.a(th);
+        } catch (java.lang.Throwable th) {
+            android.ext.e1.a(th);
         }
     }
 
     @Override // android.widget.TextView
-    public void setCompoundDrawables(Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4) {
+    public void setCompoundDrawables(android.graphics.drawable.Drawable drawable, android.graphics.drawable.Drawable drawable2, android.graphics.drawable.Drawable drawable3, android.graphics.drawable.Drawable drawable4) {
         try {
             super.setCompoundDrawables(drawable, drawable2, drawable3, drawable4);
-        } catch (StringIndexOutOfBoundsException e2) {
-            e1.a(e2);
+        } catch (java.lang.StringIndexOutOfBoundsException e2) {
+            android.ext.e1.a(e2);
         }
     }
 
     @Override // android.widget.TextView
-    public void setText(CharSequence charSequence, android.widget.TextView.BufferType bufferType) {
+    public void setText(java.lang.CharSequence charSequence, android.widget.TextView.BufferType textView$BufferType) {
         try {
-            super.setText(charSequence, bufferType);
-        } catch (SecurityException e2) {
-            e1.a(e2);
+            super.setText(charSequence, textView$BufferType);
+        } catch (java.lang.SecurityException e2) {
+            android.ext.e1.a(e2);
         }
     }
 }
