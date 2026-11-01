@@ -1,0 +1,113 @@
+android/ext/c.java:309: error: variable j3 might not have been initialized
+android/ext/ConfigListAdapter.java:985: error: cannot find symbol
+android/ext/ConfigListAdapter.java:989: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1024: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1026: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1029: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1031: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1035: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1040: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1043: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1053: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1055: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1064: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1068: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1070: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1079: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1085: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1154: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1327: error: cannot find symbol
+android/ext/Tools.java:698: error: cannot find symbol
+android/ext/Tools.java:699: error: cannot find symbol
+android/ext/Tools.java:703: error: cannot find symbol
+android/ext/Tools.java:704: error: cannot find symbol
+android/ext/Tools.java:1058: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1097: error: cannot find symbol
+android/ext/Tools.java:1099: error: cannot find symbol
+android/ext/Tools.java:1100: error: cannot find symbol
+android/ext/Tools.java:1102: error: cannot find symbol
+android/ext/Tools.java:1135: error: cannot find symbol
+android/ext/Tools.java:1279: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1306: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1311: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1422: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1457: error: cannot find symbol
+android/ext/Tools.java:1459: error: cannot find symbol
+android/ext/Tools.java:1585: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1991: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2014: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2076: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2276: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2336: error: cannot find symbol
+android/ext/Tools.java:2338: error: cannot find symbol
+android/ext/Tools.java:2339: error: cannot find symbol
+android/ext/Tools.java:2341: error: cannot find symbol
+android/ext/Tools.java:2374: error: cannot find symbol
+android/ext/Tools.java:2591: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2690: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2744: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2807: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2867: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2970: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3007: error: cannot find symbol
+android/ext/Tools.java:3024: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3028: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3043: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3365: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3509: error: non-static variable this cannot be referenced from a static context
+android/ext/MainService.java:886: error: cannot find symbol
+android/ext/MainService.java:1892: error: incompatible types: android.ext.d.a cannot be converted to ggd.a
+android/ext/MainService.java:2230: error: cannot find symbol
+android/ext/MainService.java:2388: error: byte cannot be dereferenced
+android/ext/MainService.java:2782: error: cannot find symbol
+android/ext/MainService.java:2969: error: cannot find symbol
+android/ext/MainService.java:3026: error: cannot find symbol
+android/ext/MainService.java:3283: error: cannot find symbol
+android/ext/MainService.java:3538: error: cannot find symbol
+android/ext/MainService.java:3543: error: cannot find symbol
+android/ext/MainService.java:3579: error: cannot find symbol
+android/ext/MainService.java:3590: error: cannot find symbol
+android/ext/MainService.java:3597: error: cannot find symbol
+android/ext/MainService.java:3599: error: cannot find symbol
+android/ext/MainService.java:3602: error: cannot find symbol
+android/ext/MainService.java:3613: error: cannot find symbol
+android/ext/MainService.java:3619: error: cannot find symbol
+android/ext/MainService.java:3620: error: cannot find symbol
+android/ext/MainService.java:3636: error: cannot find symbol
+android/ext/MainService.java:3641: error: cannot find symbol
+android/ext/MainService.java:3643: error: cannot find symbol
+android/ext/MainService.java:3678: error: cannot find symbol
+android/ext/MainService.java:3679: error: cannot find symbol
+android/ext/MainService.java:3690: error: cannot find symbol
+android/ext/MainService.java:3692: error: cannot find symbol
+android/ext/MainService.java:3693: error: cannot find symbol
+android/ext/MainService.java:3694: error: cannot find symbol
+android/ext/MainService.java:3696: error: cannot find symbol
+android/ext/MainService.java:3711: error: cannot find symbol
+android/ext/MainService.java:3722: error: cannot find symbol
+android/ext/MainService.java:3729: error: cannot find symbol
+android/ext/MainService.java:3731: error: cannot find symbol
+android/ext/MainService.java:3734: error: cannot find symbol
+android/ext/MainService.java:3753: error: cannot find symbol
+android/ext/MainService.java:3758: error: cannot find symbol
+android/ext/MainService.java:3761: error: cannot find symbol
+android/ext/MainService.java:3868: error: byte cannot be dereferenced
+android/ext/MainService.java:3868: error: byte cannot be dereferenced
+android/ext/MainService.java:3985: error: cannot find symbol
+android/ext/MainService.java:3986: error: cannot find symbol
+android/ext/MainService.java:4029: error: byte cannot be dereferenced
+android/ext/MainService.java:4043: error: byte cannot be dereferenced
+android/ext/MainService.java:4059: error: byte cannot be dereferenced
+android/ext/MainService.java:4061: error: byte cannot be dereferenced
+android/ext/MainService.java:4063: error: incompatible types: boolean cannot be converted to int
+android/ext/MainService.java:4077: error: byte cannot be dereferenced
+android/ext/MainService.java:4077: error: byte cannot be dereferenced
+android/ext/MainService.java:4086: error: byte cannot be dereferenced
+android/ext/MainService.java:4096: error: byte cannot be dereferenced
+android/ext/MainService.java:4098: error: byte cannot be dereferenced
+android/ext/MainService.java:4100: error: incompatible types: boolean cannot be converted to int
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4120: error: byte cannot be dereferenced
+android/ext/MainService.java:4122: error: byte cannot be dereferenced

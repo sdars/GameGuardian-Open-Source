@@ -1,0 +1,139 @@
+package luaj.lib;
+
+import luaj.LuaClosure;
+import luaj.LuaFunction;
+import luaj.LuaString;
+import luaj.LuaValue;
+import luaj.Varargs;
+import luaj.g;
+
+/* JADX INFO: loaded from: classes.dex */
+public class DebugLib$a {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    LuaFunction f1749a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    int f1750b;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    private LuaValue[] f1751c;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    DebugLib$a f1752d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    boolean f1753e;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    boolean f1754f;
+
+    public int a() {
+        int[] iArr;
+        int i;
+        if (this.f1749a.f1() && (iArr = this.f1749a.w0().R.f1726d) != null && (i = this.f1750b) >= 0 && i < iArr.length) {
+            return iArr[i];
+        }
+        return -1;
+    }
+
+    Varargs b(int i) {
+        LuaValue luaValue;
+        if (i < 0) {
+            if (!this.f1749a.f1()) {
+                return LuaValue.f1673c;
+            }
+            int i2 = -i;
+            Varargs varargsB3 = this.f1749a.w0().b3();
+            return (varargsB3 == null || i2 > varargsB3.U()) ? LuaValue.f1673c : LuaValue.N2(DebugLib.r0, varargsB3.v(i2));
+        }
+        LuaString luaStringC = c(i);
+        LuaValue[] luaValueArr = this.f1751c;
+        if (luaValueArr == null || i < 1 || i > luaValueArr.length || (luaValue = luaValueArr[i - 1]) == null) {
+            return LuaValue.f1673c;
+        }
+        if (luaStringC == null) {
+            luaStringC = DebugLib.q0;
+        }
+        return LuaValue.N2(luaStringC, luaValue);
+    }
+
+    LuaString c(int i) {
+        if (this.f1749a.f1()) {
+            return this.f1749a.w0().R.a(i, this.f1750b);
+        }
+        return null;
+    }
+
+    void d(int i, Varargs varargs, int i2) {
+        this.f1750b = i;
+        if (DebugLib.V) {
+            g.I(this.f1749a.w0(), i, this.f1751c, i2, varargs);
+        }
+    }
+
+    void e() {
+        this.f1749a = null;
+        this.f1751c = null;
+        this.f1750b = 0;
+        this.f1753e = false;
+        this.f1754f = false;
+    }
+
+    void f(LuaClosure luaClosure, Varargs varargs, LuaValue[] luaValueArr, boolean z, boolean z2) {
+        this.f1749a = luaClosure;
+        this.f1751c = luaValueArr;
+        this.f1750b = 0;
+        this.f1753e = z;
+        this.f1754f = z2;
+    }
+
+    void g(LuaFunction luaFunction, boolean z, boolean z2) {
+        this.f1749a = luaFunction;
+        this.f1751c = null;
+        this.f1750b = 0;
+        this.f1753e = z;
+        this.f1754f = z2;
+    }
+
+    Varargs h(int i, LuaValue luaValue) {
+        int i2 = 1;
+        if (i >= 0) {
+            LuaString luaStringC = c(i);
+            LuaValue[] luaValueArr = this.f1751c;
+            if (luaValueArr != null && i >= 1 && i <= luaValueArr.length) {
+                int i3 = i - 1;
+                if (luaValueArr[i3] != null) {
+                    luaValueArr[i3] = luaValue;
+                    return luaStringC == null ? DebugLib.q0 : luaStringC;
+                }
+            }
+            return LuaValue.f1673c;
+        }
+        if (!this.f1749a.f1()) {
+            return LuaValue.f1673c;
+        }
+        LuaClosure luaClosureW0 = this.f1749a.w0();
+        int i4 = -i;
+        Varargs varargsB3 = luaClosureW0.b3();
+        if (varargsB3 == null || i4 > varargsB3.U()) {
+            return LuaValue.f1673c;
+        }
+        int iU = varargsB3.U();
+        LuaValue[] luaValueArr2 = new LuaValue[iU];
+        while (i2 <= iU) {
+            luaValueArr2[i2 - 1] = i4 == i2 ? luaValue : varargsB3.v(i2);
+            i2++;
+        }
+        luaClosureW0.f3(LuaValue.O2(luaValueArr2));
+        return DebugLib.r0;
+    }
+
+    public String i() {
+        return this.f1749a.f1() ? this.f1749a.w0().R.b() : "[Java]";
+    }
+
+    public String toString() {
+        return "CallFrame [f=" + this.f1749a + ", pc=" + this.f1750b + ", hookcall=" + this.f1753e + "]";
+    }
+}

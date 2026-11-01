@@ -1,0 +1,73 @@
+package luaj;
+
+import java.io.File;
+
+/* JADX INFO: loaded from: /root/gameguardian/tmp/analysis/2026-11-01/classes.dex */
+public class h {
+    private static final f.d[] n = new f.d[0];
+    private static final h[] o = new h[0];
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public LuaValue[] f1721a;
+
+    /* JADX INFO: renamed from: b, reason: collision with root package name */
+    public int[] f1722b;
+
+    /* JADX INFO: renamed from: d, reason: collision with root package name */
+    public int[] f1724d;
+
+    /* JADX INFO: renamed from: e, reason: collision with root package name */
+    public f.b[] f1725e;
+
+    /* JADX INFO: renamed from: g, reason: collision with root package name */
+    public LuaString f1727g;
+    public int h;
+    public int i;
+    public int j;
+    public int k;
+    public int l;
+    int m = -1;
+
+    /* JADX INFO: renamed from: c, reason: collision with root package name */
+    public h[] f1723c = o;
+
+    /* JADX INFO: renamed from: f, reason: collision with root package name */
+    public f.d[] f1726f = n;
+
+    public LuaString a(int i, int i2) {
+        int i3 = 0;
+        while (true) {
+            f.b[] bVarArr = this.f1725e;
+            if (i3 >= bVarArr.length) {
+                return null;
+            }
+            f.b bVar = bVarArr[i3];
+            if (bVar.f1557b > i2) {
+                return null;
+            }
+            if (i2 < bVar.f1558c && (i = i - 1) == 0) {
+                return bVar.f1556a;
+            }
+            i3++;
+        }
+    }
+
+    public String b() {
+        LuaString luaString = this.f1727g;
+        if (luaString == null) {
+            return "null";
+        }
+        String strG0 = luaString.g0();
+        if ((!strG0.startsWith("/") || !new File(strG0).exists()) && strG0.length() > 124) {
+            strG0 = strG0.substring(0, 124) + "...";
+        }
+        if (strG0.startsWith("@") || strG0.startsWith("=")) {
+            return strG0.substring(1);
+        }
+        return strG0.startsWith("\u001b") ? "=?" : strG0;
+    }
+
+    public String toString() {
+        return "" + this.f1727g + ':' + this.h + '-' + this.i;
+    }
+}

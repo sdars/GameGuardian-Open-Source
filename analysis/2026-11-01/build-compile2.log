@@ -1,0 +1,520 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :app:processReleaseResources UP-TO-DATE
+
+> Task :app:compileReleaseJavaWithJavac FAILED
+Java compiler version 21 has deprecated support for compiling with source/target version 8.
+Try one of the following options:
+    1. [Recommended] Use Java toolchain with a lower language version
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+/root/gameguardian/app/src/main/java/android/ext/h2.java:12: error: cannot find symbol
+    private static a.e q = new a.e();
+                    ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/h2.java:27: error: cannot find symbol
+    public static a.e a0() {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:10: error: cannot find symbol
+    private static a.e f669e;
+                    ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:13: error: cannot find symbol
+    private static a.e f670f;
+                    ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:16: error: cannot find symbol
+    private static a.e f671g;
+                    ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:17: error: cannot find symbol
+    private static a.e h;
+                    ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:116: error: cannot find symbol
+    public static a.e B() {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:120: error: cannot find symbol
+    public static a.e C() {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:234: error: cannot find symbol
+    private static void U(a.e eVar, a.e eVar2, int i2, String str, int i3, Object obj, Object obj2) {
+                           ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:234: error: cannot find symbol
+    private static void U(a.e eVar, a.e eVar2, int i2, String str, int i3, Object obj, Object obj2) {
+                                     ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:359: error: cannot find symbol
+    public static a.e o(int i2) {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:363: error: cannot find symbol
+    public static a.e p(int i2, long j2) {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:382: error: cannot find symbol
+    public static a.e q(int i2) {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:386: error: cannot find symbol
+    public static a.e r(int i2, boolean z) {
+                   ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c.java:449: error: cannot find symbol
+    public static a[] x(a.e eVar, SparseIntArray sparseIntArray) {
+                         ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/Config.java:73: error: cannot find symbol
+    static a.e H = new a.e();
+            ^
+  symbol:   class e
+  location: class Config.a
+/root/gameguardian/app/src/main/java/android/ext/SystemSpinner.java:19: error: cannot find symbol
+    protected a.e f477c;
+               ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/SystemSpinner.java:46: error: cannot find symbol
+    public void setData(a.e eVar) {
+                         ^
+  symbol:   class e
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/InternalKeyboard.java:19: error: cannot find symbol
+public class InternalKeyboard extends a.c {
+                                       ^
+  symbol:   class c
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/ArrayAdapter.java:16: error: cannot find symbol
+    private a.d f27a;
+             ^
+  symbol:   class d
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/t0.java:14: error: cannot find symbol
+    private a.e l;
+             ^
+  symbol:   class e
+  location: class t0.a
+/root/gameguardian/app/src/main/java/android/ext/Searcher.java:373: error: cannot find symbol
+    public void F(a.e eVar, int i) {
+                   ^
+  symbol:   class e
+  location: class Searcher.a
+/root/gameguardian/app/src/main/java/android/ext/Searcher.java:388: error: cannot find symbol
+    a.e G(int i) {
+     ^
+  symbol:   class e
+  location: class Searcher.a
+/root/gameguardian/app/src/main/java/android/ext/MainService.java:140: error: cannot find symbol
+    final d.a s0;
+           ^
+  symbol:   class a
+  location: class MainService.d
+/root/gameguardian/app/src/main/java/android/ext/d.java:10: error: cannot find symbol
+    private final d.f[] f700a;
+                   ^
+  symbol:   class f
+  location: class d
+/root/gameguardian/app/src/main/java/android/ext/SavedListAdapter.java:28: error: cannot find symbol
+    private final d.e f361a = new d.e();
+                   ^
+  symbol:   class e
+  location: class d
+/root/gameguardian/app/src/main/java/android/ext/SavedListAdapter.java:153: error: cannot find symbol
+    public d.e f() {
+            ^
+  symbol:   class e
+  location: class d
+/root/gameguardian/app/src/main/java/luaj/h.java:7: error: cannot find symbol
+    private static final f.d[] n = new f.d[0];
+                          ^
+  symbol:   class d
+  location: class f
+/root/gameguardian/app/src/main/java/luaj/h.java:20: error: cannot find symbol
+    public f.b[] f1727e;
+            ^
+  symbol:   class b
+  location: class f
+/root/gameguardian/app/src/main/java/luaj/h.java:35: error: cannot find symbol
+    public f.d[] f1728f = n;
+            ^
+  symbol:   class d
+  location: class f
+/root/gameguardian/app/src/main/java/luaj/lib/DebugLib.java:939: error: cannot find symbol
+    private static LuaString a3(f.d dVar, int i) {
+                                 ^
+  symbol:   class d
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/LuaValue.java:1032: error: cannot find symbol
+    public f.a s0() {
+            ^
+  symbol:   class a
+  location: class f
+/root/gameguardian/app/src/main/java/android/ext/x2.java:455: error: cannot find symbol
+    private static boolean c(a.e eVar) {
+                              ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:505: error: cannot find symbol
+    private static a.e e(String str) {
+                    ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:526: error: cannot find symbol
+    private static String f(a.e eVar) {
+                             ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:630: error: cannot find symbol
+    private static void l(a.e eVar) {
+                           ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:634: error: cannot find symbol
+    private static boolean m(a.e eVar, Runnable runnable) {
+                              ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:692: error: cannot find symbol
+    static void q(a.e eVar) {
+                   ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:696: error: cannot find symbol
+    static boolean r(a.e eVar, Runnable runnable) {
+                      ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:104: error: cannot find symbol
+        final /* synthetic */ a.e f1318b;
+                               ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:106: error: cannot find symbol
+        d(int i, a.e eVar) {
+                  ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:33: error: cannot find symbol
+        final /* synthetic */ a.e f1310a;
+                               ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/x2.java:41: error: cannot find symbol
+        a(a.e eVar, Runnable runnable, boolean[] zArr) {
+           ^
+  symbol:   class e
+  location: class x2.a
+/root/gameguardian/app/src/main/java/android/ext/Script.java:763: error: a has private access in b
+    class ScriptPrintStream extends b.a {
+                                     ^
+/root/gameguardian/app/src/main/java/android/ext/b2.java:18: error: cannot find symbol
+    static volatile a.e f656b = new a.e();
+                     ^
+  symbol:   class e
+  location: class b2.a
+/root/gameguardian/app/src/main/java/android/ext/r.java:46: error: cannot find symbol
+public abstract class r extends a.a implements View.OnClickListener {
+                                 ^
+  symbol:   class a
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/l2.java:9: error: cannot find symbol
+public class l2 extends a.b {
+                         ^
+  symbol:   class b
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/u2.java:46: error: cannot find symbol
+    public u2(a.e eVar, SparseIntArray sparseIntArray, String str, String str2, DialogInterface.OnClickListener onClickListener) {
+               ^
+  symbol:   class e
+  location: class u2.a
+/root/gameguardian/app/src/main/java/android/ext/u2.java:74: error: cannot find symbol
+    public u2(a.e eVar, String str, String str2, DialogInterface.OnClickListener onClickListener) {
+               ^
+  symbol:   class e
+  location: class u2.a
+/root/gameguardian/app/src/main/java/lasm/a.java:15: error: cannot find symbol
+public class a extends LasmBase implements e.a {
+                                            ^
+  symbol:   class a
+  location: class e
+/root/gameguardian/app/src/main/java/lasm/a.java:21: error: cannot find symbol
+    public e.c f1634b;
+            ^
+  symbol:   class c
+  location: class e
+/root/gameguardian/app/src/main/java/g/g.java:13: error: cannot find symbol
+public class g extends g.a {
+                        ^
+  symbol:   class a
+  location: class g
+/root/gameguardian/app/src/main/java/g/g.java:13: error: cyclic inheritance involving g
+public class g extends g.a {
+       ^
+/root/gameguardian/app/src/main/java/g/c.java:95: error: cannot find symbol
+    f.b A0(int i) {
+     ^
+  symbol:   class b
+  location: class f
+/root/gameguardian/app/src/main/java/g/g.java:14: error: modifier protected,static not allowed here
+    protected static final String[] r = {"(for control)", "(for generator)", "(for index)", "(for limit)", "(for state)", "(for step)", "break"};
+                                    ^
+/root/gameguardian/app/src/main/java/g/g.java:15: error: modifier private,static not allowed here
+    private static final Hashtable s = new Hashtable();
+                                   ^
+/root/gameguardian/app/src/main/java/g/g.java:16: error: modifier static not allowed here
+    static final String[] t;
+                          ^
+/root/gameguardian/app/src/main/java/g/g.java:17: error: modifier static not allowed here
+    static final Hashtable u;
+                           ^
+/root/gameguardian/app/src/main/java/g/g.java:18: error: modifier static not allowed here
+    static C0027g[] v;
+                    ^
+/root/gameguardian/app/src/main/java/g/g.java:44: error: modifier private not allowed here
+    private b p = new b();
+              ^
+/root/gameguardian/app/src/main/java/g/g.java:45: error: modifier private not allowed here
+    private final int[] q = new int[24];
+                        ^
+/root/gameguardian/app/src/main/java/g/a.java:47: error: cannot find symbol
+    static f.b[] G(f.b[] bVarArr, int i) {
+                    ^
+  symbol:   class b
+  location: class f
+/root/gameguardian/app/src/main/java/g/a.java:47: error: cannot find symbol
+    static f.b[] G(f.b[] bVarArr, int i) {
+            ^
+  symbol:   class b
+  location: class f
+/root/gameguardian/app/src/main/java/g/a.java:55: error: cannot find symbol
+    static f.d[] H(f.d[] dVarArr, int i) {
+                    ^
+  symbol:   class d
+  location: class f
+/root/gameguardian/app/src/main/java/g/a.java:55: error: cannot find symbol
+    static f.d[] H(f.d[] dVarArr, int i) {
+            ^
+  symbol:   class d
+  location: class f
+/root/gameguardian/app/src/main/java/g/g.java:78: error: cannot find symbol
+        k f1598a = new k();
+        ^
+  symbol:   class k
+  location: class c
+/root/gameguardian/app/src/main/java/g/g.java:81: error: cannot find symbol
+        k f1599b;
+        ^
+  symbol:   class k
+  location: class c
+/root/gameguardian/app/src/main/java/g/g.java:99: error: cannot find symbol
+        j[] f1603a;
+        ^
+  symbol:   class j
+  location: class d
+/root/gameguardian/app/src/main/java/g/g.java:130: error: cannot find symbol
+        k f1610b = new k();
+        ^
+  symbol:   class k
+  location: class e
+/root/gameguardian/app/src/main/java/g/g.java:201: error: cannot find symbol
+        public void a(i iVar) {
+                      ^
+  symbol:   class i
+  location: class i
+/root/gameguardian/app/src/main/java/g/g.java:286: error: cannot find symbol
+        public void d(k kVar) {
+                      ^
+  symbol:   class k
+  location: class k
+/root/gameguardian/app/src/main/java/luaj/a.java:23: error: cannot find symbol
+    private static final f.b[] r = new f.b[0];
+                          ^
+  symbol:   class b
+  location: class f
+/root/gameguardian/app/src/main/java/luaj/a.java:24: error: cannot find symbol
+    private static final f.d[] s = new f.d[0];
+                          ^
+  symbol:   class d
+  location: class f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:1528: error: cannot find symbol
+    static void X2(f.a aVar, LuaString luaString) {
+                    ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:1752: error: cannot find symbol
+    static void b3(c cVar, f.a aVar, long j) {
+                            ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:381: error: cannot find symbol
+        private void a(f.a aVar, LuaString luaString, int i, int i2) {
+                        ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:534: error: cannot find symbol
+        public void b(f.a aVar, int i, int i2, LuaValue luaValue) {
+                       ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:220: error: cannot find symbol
+        public static final void e(f.a aVar, char c2, int i) {
+                                    ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:232: error: cannot find symbol
+        public void a(f.a aVar, byte b2) {
+                       ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:236: error: cannot find symbol
+        public void b(f.a aVar, double d2) {
+                       ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:259: error: cannot find symbol
+        public void c(f.a aVar, long j) {
+                       ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/luaj/lib/StringLib.java:325: error: cannot find symbol
+        public void d(f.a aVar, LuaString luaString) {
+                       ^
+  symbol:   class a
+  location: interface f
+/root/gameguardian/app/src/main/java/android/ext/c1.java:58: error: cannot find symbol
+        View viewF = a.d.f(R.layout.save, null);
+                      ^
+  symbol:   variable d
+  location: class a
+/root/gameguardian/app/src/main/java/android/ext/c1.java:191: error: cannot find symbol
+                                                th = th2;
+                                                ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:195: error: cannot find symbol
+                                                e1.s("Failed parse line: '" + line + '\'', th);
+                                                                                           ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:204: error: cannot find symbol
+                                    th = th3;
+                                    ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:212: error: cannot find symbol
+                                    th = th4;
+                                    ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:214: error: cannot find symbol
+                                    e1.s("Failed parse line: '" + line + '\'', th);
+                                                                               ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:224: error: cannot find symbol
+                                th = th5;
+                                ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:225: error: cannot find symbol
+                                e1.s("Failed parse line: '" + line + '\'', th);
+                                                                           ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:228: error: cannot find symbol
+                            th = th6;
+                            ^
+  symbol:   variable th
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:463: error: cannot find symbol
+                        e = e2;
+                        ^
+  symbol:   variable e
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:500: error: cannot find symbol
+                        e = e3;
+                        ^
+  symbol:   variable e
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:504: error: cannot find symbol
+                e1.s(str, e);
+                          ^
+  symbol:   variable e
+  location: class c1
+/root/gameguardian/app/src/main/java/android/ext/c1.java:505: error: cannot find symbol
+                Tools.J1(e.getMessage());
+                          ^
+  symbol:   method getMessage()
+  location: class e
+/root/gameguardian/app/src/main/java/android/ext/z1.java:41: error: non-static variable this cannot be referenced from a static context
+    private static final Map f1415f = new a(128, 0.75f, true);
+                                      ^
+/root/gameguardian/app/src/main/java/android/ext/z1.java:154: error: d is not abstract and does not override abstract method compareTo(Object) in Comparable
+    public static class d implements Comparable {
+                  ^
+/root/gameguardian/app/src/main/java/android/ext/z1.java:304: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+/root/gameguardian/app/src/main/java/android/ext/z1.java:560: error: break outside switch or loop
+                break;
+                ^
+/root/gameguardian/app/src/main/java/android/ext/z1.java:728: error: incompatible types: Object cannot be converted to Entry
+                for (Map.Entry entry : map.entrySet()) {
+                                                   ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+3 warnings
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 5s
+13 actionable tasks: 1 executed, 12 up-to-date

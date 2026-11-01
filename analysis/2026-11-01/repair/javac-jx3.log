@@ -1,0 +1,2549 @@
+app/src/rebuild-jadx/java/android/ext/AddressArrayAdapter.java:66: error: incompatible types: int cannot be converted to boolean
+        boolean z2 = (android.ext.Config.q & (1 << android.ext.Tools.d1())) == 0 ? 0 : 1;
+                                                                                 ^
+app/src/rebuild-jadx/java/android/ext/AddressArrayAdapter.java:86: error: incompatible types: boolean cannot be converted to int
+        d3Var2.o.setOrientation(!z2);
+                                ^
+app/src/rebuild-jadx/java/android/ext/AddressArrayAdapter.java:89: error: incomparable types: boolean and int
+        d3Var2.f661a.getLayoutParams().height = z2 != 0 ? -2 : android.ext.Tools.H();
+                                                   ^
+app/src/rebuild-jadx/java/android/ext/t1.java:36: error: a.C0021a is not abstract and does not override abstract method compare(Object,Object) in Comparator
+        class C0021a implements java.util.Comparator {
+        ^
+app/src/rebuild-jadx/java/android/ext/t1.java:40: error: method does not override or implement a method from a supertype
+            @Override // java.util.Comparator
+            ^
+app/src/rebuild-jadx/java/android/ext/ArrayAdapter.java:15: error: no suitable constructor found for ArrayAdapter(Context,int,int,Object[])
+        super(context, i, i2, objArr);
+        ^
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,T[]) is not applicable
+      (argument mismatch; Object[] cannot be converted to T[])
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,List<T>) is not applicable
+      (argument mismatch; Object[] cannot be converted to List<T>)
+  where T is a type-variable:
+    T extends Object declared in class android.ext.ArrayAdapter
+app/src/rebuild-jadx/java/gga/d.java:19: error: int cannot be dereferenced
+        arrayList.add(java.lang.Integer.valueOf(android.R.style.Theme.DeviceDefault));
+                                                                     ^
+app/src/rebuild-jadx/java/gga/d.java:20: error: int cannot be dereferenced
+        arrayList.add(java.lang.Integer.valueOf(android.R.style.Theme.Material));
+                                                                     ^
+app/src/rebuild-jadx/java/gga/d.java:21: error: int cannot be dereferenced
+        arrayList.add(java.lang.Integer.valueOf(android.R.style.Theme.Holo));
+                                                                     ^
+app/src/rebuild-jadx/java/gga/d.java:23: error: int cannot be dereferenced
+        arrayList.add(java.lang.Integer.valueOf(android.R.style.Theme.Black));
+                                                                     ^
+app/src/rebuild-jadx/java/gga/d.java:138: error: incompatible types: bad type in conditional expression
+                            Inflate = xmlPullParser == null ? layoutInflaterCloneInContext.inflate((int) Inflate, viewGroup, z) : layoutInflaterCloneInContext.inflate(xmlPullParser, viewGroup, z);
+                                                                                                  ^
+    View cannot be converted to int
+app/src/rebuild-jadx/java/gga/d.java:138: error: incompatible types: bad type in conditional expression
+                            Inflate = xmlPullParser == null ? layoutInflaterCloneInContext.inflate((int) Inflate, viewGroup, z) : layoutInflaterCloneInContext.inflate(xmlPullParser, viewGroup, z);
+                                                                                                                                                                      ^
+    View cannot be converted to int
+app/src/rebuild-jadx/java/gga/d.java:139: error: incompatible types: int cannot be converted to View
+                            return Inflate;
+                                   ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1154: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.f(catch_.me_.if_.you_.can_.R.id.config_xor_key, catch_.me_.if_.you_.can_.R.string.xor_key, catch_.me_.if_.you_.can_.R.string.empty, Integer.MIN_VALUE, 4294967295L, 0, "xor-key", true, true, false, 1);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1156: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.g(catch_.me_.if_.you_.can_.R.id.config_icons_size, catch_.me_.if_.you_.can_.R.string.icons_size, 12, 0, "icons-size", false, catch_.me_.if_.you_.can_.R.string.icons_size_help);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1168: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.h(catch_.me_.if_.you_.can_.R.id.config_memory_access, catch_.me_.if_.you_.can_.R.string.memory_access, new int[]{catch_.me_.if_.you_.can_.R.string.normal, catch_.me_.if_.you_.can_.R.string.extended, catch_.me_.if_.you_.can_.R.string.experimental}, 0, "memory-access", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1179: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.i(catch_.me_.if_.you_.can_.R.id.config_prevent_unload, catch_.me_.if_.you_.can_.R.string.prevent_unload, new int[]{catch_.me_.if_.you_.can_.R.string.no, catch_.me_.if_.you_.can_.R.string.level_1, catch_.me_.if_.you_.can_.R.string.level_2, catch_.me_.if_.you_.can_.R.string.level_3}, 0, "prevent-unload", false, catch_.me_.if_.you_.can_.R.string.prevent_unload_help);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1181: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.j(catch_.me_.if_.you_.can_.R.id.config_time_jump_panel, catch_.me_.if_.you_.can_.R.string.show_time_jump_panel, new int[]{catch_.me_.if_.you_.can_.R.string.no, catch_.me_.if_.you_.can_.R.string.yes}, 0, "time-jump-panel", true);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1182: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.k(catch_.me_.if_.you_.can_.R.id.config_number_locale, catch_.me_.if_.you_.can_.R.string.number_locale, null, 0, "number-locale", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1183: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.l(catch_.me_.if_.you_.can_.R.id.config_vspace_root, catch_.me_.if_.you_.can_.R.string.vspace_root, new int[]{catch_.me_.if_.you_.can_.R.string.no, catch_.me_.if_.you_.can_.R.string.yes_dangerous}, 0, "vspace-root", false, catch_.me_.if_.you_.can_.R.string.help_vspace_root_);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1184: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.m(catch_.me_.if_.you_.can_.R.id.config_ram, catch_.me_.if_.you_.can_.R.string.data_in_ram, null, Integer.MAX_VALUE, "data-in-ram", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1185: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.n(catch_.me_.if_.you_.can_.R.id.config_hot_key, catch_.me_.if_.you_.can_.R.string.hot_key, null, 0, "hot-key", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1186: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.a(catch_.me_.if_.you_.can_.R.id.config_ranges, catch_.me_.if_.you_.can_.R.string.set_range, null, 0, "ranges", true);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1189: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.b(catch_.me_.if_.you_.can_.R.id.config_toolbars, catch_.me_.if_.you_.can_.R.string.toolbars, null, -1, "toolbars", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1190: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.c(catch_.me_.if_.you_.can_.R.id.config_use_small_list_items, catch_.me_.if_.you_.can_.R.string.small_list_items, null, 0, "small-items", false, catch_.me_.if_.you_.can_.R.string.small_list_items_help);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1191: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.d(catch_.me_.if_.you_.can_.R.id.config_backgrounds, catch_.me_.if_.you_.can_.R.string.backgrounds, null, 0, "backgrounds", false);
+        ^
+app/src/rebuild-jadx/java/android/ext/Config.java:1192: error: non-static variable this cannot be referenced from a static context
+        new android.ext.Config.e(catch_.me_.if_.you_.can_.R.id.config_hide_from_game, catch_.me_.if_.you_.can_.R.string.hide_from_game, null, 0, "hide", true);
+        ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:545: error: ConfigListAdapter.q is not abstract and does not override abstract method compare(Object,Object) in Comparator
+    class q implements java.util.Comparator {
+    ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:549: error: method does not override or implement a method from a supertype
+        @Override // java.util.Comparator
+        ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:813: error: non-static variable this cannot be referenced from a static context
+        android.ext.ConfigListAdapter.l lVar = new android.ext.ConfigListAdapter.l(editTextPath, alertDialogCreate);
+                                               ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:833: error: non-static variable this cannot be referenced from a static context
+            android.ext.ConfigListAdapter.o oVar = new android.ext.ConfigListAdapter.o(editTextPath, checkBox, alertDialogCreate);
+                                                   ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:850: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setItems(strArr, new android.ext.ConfigListAdapter.g(strArr)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.cancel), (android.content.DialogInterface.OnClickListener) null));
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:855: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.h(new android.ext.ConfigListAdapter.p());
+                         ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:885: error: non-static variable this cannot be referenced from a static context
+        java.util.Arrays.sort(strArrE, new android.ext.ConfigListAdapter.q());
+                                       ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:942: error: cannot find symbol
+                                                    th = th2;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:946: error: cannot find symbol
+                                                    android.ext.e1.l("Failed check locale: " + str, th);
+                                                                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:981: error: cannot find symbol
+                                                        th = th4;
+                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:983: error: cannot find symbol
+                                                            android.ext.e1.a(th);
+                                                                             ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:986: error: cannot find symbol
+                                                            th = th5;
+                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:988: error: cannot find symbol
+                                                            android.ext.e1.l("Failed check locale: " + str, th);
+                                                                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:992: error: cannot find symbol
+                                                    th = th6;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:997: error: cannot find symbol
+                                                th = th7;
+                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1000: error: cannot find symbol
+                                                android.ext.e1.l("Failed check locale: " + str, th);
+                                                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1010: error: cannot find symbol
+                                        th = th8;
+                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1012: error: cannot find symbol
+                                        android.ext.e1.l("Failed check locale: " + str, th);
+                                                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1021: error: cannot find symbol
+                                    th = th9;
+                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1025: error: cannot find symbol
+                                th = th10;
+                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1027: error: cannot find symbol
+                                android.ext.e1.l("Failed check locale: " + str, th);
+                                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1036: error: cannot find symbol
+                            th = th11;
+                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1042: error: cannot find symbol
+                            android.ext.e1.l("Failed check locale: " + str, th);
+                                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1111: error: cannot find symbol
+                    th = th12;
+                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1130: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.ConfigListAdapter.r(new android.ext.ArrayAdapter(android.ext.MainService.context, arrayList2), size, arrayList));
+                         ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1176: error: non-static variable this cannot be referenced from a static context
+        return new android.ext.ConfigListAdapter.i();
+               ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1284: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1357: error: non-static variable this cannot be referenced from a static context
+        alertDialog.setButton(-1, android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.confirm), new android.ext.ConfigListAdapter.m(onClickListener, alertDialog));
+                                                                                               ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1358: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.l(alertDialog, new android.ext.ConfigListAdapter.n(onClickListener));
+                                     ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1387: error: non-static variable this cannot be referenced from a static context
+        android.ext.ConfigListAdapter.h hVar = new android.ext.ConfigListAdapter.h();
+                                               ^
+app/src/rebuild-jadx/java/android/ext/ConfigListAdapter.java:1400: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.screenshot)).setMessage(android.ext.Tools.L1(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.screenshot_prompt), 8)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.cancel), (android.content.DialogInterface.OnClickListener) null).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), new android.ext.ConfigListAdapter.f()));
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:124: error: non-static variable this cannot be referenced from a static context
+        private static final java.lang.ThreadLocal f502a = new android.ext.Tools.b0.a();
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:611: error: cannot find symbol
+                e = e4;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-jadx/java/android/ext/Tools.java:612: error: cannot find symbol
+                android.ext.e1.s("Fail", e);
+                                         ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-jadx/java/android/ext/Tools.java:616: error: cannot find symbol
+                e = th;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-jadx/java/android/ext/Tools.java:617: error: cannot find symbol
+                android.ext.e1.s("Fail", e);
+                                         ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-jadx/java/android/ext/Tools.java:971: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.a(str, z2));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1010: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1012: error: cannot find symbol
+                        if (!(th instanceof android.content.pm.PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1013: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1015: error: cannot find symbol
+                        android.ext.e1.l("Failed getPackageInfo", th);
+                                                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1048: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1192: error: non-static variable this cannot be referenced from a static context
+        listView.post(new android.ext.Tools.n(listView, i2, i3));
+                      ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1219: error: non-static variable this cannot be referenced from a static context
+        listView.setOnHierarchyChangeListener(new android.ext.Tools.t(i2));
+                                              ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1224: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.k(dialogInterface));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1335: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.p(z2, layoutParams, view));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1370: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1372: error: cannot find symbol
+        android.ext.e1.a(th);
+                         ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:1498: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.b(str, i2));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1904: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.d(alertDialog));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1927: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.f(view));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:1989: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.e(window));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2189: error: non-static variable this cannot be referenced from a static context
+        java.util.concurrent.FutureTask futureTask = new java.util.concurrent.FutureTask(new android.ext.Tools.h(process));
+                                                                                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2249: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2251: error: cannot find symbol
+                        if (!(th instanceof android.content.pm.PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2252: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2254: error: cannot find symbol
+                        android.ext.e1.l("Failed getApplicationInfo", th);
+                                                                      ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2287: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2456: error: incompatible types: int cannot be converted to FileInputStream
+        java.io.FileInputStream r3 = 0;
+                                     ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2472: error: cannot find symbol
+                        e = e2;
+                        ^
+  symbol:   variable e
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2473: error: cannot find symbol
+                        str = obj + "\n\n" + gge.getMessage();
+                                             ^
+  symbol:   variable gge
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2484: error: cannot find symbol
+                    e = e3;
+                    ^
+  symbol:   variable e
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2488: error: bad operand types for binary operator '!='
+                    if (r3 != 0) {
+                           ^
+  first type:  FileInputStream
+  second type: int
+app/src/rebuild-jadx/java/android/ext/Tools.java:2500: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-jadx/java/android/ext/Tools.java:2501: error: incompatible types: int cannot be converted to FileInputStream
+            r3 = r1;
+                 ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2534: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.s(textView, drawable, i2));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2633: error: non-static variable this cannot be referenced from a static context
+            listView.setOnHierarchyChangeListener(new android.ext.Tools.u(i3, charSequenceArr, drawableArr, i2));
+                                                  ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2687: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.j(layoutParams, view));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2750: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.m(str, i2, str2, onClickListener));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2810: error: non-static variable this cannot be referenced from a static context
+            textView.setOnClickListener(new android.ext.Tools.l(str, i2));
+                                        ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2913: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.q(view));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2967: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.o(view));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2971: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.Tools.i(), "checkForBadContext").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:2986: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.g(editText));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:3308: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.c(textView, str));
+                         ^
+app/src/rebuild-jadx/java/android/ext/Tools.java:3452: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.Tools.r(imageView, f2));
+                         ^
+app/src/rebuild-jadx/java/android/ext/FloatPanel.java:247: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class FloatPanel
+app/src/rebuild-jadx/java/android/ext/MainService.java:496: error: incompatible types: int cannot be converted to String
+                    java.lang.String F = 2131296893;
+                                         ^
+app/src/rebuild-jadx/java/android/ext/MainService.java:511: error: incompatible types: String cannot be converted to int
+                        F = android.ext.b2.f(F) + "\n" + e2.getMessage();
+                                             ^
+app/src/rebuild-jadx/java/android/ext/MainService.java:1655: error: non-static variable this cannot be referenced from a static context
+        android.ext.MainService.t tVar = new android.ext.MainService.t();
+                                         ^
+app/src/rebuild-jadx/java/android/ext/MainService.java:2735: error: cannot find symbol
+                activityManager = (android.app.ActivityManager) b("activity");
+                ^
+  symbol:   variable activityManager
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3236: error: cannot find symbol
+                                            th = th2;
+                                            ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3631: error: cannot find symbol
+                                                e = e3;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3632: error: cannot find symbol
+                                                android.ext.e1.l("Failed read", e);
+                                                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3643: error: cannot find symbol
+                                                e = e4;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3649: error: cannot find symbol
+                                                android.ext.e1.s("list.size() = " + i15 + "; show count = " + android.ext.b0.i(), e);
+                                                                                                                                  ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3706: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3711: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:3714: error: cannot find symbol
+            e = e6;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/MainService.java:4016: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild-jadx/java/android/ext/MainService.java:4053: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild-jadx/java/android/ext/MainService.java:4290: error: cannot find symbol
+                            th = th2;
+                            ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild-jadx/java/android/ext/q0.java:137: error: incompatible types: int cannot be converted to CheckBox
+                i = id == catch_.me_.if_.you_.can_.R.id.sFractional ? 536870912 : 0;
+                                                                    ^
+app/src/rebuild-jadx/java/android/ext/q0.java:139: error: incompatible types: CheckBox cannot be converted to int
+                    systemSpinner.setSelected(this.t.getInt(android.ext.b2.b(id), i));
+                                                                                  ^
+app/src/rebuild-jadx/java/android/ext/q0.java:142: error: incompatible types: CheckBox cannot be converted to int
+                    g2Var.g(android.ext.b2.b(id), systemSpinner.getSelected(), i);
+                                                                               ^
+app/src/rebuild-jadx/java/android/ext/InternalKeyboard.java:275: error: non-static variable this cannot be referenced from a static context
+        android.ext.Tools.z1(view, new android.ext.InternalKeyboard.c(i));
+                                   ^
+app/src/rebuild-jadx/java/android/ext/n1.java:914: error: cannot find symbol
+            e = e2;
+            ^
+  symbol:   variable e
+  location: class n1
+app/src/rebuild-jadx/java/android/ext/n1.java:915: error: cannot find symbol
+            android.ext.e1.s("Failed load data to memory editor", e);
+                                                                  ^
+  symbol:   variable e
+  location: class n1
+app/src/rebuild-jadx/java/android/ext/n1.java:918: error: cannot find symbol
+            e = e3;
+            ^
+  symbol:   variable e
+  location: class n1
+app/src/rebuild-jadx/java/android/ext/n1.java:919: error: cannot find symbol
+            android.ext.e1.s("Failed load data to memory editor", e);
+                                                                  ^
+  symbol:   variable e
+  location: class n1
+app/src/rebuild-jadx/java/android/ext/j2.java:81: error: non-static variable this cannot be referenced from a static context
+            positiveButton = android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.error)).setMessage(numberFormatException.getMessage()).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.yes), new android.ext.j2.a(editText, (android.ext.n.b) numberFormatException)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.no), (android.content.DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                                                       ^
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:73: warning: [removal] finalize() in Object has been deprecated and marked for removal
+        public void finalize() {
+                    ^
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:364: error: d3(LuaString) in IoLib.FileImpl cannot override d3(LuaString) in IoLib.File
+        public void d3(luaj.LuaString luaString) throws java.io.IOException {
+                    ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:342: error: c3(String,int) in IoLib.FileImpl cannot override c3(String,int) in IoLib.File
+        public void c3(java.lang.String str, int i) throws java.io.IOException {
+                    ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:331: error: b3(String,int) in IoLib.FileImpl cannot override b3(String,int) in IoLib.File
+        public int b3(java.lang.String str, int i) throws java.io.IOException {
+                   ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:325: error: a3() in IoLib.FileImpl cannot override a3() in IoLib.File
+        public int a3() throws java.io.IOException {
+                   ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:319: error: Z2(byte[],int,int) in IoLib.FileImpl cannot override Z2(byte[],int,int) in IoLib.File
+        public int Z2(byte[] bArr, int i, int i2) throws java.io.IOException {
+                   ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:313: error: Y2() in IoLib.FileImpl cannot override Y2() in IoLib.File
+        public int Y2() throws java.io.IOException {
+                   ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:303: error: X2() in IoLib.FileImpl cannot override X2() in IoLib.File
+        public int X2() throws java.io.IOException {
+                   ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:282: error: U2() in IoLib.FileImpl cannot override U2() in IoLib.File
+        public void U2() throws java.io.IOException {
+                    ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/luaj/lib/IoLib.java:272: error: S2() in IoLib.FileImpl cannot override S2() in IoLib.File
+        public void S2() throws java.io.IOException {
+                    ^
+  overridden method does not throw IOException
+app/src/rebuild-jadx/java/ggb/a.java:33: error: cannot reference this before supertype constructor has been called
+        super(new ggb.a.C0026a());
+              ^
+app/src/rebuild-jadx/java/android/ext/Script.java:765: error: cannot find symbol
+                    e = e3;
+                    ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:766: error: cannot find symbol
+                    java.lang.Throwable cause = gge.getCause();
+                                                ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:770: error: cannot find symbol
+                    } else if (e instanceof luaj.d.a) {
+                               ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:771: error: cannot find symbol
+                        android.ext.n0.h(java.lang.Thread.currentThread(), e, false);
+                                                                           ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:773: error: cannot find symbol
+                    if (e != null) {
+                        ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:775: error: cannot find symbol
+                            android.ext.e1.l("Script error", e);
+                                                             ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:776: error: cannot find symbol
+                            strN = android.ext.e1.n(e);
+                                                    ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:777: error: cannot find symbol
+                            message = gge.getMessage();
+                                      ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:781: error: cannot find symbol
+                            if (e instanceof luaj.d) {
+                                ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:806: error: cannot find symbol
+                                e = e5;
+                                ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:808: error: cannot find symbol
+                                android.ext.Script.this.Z2(android.ext.Tools.N1(catch_.me_.if_.you_.can_.R.string.script_oom) + ": " + gge.toString());
+                                                                                                                                       ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:854: error: cannot find symbol
+                            e = e6;
+                            ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:855: error: cannot find symbol
+                            android.ext.Script.this.Z2(android.ext.Tools.N1(catch_.me_.if_.you_.can_.R.string.script_oom) + ": " + gge.toString());
+                                                                                                                                   ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:898: error: cannot find symbol
+                    e = th;
+                    ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:899: error: cannot find symbol
+                    if (e != null) {
+                        ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:900: error: cannot find symbol
+                        android.ext.e1.l("Script error", e);
+                                                         ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:901: error: cannot find symbol
+                        strN = android.ext.e1.n(e);
+                                                ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:902: error: cannot find symbol
+                        message = gge.getMessage();
+                                  ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:906: error: cannot find symbol
+                        if (e instanceof luaj.d) {
+                            ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:972: error: cannot find symbol
+                e = null;
+                ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:973: error: cannot find symbol
+                if (e != null) {
+                    ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:974: error: cannot find symbol
+                    android.ext.e1.l("Script error", e);
+                                                     ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:975: error: cannot find symbol
+                    strN = android.ext.e1.n(e);
+                                            ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:976: error: cannot find symbol
+                    message = gge.getMessage();
+                              ^
+  symbol:   variable gge
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:980: error: cannot find symbol
+                    if (e instanceof luaj.d) {
+                        ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:996: error: cannot find symbol
+                    if ((obj instanceof java.io.File) || (strC = lasm.LasmBase.c(e, ((java.io.File) obj).getAbsolutePath(), true)) == null || strC.length() <= 0) {
+                                                                                 ^
+  symbol:   variable e
+  location: class Script.ScriptThread
+app/src/rebuild-jadx/java/android/ext/Script.java:1086: error: cannot find symbol
+                            e = e2;
+                            ^
+  symbol:   variable e
+  location: class Script.addListItems
+app/src/rebuild-jadx/java/android/ext/Script.java:1087: error: cannot find symbol
+                            throw android.ext.Script.m3(iVarS3.b(), luaValueD, e);
+                                                                               ^
+  symbol:   variable e
+  location: class Script.addListItems
+app/src/rebuild-jadx/java/android/ext/Script.java:1089: error: cannot find symbol
+                            e = e3;
+                            ^
+  symbol:   variable e
+  location: class Script.addListItems
+app/src/rebuild-jadx/java/android/ext/Script.java:1090: error: cannot find symbol
+                            throw android.ext.Script.m3(iVarS3.b(), luaValueD, e);
+                                                                               ^
+  symbol:   variable e
+  location: class Script.addListItems
+app/src/rebuild-jadx/java/android/ext/Script.java:1311: error: cannot assign a value to final variable i2
+                    i2 = i;
+                    ^
+app/src/rebuild-jadx/java/android/ext/Script.java:1647: error: cannot find symbol
+                                    e = e2;
+                                    ^
+  symbol:   variable e
+  location: class Script.editAll
+app/src/rebuild-jadx/java/android/ext/Script.java:1648: error: cannot find symbol
+                                    android.ext.e1.s("List changed", e);
+                                                                     ^
+  symbol:   variable e
+  location: class Script.editAll
+app/src/rebuild-jadx/java/android/ext/Script.java:1681: error: cannot find symbol
+                            e = e3;
+                            ^
+  symbol:   variable e
+  location: class Script.editAll
+app/src/rebuild-jadx/java/android/ext/Script.java:2432: error: cannot find symbol
+                                        th = th2;
+                                        ^
+  symbol:   variable th
+  location: class getTargetInfo
+app/src/rebuild-jadx/java/android/ext/Script.java:2435: error: cannot find symbol
+                                    th = th3;
+                                    ^
+  symbol:   variable th
+  location: class getTargetInfo
+app/src/rebuild-jadx/java/android/ext/Script.java:2444: error: cannot find symbol
+                                e = e2;
+                                ^
+  symbol:   variable e
+  location: class getTargetInfo
+app/src/rebuild-jadx/java/android/ext/Script.java:2527: error: cannot find symbol
+                    e = e3;
+                    ^
+  symbol:   variable e
+  location: class getTargetInfo
+app/src/rebuild-jadx/java/android/ext/Script.java:2530: error: cannot find symbol
+                android.ext.e1.s("Pkg not found: " + str, e);
+                                                          ^
+  symbol:   variable e
+  location: class getTargetInfo
+app/src/rebuild-jadx/java/android/ext/Script.java:3142: error: cannot find symbol
+            errorStream = null;
+            ^
+  symbol:   variable errorStream
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3250: error: cannot find symbol
+                            th = th2;
+                            ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3257: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3260: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3264: error: cannot find symbol
+                        throw th;
+                              ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3267: error: cannot find symbol
+                    th = th4;
+                    ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3270: error: cannot find symbol
+                        android.ext.e1.p("makeRequest failed: " + th.getClass().getName());
+                                                                  ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3271: error: cannot find symbol
+                        return luaj.LuaValue.K2(android.ext.Script.V3(th));
+                                                                      ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3279: error: cannot find symbol
+                th = th5;
+                ^
+  symbol:   variable th
+  location: class Script.makeRequest
+app/src/rebuild-jadx/java/android/ext/Script.java:3306: error: cannot assign a value to static final variable z
+                z = false;
+                ^
+app/src/rebuild-jadx/java/android/ext/Script.java:3306: error: incompatible types: boolean cannot be converted to LuaString
+                z = false;
+                    ^
+app/src/rebuild-jadx/java/android/ext/Script.java:4147: error: bad operand types for binary operator '!='
+                if (textView != 0 && (luaValue = (luaj.LuaValue) textView.getTag()) != null) {
+                             ^
+  first type:  TextView
+  second type: int
+app/src/rebuild-jadx/java/android/ext/Script.java:4231: error: cannot assign a value to final variable i
+                    i++;
+                    ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5055: error: return outside method
+                return;
+                ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5475: error: incompatible types: Object cannot be converted to Const
+        for (android.ext.Script.Const r10 : arrayList) {
+                                            ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5543: error: incompatible types: String cannot be converted to LuaValue
+                luaValue = luaValue2.I1(null);
+                                       ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5547: error: bad operand types for binary operator '=='
+            if (luaValue == 0) {
+                         ^
+  first type:  LuaValue
+  second type: int
+app/src/rebuild-jadx/java/android/ext/Script.java:5548: error: incompatible types: String cannot be converted to LuaValue
+                luaValue = strB0;
+                           ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5551: error: incompatible types: String cannot be converted to LuaValue
+            luaValue = strB0;
+                       ^
+app/src/rebuild-jadx/java/android/ext/Script.java:5552: error: incompatible types: LuaValue cannot be converted to String
+            java.lang.String strD3 = D3(luaValue);
+                                        ^
+app/src/rebuild-jadx/java/android/ext/j.java:69: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.d().post(new android.ext.j.a());
+                                ^
+app/src/rebuild-jadx/java/android/ext/j.java:122: error: break outside switch or loop
+                        break;
+                        ^
+app/src/rebuild-jadx/java/android/ext/f0.java:226: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:230: error: cannot find symbol
+                    while (i3 < r10) {
+                                ^
+  symbol:   variable r10
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:231: error: cannot find symbol
+                        sb.append(str5);
+                                  ^
+  symbol:   variable str5
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:233: error: cannot find symbol
+                        if ("armeabi".equals(str5)) {
+                                             ^
+  symbol:   variable str5
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:241: error: cannot find symbol
+                    while (i2 < r10) {
+                                ^
+  symbol:   variable r10
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:242: error: cannot find symbol
+                        sb.append(str6);
+                                  ^
+  symbol:   variable str6
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:244: error: cannot find symbol
+                        if ("armeabi".equals(str6)) {
+                                             ^
+  symbol:   variable str6
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:252: error: cannot find symbol
+                    while (i < r10) {
+                               ^
+  symbol:   variable r10
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:253: error: cannot find symbol
+                        sb.append(str7);
+                                  ^
+  symbol:   variable str7
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:255: error: cannot find symbol
+                        if ("armeabi".equals(str7)) {
+                                             ^
+  symbol:   variable str7
+  location: class f0.a0
+app/src/rebuild-jadx/java/android/ext/f0.java:456: error: run() in f0.d0.a cannot implement run() in Runnable
+            public void run() throws java.lang.Throwable {
+                        ^
+  overridden method does not throw Throwable
+app/src/rebuild-jadx/java/android/ext/f0.java:1117: error: m0 is not abstract and does not override abstract method compareTo(Object) in Comparable
+    static class m0 implements java.lang.Comparable {
+           ^
+app/src/rebuild-jadx/java/android/ext/f0.java:1130: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+app/src/rebuild-jadx/java/android/ext/f0.java:1831: error: cannot find symbol
+                                                                th = th2;
+                                                                ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1837: error: cannot find symbol
+                                                                android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                                               ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1873: error: cannot find symbol
+                                                            th = th3;
+                                                            ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1879: error: cannot find symbol
+                                                            android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                                           ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1915: error: cannot find symbol
+                                                        th = th4;
+                                                        ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1945: error: cannot find symbol
+                                                                        th = th5;
+                                                                        ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1949: error: cannot find symbol
+                                                                        android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                                                       ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1985: error: cannot find symbol
+                                                                    th = th6;
+                                                                    ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:1990: error: cannot find symbol
+                                                                    android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                                                   ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2039: error: cannot find symbol
+                                                    th = th7;
+                                                    ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2043: error: cannot find symbol
+                                                th = th8;
+                                                ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2048: error: cannot find symbol
+                                            th = th9;
+                                            ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2052: error: cannot find symbol
+                                            android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                           ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2088: error: cannot find symbol
+                                        th = th10;
+                                        ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2115: error: cannot find symbol
+                                            th = th11;
+                                            ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2116: error: cannot find symbol
+                                            android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                                           ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2119: error: cannot find symbol
+                                        th = th12;
+                                        ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2123: error: cannot find symbol
+                                    th = th13;
+                                    ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2128: error: cannot find symbol
+                                th = th14;
+                                ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2132: error: cannot find symbol
+                            th = th15;
+                            ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2139: error: cannot find symbol
+                        th = th16;
+                        ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2147: error: cannot find symbol
+                    android.ext.e1.l("Failed remount 2 " + str14 + str15 + string, th);
+                                                                                   ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2149: error: cannot find symbol
+                    th = th17;
+                    ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2188: error: cannot find symbol
+                th = th18;
+                ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2192: error: cannot find symbol
+            th = th19;
+            ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:2197: error: cannot find symbol
+        android.ext.e1.l("Failed remount 4 " + str14 + str15 + str2, th);
+                                                                     ^
+  symbol:   variable th
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3049: error: cannot assign a value to static final variable z
+        z = false;
+        ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3049: error: incompatible types: boolean cannot be converted to List
+        z = false;
+            ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3062: error: incompatible types: String cannot be converted to f0
+                                r16 = ", size: ";
+                                      ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3077: error: incompatible types: String cannot be converted to f0
+                                    r16 = ", size: ";
+                                          ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3083: error: incompatible types: Object cannot be converted to f0
+                                    r16 = obj;
+                                          ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3086: error: incompatible types: Object cannot be converted to f0
+                                        r16 = obj;
+                                              ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3192: error: cannot find symbol
+                        e = e2;
+                        ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3194: error: incompatible types: f0 cannot be converted to String
+                        r15 = r16;
+                              ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3195: error: cannot find symbol
+                        android.ext.e1.l("Failed process message: " + b3 + r15 + bArr.length, e);
+                                                                                              ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3198: error: cannot find symbol
+                    e = e3;
+                    ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3201: error: cannot find symbol
+                    android.ext.e1.l("Failed process message: " + b3 + r15 + bArr.length, e);
+                                                                                          ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3204: error: cannot find symbol
+                e = e4;
+                ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3206: error: incompatible types: String cannot be converted to f0
+                r16 = ", size: ";
+                      ^
+app/src/rebuild-jadx/java/android/ext/f0.java:3209: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3315: error: cannot find symbol
+            while (i5 < length) {
+                   ^
+  symbol:   variable i5
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3316: error: cannot find symbol
+                bArr[i5] = (byte) jArr[i5];
+                     ^
+  symbol:   variable i5
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/f0.java:3316: error: cannot find symbol
+                bArr[i5] = (byte) jArr[i5];
+                                       ^
+  symbol:   variable i5
+  location: class f0
+app/src/rebuild-jadx/java/android/ext/SavedListAdapter.java:169: error: incompatible types: int cannot be converted to boolean
+        boolean z = (android.ext.Config.q & (1 << (android.ext.Tools.d1() + 2))) == 0 ? 0 : 1;
+                                                                                      ^
+app/src/rebuild-jadx/java/android/ext/SavedListAdapter.java:178: error: incomparable types: boolean and int
+        bVar.s.getLayoutParams().width = z != 0 ? -2 : -1;
+                                           ^
+app/src/rebuild-jadx/java/android/ext/SavedListAdapter.java:179: error: incompatible types: boolean cannot be converted to int
+        bVar.o.setOrientation(!z);
+                              ^
+app/src/rebuild-jadx/java/android/ext/SavedListAdapter.java:181: error: incomparable types: boolean and int
+        bVar.f661a.getLayoutParams().height = z != 0 ? -2 : android.ext.Tools.H();
+                                                ^
+app/src/rebuild-jadx/java/android/ext/z1.java:22: error: non-static variable this cannot be referenced from a static context
+    private static final java.util.Map f1415f = new android.ext.z1.a(128, 0.75f, true);
+                                                ^
+app/src/rebuild-jadx/java/android/ext/z1.java:135: error: d is not abstract and does not override abstract method compareTo(Object) in Comparable
+    public static class d implements java.lang.Comparable {
+                  ^
+app/src/rebuild-jadx/java/android/ext/z1.java:285: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+app/src/rebuild-jadx/java/android/ext/z1.java:541: error: break outside switch or loop
+                break;
+                ^
+app/src/rebuild-jadx/java/android/ext/z1.java:709: error: incompatible types: Object cannot be converted to Entry
+                for (java.util.Map.Entry entry : map.entrySet()) {
+                                                             ^
+app/src/rebuild-jadx/java/android/ext/z1.java:781: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class z1
+app/src/rebuild-jadx/java/android/ext/z1.java:810: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.h(new android.ext.z1.b(i2, i3, i4, list));
+                         ^
+app/src/rebuild-jadx/java/android/ext/z1.java:867: error: cannot find symbol
+                                    e = e2;
+                                    ^
+  symbol:   variable e
+  location: class z1
+app/src/rebuild-jadx/java/android/ext/z1.java:869: error: cannot find symbol
+                                    android.ext.e1.s(str, e);
+                                                          ^
+  symbol:   variable e
+  location: class z1
+app/src/rebuild-jadx/java/android/ext/z1.java:876: error: cannot find symbol
+                            e = e3;
+                            ^
+  symbol:   variable e
+  location: class z1
+app/src/rebuild-jadx/java/android/ext/w.java:69: error: break outside switch or loop
+            break;
+            ^
+app/src/rebuild-jadx/java/luaj/Globals.java:58: error: buf has protected access in PushbackInputStream
+            byte[] bArr = ((java.io.PushbackInputStream) this).buf;
+                                                              ^
+app/src/rebuild-jadx/java/luaj/Globals.java:62: error: pos has protected access in PushbackInputStream
+            int i2 = ((java.io.PushbackInputStream) this).pos;
+                                                         ^
+app/src/rebuild-jadx/java/luaj/Globals.java:64: error: pos has protected access in PushbackInputStream
+                ((java.io.PushbackInputStream) this).pos = i2 + 1;
+                                                    ^
+app/src/rebuild-jadx/java/luaj/Globals.java:67: error: in has protected access in FilterInputStream
+                i = ((java.io.PushbackInputStream) this).in.read();
+                                                        ^
+app/src/rebuild-jadx/java/luaj/Globals.java:197: error: cannot find symbol
+                inputStream.unread(bArr, 0, i);
+                           ^
+  symbol:   method unread(byte[],int,int)
+  location: variable inputStream of type InputStream
+app/src/rebuild-jadx/java/luaj/lib/BaseLib.java:128: error: in has protected access in FilterInputStream
+            return ((java.io.BufferedInputStream) this).in;
+                                                       ^
+app/src/rebuild-jadx/java/luaj/lib/PackageLib.java:110: error: call(LuaValue) in PackageLib.require cannot override call(LuaValue) in OneArgFunction
+        public luaj.LuaValue call(luaj.LuaValue luaValue) throws java.lang.Exception {
+                             ^
+  overridden method does not throw Exception
+app/src/rebuild-jadx/java/luaj/LuaClosure.java:185: error: incompatible types: bad type in conditional expression
+                luaj.d aVar = th instanceof luaj.d ? th : new luaj.d.a(th);
+                                                     ^
+    Throwable cannot be converted to d
+app/src/rebuild-jadx/java/android/ext/n.java:31: error: cannot find symbol
+        static final int[] f1082a = {-509607936, -1, -403701520, -1048336, 19922704, 268435440, 144, 266338544, 2097296, 266338544, 16777360, 263196656, 8388752, 262144240, 10485904, 262144240, 52490245, 268435455, -520093584, -1048336, -520093632, -1044496, -517996480, -1044496, -515899328, -1044496, -520093120, -1044496, -517995968, -1044496, -515898816, -1044496, 23068782, 268435455, 20971632, 267387120, 118550544, 267448560, 120647696, 267448560, -200216576, -59707392, -196022272, -42930176, 52490480, 268435440, -176164783, -13, -176164799, -13, -176164784, -16, -176164800, -16, -176164768, -16, 130023455, 266338431, 130023440, 266338416, 6291600, 267387120, 2097328, 254804208, 3145872, 254804208, 3145872, 254804112, 50331648, 267386880, 54525952, 267386880, 117378864, 268374000, 127926352, 262144112, 23068784, 267387120, -176164833, -1, 30412703, 267390975, 28315551, 267390975, 32509855, 267390975, 29364112, 267390960, 27266960, 267390960, 31461264, 267390960, 52490241, 268435455, 52490242, 268435455, 52490243, 268435455, 52490244, 268435455, 52490240, 268435200, -251133952, -449, -251002880, -480, -250871808, -449, -250740736, -480, -251658240, -917984, 109051920, 267390960, 109051920, 267386992, 109051984, 267390960, 109051984, 267386992, 26218399, 267390975, 102764304, 267390960, 102764432, 267390960, 102764336, 267390960, 102764400, 267390960, 102764528, 267390960, 102764368, 267390960, 101715728, 267390960, 101715856, 267390960, 101715760, 267390960, 103812880, 267390960, 103813008, 267390960, 103812912, 267390960, 103812976, 267390960, 103813104, 267390960, 103812944, 267390960, 101715824, 267390960, 101715952, 267390960, 101715792, 267390960, 105910032, 267390960, 105910160, 267390960, 105910064, 267390960, 108007184, 267390960, 108007312, 267390960, 108007216, 267390960, 108007280, 267390960, 108007408, 267390960, 108007248, 267390960, 106958608, 267390960, 106958736, 267390960, 106958640, 267390960, 106958704, 267390960, 106958832, 267390960, 106958672, 267390960, 105910128, 267390960, 105910256, 267390960, 105910096, 267390960, 113184560, 268374000, 113184688, 268374000, 117378992, 268374000, -133166592, -28246017, 113180784, 268374000, 113181808, 268374000, 113182832, 268374000, 113183856, 268374000, 110035056, 268374000, 110036080, 268374000, 110037104, 268374000, 110038128, 268374000, 112132208, 268374000, 112133232, 268374000, 112134256, 268374000, 112135280, 268374000, 117375088, 268374000, 117376112, 268374000, 117377136, 268374000, 117378160, 268374000, 114229360, 268374000, 114230384, 268374000, 114231408, 268374000, 114232432, 268374000, 116326512, 268374000, 116327536, 268374000, 116328560, 268374000, 116329584, 268374000, 112197744, 267390960, 112198768, 267390960, 112199792, 267390960, 112200816, 267390960, 109052016, 267390960, 109053040, 267390960, 109054064, 267390960, 109055088, 267390960, 111149168, 267390960, 111150192, 267390960, 111151216, 267390960, 111152240, 267390960, 116392048, 267390960, 116393072, 267390960, 116394096, 267390960, 116395120, 267390960, 113246320, 267390960, 113247344, 267390960, 113248368, 267390960, 113249392, 267390960, 115343472, 267390960, 115344496, 267390960, 115345520, 267390960, 115346544, 267390960, 109055920, 267390960, -251592704, -1024, 117501968, 267448528, 117502032, 267448528, 117440528, 267387088, 121634832, 267387088, 117440592, 267387088, 121634896, 267387088, 122744848, 267448528, 122683408, 267387088, 122683600, 267387088, -129170176, -27263008, 111149072, 266342384, 111149072, 266338416, 111149136, 266338416, 111152944, 267390960, 25169808, 267390960, 4194448, 267387120, 125890576, 267448560, 125829136, 267387120, 115343376, 266342384, 115343376, 266338416, 115343440, 266338416, 115347248, 267390960, 19922720, 268435440, -517996432, -1048336, -100663296, -33554432, 19922736, 268435440, 24055568, 268374000, 208, 235929840, 240, 235929840, -179245056, -42930176, 16777344, 267387120, 16777376, 267387120, 16777408, 267387120, 16777440, 267387120, 18874496, 267387120, 18874560, 267387120, 20971648, 267387120, 20971680, 267387120, 20971712, 267387120, 20971744, 267387120, 23068800, 267448560, 23068832, 267448560, 23068864, 267448560, 23068896, 267448560, 18874528, 267448560, 18874592, 267448560, 16777296, 267390960, 20971600, 267390960, 18874448, 267390960, 23068752, 267390960, 86835204, 268374015, 71303168, 240123904, 67108864, 240123904, 104857600, 240127984, 100663296, 240127984, 71303168, 206569488, 67108864, 206569488, 71303168, 240123904, 104857600, 240123920, 4194480, 240124144, 176, 240127984, 5243024, 240124144, 5243024, 240124048, 1048720, 240127984, 1048720, 240127888, 33554432, 266338304, 0, 266338320, 16, 266338448, 35651584, 266338304, 2097152, 266338320, 2097168, 266338448, 37748736, 266338304, 4194304, 266338320, 4194320, 266338448, 39845888, 266338304, 6291456, 266338320, 6291472, 266338448, 41943040, 266338304, 8388608, 266338320, 8388624, 266338448, 44040192, 266338304, 10485760, 266338320, 10485776, 266338448, 46137344, 266338304, 12582912, 266338320, 12582928, 266338448, 48234496, 266338304, 14680064, 266338320, 14680080, 266338448, 18936320, 263254528, 18935808, 229699584, 16777216, 263195903, 51380224, 267386880, android.R.raw.loaderror, 267386896, 17825808, 267387024, 53477376, 267386880, 19922944, 267386896, 19922960, 267387024, 55574528, 267386880, 22020096, 267386896, 22020112, 267387024, 57671680, 267386880, 24117248, 267386896, 24117264, 267387024, 58720256, 266338304, 25165824, 266338320, 25165840, 266338448, 60817408, 267321344, 27262976, 233770992, 27262976, 233767008, 27263008, 233767008, 27263040, 233767008, 27263072, 233770992, 27263072, 233767008, 62914560, 266338304, 29360128, 266338320, 29360144, 266338448, 65011712, 266338304, 31457280, 266338320, 31457296, 266338448, 100663312, 234881040, 77398020, 268374015, 72351744, 206569472, 70254592, 225443840, 68157440, 206569472, 153944065, 268435455, 153944066, 268435455, 153944068, 268435455, 153944072, 268435455, 153944080, 268435455, 153944096, 268435455, 153944128, 268435455, 153944192, 268435455, 153944320, 268435455, 153944576, 268435455, 153945088, 268435455, 153946112, 268435455, 153948160, 268435455, 153952256, 268435455, 153960448, 268435455, 153976832, 268435455, 153944064, 268369920, 142606336, 267386880, 134217728, 235929600, 146604033, 268435455, 146604034, 268435455, 146604036, 268435455, 146604040, 268435455, 146604048, 268435455, 146604064, 268435455, 146604096, 268435455, 146604160, 268435455, 146604288, 268435455, 146604544, 268435455, 146605056, 268435455, 146606080, 268435455, 146608128, 268435455, 146612224, 268435455, 146620416, 268435455, 146636800, 268435455, 146604032, 268369920, 143654912, 261095424, 135266304, 235929600, 167772160, 234881024, 251658240, 251658240, 0, 0};
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^
+  symbol:   variable loaderror
+  location: class raw
+app/src/rebuild-jadx/java/android/ext/n.java:819: error: incomparable types: boolean and int
+                                                    if (z4 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:828: error: incomparable types: boolean and int
+                                                if (z4 != 0) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:836: error: incomparable types: boolean and int
+                                                if (z4 != 0) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:852: error: incomparable types: boolean and int
+                                                if (z3 != 0) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:853: error: incomparable types: boolean and int
+                                                    if (z2 != 0 || z4 != 0 || i35 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:853: error: incomparable types: boolean and int
+                                                    if (z2 != 0 || z4 != 0 || i35 != 0) {
+                                                                      ^
+app/src/rebuild-jadx/java/android/ext/n.java:855: error: incomparable types: boolean and int
+                                                        if (z4 != 0) {
+                                                               ^
+app/src/rebuild-jadx/java/android/ext/n.java:860: error: incomparable types: boolean and int
+                                                    i13 = z4 != 0 ? -i35 : i35;
+                                                             ^
+app/src/rebuild-jadx/java/android/ext/n.java:863: error: incomparable types: boolean and int
+                                                    if (z4 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:867: error: incomparable types: boolean and int
+                                                    if (!z && z2 != 0 && i34 == ((i >> 12) & 15)) {
+                                                                 ^
+app/src/rebuild-jadx/java/android/ext/n.java:872: error: incomparable types: boolean and int
+                                                if (z2 != 0) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:876: error: incomparable types: boolean and int
+                                                if (z3 != 0) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:878: error: incomparable types: boolean and int
+                                                    if (z4 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:882: error: incomparable types: boolean and int
+                                                    if (z4 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:888: error: incomparable types: boolean and int
+                                                    if (z4 != 0) {
+                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:898: error: incomparable types: boolean and int
+                                                    if (!z && (z2 != 0 || (z3 == 0 && i34 == i4))) {
+                                                                  ^
+app/src/rebuild-jadx/java/android/ext/n.java:898: error: incomparable types: boolean and int
+                                                    if (!z && (z2 != 0 || (z3 == 0 && i34 == i4))) {
+                                                                              ^
+app/src/rebuild-jadx/java/android/ext/n.java:3882: error: incomparable types: int and boolean
+                                                                                z = r2 == true ? 1 : 0;
+                                                                                       ^
+app/src/rebuild-jadx/java/android/ext/n.java:3882: error: incompatible types: int cannot be converted to boolean
+                                                                                z = r2 == true ? 1 : 0;
+                                                                                               ^
+app/src/rebuild-jadx/java/android/ext/n.java:3884: error: incompatible types: boolean cannot be converted to short
+                                                                                s = z;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:3888: error: incompatible types: boolean cannot be converted to short
+                                                                                    s = z2;
+                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:3919: error: incompatible types: possible lossy conversion from int to short
+                                                                                            s = i19;
+                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:3928: error: incompatible types: possible lossy conversion from int to short
+                                                                                            s = i19;
+                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4000: error: incomparable types: int and boolean
+                                                                                            boolean z3 = r3 == true ? 1 : 0;
+                                                                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4000: error: incompatible types: int cannot be converted to boolean
+                                                                                            boolean z3 = r3 == true ? 1 : 0;
+                                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4001: error: incompatible types: boolean cannot be converted to short
+                                                                                            s = z3;
+                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4005: error: incompatible types: boolean cannot be converted to short
+                                                                                                s = z2;
+                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4028: error: incomparable types: int and boolean
+                                                                                                boolean z4 = r4 == true ? 1 : 0;
+                                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4028: error: incompatible types: int cannot be converted to boolean
+                                                                                                boolean z4 = r4 == true ? 1 : 0;
+                                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4029: error: incompatible types: boolean cannot be converted to short
+                                                                                                s = z4;
+                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4033: error: incompatible types: boolean cannot be converted to short
+                                                                                                    s = z2;
+                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4048: error: incompatible types: possible lossy conversion from int to short
+                                                                                                    s = r9;
+                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4073: error: incompatible types: possible lossy conversion from int to short
+                                                                                                            s = r10;
+                                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4106: error: incompatible types: possible lossy conversion from int to short
+                                                                s = r8;
+                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4124: error: incompatible types: possible lossy conversion from int to short
+                                                            s = r8;
+                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4151: error: incomparable types: int and boolean
+                                                                    i11 = (r5 == true ? 1 : 0) | i10;
+                                                                              ^
+app/src/rebuild-jadx/java/android/ext/n.java:4157: error: incompatible types: possible lossy conversion from int to short
+                                                                    s = r8;
+                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4192: error: incompatible types: possible lossy conversion from int to short
+                                                        s = r8;
+                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4213: error: incompatible types: possible lossy conversion from int to short
+                                                    s = r10;
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4302: error: incomparable types: int and boolean
+                                                                    z = r6 == true ? 1 : 0;
+                                                                           ^
+app/src/rebuild-jadx/java/android/ext/n.java:4302: error: incompatible types: int cannot be converted to boolean
+                                                                    z = r6 == true ? 1 : 0;
+                                                                                   ^
+app/src/rebuild-jadx/java/android/ext/n.java:4304: error: incompatible types: boolean cannot be converted to short
+                                                                    s = z;
+                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4308: error: incompatible types: boolean cannot be converted to short
+                                                                        s = z2;
+                                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4339: error: incompatible types: possible lossy conversion from int to short
+                                                                                s = i19;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4348: error: incompatible types: possible lossy conversion from int to short
+                                                                                s = i19;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4405: error: incomparable types: int and boolean
+                                                                                boolean z5 = r7 == true ? 1 : 0;
+                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4405: error: incompatible types: int cannot be converted to boolean
+                                                                                boolean z5 = r7 == true ? 1 : 0;
+                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4406: error: incompatible types: boolean cannot be converted to short
+                                                                                s = z5;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4410: error: incompatible types: boolean cannot be converted to short
+                                                                                    s = z2;
+                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4432: error: incomparable types: int and boolean
+                                                                                    boolean z6 = r11 == true ? 1 : 0;
+                                                                                                     ^
+app/src/rebuild-jadx/java/android/ext/n.java:4432: error: incompatible types: int cannot be converted to boolean
+                                                                                    boolean z6 = r11 == true ? 1 : 0;
+                                                                                                             ^
+app/src/rebuild-jadx/java/android/ext/n.java:4433: error: incompatible types: boolean cannot be converted to short
+                                                                                    s = z6;
+                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4437: error: incompatible types: boolean cannot be converted to short
+                                                                                        s = z2;
+                                                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4452: error: incompatible types: possible lossy conversion from int to short
+                                                                                        s = r9;
+                                                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4476: error: incompatible types: possible lossy conversion from int to short
+                                                                                                s = r10;
+                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4509: error: incompatible types: possible lossy conversion from int to short
+                                                    s = r8;
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4527: error: incompatible types: possible lossy conversion from int to short
+                                                s = r8;
+                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4556: error: incomparable types: int and boolean
+                                                        i11 = (r12 == true ? 1 : 0) | i10;
+                                                                   ^
+app/src/rebuild-jadx/java/android/ext/n.java:4562: error: incompatible types: possible lossy conversion from int to short
+                                                        s = r8;
+                                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4597: error: incompatible types: possible lossy conversion from int to short
+                                            s = r8;
+                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4618: error: incompatible types: possible lossy conversion from int to short
+                                        s = r10;
+                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:4696: error: incomparable types: int and boolean
+                                                                z = r13 == true ? 1 : 0;
+                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4696: error: incompatible types: int cannot be converted to boolean
+                                                                z = r13 == true ? 1 : 0;
+                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4698: error: incompatible types: boolean cannot be converted to short
+                                                                s = z;
+                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4702: error: incompatible types: boolean cannot be converted to short
+                                                                    s = z2;
+                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4733: error: incompatible types: possible lossy conversion from int to short
+                                                                            s = i19;
+                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4742: error: incompatible types: possible lossy conversion from int to short
+                                                                            s = i19;
+                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4799: error: incomparable types: int and boolean
+                                                                            boolean z7 = r14 == true ? 1 : 0;
+                                                                                             ^
+app/src/rebuild-jadx/java/android/ext/n.java:4799: error: incompatible types: int cannot be converted to boolean
+                                                                            boolean z7 = r14 == true ? 1 : 0;
+                                                                                                     ^
+app/src/rebuild-jadx/java/android/ext/n.java:4800: error: incompatible types: boolean cannot be converted to short
+                                                                            s = z7;
+                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4804: error: incompatible types: boolean cannot be converted to short
+                                                                                s = z2;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4826: error: incomparable types: int and boolean
+                                                                                boolean z8 = r15 == true ? 1 : 0;
+                                                                                                 ^
+app/src/rebuild-jadx/java/android/ext/n.java:4826: error: incompatible types: int cannot be converted to boolean
+                                                                                boolean z8 = r15 == true ? 1 : 0;
+                                                                                                         ^
+app/src/rebuild-jadx/java/android/ext/n.java:4827: error: incompatible types: boolean cannot be converted to short
+                                                                                s = z8;
+                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4831: error: incompatible types: boolean cannot be converted to short
+                                                                                    s = z2;
+                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4846: error: incompatible types: possible lossy conversion from int to short
+                                                                                    s = r9;
+                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4870: error: incompatible types: possible lossy conversion from int to short
+                                                                                            s = r10;
+                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4903: error: incompatible types: possible lossy conversion from int to short
+                                                s = r8;
+                                                    ^
+app/src/rebuild-jadx/java/android/ext/n.java:4921: error: incompatible types: possible lossy conversion from int to short
+                                            s = r8;
+                                                ^
+app/src/rebuild-jadx/java/android/ext/n.java:4950: error: incomparable types: int and boolean
+                                                    i11 = (r16 == true ? 1 : 0) | i10;
+                                                               ^
+app/src/rebuild-jadx/java/android/ext/n.java:4956: error: incompatible types: possible lossy conversion from int to short
+                                                    s = r8;
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:4991: error: incompatible types: possible lossy conversion from int to short
+                                        s = r8;
+                                            ^
+app/src/rebuild-jadx/java/android/ext/n.java:5012: error: incompatible types: possible lossy conversion from int to short
+                                    s = r10;
+                                        ^
+app/src/rebuild-jadx/java/android/ext/n.java:5287: error: cannot find symbol
+                                                                            while (i3 < i16) {
+                                                                                        ^
+  symbol:   variable i16
+  location: class g
+app/src/rebuild-jadx/java/android/ext/n.java:5325: error: cannot find symbol
+                                                                            while (i3 < i16) {
+                                                                                        ^
+  symbol:   variable i16
+  location: class g
+app/src/rebuild-jadx/java/android/ext/n.java:6830: error: cannot find symbol
+            return android.ext.n.h.a(nVar, j, (int) j4);
+                                  ^
+  symbol:   method a(n,long,int)
+  location: variable h of type f
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:31: error: cannot find symbol
+                e = null;
+                ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:33: error: cannot find symbol
+                e = e2;
+                ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:35: error: cannot find symbol
+                android.ext.e1.s(str, e);
+                                      ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:39: error: cannot find symbol
+            e = e3;
+            ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:41: error: cannot find symbol
+            e = e4;
+            ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:43: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:45: error: cannot find symbol
+        if (e != null) {
+            ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:47: error: cannot find symbol
+                android.ext.e1.s("failed onClick on URLSpan: " + getURL(), e);
+                                                                           ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:56: error: cannot find symbol
+                    android.ext.e1.s("failed2 onClick on URLSpan: " + getURL(), e);
+                                                                                ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:59: error: cannot find symbol
+                e = e6;
+                ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/DefensiveURLSpan.java:61: error: cannot find symbol
+                android.ext.e1.s(str, e);
+                                      ^
+  symbol:   variable e
+  location: class DefensiveURLSpan
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:681: error: cannot find symbol
+                                    e = e2;
+                                    ^
+  symbol:   variable e
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:682: error: cannot find symbol
+                                    android.ext.j2.i(e, this.h.f());
+                                                     ^
+  symbol:   variable e
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:685: error: cannot find symbol
+                                    th = th2;
+                                    ^
+  symbol:   variable th
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:687: error: cannot find symbol
+                                    android.ext.e1.l(str2, th);
+                                                           ^
+  symbol:   variable th
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:703: error: cannot find symbol
+                            e = e3;
+                            ^
+  symbol:   variable e
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:706: error: cannot find symbol
+                        e = e4;
+                        ^
+  symbol:   variable e
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/EditorListener.java:709: error: cannot find symbol
+                    th = th3;
+                    ^
+  symbol:   variable th
+  location: class EditorListener.b
+app/src/rebuild-jadx/java/android/ext/HexConverter.java:441: error: cannot find symbol
+                th = th4;
+                ^
+  symbol:   variable th
+  location: class HexConverter
+app/src/rebuild-jadx/java/android/ext/HotFrame.java:27: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class HotFrame.a
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:9: error: PathSelector.a is not abstract and does not override abstract method compare(Object,Object) in Comparator
+    class a implements java.util.Comparator {
+    ^
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:22: error: method does not override or implement a method from a supertype
+        @Override // java.util.Comparator
+        ^
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:69: error: PathSelector.b is not abstract and does not override abstract method compare(Object,Object) in Comparator
+    class b implements java.util.Comparator {
+    ^
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:78: error: method does not override or implement a method from a supertype
+        @Override // java.util.Comparator
+        ^
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:774: error: non-static variable this cannot be referenced from a static context
+            android.ext.PathSelector.a aVar = new android.ext.PathSelector.a(z);
+                                              ^
+app/src/rebuild-jadx/java/android/ext/PathSelector.java:783: error: non-static variable this cannot be referenced from a static context
+                    java.util.Collections.sort(arrayList, new android.ext.PathSelector.b(sb));
+                                                          ^
+app/src/rebuild-jadx/java/android/ext/b1.java:50: error: non-static variable this cannot be referenced from a static context
+    private static final java.lang.Runnable F = new android.ext.b1.b();
+                                                ^
+app/src/rebuild-jadx/java/android/ext/b1.java:309: error: non-static variable this cannot be referenced from a static context
+        public static final android.os.Parcelable.Creator<android.ext.b1.c0> CREATOR = new android.ext.b1.c0.a();
+                                                                                       ^
+app/src/rebuild-jadx/java/android/ext/b1.java:504: error: byte cannot be dereferenced
+            int[] iArr = new int[android.ext.b1.y.values().length];
+                                                 ^
+app/src/rebuild-jadx/java/android/ext/b1.java:507: error: byte cannot be dereferenced
+                iArr[android.ext.b1.y.ROOT.ordinal()] = 1;
+                                     ^
+app/src/rebuild-jadx/java/android/ext/b1.java:511: error: byte cannot be dereferenced
+                f624b[android.ext.b1.y.MANUAL.ordinal()] = 2;
+                                      ^
+app/src/rebuild-jadx/java/android/ext/b1.java:515: error: byte cannot be dereferenced
+                f624b[android.ext.b1.y.REFUSED.ordinal()] = 3;
+                                      ^
+app/src/rebuild-jadx/java/android/ext/b1.java:518: error: non-static variable r cannot be referenced from a static context
+            int[] iArr2 = new int[android.ext.b1.r.values().length];
+                                                ^
+app/src/rebuild-jadx/java/android/ext/b1.java:518: error: cannot find symbol
+            int[] iArr2 = new int[android.ext.b1.r.values().length];
+                                                  ^
+  symbol:   method values()
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:521: error: non-static variable r cannot be referenced from a static context
+                iArr2[android.ext.b1.r.PROCEED.ordinal()] = 1;
+                                    ^
+app/src/rebuild-jadx/java/android/ext/b1.java:521: error: cannot find symbol
+                iArr2[android.ext.b1.r.PROCEED.ordinal()] = 1;
+                                      ^
+  symbol:   variable PROCEED
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:525: error: non-static variable r cannot be referenced from a static context
+                f623a[android.ext.b1.r.OPEN_SETTINGS.ordinal()] = 2;
+                                    ^
+app/src/rebuild-jadx/java/android/ext/b1.java:525: error: cannot find symbol
+                f623a[android.ext.b1.r.OPEN_SETTINGS.ordinal()] = 2;
+                                      ^
+  symbol:   variable OPEN_SETTINGS
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:1710: error: incompatible types: Object cannot be converted to String
+                for (java.lang.String str : P()) {
+                                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1753: error: bad operand types for binary operator '=='
+            if (r0 == 0) {
+                   ^
+  first type:  Object
+  second type: int
+app/src/rebuild-jadx/java/android/ext/b1.java:1758: error: cannot find symbol
+                r0.close();
+                  ^
+  symbol:   method close()
+  location: variable r0 of type Object
+app/src/rebuild-jadx/java/android/ext/b1.java:1762: error: cannot find symbol
+                r0.close();
+                  ^
+  symbol:   method close()
+  location: variable r0 of type Object
+app/src/rebuild-jadx/java/android/ext/b1.java:1848: error: byte cannot be dereferenced
+                if (yVarM0 == android.ext.b1.y.ROOT) {
+                                              ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1853: error: byte cannot be dereferenced
+                } else if (yVarM0 == android.ext.b1.y.MANUAL) {
+                                                     ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1857: error: byte cannot be dereferenced
+                } else if (yVarM0 == android.ext.b1.y.OPEN_SETTINGS) {
+                                                     ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1983: error: byte cannot be dereferenced
+            return android.ext.b1.y.ROOT;
+                                   ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1985: error: non-static variable h cannot be referenced from a static context
+        int i3 = android.ext.b1.h.f623a[h(z3, z2).ordinal()];
+                               ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1985: error: cannot find symbol
+        int i3 = android.ext.b1.h.f623a[h(z3, z2).ordinal()];
+                                 ^
+  symbol:   variable f623a
+  location: variable h of type String
+app/src/rebuild-jadx/java/android/ext/b1.java:1987: error: byte cannot be dereferenced
+            return i3 != 2 ? android.ext.b1.y.REFUSED : android.ext.b1.y.OPEN_SETTINGS;
+                                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1987: error: byte cannot be dereferenced
+            return i3 != 2 ? android.ext.b1.y.REFUSED : android.ext.b1.y.OPEN_SETTINGS;
+                                                                        ^
+app/src/rebuild-jadx/java/android/ext/b1.java:1989: error: byte cannot be dereferenced
+        return android.ext.b1.y.MANUAL;
+                               ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2146: error: incompatible types: Object cannot be converted to Entry
+        for (java.util.Map.Entry entry : map.entrySet()) {
+                                                     ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2169: error: non-static variable this cannot be referenced from a static context
+        android.ext.b1.k kVar = new android.ext.b1.k();
+                                ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2209: error: byte cannot be dereferenced
+                    return android.ext.b1.y.REFUSED;
+                                           ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2212: error: byte cannot be dereferenced
+                return android.ext.b1.y.MANUAL;
+                                       ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2217: error: byte cannot be dereferenced
+                android.ext.b1.y yVar = android.ext.b1.y.REFUSED;
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2300: error: non-static variable h cannot be referenced from a static context
+        int i2 = android.ext.b1.h.f624b[yVar.ordinal()];
+                               ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2300: error: cannot find symbol
+        int i2 = android.ext.b1.h.f624b[yVar.ordinal()];
+                                 ^
+  symbol:   variable f624b
+  location: variable h of type String
+app/src/rebuild-jadx/java/android/ext/b1.java:2353: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.b1.m());
+                         ^
+app/src/rebuild-jadx/java/android/ext/b1.java:2435: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.b1.a(i2, intentArr, i3, str));
+                         ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3026: error: incompatible types: int cannot be converted to OutputStream
+        java.io.OutputStream a0Var = 0;
+                                     ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3027: error: incompatible types: int cannot be converted to OutputStream
+        a0Var = 0;
+                ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3031: error: incompatible types: OutputStream cannot be converted to b1.i
+                a0Var = new android.ext.b1.a0(h0(i2), a0Var);
+                                                      ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3035: error: bad operand types for binary operator '=='
+            if (a0Var == 0) {
+                      ^
+  first type:  OutputStream
+  second type: int
+app/src/rebuild-jadx/java/android/ext/b1.java:3055: error: non-static variable this cannot be referenced from a static context
+        return new android.ext.b1.i(runnable);
+               ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3060: error: non-static variable r cannot be referenced from a static context
+            return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.FAIL_PENDING;
+                                      ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3060: error: cannot find symbol
+            return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.FAIL_PENDING;
+                                        ^
+  symbol:   variable PROCEED
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3060: error: non-static variable r cannot be referenced from a static context
+            return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.FAIL_PENDING;
+                                                                 ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3060: error: cannot find symbol
+            return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.FAIL_PENDING;
+                                                                   ^
+  symbol:   variable FAIL_PENDING
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3062: error: non-static variable r cannot be referenced from a static context
+        return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.OPEN_SETTINGS;
+                                  ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3062: error: cannot find symbol
+        return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.OPEN_SETTINGS;
+                                    ^
+  symbol:   variable PROCEED
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3062: error: non-static variable r cannot be referenced from a static context
+        return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.OPEN_SETTINGS;
+                                                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3062: error: cannot find symbol
+        return z3 ? android.ext.b1.r.PROCEED : android.ext.b1.r.OPEN_SETTINGS;
+                                                               ^
+  symbol:   variable OPEN_SETTINGS
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3201: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.i(new android.ext.b1.q());
+                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3610: error: non-static variable this cannot be referenced from a static context
+            button.setOnClickListener(new android.ext.b1.c());
+                                      ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3620: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.b1.l(str));
+                         ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3698: error: cannot find symbol
+                                th = th3;
+                                ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3705: error: cannot find symbol
+                                throw th;
+                                      ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3716: error: cannot find symbol
+                        th = th4;
+                        ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3739: error: non-static variable r cannot be referenced from a static context
+                if (rVarH == android.ext.b1.r.OPEN_SETTINGS) {
+                                           ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3739: error: cannot find symbol
+                if (rVarH == android.ext.b1.r.OPEN_SETTINGS) {
+                                             ^
+  symbol:   variable OPEN_SETTINGS
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3772: error: non-static variable r cannot be referenced from a static context
+                } else if (rVarH == android.ext.b1.r.FAIL_PENDING) {
+                                                  ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3772: error: cannot find symbol
+                } else if (rVarH == android.ext.b1.r.FAIL_PENDING) {
+                                                    ^
+  symbol:   variable FAIL_PENDING
+  location: variable r of type AlertDialog
+app/src/rebuild-jadx/java/android/ext/b1.java:3792: error: cannot find symbol
+                        th = th7;
+                        ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3793: error: cannot find symbol
+                        str3 = str3 + '\n' + th.getMessage();
+                                             ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3796: error: cannot find symbol
+                    th = th8;
+                    ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:3832: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.i(new android.ext.b1.n());
+                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3837: error: non-static variable this cannot be referenced from a static context
+                android.ext.n2.i(new android.ext.b1.o(message));
+                                 ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3844: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.i(new android.ext.b1.p(th));
+                             ^
+app/src/rebuild-jadx/java/android/ext/b1.java:3880: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class b1
+app/src/rebuild-jadx/java/android/ext/b1.java:4333: error: non-static variable this cannot be referenced from a static context
+        new android.ext.n0.i(new android.ext.b1.j(), "Installer").start();
+                             ^
+app/src/rebuild-jadx/java/android/ext/b2.java:19: error: non-static variable this cannot be referenced from a static context
+    private static final java.lang.Runnable f659e = new android.ext.b2.a();
+                                                    ^
+app/src/rebuild-jadx/java/android/ext/b2.java:146: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class b2
+app/src/rebuild-jadx/java/android/ext/b2.java:147: error: cannot find symbol
+                    android.ext.e1.l("Exception on: " + str, th);
+                                                             ^
+  symbol:   variable th
+  location: class b2
+app/src/rebuild-jadx/java/android/ext/b2.java:152: error: cannot find symbol
+            th = th3;
+            ^
+  symbol:   variable th
+  location: class b2
+app/src/rebuild-jadx/java/android/ext/c1.java:174: error: cannot find symbol
+                                                th = th2;
+                                                ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:178: error: cannot find symbol
+                                                android.ext.e1.s("Failed parse line: '" + line + '\'', th);
+                                                                                                       ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:187: error: cannot find symbol
+                                    th = th3;
+                                    ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:195: error: cannot find symbol
+                                    th = th4;
+                                    ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:197: error: cannot find symbol
+                                    android.ext.e1.s("Failed parse line: '" + line + '\'', th);
+                                                                                           ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:207: error: cannot find symbol
+                                th = th5;
+                                ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:208: error: cannot find symbol
+                                android.ext.e1.s("Failed parse line: '" + line + '\'', th);
+                                                                                       ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:211: error: cannot find symbol
+                            th = th6;
+                            ^
+  symbol:   variable th
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:423: error: cannot find symbol
+                        e = e2;
+                        ^
+  symbol:   variable e
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:460: error: cannot find symbol
+                        e = e3;
+                        ^
+  symbol:   variable e
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:464: error: cannot find symbol
+                android.ext.e1.s(str, e);
+                                      ^
+  symbol:   variable e
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/c1.java:465: error: cannot find symbol
+                android.ext.Tools.J1(gge.getMessage());
+                                     ^
+  symbol:   variable gge
+  location: class c1
+app/src/rebuild-jadx/java/android/ext/e0.java:496: error: cannot find symbol
+                            th = th2;
+                            ^
+  symbol:   variable th
+  location: class e0
+app/src/rebuild-jadx/java/android/ext/e1.java:16: error: non-static variable this cannot be referenced from a static context
+    static final java.lang.Runnable f738d = new android.ext.e1.a();
+                                            ^
+app/src/rebuild-jadx/java/android/ext/e1.java:162: error: cannot find symbol
+                                                    e = e3;
+                                                    ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:165: error: cannot find symbol
+                                                    android.ext.e1.s(str, e);
+                                                                          ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:167: error: cannot find symbol
+                                                    e = e4;
+                                                    ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:169: error: cannot find symbol
+                                                    android.ext.e1.a(e);
+                                                                     ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:176: error: cannot find symbol
+                                                e = e5;
+                                                ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:191: error: cannot find symbol
+                                                e = e6;
+                                                ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:193: error: cannot find symbol
+                                                android.ext.e1.s(str, e);
+                                                                      ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:358: error: cannot find symbol
+                        e = e7;
+                        ^
+  symbol:   variable e
+  location: class e1.d
+app/src/rebuild-jadx/java/android/ext/e1.java:461: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.g(new android.ext.e1.b());
+                         ^
+app/src/rebuild-jadx/java/android/ext/e1.java:465: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.g(new android.ext.e1.c());
+                         ^
+app/src/rebuild-jadx/java/android/ext/e1.java:582: error: non-static variable this cannot be referenced from a static context
+        new android.ext.e1.d("runLogOnProcessErrStream", inputStream, process).start();
+        ^
+app/src/rebuild-jadx/java/android/ext/e2.java:268: error: non-static variable this cannot be referenced from a static context
+            new android.ext.n0.i(new android.ext.e2.b(), "RootProbe").start();
+                                 ^
+app/src/rebuild-jadx/java/android/ext/e2.java:327: error: non-static variable this cannot be referenced from a static context
+        java.util.concurrent.FutureTask futureTask = new java.util.concurrent.FutureTask(new android.ext.e2.a(str, str2, zArr, sb));
+                                                                                         ^
+app/src/rebuild-jadx/java/android/ext/e2.java:406: error: cannot find symbol
+                while (th != null) {
+                       ^
+  symbol:   variable th
+  location: class e2
+app/src/rebuild-jadx/java/android/ext/e2.java:407: error: cannot find symbol
+                    sb.append(th.toString());
+                              ^
+  symbol:   variable th
+  location: class e2
+app/src/rebuild-jadx/java/android/ext/f.java:7: error: non-static variable this cannot be referenced from a static context
+    static final java.lang.Runnable f759a = new android.ext.f.a();
+                                            ^
+app/src/rebuild-jadx/java/android/ext/f.java:235: error: incompatible types: Object cannot be converted to OnDismissListener
+            for (android.content.DialogInterface.OnDismissListener onDismissListener : this.f781a) {
+                                                                                           ^
+app/src/rebuild-jadx/java/android/ext/f.java:280: error: incompatible types: Object cannot be converted to OnShowListener
+            for (android.content.DialogInterface.OnShowListener onShowListener : this.f784a) {
+                                                                                     ^
+app/src/rebuild-jadx/java/android/ext/f.java:574: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.f.g(alertDialog));
+                         ^
+app/src/rebuild-jadx/java/android/ext/f.java:587: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.f.i(builder, editText));
+                         ^
+app/src/rebuild-jadx/java/android/ext/f.java:591: error: non-static variable this cannot be referenced from a static context
+        l(alertDialog, new android.ext.f.b(runnable));
+                       ^
+app/src/rebuild-jadx/java/android/ext/f.java:593: error: non-static variable this cannot be referenced from a static context
+            k(alertDialog, new android.ext.f.c(runnable));
+                           ^
+app/src/rebuild-jadx/java/android/ext/f.java:602: error: non-static variable this cannot be referenced from a static context
+        android.ext.f0.m0(new android.ext.f.h(builder));
+                          ^
+app/src/rebuild-jadx/java/android/ext/f.java:637: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.d dVar = new android.ext.f.d(alertDialog, nVar, runnable2);
+                               ^
+app/src/rebuild-jadx/java/android/ext/f.java:638: error: non-static variable this cannot be referenced from a static context
+        l(alertDialog, new android.ext.f.e(nVar, handlerD, dVar, alertDialog, runnable));
+                       ^
+app/src/rebuild-jadx/java/android/ext/f.java:639: error: non-static variable this cannot be referenced from a static context
+        k(alertDialog, new android.ext.f.DialogInterfaceOnDismissListenerC0015f(nVar));
+                       ^
+app/src/rebuild-jadx/java/android/ext/f1.java:56: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class f1.a.RunnableC0018a
+app/src/rebuild-jadx/java/android/ext/f1.java:804: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.f1.o());
+                         ^
+app/src/rebuild-jadx/java/android/ext/f1.java:848: error: non-static variable this cannot be referenced from a static context
+        return new android.ext.f1.i(context, str, j2);
+               ^
+app/src/rebuild-jadx/java/android/ext/f1.java:852: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.f1.a());
+                         ^
+app/src/rebuild-jadx/java/android/ext/f1.java:916: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.f1.g(), "checkAutoTranslation").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/f1.java:920: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.f1.l(), "checkBadApps").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/f1.java:941: error: non-static variable this cannot be referenced from a static context
+            android.app.AlertDialog alertDialogCreate = android.ext.f.b().setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.force_close_)).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.fix_it), new android.ext.f1.e(zArr, runnable)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.skip), w(64L)).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.help), new android.ext.f1.d()).create();
+                                                                                                                                                                                                                                                                                                                                                                                                                                          ^
+app/src/rebuild-jadx/java/android/ext/f1.java:941: error: non-static variable this cannot be referenced from a static context
+            android.app.AlertDialog alertDialogCreate = android.ext.f.b().setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.force_close_)).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.fix_it), new android.ext.f1.e(zArr, runnable)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.skip), w(64L)).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.help), new android.ext.f1.d()).create();
+                                                                                                                                                                                                                                     ^
+app/src/rebuild-jadx/java/android/ext/f1.java:943: error: non-static variable this cannot be referenced from a static context
+                android.ext.f.k(alertDialogCreate, new android.ext.f1.f(zArr, runnable));
+                                                   ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1013: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.f1.b(), "checkNewVersion").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1023: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.f1.j(), "checkRandomName").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1034: error: non-static variable this cannot be referenced from a static context
+                    android.ext.f.m(android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.last_run_failed)).setItems(new java.lang.String[]{android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.work_with_selinux), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.skip)}, new android.ext.f1.c(file)).create());
+                                                                                                                                                                                                                                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1043: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.f1.k(), "checkSlowEmulator").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1113: error: non-static variable this cannot be referenced from a static context
+        android.ext.f1.n nVar = new android.ext.f1.n();
+                                ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1164: warning: [removal] runFinalization() in System has been deprecated and marked for removal
+                java.lang.System.runFinalization();
+                                ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1198: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.f1.m(context, runnable));
+                         ^
+app/src/rebuild-jadx/java/android/ext/f1.java:1245: error: cannot find symbol
+                th = th3;
+                ^
+  symbol:   variable th
+  location: class f1
+app/src/rebuild-jadx/java/android/ext/f1.java:1263: error: cannot find symbol
+                th = th4;
+                ^
+  symbol:   variable th
+  location: class f1
+app/src/rebuild-jadx/java/android/ext/f1.java:1264: error: cannot find symbol
+                android.ext.e1.a(th);
+                                 ^
+  symbol:   variable th
+  location: class f1
+app/src/rebuild-jadx/java/android/ext/f1.java:1267: error: cannot find symbol
+            th = th5;
+            ^
+  symbol:   variable th
+  location: class f1
+app/src/rebuild-jadx/java/android/ext/f1.java:1273: error: non-static variable this cannot be referenced from a static context
+        return new android.ext.f1.h(j2);
+               ^
+app/src/rebuild-jadx/java/android/ext/g3.java:211: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class g3
+app/src/rebuild-jadx/java/android/ext/h0.java:294: error: non-static variable this cannot be referenced from a static context
+        new android.ext.h0.a("runCollectRegionLog").start();
+        ^
+app/src/rebuild-jadx/java/android/ext/h0.java:298: error: non-static variable this cannot be referenced from a static context
+        new android.ext.h0.b("showInfo").start();
+        ^
+app/src/rebuild-jadx/java/android/ext/h3.java:49: error: cannot find symbol
+                            android.ext.e1.l("ZipAlign fail", e);
+                                                              ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:51: error: cannot find symbol
+                                throw e;
+                                      ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:133: error: cannot find symbol
+                                                e = e2;
+                                                ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:152: error: cannot find symbol
+                                            e = e3;
+                                            ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:272: error: cannot find symbol
+                                        e = e4;
+                                        ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:284: error: cannot find symbol
+                                    e = e5;
+                                    ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:286: error: cannot find symbol
+                                    android.ext.e1.l("ZipAlign fail", e);
+                                                                      ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:288: error: cannot find symbol
+                                        throw e;
+                                              ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:312: error: cannot find symbol
+                            e = e6;
+                            ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:317: error: cannot find symbol
+                            android.ext.e1.l("ZipAlign fail", e);
+                                                              ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:319: error: cannot find symbol
+                                throw e;
+                                      ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:340: error: cannot find symbol
+                    e = e7;
+                    ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:343: error: cannot find symbol
+                e = e8;
+                ^
+  symbol:   variable e
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:395: error: incompatible types: possible lossy conversion from int to short
+                short s = 65535;
+                          ^
+app/src/rebuild-jadx/java/android/ext/h3.java:437: error: incompatible types: possible lossy conversion from int to short
+                    s = 65535;
+                        ^
+app/src/rebuild-jadx/java/android/ext/h3.java:446: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:448: error: cannot find symbol
+                java.lang.Throwable th3 = th;
+                                          ^
+  symbol:   variable th
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/h3.java:461: error: cannot find symbol
+            th = th5;
+            ^
+  symbol:   variable th
+  location: class h3
+app/src/rebuild-jadx/java/android/ext/k.java:182: error: incompatible types: Object cannot be converted to Class
+        for (java.lang.Class cls : f1046f) {
+                                   ^
+app/src/rebuild-jadx/java/android/ext/k.java:184: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+                cls.getMethod("updateLocale", null).invoke(null, null);
+                                              ^
+  cast to Class for a varargs call
+  cast to Class[] for a non-varargs call and to suppress this warning
+app/src/rebuild-jadx/java/android/ext/k.java:184: warning: non-varargs call of varargs method with inexact argument type for last parameter;
+                cls.getMethod("updateLocale", null).invoke(null, null);
+                                                                 ^
+  cast to Object for a varargs call
+  cast to Object[] for a non-varargs call and to suppress this warning
+app/src/rebuild-jadx/java/gga/b.java:125: error: non-static variable this cannot be referenced from a static context
+            return new gga.b.a(context);
+                   ^
+app/src/rebuild-jadx/java/gga/b.java:163: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new gga.b.RunnableC0001b(context, intent));
+                         ^
+app/src/rebuild-jadx/java/android/ext/m.java:21: error: a is not abstract and does not override abstract method compareTo(Object) in Comparable
+    static class a implements java.lang.Comparable {
+           ^
+app/src/rebuild-jadx/java/android/ext/m.java:34: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+app/src/rebuild-jadx/java/android/ext/n0.java:557: error: uncaughtException(Thread,Throwable) in n0 cannot implement uncaughtException(Thread,Throwable) in UncaughtExceptionHandler
+    public void uncaughtException(java.lang.Thread thread, java.lang.Throwable th) throws java.lang.InterruptedException {
+                ^
+  overridden method does not throw InterruptedException
+app/src/rebuild-jadx/java/android/ext/n0.java:186: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog.Builder negativeButton = android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.last_run_failed)).setMessage(android.ext.Tools.L1(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.killed_by), strArrE[i3]) + "\n\n" + str).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.more), new android.ext.n0.f(strArrE, i2)).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), (android.content.DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                                                                                                                                                                          ^
+app/src/rebuild-jadx/java/android/ext/n0.java:198: error: non-static variable this cannot be referenced from a static context
+                j(sharedPreferencesM0.getString("last_exception", "- unknown -"), sharedPreferencesM0.getString("last_exception_trace", "- unknown -"), new android.ext.n0.b(sharedPreferencesM0));
+                                                                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/n0.java:214: error: non-static variable this cannot be referenced from a static context
+                            j(strArrSplit[0], strArrSplit[1], new android.ext.n0.c(file));
+                                                              ^
+app/src/rebuild-jadx/java/android/ext/n0.java:219: error: cannot find symbol
+                        android.ext.e1.a(e);
+                                         ^
+  symbol:   variable e
+  location: class n0
+app/src/rebuild-jadx/java/android/ext/n0.java:297: error: non-static variable this cannot be referenced from a static context
+            android.ext.f.s(android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.last_run_failed)).setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.unmount_kill) + "\n\n" + str).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.fix_it), new android.ext.n0.d()).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), (android.content.DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                                                                                                ^
+app/src/rebuild-jadx/java/android/ext/n0.java:305: error: non-static variable this cannot be referenced from a static context
+            a(str, 4, new android.ext.n0.e(strArrE));
+                      ^
+app/src/rebuild-jadx/java/android/ext/n0.java:498: error: non-static variable this cannot be referenced from a static context
+        android.ext.n0.a aVar = new android.ext.n0.a(str, strArrE, i3, runnable);
+                                ^
+app/src/rebuild-jadx/java/android/ext/o0.java:98: error: incompatible types: boolean cannot be converted to int
+                    r1 = z;
+                         ^
+app/src/rebuild-jadx/java/android/ext/o0.java:101: error: incompatible types: boolean cannot be converted to int
+                r1 = z;
+                     ^
+app/src/rebuild-jadx/java/android/ext/o0.java:104: error: incomparable types: int and boolean
+                    r0 = (r1 == true ? 1 : 0) | 4;
+                             ^
+app/src/rebuild-jadx/java/android/ext/o2.java:169: error: non-static variable this cannot be referenced from a static context
+        if (android.ext.MainService.instance.h.a(false, new android.ext.o2.a(j))) {
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/p2.java:138: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.p2.a(), "toastThread").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/p2.java:146: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.i(new android.ext.p2.c(toast));
+                             ^
+app/src/rebuild-jadx/java/android/ext/p2.java:211: error: non-static variable this cannot be referenced from a static context
+        android.ext.p2.b bVar = new android.ext.p2.b(toast);
+                                ^
+app/src/rebuild-jadx/java/android/ext/r.java:482: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.c(p).setMessage(android.ext.Tools.L1(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.record_logcat_info), v())).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), new android.ext.r.h()).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.cancel), (android.content.DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                   ^
+app/src/rebuild-jadx/java/android/ext/r.java:740: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.d().post(new android.ext.r.d());
+                                ^
+app/src/rebuild-jadx/java/android/ext/r.java:785: error: non-static variable this cannot be referenced from a static context
+            android.ext.f.o(android.ext.f.c(p).setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.mnt_expand)).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), (android.content.DialogInterface.OnClickListener) null).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.fix_it), new android.ext.r.c()));
+                                                                                                                                                                                                                                                                                                                                         ^
+app/src/rebuild-jadx/java/android/ext/s1.java:29: error: non-static variable this cannot be referenced from a static context
+    private static final java.lang.Runnable k = new android.ext.s1.c();
+                                                ^
+app/src/rebuild-jadx/java/android/ext/s1.java:292: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.d().postDelayed(new android.ext.s1.a(), 20000L);
+                                           ^
+app/src/rebuild-jadx/java/android/ext/s1.java:314: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.quick_start_title)).setCancelable(false).setMessage(t()).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), new android.ext.s1.e()).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.more), new android.ext.s1.d()).create();
+                                                                                                                                                                                                                                                                                                                                                                                       ^
+app/src/rebuild-jadx/java/android/ext/s1.java:314: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.quick_start_title)).setCancelable(false).setMessage(t()).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), new android.ext.s1.e()).setNeutralButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.more), new android.ext.s1.d()).create();
+                                                                                                                                                                                                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/s1.java:315: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.l(alertDialogCreate, new android.ext.s1.f(alertDialogCreate));
+                                           ^
+app/src/rebuild-jadx/java/android/ext/s1.java:527: error: non-static variable this cannot be referenced from a static context
+            android.ext.n2.i(new android.ext.s1.b());
+                             ^
+app/src/rebuild-jadx/java/android/ext/t.java:41: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.t.b());
+                         ^
+app/src/rebuild-jadx/java/android/ext/t.java:49: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.t.a());
+                         ^
+app/src/rebuild-jadx/java/android/ext/t2.java:7: error: non-static variable this cannot be referenced from a static context
+    private static final java.lang.ThreadLocal f1264a = new android.ext.t2.a();
+                                                        ^
+app/src/rebuild-jadx/java/android/ext/x2.java:162: warning: [removal] finalize() in Object has been deprecated and marked for removal
+        protected void finalize() throws java.io.IOException {
+                       ^
+app/src/rebuild-jadx/java/android/ext/x2.java:163: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+app/src/rebuild-jadx/java/android/ext/x2.java:317: error: non-static variable this cannot be referenced from a static context
+            return new android.ext.x2.g(strArr2[1], strArr2[1]);
+                   ^
+app/src/rebuild-jadx/java/android/ext/x2.java:375: error: cannot find symbol
+                                                                        e = e2;
+                                                                        ^
+  symbol:   variable e
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:376: error: cannot find symbol
+                                                                        android.ext.e1.s("Failed read data from " + file3, e);
+                                                                                                                           ^
+  symbol:   variable e
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:386: error: cannot find symbol
+                                                            e = e2;
+                                                            ^
+  symbol:   variable e
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:386: error: cannot find symbol
+                                                            e = e2;
+                                                                ^
+  symbol:   variable e2
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:387: error: cannot find symbol
+                                                            android.ext.e1.s("Failed read data from " + file3, e);
+                                                                                                               ^
+  symbol:   variable e
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:392: error: cannot find symbol
+                                                        e = e3;
+                                                        ^
+  symbol:   variable e
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:405: error: cannot find symbol
+                                        th = th2;
+                                        ^
+  symbol:   variable th
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:406: error: cannot find symbol
+                                        android.ext.e1.s("Failed read list from " + file, th);
+                                                                                          ^
+  symbol:   variable th
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:415: error: cannot find symbol
+                                th = th3;
+                                ^
+  symbol:   variable th
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:420: error: cannot find symbol
+                        th = th4;
+                        ^
+  symbol:   variable th
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/x2.java:612: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.app_name)).setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.exit_confirm)).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.restart), new android.ext.x2.b(zArr, new android.ext.p0(1300, true))).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.skip), new android.ext.x2.a(eVar, runnable, zArr)).setCancelable(false).create();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^
+app/src/rebuild-jadx/java/android/ext/x2.java:612: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.b().setCustomTitle(android.ext.Tools.g0(catch_.me_.if_.you_.can_.R.string.app_name)).setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.exit_confirm)).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.restart), new android.ext.x2.b(zArr, new android.ext.p0(1300, true))).setNegativeButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.skip), new android.ext.x2.a(eVar, runnable, zArr)).setCancelable(false).create();
+                                                                                                                                                                                                                                                                                                                   ^
+app/src/rebuild-jadx/java/android/ext/x2.java:614: error: non-static variable this cannot be referenced from a static context
+            android.ext.f.k(alertDialogCreate, new android.ext.x2.c(zArr, runnable));
+                                               ^
+app/src/rebuild-jadx/java/android/ext/x2.java:622: error: incompatible types: Object cannot be converted to Entry
+        for (java.util.Map.Entry entry : map.entrySet()) {
+                                                     ^
+app/src/rebuild-jadx/java/android/ext/x2.java:730: error: non-static variable this cannot be referenced from a static context
+                android.ext.x2.d dVar = new android.ext.x2.d(iHashCode, eVar);
+                                        ^
+app/src/rebuild-jadx/java/android/ext/x2.java:733: error: non-static variable this cannot be referenced from a static context
+                    android.ext.f.k(alertDialogCreate, new android.ext.x2.e(runnable));
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/x2.java:773: error: non-static variable this cannot be referenced from a static context
+            android.ext.f.r(android.ext.f.c(android.ext.r.p).setMessage(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.need_uninstall)).setPositiveButton(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.ok), new android.ext.x2.f(runnable, str)).create(), runnable, true);
+                                                                                                                                                                                                                      ^
+app/src/rebuild-jadx/java/android/ext/x2.java:861: error: cannot find symbol
+            android.ext.e1.d(str);
+                             ^
+  symbol:   variable str
+  location: class x2
+app/src/rebuild-jadx/java/android/ext/y0.java:170: error: incompatible types: Object cannot be converted to c
+            for (android.ext.y0.c cVar : android.ext.y0.f1331a) {
+                                                       ^
+app/src/rebuild-jadx/java/android/ext/y0.java:560: error: incompatible types: Object cannot be converted to c
+        for (android.ext.y0.c cVar : f1331a) {
+                                     ^
+app/src/rebuild-jadx/java/android/ext/y0.java:581: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.Tools.k0()).setCustomTitle(viewI0).setAdapter(bVar, new android.ext.y0.a(bVar, editText)).create();
+                                                                                                                                    ^
+app/src/rebuild-jadx/java/android/ext/z.java:332: error: cannot find symbol
+                th = th4;
+                ^
+  symbol:   variable th
+  location: class z.j
+app/src/rebuild-jadx/java/android/ext/z.java:430: error: non-static variable this cannot be referenced from a static context
+            android.ext.z.j jVar = new android.ext.z.j(activity, new android.view.View(activity), layoutParams, iArr);
+                                   ^
+app/src/rebuild-jadx/java/android/ext/z.java:519: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.z.a(activity, z, i2));
+                         ^
+app/src/rebuild-jadx/java/android/ext/z.java:600: error: non-static variable this cannot be referenced from a static context
+        new android.ext.g0(new android.ext.z.h(rVar, zX, i2), "CheckFloatingWindowAPI").start();
+                           ^
+app/src/rebuild-jadx/java/android/ext/z.java:680: error: cannot find symbol
+                android.ext.e1.a(th);
+                                 ^
+  symbol:   variable th
+  location: class z
+app/src/rebuild-jadx/java/android/ext/z.java:755: error: non-static variable this cannot be referenced from a static context
+        android.ext.n2.i(new android.ext.z.i(activity, dialogInterface));
+                         ^
+app/src/rebuild-jadx/java/android/ext/z.java:887: error: cannot find symbol
+                        th = th2;
+                        ^
+  symbol:   variable th
+  location: class z
+app/src/rebuild-jadx/java/android/ext/z.java:894: error: cannot find symbol
+                    th = th3;
+                    ^
+  symbol:   variable th
+  location: class z
+app/src/rebuild-jadx/java/android/ext/z.java:896: error: cannot find symbol
+                    android.ext.e1.l("Failed checkAll floating window", th);
+                                                                        ^
+  symbol:   variable th
+  location: class z
+app/src/rebuild-jadx/java/android/ext/z.java:903: error: cannot find symbol
+            th = th4;
+            ^
+  symbol:   variable th
+  location: class z
+app/src/rebuild-jadx/java/android/ext/z0.java:145: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.install_mode)).setMessage(g()).setPositiveButton(catch_.me_.if_.you_.can_.R.string.ok, new android.ext.z0.g()).create();
+                                                                                                                                                                                                                                        ^
+app/src/rebuild-jadx/java/android/ext/z0.java:147: error: non-static variable this cannot be referenced from a static context
+        alertDialogCreate.setOnCancelListener(new android.ext.z0.h());
+                                              ^
+app/src/rebuild-jadx/java/android/ext/z0.java:171: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.install_mode)).setSingleChoiceItems(new java.lang.String[]{android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.default_mark), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for32), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for64)}, -1, new android.ext.z0.c()).setNegativeButton(catch_.me_.if_.you_.can_.R.string.cancel, new android.ext.z0.b()).setNeutralButton(catch_.me_.if_.you_.can_.R.string.more, new android.ext.z0.a()).setCancelable(true).create();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+app/src/rebuild-jadx/java/android/ext/z0.java:171: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.install_mode)).setSingleChoiceItems(new java.lang.String[]{android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.default_mark), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for32), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for64)}, -1, new android.ext.z0.c()).setNegativeButton(catch_.me_.if_.you_.can_.R.string.cancel, new android.ext.z0.b()).setNeutralButton(catch_.me_.if_.you_.can_.R.string.more, new android.ext.z0.a()).setCancelable(true).create();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ^
+app/src/rebuild-jadx/java/android/ext/z0.java:171: error: non-static variable this cannot be referenced from a static context
+        android.app.AlertDialog alertDialogCreate = android.ext.f.c(android.ext.r.p).setTitle(android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.install_mode)).setSingleChoiceItems(new java.lang.String[]{android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.default_mark), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for32), android.ext.b2.f(catch_.me_.if_.you_.can_.R.string.for64)}, -1, new android.ext.z0.c()).setNegativeButton(catch_.me_.if_.you_.can_.R.string.cancel, new android.ext.z0.b()).setNeutralButton(catch_.me_.if_.you_.can_.R.string.more, new android.ext.z0.a()).setCancelable(true).create();
+                                                                                                                                                                                                                                                                                                                                                                                                         ^
+app/src/rebuild-jadx/java/android/ext/z0.java:173: error: non-static variable this cannot be referenced from a static context
+        alertDialogCreate.setOnCancelListener(new android.ext.z0.d());
+                                              ^
+app/src/rebuild-jadx/java/android/ext/z0.java:174: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.u(alertDialogCreate, new android.ext.z0.e(), new android.ext.z0.f());
+                                           ^
+app/src/rebuild-jadx/java/android/ext/z0.java:174: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.u(alertDialogCreate, new android.ext.z0.e(), new android.ext.z0.f());
+                                                                   ^
+app/src/rebuild-jadx/java/android/ext/z0.java:191: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.l(alertDialog, new android.ext.z0.i(alertDialog));
+                                     ^
+app/src/rebuild-jadx/java/android/ext/z2.java:84: error: non-static variable this cannot be referenced from a static context
+            new android.ext.g0(new android.ext.z2.b(str), "sendLog").start();
+                               ^
+app/src/rebuild-jadx/java/android/ext/z2.java:88: error: non-static variable this cannot be referenced from a static context
+            return ((java.lang.Boolean) java.util.concurrent.Executors.newSingleThreadExecutor().submit(new android.ext.z2.a(str)).get()).booleanValue();
+                                                                                                        ^
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:59: warning: [removal] SecurityManager in java.lang has been deprecated and marked for removal
+        java.lang.SecurityManager securityManager = java.lang.System.getSecurityManager();
+                 ^
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:59: warning: [removal] getSecurityManager() in System has been deprecated and marked for removal
+        java.lang.SecurityManager securityManager = java.lang.System.getSecurityManager();
+                                                                    ^
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:73: error: cannot find symbol
+            e = e2;
+            ^
+  symbol:   variable e
+  location: class ProcessBuilder
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:74: error: cannot find symbol
+            java.lang.String str3 = ": " + gge.getMessage();
+                                           ^
+  symbol:   variable gge
+  location: class ProcessBuilder
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:75: error: cannot find symbol
+            if ((e instanceof java.io.IOException) && securityManager != null) {
+                 ^
+  symbol:   variable e
+  location: class ProcessBuilder
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:79: error: cannot find symbol
+                    e = e3;
+                    ^
+  symbol:   variable e
+  location: class ProcessBuilder
+app/src/rebuild-jadx/java/android/lang/ProcessBuilder.java:89: error: cannot find symbol
+            throw new java.io.IOException(sb.toString(), e);
+                                                         ^
+  symbol:   variable e
+  location: class ProcessBuilder
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:42: error: b is not abstract and does not override abstract method setValue(Object) in Entry
+    private static class b implements java.util.Map.Entry {
+                   ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:63: error: method does not override or implement a method from a supertype
+        @Override // java.util.Map.Entry
+        ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:115: error: c.b is not abstract and does not override abstract method setValue(Object) in Entry
+        class b implements java.util.Map.Entry {
+        ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:136: error: method does not override or implement a method from a supertype
+            @Override // java.util.Map.Entry
+            ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:148: error: non-static variable this cannot be referenced from a static context
+            return obj instanceof android.lang.ProcessEnvironment.b ? ((android.lang.ProcessEnvironment.b) obj).f1462a : new android.lang.ProcessEnvironment.c.b(obj);
+                                                                                                                         ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:214: error: method does not override or implement a method from a supertype
+        @Override // java.util.AbstractMap, java.util.Map
+        ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:243: error: incompatible types: Object cannot be converted to Entry
+            for (java.util.Map.Entry entry : this.f1467a.entrySet()) {
+                                                                 ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:248: error: incompatible types: Object cannot be converted to Entry
+            for (java.util.Map.Entry entry2 : this.f1467a.entrySet()) {
+                                                                  ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:430: error: g is not abstract and does not override abstract method compareTo(Object) in Comparable
+    private static class g extends android.lang.ProcessEnvironment.a implements java.lang.Comparable {
+                   ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:452: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:464: error: h is not abstract and does not override abstract method compareTo(Object) in Comparable
+    private static class h extends android.lang.ProcessEnvironment.a implements java.lang.Comparable {
+                   ^
+app/src/rebuild-jadx/java/android/lang/ProcessEnvironment.java:486: error: method does not override or implement a method from a supertype
+        @Override // java.lang.Comparable
+        ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:7: error: non-static variable this cannot be referenced from a static context
+    private static final java.util.concurrent.Executor f1474f = (java.util.concurrent.Executor) e(new android.lang.UNIXProcess.a());
+                                                                                                  ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:121: error: in has protected access in FilterInputStream
+                java.io.InputStream inputStream = ((java.io.BufferedInputStream) this).in;
+                                                                                      ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:125: error: in has protected access in FilterInputStream
+                    ((java.io.BufferedInputStream) this).in = bArrA == null ? android.lang.UNIXProcess.d.f1483a : new java.io.ByteArrayInputStream(bArrA);
+                                                        ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:126: error: buf has protected access in BufferedInputStream
+                    if (((java.io.BufferedInputStream) this).buf == null) {
+                                                            ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:127: error: in has protected access in FilterInputStream
+                        ((java.io.BufferedInputStream) this).in = null;
+                                                            ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:143: error: out has protected access in FilterOutputStream
+            java.io.OutputStream outputStream = ((java.io.BufferedOutputStream) this).out;
+                                                                                     ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:149: error: out has protected access in FilterOutputStream
+                ((java.io.BufferedOutputStream) this).out = android.lang.UNIXProcess.e.f1484a;
+                                                     ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:186: error: non-static variable this cannot be referenced from a static context
+            return (java.lang.ThreadGroup) android.lang.UNIXProcess.e(new android.lang.UNIXProcess.h.a());
+                                                                      ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:214: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+        return java.security.AccessController.doPrivileged(privilegedAction);
+                            ^
+app/src/rebuild-jadx/java/android/lang/UNIXProcess.java:218: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+        return java.security.AccessController.doPrivileged(privilegedExceptionAction);
+                            ^
+app/src/rebuild-jadx/java/gga/g.java:4: error: no suitable constructor found for View(no arguments)
+public abstract class g extends android.view.View {
+                ^
+    constructor View.View(Context) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor View.View(Context,AttributeSet) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor View.View(Context,AttributeSet,int) is not applicable
+      (actual and formal argument lists differ in length)
+    constructor View.View(Context,AttributeSet,int,int) is not applicable
+      (actual and formal argument lists differ in length)
+app/src/rebuild-jadx/java/ggg/c.java:934: error: cannot find symbol
+            z = true;
+            ^
+  symbol:   variable z
+  location: class c
+app/src/rebuild-jadx/java/luaj/lib/GgLib$saveVariable.java:130: error: incompatible types: Object cannot be converted to LuaTable
+        for (luaj.LuaTable luaTable : this.W) {
+                                          ^
+app/src/rebuild-jadx/java/luaj/lib/StringLib.java:1454: error: cannot find symbol
+                        arrayList.add(luaValueI2);
+                                      ^
+  symbol:   variable luaValueI2
+  location: class unpack
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+645 errors
+10 warnings

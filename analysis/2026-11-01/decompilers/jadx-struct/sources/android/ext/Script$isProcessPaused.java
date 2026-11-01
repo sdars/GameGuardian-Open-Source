@@ -1,0 +1,25 @@
+package android.ext;
+
+import luaj.LuaValue;
+import luaj.Varargs;
+
+/* JADX INFO: loaded from: classes.dex */
+final class Script$isProcessPaused extends Script$ApiFunction {
+    Script$isProcessPaused() {
+    }
+
+    @Override // android.ext.Script$ApiFunction
+    protected int Y2() {
+        return 0;
+    }
+
+    @Override // android.ext.Script$ApiFunction
+    public Varargs b3(Varargs varargs) {
+        return LuaValue.H2(MainService.instance.R);
+    }
+
+    @Override // android.ext.Script$ApiFunction
+    String k3() {
+        return "gg.isProcessPaused() -> bool";
+    }
+}

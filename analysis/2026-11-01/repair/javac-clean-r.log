@@ -1,0 +1,2380 @@
+app/src/rebuild-clean/java/android/ext/d.java:10: error: cannot find symbol
+    private final d.f[] f700a;
+                   ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/ArrayAdapter.java:16: error: cannot find symbol
+    private a.d f27a;
+             ^
+  symbol:   class d
+  location: class a
+app/src/rebuild-clean/java/android/ext/Config.java:73: error: cannot find symbol
+    static a.e H = new a.e();
+            ^
+  symbol:   class e
+  location: class Config.a
+app/src/rebuild-clean/java/android/ext/MainService.java:140: error: cannot find symbol
+    final d.a s0;
+           ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/SavedListAdapter.java:28: error: cannot find symbol
+    private final d.e f361a = new d.e();
+                   ^
+  symbol:   class e
+  location: class d
+app/src/rebuild-clean/java/android/ext/SavedListAdapter.java:153: error: cannot find symbol
+    public d.e f() {
+            ^
+  symbol:   class e
+  location: class d
+app/src/rebuild-clean/java/android/ext/h2.java:12: error: cannot find symbol
+    private static a.e q = new a.e();
+                    ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/h2.java:27: error: cannot find symbol
+    public static a.e a0() {
+                   ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/luaj/h.java:7: error: cannot find symbol
+    private static final f.d[] n = new f.d[0];
+                          ^
+  symbol:   class d
+  location: class f
+app/src/rebuild-clean/java/luaj/h.java:20: error: cannot find symbol
+    public f.b[] f1727e;
+            ^
+  symbol:   class b
+  location: class f
+app/src/rebuild-clean/java/luaj/h.java:35: error: cannot find symbol
+    public f.d[] f1728f = n;
+            ^
+  symbol:   class d
+  location: class f
+app/src/rebuild-clean/java/luaj/lib/DebugLib.java:939: error: cannot find symbol
+    private static LuaString a3(f.d dVar, int i) {
+                                 ^
+  symbol:   class d
+  location: interface f
+app/src/rebuild-clean/java/luaj/LuaValue.java:1032: error: cannot find symbol
+    public f.a s0() {
+            ^
+  symbol:   class a
+  location: class f
+app/src/rebuild-clean/java/android/ext/t0.java:14: error: cannot find symbol
+    private a.e l;
+             ^
+  symbol:   class e
+  location: class t0.a
+app/src/rebuild-clean/java/android/ext/Searcher.java:373: error: cannot find symbol
+    public void F(a.e eVar, int i) {
+                   ^
+  symbol:   class e
+  location: class Searcher.a
+app/src/rebuild-clean/java/android/ext/Searcher.java:388: error: cannot find symbol
+    a.e G(int i) {
+     ^
+  symbol:   class e
+  location: class Searcher.a
+app/src/rebuild-clean/java/android/ext/SystemSpinner.java:19: error: cannot find symbol
+    protected a.e f477c;
+               ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/SystemSpinner.java:46: error: cannot find symbol
+    public void setData(a.e eVar) {
+                         ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/InternalKeyboard.java:19: error: cannot find symbol
+public class InternalKeyboard extends a.c {
+                                       ^
+  symbol:   class c
+  location: class a
+app/src/rebuild-clean/java/android/ext/Script.java:763: error: a has private access in b
+    class ScriptPrintStream extends b.a {
+                                     ^
+app/src/rebuild-clean/java/android/ext/b2.java:18: error: cannot find symbol
+    static volatile a.e f656b = new a.e();
+                     ^
+  symbol:   class e
+  location: class b2.a
+app/src/rebuild-clean/java/android/ext/l2.java:9: error: cannot find symbol
+public class l2 extends a.b {
+                         ^
+  symbol:   class b
+  location: class a
+app/src/rebuild-clean/java/android/ext/r.java:46: error: cannot find symbol
+public abstract class r extends a.a implements View.OnClickListener {
+                                 ^
+  symbol:   class a
+  location: class a
+app/src/rebuild-clean/java/android/ext/u2.java:46: error: cannot find symbol
+    public u2(a.e eVar, SparseIntArray sparseIntArray, String str, String str2, DialogInterface.OnClickListener onClickListener) {
+               ^
+  symbol:   class e
+  location: class u2.a
+app/src/rebuild-clean/java/android/ext/u2.java:74: error: cannot find symbol
+    public u2(a.e eVar, String str, String str2, DialogInterface.OnClickListener onClickListener) {
+               ^
+  symbol:   class e
+  location: class u2.a
+app/src/rebuild-clean/java/android/ext/x2.java:455: error: cannot find symbol
+    private static boolean c(a.e eVar) {
+                              ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:505: error: cannot find symbol
+    private static a.e e(String str) {
+                    ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:526: error: cannot find symbol
+    private static String f(a.e eVar) {
+                             ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:630: error: cannot find symbol
+    private static void l(a.e eVar) {
+                           ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:634: error: cannot find symbol
+    private static boolean m(a.e eVar, Runnable runnable) {
+                              ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:692: error: cannot find symbol
+    static void q(a.e eVar) {
+                   ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:696: error: cannot find symbol
+    static boolean r(a.e eVar, Runnable runnable) {
+                      ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:104: error: cannot find symbol
+        final /* synthetic */ a.e f1318b;
+                               ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:106: error: cannot find symbol
+        d(int i, a.e eVar) {
+                  ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:33: error: cannot find symbol
+        final /* synthetic */ a.e f1310a;
+                               ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/ext/x2.java:41: error: cannot find symbol
+        a(a.e eVar, Runnable runnable, boolean[] zArr) {
+           ^
+  symbol:   class e
+  location: class x2.a
+app/src/rebuild-clean/java/android/lang/UNIXProcess.java:14: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+import java.security.AccessController;
+                    ^
+app/src/rebuild-clean/java/ggg/g.java:13: error: cannot find symbol
+public class g extends g.a {
+                        ^
+  symbol:   class a
+  location: class g
+app/src/rebuild-clean/java/ggg/g.java:13: error: cyclic inheritance involving g
+public class g extends g.a {
+       ^
+app/src/rebuild-clean/java/ggg/a.java:47: error: cannot find symbol
+    static f.b[] G(f.b[] bVarArr, int i) {
+                    ^
+  symbol:   class b
+  location: class f
+app/src/rebuild-clean/java/ggg/a.java:47: error: cannot find symbol
+    static f.b[] G(f.b[] bVarArr, int i) {
+            ^
+  symbol:   class b
+  location: class f
+app/src/rebuild-clean/java/ggg/a.java:55: error: cannot find symbol
+    static f.d[] H(f.d[] dVarArr, int i) {
+                    ^
+  symbol:   class d
+  location: class f
+app/src/rebuild-clean/java/ggg/a.java:55: error: cannot find symbol
+    static f.d[] H(f.d[] dVarArr, int i) {
+            ^
+  symbol:   class d
+  location: class f
+app/src/rebuild-clean/java/lasm/b.java:64: error: package e does not exist
+    void d(e.f fVar, b bVar) {
+            ^
+app/src/rebuild-clean/java/lasm/b.java:78: error: package e does not exist
+    void e(e.f fVar) {
+            ^
+app/src/rebuild-clean/java/lasm/b.java:88: error: package e does not exist
+    void f(e.f fVar) {
+            ^
+app/src/rebuild-clean/java/lasm/b.java:151: error: package e does not exist
+    void h(e.f fVar, LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3, e.f fVar2, e.f fVar3) {
+            ^
+app/src/rebuild-clean/java/lasm/b.java:151: error: package e does not exist
+    void h(e.f fVar, LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3, e.f fVar2, e.f fVar3) {
+                                                                                 ^
+app/src/rebuild-clean/java/lasm/b.java:151: error: package e does not exist
+    void h(e.f fVar, LuaValue luaValue, LuaValue luaValue2, LuaValue luaValue3, e.f fVar2, e.f fVar3) {
+                                                                                            ^
+app/src/rebuild-clean/java/lasm/b.java:1030: error: package e does not exist
+    void i(LasmBase.Internal internal, e.f fVar) {
+                                        ^
+app/src/rebuild-clean/java/lasm/b.java:1037: error: package e does not exist
+    b j() throws e.b {
+                  ^
+app/src/rebuild-clean/java/lasm/b.java:1112: error: package e does not exist
+    void l(LasmBase.V v, e.f fVar, int i) {
+                          ^
+app/src/rebuild-clean/java/lasm/b.java:1145: error: package e does not exist
+    int n(e.f fVar) {
+           ^
+app/src/rebuild-clean/java/lasm/b.java:1161: error: package e does not exist
+    int o(e.f fVar) {
+           ^
+app/src/rebuild-clean/java/lasm/b.java:1172: error: package e does not exist
+    void p(e.f fVar) {
+            ^
+app/src/rebuild-clean/java/lasm/b.java:1182: error: package e does not exist
+    void q(LasmBase.V v, e.f fVar) {
+                          ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:56: error: package e does not exist
+    static void b(V v, V v2) throws e.b {
+                                     ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:156: error: package e does not exist
+    static int d(f fVar) throws e.b {
+                                 ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:168: error: package e does not exist
+    static int f(f fVar, int i) throws e.b {
+                                        ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:176: error: package e does not exist
+    static int g(f fVar, int i) throws e.b {
+                                        ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:184: error: package e does not exist
+    static long h(f fVar) throws e.b {
+                                  ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:192: error: package e does not exist
+    static LuaValue i(f fVar) throws e.b {
+                                      ^
+app/src/rebuild-clean/java/lasm/LasmBase.java:227: error: package e does not exist
+    static LuaString j(f fVar) throws e.b {
+                                       ^
+app/src/rebuild-clean/java/lasm/b.java:34: error: package e does not exist
+        e.f f1640a;
+         ^
+app/src/rebuild-clean/java/lasm/b.java:39: error: package e does not exist
+        a(e.f fVar, int i) {
+           ^
+app/src/rebuild-clean/java/ggg/c.java:95: error: cannot find symbol
+    f.b A0(int i) {
+     ^
+  symbol:   class b
+  location: class f
+app/src/rebuild-clean/java/ggg/g.java:14: error: modifier protected,static not allowed here
+    protected static final String[] r = {"(for control)", "(for generator)", "(for index)", "(for limit)", "(for state)", "(for step)", "break"};
+                                    ^
+app/src/rebuild-clean/java/ggg/g.java:15: error: modifier private,static not allowed here
+    private static final Hashtable s = new Hashtable();
+                                   ^
+app/src/rebuild-clean/java/ggg/g.java:16: error: modifier static not allowed here
+    static final String[] t;
+                          ^
+app/src/rebuild-clean/java/ggg/g.java:17: error: modifier static not allowed here
+    static final Hashtable u;
+                           ^
+app/src/rebuild-clean/java/ggg/g.java:18: error: modifier static not allowed here
+    static C0027g[] v;
+                    ^
+app/src/rebuild-clean/java/ggg/g.java:44: error: modifier private not allowed here
+    private b p = new b();
+              ^
+app/src/rebuild-clean/java/ggg/g.java:45: error: modifier private not allowed here
+    private final int[] q = new int[24];
+                        ^
+app/src/rebuild-clean/java/ggg/g.java:78: error: cannot find symbol
+        k f1598a = new k();
+        ^
+  symbol:   class k
+  location: class c
+app/src/rebuild-clean/java/ggg/g.java:81: error: cannot find symbol
+        k f1599b;
+        ^
+  symbol:   class k
+  location: class c
+app/src/rebuild-clean/java/ggg/g.java:99: error: cannot find symbol
+        j[] f1603a;
+        ^
+  symbol:   class j
+  location: class d
+app/src/rebuild-clean/java/ggg/g.java:130: error: cannot find symbol
+        k f1610b = new k();
+        ^
+  symbol:   class k
+  location: class e
+app/src/rebuild-clean/java/ggg/g.java:201: error: cannot find symbol
+        public void a(i iVar) {
+                      ^
+  symbol:   class i
+  location: class i
+app/src/rebuild-clean/java/ggg/g.java:286: error: cannot find symbol
+        public void d(k kVar) {
+                      ^
+  symbol:   class k
+  location: class k
+app/src/rebuild-clean/java/lasm/a.java:15: error: cannot find symbol
+public class a extends LasmBase implements e.a {
+                                            ^
+  symbol:   class a
+  location: class e
+app/src/rebuild-clean/java/lasm/a.java:21: error: cannot find symbol
+    public e.c f1634b;
+            ^
+  symbol:   class c
+  location: class e
+app/src/rebuild-clean/java/luaj/a.java:23: error: cannot find symbol
+    private static final f.b[] r = new f.b[0];
+                          ^
+  symbol:   class b
+  location: class f
+app/src/rebuild-clean/java/luaj/a.java:24: error: cannot find symbol
+    private static final f.d[] s = new f.d[0];
+                          ^
+  symbol:   class d
+  location: class f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:1528: error: cannot find symbol
+    static void X2(f.a aVar, LuaString luaString) {
+                    ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:1752: error: cannot find symbol
+    static void b3(c cVar, f.a aVar, long j) {
+                            ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:381: error: cannot find symbol
+        private void a(f.a aVar, LuaString luaString, int i, int i2) {
+                        ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:534: error: cannot find symbol
+        public void b(f.a aVar, int i, int i2, LuaValue luaValue) {
+                       ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:220: error: cannot find symbol
+        public static final void e(f.a aVar, char c2, int i) {
+                                    ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:232: error: cannot find symbol
+        public void a(f.a aVar, byte b2) {
+                       ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:236: error: cannot find symbol
+        public void b(f.a aVar, double d2) {
+                       ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:259: error: cannot find symbol
+        public void c(f.a aVar, long j) {
+                       ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/luaj/lib/StringLib.java:325: error: cannot find symbol
+        public void d(f.a aVar, LuaString luaString) {
+                       ^
+  symbol:   class a
+  location: interface f
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:30: error: cannot find symbol
+        View viewG = a.d.g(R.layout.service_address_item, viewGroup, false);
+                      ^
+  symbol:   variable d
+  location: class a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:42: error: cannot find symbol
+        return this.f24a.i();
+                        ^
+  symbol:   method i()
+  location: variable f24a of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:48: error: cannot find symbol
+            return this.f24a.f(i, null);
+                            ^
+  symbol:   method f(int,<null>)
+  location: variable f24a of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:72: error: incompatible types: int cannot be converted to boolean
+        boolean z2 = (Config.q & (1 << Tools.d1())) == 0 ? 0 : 1;
+                                                         ^
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:84: error: cannot find symbol
+        if (aVar.i() > i) {
+                ^
+  symbol:   method i()
+  location: variable aVar of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:86: error: cannot find symbol
+                c cVarF = aVar.f(i, this.f26c);
+                              ^
+  symbol:   method f(int,c)
+  location: variable aVar of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:87: error: cannot find symbol
+                zC = aVar.c(i);
+                         ^
+  symbol:   method c(int)
+  location: variable aVar of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:92: error: incompatible types: boolean cannot be converted to int
+        d3Var2.o.setOrientation(!z2);
+                                ^
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:95: error: incomparable types: boolean and int
+        d3Var2.f661a.getLayoutParams().height = z2 != 0 ? -2 : Tools.H();
+                                                   ^
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:144: error: cannot find symbol
+            this.f24a.b(b3Var.m, z);
+                     ^
+  symbol:   method b(int,boolean)
+  location: variable f24a of type a
+app/src/rebuild-clean/java/android/ext/AddressArrayAdapter.java:159: error: cannot find symbol
+            c cVarF = this.f24a.f(num.intValue(), this.f26c);
+                               ^
+  symbol:   method f(int,c)
+  location: variable f24a of type a
+app/src/rebuild-clean/java/android/ext/d.java:27: error: cannot find symbol
+        d.f fVar;
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:41: error: cannot find symbol
+        d.f[] fVarArr = this.f700a;
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:43: error: cannot find symbol
+            d.f fVar = fVarArr[i];
+             ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:72: error: cannot find symbol
+        d.f[] fVarArr = this.f700a;
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:75: error: cannot find symbol
+            d.f fVar = fVarArr[i];
+             ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:101: error: cannot find symbol
+        d.f[] fVarArr = this.f700a;
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:110: error: cannot find symbol
+        d.f[] fVarArr = this.f700a;
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:117: error: cannot find symbol
+        d.f[] fVarArr = new d.f[7];
+         ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:117: error: cannot find symbol
+        d.f[] fVarArr = new d.f[7];
+                             ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/d.java:119: error: cannot find symbol
+            fVarArr[i2] = new d.f(i);
+                               ^
+  symbol:   class f
+  location: class d
+app/src/rebuild-clean/java/android/ext/c.java:100: error: cannot find symbol
+        k.h(c.class);
+         ^
+  symbol:   method h(Class<c>)
+  location: variable k of type int[]
+app/src/rebuild-clean/java/android/ext/c.java:365: error: cannot find symbol
+        a.e eVarQ = q(i2);
+         ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/c.java:388: error: cannot find symbol
+        a.e eVar = new a.e();
+         ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/c.java:388: error: cannot find symbol
+        a.e eVar = new a.e();
+                        ^
+  symbol:   class e
+  location: class a
+app/src/rebuild-clean/java/android/ext/t1.java:50: error: a.C0021a is not abstract and does not override abstract method compare(Object,Object) in Comparator
+        class C0021a implements Comparator {
+        ^
+app/src/rebuild-clean/java/android/ext/t1.java:54: error: method does not override or implement a method from a supertype
+            @Override // java.util.Comparator
+            ^
+app/src/rebuild-clean/java/android/ext/t1.java:408: error: cannot find symbol
+            return d.b.f1513c;
+                    ^
+  symbol:   variable b
+  location: class d
+app/src/rebuild-clean/java/android/ext/t1.java:411: error: cannot find symbol
+        byte[] bArrCopyOf = d.b.f1513c;
+                             ^
+  symbol:   variable b
+  location: class d
+app/src/rebuild-clean/java/android/ext/ArrayAdapter.java:41: error: cannot find symbol
+                    this.f27a = a.d.c();
+                                 ^
+  symbol:   variable d
+  location: class a
+app/src/rebuild-clean/java/android/ext/ArrayAdapter.java:62: error: no suitable constructor found for ArrayAdapter(Context,int,int,Object[])
+        super(context, i, i2, objArr);
+        ^
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,T[]) is not applicable
+      (argument mismatch; Object[] cannot be converted to T[])
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,List<T>) is not applicable
+      (argument mismatch; Object[] cannot be converted to List<T>)
+  where T is a type-variable:
+    T extends Object declared in class android.ext.ArrayAdapter
+app/src/rebuild-clean/java/android/ext/a.java:47: error: constructor a in class a cannot be applied to given types;
+        this.f561e = new c.a(context);
+                     ^
+  required: int,CharSequence,int
+  found:    Context
+  reason: actual and formal argument lists differ in length
+app/src/rebuild-clean/java/android/ext/a.java:108: error: incompatible types: a cannot be converted to Menu
+        return this.f561e;
+                   ^
+app/src/rebuild-clean/java/android/ext/a.java:133: error: incompatible types: a cannot be converted to Menu
+            this.j.onPrepareActionMode(this, this.f561e);
+                                                 ^
+app/src/rebuild-clean/java/android/ext/a.java:135: error: cannot find symbol
+            size = this.f561e.size();
+                             ^
+  symbol:   method size()
+  location: variable f561e of type a
+app/src/rebuild-clean/java/android/ext/a.java:138: error: cannot find symbol
+                item = this.f561e.getItem(i);
+                                 ^
+  symbol:   method getItem(int)
+  location: variable f561e of type a
+app/src/rebuild-clean/java/android/ext/a.java:150: error: cannot find symbol
+            size = this.f561e.size();
+                             ^
+  symbol:   method size()
+  location: variable f561e of type a
+app/src/rebuild-clean/java/android/ext/a.java:152: error: cannot find symbol
+                item = this.f561e.getItem(i);
+                                 ^
+  symbol:   method getItem(int)
+  location: variable f561e of type a
+app/src/rebuild-clean/java/android/ext/a.java:178: error: cannot find symbol
+            ((c.b) menuItem).a();
+                            ^
+  symbol:   method a()
+  location: class b
+app/src/rebuild-clean/java/android/ext/Config.java:73: error: cannot find symbol
+    static a.e H = new a.e();
+                        ^
+  symbol:   class e
+  location: class Config.a
+app/src/rebuild-clean/java/android/ext/Config.java:270: error: cannot find symbol
+            View viewF = a.d.f(R.layout.option_seek, null);
+                          ^
+  symbol:   variable d
+  location: interface a
+app/src/rebuild-clean/java/android/ext/Config.java:975: error: cannot find symbol
+            View viewF = a.d.f(R.layout.option_edit, null);
+                          ^
+  symbol:   variable d
+  location: class q.a
+app/src/rebuild-clean/java/android/ext/Config.java:1174: error: non-static variable this cannot be referenced from a static context
+        new f(R.id.config_xor_key, R.string.xor_key, R.string.empty, Integer.MIN_VALUE, 4294967295L, 0, "xor-key", true, true, false, 1);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1176: error: non-static variable this cannot be referenced from a static context
+        new g(R.id.config_icons_size, R.string.icons_size, 12, 0, "icons-size", false, R.string.icons_size_help);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1188: error: non-static variable this cannot be referenced from a static context
+        new h(R.id.config_memory_access, R.string.memory_access, new int[]{R.string.normal, R.string.extended, R.string.experimental}, 0, "memory-access", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1199: error: non-static variable this cannot be referenced from a static context
+        new i(R.id.config_prevent_unload, R.string.prevent_unload, new int[]{R.string.no, R.string.level_1, R.string.level_2, R.string.level_3}, 0, "prevent-unload", false, R.string.prevent_unload_help);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1201: error: non-static variable this cannot be referenced from a static context
+        new j(R.id.config_time_jump_panel, R.string.show_time_jump_panel, new int[]{R.string.no, R.string.yes}, 0, "time-jump-panel", true);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1202: error: non-static variable this cannot be referenced from a static context
+        new k(R.id.config_number_locale, R.string.number_locale, null, 0, "number-locale", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1203: error: non-static variable this cannot be referenced from a static context
+        new l(R.id.config_vspace_root, R.string.vspace_root, new int[]{R.string.no, R.string.yes_dangerous}, 0, "vspace-root", false, R.string.help_vspace_root_);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1204: error: non-static variable this cannot be referenced from a static context
+        new m(R.id.config_ram, R.string.data_in_ram, null, Integer.MAX_VALUE, "data-in-ram", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1205: error: non-static variable this cannot be referenced from a static context
+        new n(R.id.config_hot_key, R.string.hot_key, null, 0, "hot-key", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1206: error: non-static variable this cannot be referenced from a static context
+        new a(R.id.config_ranges, R.string.set_range, null, 0, "ranges", true);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1209: error: non-static variable this cannot be referenced from a static context
+        new b(R.id.config_toolbars, R.string.toolbars, null, -1, "toolbars", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1210: error: non-static variable this cannot be referenced from a static context
+        new c(R.id.config_use_small_list_items, R.string.small_list_items, null, 0, "small-items", false, R.string.small_list_items_help);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1211: error: non-static variable this cannot be referenced from a static context
+        new d(R.id.config_backgrounds, R.string.backgrounds, null, 0, "backgrounds", false);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:1212: error: non-static variable this cannot be referenced from a static context
+        new e(R.id.config_hide_from_game, R.string.hide_from_game, null, 0, "hide", true);
+        ^
+app/src/rebuild-clean/java/android/ext/Config.java:2691: error: cannot find symbol
+        a.e eVar = H;
+         ^
+  symbol:   class e
+  location: class Config.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:72: error: cannot find symbol
+    private View[] f48a = d.b.f1512b;
+                           ^
+  symbol:   variable b
+  location: class ConfigListAdapter.d
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:329: error: cannot find symbol
+            View viewF = a.d.f(R.layout.main_new_version, null);
+                          ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                     ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                                                                                                 ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.vspace64)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.vspace64)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                  ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:588: error: ConfigListAdapter.q is not abstract and does not override abstract method compare(Object,Object) in Comparator
+    class q implements Comparator {
+    ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:592: error: method does not override or implement a method from a supertype
+        @Override // java.util.Comparator
+        ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:844: error: cannot find symbol
+        View viewF = a.d.f(R.layout.temp_path_config, null);
+                      ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:856: error: non-static variable this cannot be referenced from a static context
+        l lVar = new l(editTextPath, alertDialogCreate);
+                 ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:863: error: cannot find symbol
+            View viewF = a.d.f(R.layout.temp_path_config, null);
+                          ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:876: error: non-static variable this cannot be referenced from a static context
+            o oVar = new o(editTextPath, checkBox, alertDialogCreate);
+                     ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:893: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setItems(strArr, new g(strArr)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                           ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:898: error: non-static variable this cannot be referenced from a static context
+        n2.h(new p());
+             ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:928: error: non-static variable this cannot be referenced from a static context
+        Arrays.sort(strArrE, new q());
+                             ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:985: error: cannot find symbol
+                                                    th = th2;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:989: error: cannot find symbol
+                                                    e1.l("Failed check locale: " + str, th);
+                                                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1024: error: cannot find symbol
+                                                        th = th4;
+                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1026: error: cannot find symbol
+                                                            e1.a(th);
+                                                                 ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1029: error: cannot find symbol
+                                                            th = th5;
+                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1031: error: cannot find symbol
+                                                            e1.l("Failed check locale: " + str, th);
+                                                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1035: error: cannot find symbol
+                                                    th = th6;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1040: error: cannot find symbol
+                                                th = th7;
+                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1043: error: cannot find symbol
+                                                e1.l("Failed check locale: " + str, th);
+                                                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1053: error: cannot find symbol
+                                        th = th8;
+                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1055: error: cannot find symbol
+                                        e1.l("Failed check locale: " + str, th);
+                                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1064: error: cannot find symbol
+                                    th = th9;
+                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1068: error: cannot find symbol
+                                th = th10;
+                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1070: error: cannot find symbol
+                                e1.l("Failed check locale: " + str, th);
+                                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1079: error: cannot find symbol
+                            th = th11;
+                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1085: error: cannot find symbol
+                            e1.l("Failed check locale: " + str, th);
+                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1154: error: cannot find symbol
+                    th = th12;
+                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1173: error: non-static variable this cannot be referenced from a static context
+        n2.i(new r(new ArrayAdapter(MainService.context, arrayList2), size, arrayList));
+             ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1219: error: non-static variable this cannot be referenced from a static context
+        return new i();
+               ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1327: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1400: error: non-static variable this cannot be referenced from a static context
+        alertDialog.setButton(-1, b2.f(R.string.confirm), new m(onClickListener, alertDialog));
+                                                          ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1401: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.l(alertDialog, new n(onClickListener));
+                                     ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1430: error: non-static variable this cannot be referenced from a static context
+        h hVar = new h();
+                 ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1443: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.screenshot)).setMessage(Tools.L1(b2.f(R.string.screenshot_prompt), 8)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new f()));
+                                                                                                                                                                                                                                                                        ^
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1474: error: cannot find symbol
+            this.f48a = d.b.f1512b;
+                         ^
+  symbol:   variable b
+  location: class ConfigListAdapter.d
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1482: error: cannot find symbol
+        ViewGroup viewGroup = (ViewGroup) a.d.f(R.layout.service_config, null);
+                                           ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1631: error: cannot find symbol
+                View viewF2 = a.d.f(R.layout.service_config_icon, null);
+                               ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1662: error: cannot find symbol
+                View viewF3 = a.d.f(R.layout.main_new_version, null);
+                               ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/ConfigListAdapter.java:1684: error: cannot find symbol
+                    viewF = a.d.f(R.layout.list_speeds_config, null);
+                             ^
+  symbol:   variable d
+  location: class ConfigListAdapter.a
+app/src/rebuild-clean/java/android/ext/Tools.java:212: error: non-static variable this cannot be referenced from a static context
+        private static final ThreadLocal f502a = new a();
+                                                 ^
+app/src/rebuild-clean/java/android/ext/Tools.java:388: error: cannot find symbol
+            this.f509a.waitFor();
+                      ^
+  symbol:   method waitFor()
+  location: variable f509a of type Process
+app/src/rebuild-clean/java/android/ext/Tools.java:581: error: cannot find symbol
+            View viewF = a.d.f(R.layout.logcat, null);
+                          ^
+  symbol:   variable d
+  location: class Tools.m.a
+app/src/rebuild-clean/java/android/ext/Tools.java:699: error: cannot find symbol
+                e = e4;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-clean/java/android/ext/Tools.java:700: error: cannot find symbol
+                e1.s("Fail", e);
+                             ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-clean/java/android/ext/Tools.java:704: error: cannot find symbol
+                e = th;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-clean/java/android/ext/Tools.java:705: error: cannot find symbol
+                e1.s("Fail", e);
+                             ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild-clean/java/android/ext/Tools.java:1059: error: non-static variable this cannot be referenced from a static context
+        n2.i(new a(str, z2));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1098: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1100: error: cannot find symbol
+                        if (!(th instanceof PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1101: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1103: error: cannot find symbol
+                        e1.l("Failed getPackageInfo", th);
+                                                      ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1136: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1237: error: cannot find symbol
+                k = android.ext.r.n.getPackageManager();
+                                   ^
+  symbol:   method getPackageManager()
+  location: variable n of type r
+app/src/rebuild-clean/java/android/ext/Tools.java:1245: error: cannot find symbol
+                k = android.ext.r.n.getApplication().getPackageManager();
+                                   ^
+  symbol:   method getApplication()
+  location: variable n of type r
+app/src/rebuild-clean/java/android/ext/Tools.java:1253: error: cannot find symbol
+                k = android.ext.r.n.getApplicationContext().getPackageManager();
+                                   ^
+  symbol:   method getApplicationContext()
+  location: variable n of type r
+app/src/rebuild-clean/java/android/ext/Tools.java:1280: error: non-static variable this cannot be referenced from a static context
+        listView.post(new n(listView, i2, i3));
+                      ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1307: error: non-static variable this cannot be referenced from a static context
+        listView.setOnHierarchyChangeListener(new t(i2));
+                                              ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1312: error: non-static variable this cannot be referenced from a static context
+        n2.i(new k(dialogInterface));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1423: error: non-static variable this cannot be referenced from a static context
+        n2.i(new p(z2, layoutParams, view));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1458: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1460: error: cannot find symbol
+        e1.a(th);
+             ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:1537: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+                return Runtime.getRuntime().exec(strArr, strArr2, file);
+                                                ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1546: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+        Process processC = ProcessBuilder.c(strArr, strArr2, file);
+                                           ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1586: error: non-static variable this cannot be referenced from a static context
+        n2.i(new b(str, i2));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:1610: error: cannot find symbol
+        if (obj instanceof d.a) {
+                            ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1611: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+             ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1611: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+                         ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1624: error: cannot find symbol
+            if (!(obj instanceof d.e)) {
+                                  ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1637: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+             ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1637: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+                         ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:1943: error: cannot find symbol
+        windowToken = android.ext.r.n.getWindow().getAttributes().token;
+                                     ^
+  symbol:   method getWindow()
+  location: variable n of type r
+app/src/rebuild-clean/java/android/ext/Tools.java:1945: error: cannot find symbol
+            windowToken = android.ext.r.n.getWindow().getDecorView().getRootView().getWindowToken();
+                                         ^
+  symbol:   method getWindow()
+  location: variable n of type r
+app/src/rebuild-clean/java/android/ext/Tools.java:1992: error: non-static variable this cannot be referenced from a static context
+        n2.i(new d(alertDialog));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2015: error: non-static variable this cannot be referenced from a static context
+        n2.i(new f(view));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2077: error: non-static variable this cannot be referenced from a static context
+        n2.i(new e(window));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2277: error: non-static variable this cannot be referenced from a static context
+        FutureTask futureTask = new FutureTask(new h(process));
+                                               ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2337: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:2339: error: cannot find symbol
+                        if (!(th instanceof PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:2340: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:2342: error: cannot find symbol
+                        e1.l("Failed getApplicationInfo", th);
+                                                          ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:2375: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild-clean/java/android/ext/Tools.java:2401: error: cannot find symbol
+            process.exitValue();
+                   ^
+  symbol:   method exitValue()
+  location: variable process of type Process
+app/src/rebuild-clean/java/android/ext/Tools.java:2592: error: non-static variable this cannot be referenced from a static context
+        n2.i(new s(textView, drawable, i2));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2691: error: non-static variable this cannot be referenced from a static context
+            listView.setOnHierarchyChangeListener(new u(i3, charSequenceArr, drawableArr, i2));
+                                                  ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2745: error: non-static variable this cannot be referenced from a static context
+        n2.i(new j(layoutParams, view));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2808: error: non-static variable this cannot be referenced from a static context
+        n2.i(new m(str, i2, str2, onClickListener));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2863: error: cannot find symbol
+        View viewF = a.d.f(R.layout.dialog_title, null);
+                      ^
+  symbol:   variable d
+  location: class Tools.a
+app/src/rebuild-clean/java/android/ext/Tools.java:2868: error: non-static variable this cannot be referenced from a static context
+            textView.setOnClickListener(new l(str, i2));
+                                        ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2971: error: non-static variable this cannot be referenced from a static context
+        n2.i(new q(view));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:2979: error: cannot find symbol
+        if (obj instanceof d.a) {
+                            ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:2980: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+             ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:2980: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+                         ^
+  symbol:   class a
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:2987: error: cannot find symbol
+        if (obj instanceof d.e) {
+                            ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:2988: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+             ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:2988: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+                         ^
+  symbol:   class e
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:3025: error: non-static variable this cannot be referenced from a static context
+        n2.i(new o(view));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:3029: error: non-static variable this cannot be referenced from a static context
+        new g0(new i(), "checkForBadContext").start();
+               ^
+app/src/rebuild-clean/java/android/ext/Tools.java:3044: error: non-static variable this cannot be referenced from a static context
+        n2.i(new g(editText));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:3108: error: cannot find symbol
+        stateListDrawable.addState(a.g.f19a, background);
+                                    ^
+  symbol:   variable g
+  location: class Tools.a
+app/src/rebuild-clean/java/android/ext/Tools.java:3109: error: cannot find symbol
+        stateListDrawable.addState(a.g.f20b, background);
+                                    ^
+  symbol:   variable g
+  location: class Tools.a
+app/src/rebuild-clean/java/android/ext/Tools.java:3110: error: cannot find symbol
+        stateListDrawable.addState(a.g.f21c, background);
+                                    ^
+  symbol:   variable g
+  location: class Tools.a
+app/src/rebuild-clean/java/android/ext/Tools.java:3300: error: cannot find symbol
+                Object objInvoke = declaredMethod.invoke(null, d.b.f1516f);
+                                                                ^
+  symbol:   variable b
+  location: class Tools.d
+app/src/rebuild-clean/java/android/ext/Tools.java:3366: error: non-static variable this cannot be referenced from a static context
+        n2.i(new c(textView, str));
+             ^
+app/src/rebuild-clean/java/android/ext/Tools.java:3510: error: non-static variable this cannot be referenced from a static context
+        n2.i(new r(imageView, f2));
+             ^
+app/src/rebuild-clean/java/android/ext/EditTextPath.java:134: error: cannot find symbol
+                view = a.d.g(R.layout.path_suggestion, viewGroup, false);
+                        ^
+  symbol:   variable d
+  location: class EditTextPath.a
+app/src/rebuild-clean/java/android/ext/MainService.java:187: error: boolean cannot be dereferenced
+            ConfigListAdapter.t(R.string.help_games_protection_);
+                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:198: error: boolean cannot be dereferenced
+            mainService.f213c = mainService.C("script-interrupt", 0, 0, R.string.interrupt, R.drawable.ic_stop_white_24dp);
+                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:198: error: boolean cannot be dereferenced
+            mainService.f213c = mainService.C("script-interrupt", 0, 0, R.string.interrupt, R.drawable.ic_stop_white_24dp);
+                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:232: error: boolean cannot be dereferenced
+            mainService.f214d = z ? mainService.C("script-ui-button", 0, 50, R.drawable.ic_ui_button_24dp, R.drawable.ic_ui_button_24dp) : null;
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:232: error: boolean cannot be dereferenced
+            mainService.f214d = z ? mainService.C("script-ui-button", 0, 50, R.drawable.ic_ui_button_24dp, R.drawable.ic_ui_button_24dp) : null;
+                                                                                                            ^
+app/src/rebuild-clean/java/android/ext/MainService.java:404: error: boolean cannot be dereferenced
+                    ConfigListAdapter.t(R.string.help_games_protection_title);
+                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:408: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.restart_game_without_protection)).setMessage(b2.f(R.string.warn_restart_off_prot)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new c()));
+                                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:408: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.restart_game_without_protection)).setMessage(b2.f(R.string.warn_restart_off_prot)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new c()));
+                                                                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:408: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.restart_game_without_protection)).setMessage(b2.f(R.string.warn_restart_off_prot)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new c()));
+                                                                                                                                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:408: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.restart_game_without_protection)).setMessage(b2.f(R.string.warn_restart_off_prot)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new c()));
+                                                                                                                                                                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:470: error: boolean cannot be dereferenced
+            mainService.f217g = mainService.C("record-interrupt", 0, 0, R.string.record, R.drawable.ic_stop_white_24dp);
+                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:470: error: boolean cannot be dereferenced
+            mainService.f217g = mainService.C("record-interrupt", 0, 0, R.string.record, R.drawable.ic_stop_white_24dp);
+                                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:481: error: boolean cannot be dereferenced
+            Config.b(R.id.config_check_libs).f42d = 0;
+                      ^
+app/src/rebuild-clean/java/android/ext/FloatPanel.java:211: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class FloatPanel
+app/src/rebuild-clean/java/android/ext/FloatPanel.java:405: error: cannot find symbol
+        Configuration configurationF = a.b.f(configuration);
+                                        ^
+  symbol:   variable b
+  location: class FloatPanel.a
+app/src/rebuild-clean/java/android/ext/MainService.java:545: error: incompatible types: android.os.Process cannot be converted to java.lang.Process
+                        Process processQ = e2.q(Tools.removeNewLinesChars("h{hf#sp#lqvwdoo#0u#00del#{;9#") + g0.this.f242a);
+                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:547: error: boolean cannot be dereferenced
+                            F = b2.f(R.string.reinstall_failed) + "\nnull";
+                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:551: error: boolean cannot be dereferenced
+                                F = b2.f(R.string.reinstall_ended);
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:553: error: boolean cannot be dereferenced
+                                F = b2.f(R.string.reinstall_failed) + "\ncode: " + iWaitFor;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:558: error: boolean cannot be dereferenced
+                        F = b2.f(R.string.reinstall_failed) + "\n" + e2.getMessage();
+                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:569: error: boolean cannot be dereferenced
+                Tools.I1(R.string.reinstall_started, 0);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:580: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.try_reinstall_x86)).setPositiveButton(b2.f(R.string.yes), new a()).setNeutralButton(b2.f(R.string.site), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh278:0krz0wr0uhsodfh0dup0oleudulhv0zlwk0{;90oleudulhv0{0soruh2")).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:580: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.try_reinstall_x86)).setPositiveButton(b2.f(R.string.yes), new a()).setNeutralButton(b2.f(R.string.site), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh278:0krz0wr0uhsodfh0dup0oleudulhv0zlwk0{;90oleudulhv0{0soruh2")).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:580: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.try_reinstall_x86)).setPositiveButton(b2.f(R.string.yes), new a()).setNeutralButton(b2.f(R.string.site), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh278:0krz0wr0uhsodfh0dup0oleudulhv0zlwk0{;90oleudulhv0{0soruh2")).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:580: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.try_reinstall_x86)).setPositiveButton(b2.f(R.string.yes), new a()).setNeutralButton(b2.f(R.string.site), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2jdoohu|2lpdjh278:0krz0wr0uhsodfh0dup0oleudulhv0zlwk0{;90oleudulhv0{0soruh2")).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                                                                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:615: error: boolean cannot be dereferenced
+            Tools.H1(R.string.speedhack_open);
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:695: error: boolean cannot be dereferenced
+            super(R.string.calculate_offset_xor, R.drawable.ic_vector_difference_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:695: error: boolean cannot be dereferenced
+            super(R.string.calculate_offset_xor, R.drawable.ic_vector_difference_white_24dp);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:704: error: cannot find symbol
+            if (objZ instanceof d.a) {
+                                 ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:705: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                 ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:705: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:724: error: cannot find symbol
+            } else if (objZ instanceof d.e) {
+                                        ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:725: error: cannot find symbol
+                d.e eVar = (d.e) objZ;
+                 ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:725: error: cannot find symbol
+                d.e eVar = (d.e) objZ;
+                             ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:774: error: boolean cannot be dereferenced
+                Tools.J1(Tools.L1(b2.f(R.string.need_select_more), 2));
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:778: error: boolean cannot be dereferenced
+                Tools.J1(Tools.L1(b2.f(R.string.used_only_first), Integer.valueOf(i)));
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:780: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setAdapter(new ArrayAdapter(MainService.context, new String[]{Tools.N1(R.string.offset), "XOR"}), new a(jArr, jArr2, i)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:780: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setAdapter(new ArrayAdapter(MainService.context, new String[]{Tools.N1(R.string.offset), "XOR"}), new a(jArr, jArr2, i)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:802: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.select_copy_item)).setAdapter(new ArrayAdapter(MainService.context, strArr), new b(strArr2)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:802: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.select_copy_item)).setAdapter(new ArrayAdapter(MainService.context, strArr), new b(strArr2)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:839: error: boolean cannot be dereferenced
+            super(R.string.clear_selection, R.drawable.ic_select_off_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:839: error: boolean cannot be dereferenced
+            super(R.string.clear_selection, R.drawable.ic_select_off_white_24dp);
+                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:870: error: boolean cannot be dereferenced
+                    MainService.instance.L(null, this.f263a, Tools.N1(R.string.allocated));
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:886: error: cannot find symbol
+                y0.b(str, 1);
+                  ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild-clean/java/android/ext/MainService.java:887: error: boolean cannot be dereferenced
+                neutralButton = android.ext.f.b().setMessage(Tools.N1(R.string.allocated) + ": " + str).setPositiveButton(b2.f(R.string.goto1), aVar).setNeutralButton(b2.f(R.string.copy), aVar);
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:887: error: boolean cannot be dereferenced
+                neutralButton = android.ext.f.b().setMessage(Tools.N1(R.string.allocated) + ": " + str).setPositiveButton(b2.f(R.string.goto1), aVar).setNeutralButton(b2.f(R.string.copy), aVar);
+                                                                                                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:887: error: boolean cannot be dereferenced
+                neutralButton = android.ext.f.b().setMessage(Tools.N1(R.string.allocated) + ": " + str).setPositiveButton(b2.f(R.string.goto1), aVar).setNeutralButton(b2.f(R.string.copy), aVar);
+                                                                                                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:889: error: boolean cannot be dereferenced
+                neutralButton = android.ext.f.b().setMessage(b2.f(R.string.allocate_fail) + ' ' + (-this.f261a));
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:891: error: boolean cannot be dereferenced
+            android.ext.f.m(neutralButton.setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null).create());
+                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:913: error: boolean cannot be dereferenced
+            super(R.string.export_selected, R.drawable.ic_download_checked_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:913: error: boolean cannot be dereferenced
+            super(R.string.export_selected, R.drawable.ic_download_checked_white_24dp);
+                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:930: error: boolean cannot be dereferenced
+                Tools.H1(R.string.nothing_selected);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:938: error: boolean cannot be dereferenced
+                    new u2(android.ext.c.o(MainService.this.N.q((boolean[]) objZ, sparseIntArray)), sparseIntArray, "0", b2.f(R.string.type_change_request), new a());
+                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:957: error: cannot find symbol
+            } else if (objZ instanceof d.a) {
+                                        ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:958: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                 ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:958: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:966: error: cannot find symbol
+            } else if (objZ instanceof d.e) {
+                                        ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:967: error: cannot find symbol
+                d.e eVar = (d.e) objZ;
+                 ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:967: error: cannot find symbol
+                d.e eVar = (d.e) objZ;
+                             ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1016: error: boolean cannot be dereferenced
+                    Tools.D1(textView, R.style.SmallText);
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1048: error: boolean cannot be dereferenced
+            if (id == R.id.memory_editor_page) {
+                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1050: error: boolean cannot be dereferenced
+            } else if (id == R.id.saved_page) {
+                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1052: error: boolean cannot be dereferenced
+            } else if (id != R.id.search_page) {
+                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1067: error: boolean cannot be dereferenced
+            super(R.string.invert_selection, R.drawable.ic_select_inverse_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1067: error: boolean cannot be dereferenced
+            super(R.string.invert_selection, R.drawable.ic_select_inverse_white_24dp);
+                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1150: error: boolean cannot be dereferenced
+            super(R.string.selected_as_search_result, R.drawable.ic_search_selected_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1150: error: boolean cannot be dereferenced
+            super(R.string.selected_as_search_result, R.drawable.ic_search_selected_white_24dp);
+                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1161: error: boolean cannot be dereferenced
+                throw new NumberFormatException(b2.f(R.string.busy_dialog_fail));
+                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1174: error: cannot find symbol
+            boolean z = obj instanceof d.a;
+                                        ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1175: error: cannot find symbol
+            if ((z || (obj instanceof d.e)) && (c2Var = MainService.this.f216f) != null && z) {
+                                       ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1185: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.clear_results_prompt)).setPositiveButton(b2.f(R.string.yes), new a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1185: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.clear_results_prompt)).setPositiveButton(b2.f(R.string.yes), new a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1185: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.clear_results_prompt)).setPositiveButton(b2.f(R.string.yes), new a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1095: error: boolean cannot be dereferenced
+            super(R.string.changed_as_search_result, R.drawable.ic_search_changed_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1095: error: boolean cannot be dereferenced
+            super(R.string.changed_as_search_result, R.drawable.ic_search_changed_white_24dp);
+                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1102: error: boolean cannot be dereferenced
+                Tools.J1(b2.f(R.string.changed_not_found));
+                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1262: error: boolean cannot be dereferenced
+                    Tools.H1(R.string.nothing_selected);
+                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1266: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.remove_all2)).setPositiveButton(b2.f(R.string.yes), new DialogInterfaceOnClickListenerC0010a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1266: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.remove_all2)).setPositiveButton(b2.f(R.string.yes), new DialogInterfaceOnClickListenerC0010a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1266: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.remove_all2)).setPositiveButton(b2.f(R.string.yes), new DialogInterfaceOnClickListenerC0010a()).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1283: error: boolean cannot be dereferenced
+            super(R.string.remove, R.drawable.ic_delete_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1283: error: boolean cannot be dereferenced
+            super(R.string.remove, R.drawable.ic_delete_white_24dp);
+                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1292: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setItems(new String[]{b2.f(R.string.remove_all2), "---", b2.f(R.string.revert_and_remove) + str, b2.f(R.string.remove) + str}, new a(iL0, objZ)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1292: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setItems(new String[]{b2.f(R.string.remove_all2), "---", b2.f(R.string.revert_and_remove) + str, b2.f(R.string.remove) + str}, new a(iL0, objZ)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1292: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setItems(new String[]{b2.f(R.string.remove_all2), "---", b2.f(R.string.revert_and_remove) + str, b2.f(R.string.remove) + str}, new a(iL0, objZ)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1292: error: boolean cannot be dereferenced
+            android.ext.f.o(android.ext.f.b().setItems(new String[]{b2.f(R.string.remove_all2), "---", b2.f(R.string.revert_and_remove) + str, b2.f(R.string.remove) + str}, new a(iL0, objZ)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1343: error: boolean cannot be dereferenced
+            super(R.string.revert_selected, R.drawable.ic_undo_variant_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1343: error: boolean cannot be dereferenced
+            super(R.string.revert_selected, R.drawable.ic_undo_variant_white_24dp);
+                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1356: error: cannot find symbol
+                a.e eVarO = android.ext.c.o(MainService.this.N.q((boolean[]) objZ, sparseIntArray));
+                 ^
+  symbol:   class e
+  location: class MainService.q0.a
+app/src/rebuild-clean/java/android/ext/MainService.java:1358: error: boolean cannot be dereferenced
+                    new u2(eVarO, sparseIntArray, "0", b2.f(R.string.type_change_request), new a());
+                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1380: error: boolean cannot be dereferenced
+                Tools.H1(R.string.nothing_to_revert);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1382: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.revert_selected)).setMessage(Tools.L1(b2.f(R.string.revert_prompt), Integer.valueOf(iE))).setPositiveButton(b2.f(R.string.yes), new b(dVar)).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1382: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.revert_selected)).setMessage(Tools.L1(b2.f(R.string.revert_prompt), Integer.valueOf(iE))).setPositiveButton(b2.f(R.string.yes), new b(dVar)).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1382: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.revert_selected)).setMessage(Tools.L1(b2.f(R.string.revert_prompt), Integer.valueOf(iE))).setPositiveButton(b2.f(R.string.yes), new b(dVar)).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1382: error: boolean cannot be dereferenced
+                android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.revert_selected)).setMessage(Tools.L1(b2.f(R.string.revert_prompt), Integer.valueOf(iE))).setPositiveButton(b2.f(R.string.yes), new b(dVar)).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1438: error: boolean cannot be dereferenced
+                Tools.J1(Tools.L1(b2.f(R.string.items_added), Integer.valueOf(this.f296b)));
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1443: error: boolean cannot be dereferenced
+            super(R.string.save_selected, R.drawable.ic_content_save_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1443: error: boolean cannot be dereferenced
+            super(R.string.save_selected, R.drawable.ic_content_save_white_24dp);
+                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1451: error: boolean cannot be dereferenced
+                Tools.H1(R.string.nothing_selected);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1456: error: boolean cannot be dereferenced
+                new u2(android.ext.c.o(MainService.this.N.q((boolean[]) objZ, sparseIntArray)), sparseIntArray, "0", b2.f(R.string.type_change_request), new a(objZ, iL0));
+                                                                                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1459: error: cannot find symbol
+            if (objZ instanceof d.a) {
+                                 ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1461: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                 ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1461: error: cannot find symbol
+                d.a aVar = (d.a) objZ;
+                             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1476: error: boolean cannot be dereferenced
+                Tools.J1(Tools.L1(b2.f(R.string.items_added), Integer.valueOf(iL0)));
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1500: error: boolean cannot be dereferenced
+            super(R.string.select_all, R.drawable.ic_select_all_white_24dp);
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1500: error: boolean cannot be dereferenced
+            super(R.string.select_all, R.drawable.ic_select_all_white_24dp);
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1516: error: cannot find symbol
+            MainService.Y(a.b.f(configuration));
+                           ^
+  symbol:   variable b
+  location: class MainService.a
+app/src/rebuild-clean/java/android/ext/MainService.java:1575: error: boolean cannot be dereferenced
+            Config.b(R.id.config_waitpid).f42d = 1;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1675: error: cannot find symbol
+        this.s0 = new d.a();
+                       ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:1702: error: non-static variable this cannot be referenced from a static context
+        t tVar = new t();
+                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1730: error: non-static variable R cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.bad_firmware)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1730: error: boolean cannot be dereferenced
+        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.bad_firmware)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1730: error: non-static variable R cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.bad_firmware)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1730: error: boolean cannot be dereferenced
+        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.bad_firmware)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1768: error: boolean cannot be dereferenced
+            this.O.b(jLongValue, Tools.N1(R.string.position_in_memory_editor), top);
+                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1787: error: boolean cannot be dereferenced
+                    tabSpecNewTabSpec.setIndicator(a.d.g(R.layout.tab_indicator_holo, this.m.getTabWidget(), false));
+                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1787: error: cannot find symbol
+                    tabSpecNewTabSpec.setIndicator(a.d.g(R.layout.tab_indicator_holo, this.m.getTabWidget(), false));
+                                                    ^
+  symbol:   variable d
+  location: class MainService.a
+app/src/rebuild-clean/java/android/ext/MainService.java:1878: error: boolean cannot be dereferenced
+        p1VarArr[1] = new p1[]{new i0(R.string.load_saved_list, R.drawable.ic_upload_white_24dp), new q0(), new s0(), new a(R.string.save_saved_list, R.drawable.ic_download_white_24dp), new p0(true), new EditorListener(), new m0(), new l0(), new o0(), new android.ext.d0(), new j0(), new android.ext.b(), new k0(), new OffsetCalculator(), this.I};
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1878: error: boolean cannot be dereferenced
+        p1VarArr[1] = new p1[]{new i0(R.string.load_saved_list, R.drawable.ic_upload_white_24dp), new q0(), new s0(), new a(R.string.save_saved_list, R.drawable.ic_download_white_24dp), new p0(true), new EditorListener(), new m0(), new l0(), new o0(), new android.ext.d0(), new j0(), new android.ext.b(), new k0(), new OffsetCalculator(), this.I};
+                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1878: error: boolean cannot be dereferenced
+        p1VarArr[1] = new p1[]{new i0(R.string.load_saved_list, R.drawable.ic_upload_white_24dp), new q0(), new s0(), new a(R.string.save_saved_list, R.drawable.ic_download_white_24dp), new p0(true), new EditorListener(), new m0(), new l0(), new o0(), new android.ext.d0(), new j0(), new android.ext.b(), new k0(), new OffsetCalculator(), this.I};
+                                                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1878: error: boolean cannot be dereferenced
+        p1VarArr[1] = new p1[]{new i0(R.string.load_saved_list, R.drawable.ic_upload_white_24dp), new q0(), new s0(), new a(R.string.save_saved_list, R.drawable.ic_download_white_24dp), new p0(true), new EditorListener(), new m0(), new l0(), new o0(), new android.ext.d0(), new j0(), new android.ext.b(), new k0(), new OffsetCalculator(), this.I};
+                                                                                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1891: error: boolean cannot be dereferenced
+        p1VarArr[0] = new p1[]{new android.ext.o0(), this.W, new EditorListener(), new p0(false), this.V, new r0(), new o2(), new q0(), new s0(), new android.ext.d0(), this.X, new m0(), new d2(), new l0(), new k0(), new o0(), new j0(), new y2(), new w1(), new OffsetCalculator(), this.H, new h0(R.string.speedhack, R.drawable.ic_speedometer_white_24dp), new n0()};
+                                                                                                                                                                                                                                                                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:1891: error: boolean cannot be dereferenced
+        p1VarArr[0] = new p1[]{new android.ext.o0(), this.W, new EditorListener(), new p0(false), this.V, new r0(), new o2(), new q0(), new s0(), new android.ext.d0(), this.X, new m0(), new d2(), new l0(), new k0(), new o0(), new j0(), new y2(), new w1(), new OffsetCalculator(), this.H, new h0(R.string.speedhack, R.drawable.ic_speedometer_white_24dp), new n0()};
+                                                                                                                                                                                                                                                                                                                            ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2041: error: boolean cannot be dereferenced
+        String strF = b2.f((!m2.f1074a ? !(this.n == null || android.ext.r.n == null || !android.ext.r.n.x()) : this.n != null) ? R.string.show_gg : R.string.hide_gg);
+                                                                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2041: error: boolean cannot be dereferenced
+        String strF = b2.f((!m2.f1074a ? !(this.n == null || android.ext.r.n == null || !android.ext.r.n.x()) : this.n != null) ? R.string.show_gg : R.string.hide_gg);
+                                                                                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2050: error: boolean cannot be dereferenced
+                ongoing.setSmallIcon(R.drawable.ic_notify);
+                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2051: error: boolean cannot be dereferenced
+                String strF2 = b2.f(R.string.screenshot_action);
+                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2055: error: boolean cannot be dereferenced
+                    builder = k1.a(Icon.createWithResource(Tools.C0(), R.drawable.ic_cellphone_screenshot_black_32dp), strF2, pendingIntentB2);
+                                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2057: error: boolean cannot be dereferenced
+                    builder = new Notification.Action.Builder(R.drawable.ic_cellphone_screenshot_black_32dp, strF2, pendingIntentB2);
+                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2070: error: boolean cannot be dereferenced
+                    notification.icon = R.drawable.ic_notify;
+                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2108: error: cannot find symbol
+        if (obj instanceof d.e) {
+                            ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2109: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+             ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2109: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+                         ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2123: error: cannot find symbol
+        if (obj instanceof d.a) {
+                            ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2124: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2124: error: cannot find symbol
+            d.a aVar = (d.a) obj;
+                         ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2230: error: cannot find symbol
+        y0.b(str, 1);
+          ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild-clean/java/android/ext/MainService.java:2289: error: cannot find symbol
+        if (obj instanceof d.a) {
+                            ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2290: error: cannot find symbol
+            d.a aVar2 = (d.a) obj;
+             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2290: error: cannot find symbol
+            d.a aVar2 = (d.a) obj;
+                          ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2303: error: cannot find symbol
+        } else if (obj instanceof d.e) {
+                                   ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2304: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+             ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2304: error: cannot find symbol
+            d.e eVar = (d.e) obj;
+                         ^
+  symbol:   class e
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:2388: error: boolean cannot be dereferenced
+                if (this.g0.getText().toString().startsWith(b2.f(R.string.version_number) + ' ' + ((Object) this.i.a0()))) {
+                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2388: error: byte cannot be dereferenced
+                if (this.g0.getText().toString().startsWith(b2.f(R.string.version_number) + ' ' + ((Object) this.i.a0()))) {
+                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2513: error: boolean cannot be dereferenced
+        TabHost tabHost = (TabHost) a.d.f(R.layout.service_dialog, null);
+                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2513: error: cannot find symbol
+        TabHost tabHost = (TabHost) a.d.f(R.layout.service_dialog, null);
+                                     ^
+  symbol:   variable d
+  location: class MainService.a
+app/src/rebuild-clean/java/android/ext/MainService.java:2516: error: boolean cannot be dereferenced
+        TextView textView = (TextView) tabHost.findViewById(new int[]{R.id.empty_list_text}[0]);
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2526: error: boolean cannot be dereferenced
+                    this.r = tabHost.findViewById(R.id.info_row);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2527: error: boolean cannot be dereferenced
+                    int iIndexOf = R.id.about;
+                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2534: error: boolean cannot be dereferenced
+                                    this.o = (ImageView) tabHost.findViewById(R.id.back_btn);
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2540: error: boolean cannot be dereferenced
+                                        this.p = (ImageView) tabHost.findViewById(R.id.app_icon);
+                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2544: error: boolean cannot be dereferenced
+                                        this.q = (ImageView) tabHost.findViewById(R.id.small_icon);
+                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2548: error: boolean cannot be dereferenced
+                                        this.y = (TextView) tabHost.findViewById(R.id.found_count);
+                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2554: error: boolean cannot be dereferenced
+                                        this.G = (ListView) tabHost.findViewById(R.id.addr_item_type);
+                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2555: error: boolean cannot be dereferenced
+                                        this.y = (TextView) tabHost.findViewById(R.id.config_acceleration);
+                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2557: error: boolean cannot be dereferenced
+                                        this.p = (ImageView) tabHost.findViewById(R.id.count_fuzzy_equal_seekbar);
+                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2558: error: boolean cannot be dereferenced
+                                        this.o = (ImageView) tabHost.findViewById(R.id.config_keyboard);
+                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2559: error: boolean cannot be dereferenced
+                                        this.y = (TextView) tabHost.findViewById(R.id.config_path);
+                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2582: error: boolean cannot be dereferenced
+                                        this.C = (TextView) tabHost.findViewById(R.id.nothing_found_text);
+                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2583: error: boolean cannot be dereferenced
+                                        this.D[0] = (WrapLayout) tabHost.findViewById(R.id.search_toolbar);
+                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2584: error: boolean cannot be dereferenced
+                                        this.D[1] = (WrapLayout) tabHost.findViewById(R.id.saved_toolbar);
+                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2585: error: boolean cannot be dereferenced
+                                        this.D[2] = (WrapLayout) tabHost.findViewById(R.id.memory_toolbar);
+                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2586: error: boolean cannot be dereferenced
+                                        this.E = tabHost.findViewById(R.id.toolbar_row);
+                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2587: error: boolean cannot be dereferenced
+                                        this.F = (ImageView) tabHost.findViewById(R.id.more_btn);
+                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2596: error: boolean cannot be dereferenced
+                                    this.t = (TextView) tabHost.findViewById(R.id.filter);
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2597: error: boolean cannot be dereferenced
+                                    this.u = (TextView) tabHost.findViewById(R.id.value_format);
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2598: error: boolean cannot be dereferenced
+                                    this.v = tabHost.findViewById(R.id.info_mem);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2599: error: boolean cannot be dereferenced
+                                    this.w = (TextView) tabHost.findViewById(R.id.saved_format);
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2600: error: boolean cannot be dereferenced
+                                    this.x = tabHost.findViewById(R.id.count_wait);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2601: error: boolean cannot be dereferenced
+                                    this.z = tabHost.findViewById(R.id.info_cnt);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2604: error: boolean cannot be dereferenced
+                                    this.Z = tabHost.findViewById(R.id.search_page);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2605: error: boolean cannot be dereferenced
+                                    this.a0 = tabHost.findViewById(R.id.saved_page);
+                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2606: error: boolean cannot be dereferenced
+                                    this.b0 = tabHost.findViewById(R.id.memory_editor_page);
+                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2607: error: boolean cannot be dereferenced
+                                    this.c0 = tabHost.findViewById(R.id.config_page);
+                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2608: error: boolean cannot be dereferenced
+                                    this.d0 = (TextView) tabHost.findViewById(R.id.search_tab_counter);
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2609: error: boolean cannot be dereferenced
+                                    this.e0 = (TextView) tabHost.findViewById(R.id.saved_tab_counter);
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2611: error: boolean cannot be dereferenced
+                                    N("settings", R.id.config_page, R.id.config_tab_icon);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2611: error: boolean cannot be dereferenced
+                                    N("settings", R.id.config_page, R.id.config_tab_icon);
+                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2612: error: boolean cannot be dereferenced
+                                    N("search", R.id.search_page, R.id.search_tab_icon);
+                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2612: error: boolean cannot be dereferenced
+                                    N("search", R.id.search_page, R.id.search_tab_icon);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2613: error: boolean cannot be dereferenced
+                                    N("saved", R.id.saved_page, R.id.saved_tab_icon);
+                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2613: error: boolean cannot be dereferenced
+                                    N("saved", R.id.saved_page, R.id.saved_tab_icon);
+                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2614: error: boolean cannot be dereferenced
+                                    N("memory", R.id.memory_editor_page, R.id.memory_tab_icon);
+                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2614: error: boolean cannot be dereferenced
+                                    N("memory", R.id.memory_editor_page, R.id.memory_tab_icon);
+                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2619: error: boolean cannot be dereferenced
+                                            i5 = R.id.config_tab;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2621: error: boolean cannot be dereferenced
+                                            i5 = R.id.search_tab;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2623: error: boolean cannot be dereferenced
+                                            i5 = R.id.saved_tab;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2628: error: boolean cannot be dereferenced
+                                            i5 = R.id.memory_tab;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2661: error: boolean cannot be dereferenced
+                                    this.J = tabHost.findViewById(R.id.menu_btn);
+                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2662: error: boolean cannot be dereferenced
+                                    this.K = (ImageView) tabHost.findViewById(R.id.menu_btn_land);
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2663: error: boolean cannot be dereferenced
+                                    ListView listView = (ListView) tabHost.findViewById(R.id.saved_list);
+                                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2665: error: boolean cannot be dereferenced
+                                    listView.setEmptyView(tabHost.findViewById(R.id.empty_list_view));
+                                                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2666: error: boolean cannot be dereferenced
+                                    this.M = (ListView) tabHost.findViewById(R.id.mem_listview);
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2667: error: boolean cannot be dereferenced
+                                    this.P = (ImageButton) tabHost.findViewById(R.id.list_refresh);
+                                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2668: error: boolean cannot be dereferenced
+                                    this.Q = (ImageButton) tabHost.findViewById(R.id.process_pause);
+                                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2669: error: boolean cannot be dereferenced
+                                    this.Y = (ListView) tabHost.findViewById(R.id.config_list);
+                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2670: error: boolean cannot be dereferenced
+                                    this.g0 = (TextView) tabHost.findViewById(R.id.status_bar);
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2678: error: boolean cannot be dereferenced
+                                    i iVar = new i(R.string.value_format, R.drawable.ic_playlist_check_white_24dp);
+                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2678: error: boolean cannot be dereferenced
+                                    i iVar = new i(R.string.value_format, R.drawable.ic_playlist_check_white_24dp);
+                                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2684: error: boolean cannot be dereferenced
+                                    this.h0 = (ShowApp) a.d.f(R.layout.show_app, null);
+                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2684: error: cannot find symbol
+                                    this.h0 = (ShowApp) a.d.f(R.layout.show_app, null);
+                                                         ^
+  symbol:   variable d
+  location: class MainService.a
+app/src/rebuild-clean/java/android/ext/MainService.java:2718: error: boolean cannot be dereferenced
+                                        Config.b(R.id.config_memory_access).f42d = 0;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2741: error: boolean cannot be dereferenced
+                    this.s = (TextView) tabHost.findViewById(R.id.app_name);
+                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2742: error: boolean cannot be dereferenced
+                    if (R.id.app_icon / iIndexOf != R.id.nothing_found_text) {
+                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2742: error: boolean cannot be dereferenced
+                    if (R.id.app_icon / iIndexOf != R.id.nothing_found_text) {
+                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2743: error: boolean cannot be dereferenced
+                        this.P = (ImageButton) tabHost.findViewById(R.id.add_not_replace);
+                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2744: error: boolean cannot be dereferenced
+                        this.Q = (ImageButton) tabHost.findViewById(R.id.addr_item_value);
+                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2745: error: boolean cannot be dereferenced
+                        viewFindViewById = tabHost.findViewById(R.id.mode_hacking);
+                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2747: error: boolean cannot be dereferenced
+                        this.P = (ImageButton) tabHost.findViewById(R.id.config_suggestions);
+                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2748: error: boolean cannot be dereferenced
+                        this.Q = (ImageButton) tabHost.findViewById(R.id.config_autopause);
+                                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2749: error: boolean cannot be dereferenced
+                        viewFindViewById = tabHost.findViewById(R.id.config_exit);
+                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2752: error: boolean cannot be dereferenced
+                    ListView listView2 = (ListView) tabHost.findViewById(R.id.addr_list);
+                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2754: error: boolean cannot be dereferenced
+                    listView2.setEmptyView(tabHost.findViewById(R.id.nothing_found_view));
+                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2756: error: boolean cannot be dereferenced
+                    this.p = (ImageView) tabHost.findViewById(R.id.count_fuzzy_equal_seekbar);
+                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2757: error: boolean cannot be dereferenced
+                    this.o = (ImageView) tabHost.findViewById(R.id.config_keyboard);
+                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2758: error: boolean cannot be dereferenced
+                    this.y = (TextView) tabHost.findViewById(R.id.config_path);
+                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2782: error: cannot find symbol
+                activityManager = (ActivityManager) b("activity");
+                ^
+  symbol:   variable activityManager
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:2792: error: boolean cannot be dereferenced
+        this.t = (TextView) tabHost.findViewById(R.id.filter);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2793: error: boolean cannot be dereferenced
+        this.u = (TextView) tabHost.findViewById(R.id.value_format);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2794: error: boolean cannot be dereferenced
+        this.v = tabHost.findViewById(R.id.info_mem);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2795: error: boolean cannot be dereferenced
+        this.w = (TextView) tabHost.findViewById(R.id.saved_format);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2796: error: boolean cannot be dereferenced
+        this.x = tabHost.findViewById(R.id.count_wait);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2797: error: boolean cannot be dereferenced
+        this.z = tabHost.findViewById(R.id.info_cnt);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2800: error: boolean cannot be dereferenced
+        this.Z = tabHost.findViewById(R.id.search_page);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2801: error: boolean cannot be dereferenced
+        this.a0 = tabHost.findViewById(R.id.saved_page);
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2802: error: boolean cannot be dereferenced
+        this.b0 = tabHost.findViewById(R.id.memory_editor_page);
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2803: error: boolean cannot be dereferenced
+        this.c0 = tabHost.findViewById(R.id.config_page);
+                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2804: error: boolean cannot be dereferenced
+        this.d0 = (TextView) tabHost.findViewById(R.id.search_tab_counter);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2805: error: boolean cannot be dereferenced
+        this.e0 = (TextView) tabHost.findViewById(R.id.saved_tab_counter);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2807: error: boolean cannot be dereferenced
+        N("settings", R.id.config_page, R.id.config_tab_icon);
+                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2807: error: boolean cannot be dereferenced
+        N("settings", R.id.config_page, R.id.config_tab_icon);
+                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2808: error: boolean cannot be dereferenced
+        N("search", R.id.search_page, R.id.search_tab_icon);
+                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2808: error: boolean cannot be dereferenced
+        N("search", R.id.search_page, R.id.search_tab_icon);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2809: error: boolean cannot be dereferenced
+        N("saved", R.id.saved_page, R.id.saved_tab_icon);
+                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2809: error: boolean cannot be dereferenced
+        N("saved", R.id.saved_page, R.id.saved_tab_icon);
+                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2810: error: boolean cannot be dereferenced
+        N("memory", R.id.memory_editor_page, R.id.memory_tab_icon);
+                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2810: error: boolean cannot be dereferenced
+        N("memory", R.id.memory_editor_page, R.id.memory_tab_icon);
+                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2815: error: boolean cannot be dereferenced
+                i5 = R.id.config_tab;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2817: error: boolean cannot be dereferenced
+                i5 = R.id.search_tab;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2819: error: boolean cannot be dereferenced
+                i5 = R.id.saved_tab;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2824: error: boolean cannot be dereferenced
+                i5 = R.id.memory_tab;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2854: error: boolean cannot be dereferenced
+        this.J = tabHost.findViewById(R.id.menu_btn);
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2855: error: boolean cannot be dereferenced
+        this.K = (ImageView) tabHost.findViewById(R.id.menu_btn_land);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2856: error: boolean cannot be dereferenced
+        ListView listView3 = (ListView) tabHost.findViewById(R.id.saved_list);
+                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2858: error: boolean cannot be dereferenced
+        listView3.setEmptyView(tabHost.findViewById(R.id.empty_list_view));
+                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2859: error: boolean cannot be dereferenced
+        this.M = (ListView) tabHost.findViewById(R.id.mem_listview);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2860: error: boolean cannot be dereferenced
+        this.P = (ImageButton) tabHost.findViewById(R.id.list_refresh);
+                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2861: error: boolean cannot be dereferenced
+        this.Q = (ImageButton) tabHost.findViewById(R.id.process_pause);
+                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2862: error: boolean cannot be dereferenced
+        this.Y = (ListView) tabHost.findViewById(R.id.config_list);
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2863: error: boolean cannot be dereferenced
+        this.g0 = (TextView) tabHost.findViewById(R.id.status_bar);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2871: error: boolean cannot be dereferenced
+        i iVar2 = new i(R.string.value_format, R.drawable.ic_playlist_check_white_24dp);
+                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2871: error: boolean cannot be dereferenced
+        i iVar2 = new i(R.string.value_format, R.drawable.ic_playlist_check_white_24dp);
+                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2877: error: boolean cannot be dereferenced
+        this.h0 = (ShowApp) a.d.f(R.layout.show_app, null);
+                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2877: error: cannot find symbol
+        this.h0 = (ShowApp) a.d.f(R.layout.show_app, null);
+                             ^
+  symbol:   variable d
+  location: class MainService.a
+app/src/rebuild-clean/java/android/ext/MainService.java:2910: error: boolean cannot be dereferenced
+            Config.b(R.id.config_memory_access).f42d = 0;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2950: error: boolean cannot be dereferenced
+                sb.append(b2.f(R.string.search_hint));
+                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2952: error: boolean cannot be dereferenced
+                i2 = R.string.speedhack_hint;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2955: error: boolean cannot be dereferenced
+                sb.append(b2.f(R.string.nothing_found));
+                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2958: error: boolean cannot be dereferenced
+                    sb.append(b2.f(R.string.try_more_ranges));
+                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:2962: error: boolean cannot be dereferenced
+                    i2 = R.string.try_fuzzy_search;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3075: error: boolean cannot be dereferenced
+            textView.setText(b2.f(R.string.loading));
+                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3080: error: boolean cannot be dereferenced
+            textView2.setText(Tools.x(b2.f(R.string.wait_daemon - (strValueOf.length() * 10)), " ", this.i.a0(), strValueOf.substring(0, 1), Config.b(R.id.config_speedhack_functions - (strValueOf.length() * 7)).a(), strValueOf.substring(0, 1), Integer.toString(Tools.L0(z()) * strValueOf.length())));
+                                            ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3080: error: boolean cannot be dereferenced
+            textView2.setText(Tools.x(b2.f(R.string.wait_daemon - (strValueOf.length() * 10)), " ", this.i.a0(), strValueOf.substring(0, 1), Config.b(R.id.config_speedhack_functions - (strValueOf.length() * 7)).a(), strValueOf.substring(0, 1), Integer.toString(Tools.L0(z()) * strValueOf.length())));
+                                                                                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3249: error: boolean cannot be dereferenced
+        int i5 = R.string.reset_search;
+                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3251: error: boolean cannot be dereferenced
+            i3 = R.string.out_of_memory;
+                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3255: error: boolean cannot be dereferenced
+                    i3 = R.string.io_error;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3258: error: boolean cannot be dereferenced
+                            String str2 = b2.f(R.string.maps_failed) + "\n\n" + b2.f(R.string.game_protected);
+                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3258: error: boolean cannot be dereferenced
+                            String str2 = b2.f(R.string.maps_failed) + "\n\n" + b2.f(R.string.game_protected);
+                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3260: error: boolean cannot be dereferenced
+                                str2 = str2 + "\n\n" + b2.f(R.string.need_root);
+                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3270: error: boolean cannot be dereferenced
+                                                    strF = Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F);
+                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3271: error: boolean cannot be dereferenced
+                                                    i4 = R.string.not_optimized2;
+                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3274: error: boolean cannot be dereferenced
+                                                    i4 = R.string.not_optimized2;
+                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3280: error: boolean cannot be dereferenced
+                                                i4 = R.string.reset_search;
+                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3283: error: cannot find symbol
+                                            th = th2;
+                                            ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3284: error: boolean cannot be dereferenced
+                                            i4 = R.string.reset_search;
+                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3288: error: boolean cannot be dereferenced
+                                        i4 = R.string.reset_search;
+                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3290: error: boolean cannot be dereferenced
+                                    if (i4 == R.string.reset_search) {
+                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3292: error: boolean cannot be dereferenced
+                                        sb.append(b2.f(R.string.eperm_error_descr_0));
+                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3296: error: boolean cannot be dereferenced
+                                        sb.append(b2.f(R.string.eperm_error_descr_3));
+                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3300: error: boolean cannot be dereferenced
+                                        sb.append(b2.f(!Config.C ? R.string.eperm_error_descr_4 : R.string.eperm_error_descr_5));
+                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3300: error: boolean cannot be dereferenced
+                                        sb.append(b2.f(!Config.C ? R.string.eperm_error_descr_4 : R.string.eperm_error_descr_5));
+                                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3304: error: boolean cannot be dereferenced
+                                    i3 = R.string.eperm_error;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3307: error: boolean cannot be dereferenced
+                                    strF = i(b2.f(R.string.eperm_error_descr_0) + "\n1: " + b2.f(R.string.eperm_error_descr_1) + "\n2: " + b2.f(R.string.eperm_error_descr_2));
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3307: error: boolean cannot be dereferenced
+                                    strF = i(b2.f(R.string.eperm_error_descr_0) + "\n1: " + b2.f(R.string.eperm_error_descr_1) + "\n2: " + b2.f(R.string.eperm_error_descr_2));
+                                                                                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3307: error: boolean cannot be dereferenced
+                                    strF = i(b2.f(R.string.eperm_error_descr_0) + "\n1: " + b2.f(R.string.eperm_error_descr_1) + "\n2: " + b2.f(R.string.eperm_error_descr_2));
+                                                                                                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3308: error: boolean cannot be dereferenced
+                                    i3 = R.string.eperm_error_defend;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3311: error: boolean cannot be dereferenced
+                                    i5 = R.string.speedhack_fail;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3313: error: boolean cannot be dereferenced
+                                    i3 = R.string.speedhack_fail;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3316: error: boolean cannot be dereferenced
+                                    strF = Tools.N1(R.string.too_many_union_numbers) + ": 64";
+                                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3317: error: boolean cannot be dereferenced
+                                    i3 = R.string.error;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3320: error: boolean cannot be dereferenced
+                                    i3 = R.string.unknown_error;
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3325: error: boolean cannot be dereferenced
+                            sb2.append(b2.f(R.string.maps_failed));
+                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3327: error: boolean cannot be dereferenced
+                            sb2.append(b2.f(Config.C ? R.string.vspace_error : R.string.root_error));
+                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3327: error: boolean cannot be dereferenced
+                            sb2.append(b2.f(Config.C ? R.string.vspace_error : R.string.root_error));
+                                                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3350: error: boolean cannot be dereferenced
+                    String strF4 = b2.f(R.string.ok);
+                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3357: error: boolean cannot be dereferenced
+                    if (i5 == R.string.fix_path) {
+                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3358: error: boolean cannot be dereferenced
+                        strF3 = b2.f(R.string.fix_it);
+                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3361: error: boolean cannot be dereferenced
+                        if (i3 != R.string.eperm_error_defend) {
+                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3362: error: boolean cannot be dereferenced
+                            if (i5 == R.string.not_optimized2) {
+                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3363: error: boolean cannot be dereferenced
+                                strF3 = b2.f(R.string.fix_it);
+                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3368: error: boolean cannot be dereferenced
+                        strF3 = b2.f(R.string.help);
+                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3374: error: boolean cannot be dereferenced
+                i3 = R.string.disk_full;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3376: error: boolean cannot be dereferenced
+                i5 = R.string.fix_path;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3396: error: boolean cannot be dereferenced
+                String strF5 = b2.f(R.string.ok);
+                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3403: error: boolean cannot be dereferenced
+                if (i5 == R.string.fix_path) {
+                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3404: error: boolean cannot be dereferenced
+                    strF3 = b2.f(R.string.fix_it);
+                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3407: error: boolean cannot be dereferenced
+                    if (i3 != R.string.eperm_error_defend) {
+                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3408: error: boolean cannot be dereferenced
+                        if (i5 == R.string.not_optimized2) {
+                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3409: error: boolean cannot be dereferenced
+                            strF3 = b2.f(R.string.fix_it);
+                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3414: error: boolean cannot be dereferenced
+                    strF3 = b2.f(R.string.help);
+                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3420: error: boolean cannot be dereferenced
+            i3 = R.string.bug_detected;
+                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3442: error: boolean cannot be dereferenced
+        String strF6 = b2.f(R.string.ok);
+                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3449: error: boolean cannot be dereferenced
+        if (i5 == R.string.fix_path) {
+                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3450: error: boolean cannot be dereferenced
+            strF3 = b2.f(R.string.fix_it);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3453: error: boolean cannot be dereferenced
+            if (i3 != R.string.eperm_error_defend) {
+                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3454: error: boolean cannot be dereferenced
+                if (i5 == R.string.not_optimized2) {
+                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3455: error: boolean cannot be dereferenced
+                    strF3 = b2.f(R.string.fix_it);
+                                  ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3460: error: boolean cannot be dereferenced
+            strF3 = b2.f(R.string.help);
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3527: error: cannot find symbol
+            d.a aVar = this.s0;
+             ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:3678: error: cannot find symbol
+                                                e = e3;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3679: error: cannot find symbol
+                                                e1.l("Failed read", e);
+                                                                    ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3690: error: cannot find symbol
+                                                e = e4;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3695: error: boolean cannot be dereferenced
+                                                Tools.H1(R.string.out_of_memory_error);
+                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3696: error: cannot find symbol
+                                                e1.s("list.size() = " + i15 + "; show count = " + android.ext.b0.i(), e);
+                                                                                                                      ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3753: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3758: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3761: error: cannot find symbol
+            e = e6;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild-clean/java/android/ext/MainService.java:3851: error: boolean cannot be dereferenced
+        this.Q.setImageResource(!this.R ? R.drawable.ic_pause_white_18dp : R.drawable.ic_play_arrow_white_18dp);
+                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3851: error: boolean cannot be dereferenced
+        this.Q.setImageResource(!this.R ? R.drawable.ic_pause_white_18dp : R.drawable.ic_play_arrow_white_18dp);
+                                                                            ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3868: error: boolean cannot be dereferenced
+                    Tools.J1(b2.f(R.string.search_helper) + ' ' + Tools.L1(b2.f(R.string.found_count), Long.valueOf(j2)));
+                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(R.string.search_helper) + ' ' + Tools.L1(b2.f(R.string.found_count), Long.valueOf(j2)));
+                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3868: error: boolean cannot be dereferenced
+                    Tools.J1(b2.f(R.string.search_helper) + ' ' + Tools.L1(b2.f(R.string.found_count), Long.valueOf(j2)));
+                                                                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(R.string.search_helper) + ' ' + Tools.L1(b2.f(R.string.found_count), Long.valueOf(j2)));
+                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3911: error: boolean cannot be dereferenced
+                Config.b(R.id.config_ranges).b();
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3917: error: boolean cannot be dereferenced
+                    case R.drawable.ic_ui_button_24dp /* 2130968657 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3920: error: boolean cannot be dereferenced
+                    case R.id.abort_button /* 2131034112 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3924: error: boolean cannot be dereferenced
+                    case R.id.hot_frame /* 2131034287 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3927: error: boolean cannot be dereferenced
+                    case R.id.more_btn /* 2131034336 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3930: error: boolean cannot be dereferenced
+                    case R.string.hide /* 2131296674 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3932: error: boolean cannot be dereferenced
+                    case R.string.interrupt /* 2131296711 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3945: error: boolean cannot be dereferenced
+                        message = android.ext.f.b().setCustomTitle(Tools.h0(Tools.N1(R.string.script))).setMessage(string);
+                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3946: error: boolean cannot be dereferenced
+                        strF = b2.f(R.string.interrupt);
+                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3949: error: boolean cannot be dereferenced
+                    case R.string.record /* 2131296884 */:
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3951: error: boolean cannot be dereferenced
+                        message = android.ext.f.b().setCustomTitle(Tools.h0(Tools.N1(R.string.record_script))).setMessage(c2Var != null ? c2Var.c() : "?");
+                                                                                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3952: error: boolean cannot be dereferenced
+                        strF = b2.f(R.string.stop);
+                                     ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3958: error: boolean cannot be dereferenced
+                android.ext.f.o(message.setPositiveButton(strF, qVar).setNegativeButton(b2.f(R.string.no), (DialogInterface.OnClickListener) null));
+                                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:3983: error: cannot find symbol
+        d.a aVar = this.s0;
+         ^
+  symbol:   class a
+  location: class MainService.d
+app/src/rebuild-clean/java/android/ext/MainService.java:4018: error: boolean cannot be dereferenced
+                    i3 = R.string.dump_ended;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4025: error: boolean cannot be dereferenced
+                i4 = R.string.dump_failed;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4029: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4033: error: boolean cannot be dereferenced
+                    i3 = R.string.copy_ended;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4039: error: boolean cannot be dereferenced
+                i4 = R.string.copy_failed;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4043: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4053: error: boolean cannot be dereferenced
+                    i5 = R.string.speedhack_loading;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4059: error: boolean cannot be dereferenced
+                    strF = b2.f(R.string.speedhack_loaded);
+                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4059: error: byte cannot be dereferenced
+                    strF = b2.f(R.string.speedhack_loaded);
+                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4061: error: boolean cannot be dereferenced
+                        strF = strF + "\n" + b2.f(R.string.speedhack_no_x86);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4061: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4063: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4070: error: boolean cannot be dereferenced
+                    i5 = R.string.patch_loading;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4076: error: boolean cannot be dereferenced
+                    Tools.H1(R.string.patch_loaded);
+                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4077: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.disable_protection)).setMessage(b2.f(R.string.must_restart_if)).setPositiveButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4077: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.disable_protection)).setMessage(b2.f(R.string.must_restart_if)).setPositiveButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.disable_protection)).setMessage(b2.f(R.string.must_restart_if)).setPositiveButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                         ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4077: error: boolean cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.disable_protection)).setMessage(b2.f(R.string.must_restart_if)).setPositiveButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.disable_protection)).setMessage(b2.f(R.string.must_restart_if)).setPositiveButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                           ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4082: error: boolean cannot be dereferenced
+                i4 = R.string.patch_failed;
+                      ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4086: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4090: error: boolean cannot be dereferenced
+                    i5 = R.string.unrandomizer_loading;
+                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4096: error: boolean cannot be dereferenced
+                    strF = b2.f(R.string.unrandomizer_loaded);
+                                 ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4096: error: byte cannot be dereferenced
+                    strF = b2.f(R.string.unrandomizer_loaded);
+                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4098: error: boolean cannot be dereferenced
+                        strF = strF + "\n" + b2.f(R.string.speedhack_no_x86);
+                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4098: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4100: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: boolean cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: boolean cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                        ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                    ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: boolean cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                       ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                   ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: boolean cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                              ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(R.string.waitpid_mode)).setMessage(b2.f(R.string.help_waitpid)).setPositiveButton(b2.f(R.string.alternative), new w()).setNegativeButton(b2.f(R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                          ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4120: error: boolean cannot be dereferenced
+                sb.append(b2.f(R.string.ptrace_fail));
+                                ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4120: error: byte cannot be dereferenced
+                sb.append(b2.f(R.string.ptrace_fail));
+                            ^
+app/src/rebuild-clean/java/android/ext/MainService.java:4122: error: byte cannot be dereferenced
+                sb.append(b2.f(iArr[0] != 0 ? R.string.ptrace_fail_partially : R.string.ptrace_fail_full));
+                            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+644 errors
+1 warning
+printing javac parameters to: /root/gameguardian/javac.20261101_104703.args

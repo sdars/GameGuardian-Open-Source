@@ -1,0 +1,10 @@
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:954: error: unclosed string literal
+                    str2 = String.format(localeD, "
+                                                  ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:955: error: malformed floating-point literal
+[%,.1f | %.2e]", Double.valueOf(-1234.0d), Double.valueOf(-4.56E-78d));
+          ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:955: error: unclosed string literal
+[%,.1f | %.2e]", Double.valueOf(-1234.0d), Double.valueOf(-4.56E-78d));
+              ^
+3 errors

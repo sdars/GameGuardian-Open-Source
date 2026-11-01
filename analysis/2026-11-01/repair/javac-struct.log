@@ -1,0 +1,217 @@
+analysis/2026-11-01/decompilers/jadx-struct/sources/a/d.java:136: error: illegal start of expression
+        ?? Inflate = i;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/a/d.java:136: error: illegal start of expression
+        ?? Inflate = i;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/a/d.java:136: error: : expected
+        ?? Inflate = i;
+                      ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/MainService$g0$a$a.java:26: error: illegal start of expression
+        ?? F = 2131296893;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/MainService$g0$a$a.java:26: error: illegal start of expression
+        ?? F = 2131296893;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/MainService$g0$a$a.java:26: error: : expected
+        ?? F = 2131296893;
+                         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1620: error: illegal start of expression
+        ?? r1;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1620: error: illegal start of expression
+        ?? r1;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1620: error: : expected
+        ?? r1;
+             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1629: error: illegal start of expression
+        ?? r3 = 0;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1629: error: illegal start of expression
+        ?? r3 = 0;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/Tools.java:1629: error: : expected
+        ?? r3 = 0;
+                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1563: error: illegal start of expression
+        ?? r15;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1563: error: illegal start of expression
+        ?? r15;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1563: error: : expected
+        ?? r15;
+              ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1568: error: illegal start of expression
+        ?? r16 = this;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1568: error: illegal start of expression
+        ?? r16 = this;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/f0.java:1568: error: : expected
+        ?? r16 = this;
+                     ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:177: error: illegal start of expression
+        ?? r8;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:177: error: illegal start of expression
+        ?? r8;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:177: error: : expected
+        ?? r8;
+             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:211: error: illegal start of expression
+        ?? r9;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:211: error: illegal start of expression
+        ?? r9;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:211: error: : expected
+        ?? r9;
+             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:215: error: illegal start of expression
+        ?? r10;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:215: error: illegal start of expression
+        ?? r10;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:215: error: : expected
+        ?? r10;
+              ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:315: error: illegal start of expression
+                                                                            ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:315: error: illegal start of expression
+                                                                            ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:315: error: : expected
+                                                                            ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                                                               ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:433: error: illegal start of expression
+                                                                                        ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:433: error: illegal start of expression
+                                                                                        ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:433: error: : expected
+                                                                                        ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                                                        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:461: error: illegal start of expression
+                                                                                            ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:461: error: illegal start of expression
+                                                                                            ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:461: error: : expected
+                                                                                            ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:576: error: illegal start of expression
+                                                                ?? r5 = (iJ << 4) | s;
+                                                                ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:576: error: illegal start of expression
+                                                                ?? r5 = (iJ << 4) | s;
+                                                                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:576: error: : expected
+                                                                ?? r5 = (iJ << 4) | s;
+                                                                                     ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:735: error: illegal start of expression
+                                                                ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:735: error: illegal start of expression
+                                                                ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:735: error: : expected
+                                                                ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                                                                   ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:838: error: illegal start of expression
+                                                                            ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:838: error: illegal start of expression
+                                                                            ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:838: error: : expected
+                                                                            ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:865: error: illegal start of expression
+                                                                                ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:865: error: illegal start of expression
+                                                                                ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:865: error: : expected
+                                                                                ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:981: error: illegal start of expression
+                                                    ?? r12 = (iJ << 4) | s;
+                                                    ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:981: error: illegal start of expression
+                                                    ?? r12 = (iJ << 4) | s;
+                                                     ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:981: error: : expected
+                                                    ?? r12 = (iJ << 4) | s;
+                                                                          ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1129: error: illegal start of expression
+                                                            ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1129: error: illegal start of expression
+                                                            ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1129: error: : expected
+                                                            ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                                                                  ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1232: error: illegal start of expression
+                                                                        ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1232: error: illegal start of expression
+                                                                        ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1232: error: : expected
+                                                                        ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                                                          ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1259: error: illegal start of expression
+                                                                            ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                            ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1259: error: illegal start of expression
+                                                                            ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1259: error: : expected
+                                                                            ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                                              ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1375: error: illegal start of expression
+                                                ?? r16 = (iJ << 4) | s;
+                                                ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1375: error: illegal start of expression
+                                                ?? r16 = (iJ << 4) | s;
+                                                 ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/n$g.java:1375: error: : expected
+                                                ?? r16 = (iJ << 4) | s;
+                                                                      ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:82: error: illegal start of expression
+        ?? r0;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:82: error: illegal start of expression
+        ?? r0;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:82: error: : expected
+        ?? r0;
+             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:83: error: illegal start of expression
+        ?? r1;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:83: error: illegal start of expression
+        ?? r1;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/android/ext/o0$b.java:83: error: : expected
+        ?? r1;
+             ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/luaj/Globals.java:110: error: illegal start of expression
+        ?? r10;
+        ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/luaj/Globals.java:110: error: illegal start of expression
+        ?? r10;
+         ^
+analysis/2026-11-01/decompilers/jadx-struct/sources/luaj/Globals.java:110: error: : expected
+        ?? r10;
+              ^
+72 errors

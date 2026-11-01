@@ -1,0 +1,277 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.9/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:javaPreCompileRelease UP-TO-DATE
+> Task :app:checkReleaseAarMetadata UP-TO-DATE
+> Task :app:generateReleaseResValues UP-TO-DATE
+> Task :app:mapReleaseSourceSetPaths UP-TO-DATE
+> Task :app:generateReleaseResources UP-TO-DATE
+> Task :app:mergeReleaseResources UP-TO-DATE
+> Task :app:createReleaseCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksRelease UP-TO-DATE
+> Task :app:processReleaseMainManifest UP-TO-DATE
+> Task :app:processReleaseManifest UP-TO-DATE
+> Task :app:processReleaseManifestForPackage UP-TO-DATE
+> Task :app:processReleaseResources UP-TO-DATE
+
+> Task :app:compileReleaseJavaWithJavac FAILED
+Java compiler version 21 has deprecated support for compiling with source/target version 8.
+Try one of the following options:
+    1. [Recommended] Use Java toolchain with a lower language version
+    2. Set a higher source/target version
+    3. Use a lower version of the JDK running the build (if you're not using Java toolchain)
+For more details on how to configure these settings, see https://developer.android.com/build/jdks.
+To suppress this warning, set android.javaCompile.suppressSourceTargetDeprecationWarning=true in gradle.properties.
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2535: error: illegal start of expression
+        ?? r1;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2535: error: illegal start of expression
+        ?? r1;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2535: error: : expected
+        ?? r1;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2544: error: illegal start of expression
+        ?? r3 = 0;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2544: error: illegal start of expression
+        ?? r3 = 0;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/Tools.java:2544: error: : expected
+        ?? r3 = 0;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:1740: error: illegal start of expression
+        ?? r0 = 0;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:1740: error: illegal start of expression
+        ?? r0 = 0;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:1740: error: : expected
+        ?? r0 = 0;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:3099: error: illegal start of expression
+        ?? a0Var = 0;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:3099: error: illegal start of expression
+        ?? a0Var = 0;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/b1.java:3099: error: : expected
+        ?? a0Var = 0;
+                    ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:94: error: illegal start of expression
+            ?? r0;
+            ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:94: error: illegal start of expression
+            ?? r0;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:94: error: : expected
+            ?? r0;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:95: error: illegal start of expression
+            ?? r1;
+            ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:95: error: illegal start of expression
+            ?? r1;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/o0.java:95: error: : expected
+            ?? r1;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3068: error: illegal start of expression
+        ?? r15;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3068: error: illegal start of expression
+        ?? r15;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3068: error: : expected
+        ?? r15;
+              ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3073: error: illegal start of expression
+        ?? r16 = this;
+        ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3073: error: illegal start of expression
+        ?? r16 = this;
+         ^
+/root/gameguardian/app/src/main/java/android/ext/f0.java:3073: error: : expected
+        ?? r16 = this;
+                     ^
+/root/gameguardian/app/src/main/java/android/ext/MainService.java:543: error: illegal start of expression
+                    ?? F = 2131296893;
+                    ^
+/root/gameguardian/app/src/main/java/android/ext/MainService.java:543: error: illegal start of expression
+                    ?? F = 2131296893;
+                     ^
+/root/gameguardian/app/src/main/java/android/ext/MainService.java:543: error: : expected
+                    ?? F = 2131296893;
+                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3745: error: illegal start of expression
+            ?? r8;
+            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3745: error: illegal start of expression
+            ?? r8;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3745: error: : expected
+            ?? r8;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3779: error: illegal start of expression
+            ?? r9;
+            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3779: error: illegal start of expression
+            ?? r9;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3779: error: : expected
+            ?? r9;
+                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3783: error: illegal start of expression
+            ?? r10;
+            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3783: error: illegal start of expression
+            ?? r10;
+             ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3783: error: : expected
+            ?? r10;
+                  ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3883: error: illegal start of expression
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3883: error: illegal start of expression
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:3883: error: : expected
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                                                                   ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4001: error: illegal start of expression
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4001: error: illegal start of expression
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                             ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4001: error: : expected
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                                                            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4029: error: illegal start of expression
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4029: error: illegal start of expression
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4029: error: : expected
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4144: error: illegal start of expression
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                    ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4144: error: illegal start of expression
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4144: error: : expected
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                                         ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4303: error: illegal start of expression
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                    ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4303: error: illegal start of expression
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4303: error: : expected
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                                                                       ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4406: error: illegal start of expression
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4406: error: illegal start of expression
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4406: error: : expected
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4433: error: illegal start of expression
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                    ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4433: error: illegal start of expression
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4433: error: : expected
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4549: error: illegal start of expression
+                                                        ?? r12 = (iJ << 4) | s;
+                                                        ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4549: error: illegal start of expression
+                                                        ?? r12 = (iJ << 4) | s;
+                                                         ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4549: error: : expected
+                                                        ?? r12 = (iJ << 4) | s;
+                                                                              ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4697: error: illegal start of expression
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4697: error: illegal start of expression
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4697: error: : expected
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                                                                      ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4800: error: illegal start of expression
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                            ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4800: error: illegal start of expression
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                             ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4800: error: : expected
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                                                              ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4827: error: illegal start of expression
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4827: error: illegal start of expression
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                 ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4827: error: : expected
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                                                  ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4943: error: illegal start of expression
+                                                    ?? r16 = (iJ << 4) | s;
+                                                    ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4943: error: illegal start of expression
+                                                    ?? r16 = (iJ << 4) | s;
+                                                     ^
+/root/gameguardian/app/src/main/java/android/ext/n.java:4943: error: : expected
+                                                    ?? r16 = (iJ << 4) | s;
+                                                                          ^
+/root/gameguardian/app/src/main/java/a/d.java:131: error: illegal start of expression
+        ?? Inflate = i;
+        ^
+/root/gameguardian/app/src/main/java/a/d.java:131: error: illegal start of expression
+        ?? Inflate = i;
+         ^
+/root/gameguardian/app/src/main/java/a/d.java:131: error: : expected
+        ?? Inflate = i;
+                      ^
+/root/gameguardian/app/src/main/java/luaj/Globals.java:179: error: illegal start of expression
+        ?? r10;
+        ^
+/root/gameguardian/app/src/main/java/luaj/Globals.java:179: error: illegal start of expression
+        ?? r10;
+         ^
+/root/gameguardian/app/src/main/java/luaj/Globals.java:179: error: : expected
+        ?? r10;
+              ^
+78 errors
+3 warnings
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 4s
+13 actionable tasks: 1 executed, 12 up-to-date

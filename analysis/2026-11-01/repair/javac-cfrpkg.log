@@ -1,0 +1,2239 @@
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:339: error: illegal start of expression
+            ** GOTO lbl62
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:339: error: illegal start of expression
+            ** GOTO lbl62
+             ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:339: error: ';' expected
+            ** GOTO lbl62
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:339: error: not a statement
+            ** GOTO lbl62
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:339: error: ';' expected
+            ** GOTO lbl62
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:356: error: illegal start of expression
+                    ** GOTO lbl62
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:356: error: illegal start of expression
+                    ** GOTO lbl62
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:356: error: ';' expected
+                    ** GOTO lbl62
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:356: error: not a statement
+                    ** GOTO lbl62
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:356: error: ';' expected
+                    ** GOTO lbl62
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:360: error: illegal start of expression
+                ** GOTO lbl62
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:360: error: illegal start of expression
+                ** GOTO lbl62
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:360: error: ';' expected
+                ** GOTO lbl62
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:360: error: not a statement
+                ** GOTO lbl62
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:360: error: ';' expected
+                ** GOTO lbl62
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:362: error: illegal start of expression
+                    if (var2_2 == var5_9) ** GOTO lbl35
+                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:362: error: illegal start of expression
+                    if (var2_2 == var5_9) ** GOTO lbl35
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:362: error: ';' expected
+                    if (var2_2 == var5_9) ** GOTO lbl35
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:361: error: 'catch' without 'try'
+                catch (RuntimeException var5_9) {
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:384: error: 'catch' without 'try'
+                catch (Throwable var3_8) {
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:403: error: illegal start of expression
+                ** GOTO lbl59
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:403: error: illegal start of expression
+                ** GOTO lbl59
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:403: error: ';' expected
+                ** GOTO lbl59
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:403: error: not a statement
+                ** GOTO lbl59
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/a/a.java:403: error: ';' expected
+                ** GOTO lbl59
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:40: error: '{' expected
+        catch (IllegalArgumentException var1_2) lbl-1000:
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:40: error: not a statement
+        catch (IllegalArgumentException var1_2) lbl-1000:
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:40: error: ';' expected
+        catch (IllegalArgumentException var1_2) lbl-1000:
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:50: error: illegal start of expression
+            ** continue;
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:50: error: illegal start of expression
+            ** continue;
+             ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:50: error: illegal start of expression
+            ** continue;
+               ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:49: error: 'catch' without 'try'
+        catch (OutOfMemoryError var1_4) {
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/a/c.java:54: error: illegal start of expression
+    public void onMeasure(int n3, int n4) {
+    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:103: error: illegal start of expression
+                                        ** GOTO lbl32
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:103: error: illegal start of expression
+                                        ** GOTO lbl32
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:103: error: ';' expected
+                                        ** GOTO lbl32
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:103: error: not a statement
+                                        ** GOTO lbl32
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:103: error: ';' expected
+                                        ** GOTO lbl32
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:119: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:119: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/b.java:119: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:555: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:555: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:555: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:555: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:555: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:559: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:559: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:559: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:559: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:559: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:563: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:563: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:563: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:563: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:563: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:567: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:567: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:567: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:567: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:567: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:571: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:571: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:571: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:571: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:571: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:597: error: illegal start of expression
+                ** continue;
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:597: error: illegal start of expression
+                ** continue;
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:597: error: illegal start of expression
+                ** continue;
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:640: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:640: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:640: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:640: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:640: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:644: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:644: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:644: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:644: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:644: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:648: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:648: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:648: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:648: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:648: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:652: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:652: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:652: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:652: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:652: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:656: error: illegal start of expression
+                ** GOTO lbl10
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:656: error: illegal start of expression
+                ** GOTO lbl10
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:656: error: ';' expected
+                ** GOTO lbl10
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:656: error: not a statement
+                ** GOTO lbl10
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:656: error: ';' expected
+                ** GOTO lbl10
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:660: error: illegal start of expression
+                ** continue;
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:660: error: illegal start of expression
+                ** continue;
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:660: error: illegal start of expression
+                ** continue;
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:787: error: illegal start of expression
+                if (var2_2 == 11) ** GOTO lbl-1000
+                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:787: error: illegal start of expression
+                if (var2_2 == 11) ** GOTO lbl-1000
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:787: error: ';' expected
+                if (var2_2 == 11) ** GOTO lbl-1000
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:787: error: not a statement
+                if (var2_2 == 11) ** GOTO lbl-1000
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:787: error: ';' expected
+                if (var2_2 == 11) ** GOTO lbl-1000
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:809: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:809: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:809: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:811: error: not a statement
+                    case 6: lbl-1000:
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:811: error: ';' expected
+                    case 6: lbl-1000:
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:1042: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:1042: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/c.java:1042: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:349: error: illegal start of expression
+                            if (var2_2 == 258) ** GOTO lbl-1000
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:349: error: illegal start of expression
+                            if (var2_2 == 258) ** GOTO lbl-1000
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:349: error: ';' expected
+                            if (var2_2 == 258) ** GOTO lbl-1000
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:349: error: not a statement
+                            if (var2_2 == 258) ** GOTO lbl-1000
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:349: error: ';' expected
+                            if (var2_2 == 258) ** GOTO lbl-1000
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:350: error: illegal start of expression
+                            if (var2_2 == 259) ** GOTO lbl30
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:350: error: illegal start of expression
+                            if (var2_2 == 259) ** GOTO lbl30
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:350: error: ';' expected
+                            if (var2_2 == 259) ** GOTO lbl30
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:350: error: not a statement
+                            if (var2_2 == 259) ** GOTO lbl30
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:350: error: ';' expected
+                            if (var2_2 == 259) ** GOTO lbl30
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:351: error: illegal start of expression
+                            if (var2_2 == 273) ** GOTO lbl28
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:351: error: illegal start of expression
+                            if (var2_2 == 273) ** GOTO lbl28
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:351: error: ';' expected
+                            if (var2_2 == 273) ** GOTO lbl28
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:351: error: not a statement
+                            if (var2_2 == 273) ** GOTO lbl28
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:351: error: ';' expected
+                            if (var2_2 == 273) ** GOTO lbl28
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:352: error: illegal start of expression
+                            if (var2_2 == 274) ** GOTO lbl25
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:352: error: illegal start of expression
+                            if (var2_2 == 274) ** GOTO lbl25
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:352: error: ';' expected
+                            if (var2_2 == 274) ** GOTO lbl25
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:352: error: not a statement
+                            if (var2_2 == 274) ** GOTO lbl25
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:352: error: ';' expected
+                            if (var2_2 == 274) ** GOTO lbl25
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:388: error: not a statement
+                                case 266: lbl-1000:
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:388: error: ';' expected
+                                case 266: lbl-1000:
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:831: error: illegal start of expression
+        ** while (true)
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:831: error: illegal start of expression
+        ** while (true)
+         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:831: error: illegal start of expression
+        ** while (true)
+           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:832: error: illegal start of statement
+    }
+    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1480: error: illegal start of expression
+                        ** GOTO lbl61
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1480: error: illegal start of expression
+                        ** GOTO lbl61
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1480: error: ';' expected
+                        ** GOTO lbl61
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1480: error: not a statement
+                        ** GOTO lbl61
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1480: error: ';' expected
+                        ** GOTO lbl61
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1486: error: illegal start of expression
+                if (!var12_8) ** GOTO lbl58
+                              ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1486: error: illegal start of expression
+                if (!var12_8) ** GOTO lbl58
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1486: error: ';' expected
+                if (!var12_8) ** GOTO lbl58
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1496: error: illegal start of expression
+                    ** GOTO lbl61
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1496: error: illegal start of expression
+                    ** GOTO lbl61
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1496: error: ';' expected
+                    ** GOTO lbl61
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1496: error: not a statement
+                    ** GOTO lbl61
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1496: error: ';' expected
+                    ** GOTO lbl61
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1503: error: illegal start of expression
+            if (var10_10 >= var8_9) ** GOTO lbl56
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1503: error: illegal start of expression
+            if (var10_10 >= var8_9) ** GOTO lbl56
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1503: error: ';' expected
+            if (var10_10 >= var8_9) ** GOTO lbl56
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1503: error: not a statement
+            if (var10_10 >= var8_9) ** GOTO lbl56
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1503: error: ';' expected
+            if (var10_10 >= var8_9) ** GOTO lbl56
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1526: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1526: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/g/g.java:1526: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:105: error: illegal start of expression
+                ** GOTO lbl-1000
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:105: error: illegal start of expression
+                ** GOTO lbl-1000
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:105: error: ';' expected
+                ** GOTO lbl-1000
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:105: error: not a statement
+                ** GOTO lbl-1000
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:105: error: ';' expected
+                ** GOTO lbl-1000
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:108: error: illegal start of expression
+                ** GOTO lbl-1000
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:108: error: illegal start of expression
+                ** GOTO lbl-1000
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:108: error: ';' expected
+                ** GOTO lbl-1000
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:108: error: not a statement
+                ** GOTO lbl-1000
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:108: error: ';' expected
+                ** GOTO lbl-1000
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:120: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:120: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:138: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/Globals.java:138: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:82: error: illegal start of expression
+            void var1_5;
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:88: error: illegal start of expression
+                    void var0_3;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:441: error: illegal start of expression
+                ** continue;
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:441: error: illegal start of expression
+                ** continue;
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:441: error: illegal start of expression
+                ** continue;
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:444: error: illegal start of expression
+            if (var6_5.k == 0) ** GOTO lbl10
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:444: error: illegal start of expression
+            if (var6_5.k == 0) ** GOTO lbl10
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:444: error: ';' expected
+            if (var6_5.k == 0) ** GOTO lbl10
+                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:446: error: illegal start of expression
+            ** GOTO lbl12
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:446: error: illegal start of expression
+            ** GOTO lbl12
+             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:446: error: ';' expected
+            ** GOTO lbl12
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:446: error: not a statement
+            ** GOTO lbl12
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:446: error: ';' expected
+            ** GOTO lbl12
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:448: error: illegal start of expression
+        ** while (var6_5.k == 0)
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:448: error: illegal start of expression
+        ** while (var6_5.k == 0)
+         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:448: error: illegal start of expression
+        ** while (var6_5.k == 0)
+           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:453: error: illegal start of expression
+        ** while (true)
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:453: error: illegal start of expression
+        ** while (true)
+         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:453: error: illegal start of expression
+        ** while (true)
+           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaClosure.java:454: error: illegal start of statement
+    }
+    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaString.java:238: error: '(' or '[' expected
+            object2 = new String;
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:305: error: illegal start of expression
+                                                                                if (!var20_21.i1()) ** GOTO lbl-1000
+                                                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:305: error: illegal start of expression
+                                                                                if (!var20_21.i1()) ** GOTO lbl-1000
+                                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:305: error: ';' expected
+                                                                                if (!var20_21.i1()) ** GOTO lbl-1000
+                                                                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:305: error: not a statement
+                                                                                if (!var20_21.i1()) ** GOTO lbl-1000
+                                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:305: error: ';' expected
+                                                                                if (!var20_21.i1()) ** GOTO lbl-1000
+                                                                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:310: error: not a statement
+                                                                                } else lbl-1000:
+                                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:310: error: ';' expected
+                                                                                } else lbl-1000:
+                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:343: error: illegal start of expression
+                                                                ** GOTO lbl99
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:343: error: illegal start of expression
+                                                                ** GOTO lbl99
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:343: error: ';' expected
+                                                                ** GOTO lbl99
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:343: error: not a statement
+                                                                ** GOTO lbl99
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:343: error: ';' expected
+                                                                ** GOTO lbl99
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:385: error: illegal start of expression
+                                                                ** continue;
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:385: error: illegal start of expression
+                                                                ** continue;
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:385: error: illegal start of expression
+                                                                ** continue;
+                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:484: error: illegal start of expression
+            ** continue;
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:484: error: illegal start of expression
+            ** continue;
+             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:484: error: illegal start of expression
+            ** continue;
+               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:1020: error: illegal start of expression
+            ** GOTO lbl19
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:1020: error: illegal start of expression
+            ** GOTO lbl19
+             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:1020: error: ';' expected
+            ** GOTO lbl19
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:1020: error: not a statement
+            ** GOTO lbl19
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaTable.java:1020: error: ';' expected
+            ** GOTO lbl19
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:99: error: 'catch' without 'try'
+                        catch (Throwable var1_3) {}
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:102: error: 'catch' without 'try'
+                            catch (Throwable var1_4) {
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:108: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:108: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:108: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:117: error: illegal start of expression
+                        ** GOTO lbl23
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:117: error: illegal start of expression
+                        ** GOTO lbl23
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:117: error: ';' expected
+                        ** GOTO lbl23
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:117: error: not a statement
+                        ** GOTO lbl23
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:117: error: ';' expected
+                        ** GOTO lbl23
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/LuaThread.java:121: error: 'catch' without 'try'
+                        catch (Throwable var1_2) {
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:88: error: illegal start of expression
+                    void var14_26;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:133: error: illegal start of expression
+                        void var12_12;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:373: error: not a statement
+                                                                if (var7_7 != 2) lbl-1000:
+                                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:373: error: ';' expected
+                                                                if (var7_7 != 2) lbl-1000:
+                                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:427: error: illegal start of expression
+                                                            ** GOTO lbl-1000
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:427: error: illegal start of expression
+                                                            ** GOTO lbl-1000
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:427: error: ';' expected
+                                                            ** GOTO lbl-1000
+                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:427: error: not a statement
+                                                            ** GOTO lbl-1000
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:427: error: ';' expected
+                                                            ** GOTO lbl-1000
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:448: error: illegal start of expression
+                                                        ** continue;
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:448: error: illegal start of expression
+                                                        ** continue;
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:448: error: illegal start of expression
+                                                        ** continue;
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:451: error: illegal start of expression
+                                                    ** GOTO lbl-1000
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:451: error: illegal start of expression
+                                                    ** GOTO lbl-1000
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:451: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:451: error: not a statement
+                                                    ** GOTO lbl-1000
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:451: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:463: error: illegal start of expression
+                                                        ** continue;
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:463: error: illegal start of expression
+                                                        ** continue;
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:463: error: illegal start of expression
+                                                        ** continue;
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:467: error: illegal start of expression
+                                                ** while (true)
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:467: error: illegal start of expression
+                                                ** while (true)
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:467: error: illegal start of expression
+                                                ** while (true)
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:468: error: illegal start of statement
+                                            }
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:471: error: illegal start of expression
+                                                ** continue;
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:471: error: illegal start of expression
+                                                ** continue;
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:471: error: illegal start of expression
+                                                ** continue;
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:513: error: illegal start of expression
+                                                    if (var6_8 != 3) ** GOTO lbl229
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:513: error: illegal start of expression
+                                                    if (var6_8 != 3) ** GOTO lbl229
+                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:513: error: ';' expected
+                                                    if (var6_8 != 3) ** GOTO lbl229
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:516: error: illegal start of expression
+                                                    if (var8_12 == 0) ** GOTO lbl93
+                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:516: error: illegal start of expression
+                                                    if (var8_12 == 0) ** GOTO lbl93
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:516: error: ';' expected
+                                                    if (var8_12 == 0) ** GOTO lbl93
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:525: error: illegal start of expression
+                                                        ** GOTO lbl93
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:525: error: illegal start of expression
+                                                        ** GOTO lbl93
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:525: error: ';' expected
+                                                        ** GOTO lbl93
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:525: error: not a statement
+                                                        ** GOTO lbl93
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:525: error: ';' expected
+                                                        ** GOTO lbl93
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:551: error: illegal start of expression
+                                                    if (var6_8 != 38) ** GOTO lbl93
+                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:551: error: illegal start of expression
+                                                    if (var6_8 != 38) ** GOTO lbl93
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:551: error: ';' expected
+                                                    if (var6_8 != 38) ** GOTO lbl93
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:554: error: illegal start of expression
+                                                    if (var1_1.k != 0) ** GOTO lbl93
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:554: error: illegal start of expression
+                                                    if (var1_1.k != 0) ** GOTO lbl93
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:554: error: ';' expected
+                                                    if (var1_1.k != 0) ** GOTO lbl93
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:557: error: illegal start of expression
+                                                    ** GOTO lbl93
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:557: error: illegal start of expression
+                                                    ** GOTO lbl93
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:557: error: ';' expected
+                                                    ** GOTO lbl93
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:557: error: not a statement
+                                                    ** GOTO lbl93
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:557: error: ';' expected
+                                                    ** GOTO lbl93
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:562: error: illegal start of expression
+                                                    if (var11_11 < 2) ** GOTO lbl93
+                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:562: error: illegal start of expression
+                                                    if (var11_11 < 2) ** GOTO lbl93
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:562: error: ';' expected
+                                                    if (var11_11 < 2) ** GOTO lbl93
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:563: error: ';' expected
+                                                    var0.append("..v");
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:577: error: illegal start of expression
+                                                            ** GOTO lbl93
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:577: error: illegal start of expression
+                                                            ** GOTO lbl93
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:577: error: ';' expected
+                                                            ** GOTO lbl93
+                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:577: error: not a statement
+                                                            ** GOTO lbl93
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:577: error: ';' expected
+                                                            ** GOTO lbl93
+                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:595: error: illegal start of expression
+                                        if (var6_8 != 29) ** GOTO lbl93
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:595: error: illegal start of expression
+                                        if (var6_8 != 29) ** GOTO lbl93
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:595: error: ';' expected
+                                        if (var6_8 != 29) ** GOTO lbl93
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:595: error: not a statement
+                                        if (var6_8 != 29) ** GOTO lbl93
+                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:595: error: ';' expected
+                                        if (var6_8 != 29) ** GOTO lbl93
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:599: error: illegal start of expression
+                                            ** continue;
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:599: error: illegal start of expression
+                                            ** continue;
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:599: error: illegal start of expression
+                                            ** continue;
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:603: error: illegal start of expression
+                                        if (var8_12 <= 1) ** GOTO lbl93
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:603: error: illegal start of expression
+                                        if (var8_12 <= 1) ** GOTO lbl93
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:603: error: ';' expected
+                                        if (var8_12 <= 1) ** GOTO lbl93
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:604: error: ';' expected
+                                        var0.append(" v");
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:608: error: illegal start of expression
+                                        ** while (true)
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:608: error: illegal start of expression
+                                        ** while (true)
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:608: error: illegal start of expression
+                                        ** while (true)
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:609: error: illegal start of statement
+                                    }
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:650: error: illegal start of expression
+                        ** while (true)
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:650: error: illegal start of expression
+                        ** while (true)
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:650: error: illegal start of expression
+                        ** while (true)
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:651: error: illegal start of statement
+                    }
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:654: error: illegal start of expression
+                    ** GOTO lbl265
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:654: error: illegal start of expression
+                    ** GOTO lbl265
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:654: error: ';' expected
+                    ** GOTO lbl265
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:654: error: not a statement
+                    ** GOTO lbl265
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:654: error: ';' expected
+                    ** GOTO lbl265
+                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:658: error: illegal start of expression
+                ** while (true)
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:658: error: illegal start of expression
+                ** while (true)
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:658: error: illegal start of expression
+                ** while (true)
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:749: error: illegal start of expression
+                                            ** GOTO lbl457
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:749: error: illegal start of expression
+                                            ** GOTO lbl457
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:749: error: ';' expected
+                                            ** GOTO lbl457
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:749: error: not a statement
+                                            ** GOTO lbl457
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:749: error: ';' expected
+                                            ** GOTO lbl457
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:756: error: illegal start of expression
+                                ** GOTO lbl443
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:756: error: illegal start of expression
+                                ** GOTO lbl443
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:756: error: ';' expected
+                                ** GOTO lbl443
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:756: error: not a statement
+                                ** GOTO lbl443
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:756: error: ';' expected
+                                ** GOTO lbl443
+                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:759: error: illegal start of expression
+                            ** GOTO lbl443
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:759: error: illegal start of expression
+                            ** GOTO lbl443
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:759: error: ';' expected
+                            ** GOTO lbl443
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:759: error: not a statement
+                            ** GOTO lbl443
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:759: error: ';' expected
+                            ** GOTO lbl443
+                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:762: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:762: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:762: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1163: error: illegal start of expression
+                                                                                        ** GOTO lbl17
+                                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1163: error: illegal start of expression
+                                                                                        ** GOTO lbl17
+                                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1163: error: ';' expected
+                                                                                        ** GOTO lbl17
+                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1163: error: not a statement
+                                                                                        ** GOTO lbl17
+                                                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1163: error: ';' expected
+                                                                                        ** GOTO lbl17
+                                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1175: error: illegal start of expression
+                                                                                } else if (var19_20 >= var12_9 - 2) ** continue;
+                                                                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1175: error: illegal start of expression
+                                                                                } else if (var19_20 >= var12_9 - 2) ** continue;
+                                                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1175: error: illegal start of expression
+                                                                                } else if (var19_20 >= var12_9 - 2) ** continue;
+                                                                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1178: error: illegal start of expression
+                                                                            if ((var10_16 = (var6_14 += var4_12) + 1) < 0 || var10_16 >= var13_4) ** GOTO lbl34
+                                                                                                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1178: error: illegal start of expression
+                                                                            if ((var10_16 = (var6_14 += var4_12) + 1) < 0 || var10_16 >= var13_4) ** GOTO lbl34
+                                                                                                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1178: error: ';' expected
+                                                                            if ((var10_16 = (var6_14 += var4_12) + 1) < 0 || var10_16 >= var13_4) ** GOTO lbl34
+                                                                                                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1178: error: not a statement
+                                                                            if ((var10_16 = (var6_14 += var4_12) + 1) < 0 || var10_16 >= var13_4) ** GOTO lbl34
+                                                                                                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1178: error: ';' expected
+                                                                            if ((var10_16 = (var6_14 += var4_12) + 1) < 0 || var10_16 >= var13_4) ** GOTO lbl34
+                                                                                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1199: error: illegal start of expression
+                                                                    ** GOTO lbl146
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1199: error: illegal start of expression
+                                                                    ** GOTO lbl146
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1199: error: ';' expected
+                                                                    ** GOTO lbl146
+                                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1199: error: not a statement
+                                                                    ** GOTO lbl146
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1199: error: ';' expected
+                                                                    ** GOTO lbl146
+                                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1204: error: illegal start of expression
+                                                            ** GOTO lbl62
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1204: error: illegal start of expression
+                                                            ** GOTO lbl62
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1204: error: ';' expected
+                                                            ** GOTO lbl62
+                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1204: error: not a statement
+                                                            ** GOTO lbl62
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1204: error: ';' expected
+                                                            ** GOTO lbl62
+                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1206: error: illegal start of expression
+                                                        if (var19_20 < var12_9 && var5_13 < var16_6) ** break;
+                                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1206: error: illegal start of expression
+                                                        if (var19_20 < var12_9 && var5_13 < var16_6) ** break;
+                                                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1206: error: illegal start of expression
+                                                        if (var19_20 < var12_9 && var5_13 < var16_6) ** break;
+                                                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1207: error: illegal start of expression
+                                                        ** continue;
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1207: error: illegal start of expression
+                                                        ** continue;
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1207: error: illegal start of expression
+                                                        ** continue;
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1210: error: illegal start of expression
+                                                    ** GOTO lbl17
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1210: error: illegal start of expression
+                                                    ** GOTO lbl17
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1210: error: ';' expected
+                                                    ** GOTO lbl17
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1210: error: not a statement
+                                                    ** GOTO lbl17
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1210: error: ';' expected
+                                                    ** GOTO lbl17
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1214: error: illegal start of expression
+                                                    ** continue;
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1214: error: illegal start of expression
+                                                    ** continue;
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1214: error: illegal start of expression
+                                                    ** continue;
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1225: error: illegal start of expression
+                                                    } else if (var19_20 >= var12_9) ** continue;
+                                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1225: error: illegal start of expression
+                                                    } else if (var19_20 >= var12_9) ** continue;
+                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1225: error: illegal start of expression
+                                                    } else if (var19_20 >= var12_9) ** continue;
+                                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1237: error: illegal start of expression
+                                                    if (var11_17 == 0) ** GOTO lbl115
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1237: error: illegal start of expression
+                                                    if (var11_17 == 0) ** GOTO lbl115
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1237: error: ';' expected
+                                                    if (var11_17 == 0) ** GOTO lbl115
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1237: error: not a statement
+                                                    if (var11_17 == 0) ** GOTO lbl115
+                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1237: error: ';' expected
+                                                    if (var11_17 == 0) ** GOTO lbl115
+                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1238: error: illegal start of expression
+                                                    if (var11_17 != 3 || !luaj.b.k(var10_16)) ** GOTO lbl104
+                                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1238: error: illegal start of expression
+                                                    if (var11_17 != 3 || !luaj.b.k(var10_16)) ** GOTO lbl104
+                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1238: error: ';' expected
+                                                    if (var11_17 != 3 || !luaj.b.k(var10_16)) ** GOTO lbl104
+                                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1240: error: not a statement
+                                                    if (luaj.b.j(var10_16) >= var16_6) lbl-1000:
+                                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1240: error: ';' expected
+                                                    if (luaj.b.j(var10_16) >= var16_6) lbl-1000:
+                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1246: error: illegal start of expression
+                                                            ** GOTO lbl115
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1246: error: illegal start of expression
+                                                            ** GOTO lbl115
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1246: error: ';' expected
+                                                            ** GOTO lbl115
+                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1246: error: not a statement
+                                                            ** GOTO lbl115
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1246: error: ';' expected
+                                                            ** GOTO lbl115
+                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1250: error: illegal start of expression
+                                                    ** GOTO lbl115
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1250: error: illegal start of expression
+                                                    ** GOTO lbl115
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1250: error: ';' expected
+                                                    ** GOTO lbl115
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1251: error: ';' expected
+lbl104:
+      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1255: error: illegal start of expression
+                                                    if (var17_18 == 3) ** GOTO lbl115
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1255: error: illegal start of expression
+                                                    if (var17_18 == 3) ** GOTO lbl115
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1255: error: ';' expected
+                                                    if (var17_18 == 3) ** GOTO lbl115
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1257: error: illegal start of expression
+                                                    if (var17_18 == 11) ** GOTO lbl115
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1257: error: illegal start of expression
+                                                    if (var17_18 == 11) ** GOTO lbl115
+                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1257: error: ';' expected
+                                                    if (var17_18 == 11) ** GOTO lbl115
+                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1257: error: not a statement
+                                                    if (var17_18 == 11) ** GOTO lbl115
+                                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1257: error: ';' expected
+                                                    if (var17_18 == 11) ** GOTO lbl115
+                                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1258: error: illegal start of expression
+                                                    if (var11_17 != 1) ** GOTO lbl112
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1258: error: illegal start of expression
+                                                    if (var11_17 != 1) ** GOTO lbl112
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1258: error: ';' expected
+                                                    if (var11_17 != 1) ** GOTO lbl112
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1260: error: illegal start of expression
+                                                    if (var10_16 < var15_8) ** GOTO lbl115
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1260: error: illegal start of expression
+                                                    if (var10_16 < var15_8) ** GOTO lbl115
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1260: error: ';' expected
+                                                    if (var10_16 < var15_8) ** GOTO lbl115
+                                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1261: error: illegal start of expression
+                                                    ** GOTO lbl-1000
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1261: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1261: error: not a statement
+                                                    ** GOTO lbl-1000
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1261: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1266: error: illegal start of expression
+                                                    if (var10_16 < var12_9) ** break;
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1266: error: illegal start of expression
+                                                    if (var10_16 < var12_9) ** break;
+                                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1266: error: illegal start of expression
+                                                    if (var10_16 < var12_9) ** break;
+                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1267: error: illegal start of expression
+                                                    ** continue;
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1267: error: illegal start of expression
+                                                    ** continue;
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1267: error: illegal start of expression
+                                                    ** continue;
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1286: error: illegal start of expression
+                                                                if (var18_19 >= var12_9) ** continue;
+                                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1286: error: illegal start of expression
+                                                                if (var18_19 >= var12_9) ** continue;
+                                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1286: error: illegal start of expression
+                                                                if (var18_19 >= var12_9) ** continue;
+                                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1290: error: illegal start of expression
+                                                    if (var17_18 == 3) ** GOTO lbl134
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1290: error: illegal start of expression
+                                                    if (var17_18 == 3) ** GOTO lbl134
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1290: error: ';' expected
+                                                    if (var17_18 == 3) ** GOTO lbl134
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1290: error: not a statement
+                                                    if (var17_18 == 3) ** GOTO lbl134
+                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1290: error: ';' expected
+                                                    if (var17_18 == 3) ** GOTO lbl134
+                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1323: error: illegal start of expression
+                                                        ** continue;
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1323: error: illegal start of expression
+                                                        ** continue;
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1323: error: illegal start of expression
+                                                        ** continue;
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1360: error: illegal start of expression
+                            if (var19_20 + var10_16 >= var12_9) ** GOTO lbl34
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1360: error: illegal start of expression
+                            if (var19_20 + var10_16 >= var12_9) ** GOTO lbl34
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1360: error: ';' expected
+                            if (var19_20 + var10_16 >= var12_9) ** GOTO lbl34
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1362: error: illegal start of expression
+                            if (var18_19 != 0) ** GOTO lbl146
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1362: error: illegal start of expression
+                            if (var18_19 != 0) ** GOTO lbl146
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1362: error: ';' expected
+                            if (var18_19 != 0) ** GOTO lbl146
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1362: error: not a statement
+                            if (var18_19 != 0) ** GOTO lbl146
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1362: error: ';' expected
+                            if (var18_19 != 0) ** GOTO lbl146
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1363: error: illegal start of expression
+                            if (var4_12 == var13_4 - 1) ** GOTO lbl34
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1363: error: illegal start of expression
+                            if (var4_12 == var13_4 - 1) ** GOTO lbl34
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1363: error: ';' expected
+                            if (var4_12 == var13_4 - 1) ** GOTO lbl34
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1367: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1367: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1367: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1370: error: illegal start of expression
+                        if (var19_20 + var18_19 + 2 < var12_9) ** GOTO lbl146
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1370: error: illegal start of expression
+                        if (var19_20 + var18_19 + 2 < var12_9) ** GOTO lbl146
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1370: error: ';' expected
+                        if (var19_20 + var18_19 + 2 < var12_9) ** GOTO lbl146
+                                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1371: error: illegal start of expression
+                        ** GOTO lbl34
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1371: error: ';' expected
+                        ** GOTO lbl34
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1371: error: not a statement
+                        ** GOTO lbl34
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1371: error: ';' expected
+                        ** GOTO lbl34
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1374: error: illegal start of expression
+                    if (var19_20 + var10_16 >= var12_9) ** break;
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1374: error: illegal start of expression
+                    if (var19_20 + var10_16 >= var12_9) ** break;
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1374: error: illegal start of expression
+                    if (var19_20 + var10_16 >= var12_9) ** break;
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1375: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1375: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1375: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1376: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1376: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/g.java:1376: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:429: error: 'catch' without 'try'
+                catch (Throwable throwable2) {
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:782: error: illegal start of expression
+                    if (var2_6 < var5_5 /* !! */ .length) ** GOTO lbl-1000
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:782: error: illegal start of expression
+                    if (var2_6 < var5_5 /* !! */ .length) ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:782: error: ';' expected
+                    if (var2_6 < var5_5 /* !! */ .length) ** GOTO lbl-1000
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:782: error: not a statement
+                    if (var2_6 < var5_5 /* !! */ .length) ** GOTO lbl-1000
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:782: error: ';' expected
+                    if (var2_6 < var5_5 /* !! */ .length) ** GOTO lbl-1000
+                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:794: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/DebugLib.java:794: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:149: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:149: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:149: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:346: error: illegal start of expression
+                ** continue;
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:346: error: illegal start of expression
+                ** continue;
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:346: error: illegal start of expression
+                ** continue;
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/GgLib$saveVariable.java:356: error: 'finally' without 'try'
+            finally {
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:51: error: illegal start of expression
+                            if (!var1_2) ** GOTO lbl-1000
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:51: error: illegal start of expression
+                            if (!var1_2) ** GOTO lbl-1000
+                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:51: error: ';' expected
+                            if (!var1_2) ** GOTO lbl-1000
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: illegal start of expression
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: illegal start of expression
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:51: error: not a statement
+                            if (!var1_2) ** GOTO lbl-1000
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: '{' expected
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: illegal start of expression
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: not a statement
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: ';' expected
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: not a statement
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:52: error: ';' expected
+                            ** try [egrp 0[TRYBLOCK] [0 : 13->106)] { 
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:56: error: illegal start of expression
+                            ** GOTO lbl11
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:56: error: illegal start of expression
+                            ** GOTO lbl11
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:56: error: ';' expected
+                            ** GOTO lbl11
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:57: error: ';' expected
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:85: error: 'catch' without 'try'
+                            catch (EOFException var0_1) {
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:89: error: illegal start of expression
+                        if (!var2_3) ** GOTO lbl11
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:89: error: illegal start of expression
+                        if (!var2_3) ** GOTO lbl11
+                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:89: error: ';' expected
+                        if (!var2_3) ** GOTO lbl11
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:89: error: not a statement
+                        if (!var2_3) ** GOTO lbl11
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:89: error: ';' expected
+                        if (!var2_3) ** GOTO lbl11
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:92: error: illegal start of expression
+                    ** while (true)
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:92: error: illegal start of expression
+                    ** while (true)
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:92: error: illegal start of expression
+                    ** while (true)
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:93: error: illegal start of statement
+                }
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:106: error: illegal start of expression
+    private File B3(boolean bl) {
+    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:312: error: 'finally' without 'try'
+        finally {
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:801: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:801: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:801: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/IoLib.java:800: error: 'catch' without 'try'
+                catch (IOException var4_8) {
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/PackageLib.java:180: error: 'catch' without 'try'
+                catch (ClassNotFoundException classNotFoundException) {
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/PackageLib.java:348: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/PackageLib.java:348: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/PackageLib.java:348: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:376: error: illegal start of expression
+                    ** break;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:376: error: illegal start of expression
+                    ** break;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:376: error: illegal start of expression
+                    ** break;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:491: error: illegal start of expression
+            if (var7_4 >= 8) ** GOTO lbl24
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:491: error: illegal start of expression
+            if (var7_4 >= 8) ** GOTO lbl24
+                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:491: error: ';' expected
+            if (var7_4 >= 8) ** GOTO lbl24
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:491: error: not a statement
+            if (var7_4 >= 8) ** GOTO lbl24
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:491: error: ';' expected
+            if (var7_4 >= 8) ** GOTO lbl24
+                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:828: error: not a statement
+                                if (var4_5 != 120) lbl-1000:
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:828: error: ';' expected
+                                if (var4_5 != 120) lbl-1000:
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:840: error: illegal start of expression
+                            ** while (var7_3 >= 0)
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:840: error: illegal start of expression
+                            ** while (var7_3 >= 0)
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:840: error: illegal start of expression
+                            ** while (var7_3 >= 0)
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1055: error: not a statement
+                                                        if ((var2_3 & -128) != 0) lbl-1000:
+                                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1055: error: ';' expected
+                                                        if ((var2_3 & -128) != 0) lbl-1000:
+                                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1074: error: illegal start of expression
+                                                    if ((var2_3 & 9) == 0) ** GOTO lbl23
+                                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1074: error: illegal start of expression
+                                                    if ((var2_3 & 9) == 0) ** GOTO lbl23
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1074: error: ';' expected
+                                                    if ((var2_3 & 9) == 0) ** GOTO lbl23
+                                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1075: error: illegal start of expression
+                                                    ** GOTO lbl-1000
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1075: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1075: error: not a statement
+                                                    ** GOTO lbl-1000
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1075: error: ';' expected
+                                                    ** GOTO lbl-1000
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1077: error: illegal start of expression
+                                                if ((var2_3 & 8) == 0) ** GOTO lbl23
+                                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1077: error: illegal start of expression
+                                                if ((var2_3 & 8) == 0) ** GOTO lbl23
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1077: error: ';' expected
+                                                if ((var2_3 & 8) == 0) ** GOTO lbl23
+                                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1078: error: illegal start of expression
+                                                ** GOTO lbl-1000
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1078: error: ';' expected
+                                                ** GOTO lbl-1000
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1078: error: not a statement
+                                                ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1078: error: ';' expected
+                                                ** GOTO lbl-1000
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1080: error: illegal start of expression
+                                            if ((var2_3 & 64) == 0) ** GOTO lbl23
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1080: error: illegal start of expression
+                                            if ((var2_3 & 64) == 0) ** GOTO lbl23
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1080: error: ';' expected
+                                            if ((var2_3 & 64) == 0) ** GOTO lbl23
+                                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1081: error: illegal start of expression
+                                            ** GOTO lbl-1000
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1081: error: ';' expected
+                                            ** GOTO lbl-1000
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1081: error: not a statement
+                                            ** GOTO lbl-1000
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1081: error: ';' expected
+                                            ** GOTO lbl-1000
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1083: error: illegal start of expression
+                                        if (var0 != 0) ** GOTO lbl23
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1083: error: illegal start of expression
+                                        if (var0 != 0) ** GOTO lbl23
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1083: error: ';' expected
+                                        if (var0 != 0) ** GOTO lbl23
+                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1084: error: illegal start of expression
+                                        ** GOTO lbl-1000
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1084: error: ';' expected
+                                        ** GOTO lbl-1000
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1084: error: not a statement
+                                        ** GOTO lbl-1000
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1084: error: ';' expected
+                                        ** GOTO lbl-1000
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1086: error: illegal start of expression
+                                    if ((var2_3 & 4) == 0) ** GOTO lbl23
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1086: error: illegal start of expression
+                                    if ((var2_3 & 4) == 0) ** GOTO lbl23
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1086: error: ';' expected
+                                    if ((var2_3 & 4) == 0) ** GOTO lbl23
+                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1087: error: illegal start of expression
+                                    ** GOTO lbl-1000
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1087: error: ';' expected
+                                    ** GOTO lbl-1000
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1087: error: not a statement
+                                    ** GOTO lbl-1000
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1087: error: ';' expected
+                                    ** GOTO lbl-1000
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1089: error: illegal start of expression
+                                if ((var2_3 & 32) == 0) ** GOTO lbl23
+                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1089: error: illegal start of expression
+                                if ((var2_3 & 32) == 0) ** GOTO lbl23
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1089: error: ';' expected
+                                if ((var2_3 & 32) == 0) ** GOTO lbl23
+                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1090: error: illegal start of expression
+                                ** GOTO lbl-1000
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1090: error: ';' expected
+                                ** GOTO lbl-1000
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1090: error: not a statement
+                                ** GOTO lbl-1000
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1090: error: ';' expected
+                                ** GOTO lbl-1000
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1092: error: illegal start of expression
+                            if ((var2_3 & 16) == 0) ** GOTO lbl23
+                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1092: error: illegal start of expression
+                            if ((var2_3 & 16) == 0) ** GOTO lbl23
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1092: error: ';' expected
+                            if ((var2_3 & 16) == 0) ** GOTO lbl23
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1093: error: illegal start of expression
+                            ** GOTO lbl-1000
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1093: error: ';' expected
+                            ** GOTO lbl-1000
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1093: error: not a statement
+                            ** GOTO lbl-1000
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1093: error: ';' expected
+                            ** GOTO lbl-1000
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1095: error: illegal start of expression
+                        if ((var2_3 & 2) == 0) ** GOTO lbl23
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1095: error: illegal start of expression
+                        if ((var2_3 & 2) == 0) ** GOTO lbl23
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1095: error: ';' expected
+                        if ((var2_3 & 2) == 0) ** GOTO lbl23
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1096: error: illegal start of expression
+                        ** GOTO lbl-1000
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1096: error: ';' expected
+                        ** GOTO lbl-1000
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1096: error: not a statement
+                        ** GOTO lbl-1000
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1096: error: ';' expected
+                        ** GOTO lbl-1000
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1098: error: illegal start of expression
+                    if ((var2_3 & 25) == 0) ** GOTO lbl23
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1098: error: illegal start of expression
+                    if ((var2_3 & 25) == 0) ** GOTO lbl23
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1098: error: ';' expected
+                    if ((var2_3 & 25) == 0) ** GOTO lbl23
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1099: error: illegal start of expression
+                    ** GOTO lbl-1000
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1099: error: ';' expected
+                    ** GOTO lbl-1000
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1099: error: not a statement
+                    ** GOTO lbl-1000
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1099: error: ';' expected
+                    ** GOTO lbl-1000
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1101: error: illegal start of expression
+                if ((var2_3 & 1) != 0) ** break;
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1101: error: illegal start of expression
+                if ((var2_3 & 1) != 0) ** break;
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1101: error: illegal start of expression
+                if ((var2_3 & 1) != 0) ** break;
+                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1102: error: illegal start of expression
+                ** while (true)
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1102: error: illegal start of expression
+                ** while (true)
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1102: error: illegal start of expression
+                ** while (true)
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1103: error: illegal start of expression
+                ** while (true)
+                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1103: error: illegal start of expression
+                ** while (true)
+                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1103: error: illegal start of expression
+                ** while (true)
+                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1104: error: illegal start of statement
+            }
+            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1233: error: illegal start of expression
+                        if (var4_5 != var1_1) ** GOTO lbl20
+                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1233: error: illegal start of expression
+                        if (var4_5 != var1_1) ** GOTO lbl20
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1233: error: ';' expected
+                        if (var4_5 != var1_1) ** GOTO lbl20
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1246: error: 'catch' without 'try'
+                                        catch (Throwable var9_9) {
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1256: error: illegal start of expression
+                                        if (var2_2 == 36) ** GOTO lbl-1000
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1256: error: illegal start of expression
+                                        if (var2_2 == 36) ** GOTO lbl-1000
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1256: error: ';' expected
+                                        if (var2_2 == 36) ** GOTO lbl-1000
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1256: error: not a statement
+                                        if (var2_2 == 36) ** GOTO lbl-1000
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1256: error: ';' expected
+                                        if (var2_2 == 36) ** GOTO lbl-1000
+                                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1259: error: illegal start of expression
+                                        if (var2_2 != 41) ** GOTO lbl85
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1259: error: illegal start of expression
+                                        if (var2_2 != 41) ** GOTO lbl85
+                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1259: error: ';' expected
+                                        if (var2_2 != 41) ** GOTO lbl85
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1261: error: illegal start of expression
+                                        ** GOTO lbl15
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1261: error: illegal start of expression
+                                        ** GOTO lbl15
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1261: error: ';' expected
+                                        ** GOTO lbl15
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1261: error: not a statement
+                                        ** GOTO lbl15
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1261: error: ';' expected
+                                        ** GOTO lbl15
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1266: error: illegal start of expression
+                                    ** GOTO lbl15
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1266: error: illegal start of expression
+                                    ** GOTO lbl15
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1266: error: ';' expected
+                                    ** GOTO lbl15
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1266: error: not a statement
+                                    ** GOTO lbl15
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1266: error: ';' expected
+                                    ** GOTO lbl15
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1269: error: illegal start of expression
+                                ** GOTO lbl15
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1269: error: illegal start of expression
+                                ** GOTO lbl15
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1269: error: ';' expected
+                                ** GOTO lbl15
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1269: error: not a statement
+                                ** GOTO lbl15
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1269: error: ';' expected
+                                ** GOTO lbl15
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1275: error: illegal start of expression
+                            if ((var7_7 = this.c.g3(var2_2)) == 98) ** GOTO lbl72
+                                                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1275: error: illegal start of expression
+                            if ((var7_7 = this.c.g3(var2_2)) == 98) ** GOTO lbl72
+                                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1275: error: ';' expected
+                            if ((var7_7 = this.c.g3(var2_2)) == 98) ** GOTO lbl72
+                                                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1275: error: not a statement
+                            if ((var7_7 = this.c.g3(var2_2)) == 98) ** GOTO lbl72
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1275: error: ';' expected
+                            if ((var7_7 = this.c.g3(var2_2)) == 98) ** GOTO lbl72
+                                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1276: error: illegal start of expression
+                            if (var7_7 == 102) ** GOTO lbl54
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1276: error: illegal start of expression
+                            if (var7_7 == 102) ** GOTO lbl54
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1276: error: ';' expected
+                            if (var7_7 == 102) ** GOTO lbl54
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1276: error: not a statement
+                            if (var7_7 == 102) ** GOTO lbl54
+                                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1276: error: ';' expected
+                            if (var7_7 == 102) ** GOTO lbl54
+                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1277: error: illegal start of expression
+                            if (!Character.isDigit((char)(var2_2 = this.c.g3(var2_2)))) ** GOTO lbl-1000
+                                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1277: error: illegal start of expression
+                            if (!Character.isDigit((char)(var2_2 = this.c.g3(var2_2)))) ** GOTO lbl-1000
+                                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1277: error: ';' expected
+                            if (!Character.isDigit((char)(var2_2 = this.c.g3(var2_2)))) ** GOTO lbl-1000
+                                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1277: error: not a statement
+                            if (!Character.isDigit((char)(var2_2 = this.c.g3(var2_2)))) ** GOTO lbl-1000
+                                                                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1277: error: ';' expected
+                            if (!Character.isDigit((char)(var2_2 = this.c.g3(var2_2)))) ** GOTO lbl-1000
+                                                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1279: error: illegal start of expression
+                            if (var1_1 != -1) ** GOTO lbl-1000
+                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1279: error: illegal start of expression
+                            if (var1_1 != -1) ** GOTO lbl-1000
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1279: error: ';' expected
+                            if (var1_1 != -1) ** GOTO lbl-1000
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1279: error: not a statement
+                            if (var1_1 != -1) ** GOTO lbl-1000
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1279: error: ';' expected
+                            if (var1_1 != -1) ** GOTO lbl-1000
+                                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1289: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1289: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1294: error: illegal start of expression
+                            ** GOTO lbl15
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1294: error: illegal start of expression
+                            ** GOTO lbl15
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1294: error: ';' expected
+                            ** GOTO lbl15
+                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1295: error: ';' expected
+lbl54:
+     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1311: error: illegal start of expression
+                                    if (this.k(var2_2, var8_8, var6_6)) ** GOTO lbl49
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1311: error: illegal start of expression
+                                    if (this.k(var2_2, var8_8, var6_6)) ** GOTO lbl49
+                                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1311: error: ';' expected
+                                    if (this.k(var2_2, var8_8, var6_6)) ** GOTO lbl49
+                                                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1315: error: illegal start of expression
+                                    ** GOTO lbl49
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1315: error: illegal start of expression
+                                    ** GOTO lbl49
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1315: error: ';' expected
+                                    ** GOTO lbl49
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1315: error: not a statement
+                                    ** GOTO lbl49
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1315: error: ';' expected
+                                    ** GOTO lbl49
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1330: error: illegal start of expression
+                                ** GOTO lbl49
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1330: error: illegal start of expression
+                                ** GOTO lbl49
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1330: error: ';' expected
+                                ** GOTO lbl49
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1330: error: not a statement
+                                ** GOTO lbl49
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1330: error: ';' expected
+                                ** GOTO lbl49
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1335: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1335: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1345: error: illegal start of expression
+                                        ** GOTO lbl15
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1345: error: illegal start of expression
+                                        ** GOTO lbl15
+                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1345: error: ';' expected
+                                        ** GOTO lbl15
+                                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1345: error: not a statement
+                                        ** GOTO lbl15
+                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1345: error: ';' expected
+                                        ** GOTO lbl15
+                                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1348: error: illegal start of expression
+                                    ** GOTO lbl15
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1348: error: illegal start of expression
+                                    ** GOTO lbl15
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1348: error: ';' expected
+                                    ** GOTO lbl15
+                                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1348: error: not a statement
+                                    ** GOTO lbl15
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1348: error: ';' expected
+                                    ** GOTO lbl15
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1355: error: illegal start of expression
+                                if (var1_1 == 42) ** GOTO lbl113
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1355: error: illegal start of expression
+                                if (var1_1 == 42) ** GOTO lbl113
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1355: error: ';' expected
+                                if (var1_1 == 42) ** GOTO lbl113
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1355: error: not a statement
+                                if (var1_1 == 42) ** GOTO lbl113
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1355: error: ';' expected
+                                if (var1_1 == 42) ** GOTO lbl113
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1356: error: illegal start of expression
+                                if (var1_1 == 43) ** GOTO lbl109
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1356: error: illegal start of expression
+                                if (var1_1 == 43) ** GOTO lbl109
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1356: error: ';' expected
+                                if (var1_1 == 43) ** GOTO lbl109
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1356: error: not a statement
+                                if (var1_1 == 43) ** GOTO lbl109
+                                                          ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1356: error: ';' expected
+                                if (var1_1 == 43) ** GOTO lbl109
+                                                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1358: error: illegal start of expression
+                                if (var1_1 == 63) ** GOTO lbl-1000
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1358: error: illegal start of expression
+                                if (var1_1 == 63) ** GOTO lbl-1000
+                                                   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1358: error: ';' expected
+                                if (var1_1 == 63) ** GOTO lbl-1000
+                                                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1358: error: not a statement
+                                if (var1_1 == 63) ** GOTO lbl-1000
+                                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1358: error: ';' expected
+                                if (var1_1 == 63) ** GOTO lbl-1000
+                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1361: error: illegal start of expression
+                                ** GOTO lbl49
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1361: error: illegal start of expression
+                                ** GOTO lbl49
+                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1361: error: ';' expected
+                                ** GOTO lbl49
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1361: error: not a statement
+                                ** GOTO lbl49
+                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1361: error: ';' expected
+                                ** GOTO lbl49
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1365: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1365: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1365: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1367: error: not a statement
+lbl-1000:
+   ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1367: error: ';' expected
+lbl-1000:
+        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1380: error: illegal start of expression
+                    ** GOTO lbl15
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1380: error: illegal start of expression
+                    ** GOTO lbl15
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1380: error: ';' expected
+                    ** GOTO lbl15
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1381: error: ';' expected
+lbl109:
+      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1385: error: illegal start of expression
+                    if (var2_2 == 0) ** GOTO lbl49
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1385: error: illegal start of expression
+                    if (var2_2 == 0) ** GOTO lbl49
+                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1385: error: ';' expected
+                    if (var2_2 == 0) ** GOTO lbl49
+                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1387: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1387: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1387: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1392: error: illegal start of expression
+                    ** continue;
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1392: error: illegal start of expression
+                    ** continue;
+                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1392: error: illegal start of expression
+                    ** continue;
+                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1811: error: '{' expected
+                    block0 : switch (var7_10) lbl-1000:
+                                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1811: error: case, default, or '}' expected
+                    block0 : switch (var7_10) lbl-1000:
+                                              ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1811: error: case, default, or '}' expected
+                    block0 : switch (var7_10) lbl-1000:
+                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1811: error: case, default, or '}' expected
+                    block0 : switch (var7_10) lbl-1000:
+                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1811: error: case, default, or '}' expected
+                    block0 : switch (var7_10) lbl-1000:
+                                                      ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1814: error: case, default, or '}' expected
+                    {
+                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1833: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1833: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1833: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1890: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1890: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1890: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1904: error: illegal start of expression
+                            if ((var2_7 = var6_9 - var2_7) <= 0) ** GOTO lbl-1000
+                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1904: error: illegal start of expression
+                            if ((var2_7 = var6_9 - var2_7) <= 0) ** GOTO lbl-1000
+                                                                  ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1904: error: ';' expected
+                            if ((var2_7 = var6_9 - var2_7) <= 0) ** GOTO lbl-1000
+                                                                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1904: error: not a statement
+                            if ((var2_7 = var6_9 - var2_7) <= 0) ** GOTO lbl-1000
+                                                                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1904: error: ';' expected
+                            if ((var2_7 = var6_9 - var2_7) <= 0) ** GOTO lbl-1000
+                                                                                 ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1910: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1910: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1910: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1931: error: illegal start of expression
+                                    ** continue;
+                                    ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1931: error: illegal start of expression
+                                    ** continue;
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:1931: error: illegal start of expression
+                                    ** continue;
+                                       ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2128: error: illegal start of expression
+                            ** continue;
+                            ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2128: error: illegal start of expression
+                            ** continue;
+                             ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2128: error: illegal start of expression
+                            ** continue;
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2134: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2134: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2134: error: illegal start of expression
+                        ** continue;
+                           ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2172: error: illegal start of expression
+                        ** GOTO lbl85
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2172: error: illegal start of expression
+                        ** GOTO lbl85
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2172: error: ';' expected
+                        ** GOTO lbl85
+                               ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2172: error: not a statement
+                        ** GOTO lbl85
+                                ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2172: error: ';' expected
+                        ** GOTO lbl85
+                                     ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2176: error: illegal start of expression
+                        ** continue;
+                        ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2176: error: illegal start of expression
+                        ** continue;
+                         ^
+analysis/2026-11-01/decompilers/cfr-packages/luaj/lib/StringLib.java:2176: error: illegal start of expression
+                        ** continue;
+                           ^
+746 errors

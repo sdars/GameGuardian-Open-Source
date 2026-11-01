@@ -1,0 +1,26 @@
+version: 2.11.1
+apkFileName: GameGuardian-101.4.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 24
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 16155
+  versionName: 101.4
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png
+- res/raw/ydw3a
+- res/raw/ydw3x
+- res/raw/ydwhe
+- res/raw/ydwsh

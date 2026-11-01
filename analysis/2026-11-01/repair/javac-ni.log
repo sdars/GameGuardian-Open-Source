@@ -1,0 +1,235 @@
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/a/d.java:115: error: illegal start of expression
+        ?? Inflate = i;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/a/d.java:115: error: illegal start of expression
+        ?? Inflate = i;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/a/d.java:115: error: : expected
+        ?? Inflate = i;
+                      ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/MainService.java:496: error: illegal start of expression
+                    ?? F = 2131296893;
+                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/MainService.java:496: error: illegal start of expression
+                    ?? F = 2131296893;
+                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/MainService.java:496: error: : expected
+                    ?? F = 2131296893;
+                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2447: error: illegal start of expression
+        ?? r1;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2447: error: illegal start of expression
+        ?? r1;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2447: error: : expected
+        ?? r1;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2456: error: illegal start of expression
+        ?? r3 = 0;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2456: error: illegal start of expression
+        ?? r3 = 0;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/Tools.java:2456: error: : expected
+        ?? r3 = 0;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:1667: error: illegal start of expression
+        ?? r0 = 0;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:1667: error: illegal start of expression
+        ?? r0 = 0;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:1667: error: : expected
+        ?? r0 = 0;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:3026: error: illegal start of expression
+        ?? a0Var = 0;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:3026: error: illegal start of expression
+        ?? a0Var = 0;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/b1.java:3026: error: : expected
+        ?? a0Var = 0;
+                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3042: error: illegal start of expression
+        ?? r15;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3042: error: illegal start of expression
+        ?? r15;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3042: error: : expected
+        ?? r15;
+              ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3047: error: illegal start of expression
+        ?? r16 = this;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3047: error: illegal start of expression
+        ?? r16 = this;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/f0.java:3047: error: : expected
+        ?? r16 = this;
+                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3742: error: illegal start of expression
+            ?? r8;
+            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3742: error: illegal start of expression
+            ?? r8;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3742: error: : expected
+            ?? r8;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3776: error: illegal start of expression
+            ?? r9;
+            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3776: error: illegal start of expression
+            ?? r9;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3776: error: : expected
+            ?? r9;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3780: error: illegal start of expression
+            ?? r10;
+            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3780: error: illegal start of expression
+            ?? r10;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3780: error: : expected
+            ?? r10;
+                  ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3880: error: illegal start of expression
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3880: error: illegal start of expression
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3880: error: : expected
+                                                                                ?? r2 = ((i30 << 2) & 248) | ((i30 << 3) & 512) | s;
+                                                                                                                                   ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3998: error: illegal start of expression
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3998: error: illegal start of expression
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:3998: error: : expected
+                                                                                            ?? r3 = ((iJ4 & i31) << i17) | s;
+                                                                                                                            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4026: error: illegal start of expression
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4026: error: illegal start of expression
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4026: error: : expected
+                                                                                                ?? r4 = ((iJ4 & i34) << i17) | s;
+                                                                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4141: error: illegal start of expression
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4141: error: illegal start of expression
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4141: error: : expected
+                                                                    ?? r5 = (iJ << 4) | s;
+                                                                                         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4300: error: illegal start of expression
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4300: error: illegal start of expression
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4300: error: : expected
+                                                                    ?? r6 = ((i35 << 2) & 248) | ((i35 << 3) & 512) | s;
+                                                                                                                       ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4403: error: illegal start of expression
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4403: error: illegal start of expression
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4403: error: : expected
+                                                                                ?? r7 = ((iJ4 & i36) << i17) | s;
+                                                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4430: error: illegal start of expression
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4430: error: illegal start of expression
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4430: error: : expected
+                                                                                    ?? r11 = ((iJ4 & i39) << i17) | s;
+                                                                                                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4546: error: illegal start of expression
+                                                        ?? r12 = (iJ << 4) | s;
+                                                        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4546: error: illegal start of expression
+                                                        ?? r12 = (iJ << 4) | s;
+                                                         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4546: error: : expected
+                                                        ?? r12 = (iJ << 4) | s;
+                                                                              ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4694: error: illegal start of expression
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4694: error: illegal start of expression
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4694: error: : expected
+                                                                ?? r13 = ((i310 << 2) & 248) | ((i310 << 3) & 512) | s;
+                                                                                                                      ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4797: error: illegal start of expression
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4797: error: illegal start of expression
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4797: error: : expected
+                                                                            ?? r14 = ((iJ4 & i311) << i17) | s;
+                                                                                                              ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4824: error: illegal start of expression
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4824: error: illegal start of expression
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4824: error: : expected
+                                                                                ?? r15 = ((iJ4 & i314) << i17) | s;
+                                                                                                                  ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4940: error: illegal start of expression
+                                                    ?? r16 = (iJ << 4) | s;
+                                                    ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4940: error: illegal start of expression
+                                                    ?? r16 = (iJ << 4) | s;
+                                                     ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/n.java:4940: error: : expected
+                                                    ?? r16 = (iJ << 4) | s;
+                                                                          ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:84: error: illegal start of expression
+            ?? r0;
+            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:84: error: illegal start of expression
+            ?? r0;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:84: error: : expected
+            ?? r0;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:85: error: illegal start of expression
+            ?? r1;
+            ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:85: error: illegal start of expression
+            ?? r1;
+             ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/android/ext/o0.java:85: error: : expected
+            ?? r1;
+                 ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/luaj/Globals.java:165: error: illegal start of expression
+        ?? r10;
+        ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/luaj/Globals.java:165: error: illegal start of expression
+        ?? r10;
+         ^
+analysis/2026-11-01/decompilers/jadx-noimports2/sources/luaj/Globals.java:165: error: : expected
+        ?? r10;
+              ^
+78 errors

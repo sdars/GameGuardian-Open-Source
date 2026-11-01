@@ -1,0 +1,154 @@
+android/ext/AddressArrayAdapter.java:72: error: incompatible types: int cannot be converted to boolean
+android/ext/AddressArrayAdapter.java:92: error: incompatible types: boolean cannot be converted to int
+android/ext/AddressArrayAdapter.java:95: error: incomparable types: boolean and int
+android/ext/AddressArrayAdapter.java:103: error: incompatible types: ggd.a cannot be converted to android.ext.d.a
+android/ext/AddressArrayAdapter.java:104: error: cannot find symbol
+android/ext/AddressArrayAdapter.java:105: error: cannot find symbol
+android/ext/AddressArrayAdapter.java:105: error: cannot find symbol
+ggd/a.java:32: error: cannot find symbol
+ggd/a.java:33: error: cannot find symbol
+ggd/a.java:34: error: cannot find symbol
+ggd/a.java:119: error: cannot find symbol
+android/ext/c.java:100: error: cannot find symbol
+android/ext/t1.java:50: error: a.C0021a is not abstract and does not override abstract method compare(Object,Object) in Comparator
+android/ext/t1.java:54: error: method does not override or implement a method from a supertype
+android/ext/t1.java:153: error: cannot find symbol
+android/ext/t1.java:153: error: cannot find symbol
+android/ext/t1.java:153: error: cannot find symbol
+android/ext/t1.java:153: error: cannot find symbol
+android/ext/ArrayAdapter.java:62: error: no suitable constructor found for ArrayAdapter(Context,int,int,Object[])
+gga/d.java:35: error: int cannot be dereferenced
+gga/d.java:36: error: int cannot be dereferenced
+gga/d.java:37: error: int cannot be dereferenced
+gga/d.java:39: error: int cannot be dereferenced
+gga/d.java:74: error: cannot find symbol
+android/ext/Config.java:1174: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1176: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1188: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1199: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1201: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1202: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1203: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1204: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1205: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1206: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1209: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1210: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1211: error: non-static variable this cannot be referenced from a static context
+android/ext/Config.java:1212: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+android/ext/ConfigListAdapter.java:492: error: cannot find symbol
+android/ext/ConfigListAdapter.java:588: error: ConfigListAdapter.q is not abstract and does not override abstract method compare(Object,Object) in Comparator
+android/ext/ConfigListAdapter.java:592: error: method does not override or implement a method from a supertype
+android/ext/ConfigListAdapter.java:856: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:876: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:893: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:898: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:928: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:985: error: cannot find symbol
+android/ext/ConfigListAdapter.java:989: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1024: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1026: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1029: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1031: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1035: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1040: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1043: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1053: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1055: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1064: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1068: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1070: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1079: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1085: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1154: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1173: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:1219: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:1327: error: cannot find symbol
+android/ext/ConfigListAdapter.java:1400: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:1401: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:1430: error: non-static variable this cannot be referenced from a static context
+android/ext/ConfigListAdapter.java:1443: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:212: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:388: error: cannot find symbol
+android/ext/Tools.java:557: error: cannot find symbol
+android/ext/Tools.java:699: error: cannot find symbol
+android/ext/Tools.java:700: error: cannot find symbol
+android/ext/Tools.java:704: error: cannot find symbol
+android/ext/Tools.java:705: error: cannot find symbol
+android/ext/Tools.java:1059: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1098: error: cannot find symbol
+android/ext/Tools.java:1100: error: cannot find symbol
+android/ext/Tools.java:1101: error: cannot find symbol
+android/ext/Tools.java:1103: error: cannot find symbol
+android/ext/Tools.java:1136: error: cannot find symbol
+android/ext/Tools.java:1280: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1307: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1312: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1423: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1458: error: cannot find symbol
+android/ext/Tools.java:1460: error: cannot find symbol
+android/ext/Tools.java:1537: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+android/ext/Tools.java:1546: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+android/ext/Tools.java:1586: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:1992: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2015: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2077: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2277: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2337: error: cannot find symbol
+android/ext/Tools.java:2339: error: cannot find symbol
+android/ext/Tools.java:2340: error: cannot find symbol
+android/ext/Tools.java:2342: error: cannot find symbol
+android/ext/Tools.java:2375: error: cannot find symbol
+android/ext/Tools.java:2401: error: cannot find symbol
+android/ext/Tools.java:2592: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2691: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2745: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2808: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2868: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:2971: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3025: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3029: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3044: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3366: error: non-static variable this cannot be referenced from a static context
+android/ext/Tools.java:3510: error: non-static variable this cannot be referenced from a static context
+android/ext/EditTextPath.java:84: error: cannot find symbol
+android/ext/EditTextPath.java:96: error: cannot find symbol
+android/fix/LinearLayout.java:19: error: cannot find symbol
+android/ext/FloatPanel.java:211: error: cannot find symbol
+android/ext/MainService.java:545: error: incompatible types: android.os.Process cannot be converted to java.lang.Process
+android/ext/MainService.java:886: error: cannot find symbol
+android/ext/MainService.java:1702: error: non-static variable this cannot be referenced from a static context
+android/ext/MainService.java:2230: error: cannot find symbol
+android/ext/MainService.java:2388: error: byte cannot be dereferenced
+android/ext/MainService.java:2782: error: cannot find symbol
+android/ext/MainService.java:3283: error: cannot find symbol
+android/ext/MainService.java:3678: error: cannot find symbol
+android/ext/MainService.java:3679: error: cannot find symbol
+android/ext/MainService.java:3690: error: cannot find symbol
+android/ext/MainService.java:3696: error: cannot find symbol
+android/ext/MainService.java:3753: error: cannot find symbol
+android/ext/MainService.java:3758: error: cannot find symbol
+android/ext/MainService.java:3761: error: cannot find symbol
+android/ext/MainService.java:3868: error: byte cannot be dereferenced
+android/ext/MainService.java:3868: error: byte cannot be dereferenced
+android/ext/MainService.java:4029: error: byte cannot be dereferenced
+android/ext/MainService.java:4043: error: byte cannot be dereferenced
+android/ext/MainService.java:4059: error: byte cannot be dereferenced
+android/ext/MainService.java:4061: error: byte cannot be dereferenced
+android/ext/MainService.java:4063: error: incompatible types: boolean cannot be converted to int
+android/ext/MainService.java:4077: error: byte cannot be dereferenced
+android/ext/MainService.java:4077: error: byte cannot be dereferenced
+android/ext/MainService.java:4086: error: byte cannot be dereferenced
+android/ext/MainService.java:4096: error: byte cannot be dereferenced
+android/ext/MainService.java:4098: error: byte cannot be dereferenced
+android/ext/MainService.java:4100: error: incompatible types: boolean cannot be converted to int
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4107: error: byte cannot be dereferenced
+android/ext/MainService.java:4120: error: byte cannot be dereferenced
+android/ext/MainService.java:4122: error: byte cannot be dereferenced

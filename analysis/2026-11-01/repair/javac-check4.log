@@ -1,0 +1,140 @@
+app/src/rebuild/java/android/lang/UNIXProcess.java:14: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+import java.security.AccessController;
+                    ^
+app/src/rebuild/java/android/ext/t1.java:604: error: variable sb is already defined in method p(b,String,int,boolean,long)
+                    StringBuilder sb = new StringBuilder();
+                                  ^
+app/src/rebuild/java/android/ext/t1.java:605: error: variable iN is already defined in method p(b,String,int,boolean,long)
+                    int iN = n.p(null, j, strTrim);
+                        ^
+app/src/rebuild/java/android/ext/t1.java:612: error: variable sb is already defined in method p(b,String,int,boolean,long)
+                        StringBuilder sb = new StringBuilder();
+                                      ^
+app/src/rebuild/java/android/ext/t1.java:613: error: variable iN is already defined in method p(b,String,int,boolean,long)
+                        int iN = m.k(null, null, j, strTrim2);
+                            ^
+app/src/rebuild/java/android/ext/t1.java:619: error: variable sb is already defined in method p(b,String,int,boolean,long)
+                        StringBuilder sb = new StringBuilder();
+                                      ^
+app/src/rebuild/java/android/ext/t1.java:620: error: variable iN is already defined in method p(b,String,int,boolean,long)
+                        int iN = n.n(null, j, strTrim3);
+                            ^
+app/src/rebuild/java/android/ext/MainService.java:886: error: cannot find symbol
+                y0.b(str, 1);
+                  ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild/java/android/ext/MainService.java:2230: error: cannot find symbol
+        y0.b(str, 1);
+          ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild/java/android/ext/MainService.java:2388: error: byte cannot be dereferenced
+                if (this.g0.getText().toString().startsWith(b2.f(catch_.me_.if_.you_.can_.R.string.version_number) + ' ' + ((Object) this.i.a0()))) {
+                                                              ^
+app/src/rebuild/java/android/ext/MainService.java:2782: error: cannot find symbol
+                activityManager = (ActivityManager) b("activity");
+                ^
+  symbol:   variable activityManager
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3283: error: cannot find symbol
+                                            th = th2;
+                                            ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3678: error: cannot find symbol
+                                                e = e3;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3679: error: cannot find symbol
+                                                e1.l("Failed read", e);
+                                                                    ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3690: error: cannot find symbol
+                                                e = e4;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3696: error: cannot find symbol
+                                                e1.s("list.size() = " + i15 + "; show count = " + android.ext.b0.i(), e);
+                                                                                                                      ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3753: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3758: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3761: error: cannot find symbol
+            e = e6;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(catch_.me_.if_.you_.can_.R.string.search_helper) + ' ' + Tools.L1(b2.f(catch_.me_.if_.you_.can_.R.string.found_count), Long.valueOf(j2)));
+                               ^
+app/src/rebuild/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(catch_.me_.if_.you_.can_.R.string.search_helper) + ' ' + Tools.L1(b2.f(catch_.me_.if_.you_.can_.R.string.found_count), Long.valueOf(j2)));
+                                                                                                      ^
+app/src/rebuild/java/android/ext/MainService.java:4029: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4043: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4059: error: byte cannot be dereferenced
+                    strF = b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_loaded);
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4061: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild/java/android/ext/MainService.java:4063: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.disable_protection)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.must_restart_if)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                  ^
+app/src/rebuild/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.disable_protection)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.must_restart_if)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                             ^
+app/src/rebuild/java/android/ext/MainService.java:4086: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4096: error: byte cannot be dereferenced
+                    strF = b2.f(catch_.me_.if_.you_.can_.R.string.unrandomizer_loaded);
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4098: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild/java/android/ext/MainService.java:4100: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                             ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                     ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                                                                                                     ^
+app/src/rebuild/java/android/ext/MainService.java:4120: error: byte cannot be dereferenced
+                sb.append(b2.f(catch_.me_.if_.you_.can_.R.string.ptrace_fail));
+                            ^
+app/src/rebuild/java/android/ext/MainService.java:4122: error: byte cannot be dereferenced
+                sb.append(b2.f(iArr[0] != 0 ? catch_.me_.if_.you_.can_.R.string.ptrace_fail_partially : catch_.me_.if_.you_.can_.R.string.ptrace_fail_full));
+                            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+36 errors
+1 warning
+printing javac parameters to: /root/gameguardian/javac.20261101_102042.args

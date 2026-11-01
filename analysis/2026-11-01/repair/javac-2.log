@@ -1,0 +1,611 @@
+app/src/rebuild/java/android/lang/UNIXProcess.java:14: warning: [removal] AccessController in java.security has been deprecated and marked for removal
+import java.security.AccessController;
+                    ^
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:72: error: incompatible types: int cannot be converted to boolean
+        boolean z2 = (Config.q & (1 << Tools.d1())) == 0 ? 0 : 1;
+                                                         ^
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:92: error: incompatible types: boolean cannot be converted to int
+        d3Var2.o.setOrientation(!z2);
+                                ^
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:95: error: incomparable types: boolean and int
+        d3Var2.f661a.getLayoutParams().height = z2 != 0 ? -2 : Tools.H();
+                                                   ^
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:103: error: incompatible types: ggd.a cannot be converted to android.ext.d.a
+            MainService.instance.u0.a(cVar.f672a, cVar.f674c, aVar2);
+                                                              ^
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:104: error: cannot find symbol
+            if (aVar2.f702b) {
+                     ^
+  symbol:   variable f702b
+  location: variable aVar2 of type a
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:105: error: cannot find symbol
+                strH = strH + " (" + ggc.I(cVar.f672a, aVar2.f701a, cVar.f674c) + ')';
+                                                            ^
+  symbol:   variable f701a
+  location: variable aVar2 of type a
+app/src/rebuild/java/android/ext/AddressArrayAdapter.java:105: error: cannot find symbol
+                strH = strH + " (" + ggc.I(cVar.f672a, aVar2.f701a, cVar.f674c) + ')';
+                                     ^
+  symbol:   variable ggc
+  location: class AddressArrayAdapter
+app/src/rebuild/java/ggd/a.java:32: error: cannot find symbol
+            jArr = ggb.f1515e;
+                   ^
+  symbol:   variable ggb
+  location: class a
+app/src/rebuild/java/ggd/a.java:33: error: cannot find symbol
+            iArr = ggb.f1514d;
+                   ^
+  symbol:   variable ggb
+  location: class a
+app/src/rebuild/java/ggd/a.java:34: error: cannot find symbol
+            zArr = ggb.f1517g;
+                   ^
+  symbol:   variable ggb
+  location: class a
+app/src/rebuild/java/ggd/a.java:119: error: cannot find symbol
+        h(ggb.c(i));
+          ^
+  symbol:   variable ggb
+  location: class a
+app/src/rebuild/java/android/ext/c.java:100: error: cannot find symbol
+        k.h(ggc.class);
+            ^
+  symbol:   class ggc
+  location: class c
+app/src/rebuild/java/android/ext/t1.java:50: error: a.C0021a is not abstract and does not override abstract method compare(Object,Object) in Comparator
+        class C0021a implements Comparator {
+        ^
+app/src/rebuild/java/android/ext/t1.java:54: error: method does not override or implement a method from a supertype
+            @Override // java.util.Comparator
+            ^
+app/src/rebuild/java/android/ext/t1.java:153: error: cannot find symbol
+            iArr = new int[]{1, ggc.E(1), 2, ggc.E(2), 4, ggc.E(4), 8, ggc.E(8)};
+                                ^
+  symbol:   variable ggc
+  location: class t1
+app/src/rebuild/java/android/ext/t1.java:153: error: cannot find symbol
+            iArr = new int[]{1, ggc.E(1), 2, ggc.E(2), 4, ggc.E(4), 8, ggc.E(8)};
+                                             ^
+  symbol:   variable ggc
+  location: class t1
+app/src/rebuild/java/android/ext/t1.java:153: error: cannot find symbol
+            iArr = new int[]{1, ggc.E(1), 2, ggc.E(2), 4, ggc.E(4), 8, ggc.E(8)};
+                                                          ^
+  symbol:   variable ggc
+  location: class t1
+app/src/rebuild/java/android/ext/t1.java:153: error: cannot find symbol
+            iArr = new int[]{1, ggc.E(1), 2, ggc.E(2), 4, ggc.E(4), 8, ggc.E(8)};
+                                                                       ^
+  symbol:   variable ggc
+  location: class t1
+app/src/rebuild/java/android/ext/ArrayAdapter.java:62: error: no suitable constructor found for ArrayAdapter(Context,int,int,Object[])
+        super(context, i, i2, objArr);
+        ^
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,T[]) is not applicable
+      (argument mismatch; Object[] cannot be converted to T[])
+    constructor android.widget.ArrayAdapter.android.widget.ArrayAdapter(Context,int,int,List<T>) is not applicable
+      (argument mismatch; Object[] cannot be converted to List<T>)
+  where T is a type-variable:
+    T extends Object declared in class android.ext.ArrayAdapter
+app/src/rebuild/java/gga/d.java:35: error: int cannot be dereferenced
+        arrayList.add(Integer.valueOf(R.style.Theme.DeviceDefault));
+                                                   ^
+app/src/rebuild/java/gga/d.java:36: error: int cannot be dereferenced
+        arrayList.add(Integer.valueOf(R.style.Theme.Material));
+                                                   ^
+app/src/rebuild/java/gga/d.java:37: error: int cannot be dereferenced
+        arrayList.add(Integer.valueOf(R.style.Theme.Holo));
+                                                   ^
+app/src/rebuild/java/gga/d.java:39: error: int cannot be dereferenced
+        arrayList.add(Integer.valueOf(R.style.Theme.Black));
+                                                   ^
+app/src/rebuild/java/gga/d.java:74: error: cannot find symbol
+        return (d) ggf.a(LayoutInflater.from(Tools.f0()));
+                   ^
+  symbol:   variable ggf
+  location: class d
+app/src/rebuild/java/android/ext/Config.java:1174: error: non-static variable this cannot be referenced from a static context
+        new f(R.id.config_xor_key, R.string.xor_key, R.string.empty, Integer.MIN_VALUE, 4294967295L, 0, "xor-key", true, true, false, 1);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1176: error: non-static variable this cannot be referenced from a static context
+        new g(R.id.config_icons_size, R.string.icons_size, 12, 0, "icons-size", false, R.string.icons_size_help);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1188: error: non-static variable this cannot be referenced from a static context
+        new h(R.id.config_memory_access, R.string.memory_access, new int[]{R.string.normal, R.string.extended, R.string.experimental}, 0, "memory-access", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1199: error: non-static variable this cannot be referenced from a static context
+        new i(R.id.config_prevent_unload, R.string.prevent_unload, new int[]{R.string.no, R.string.level_1, R.string.level_2, R.string.level_3}, 0, "prevent-unload", false, R.string.prevent_unload_help);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1201: error: non-static variable this cannot be referenced from a static context
+        new j(R.id.config_time_jump_panel, R.string.show_time_jump_panel, new int[]{R.string.no, R.string.yes}, 0, "time-jump-panel", true);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1202: error: non-static variable this cannot be referenced from a static context
+        new k(R.id.config_number_locale, R.string.number_locale, null, 0, "number-locale", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1203: error: non-static variable this cannot be referenced from a static context
+        new l(R.id.config_vspace_root, R.string.vspace_root, new int[]{R.string.no, R.string.yes_dangerous}, 0, "vspace-root", false, R.string.help_vspace_root_);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1204: error: non-static variable this cannot be referenced from a static context
+        new m(R.id.config_ram, R.string.data_in_ram, null, Integer.MAX_VALUE, "data-in-ram", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1205: error: non-static variable this cannot be referenced from a static context
+        new n(R.id.config_hot_key, R.string.hot_key, null, 0, "hot-key", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1206: error: non-static variable this cannot be referenced from a static context
+        new a(R.id.config_ranges, R.string.set_range, null, 0, "ranges", true);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1209: error: non-static variable this cannot be referenced from a static context
+        new b(R.id.config_toolbars, R.string.toolbars, null, -1, "toolbars", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1210: error: non-static variable this cannot be referenced from a static context
+        new c(R.id.config_use_small_list_items, R.string.small_list_items, null, 0, "small-items", false, R.string.small_list_items_help);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1211: error: non-static variable this cannot be referenced from a static context
+        new d(R.id.config_backgrounds, R.string.backgrounds, null, 0, "backgrounds", false);
+        ^
+app/src/rebuild/java/android/ext/Config.java:1212: error: non-static variable this cannot be referenced from a static context
+        new e(R.id.config_hide_from_game, R.string.hide_from_game, null, 0, "hide", true);
+        ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                     ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:342: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(Tools.L1(b2.f(R.string.not_optimized2), Config.F, Config.F)).setNeutralButton(b2.f(R.string.fix_it), new android.ext.r.n("kwws=22jdphjxdugldq1qhw2iruxp2wrslf24<7540yluwxdo0vsdfhv0wr0uxq0jdphjxdugldq0zlwkrxw0urrw2")).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                                                                                                                 ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.vspace64)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                       ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:357: error: byte cannot be dereferenced
+                        android.ext.f.o(android.ext.f.b().setMessage(b2.f(R.string.vspace64)).setNegativeButton(b2.f(R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                  ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:492: error: cannot find symbol
+                    a aVar = gga.this;
+                             ^
+  symbol:   class gga
+  location: class ConfigListAdapter.o.a.RunnableC0003a
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:588: error: ConfigListAdapter.q is not abstract and does not override abstract method compare(Object,Object) in Comparator
+    class q implements Comparator {
+    ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:592: error: method does not override or implement a method from a supertype
+        @Override // java.util.Comparator
+        ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:856: error: non-static variable this cannot be referenced from a static context
+        l lVar = new l(editTextPath, alertDialogCreate);
+                 ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:876: error: non-static variable this cannot be referenced from a static context
+            o oVar = new o(editTextPath, checkBox, alertDialogCreate);
+                     ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:893: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setItems(strArr, new g(strArr)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null));
+                                                           ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:898: error: non-static variable this cannot be referenced from a static context
+        n2.h(new p());
+             ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:928: error: non-static variable this cannot be referenced from a static context
+        Arrays.sort(strArrE, new q());
+                             ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:985: error: cannot find symbol
+                                                    th = th2;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:989: error: cannot find symbol
+                                                    e1.l("Failed check locale: " + str, th);
+                                                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1024: error: cannot find symbol
+                                                        th = th4;
+                                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1026: error: cannot find symbol
+                                                            e1.a(th);
+                                                                 ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1029: error: cannot find symbol
+                                                            th = th5;
+                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1031: error: cannot find symbol
+                                                            e1.l("Failed check locale: " + str, th);
+                                                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1035: error: cannot find symbol
+                                                    th = th6;
+                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1040: error: cannot find symbol
+                                                th = th7;
+                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1043: error: cannot find symbol
+                                                e1.l("Failed check locale: " + str, th);
+                                                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1053: error: cannot find symbol
+                                        th = th8;
+                                        ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1055: error: cannot find symbol
+                                        e1.l("Failed check locale: " + str, th);
+                                                                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1064: error: cannot find symbol
+                                    th = th9;
+                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1068: error: cannot find symbol
+                                th = th10;
+                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1070: error: cannot find symbol
+                                e1.l("Failed check locale: " + str, th);
+                                                                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1079: error: cannot find symbol
+                            th = th11;
+                            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1085: error: cannot find symbol
+                            e1.l("Failed check locale: " + str, th);
+                                                                ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1154: error: cannot find symbol
+                    th = th12;
+                    ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1173: error: non-static variable this cannot be referenced from a static context
+        n2.i(new r(new ArrayAdapter(MainService.context, arrayList2), size, arrayList));
+             ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1219: error: non-static variable this cannot be referenced from a static context
+        return new i();
+               ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1327: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class ConfigListAdapter
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1400: error: non-static variable this cannot be referenced from a static context
+        alertDialog.setButton(-1, b2.f(R.string.confirm), new m(onClickListener, alertDialog));
+                                                          ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1401: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.l(alertDialog, new n(onClickListener));
+                                     ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1430: error: non-static variable this cannot be referenced from a static context
+        h hVar = new h();
+                 ^
+app/src/rebuild/java/android/ext/ConfigListAdapter.java:1443: error: non-static variable this cannot be referenced from a static context
+        android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(R.string.screenshot)).setMessage(Tools.L1(b2.f(R.string.screenshot_prompt), 8)).setNegativeButton(b2.f(R.string.cancel), (DialogInterface.OnClickListener) null).setPositiveButton(b2.f(R.string.ok), new f()));
+                                                                                                                                                                                                                                                                        ^
+app/src/rebuild/java/android/ext/Tools.java:212: error: non-static variable this cannot be referenced from a static context
+        private static final ThreadLocal f502a = new a();
+                                                 ^
+app/src/rebuild/java/android/ext/Tools.java:388: error: cannot find symbol
+            this.f509a.waitFor();
+                      ^
+  symbol:   method waitFor()
+  location: variable f509a of type Process
+app/src/rebuild/java/android/ext/Tools.java:557: error: cannot find symbol
+                    ggb.this.f523a.fullScroll(130);
+                    ^
+  symbol:   class ggb
+  location: class Tools.m.b.a
+app/src/rebuild/java/android/ext/Tools.java:699: error: cannot find symbol
+                e = e4;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild/java/android/ext/Tools.java:700: error: cannot find symbol
+                e1.s("Fail", e);
+                             ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild/java/android/ext/Tools.java:704: error: cannot find symbol
+                e = th;
+                ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild/java/android/ext/Tools.java:705: error: cannot find symbol
+                e1.s("Fail", e);
+                             ^
+  symbol:   variable e
+  location: class Tools.p
+app/src/rebuild/java/android/ext/Tools.java:1059: error: non-static variable this cannot be referenced from a static context
+        n2.i(new a(str, z2));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:1098: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1100: error: cannot find symbol
+                        if (!(th instanceof PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1101: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1103: error: cannot find symbol
+                        e1.l("Failed getPackageInfo", th);
+                                                      ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1136: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1280: error: non-static variable this cannot be referenced from a static context
+        listView.post(new n(listView, i2, i3));
+                      ^
+app/src/rebuild/java/android/ext/Tools.java:1307: error: non-static variable this cannot be referenced from a static context
+        listView.setOnHierarchyChangeListener(new t(i2));
+                                              ^
+app/src/rebuild/java/android/ext/Tools.java:1312: error: non-static variable this cannot be referenced from a static context
+        n2.i(new k(dialogInterface));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:1423: error: non-static variable this cannot be referenced from a static context
+        n2.i(new p(z2, layoutParams, view));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:1458: error: cannot find symbol
+            th = th2;
+            ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1460: error: cannot find symbol
+        e1.a(th);
+             ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:1537: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+                return Runtime.getRuntime().exec(strArr, strArr2, file);
+                                                ^
+app/src/rebuild/java/android/ext/Tools.java:1546: error: incompatible types: java.lang.Process cannot be converted to android.os.Process
+        Process processC = ProcessBuilder.c(strArr, strArr2, file);
+                                           ^
+app/src/rebuild/java/android/ext/Tools.java:1586: error: non-static variable this cannot be referenced from a static context
+        n2.i(new b(str, i2));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:1992: error: non-static variable this cannot be referenced from a static context
+        n2.i(new d(alertDialog));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2015: error: non-static variable this cannot be referenced from a static context
+        n2.i(new f(view));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2077: error: non-static variable this cannot be referenced from a static context
+        n2.i(new e(window));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2277: error: non-static variable this cannot be referenced from a static context
+        FutureTask futureTask = new FutureTask(new h(process));
+                                               ^
+app/src/rebuild/java/android/ext/Tools.java:2337: error: cannot find symbol
+                        th = th3;
+                        ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:2339: error: cannot find symbol
+                        if (!(th instanceof PackageManager.NameNotFoundException)) {
+                              ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:2340: error: cannot find symbol
+                            throw th;
+                                  ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:2342: error: cannot find symbol
+                        e1.l("Failed getApplicationInfo", th);
+                                                          ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:2375: error: cannot find symbol
+                th = th6;
+                ^
+  symbol:   variable th
+  location: class Tools
+app/src/rebuild/java/android/ext/Tools.java:2401: error: cannot find symbol
+            process.exitValue();
+                   ^
+  symbol:   method exitValue()
+  location: variable process of type Process
+app/src/rebuild/java/android/ext/Tools.java:2592: error: non-static variable this cannot be referenced from a static context
+        n2.i(new s(textView, drawable, i2));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2691: error: non-static variable this cannot be referenced from a static context
+            listView.setOnHierarchyChangeListener(new u(i3, charSequenceArr, drawableArr, i2));
+                                                  ^
+app/src/rebuild/java/android/ext/Tools.java:2745: error: non-static variable this cannot be referenced from a static context
+        n2.i(new j(layoutParams, view));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2808: error: non-static variable this cannot be referenced from a static context
+        n2.i(new m(str, i2, str2, onClickListener));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:2868: error: non-static variable this cannot be referenced from a static context
+            textView.setOnClickListener(new l(str, i2));
+                                        ^
+app/src/rebuild/java/android/ext/Tools.java:2971: error: non-static variable this cannot be referenced from a static context
+        n2.i(new q(view));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:3025: error: non-static variable this cannot be referenced from a static context
+        n2.i(new o(view));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:3029: error: non-static variable this cannot be referenced from a static context
+        new g0(new i(), "checkForBadContext").start();
+               ^
+app/src/rebuild/java/android/ext/Tools.java:3044: error: non-static variable this cannot be referenced from a static context
+        n2.i(new g(editText));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:3366: error: non-static variable this cannot be referenced from a static context
+        n2.i(new c(textView, str));
+             ^
+app/src/rebuild/java/android/ext/Tools.java:3510: error: non-static variable this cannot be referenced from a static context
+        n2.i(new r(imageView, f2));
+             ^
+app/src/rebuild/java/android/ext/EditTextPath.java:84: error: cannot find symbol
+                a aVar = gga.this;
+                         ^
+  symbol:   class gga
+  location: class EditTextPath.a.C0004a
+app/src/rebuild/java/android/ext/EditTextPath.java:96: error: cannot find symbol
+                gga.this.notifyDataSetChanged();
+                ^
+  symbol:   class gga
+  location: class EditTextPath.a.C0004a
+app/src/rebuild/java/android/fix/LinearLayout.java:19: error: cannot find symbol
+        super.onConfigurationChanged(ggb.f(configuration));
+                                     ^
+  symbol:   variable ggb
+  location: class LinearLayout
+app/src/rebuild/java/android/ext/FloatPanel.java:211: error: cannot find symbol
+                th = th2;
+                ^
+  symbol:   variable th
+  location: class FloatPanel
+app/src/rebuild/java/android/ext/MainService.java:545: error: incompatible types: android.os.Process cannot be converted to java.lang.Process
+                        Process processQ = e2.q(Tools.removeNewLinesChars("h{hf#sp#lqvwdoo#0u#00del#{;9#") + g0.this.f242a);
+                                               ^
+app/src/rebuild/java/android/ext/MainService.java:886: error: cannot find symbol
+                y0.b(str, 1);
+                  ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild/java/android/ext/MainService.java:1702: error: non-static variable this cannot be referenced from a static context
+        t tVar = new t();
+                 ^
+app/src/rebuild/java/android/ext/MainService.java:2230: error: cannot find symbol
+        y0.b(str, 1);
+          ^
+  symbol:   method b(String,int)
+  location: variable y0 of type ArrayList
+app/src/rebuild/java/android/ext/MainService.java:2388: error: byte cannot be dereferenced
+                if (this.g0.getText().toString().startsWith(b2.f(catch_.me_.if_.you_.can_.R.string.version_number) + ' ' + ((Object) this.i.a0()))) {
+                                                              ^
+app/src/rebuild/java/android/ext/MainService.java:2782: error: cannot find symbol
+                activityManager = (ActivityManager) b("activity");
+                ^
+  symbol:   variable activityManager
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3283: error: cannot find symbol
+                                            th = th2;
+                                            ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3678: error: cannot find symbol
+                                                e = e3;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3679: error: cannot find symbol
+                                                e1.l("Failed read", e);
+                                                                    ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3690: error: cannot find symbol
+                                                e = e4;
+                                                ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3696: error: cannot find symbol
+                                                e1.s("list.size() = " + i15 + "; show count = " + android.ext.b0.i(), e);
+                                                                                                                      ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3753: error: cannot find symbol
+                    th = th2;
+                    ^
+  symbol:   variable th
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3758: error: cannot find symbol
+            e = e5;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3761: error: cannot find symbol
+            e = e6;
+            ^
+  symbol:   variable e
+  location: class MainService
+app/src/rebuild/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(catch_.me_.if_.you_.can_.R.string.search_helper) + ' ' + Tools.L1(b2.f(catch_.me_.if_.you_.can_.R.string.found_count), Long.valueOf(j2)));
+                               ^
+app/src/rebuild/java/android/ext/MainService.java:3868: error: byte cannot be dereferenced
+                    Tools.J1(b2.f(catch_.me_.if_.you_.can_.R.string.search_helper) + ' ' + Tools.L1(b2.f(catch_.me_.if_.you_.can_.R.string.found_count), Long.valueOf(j2)));
+                                                                                                      ^
+app/src/rebuild/java/android/ext/MainService.java:4029: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4043: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4059: error: byte cannot be dereferenced
+                    strF = b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_loaded);
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4061: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild/java/android/ext/MainService.java:4063: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.disable_protection)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.must_restart_if)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                  ^
+app/src/rebuild/java/android/ext/MainService.java:4077: error: byte cannot be dereferenced
+                    android.ext.f.o(android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.disable_protection)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.must_restart_if)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.ok), (DialogInterface.OnClickListener) null));
+                                                                                                                                                                                                                             ^
+app/src/rebuild/java/android/ext/MainService.java:4086: error: byte cannot be dereferenced
+                X(b2, b2.f(i4));
+                        ^
+app/src/rebuild/java/android/ext/MainService.java:4096: error: byte cannot be dereferenced
+                    strF = b2.f(catch_.me_.if_.you_.can_.R.string.unrandomizer_loaded);
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4098: error: byte cannot be dereferenced
+                        strF = strF + "\n" + b2.f(catch_.me_.if_.you_.can_.R.string.speedhack_no_x86);
+                                               ^
+app/src/rebuild/java/android/ext/MainService.java:4100: error: incompatible types: boolean cannot be converted to int
+                    i6 = this.D0;
+                             ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                             ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                     ^
+app/src/rebuild/java/android/ext/MainService.java:4107: error: byte cannot be dereferenced
+                    negativeButton = android.ext.f.b().setCustomTitle(Tools.g0(catch_.me_.if_.you_.can_.R.string.waitpid_mode)).setMessage(b2.f(catch_.me_.if_.you_.can_.R.string.help_waitpid)).setPositiveButton(b2.f(catch_.me_.if_.you_.can_.R.string.alternative), new w()).setNegativeButton(b2.f(catch_.me_.if_.you_.can_.R.string.skip), (DialogInterface.OnClickListener) null);
+                                                                                                                                                                                                                                                                                                     ^
+app/src/rebuild/java/android/ext/MainService.java:4120: error: byte cannot be dereferenced
+                sb.append(b2.f(catch_.me_.if_.you_.can_.R.string.ptrace_fail));
+                            ^
+app/src/rebuild/java/android/ext/MainService.java:4122: error: byte cannot be dereferenced
+                sb.append(b2.f(iArr[0] != 0 ? catch_.me_.if_.you_.can_.R.string.ptrace_fail_partially : catch_.me_.if_.you_.can_.R.string.ptrace_fail_full));
+                            ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+154 errors
+1 warning
+printing javac parameters to: /root/gameguardian/javac.20261101_090534.args

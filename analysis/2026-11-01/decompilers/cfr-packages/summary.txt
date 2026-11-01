@@ -1,0 +1,165 @@
+Summary for /root/gameguardian/tmp/analysis/2026-11-01/classes.jar
+Decompiled with CFR 0.152
+
+
+a.a
+----------------------------
+
+setContentView(int )
+  Unable to fully structure code
+
+
+a.c
+----------------------------
+
+onDraw(android.graphics.Canvas )
+  Unable to fully structure code
+
+
+g.b
+----------------------------
+
+d(luaj.h )
+  Unable to fully structure code
+
+
+luaj.g
+----------------------------
+
+F(java.lang.StringBuilder luaj.h int luaj.g$a )
+  Unable to fully structure code
+  Could not resolve type clashes
+w(byte[] luaj.h int[] int[] )
+  Unable to fully structure code
+
+
+g.c
+----------------------------
+
+F0(int g.g$k )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Extractable last case doesn't follow previous, and can't clone.
+X0(int g.g$k g.g$k int )
+  Unable to fully structure code
+b0(g.g$k )
+  Unable to fully structure code
+g0(g.g$k int )
+  Unable to fully structure code
+
+
+g.g
+----------------------------
+
+E1()
+  Unable to fully structure code
+R(g.g$e int )
+  Unable to fully structure code
+V0(g.g$h )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Extractable last case doesn't follow previous, and can't clone.
+m1(g.g$h boolean )
+  Unable to fully structure code
+n1(int g.g$h )
+  Handled duff style switch with additional control
+
+
+luaj.LuaTable
+----------------------------
+
+b3(java.lang.String java.lang.Appendable java.util.Map )
+  Unable to fully structure code
+W1()
+  Unable to fully structure code
+
+
+luaj.LuaThread
+----------------------------
+
+run()
+  Unable to fully structure code
+
+
+luaj.Globals
+----------------------------
+
+O3(java.io.InputStream java.lang.String java.lang.String luaj.LuaValue )
+  Unable to fully structure code
+
+
+luaj.LuaClosure
+----------------------------
+
+Y2(luaj.LuaValue[] luaj.Varargs boolean )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Back jump on a try block [egrp 7[TRYBLOCK] [31, 30, 29, 28 : 676->680)] java.lang.Throwable
+call(luaj.LuaValue luaj.LuaValue luaj.LuaValue )
+  Unable to fully structure code
+
+
+luaj.lib.BaseLib
+----------------------------
+
+a()
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Back jump on a try block [egrp 3[TRYBLOCK] [3 : 184->232)] java.lang.Throwable
+
+
+luaj.lib.DebugLib
+----------------------------
+
+X2(luaj.LuaThread$a luaj.LuaValue luaj.LuaValue )
+  Loose catch block
+j(boolean )
+  Unable to fully structure code
+
+
+luaj.lib.GgLib$saveVariable
+----------------------------
+
+Z2()
+  Unable to fully structure code
+invoke(luaj.Varargs )
+  Unable to fully structure code
+
+
+luaj.lib.IoLib
+----------------------------
+
+A3(luaj.lib.IoLib$File boolean boolean )
+  Unable to fully structure code
+<init>(luaj.lib.IoLib java.io.File char )
+  Unable to fully structure code
+
+
+luaj.lib.OsLib
+----------------------------
+
+h3(java.lang.String java.util.Calendar )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Extractable last case doesn't follow previous, and can't clone.
+
+
+luaj.lib.PackageLib
+----------------------------
+
+invoke(luaj.Varargs )
+  Loose catch block
+call(luaj.LuaValue )
+  Unable to fully structure code
+
+
+luaj.lib.StringLib
+----------------------------
+
+a3(luaj.lib.StringLib$c )
+  Unable to fully structure code
+e3(luaj.lib.StringLib$c luaj.LuaString int boolean )
+  Unable to fully structure code
+c(f.a long )
+  Unable to fully structure code
+i(int int )
+  Unable to fully structure code
+g(int int )
+  Unable to fully structure code
+invoke(luaj.Varargs )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [1[CASE]], but top level block is 6[SWITCH]
+invoke(luaj.Varargs )
+  Unable to fully structure code
+invoke(luaj.Varargs )
+  Unable to fully structure code
+  Could not resolve type clashes
